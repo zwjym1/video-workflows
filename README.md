@@ -22,6 +22,8 @@ projects/
     remotion/                      Remotion 源码（WINDOWS-RENDER.md 为渲染指南）
     voice/                         配音记录和脚本
   gradient-descent/                科普示例：梯度下降 v4 源码和配音脚本
+  tesla-roadster/                  B 站科普：特斯拉 Roadster（Remotion v3、对齐/混音工具、渲染参数）
+docs/DOUYIN-OPS/                   抖音运营系统和发布/复盘清单
 docs/VOICE-CONFIG.md               配音（Fish TTS）音色 ID 和配置教程
 VERSIONS.md                        版本标签和回退方法
 .env.example                       环境变量模板（只有占位符）

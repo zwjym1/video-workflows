@@ -87,3 +87,14 @@ python narration-fish-v4.py <标签> b4bdf5dc66004241a21ff2df165bf442 all [语�
 拼接用 `v4-stitch.py`。
 
 更多细节见 `projects/pi-lesson/voice/VOICE-NOTES.md`。
+
+## 特斯拉 Roadster v3（`projects/tesla-roadster`，B 站热点/差评君路线）
+
+- 音色：**穆祉尘音色1** `cfd828bdf120410c923fac0056c687c2`，热点新闻/科技解说路线用这个
+- 模型 `s2.1-pro-free`（实测只有这个能用；API 额度和 App 的 8000 积分分开算），temperature 0.65
+- 语速 `prosody.speed` **1.05**（全部句子），每句生成多条（ta/tb/tc），按 Whisper 拼音错误最少 → 问句选尾音上扬大的 → 语速接近 6 字/秒 自动挑
+- TTS 送字：`2028年`→“二零二八年”，`AI`→“A I”
+- 每句先压缩：句内超过 0.3s 的静音剪到两边各留 0.15s
+- 再整体 **1.15x 变速**（`rubberband=tempo=1.15`，没有 rubberband 就用 `atempo=1.15`），字幕时间戳同步除以 1.15
+- 句间停顿（变速后插入）：默认 0.30s；第 1 句后 0.55s、第 4 句后 0.35s、第 11 句后 0.55s、最后一句后 0.6s；开头留 0.12s
+- 最后 loudnorm I=-16 TP=-1.5 LRA=11；脚本见 `projects/tesla-roadster/voice/v3/`（gen.py → proc.py → stitch.py）

@@ -8,6 +8,12 @@
 | `pi-lesson-v2` | 第二版：改回剪纸/纵深/光影实物风，固定分区不遮挡，转场先退后进 |
 | `pi-lesson-v3` | 第三版（已渲染，待审核）：圆形广场新文案、「量」读 liáng 修正、删掉"四分之一"段落、第三章加放大镜；附配音脚本和渲染指南 |
 | `gradient-descent-v4` | 梯度下降科普短视频 v4 源码和配音脚本 |
+| `roadster-v1` | 特斯拉 Roadster 第一版（合成 RoadsterShort）。v1/v2/v3-preview 是一起首次入库的，这三个标签指向同一提交 |
+| `roadster-v2` | 第二版（src/v2，同上一提交） |
+| `roadster-v3-preview` | v3 预览：差评君风格重写、新音色、BGM 闪避混音（RoadsterShortV3） |
+| `roadster-v3.1` | v3.1：footage-timeline.json 控制镜头、对齐工具、三处画面修正 |
+| `roadster-v3.2` | v3.2：自制 BGM +3dB、混音写进 JSON、对齐工具混音台 |
+| `roadster-v3` | **v3 定稿**：播放器卡死修复、用户定稿的 footage-timeline.json、render:master / remix-audio；成片 特斯拉Roadster-v3.mp4 |
 
 ## 怎么退回某个版本
 

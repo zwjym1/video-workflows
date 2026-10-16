@@ -1,0 +1,245 @@
+{
+ "0": {
+  "file": "tb-00.mp3",
+  "i": 0,
+  "pinyin_err": 0,
+  "pitch_std": 5.08,
+  "cps": 5.72,
+  "dur": 2.27,
+  "asr": "这辆车刚刚飞过了一辆大卡车。"
+ },
+ "1": {
+  "file": "tb-01.mp3",
+  "i": 1,
+  "pinyin_err": 0,
+  "pitch_std": 0.0,
+  "cps": 4.25,
+  "dur": 0.94,
+  "asr": "不是特效。"
+ },
+ "2": {
+  "file": "tc-02.mp3",
+  "i": 2,
+  "pinyin_err": 0,
+  "pitch_std": 1.66,
+  "cps": 2.73,
+  "dur": 1.1,
+  "asr": "也不是AI。"
+ },
+ "3": {
+  "file": "tb-03.mp3",
+  "i": 3,
+  "pinyin_err": 0,
+  "pitch_std": 5.69,
+  "cps": 6.9,
+  "dur": 1.59,
+  "asr": "评论区问的最多的就一句﹔"
+ },
+ "4": {
+  "file": "ta-04.mp3",
+  "i": 4,
+  "pinyin_err": 0,
+  "pitch_std": 0.0,
+  "cps": 6.89,
+  "dur": 1.31,
+  "asr": "它到底怎么飞起来的?"
+ },
+ "5": {
+  "file": "ta-05.mp3",
+  "i": 5,
+  "pinyin_err": 0,
+  "pitch_std": 3.53,
+  "cps": 5.01,
+  "dur": 2.19,
+  "asr": "答案是,车上装了两套系统。"
+ },
+ "6": {
+  "file": "tc-06.mp3",
+  "i": 6,
+  "pinyin_err": 0,
+  "pitch_std": 0.0,
+  "cps": 5.28,
+  "dur": 0.76,
+  "asr": "先看这里"
+ },
+ "7": {
+  "file": "ta-07.mp3",
+  "i": 7,
+  "pinyin_err": 0,
+  "pitch_std": 1.58,
+  "cps": 5.53,
+  "dur": 2.35,
+  "asr": "车头朝天,贴着树枝的墙往上开。"
+ },
+ "8": {
+  "file": "tc-08.mp3",
+  "i": 8,
+  "pinyin_err": 0,
+  "pitch_std": 2.88,
+  "cps": 6.28,
+  "dur": 1.59,
+  "asr": "靠的是车底一个大风扇。"
+ },
+ "9": {
+  "file": "tb-09.mp3",
+  "i": 9,
+  "pinyin_err": 0,
+  "pitch_std": 3.74,
+  "cps": 5.65,
+  "dur": 1.59,
+  "asr": "他把车底的空气抽走。"
+ },
+ "10": {
+  "file": "tc-10.mp3",
+  "i": 10,
+  "pinyin_err": 0,
+  "pitch_std": 1.69,
+  "cps": 5.1,
+  "dur": 1.18,
+  "asr": "下面气压已低。"
+ },
+ "11": {
+  "file": "tb-11.mp3",
+  "i": 11,
+  "pinyin_err": 0,
+  "pitch_std": 4.25,
+  "cps": 5.41,
+  "dur": 2.59,
+  "asr": "外面的空气就把车死死按在墙上。"
+ },
+ "12": {
+  "file": "ta-12.mp3",
+  "i": 12,
+  "pinyin_err": 0,
+  "pitch_std": 3.93,
+  "cps": 5.67,
+  "dur": 2.12,
+  "asr": "按住的力最大由车重的两倍。"
+ },
+ "13": {
+  "file": "tb-13.mp3",
+  "i": 13,
+  "pinyin_err": 0,
+  "pitch_std": 5.08,
+  "cps": 5.95,
+  "dur": 1.18,
+  "asr": "再看飞的这一下。"
+ },
+ "14": {
+  "file": "ta-14.mp3",
+  "i": 14,
+  "pinyin_err": 0,
+  "pitch_std": 3.38,
+  "cps": 5.89,
+  "dur": 2.04,
+  "asr": "座椅后面藏着一个高压气罐。"
+ },
+ "15": {
+  "file": "td-15.mp3",
+  "i": 15,
+  "pinyin_err": 2,
+  "pitch_std": 6.71,
+  "cps": 5.41,
+  "dur": 2.59,
+  "asr": "门一开,气体从车尾猛的喷出去。"
+ },
+ "16": {
+  "file": "ta-16.mp3",
+  "i": 16,
+  "pinyin_err": 0,
+  "pitch_std": 5.24,
+  "cps": 5.14,
+  "dur": 2.14,
+  "asr": "气往后喷,车就往前往上冲。"
+ },
+ "17": {
+  "file": "tc-17.mp3",
+  "i": 17,
+  "pinyin_err": 0,
+  "pitch_std": 4.64,
+  "cps": 6.31,
+  "dur": 2.53,
+  "asr": "跟你松开一个吹满的气球是一个道理。"
+ },
+ "18": {
+  "file": "tc-18.mp3",
+  "i": 18,
+  "pinyin_err": 0,
+  "pitch_std": 2.79,
+  "cps": 5.95,
+  "dur": 2.69,
+  "asr": "车身四周还有小喷口,在空中帮它转身。"
+ },
+ "19": {
+  "file": "te-19.mp3",
+  "i": 19,
+  "pinyin_err": 0,
+  "pitch_std": 3.34,
+  "cps": 3.96,
+  "dur": 2.27,
+  "asr": "这套技术借自Space X的火箭。"
+ },
+ "20": {
+  "file": "tb-20.mp3",
+  "i": 20,
+  "pinyin_err": 0,
+  "pitch_std": 3.45,
+  "cps": 6.87,
+  "dur": 1.02,
+  "asr": "所以记住一句话"
+ },
+ "21": {
+  "file": "tc-21.mp3",
+  "i": 21,
+  "pinyin_err": 0,
+  "pitch_std": 4.32,
+  "cps": 5.1,
+  "dur": 1.96,
+  "asr": "风扇负责习,喷气负责飞。"
+ },
+ "22": {
+  "file": "tb-22.mp3",
+  "i": 22,
+  "pinyin_err": 0,
+  "pitch_std": 4.06,
+  "cps": 5.36,
+  "dur": 1.31,
+  "asr": "那你能开上它吗?"
+ },
+ "23": {
+  "file": "td-23.mp3",
+  "i": 23,
+  "pinyin_err": 0,
+  "pitch_std": 0.0,
+  "cps": 4.99,
+  "dur": 1.8,
+  "asr": "他2028年才量产。"
+ },
+ "24": {
+  "file": "ta-24.mp3",
+  "i": 24,
+  "pinyin_err": 0,
+  "pitch_std": 5.42,
+  "cps": 5.8,
+  "dur": 2.59,
+  "asr": "会飞的那个版本只能在封闭场地玩。"
+ },
+ "25": {
+  "file": "tg-25.mp3",
+  "i": 25,
+  "pinyin_err": 0,
+  "pitch_std": 1.75,
+  "cps": 6.11,
+  "dur": 2.46,
+  "asr": "售价没公布,定金最高25万美元。"
+ },
+ "26": {
+  "file": "ta-26.mp3",
+  "i": 26,
+  "pinyin_err": 0,
+  "pitch_std": 2.26,
+  "cps": 5.3,
+  "dur": 1.7,
+  "asr": "如果真能买,你敢做吗?"
+ }
+}
