@@ -1,0 +1,6 @@
+{
+  "entry": "align/projects/roadster-v3.tsx",
+  "publicDir": "public",
+  "timeline": "src/v3/footage-timeline.json",
+  "port": 3210
+}

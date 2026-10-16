@@ -1,57 +1,28 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile} from 'remotion';
-import AL from './align.json';
-import {C, Credit, F, FPS, NumberPop, SpeedLines, Vignette, e, lin, usePop, Chip} from './theme';
+import {C, Callout, Credit, F, FPS, NumberPop, SpeedLines, Vignette, e, lin, usePop, Chip} from './theme';
 import {Explain3D} from './Explain3D';
 import {Seq, useT3} from './warp';
+import {W, s, T, V3_END, V3_FRAMES, sentences as SS, mergeShots, fileTimeline} from './shots';
+import {ShotProvider, useShot, Timeline} from './shotctx';
+export {V3_FRAMES};
+type Wd = {text: string; start: number; end: number};
 import {Danmaku, Two, ClimbLive, Summary, Buy, End, Clip, Tag} from './v2shots';
 
-type Wd = {text: string; start: number; end: number};
-const SS = (AL as any).sentences as {i: number; text: string; start: number; end: number; words: Wd[]}[];
-export const s = (i: number) => SS[i];
-/** start time of substring (first alt that matches) in sentence i */
-export const W = (i: number, sub: string | string[], end = false): number => {
-  const ws = SS[i].words; let joined = ''; const idx: number[] = [];
-  ws.forEach((w, k) => { for (const _ of w.text) { joined += _; idx.push(k); } });
-  for (const q of Array.isArray(sub) ? sub : [sub]) { const p = joined.indexOf(q); if (p >= 0) return end ? ws[idx[p + q.length - 1]].end : ws[idx[p]].start; }
-  throw new Error(`W miss ${i} ${sub}`);
-};
-const LAST = SS[SS.length - 1];
-export const V3_END = LAST.end + 1.6;
-export const V3_FRAMES = Math.round(V3_END * FPS);
-const nx = (i: number) => (i + 1 < SS.length ? SS[i + 1].start : V3_END);
-
-/* ---------- T: key times ---------- */
-export const T = {
-  cut: W(0, '是这') - 0.05, fly: W(0, '飞'), semi: W(1, 'Semi'),
-  cm: s(2).start - 0.15, c1: W(2, '特效'), c2: W(2, ['AI', 'A I']), c3: W(2, '画饼'),
-  me: s(3).start - 0.1, con: s(4).start - 0.1, real: W(4, '真不是'), but: W(4, '但'),
-  src: s(5).start - 0.1, two: W(5, '说白'), xi: W(5, '吸'), pen: W(5, '喷'),
-  climb: s(6).start - 0.1, A: W(7, '大') - 0.35, feng: W(7, '风'), chou: W(7, '抽'), qiya: W(8, '气压'), wai: W(8, '外'), si: W(8, '死'),
-  musk: s(9).start - 0.05, zui: W(9, '最'), bei: W(9, '倍'),
-  inv: s(10).start - 0.1, dao: W(10, '倒'), bushi: W(10, '不是'),
-  q: s(11).start - 0.1, spx: W(12, 'SpaceX'),
-  B: W(13, '座'), gao: W(13, '高'), fa: W(13, '阀'), pen2: W(13, '喷'), qwh: W(14, '气往后'), qian: W(14, '前'), gen: W(14, '跟'), qq: W(14, '气球'),
-  dh: W(15, '点火'), sy: W(15, '烧油'), ys: W(15, '压缩'), cs: W(16, '车身'), pk: W(16, '喷口'), zt: W(16, '姿态'), hj: W(16, '火箭'),
-  sum: s(17).start - 0.1, fs: W(17, '风扇'), pq: W(17, '喷气'),
-  buy: s(18).start - 0.1, y28: W(19, ['二零二八', '2028']), hf: W(19, '会飞'), fb: W(19, '封闭'), price: s(20).start - 0.1, w25: W(20, ['二十五', '25']),
-  end: s(21).start - 0.1, gan: W(21, '敢'),
-};
-
 /* ---------- hook ---------- */
-const Hook3: React.FC = () => { const t = useT3();
+const Hook3: React.FC<{part: 'launch' | 'fly'}> = ({part}) => { const t = useT3(); const L = useShot('hook-launch')!;
   const hl = (at: number, color: string, txt: string, y: number, size = 124) => { const p = usePop(t, at); return p <= 0 ? null : <div style={{position: 'absolute', left: 140, top: y, opacity: Math.min(1, p), transform: `translateX(${(1 - Math.min(1, p)) * -40}px)`, zIndex: 41}}>
     <div style={{fontFamily: F, fontWeight: 900, fontSize: size, color: C.white, letterSpacing: 4, lineHeight: 1.05, textShadow: '0 8px 30px rgba(0,0,0,0.6)'}}>{txt}</div>
     <div style={{height: 8, width: `${Math.min(1, p) * 100}%`, maxWidth: 520, borderRadius: 4, background: color, boxShadow: `0 0 18px ${color}`, marginTop: 8}} /></div>; };
-  if (t < T.cut) { const pa = usePop(t, W(0, '加速'));
-    return <AbsoluteFill><Clip src="clip-launch.mp4" at={7.9} start={0} zoom={[1.0, 1.12, 0, T.cut]} /><Vignette />
+  if (part === 'launch') { const pa = usePop(t, W(0, '加速'));
+    return <AbsoluteFill><Clip id="hook-launch" src="clip-launch.mp4" at={5} start={L.start} zoom={[1.0, 1.12, L.start, L.end]} /><Vignette />
       <Tag text="Tesla 新 Roadster 发布会" o={e(t, 0.15, 0.45)} x={140} y={200} color={C.white} />
       {pa > 0 && <div style={{position: 'absolute', left: 140, top: 300, zIndex: 41, opacity: Math.min(1, pa), fontFamily: F, fontWeight: 900, fontSize: 96, color: 'rgba(255,255,255,0.75)'}}>
         <span style={{position: 'relative'}}>加速<span style={{position: 'absolute', left: -8, right: -8, top: '52%', height: 9, background: C.red, transform: `scaleX(${e(t, W(0, '加速') + 0.15, W(0, '加速') + 0.45)})`, transformOrigin: 'left'}} /></span>
         <span style={{fontSize: 40, marginLeft: 20, color: C.dim}}>不是重点</span></div>}
       <Credit /></AbsoluteFill>; }
   const at = 42.5 - (T.fly - T.cut);
-  return <AbsoluteFill><Clip src="clip-fly.mp4" at={at} start={T.cut} zoom={[1.0, 1.14, T.cut, s(1).end]} origin="55% 45%" />
+  return <AbsoluteFill><Clip id="hook-fly" src="clip-fly.mp4" at={at} start={T.cut} zoom={[1.0, 1.14, T.cut, s(1).end]} origin="55% 45%" />
     <SpeedLines t={t} o={e(t, T.fly - 0.3, T.fly) * (1 - e(t, T.fly + 1.0, T.fly + 1.4))} />
     <Vignette />
     {hl(T.fly, C.red, '它飞起来了', 300)}
@@ -76,7 +47,7 @@ const Comments: React.FC = () => { const t = useT3(); const ats = [T.c1, T.c2, T
 
 /* ---------- channel card ---------- */
 const Me: React.FC = () => { const t = useT3(); const p = usePop(t, T.me + 0.05); const m = Math.min(1, p);
-  return <AbsoluteFill><Clip src="clip-ramp-official.mp4" at={10} start={T.me} dark={0.55} blur={8} />
+  return <AbsoluteFill><Clip id="me-bg" src="clip-ramp-official.mp4" at={10} start={T.me} dark={0.55} blur={8} />
     <div style={{position: 'absolute', left: 0, right: 0, top: 360, display: 'flex', justifyContent: 'center', zIndex: 41}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 34, padding: '30px 48px', borderRadius: 24, background: C.glass, border: '1px solid rgba(255,255,255,0.14)', opacity: m, transform: `scale(${0.85 + 0.15 * m})`}}>
         <div style={{width: 130, height: 130, borderRadius: 65, background: `conic-gradient(${C.cyan}, ${C.amber}, ${C.red}, ${C.cyan})`, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `rotate(${(t - T.me) * 40}deg)`}}>
@@ -87,7 +58,7 @@ const Me: React.FC = () => { const t = useT3(); const p = usePop(t, T.me + 0.05)
 
 /* ---------- conclusion ---------- */
 const Concl: React.FC = () => { const t = useT3(); const p1 = usePop(t, T.real), p2 = usePop(t, T.but);
-  return <AbsoluteFill><Clip src="clip-fly.mp4" at={42.0} rate={0.5} start={T.con} dark={0.4} zoom={[1.05, 1.15, T.con, T.src]} /><Vignette />
+  return <AbsoluteFill><Clip id="concl" src="clip-fly.mp4" at={42.0} rate={0.5} start={T.con} dark={0.4} zoom={[1.05, 1.15, T.con, T.src]} /><Vignette />
     <div style={{position: 'absolute', left: 140, top: 330, zIndex: 41}}>
       {p1 > 0 && <div style={{fontFamily: F, fontWeight: 900, fontSize: 116, color: C.white, opacity: Math.min(1, p1), transform: `translateX(${(1 - Math.min(1, p1)) * -40}px)`}}>真不是<span style={{color: C.cyan}}>特效</span></div>}
       {p2 > 0 && <div style={{fontFamily: F, fontWeight: 900, fontSize: 76, color: 'rgba(255,255,255,0.9)', marginTop: 24, opacity: Math.min(1, p2), transform: `translateX(${(1 - Math.min(1, p2)) * -40}px)`}}>但也不是你以为的<span style={{color: C.amber}}>「飞」</span></div>}
@@ -102,17 +73,43 @@ const Sources: React.FC = () => { const t = useT3(); const shot = (img: string, 
     {shot('engadget.png', W(5, '拆解'), 1060, 240, 640, 2.5)}
     <Credit text="画面来源：TechCrunch / Engadget 报道截图" /></AbsoluteFill>; };
 
-/* ---------- inverted live ---------- */
-const Inv: React.FC = () => { const t = useT3();
-  return <AbsoluteFill><Clip src="clip-ramp.mp4" at={18.6} rate={0.6} start={T.inv} zoom={[1.0, 1.12, T.inv, T.q]} origin="50% 35%" /><Vignette />
-    <Tag text="0.6× 慢放" o={e(t, T.inv, T.inv + 0.3)} x={1600} y={34} color={C.white} size={26} />
-    <Tag text="吸力最大 ≈ 车重 2 倍" o={e(t, T.inv, T.inv + 0.2) * (1 - e(t, T.dao - 0.3, T.dao))} x={140} y={240} color={C.amber} size={44} />
-    <Tag text="在顶上 倒过来一下" o={usePop(t, T.dao)} x={140} y={240} color={C.cyan} size={44} />
+/* ---------- note 3: climb process + ramp-profile diagram ---------- */
+const RampDiagram: React.FC<{t: number}> = ({t}) => {
+  // side profile of the curved ramp; car travels up, flips at the top for a moment, then comes back down
+  const P = (u: number) => { const a = u * Math.PI * 0.62; return {x: 40 + 150 * Math.sin(a) + 60 * u * u, y: 250 - 230 * (1 - Math.cos(a)) / (1 - Math.cos(Math.PI * 0.62)), ang: (a * 180) / Math.PI}; };
+  const u = t < T.ding ? 0.05 + 0.9 * e(t, T.inv + 0.1, T.ding) : t < T.bushi ? 0.95 + 0.05 * e(t, T.ding, T.dao + 0.3) : 1 - 0.95 * e(t, T.bushi + 0.6, T.q);
+  const c = P(u); const pts = Array.from({length: 41}, (_, k) => P(k / 40)); const path = pts.map((p, k) => `${k ? 'L' : 'M'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+  const done = Array.from({length: 41}, (_, k) => P((k / 40) * u)).map((p, k) => `${k ? 'L' : 'M'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+  const inverted = t >= T.dao - 0.1 && t < T.bushi + 0.6;
+  return <div style={{position: 'absolute', right: 70, top: 120, width: 330, padding: '16px 18px 10px', borderRadius: 14, background: C.glass, border: '1px solid rgba(255,255,255,0.12)', zIndex: 44, opacity: e(t, T.inv, T.inv + 0.3)}}>
+    <div style={{fontFamily: F, fontWeight: 800, fontSize: 24, color: C.white}}>爬坡示意 <span style={{fontSize: 18, color: C.dim, fontWeight: 400}}>示意图 非官方</span></div>
+    <svg width={300} height={280} viewBox="0 0 300 280"><line x1={0} y1={252} x2={300} y2={252} stroke="#666" strokeWidth={2} />
+      <path d={path} stroke="rgba(255,255,255,0.35)" strokeWidth={14} fill="none" strokeLinecap="round" />
+      <path d={done} stroke={C.cyan} strokeWidth={5} fill="none" strokeLinecap="round" />
+      <g transform={`translate(${c.x} ${c.y}) rotate(${-c.ang})`}><rect x={-20} y={-18} width={40} height={14} rx={5} fill={inverted ? C.amber : C.white} /><circle cx={-12} cy={-3} r={4} fill="#111" /><circle cx={12} cy={-3} r={4} fill="#111" /></g>
+      {inverted && <text x={150} y={30} textAnchor="middle" fill={C.amber} fontFamily={F} fontWeight={900} fontSize={24}>倒过来 · 一下</text>}
+    </svg></div>; };
+const Climb: React.FC = () => { const t = useT3(); const S = useShot('climb')!;
+  return <AbsoluteFill><Clip id="climb" src="clip-ramp.mp4" at={9} start={S.start} zoom={[1.15, 1.3, S.start, S.end]} origin="54% 48%" /><Vignette />
+    <Tag text="实拍 · 冲上弯墙" o={e(t, S.start, S.start + 0.25)} x={140} y={200} color={C.cyan} size={40} />
+    <Tag text="吸力最大 ≈ 车重 2 倍" o={usePop(t, S.start + 0.4)} x={140} y={290} color={C.amber} size={36} />
+    <RampDiagram t={t} /><Credit /></AbsoluteFill>; };
+const TopInv: React.FC = () => { const t = useT3(); const S = useShot('top-inverted')!;
+  return <AbsoluteFill><Clip id="top-inverted" src="clip-ramp.mp4" at={20.9} rate={0.6} start={S.start} zoom={[1.0, 1.1, S.start, S.end]} origin="50% 35%" /><Vignette />
+    <Tag text={`${S.rate}× 慢放`} o={e(t, S.start, S.start + 0.3)} x={140} y={150} color={C.white} size={26} />
+    <Tag text="在顶上 倒过来一下" o={usePop(t, Math.max(S.start, T.dao - 0.1))} x={140} y={240} color={C.cyan} size={44} />
     <Tag text="✕  不是倒挂一路开" o={usePop(t, T.bushi)} x={140} y={340} color={C.red} size={44} />
+    <RampDiagram t={t} /><Credit /></AbsoluteFill>; };
+
+/* ---------- note 2: "先说吸" top-down live -> freeze ---------- */
+const SuckLive: React.FC = () => { const t = useT3(); const S = useShot('suck-live')!;
+  return <AbsoluteFill><Clip id="suck-live" src="hliveA.mp4" at={0} start={S.start} /><Vignette />
+    <Chip text="拆解一 · 风扇吸地" accent={C.cyan} o={e(t, S.start, S.start + 0.25)} />
+    <Tag text="实拍 · 俯视镜头" o={e(t, S.start + 0.1, S.start + 0.35)} x={140} y={200} color={C.white} size={30} />
     <Credit /></AbsoluteFill>; };
 
 const Fly3: React.FC = () => { const t = useT3(); const dur = T.B - T.q; const rate = Math.min(1, 4.2 / dur);
-  return <AbsoluteFill><Clip src="clip-fly.mp4" at={43.15 - dur * rate} rate={rate} start={T.q} zoom={[1.0, 1.16, T.q, T.B]} origin="60% 40%" />
+  return <AbsoluteFill><Clip id="fly-q" src="clip-fly.mp4" at={43.15 - dur * rate} rate={rate} start={T.q} zoom={[1.0, 1.16, T.q, T.B]} origin="60% 40%" />
     <Vignette />
     {(() => { const p = usePop(t, s(11).start); return p <= 0 ? null : <div style={{position: 'absolute', left: 140, top: 300, zIndex: 41, opacity: Math.min(1, p) * (1 - e(t, T.spx - 0.3, T.spx)), fontFamily: F, fontWeight: 900, fontSize: 100, color: C.white}}>那它是怎么<span style={{color: C.amber}}>飞</span>的？</div>; })()}
     {(() => { const p = usePop(t, T.spx); return p <= 0 ? null : <div style={{position: 'absolute', left: 140, top: 320, zIndex: 41, opacity: Math.min(1, p), padding: '20px 30px', borderRadius: 14, background: C.glass, borderLeft: `6px solid ${C.amber}`}}>
@@ -123,9 +120,11 @@ const B15: React.FC = () => { const t = useT3();
   return <>{([[T.dh, '不点火'], [T.sy, '不烧油'], [T.ys, '喷的是 压缩空气']] as const).map(([at, l], k) =>
     <Tag key={k} text={(k < 2 ? '✕  ' : '✓  ') + l} o={usePop(t, at) * (1 - e(t, T.cs - 0.1, T.cs + 0.2))} x={1330} y={260 + k * 92} color={k < 2 ? C.red : C.cyan} size={40} />)}</>; };
 
-const RampCut: React.FC = () => { const t = useT3();
-  return <AbsoluteFill style={{zIndex: 50}}><Clip src="clip-ramp.mp4" at={66.0} start={T.musk} zoom={[1.0, 1.1, T.musk, T.zui]} /><Vignette />
-    <Tag text="实拍：吸住路面 贴墙爬坡" o={e(t, T.musk, T.musk + 0.25)} x={140} y={200} color={C.cyan} /><Credit /></AbsoluteFill>; };
+const RampCut: React.FC = () => { const t = useT3(); const S = useShot('musk-downforce')!;
+  return <AbsoluteFill style={{zIndex: 50}}><Clip id="musk-downforce" src="clip-ramp.mp4" at={4.4} start={S.start} zoom={[1.0, 1.06, S.start, S.end]} /><Vignette />
+    <Tag text="实拍 · 车载下压力读数" o={e(t, S.start, S.start + 0.25)} x={140} y={200} color={C.cyan} />
+    <Callout x={172} y={978} label="DOWNFORCE 下压力（kg）" color={C.amber} p={usePop(t, S.start + 0.3)} out={1} dx={260} dy={-200} r={80} />
+    <Credit /></AbsoluteFill>; };
 
 /* ---------- subtitles ---------- */
 const CUES = (() => { const out: {a: number; b: number; text: string}[] = [];
@@ -159,27 +158,31 @@ export const SFX3 = () => [
 const SFXL: React.FC = () => <>{SFX3().map(([f, a, v, d], i) => <Sequence key={i} from={Math.max(0, Math.round(a * FPS))} durationInFrames={Math.max(1, Math.round(d * FPS))}>
   <Audio src={staticFile(f.startsWith('v3/') ? f : 'sfx/' + f)} volume={v} /></Sequence>)}</>;
 
-export const RoadsterShortV3: React.FC<{withVoice?: boolean}> = ({withVoice = true}) => <AbsoluteFill style={{background: '#000'}}>
+export const RoadsterShortV3: React.FC<{withVoice?: boolean; timeline?: Timeline | null}> = ({withVoice = true, timeline}) => {
+  const shots = mergeShots(timeline ?? fileTimeline); const G = Object.fromEntries(shots.map((x) => [x.id, x]));
+  const F2 = (id: string, el: React.ReactNode, anchors?: [number, number][]) => <Seq a={G[id].start} b={G[id].end} anchors={anchors}>{el}</Seq>;
+  return <ShotProvider shots={shots}><AbsoluteFill style={{background: '#000'}}>
   {withVoice && <Audio src={staticFile('v3/voice-v3.wav')} />}
   <SFXL />
-  <Seq a={0} b={T.cut}><Hook3 /></Seq>
-  <Seq a={T.cut} b={T.cm}><Hook3 /></Seq>
-  <Seq a={T.cm} b={T.me} anchors={[[T.cm, 6.35], [s(2).end, 9.4]]}><Danmaku /><Comments /></Seq>
-  <Seq a={T.me} b={T.con}><Me /></Seq>
-  <Seq a={T.con} b={T.src}><Concl /></Seq>
+  {F2('hook-launch', <Hook3 part="launch" />)}
+  {F2('hook-fly', <Hook3 part="fly" />)}
+  {F2('comments-bg', <><Danmaku /><Comments /></>, [[T.cm, 6.35], [s(2).end, 9.4]])}
+  {F2('me-bg', <Me />)}
+  {F2('concl', <Concl />)}
   <Seq a={T.src} b={T.two}><Sources /></Seq>
-  <Seq a={T.two} b={T.climb} anchors={[[T.two, 10.22], [T.xi, 11.42], [T.pen, 11.66], [T.climb, 13.1]]}><Two /></Seq>
-  <Seq a={T.climb} b={T.A} anchors={[[T.climb, 13.1], [T.A, 17.1]]}><ClimbLive /></Seq>
+  {F2('two-bg', <Two />, [[T.two, 10.22], [T.xi, 11.42], [T.pen, 11.66], [T.climb, 13.1]])}
+  {F2('suck-live', <SuckLive />)}
   <Seq a={T.A} b={T.inv} anchors={[[T.A, 17.1], [T.feng, 18.15], [T.chou, 19.1], [T.qiya, 21.17], [T.wai, 22.66], [T.si, 23.78], [T.zui, 26.29], [T.bei, 27.41], [T.inv, 27.9]]}><Explain3D v="A" start={17.1} /></Seq>
-  <Seq a={T.musk} b={T.zui - 0.05}><RampCut /></Seq>
-  <Seq a={T.inv} b={T.q}><Inv /></Seq>
-  <Seq a={T.q} b={T.B}><Fly3 /></Seq>
+  {F2('musk-downforce', <RampCut />)}
+  {F2('climb', <Climb />)}
+  {F2('top-inverted', <TopInv />)}
+  {F2('fly-q', <Fly3 />)}
   <Seq a={T.B} b={T.sum} anchors={[[T.B, 30.4], [T.gao, 31.26], [T.fa, 32.58], [T.pen2, 34.5], [T.qwh, 35.56], [T.qian, 36.84], [T.gen, 38.11], [T.qq, 39.15], [s(15).start, 40.3], [s(15).end, 41.0], [T.cs, 41.12], [T.pk, 42.0], [T.zt, 43.12], [T.hj, 44.8], [T.sum, 46.9]]}><Explain3D v="B" start={30.4} /><B15 /></Seq>
   <Seq a={T.sum} b={T.buy} anchors={[[T.sum, 46.9], [T.fs, 48.44], [T.pq, 49.40], [T.buy, 51.22]]}><Summary /></Seq>
-  <Seq a={T.buy} b={T.y28 - 0.14} anchors={[[T.buy, 51.22], [T.y28 - 0.14, 52.95]]}><Buy /></Seq>
-  <Seq a={T.y28 - 0.14} b={T.hf} anchors={[[T.y28 - 0.14, 52.95], [T.y28, 53.09], [T.hf, 55.15]]}><Buy /></Seq>
-  <Seq a={T.hf} b={T.price} anchors={[[T.hf, 55.15], [T.fb, 56.81], [T.price, 58.1]]}><Buy /></Seq>
+  {F2('buy-promo', <Buy />, [[G['buy-promo'].start, 51.22], [G['buy-promo'].end, 52.95]])}
+  {F2('buy-musk', <Buy />, [[G['buy-musk'].start, 52.95], [T.y28, 53.09], [G['buy-musk'].end, 55.15]])}
+  {F2('buy-closed', <Buy />, [[G['buy-closed'].start, 55.15], [T.fb, 56.81], [G['buy-closed'].end, 58.1]])}
   <Seq a={T.price} b={T.end} anchors={[[T.price, 58.1], [T.w25, 59.56], [T.end, 61.27]]}><Buy /></Seq>
-  <Seq a={T.end} b={V3_END} anchors={[[T.end, 61.27], [T.gan, 62.23]]}><End /></Seq>
+  {F2('end', <End />, [[T.end, 61.27], [T.gan, 62.23]])}
   <Subs />
-</AbsoluteFill>;
+</AbsoluteFill></ShotProvider>; };

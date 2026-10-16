@@ -4,6 +4,7 @@ import captions from '../captions.json';
 import {C, Callout, Credit, F, FPS, NumberPop, SpeedLines, Vignette, e, lin, usePop, Chip} from './theme';
 import {Car3DLayer, Explain3D} from './Explain3D';
 import {useWarpT} from './warp';
+import {useShot} from './shotctx';
 
 
 const fr = (s: number) => Math.round(s * FPS);
@@ -12,8 +13,8 @@ export const V2_FRAMES = fr(63.85);
 /** Absolute-time hook within a Sequence that starts at `start` */
 const useAbs = (_start: number) => useWarpT();
 
-const Clip: React.FC<{src: string; at: number; rate?: number; start: number; zoom?: [number, number, number, number]; origin?: string; dark?: number; blur?: number}> = ({src, at, rate = 1, start, zoom, origin = '50% 50%', dark = 0, blur = 0}) => {
-  const t = useAbs(start);
+const Clip: React.FC<{id?: string; src: string; at: number; rate?: number; start: number; zoom?: [number, number, number, number]; origin?: string; dark?: number; blur?: number}> = ({id, src: src0, at: at0, rate: rate0 = 1, start, zoom, origin = '50% 50%', dark = 0, blur = 0}) => {
+  const t = useAbs(start); const sh = useShot(id); const src = sh?.src ?? src0, at = sh?.in ?? at0, rate = sh?.rate ?? rate0;
   const s = zoom ? interpolate(t, [zoom[2], zoom[3]], [zoom[0], zoom[1]], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad)}) : 1;
   return <AbsoluteFill style={{overflow: 'hidden', background: '#000'}}>
     <OffthreadVideo muted src={staticFile(src)} startFrom={Math.round(at * 30)} playbackRate={rate}
@@ -56,7 +57,7 @@ export const Danmaku: React.FC = () => { const t = useAbs(6.35);
   const x = (d: {s: number; v: number}) => 1920 - (t - d.s) * d.v;
   const hx = x(HL); const hp = usePop(t, 8.42);
   return <AbsoluteFill>
-    <Clip src="clip-ramp.mp4" at={72.5} start={6.35} dark={0.45} blur={3} zoom={[1.05, 1.12, 6.35, 10.2]} />
+    <Clip id="comments-bg" src="clip-ramp.mp4" at={72.5} start={6.35} dark={0.45} blur={3} zoom={[1.05, 1.12, 6.35, 10.2]} />
     <Vignette />
     <Chip text="评论区问得最多" accent={C.amber} o={e(t, 6.4, 6.7)} />
     {DM.map((d, i) => { const xx = x(d); return t < d.s ? null : <div key={i} style={{position: 'absolute', left: xx, top: lanes(d.lane), fontFamily: F, fontWeight: 700, fontSize: 38, color: i % 5 === 2 ? '#ffd25a' : i % 5 === 4 ? '#8fd8ff' : '#fff', whiteSpace: 'nowrap', textShadow: '1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000', opacity: 0.92 - 0.35 * hp, zIndex: 30}}>{d.t}</div>; })}
@@ -73,7 +74,7 @@ export const Two: React.FC = () => { const t = useAbs(10.22);
       <div style={{fontFamily: F, fontWeight: 900, fontSize: 60, color: C.white, marginTop: 6}}>{a}</div>
       <div style={{fontFamily: F, fontSize: 30, color: C.dim, marginTop: 4}}>{b}</div></div>; };
   return <AbsoluteFill>
-    <Clip src="clip-ramp.mp4" at={40.0} start={10.22} zoom={[1.0, 1.1, 10.22, 13.1]} dark={0.15 + 0.3 * e(t, 11.2, 11.5)} />
+    <Clip id="two-bg" src="clip-ramp.mp4" at={40.0} start={10.22} zoom={[1.0, 1.1, 10.22, 13.1]} dark={0.15 + 0.3 * e(t, 11.2, 11.5)} />
     <Vignette />
     {card(11.42, '系统 ①', '车底风扇', '负责 吸', C.cyan, 330)}
     {card(11.66, '系统 ②', '冷气推进器', '负责 飞', C.amber, 1030)}
@@ -130,11 +131,11 @@ export const Buy: React.FC = () => { const t = useAbs(51.22);
   const S = 0.82, ox = 190, oy = 130; const hb = usePop(t, 59.5);
   const engZoom = 1 + 0.07 * e(t, 58.1, 60.8);
   return <AbsoluteFill style={{background: '#05070b'}}>
-    {t < 52.95 && <><Clip src="promo-garage.mp4" at={0} start={51.22} zoom={[1.0, 1.1, 51.22, 52.95]} /><Credit /></>}
-    {t >= 52.95 && t < 55.15 && <><Clip src="musk2028.mp4" at={0} start={52.95} zoom={[1.0, 1.08, 52.95, 55.15]} origin="50% 35%" />
+    {t < 52.95 && <><Clip id="buy-promo" src="promo-garage.mp4" at={0} start={51.22} zoom={[1.0, 1.1, 51.22, 52.95]} /><Credit /></>}
+    {t >= 52.95 && t < 55.15 && <><Clip id="buy-musk" src="musk2028.mp4" at={0} start={52.95} zoom={[1.0, 1.08, 52.95, 55.15]} origin="50% 35%" />
       <Vignette /><NumberPop x={140} y={560} big="2028" label="年 才量产" color={C.cyan} p={usePop(t, 53.1)} />
       <div style={{position: 'absolute', left: 144, top: 500, opacity: e(t, 53.4, 53.8), fontFamily: F, fontStyle: 'italic', fontSize: 28, color: C.dim, zIndex: 41}}>“We enter production in 2028.” — Elon Musk</div><Credit text="画面来源：Tesla 发布会" /></>}
-    {t >= 55.15 && t < 58.1 && <><Clip src="clip-ramp.mp4" at={82} start={55.15} zoom={[1.0, 1.1, 55.15, 58.1]} dark={0.2} /><Vignette />
+    {t >= 55.15 && t < 58.1 && <><Clip id="buy-closed" src="clip-ramp.mp4" at={82} start={55.15} zoom={[1.0, 1.1, 55.15, 58.1]} dark={0.2} /><Vignette />
       {(() => { const p = usePop(t, 56.8); return p <= 0 ? null : <div style={{position: 'absolute', left: 140, top: 520, opacity: Math.min(1, p), transform: `translateX(${(1 - Math.min(1, p)) * -30}px)`, zIndex: 41, padding: '22px 30px', borderRadius: 14, background: C.glass, borderLeft: `6px solid ${C.amber}`}}>
         <div style={{height: 14, width: 260, marginBottom: 14, background: `repeating-linear-gradient(45deg, ${C.amber} 0 18px, #111 18px 36px)`, borderRadius: 3}} />
         <div style={{fontFamily: F, fontWeight: 900, fontSize: 58, color: C.white}}>会飞版 仅限封闭场地</div>
@@ -156,7 +157,7 @@ export const Buy: React.FC = () => { const t = useAbs(51.22);
 /* ---------- S10 ending ---------- */
 export const End: React.FC = () => { const t = useAbs(61.27); const p = usePop(t, 62.1);
   return <AbsoluteFill>
-    <Clip src="clip-ramp-official.mp4" at={24.3} start={61.27} zoom={[1.0, 1.12, 61.27, 63.85]} dark={0.25 * e(t, 61.3, 61.8)} />
+    <Clip id="end" src="clip-ramp-official.mp4" at={24.3} start={61.27} zoom={[1.0, 1.12, 61.27, 63.85]} dark={0.25 * e(t, 61.3, 61.8)} />
     <Vignette />
     <div style={{position: 'absolute', left: 140, top: 380, zIndex: 41}}>
       <div style={{fontFamily: F, fontWeight: 700, fontSize: 48, color: C.dim, opacity: e(t, 61.3, 61.6)}}>如果真能买</div>
