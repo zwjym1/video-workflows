@@ -1,0 +1,283 @@
+[
+  {
+    "audio": "concept-voice.mp3",
+    "text": "再高级一点？改颜色，还是改排版？先锁定标题，再明确改法：放大。",
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+10%",
+    "duration": 8.304,
+    "frames": 250,
+    "tailSeconds": 0.6,
+    "speechDuration": 7.704,
+    "boundaries": [
+      {
+        "text": "再",
+        "offset": 0.095458,
+        "duration": 0.261375,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "高级",
+        "offset": 0.368166,
+        "duration": 0.261375,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "一点",
+        "offset": 0.640916,
+        "duration": 0.397708,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "改",
+        "offset": 1.556833,
+        "duration": 0.170458,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "颜色",
+        "offset": 1.727291,
+        "duration": 0.465916,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "还是",
+        "offset": 2.568166,
+        "duration": 0.272708,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "改排版",
+        "offset": 2.852291,
+        "duration": 0.625,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "先",
+        "offset": 4.0,
+        "duration": 0.295458,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "锁定",
+        "offset": 4.295458,
+        "duration": 0.329541,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "标题",
+        "offset": 4.636375,
+        "duration": 0.522708,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "再",
+        "offset": 5.306833,
+        "duration": 0.215875,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "明确",
+        "offset": 5.522708,
+        "duration": 0.306833,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "改法",
+        "offset": 5.840916,
+        "duration": 0.431833,
+        "type": "WordBoundary"
+      },
+      {
+        "text": "放大",
+        "offset": 6.488625,
+        "duration": 0.431833,
+        "type": "WordBoundary"
+      }
+    ],
+    "start": 0
+  },
+  {
+    "audio": "story-voice-1.mp3",
+    "text": "还要说清什么不改。按钮保留青色，说明弱化。这样，修改才有明确的边界。",
+    "start": 250,
+    "frames": 233,
+    "duration": 7.738,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+10%",
+    "tailSeconds": 0.25,
+    "boundaries": [
+      {
+        "text": "还要",
+        "offset": 0.095458,
+        "duration": 0.25
+      },
+      {
+        "text": "说",
+        "offset": 0.345458,
+        "duration": 0.136375
+      },
+      {
+        "text": "清",
+        "offset": 0.493166,
+        "duration": 0.215916
+      },
+      {
+        "text": "什么",
+        "offset": 0.731833,
+        "duration": 0.147708
+      },
+      {
+        "text": "不",
+        "offset": 0.890916,
+        "duration": 0.113625
+      },
+      {
+        "text": "改",
+        "offset": 1.004541,
+        "duration": 0.295458
+      },
+      {
+        "text": "按钮",
+        "offset": 1.806833,
+        "duration": 0.409083
+      },
+      {
+        "text": "保留",
+        "offset": 2.238625,
+        "duration": 0.295458
+      },
+      {
+        "text": "青色",
+        "offset": 2.545458,
+        "duration": 0.477291
+      },
+      {
+        "text": "说明",
+        "offset": 3.284083,
+        "duration": 0.352291
+      },
+      {
+        "text": "弱化",
+        "offset": 3.647708,
+        "duration": 0.409083
+      },
+      {
+        "text": "这样",
+        "offset": 4.579541,
+        "duration": 0.454541
+      },
+      {
+        "text": "修改",
+        "offset": 5.352291,
+        "duration": 0.363625
+      },
+      {
+        "text": "才有",
+        "offset": 5.727291,
+        "duration": 0.204541
+      },
+      {
+        "text": "明确",
+        "offset": 5.954541,
+        "duration": 0.284083
+      },
+      {
+        "text": "的",
+        "offset": 6.238625,
+        "duration": 0.056833
+      },
+      {
+        "text": "边界",
+        "offset": 6.306833,
+        "duration": 0.375
+      }
+    ]
+  },
+  {
+    "audio": "story-voice-2.mp3",
+    "text": "最后对照前后：标题更突出，其他内容保持。每条意见，都能检查。",
+    "start": 483,
+    "frames": 240,
+    "duration": 7.984,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+10%",
+    "tailSeconds": 1.0,
+    "boundaries": [
+      {
+        "text": "最后",
+        "offset": 0.095458,
+        "duration": 0.352291
+      },
+      {
+        "text": "对照",
+        "offset": 0.470458,
+        "duration": 0.227291
+      },
+      {
+        "text": "前后",
+        "offset": 0.709083,
+        "duration": 0.477291
+      },
+      {
+        "text": "标题",
+        "offset": 1.481833,
+        "duration": 0.397708
+      },
+      {
+        "text": "更",
+        "offset": 1.902291,
+        "duration": 0.147708
+      },
+      {
+        "text": "突出",
+        "offset": 2.05,
+        "duration": 0.420458
+      },
+      {
+        "text": "其他",
+        "offset": 2.663625,
+        "duration": 0.375
+      },
+      {
+        "text": "内容",
+        "offset": 3.05,
+        "duration": 0.215916
+      },
+      {
+        "text": "保持",
+        "offset": 3.277291,
+        "duration": 0.5
+      },
+      {
+        "text": "每",
+        "offset": 4.295458,
+        "duration": 0.261375
+      },
+      {
+        "text": "条",
+        "offset": 4.556833,
+        "duration": 0.147708
+      },
+      {
+        "text": "意见",
+        "offset": 4.715916,
+        "duration": 0.443166
+      },
+      {
+        "text": "都",
+        "offset": 5.443166,
+        "duration": 0.147708
+      },
+      {
+        "text": "能",
+        "offset": 5.590916,
+        "duration": 0.113625
+      },
+      {
+        "text": "检查",
+        "offset": 5.715916,
+        "duration": 0.454541
+      }
+    ]
+  }
+]

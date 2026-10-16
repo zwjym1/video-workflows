@@ -1,0 +1,13 @@
+export type Param=[number,number];
+export const X=[-1,-.5,0,.5,1];
+export const target=(x:number)=>.8*x+.5;
+export const predict=(x:number,[pa,pb]:Param)=>(.8+pa)*x+.5+pb;
+export const initial:Param=[1.2,1.2];
+export const loss=([a,b]:Param)=>.5*a*a+b*b;
+export const gradient=([a,b]:Param):Param=>[a,2*b];
+export const HEIGHT=.65;
+export const surface=([a,b]:Param,offset=0,rise=1):[number,number,number]=>[a,HEIGHT*loss([a,b])*rise+offset,b];
+export const update=(p:Param,eta:number):Param=>{const g=gradient(p);return[p[0]-eta*g[0],p[1]-eta*g[1]];};
+export const path=(eta:number,n:number)=>{const out:Param[]=[initial];for(let i=0;i<n;i++)out.push(update(out[out.length-1],eta));return out;};
+export const paths={normal:path(.35,9),small:path(.06,3),large:path(1.05,3)};
+export const at=(points:Param[],phase:number):Param=>{const n=Math.min(points.length-1,Math.max(0,phase)),i=Math.min(points.length-2,Math.floor(n)),t=n-i;return[points[i][0]+(points[i+1][0]-points[i][0])*t,points[i][1]+(points[i+1][1]-points[i][1])*t];};

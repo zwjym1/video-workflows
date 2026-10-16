@@ -1,0 +1,486 @@
+[
+  {
+    "text": "和 AI 改作品，你是不是也说过：再高级一点？",
+    "start": 0,
+    "frames": 166,
+    "duration": 5.516,
+    "speechDuration": 5.016,
+    "tailSeconds": 0.5,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "audio": "edge-voice-0.mp3",
+    "boundaries": [
+      {
+        "type": "WordBoundary",
+        "text": "和",
+        "offset": 0.1,
+        "duration": 0.3875
+      },
+      {
+        "type": "WordBoundary",
+        "text": "AI",
+        "offset": 0.6,
+        "duration": 0.5625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "改",
+        "offset": 1.1625,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "作品",
+        "offset": 1.3375,
+        "duration": 0.4625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "你",
+        "offset": 2.1625,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "是不是",
+        "offset": 2.325,
+        "duration": 0.3
+      },
+      {
+        "type": "WordBoundary",
+        "text": "也",
+        "offset": 2.6375,
+        "duration": 0.0625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "说",
+        "offset": 2.7125,
+        "duration": 0.225
+      },
+      {
+        "type": "WordBoundary",
+        "text": "过",
+        "offset": 2.9375,
+        "duration": 0.225
+      },
+      {
+        "type": "WordBoundary",
+        "text": "再",
+        "offset": 3.375,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "高级",
+        "offset": 3.55,
+        "duration": 0.3
+      },
+      {
+        "type": "WordBoundary",
+        "text": "一点",
+        "offset": 3.8625,
+        "duration": 0.2625
+      }
+    ]
+  },
+  {
+    "text": "把感觉拆成四件事。位置，哪里要改？问题，哪里不好？目标，改成什么？限制，保留什么？",
+    "start": 166,
+    "frames": 354,
+    "duration": 11.78,
+    "speechDuration": 11.28,
+    "tailSeconds": 0.5,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "audio": "edge-voice-1.mp3",
+    "boundaries": [
+      {
+        "type": "WordBoundary",
+        "text": "把",
+        "offset": 0.1,
+        "duration": 0.175
+      },
+      {
+        "type": "WordBoundary",
+        "text": "感觉",
+        "offset": 0.2875,
+        "duration": 0.375
+      },
+      {
+        "type": "WordBoundary",
+        "text": "拆",
+        "offset": 0.6875,
+        "duration": 0.2125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "成",
+        "offset": 0.9,
+        "duration": 0.175
+      },
+      {
+        "type": "WordBoundary",
+        "text": "四",
+        "offset": 1.1,
+        "duration": 0.225
+      },
+      {
+        "type": "WordBoundary",
+        "text": "件",
+        "offset": 1.325,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "事",
+        "offset": 1.4875,
+        "duration": 0.325
+      },
+      {
+        "type": "WordBoundary",
+        "text": "位置",
+        "offset": 2.375,
+        "duration": 0.55
+      },
+      {
+        "type": "WordBoundary",
+        "text": "哪里",
+        "offset": 3.2375,
+        "duration": 0.2875
+      },
+      {
+        "type": "WordBoundary",
+        "text": "要",
+        "offset": 3.5375,
+        "duration": 0.15
+      },
+      {
+        "type": "WordBoundary",
+        "text": "改",
+        "offset": 3.6875,
+        "duration": 0.4
+      },
+      {
+        "type": "WordBoundary",
+        "text": "问题",
+        "offset": 4.65,
+        "duration": 0.525
+      },
+      {
+        "type": "WordBoundary",
+        "text": "哪里",
+        "offset": 5.5375,
+        "duration": 0.275
+      },
+      {
+        "type": "WordBoundary",
+        "text": "不好",
+        "offset": 5.825,
+        "duration": 0.3875
+      },
+      {
+        "type": "WordBoundary",
+        "text": "目标",
+        "offset": 6.7875,
+        "duration": 0.525
+      },
+      {
+        "type": "WordBoundary",
+        "text": "改成",
+        "offset": 7.625,
+        "duration": 0.3125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "什么",
+        "offset": 7.95,
+        "duration": 0.325
+      },
+      {
+        "type": "WordBoundary",
+        "text": "限制",
+        "offset": 8.85,
+        "duration": 0.575
+      },
+      {
+        "type": "WordBoundary",
+        "text": "保留",
+        "offset": 9.825,
+        "duration": 0.2375
+      },
+      {
+        "type": "WordBoundary",
+        "text": "什么",
+        "offset": 10.075,
+        "duration": 0.325
+      }
+    ]
+  },
+  {
+    "text": "比如这个页面。标题太小，重点不清。把标题放大，说明弱化；按钮保留原来的青色。每一条，都能检查。",
+    "start": 520,
+    "frames": 374,
+    "duration": 12.452,
+    "speechDuration": 11.952,
+    "tailSeconds": 0.5,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "audio": "edge-voice-2.mp3",
+    "boundaries": [
+      {
+        "type": "WordBoundary",
+        "text": "比如",
+        "offset": 0.1,
+        "duration": 0.3125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "这个",
+        "offset": 0.4375,
+        "duration": 0.25
+      },
+      {
+        "type": "WordBoundary",
+        "text": "页面",
+        "offset": 0.7,
+        "duration": 0.45
+      },
+      {
+        "type": "WordBoundary",
+        "text": "标题",
+        "offset": 1.725,
+        "duration": 0.4
+      },
+      {
+        "type": "WordBoundary",
+        "text": "太",
+        "offset": 2.1375,
+        "duration": 0.225
+      },
+      {
+        "type": "WordBoundary",
+        "text": "小",
+        "offset": 2.3625,
+        "duration": 0.375
+      },
+      {
+        "type": "WordBoundary",
+        "text": "重点",
+        "offset": 3.05,
+        "duration": 0.3125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "不",
+        "offset": 3.375,
+        "duration": 0.1375
+      },
+      {
+        "type": "WordBoundary",
+        "text": "清",
+        "offset": 3.5125,
+        "duration": 0.3375
+      },
+      {
+        "type": "WordBoundary",
+        "text": "把",
+        "offset": 4.4,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "标题",
+        "offset": 4.575,
+        "duration": 0.3375
+      },
+      {
+        "type": "WordBoundary",
+        "text": "放大",
+        "offset": 4.925,
+        "duration": 0.4875
+      },
+      {
+        "type": "WordBoundary",
+        "text": "说明",
+        "offset": 5.6375,
+        "duration": 0.375
+      },
+      {
+        "type": "WordBoundary",
+        "text": "弱化",
+        "offset": 6.025,
+        "duration": 0.4625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "按钮",
+        "offset": 6.8125,
+        "duration": 0.4875
+      },
+      {
+        "type": "WordBoundary",
+        "text": "保留",
+        "offset": 7.3125,
+        "duration": 0.475
+      },
+      {
+        "type": "WordBoundary",
+        "text": "原来",
+        "offset": 7.8125,
+        "duration": 0.325
+      },
+      {
+        "type": "WordBoundary",
+        "text": "的",
+        "offset": 8.1375,
+        "duration": 0.075
+      },
+      {
+        "type": "WordBoundary",
+        "text": "青色",
+        "offset": 8.225,
+        "duration": 0.4875
+      },
+      {
+        "type": "WordBoundary",
+        "text": "每",
+        "offset": 9.2875,
+        "duration": 0.2125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "一条",
+        "offset": 9.5,
+        "duration": 0.5125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "都",
+        "offset": 10.325,
+        "duration": 0.15
+      },
+      {
+        "type": "WordBoundary",
+        "text": "能",
+        "offset": 10.475,
+        "duration": 0.1125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "检查",
+        "offset": 10.6,
+        "duration": 0.475
+      }
+    ]
+  },
+  {
+    "text": "再看前后对比。把模糊的不满意，写成看得见的变化。",
+    "start": 894,
+    "frames": 183,
+    "duration": 6.092,
+    "speechDuration": 5.592,
+    "tailSeconds": 0.5,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "audio": "edge-voice-3.mp3",
+    "boundaries": [
+      {
+        "type": "WordBoundary",
+        "text": "再",
+        "offset": 0.1,
+        "duration": 0.2
+      },
+      {
+        "type": "WordBoundary",
+        "text": "看",
+        "offset": 0.3,
+        "duration": 0.2
+      },
+      {
+        "type": "WordBoundary",
+        "text": "前后",
+        "offset": 0.525,
+        "duration": 0.35
+      },
+      {
+        "type": "WordBoundary",
+        "text": "对比",
+        "offset": 0.8875,
+        "duration": 0.475
+      },
+      {
+        "type": "WordBoundary",
+        "text": "把",
+        "offset": 1.9375,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "模糊",
+        "offset": 2.125,
+        "duration": 0.25
+      },
+      {
+        "type": "WordBoundary",
+        "text": "的",
+        "offset": 2.375,
+        "duration": 0.075
+      },
+      {
+        "type": "WordBoundary",
+        "text": "不",
+        "offset": 2.4625,
+        "duration": 0.1125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "满意",
+        "offset": 2.575,
+        "duration": 0.45
+      },
+      {
+        "type": "WordBoundary",
+        "text": "写",
+        "offset": 3.325,
+        "duration": 0.25
+      },
+      {
+        "type": "WordBoundary",
+        "text": "成",
+        "offset": 3.575,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "看",
+        "offset": 3.7625,
+        "duration": 0.1625
+      },
+      {
+        "type": "WordBoundary",
+        "text": "得",
+        "offset": 3.925,
+        "duration": 0.075
+      },
+      {
+        "type": "WordBoundary",
+        "text": "见",
+        "offset": 4.0125,
+        "duration": 0.125
+      },
+      {
+        "type": "WordBoundary",
+        "text": "的",
+        "offset": 4.1375,
+        "duration": 0.075
+      },
+      {
+        "type": "WordBoundary",
+        "text": "变化",
+        "offset": 4.225,
+        "duration": 0.475
+      }
+    ]
+  }
+]

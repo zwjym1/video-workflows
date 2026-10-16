@@ -1,0 +1,29 @@
+import React,{useMemo} from 'react';
+import {ThreeCanvas} from '@remotion/three';
+import {useThree} from '@react-three/fiber';
+import * as T from 'three';
+import {Param,loss,HEIGHT,surface,at,gradient,paths} from './model';
+export type View={position:[number,number,number];target:[number,number,number]};
+const VW=1080,VH=1400,TOP=170;
+export const project=(point:[number,number,number],view:View):[number,number]=>{const camera=new T.PerspectiveCamera(42,VW/VH,.1,100);camera.position.set(...view.position);camera.lookAt(...view.target);camera.updateMatrixWorld();const p=new T.Vector3(...point).project(camera);return[(p.x+1)*VW/2,TOP+(1-p.y)*VH/2];};
+const Camera:React.FC<{view:View}>=({view})=>{const{camera}=useThree();camera.position.set(...view.position);camera.lookAt(...view.target);camera.updateMatrixWorld();return null;};
+const Curve:React.FC<{points:[number,number,number][];color:string;radius?:number;opacity?:number}>=({points,color,radius=.018,opacity=1})=>{const curve=useMemo(()=>new T.CatmullRomCurve3(points.map(p=>new T.Vector3(...p)),false,'centripetal'),[points]);return <mesh><tubeGeometry args={[curve,Math.max(12,points.length*2),radius,6,false]}/><meshStandardMaterial color={color} transparent={opacity<1} opacity={opacity} roughness={.8}/></mesh>;};
+const Arrow:React.FC<{from:Param;to:Param;color:string;alpha:number}>=({from,to,color,alpha})=>{if(alpha<.01)return null;const end:Param=[from[0]+(to[0]-from[0])*alpha,from[1]+(to[1]-from[1])*alpha];const points:[number,number,number][]=[];for(let i=0;i<=20;i++)points.push(surface([from[0]+(end[0]-from[0])*i/20,from[1]+(end[1]-from[1])*i/20],.06));const a=new T.Vector3(...points[19]),b=new T.Vector3(...points[20]),q=new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0),b.clone().sub(a).normalize());return <><Curve points={points} color={color} radius={.027}/><mesh position={b} quaternion={q} scale={Math.min(1,alpha*3)}><coneGeometry args={[.09,.2,14]}/><meshStandardMaterial color={color}/></mesh></>;};
+const Surface:React.FC<{rise:number}>=({rise})=>{const geo=useMemo(()=>{const g=new T.PlaneGeometry(4.2,4.6,32,34);g.rotateX(-Math.PI/2);const a=g.attributes.position;for(let i=0;i<a.count;i++)a.setY(i,HEIGHT*loss([a.getX(i),a.getZ(i)])*rise);g.computeVertexNormals();return g;},[rise]);return <><mesh geometry={geo}><meshStandardMaterial color="#c8d2bd" roughness={1} transparent opacity={.9}/></mesh><mesh geometry={geo} position={[0,.008,0]}><meshBasicMaterial color="#8a9984" wireframe transparent opacity={.11}/></mesh></>;};
+const Trace:React.FC<{points:Param[];phase:number;color:string;opacity?:number;rise?:number}>=({points,phase,color,opacity=1,rise=1})=>{const p=at(points,phase),track:[number,number,number][]=[];for(let n=0;n<phase;n+=.04)track.push(surface(at(points,n),.055,rise));track.push(surface(p,.055,rise));return <>{track.length>1&&<Curve points={track} color={color} radius={.025} opacity={opacity}/>}<mesh position={surface(p,.15,rise)}><sphereGeometry args={[.13,26,20]}/><meshStandardMaterial color={color} roughness={.3} transparent opacity={opacity}/></mesh>{points.slice(0,Math.floor(phase)+1).map((v,i)=><mesh key={i} position={surface(v,.05,rise)}><sphereGeometry args={[.034,10,10]}/><meshStandardMaterial color={color}/></mesh>)}</>;};
+export const World:React.FC<{view:View;rise:number;mainPhase:number;mainPoints:Param[];arrowOrigin:Param;compare:number;comparisonPhase:number;componentA:number;componentB:number;combined:number;slices:number;ballAlpha:number}>=({view,rise,mainPhase,mainPoints,arrowOrigin,compare,comparisonPhase,componentA,componentB,combined,slices,ballAlpha})=>{
+ const p=arrowOrigin,g=gradient(p),da:Param=[p[0]-.35*g[0],p[1]],db:Param=[p[0],p[1]-.35*g[1]],sum:Param=[da[0],db[1]];
+ const cutA:[number,number,number][]=[],cutB:[number,number,number][]=[];
+ for(let n=-1;n<=1.001;n+=.04){cutA.push(surface([p[0]+n*.7,p[1]],.035));cutB.push(surface([p[0],p[1]+n*.7],.035));}
+ const current=at(mainPoints,mainPhase),pos=surface(current,.06,rise);
+ return <div style={{position:'absolute',left:0,top:TOP,width:VW,height:VH}}><ThreeCanvas width={VW} height={VH} camera={{position:view.position,fov:42}} gl={{antialias:true,alpha:true}}><Camera view={view}/><ambientLight intensity={1.5}/><directionalLight position={[4,9,5]} intensity={2.3}/><directionalLight position={[-4,5,-3]} intensity={.6}/>
+ <gridHelper args={[5,10,'#b8a98e','#ddd2ba']} position={[0,-.06,0]}/><Surface rise={rise}/>
+ <Curve points={[[-2.35,-.035,2.5],[2.35,-.035,2.5]]} color="#a34632" radius={.012}/><Curve points={[[-2.35,-.035,2.5],[-2.35,-.035,-2.5]]} color="#245f51" radius={.012}/>
+ {slices>.01&&<><Curve points={cutA} color="#a34632" radius={.022} opacity={slices}/><Curve points={cutB} color="#245f51" radius={.022} opacity={slices}/></>}
+ <Arrow from={p} to={da} color="#a34632" alpha={componentA}/><Arrow from={p} to={db} color="#245f51" alpha={componentB}/><Arrow from={p} to={sum} color="#b37a2f" alpha={combined}/>
+ {combined>.01&&<><Curve points={[surface(da,.03),surface(sum,.03)]} color="#c4ab7e" radius={.009} opacity={combined*.55}/><Curve points={[surface(db,.03),surface(sum,.03)]} color="#c4ab7e" radius={.009} opacity={combined*.55}/></>}
+ {compare<.99&&ballAlpha>.01&&<Trace points={mainPoints} phase={mainPhase} color={mainPoints===paths.large?'#a34632':mainPoints===paths.small?'#9b835e':'#245f51'} opacity={ballAlpha*(1-compare)} rise={rise}/>}
+ {compare>.01&&<><Trace points={paths.small} phase={comparisonPhase} color="#9b835e" opacity={compare}/><Trace points={paths.large} phase={comparisonPhase} color="#a34632" opacity={compare}/><Trace points={paths.normal} phase={comparisonPhase} color="#245f51" opacity={compare}/></>}
+ <Curve points={[[current[0],0,current[1]],pos]} color="#b89762" radius={.012} opacity={compare>.01?0:.6*rise}/>
+ </ThreeCanvas></div>;
+};

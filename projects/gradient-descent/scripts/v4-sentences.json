@@ -1,0 +1,68 @@
+[
+ {
+  "text": "AI的学习，很大程度上，就是在下山。",
+  "cue": "[excited, confident] ",
+  "speed": 1.1,
+  "pause": 0.25
+ },
+ {
+  "text": "可是，它看不见山，只知道误差。",
+  "cue": "[lowering voice, mysterious] ",
+  "speed": 1.0,
+  "pause": 0.15
+ },
+ {
+  "text": "它怎么知道，往哪走？",
+  "cue": "[curious] ",
+  "speed": 1.0,
+  "pause": 0.35
+ },
+ {
+  "text": "用学习时长预测成绩，一条直线，两个参数：斜率a，截距b。",
+  "cue": "[calm, explaining clearly] ",
+  "speed": 1.12,
+  "pause": 0.2
+ },
+ {
+  "text": "铺成一张地图，每个点，就是一条线。",
+  "cue": "",
+  "speed": 1.1,
+  "pause": 0.2
+ },
+ {
+  "text": "把误差抬起来，就成了山。",
+  "cue": "[with emphasis, a little amazed] ",
+  "speed": 1.04,
+  "pause": 0.3
+ },
+ {
+  "text": "站在这里，沿着a方向测一测坡，再沿着b方向测一测，合起来，就是最陡的下坡：负梯度。",
+  "cue": "[focused] ",
+  "speed": 1.1,
+  "pause": 0.35
+ },
+ {
+  "text": "这个想法，一八四七年，柯西就写下了：让函数不断变小。",
+  "cue": "[warm, storytelling] ",
+  "speed": 1.0,
+  "pause": 0.3
+ },
+ {
+  "text": "不过，步子迈多大，很关键。",
+  "cue": "[serious] ",
+  "speed": 1.0,
+  "pause": 0.2
+ },
+ {
+  "text": "太小，三步还剩一点一六五；太大，冲过了头，二点五五一；合适，只剩零点零五五。",
+  "cue": "[lively] ",
+  "speed": 1.12,
+  "pause": 0.3
+ },
+ {
+  "text": "一步步走，这条线，就贴上了数据。",
+  "cue": "[satisfied, gentle] ",
+  "speed": 0.98,
+  "pause": 0.6
+ }
+]

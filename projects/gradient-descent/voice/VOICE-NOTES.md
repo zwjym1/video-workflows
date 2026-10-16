@@ -1,0 +1,12 @@
+# v4 配音选择记录
+- 接口：Fish `s2.1-pro-free`，`/v1/tts/stream/with-timestamp`；每句单独生成，句首加 S2 方括号情绪提示，每句单独设语速，然后在 `scripts/v4-stitch.py` 里按句插入停顿，拼成一条音轨。依据官方文档 https://docs.fish.audio/developer-guide/core-features/emotions 和 https://docs.fish.audio/api-reference/endpoint/openapi-v1/text-to-speech
+- 读错字的修正：“AI学东西”改成“AI的学习”（5 个声音的 ASR 都没再出错）；“摊成”改成“铺成”；“沿a量坡”改成“沿着a方向测一测坡”，因为“量”被读成 liàng；“但步子多大”改成“不过，步子迈多大”。
+- 试过的声音（每个声音生成第 0、2、7 句，用 ASR 和音高统计比较）：
+  - 不指定参考声音：准确率高，但每句的中位音高在 87–314 Hz 之间乱跳，**每句像换了个人**，弃用。
+  - 嘉岚 3.0：字错率高（“黑暗的学习”）。
+  - 央视配音：第 7 句结尾被识别成英文乱码。
+  - 影视解说 39ea…：“函数”被识别成“韩束”等，问题较多。
+  - **选用：影视解说 b4bdf5dc66004241a21ff2df165bf442**（男声解说），指定固定 reference_id，保证全片是同一个声音。
+- 每句生成两遍（fa/fb），按以下顺序择优：拼音字错率（不计声调）最低 → 音高标准差（半音）更大。第 10 句手动选 fb，因为 fa 听写出来是“一步不走”。选择结果见 `selection.json`，评测数据见 `eval-fa.json`、`eval-fb.json`。
+- 已知局限：pyin 音高估计偶尔出现八度跳变，所以“音高起伏”的数值只能做粗略参考；我没有用耳朵听过。
+- 母版 ASR（faster-whisper small）：拼音字错率 0.000，汉字字错率 0.036。汉字层面的差异全是同音字：它/他、柯西/科西、时长/时常、负/副、迈/卖、步子/布子。见 `final-asr.json`。

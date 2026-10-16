@@ -1,0 +1,42 @@
+{
+  "name": "feedback-video-sample",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "render": "remotion render src/index.tsx Feedback output/sample.mp4",
+    "check": "tsc --noEmit",
+    "render:v2": "remotion render src/index.tsx Continuous output/sample-v2.mp4 --concurrency=4",
+    "render:v3": "remotion render src/index.tsx Snappy output/sample-v3.mp4 --concurrency=4",
+    "render:v4": "remotion render src/index.tsx Guided output/sample-v4.mp4 --concurrency=4",
+    "render:concept": "remotion render src/index.tsx Concept output/concept-study.mp4 --concurrency=4",
+    "render:story": "remotion render src/index.tsx Story output/story-full.mp4 --concurrency=4",
+    "render:gradient": "remotion render src/index.tsx Gradient output/gradient-descent.mp4 --concurrency=2 --gl=angle",
+    "render:gradient-dynamic": "remotion render src/index.tsx GradientDynamic output/gradient-descent-dynamic.mp4 --concurrency=2 --gl=angle",
+    "render:gradient-focus": "remotion render src/index.tsx GradientFocus output/gradient-descent-focus.mp4 --concurrency=2 --gl=angle",
+    "render:gradient-sync": "remotion render src/index.tsx GradientSync output/gradient-descent-sync.mp4 --concurrency=2 --gl=angle",
+    "render:gradient-story": "remotion render src/index.tsx GradientStory output/gradient-descent-story.mp4 --concurrency=2 --gl=angle",
+    "render:gradient-view": "remotion render src/index.tsx GradientViewTest output/gradient-view-test.mp4 --concurrency=2 --gl=angle",
+    "render:gradient-view-2": "remotion render src/index.tsx GradientViewTest2 output/gradient-view-test-2.mp4 --concurrency=2 --gl=angle",
+    "render:v3-cauchy": "remotion render src/index.tsx V3CauchyHook output/v3-cauchy-hook.mp4 --concurrency=4",
+    "render:v3-chalk": "remotion render src/index.tsx V3ChalkSteps output/v3-chalk-steps.mp4 --concurrency=4",
+    "render:v3-full": "remotion render src/index.tsx GradientV3Full output/gradient-v3-full.mp4 --concurrency=2 --gl=angle",
+    "render:v4-full": "remotion render src/index.tsx GradientV4Full output/gradient-v4-full.mp4 --concurrency=2 --gl=angle"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "^4.0.535",
+    "@remotion/media": "^4.0.535",
+    "@remotion/three": "^4.0.535",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.535",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,1081 @@
+{
+  "audio": "fish-gradient-full.mp3",
+  "duration": 26.801563,
+  "frames": 810,
+  "boundaries": [
+    {
+      "text": "AI",
+      "offset": 0.08,
+      "duration": 0.39999999999999997
+    },
+    {
+      "text": "学",
+      "offset": 0.64,
+      "duration": 0.31999999999999995
+    },
+    {
+      "text": "习",
+      "offset": 0.96,
+      "duration": 0.0
+    },
+    {
+      "text": "到",
+      "offset": 1.12,
+      "duration": 0.15999999999999992
+    },
+    {
+      "text": "底",
+      "offset": 1.28,
+      "duration": 0.15999999999999992
+    },
+    {
+      "text": "在",
+      "offset": 1.44,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "改",
+      "offset": 1.6,
+      "duration": 0.15999999999999992
+    },
+    {
+      "text": "什",
+      "offset": 1.76,
+      "duration": 0.15999999999999992
+    },
+    {
+      "text": "么",
+      "offset": 1.92,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "把",
+      "offset": 2.56,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "两",
+      "offset": 2.64,
+      "duration": 0.1599999999999997
+    },
+    {
+      "text": "个",
+      "offset": 2.8,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "参",
+      "offset": 2.88,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "数",
+      "offset": 3.12,
+      "duration": 0.23999999999999977
+    },
+    {
+      "text": "画",
+      "offset": 3.44,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "成",
+      "offset": 3.6,
+      "duration": 0.1599999999999997
+    },
+    {
+      "text": "一",
+      "offset": 3.76,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "张",
+      "offset": 3.84,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "地",
+      "offset": 4.0,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "图",
+      "offset": 4.16,
+      "duration": 0.3200000000000003
+    },
+    {
+      "text": "位",
+      "offset": 4.88,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "置",
+      "offset": 5.12,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "代",
+      "offset": 5.28,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "表",
+      "offset": 5.44,
+      "duration": 0.15999999999999925
+    },
+    {
+      "text": "参",
+      "offset": 5.6,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "数",
+      "offset": 5.76,
+      "duration": 0.3200000000000003
+    },
+    {
+      "text": "高",
+      "offset": 6.24,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "度",
+      "offset": 6.48,
+      "duration": 0.15999999999999925
+    },
+    {
+      "text": "代",
+      "offset": 6.64,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "表",
+      "offset": 6.8,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "误",
+      "offset": 6.88,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "差",
+      "offset": 7.04,
+      "duration": 0.3200000000000003
+    },
+    {
+      "text": "根",
+      "offset": 7.68,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "据",
+      "offset": 7.84,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "当",
+      "offset": 8.0,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "前",
+      "offset": 8.16,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "位",
+      "offset": 8.32,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "置",
+      "offset": 8.48,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "的",
+      "offset": 8.56,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "坡",
+      "offset": 8.64,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "度",
+      "offset": 8.88,
+      "duration": 0.23999999999999844
+    },
+    {
+      "text": "朝",
+      "offset": 9.28,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "误",
+      "offset": 9.44,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "差",
+      "offset": 9.6,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "减",
+      "offset": 9.76,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "小",
+      "offset": 9.92,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "的",
+      "offset": 10.08,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "方",
+      "offset": 10.16,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "向",
+      "offset": 10.32,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "调",
+      "offset": 10.64,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "整",
+      "offset": 10.8,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "一",
+      "offset": 10.96,
+      "duration": 0.15999999999999837
+    },
+    {
+      "text": "步",
+      "offset": 11.12,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "再",
+      "offset": 11.44,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "计",
+      "offset": 11.6,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "算",
+      "offset": 11.76,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "再",
+      "offset": 12.08,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "调",
+      "offset": 12.32,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "整",
+      "offset": 12.48,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "这",
+      "offset": 12.96,
+      "duration": 0.15999999999999837
+    },
+    {
+      "text": "就",
+      "offset": 13.12,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "是",
+      "offset": 13.2,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "梯",
+      "offset": 13.28,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "度",
+      "offset": 13.44,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "下",
+      "offset": 13.6,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "降",
+      "offset": 13.76,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "步",
+      "offset": 14.4,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "子",
+      "offset": 14.56,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "也",
+      "offset": 14.72,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "有",
+      "offset": 14.8,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "讲",
+      "offset": 14.88,
+      "duration": 0.23999999999999844
+    },
+    {
+      "text": "究",
+      "offset": 15.12,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "太",
+      "offset": 15.52,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "小",
+      "offset": 15.68,
+      "duration": 0.3200000000000003
+    },
+    {
+      "text": "走",
+      "offset": 16.08,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "得",
+      "offset": 16.24,
+      "duration": 0.08000000000000185
+    },
+    {
+      "text": "慢",
+      "offset": 16.32,
+      "duration": 0.23999999999999844
+    },
+    {
+      "text": "太",
+      "offset": 16.93498866213152,
+      "duration": 0.15999999999999998
+    },
+    {
+      "text": "大",
+      "offset": 17.09498866213152,
+      "duration": 0.32000000000000006
+    },
+    {
+      "text": "可",
+      "offset": 17.49498866213152,
+      "duration": 0.07999999999999996
+    },
+    {
+      "text": "能",
+      "offset": 17.57498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "来",
+      "offset": 17.73498866213152,
+      "duration": 0.07999999999999985
+    },
+    {
+      "text": "回",
+      "offset": 17.81498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "跳",
+      "offset": 17.97498866213152,
+      "duration": 0.31999999999999984
+    },
+    {
+      "text": "换",
+      "offset": 18.61498866213152,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "回",
+      "offset": 18.854988662131518,
+      "duration": 0.1599999999999997
+    },
+    {
+      "text": "合",
+      "offset": 19.01498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "适",
+      "offset": 19.17498866213152,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "的",
+      "offset": 19.25498866213152,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "步",
+      "offset": 19.33498866213152,
+      "duration": 0.1599999999999997
+    },
+    {
+      "text": "长",
+      "offset": 19.49498866213152,
+      "duration": 0.3200000000000003
+    },
+    {
+      "text": "更",
+      "offset": 19.97498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "稳",
+      "offset": 20.13498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "地",
+      "offset": 20.29498866213152,
+      "duration": 0.07999999999999963
+    },
+    {
+      "text": "降",
+      "offset": 20.37498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "低",
+      "offset": 20.534988662131518,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "误",
+      "offset": 20.69498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "差",
+      "offset": 20.854988662131518,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "这",
+      "offset": 21.41498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "是",
+      "offset": 21.57498866213152,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "两",
+      "offset": 21.65498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "参",
+      "offset": 21.81498866213152,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "数",
+      "offset": 22.05498866213152,
+      "duration": 0.07999999999999918
+    },
+    {
+      "text": "示",
+      "offset": 22.13498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "意",
+      "offset": 22.29498866213152,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "真",
+      "offset": 22.69498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "实",
+      "offset": 22.854988662131518,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "模",
+      "offset": 23.014988662131522,
+      "duration": 0.15999999999999925
+    },
+    {
+      "text": "型",
+      "offset": 23.17498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "维",
+      "offset": 23.33498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "度",
+      "offset": 23.49498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "更",
+      "offset": 23.65498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "高",
+      "offset": 23.81498866213152,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "球",
+      "offset": 24.29498866213152,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "表",
+      "offset": 24.534988662131518,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "示",
+      "offset": 24.69498866213152,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "参",
+      "offset": 24.77498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "数",
+      "offset": 24.93498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "位",
+      "offset": 25.09498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "置",
+      "offset": 25.25498866213152,
+      "duration": 0.2400000000000002
+    },
+    {
+      "text": "不",
+      "offset": 25.57498866213152,
+      "duration": 0.15999999999999837
+    },
+    {
+      "text": "是",
+      "offset": 25.73498866213152,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "自",
+      "offset": 25.81498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "己",
+      "offset": 25.97498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "滚",
+      "offset": 26.13498866213152,
+      "duration": 0.16000000000000014
+    },
+    {
+      "text": "下",
+      "offset": 26.29498866213152,
+      "duration": 0.08000000000000007
+    },
+    {
+      "text": "山",
+      "offset": 26.37498866213152,
+      "duration": 0.2400000000000002
+    }
+  ],
+  "events": {
+    "axis": {
+      "frame": 79,
+      "end": 101,
+      "text": "两个参数"
+    },
+    "grid": {
+      "frame": 103,
+      "end": 113,
+      "text": "画成"
+    },
+    "rise": {
+      "frame": 187,
+      "end": 199,
+      "text": "高度"
+    },
+    "slope": {
+      "frame": 259,
+      "end": 274,
+      "text": "坡度"
+    },
+    "direction": {
+      "frame": 278,
+      "end": 317,
+      "text": "朝误差减小的方向"
+    },
+    "update": {
+      "frame": 319,
+      "end": 341,
+      "text": "调整一步"
+    },
+    "recalculate": {
+      "frame": 343,
+      "end": 360,
+      "text": "再计算"
+    },
+    "readjust": {
+      "frame": 362,
+      "end": 377,
+      "text": "再调整"
+    },
+    "term": {
+      "frame": 398,
+      "end": 420,
+      "text": "梯度下降"
+    },
+    "steps": {
+      "frame": 432,
+      "end": 461,
+      "text": "步子也有讲究"
+    },
+    "small": {
+      "frame": 466,
+      "end": 480,
+      "text": "太小"
+    },
+    "big": {
+      "frame": 508,
+      "end": 522,
+      "text": "太大"
+    },
+    "normal": {
+      "frame": 558,
+      "end": 594,
+      "text": "换回合适的步长"
+    },
+    "steady": {
+      "frame": 599,
+      "end": 633,
+      "text": "更稳地降低误差"
+    },
+    "caveat": {
+      "frame": 642,
+      "end": 676,
+      "text": "这是两参数示意"
+    },
+    "ball": {
+      "frame": 729,
+      "end": 765,
+      "text": "球表示参数位置"
+    }
+  },
+  "updates": {
+    "first": [
+      {
+        "start": 327,
+        "end": 341,
+        "arrow": 312
+      },
+      {
+        "start": 363,
+        "end": 377,
+        "arrow": 355
+      },
+      {
+        "start": 382,
+        "end": 394,
+        "arrow": 377
+      }
+    ],
+    "small": [
+      {
+        "start": 469,
+        "end": 477,
+        "arrow": 464
+      },
+      {
+        "start": 481,
+        "end": 489,
+        "arrow": 476
+      },
+      {
+        "start": 493,
+        "end": 501,
+        "arrow": 488
+      }
+    ],
+    "big": [
+      {
+        "start": 511,
+        "end": 521,
+        "arrow": 506
+      },
+      {
+        "start": 526,
+        "end": 535,
+        "arrow": 521
+      },
+      {
+        "start": 540,
+        "end": 550,
+        "arrow": 535
+      }
+    ],
+    "normal": [
+      {
+        "start": 561,
+        "end": 573,
+        "arrow": 556
+      },
+      {
+        "start": 587,
+        "end": 599,
+        "arrow": 582
+      },
+      {
+        "start": 613,
+        "end": 625,
+        "arrow": 608
+      }
+    ],
+    "continue": [
+      {
+        "start": 648,
+        "end": 656,
+        "arrow": 644
+      },
+      {
+        "start": 660,
+        "end": 668,
+        "arrow": 656
+      },
+      {
+        "start": 672,
+        "end": 680,
+        "arrow": 668
+      },
+      {
+        "start": 684,
+        "end": 692,
+        "arrow": 680
+      },
+      {
+        "start": 696,
+        "end": 704,
+        "arrow": 692
+      },
+      {
+        "start": 708,
+        "end": 716,
+        "arrow": 704
+      }
+    ]
+  },
+  "captions": [
+    {
+      "frame": 2,
+      "text": "AI 学习，到底在改什么？"
+    },
+    {
+      "frame": 77,
+      "text": "把两个参数，画成一张地图"
+    },
+    {
+      "frame": 146,
+      "text": "位置代表参数，高度代表误差"
+    },
+    {
+      "frame": 230,
+      "text": "根据当前位置的坡度"
+    },
+    {
+      "frame": 278,
+      "text": "朝误差减小的方向，调整一步"
+    },
+    {
+      "frame": 343,
+      "text": "再计算，再调整"
+    },
+    {
+      "frame": 389,
+      "text": "这就是梯度下降"
+    },
+    {
+      "frame": 432,
+      "text": "步子也有讲究"
+    },
+    {
+      "frame": 466,
+      "text": "太小，走得慢"
+    },
+    {
+      "frame": 508,
+      "text": "太大，可能来回跳"
+    },
+    {
+      "frame": 558,
+      "text": "换回合适的步长"
+    },
+    {
+      "frame": 599,
+      "text": "更稳地降低误差"
+    },
+    {
+      "frame": 642,
+      "text": "这是两参数示意，真实模型维度更高"
+    },
+    {
+      "frame": 729,
+      "text": "球表示参数位置，不是自己滚下山"
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 103,
+      "audio": "sync-paper.wav",
+      "volume": 0.16
+    },
+    {
+      "frame": 187,
+      "audio": "sync-paper.wav",
+      "volume": 0.14
+    },
+    {
+      "frame": 278,
+      "audio": "sync-arrow.wav",
+      "volume": 0.18
+    },
+    {
+      "frame": 343,
+      "audio": "sync-arrow.wav",
+      "volume": 0.12
+    },
+    {
+      "frame": 341,
+      "audio": "sync-tap.wav",
+      "volume": 0.15
+    },
+    {
+      "frame": 355,
+      "audio": "sync-arrow.wav",
+      "volume": 0.08
+    },
+    {
+      "frame": 377,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 377,
+      "audio": "sync-arrow.wav",
+      "volume": 0.08
+    },
+    {
+      "frame": 394,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 464,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 477,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 476,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 489,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 488,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 501,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 506,
+      "audio": "sync-sweep.wav",
+      "volume": 0.12
+    },
+    {
+      "frame": 521,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 521,
+      "audio": "sync-sweep.wav",
+      "volume": 0.12
+    },
+    {
+      "frame": 535,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 535,
+      "audio": "sync-sweep.wav",
+      "volume": 0.12
+    },
+    {
+      "frame": 550,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 556,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 573,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 582,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 599,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 608,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 625,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 644,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 656,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 656,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 668,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 668,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 680,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 680,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 692,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 692,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 704,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    },
+    {
+      "frame": 704,
+      "audio": "sync-arrow.wav",
+      "volume": 0.055
+    },
+    {
+      "frame": 716,
+      "audio": "sync-tap.wav",
+      "volume": 0.065
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+[
+  {
+    "audio": "gradient-0.mp3",
+    "text": "AI学习，到底在改什么？把两个参数，画成一张地图。位置代表参数，高度代表误差。",
+    "start": 0,
+    "duration": 8.678,
+    "frames": 261,
+    "boundaries": [
+      {
+        "text": "AI",
+        "offset": 0.095458,
+        "duration": 0.340916
+      },
+      {
+        "text": "学习",
+        "offset": 0.447708,
+        "duration": 0.5
+      },
+      {
+        "text": "到底",
+        "offset": 1.186375,
+        "duration": 0.227291
+      },
+      {
+        "text": "在",
+        "offset": 1.425,
+        "duration": 0.090916
+      },
+      {
+        "text": "改",
+        "offset": 1.527291,
+        "duration": 0.125
+      },
+      {
+        "text": "什么",
+        "offset": 1.652291,
+        "duration": 0.329541
+      },
+      {
+        "text": "把",
+        "offset": 2.488625,
+        "duration": 0.159083
+      },
+      {
+        "text": "两",
+        "offset": 2.659083,
+        "duration": 0.147708
+      },
+      {
+        "text": "个",
+        "offset": 2.806833,
+        "duration": 0.056833
+      },
+      {
+        "text": "参数",
+        "offset": 2.875,
+        "duration": 0.5
+      },
+      {
+        "text": "画成",
+        "offset": 3.670458,
+        "duration": 0.306833
+      },
+      {
+        "text": "一",
+        "offset": 4.0,
+        "duration": 0.090916
+      },
+      {
+        "text": "张",
+        "offset": 4.090916,
+        "duration": 0.136375
+      },
+      {
+        "text": "地图",
+        "offset": 4.238625,
+        "duration": 0.431833
+      },
+      {
+        "text": "位置",
+        "offset": 5.193166,
+        "duration": 0.318166
+      },
+      {
+        "text": "代表",
+        "offset": 5.534083,
+        "duration": 0.227291
+      },
+      {
+        "text": "参数",
+        "offset": 5.772708,
+        "duration": 0.488625
+      },
+      {
+        "text": "高度",
+        "offset": 6.545458,
+        "duration": 0.306833
+      },
+      {
+        "text": "代表",
+        "offset": 6.863625,
+        "duration": 0.238625
+      },
+      {
+        "text": "误差",
+        "offset": 7.113625,
+        "duration": 0.397708
+      }
+    ]
+  },
+  {
+    "audio": "gradient-1.mp3",
+    "text": "根据当前位置的坡度，朝误差减小的方向，调整一步。再计算，再调整，这就是梯度下降。",
+    "start": 261,
+    "duration": 8.51,
+    "frames": 256,
+    "boundaries": [
+      {
+        "text": "根据",
+        "offset": 0.095458,
+        "duration": 0.340916
+      },
+      {
+        "text": "当前",
+        "offset": 0.459083,
+        "duration": 0.306833
+      },
+      {
+        "text": "位置",
+        "offset": 0.777291,
+        "duration": 0.22725
+      },
+      {
+        "text": "的",
+        "offset": 1.004541,
+        "duration": 0.068166
+      },
+      {
+        "text": "坡度",
+        "offset": 1.084083,
+        "duration": 0.431833
+      },
+      {
+        "text": "朝",
+        "offset": 1.709083,
+        "duration": 0.238625
+      },
+      {
+        "text": "误差",
+        "offset": 1.947708,
+        "duration": 0.318166
+      },
+      {
+        "text": "减小",
+        "offset": 2.288625,
+        "duration": 0.318166
+      },
+      {
+        "text": "的",
+        "offset": 2.606833,
+        "duration": 0.056833
+      },
+      {
+        "text": "方向",
+        "offset": 2.675,
+        "duration": 0.409083
+      },
+      {
+        "text": "调整",
+        "offset": 3.254541,
+        "duration": 0.397708
+      },
+      {
+        "text": "一",
+        "offset": 3.663625,
+        "duration": 0.090916
+      },
+      {
+        "text": "步",
+        "offset": 3.754541,
+        "duration": 0.170458
+      },
+      {
+        "text": "再",
+        "offset": 4.420458,
+        "duration": 0.193166
+      },
+      {
+        "text": "计算",
+        "offset": 4.613625,
+        "duration": 0.431833
+      },
+      {
+        "text": "再",
+        "offset": 5.272708,
+        "duration": 0.215916
+      },
+      {
+        "text": "调整",
+        "offset": 5.488625,
+        "duration": 0.443166
+      },
+      {
+        "text": "这",
+        "offset": 6.170458,
+        "duration": 0.159083
+      },
+      {
+        "text": "就",
+        "offset": 6.340916,
+        "duration": 0.113625
+      },
+      {
+        "text": "是",
+        "offset": 6.454541,
+        "duration": 0.113625
+      },
+      {
+        "text": "梯度",
+        "offset": 6.590916,
+        "duration": 0.329541
+      },
+      {
+        "text": "下降",
+        "offset": 6.931833,
+        "duration": 0.409083
+      }
+    ]
+  },
+  {
+    "audio": "gradient-2.mp3",
+    "text": "步子也有讲究。太小，走得慢；太大，可能来回跳。换回合适的步长，更稳地降低误差。",
+    "start": 517,
+    "duration": 9.206,
+    "frames": 277,
+    "boundaries": [
+      {
+        "text": "步子",
+        "offset": 0.095458,
+        "duration": 0.306833
+      },
+      {
+        "text": "也有",
+        "offset": 0.402291,
+        "duration": 0.204541
+      },
+      {
+        "text": "讲究",
+        "offset": 0.618166,
+        "duration": 0.5
+      },
+      {
+        "text": "太",
+        "offset": 1.636375,
+        "duration": 0.238625
+      },
+      {
+        "text": "小",
+        "offset": 1.875,
+        "duration": 0.375
+      },
+      {
+        "text": "走",
+        "offset": 2.477291,
+        "duration": 0.181791
+      },
+      {
+        "text": "得",
+        "offset": 2.659083,
+        "duration": 0.068166
+      },
+      {
+        "text": "慢",
+        "offset": 2.727291,
+        "duration": 0.227291
+      },
+      {
+        "text": "太",
+        "offset": 3.329541,
+        "duration": 0.227291
+      },
+      {
+        "text": "大",
+        "offset": 3.556833,
+        "duration": 0.306833
+      },
+      {
+        "text": "可能",
+        "offset": 4.090916,
+        "duration": 0.227291
+      },
+      {
+        "text": "来回",
+        "offset": 4.329541,
+        "duration": 0.284083
+      },
+      {
+        "text": "跳",
+        "offset": 4.613625,
+        "duration": 0.25
+      },
+      {
+        "text": "换回",
+        "offset": 5.375,
+        "duration": 0.409083
+      },
+      {
+        "text": "合适",
+        "offset": 5.806833,
+        "duration": 0.25
+      },
+      {
+        "text": "的",
+        "offset": 6.056833,
+        "duration": 0.068166
+      },
+      {
+        "text": "步长",
+        "offset": 6.136375,
+        "duration": 0.534083
+      },
+      {
+        "text": "更",
+        "offset": 6.875,
+        "duration": 0.193166
+      },
+      {
+        "text": "稳",
+        "offset": 7.068166,
+        "duration": 0.136375
+      },
+      {
+        "text": "地",
+        "offset": 7.204541,
+        "duration": 0.079541
+      },
+      {
+        "text": "降低",
+        "offset": 7.306833,
+        "duration": 0.306833
+      },
+      {
+        "text": "误差",
+        "offset": 7.625,
+        "duration": 0.431833
+      }
+    ]
+  },
+  {
+    "audio": "gradient-3.mp3",
+    "text": "这是两参数示意，真实模型维度更高。球表示参数位置，不是自己滚下山。",
+    "start": 794,
+    "duration": 7.708,
+    "frames": 232,
+    "boundaries": [
+      {
+        "text": "这是",
+        "offset": 0.095458,
+        "duration": 0.272708
+      },
+      {
+        "text": "两",
+        "offset": 0.379541,
+        "duration": 0.215916
+      },
+      {
+        "text": "参数",
+        "offset": 0.595458,
+        "duration": 0.329541
+      },
+      {
+        "text": "示意",
+        "offset": 0.936375,
+        "duration": 0.386375
+      },
+      {
+        "text": "真实",
+        "offset": 1.584083,
+        "duration": 0.420458
+      },
+      {
+        "text": "模型",
+        "offset": 2.015916,
+        "duration": 0.340916
+      },
+      {
+        "text": "维度",
+        "offset": 2.379541,
+        "duration": 0.284083
+      },
+      {
+        "text": "更",
+        "offset": 2.675,
+        "duration": 0.147708
+      },
+      {
+        "text": "高",
+        "offset": 2.822708,
+        "duration": 0.261375
+      },
+      {
+        "text": "球",
+        "offset": 3.590916,
+        "duration": 0.227291
+      },
+      {
+        "text": "表示",
+        "offset": 3.829541,
+        "duration": 0.318166
+      },
+      {
+        "text": "参数",
+        "offset": 4.170458,
+        "duration": 0.329541
+      },
+      {
+        "text": "位置",
+        "offset": 4.511375,
+        "duration": 0.465916
+      },
+      {
+        "text": "不是",
+        "offset": 5.159083,
+        "duration": 0.227291
+      },
+      {
+        "text": "自己",
+        "offset": 5.397708,
+        "duration": 0.227291
+      },
+      {
+        "text": "滚",
+        "offset": 5.647708,
+        "duration": 0.136375
+      },
+      {
+        "text": "下山",
+        "offset": 5.784083,
+        "duration": 0.431833
+      }
+    ]
+  }
+]
