@@ -16,16 +16,16 @@ npm run render:master
 ```
 等价于：
 ```bat
-npx remotion render src/index.tsx PiLesson out/pi-lesson.mp4 --gl=angle --concurrency=4
+npx remotion render src/index.tsx PiLesson out/pi-lesson.mp4 --gl=angle --concurrency=8
 ffmpeg -y -i out/pi-lesson.mp4 -c:v copy -af loudnorm=I=-16:TP=-1.5:LRA=11 out/pi-lesson-master.mp4
 ```
 - `--gl=angle`：Windows 上更稳的 OpenGL
-- `--concurrency=4`：按 RTX 3080 / R5 5600 内存调的，可改成 6–8 试一下
+- `--concurrency=8`：在 R5 5600 + RTX 3080 上实测最快（300 帧：并发 6 = 41.5 秒，8 = 36.9 秒，10 = 38.6 秒）。瓶颈是 CPU，不是显卡
 - 成片约 331 秒（5分31秒），1920×1080，30fps
 
 ## 3. 分章快速迭代
 ```bat
-npx remotion render src/index.tsx PiCh3 out/ch3.mp4 --gl=angle --concurrency=4
+npx remotion render src/index.tsx PiCh3 out/ch3.mp4 --gl=angle --concurrency=8
 ```
 合成：`PiLesson`、`PiCh0` … `PiCh6`。
 
@@ -33,3 +33,8 @@ npx remotion render src/index.tsx PiCh3 out/ch3.mp4 --gl=angle --concurrency=4
 ```bat
 npm run studio
 ```
+
+## 4. 实测数据（v3，2026-10）
+- 全片 9681 帧，并发 8 约 17 分钟；成片 5分23秒，约 137 MB
+- PowerShell 设置浏览器：`$env:REMOTION_BROWSER_EXECUTABLE="C:\Program Files\Google\Chrome\Application\chrome.exe"`
+- 成片统一放在 `D:\编程\项目\教学动画\<视频名>\`

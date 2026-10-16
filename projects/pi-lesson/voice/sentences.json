@@ -1,0 +1,786 @@
+[
+ {
+  "ch": 0,
+  "text": "你有没有想过，车轮滚一圈，到底走了多远？",
+  "pause": 0.35,
+  "tts": "你有没有想过，车轮滚一圈，到底走了多远？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 0
+ },
+ {
+  "ch": 0,
+  "text": "我量了一下，大约是直径的三倍，可是，还多出一小截。",
+  "pause": 0.35,
+  "tts": "我<|phoneme_start|>liang2<|phoneme_end|>了一下，大约是直径的三倍，可是，还多出一小截。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 1
+ },
+ {
+  "ch": 0,
+  "text": "这一小截，到底是多少？",
+  "pause": 0.35,
+  "tts": "这一小截，到底是多少？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 2
+ },
+ {
+  "ch": 0,
+  "text": "人类为了它，算了几千年。",
+  "pause": 0.35,
+  "tts": "人类为了它，算了几千年。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 3
+ },
+ {
+  "ch": 0,
+  "text": "今天，我们一起，把它弄明白。",
+  "pause": 0.35,
+  "tts": "今天，我们一起，把它弄明白。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 4
+ },
+ {
+  "ch": 0,
+  "text": "先别急着翻书，我们自己动手，量一量。",
+  "pause": 1.0,
+  "tts": "先别急着翻书，我们自己动手，粮一粮。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 5
+ },
+ {
+  "ch": 1,
+  "text": "拿一根绳子，绕杯盖一圈，再拉直，这就是周长。",
+  "pause": 0.35,
+  "tts": "拿一根绳子，绕杯盖一圈，再拉直，这就是周长。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 6
+ },
+ {
+  "ch": 1,
+  "text": "用周长，除以直径。",
+  "pause": 0.35,
+  "tts": "用周长，除以直径。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 7
+ },
+ {
+  "ch": 1,
+  "text": "我得到的是，三点一四。",
+  "pause": 0.35,
+  "tts": "我得到的是，三点一四。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 8
+ },
+ {
+  "ch": 1,
+  "text": "换成硬币、碗口，也都在三点一左右。",
+  "pause": 0.35,
+  "tts": "换成硬币、碗口，也都在三点一左右。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 9
+ },
+ {
+  "ch": 1,
+  "text": "大小不一样，结果却差不多。",
+  "pause": 0.35,
+  "tts": "大小不一样，结果却差不多。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 10
+ },
+ {
+  "ch": 1,
+  "text": "想一想，如果圆再大一倍，这个结果会变吗？",
+  "pause": 2.0,
+  "tts": "想一想，如果圆再大一倍，这个结果会变吗？",
+  "cue": "[gently asking, inviting the listener to think] ",
+  "speed": 0.94,
+  "take_i": 11
+ },
+ {
+  "ch": 1,
+  "text": "不会变。",
+  "pause": 0.35,
+  "tts": "不会变。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 12
+ },
+ {
+  "ch": 1,
+  "text": "周长跟着变长，直径也变长，它们的比，一直不变。",
+  "pause": 0.35,
+  "tts": "周长跟着变长，直径也变长，它们的比，一直不变。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 13
+ },
+ {
+  "ch": 1,
+  "text": "这个不变的数，就叫圆周率，写作π。",
+  "pause": 0.35,
+  "tts": "这个不变的数，就叫圆周率，写作派。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 14
+ },
+ {
+  "ch": 1,
+  "text": "量总有误差，所以我们说，π约等于三点一四。",
+  "pause": 0.35,
+  "tts": "<|phoneme_start|>liang2<|phoneme_end|>总有误差，所以我们说，派约等于三点一四。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 15
+ },
+ {
+  "ch": 1,
+  "text": "可是，古人没有精确的尺子，他们又是怎么知道，是三倍多一点的呢？",
+  "pause": 1.0,
+  "tts": "可是，古人没有精确的尺子，他们又是怎么知道，是三倍多一点的呢？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 16
+ },
+ {
+  "ch": 2,
+  "text": "两千多年前，中国的一本古书里，写着四个字：",
+  "pause": 0.25,
+  "tts": "两千多年前，中国的一本古书里，写着四个字：",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 17
+ },
+ {
+  "ch": 2,
+  "text": "周三径一。",
+  "pause": 0.35,
+  "tts": "周三径一。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 18
+ },
+ {
+  "ch": 2,
+  "text": "意思是，周长约是直径的三倍。",
+  "pause": 0.35,
+  "tts": "意思是，周长约是直径的三倍。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 19
+ },
+ {
+  "ch": 2,
+  "text": "为什么是三？",
+  "pause": 0.35,
+  "tts": "为什么是三？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 20
+ },
+ {
+  "ch": 2,
+  "text": "在圆里，画一个正六边形。",
+  "pause": 0.35,
+  "tts": "在圆里，画一个正六边形。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 21
+ },
+ {
+  "ch": 2,
+  "text": "它的每条边，都和半径一样长。",
+  "pause": 0.35,
+  "tts": "它的每条边，都和半径一样长。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 22
+ },
+ {
+  "ch": 2,
+  "text": "六条边，就是六个半径，正好三个直径。",
+  "pause": 0.35,
+  "tts": "六条边，就是六个半径，正好三个直径。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 23
+ },
+ {
+  "ch": 2,
+  "text": "想一想，六边形的周长，比圆的周长，长还是短？",
+  "pause": 2.0,
+  "tts": "想一想，六边形的周长，比圆的周长，长还是短？",
+  "cue": "[gently asking, inviting the listener to think] ",
+  "speed": 0.94,
+  "take_i": 24
+ },
+ {
+  "ch": 2,
+  "text": "短一点。",
+  "pause": 0.35,
+  "tts": "短一点。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 25
+ },
+ {
+  "ch": 2,
+  "text": "因为它藏在圆里面，拐弯处抄了近路。",
+  "pause": 0.35,
+  "tts": "因为它藏在圆里面，拐弯处抄了近路。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 26
+ },
+ {
+  "ch": 2,
+  "text": "所以，π一定比三大。",
+  "pause": 0.35,
+  "tts": "所以，派一定比三大。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 27
+ },
+ {
+  "ch": 2,
+  "text": "那到底，大多少呢？",
+  "pause": 0.35,
+  "tts": "那到底，大多少呢？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 28
+ },
+ {
+  "ch": 2,
+  "text": "如果六边形，再多几条边呢？",
+  "pause": 1.0,
+  "tts": "如果六边形，再多几条边呢？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 29
+ },
+ {
+  "ch": 3,
+  "text": "办法很简单：",
+  "pause": 0.25,
+  "tts": "办法很简单：",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 30
+ },
+ {
+  "ch": 3,
+  "text": "把每一段圆弧，从中间切开。",
+  "pause": 0.35,
+  "tts": "把每一段圆弧，从中间切开。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 31
+ },
+ {
+  "ch": 3,
+  "text": "六条边，就变成十二条边。",
+  "pause": 0.35,
+  "tts": "六条边，就变成十二条边。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 32
+ },
+ {
+  "ch": 3,
+  "text": "六边形，周长，除以直径，结果是三。",
+  "pause": 0.35,
+  "tts": "六边形，周长，除以直径，结果是三。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 33
+ },
+ {
+  "ch": 3,
+  "text": "十二边形，三点一零五八。",
+  "pause": 0.35,
+  "tts": "十二边形，三点一零五八。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 34
+ },
+ {
+  "ch": 3,
+  "text": "二十四边形，三点一三二六。",
+  "pause": 0.35,
+  "tts": "二十四边形，三点一三二六。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 35
+ },
+ {
+  "ch": 3,
+  "text": "四十八边形，三点一三九四。",
+  "pause": 0.35,
+  "tts": "四十八边形，三点一三九四。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 36
+ },
+ {
+  "ch": 3,
+  "text": "九十六边形，三点一四一零。",
+  "pause": 0.35,
+  "tts": "九十六边形，三点一四一零。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 37
+ },
+ {
+  "ch": 3,
+  "text": "一百九十二边形，约三点一四一五。",
+  "pause": 0.35,
+  "tts": "一百九十二边形，约三点一四一五。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 38
+ },
+ {
+  "ch": 3,
+  "text": "边越多，多边形越贴着圆，数字越接近π。",
+  "pause": 0.35,
+  "tts": "边越多，多边形越贴着圆，数字越接近派。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 39
+ },
+ {
+  "ch": 3,
+  "text": "想一想，这些数字，会超过π吗？",
+  "pause": 2.0,
+  "tts": "想一想，这些数字，会超过派吗？",
+  "cue": "[gently asking, inviting the listener to think] ",
+  "speed": 0.94,
+  "take_i": 40,
+  "take_prefix": "r"
+ },
+ {
+  "ch": 3,
+  "text": "不会。",
+  "pause": 0.35,
+  "tts": "不会。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 43
+ },
+ {
+  "ch": 3,
+  "text": "多边形一直在圆里面，所以永远小一点。",
+  "pause": 0.35,
+  "tts": "多边形一直在圆里面，所以永远小一点。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 44
+ },
+ {
+  "ch": 3,
+  "text": "一千七百多年前，中国数学家刘徽，就是这样想的。",
+  "pause": 0.35,
+  "tts": "一千七百多年前，中国数学家刘徽，就是这样想的。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 45
+ },
+ {
+  "ch": 3,
+  "text": "他说：",
+  "pause": 0.25,
+  "tts": "他说：",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 46
+ },
+ {
+  "ch": 3,
+  "text": "割之弥细，所失弥少。",
+  "pause": 0.35,
+  "tts": "割之弥细，所失弥少。",
+  "cue": "[slow, reciting an ancient line] ",
+  "speed": 0.88,
+  "take_i": 47
+ },
+ {
+  "ch": 3,
+  "text": "切得越细，丢掉的就越少。",
+  "pause": 0.35,
+  "tts": "切得越细，丢掉的就越少。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 48
+ },
+ {
+  "ch": 3,
+  "text": "这个方法，叫作割圆术。",
+  "pause": 0.35,
+  "tts": "这个方法，叫作割圆术。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 49
+ },
+ {
+  "ch": 3,
+  "text": "我们刚才的计算，就是和刘徽一样的思路。",
+  "pause": 0.35,
+  "tts": "我们刚才的计算，就是和刘徽一样的思路。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 50
+ },
+ {
+  "ch": 3,
+  "text": "用这个办法，刘徽算出，π约等于三点一四。",
+  "pause": 0.35,
+  "tts": "用这个办法，刘徽算出，派约等于三点一四。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 51
+ },
+ {
+  "ch": 3,
+  "text": "后来又算到，三点一四一六。",
+  "pause": 0.35,
+  "tts": "后来又算到，三点一四一六。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 52
+ },
+ {
+  "ch": 3,
+  "text": "比他早五百年，古希腊的阿基米德，也想到了多边形。",
+  "pause": 0.35,
+  "tts": "比他早五百年，古希腊的阿基米德，也想到了多边形。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 53
+ },
+ {
+  "ch": 3,
+  "text": "他在圆里面画一个，圆外面也画一个，把圆夹在中间。",
+  "pause": 0.35,
+  "tts": "他在圆里面画一个，圆外面也画一个，把圆夹在中间。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 54
+ },
+ {
+  "ch": 3,
+  "text": "一直算到九十六边形，知道π在这两个数之间。",
+  "pause": 0.35,
+  "tts": "一直算到九十六边形，知道派在这两个数之间。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 55
+ },
+ {
+  "ch": 3,
+  "text": "两个人相隔很远，却想到了同一个好主意。",
+  "pause": 0.35,
+  "tts": "两个人相隔很远，却想到了同一个好主意。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 56
+ },
+ {
+  "ch": 3,
+  "text": "动手试一试：",
+  "pause": 0.25,
+  "tts": "动手试一试：",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 57
+ },
+ {
+  "ch": 3,
+  "text": "画个圆，先连成六边形，再找弧的中点，连成十二边形。",
+  "pause": 0.35,
+  "tts": "画个圆，先连成六边形，再找弧的中点，连成十二边形。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 58
+ },
+ {
+  "ch": 3,
+  "text": "一百九十二边形，已经这么准了。",
+  "pause": 0.35,
+  "tts": "一百九十二边形，已经这么准了。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 59
+ },
+ {
+  "ch": 3,
+  "text": "如果，一直切下去呢？",
+  "pause": 1.0,
+  "tts": "如果，一直切下去呢？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 60
+ },
+ {
+  "ch": 4,
+  "text": "大约一千五百年前，真的有人，这样做了。",
+  "pause": 0.35,
+  "tts": "大约一千五百年前，真的有人，这样做了。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 61
+ },
+ {
+  "ch": 4,
+  "text": "他就是，南北朝的祖冲之。",
+  "pause": 0.35,
+  "tts": "他就是，南北朝的祖冲之。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 62
+ },
+ {
+  "ch": 4,
+  "text": "他沿着刘徽的割圆术，继续往下切。",
+  "pause": 0.35,
+  "tts": "他沿着刘徽的割圆术，继续往下切。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 63
+ },
+ {
+  "ch": 4,
+  "text": "那时没有计算器，他用的是算筹，一根根小竹棍。",
+  "pause": 0.35,
+  "tts": "那时没有计算器，他用的是算筹，一根根小竹棍。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 64
+ },
+ {
+  "ch": 4,
+  "text": "每算一步，都要摆满一大桌。",
+  "pause": 0.35,
+  "tts": "每算一步，都要摆满一大桌。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 65
+ },
+ {
+  "ch": 4,
+  "text": "切到边数非常多的时候，他终于算出，π大于三点一四一五九二六，小于三点一四一五九二七。",
+  "pause": 0.35,
+  "tts": "切到边数非常多的时候，他终于算出，派大于三点一四一五九二六，小于三点一四一五九二七。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 66
+ },
+ {
+  "ch": 4,
+  "text": "精确到小数点后七位。",
+  "pause": 0.35,
+  "tts": "精确到小数点后七位。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 67
+ },
+ {
+  "ch": 4,
+  "text": "这比国外，早了大约一千年。",
+  "pause": 0.35,
+  "tts": "这比国外，早了大约一千年。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 68
+ },
+ {
+  "ch": 4,
+  "text": "想一想，七位小数，有多准？",
+  "pause": 2.0,
+  "tts": "想一想，七位小数，有多准？",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 0.94,
+  "take_i": 69
+ },
+ {
+  "ch": 4,
+  "text": "如果拿它，去算一个大圆形广场的周长，误差还没有一粒沙子大。",
+  "pause": 0.35,
+  "tts": "如果拿它，去算一个大圆形广场的周长，误差还没有一粒沙子大。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 70
+ },
+ {
+  "ch": 4,
+  "text": "要记住，圆周率，不是祖冲之发现的，他是把它，算得更准。",
+  "pause": 0.35,
+  "tts": "要记住，圆周率，不是祖冲之发现的，他是把它，算得更准。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 71
+ },
+ {
+  "ch": 4,
+  "text": "七位已经很厉害了。",
+  "pause": 0.35,
+  "tts": "七位已经很厉害了。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 72
+ },
+ {
+  "ch": 4,
+  "text": "可是，π还能算得更准吗？",
+  "pause": 1.0,
+  "tts": "可是，派还能算得更准吗？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 73
+ },
+ {
+  "ch": 5,
+  "text": "能，而且远远不止。",
+  "pause": 0.35,
+  "tts": "能，而且远远不止。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 74
+ },
+ {
+  "ch": 5,
+  "text": "后来，人们找到了更快的方法，又有了计算机。",
+  "pause": 0.35,
+  "tts": "后来，人们找到了更快的方法，又有了计算机。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 75
+ },
+ {
+  "ch": 5,
+  "text": "截至二零二六年，世界纪录是，三百一十四万亿位小数。",
+  "pause": 0.35,
+  "tts": "截至二零二六年，世界纪录是，三百一十四万亿位小数。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 76
+ },
+ {
+  "ch": 5,
+  "text": "一台计算机，连续算了，大约一百一十天。",
+  "pause": 0.35,
+  "tts": "一台计算机，连续算了，大约一百一十天。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 77
+ },
+ {
+  "ch": 5,
+  "text": "想一想，如果每秒念一位，念完要多久？",
+  "pause": 2.0,
+  "tts": "想一想，如果每秒念一位，念完要多久？",
+  "cue": "[gently asking, inviting the listener to think] ",
+  "speed": 0.94,
+  "take_i": 78
+ },
+ {
+  "ch": 5,
+  "text": "大约一千万年。",
+  "pause": 0.35,
+  "tts": "大约一千万年。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 79
+ },
+ {
+  "ch": 5,
+  "text": "可就算这样，π还是没写完。",
+  "pause": 0.35,
+  "tts": "可就算这样，派还是没写完。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 80
+ },
+ {
+  "ch": 5,
+  "text": "它是无限不循环小数，一直写下去，永远没有尽头，也不会重复同一段。",
+  "pause": 0.35,
+  "tts": "它是无限不循环小数，一直写下去，永远没有尽头，也不会重复同一段。",
+  "cue": "[a little excited, with emphasis] ",
+  "speed": 1.0,
+  "take_i": 81
+ },
+ {
+  "ch": 5,
+  "text": "所以三点一四，只是它的近似值。",
+  "pause": 0.35,
+  "tts": "所以三点一四，只是它的近似值。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 82
+ },
+ {
+  "ch": 5,
+  "text": "这个写不完的数，为什么用π，来表示呢？",
+  "pause": 1.0,
+  "tts": "这个写不完的数，为什么用派，来表示呢？",
+  "cue": "[curious, warm] ",
+  "speed": 0.96,
+  "take_i": 83
+ },
+ {
+  "ch": 6,
+  "text": "三百多年前，一位英国数学家，先用了π这个符号。",
+  "pause": 0.35,
+  "tts": "三百多年前，一位英国数学家，先用了派这个符号。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 84
+ },
+ {
+  "ch": 6,
+  "text": "后来，大数学家欧拉也用它，大家就都用开了。",
+  "pause": 0.35,
+  "tts": "后来，大数学家欧拉也用它，大家就都用开了。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 85
+ },
+ {
+  "ch": 6,
+  "text": "每年三月十四日，就是π日，也叫国际数学日。",
+  "pause": 0.35,
+  "tts": "每年三月十四日，就是派日，也叫国际数学日。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 86
+ },
+ {
+  "ch": 6,
+  "text": "那天可以比一比，谁背得更多。",
+  "pause": 0.35,
+  "tts": "那天可以比一比，谁背得更多。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 87
+ },
+ {
+  "ch": 6,
+  "text": "下次看到一个圆，别忘了，里面藏着一个，永远写不完的数。",
+  "pause": 1.0,
+  "tts": "下次看到一个圆，别忘了，里面藏着一个，永远写不完的数。",
+  "cue": "[warm, friendly, like explaining to a classmate] ",
+  "speed": 1.0,
+  "take_i": 88
+ }
+]

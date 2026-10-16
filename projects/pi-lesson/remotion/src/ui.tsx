@@ -29,7 +29,7 @@ export const PHRASES:Phrase[]=(()=>{const out:Phrase[]=[];S.forEach((s,i)=>{let 
 export const Caption:React.FC<{t:number}>=({t})=>{const i=PHRASES.findIndex((p,j)=>t>=p.start-.06&&t<(j<PHRASES.length-1?Math.min(PHRASES[j+1].start-.06,p.end+.7):p.end+1));if(i<0)return null;const p=PHRASES[i];const a=clamp((t-p.start+.06)/.12);
  return <div style={{position:'absolute',left:0,right:0,top:960,transform:`translateY(-50%) scale(${.9+.1*a})`,textAlign:'center',fontFamily:FONT,fontWeight:900,fontSize:66,letterSpacing:3,whiteSpace:'nowrap',color:'#fff',WebkitTextStroke:`9px ${C.ink}`,paintOrder:'stroke fill',textShadow:'0 6px 16px rgba(0,0,0,.25)',opacity:a}}>{p.text}</div>;};
 // ---------- 想一想 card ----------
-export const THINK=[11,24,40,42,69,78];
+export const THINK=[11,24,40,67,76];
 const thinkQ=(i:number)=>S[i].text.replace(/^再?想一想，/,'');
 export const Mascot:React.FC<{x:number;y:number;s?:number;bob?:number}>=({x,y,s=1,bob=0})=><g transform={`translate(${x},${y+bob}) scale(${s})`}>
  <path d="M0,-70 C-6,-95 10,-100 4,-118" stroke={C.ink} strokeWidth={6} fill="none" strokeLinecap="round"/><text x={6} y={-122} fontSize={34} fontWeight={900} fill={C.pink} textAnchor="middle" fontFamily={FONT}>π</text>

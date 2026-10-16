@@ -1,8 +1,8 @@
 {
  "audio": "pi-lesson-voice.mp3",
- "duration": 331.598367,
+ "duration": 322.194286,
  "fps": 30,
- "frames": 9953,
+ "frames": 9671,
  "note": "word start/end in seconds; Fish timestamps; π spoken as 派",
  "sentences": [
   {
@@ -368,441 +368,423 @@
   {
    "i": 40,
    "chapter": 3,
-   "text": "想一想，边数翻一倍，和π的差距，大约变成几分之几？",
+   "text": "想一想，这些数字，会超过π吗？",
    "start": 138.635,
-   "end": 144.382,
+   "end": 141.613,
    "pause_after": 2.0,
-   "take": "fa-40.mp3"
+   "take": "ra-40.mp3"
   },
   {
    "i": 41,
    "chapter": 3,
-   "text": "大约四分之一。",
-   "start": 146.382,
-   "end": 147.583,
-   "pause_after": 0.35,
-   "take": "fa-41.mp3"
-  },
-  {
-   "i": 42,
-   "chapter": 3,
-   "text": "再想一想，这些数字，会超过π吗？",
-   "start": 147.933,
-   "end": 151.016,
-   "pause_after": 2.0,
-   "take": "fb-42.mp3"
-  },
-  {
-   "i": 43,
-   "chapter": 3,
    "text": "不会。",
-   "start": 153.016,
-   "end": 154.217,
+   "start": 143.613,
+   "end": 144.814,
    "pause_after": 0.35,
    "take": "fa-43.mp3"
   },
   {
-   "i": 44,
+   "i": 42,
    "chapter": 3,
    "text": "多边形一直在圆里面，所以永远小一点。",
-   "start": 154.567,
-   "end": 158.068,
+   "start": 145.164,
+   "end": 148.665,
    "pause_after": 0.35,
    "take": "fb-44.mp3"
   },
   {
-   "i": 45,
+   "i": 43,
    "chapter": 3,
    "text": "一千七百多年前，中国数学家刘徽，就是这样想的。",
-   "start": 158.418,
-   "end": 162.467,
+   "start": 149.015,
+   "end": 153.064,
    "pause_after": 0.35,
    "take": "fa-45.mp3"
   },
   {
-   "i": 46,
+   "i": 44,
    "chapter": 3,
    "text": "他说：",
-   "start": 162.817,
-   "end": 163.809,
+   "start": 153.414,
+   "end": 154.406,
    "pause_after": 0.25,
    "take": "fa-46.mp3"
   },
   {
-   "i": 47,
+   "i": 45,
    "chapter": 3,
    "text": "割之弥细，所失弥少。",
-   "start": 164.059,
-   "end": 166.802,
+   "start": 154.656,
+   "end": 157.399,
    "pause_after": 0.35,
    "take": "fa-47.mp3"
   },
   {
-   "i": 48,
+   "i": 46,
    "chapter": 3,
    "text": "切得越细，丢掉的就越少。",
-   "start": 167.152,
-   "end": 169.372,
+   "start": 157.749,
+   "end": 159.969,
    "pause_after": 0.35,
    "take": "fa-48.mp3"
   },
   {
-   "i": 49,
+   "i": 47,
    "chapter": 3,
    "text": "这个方法，叫作割圆术。",
-   "start": 169.722,
-   "end": 172.596,
+   "start": 160.319,
+   "end": 163.193,
    "pause_after": 0.35,
    "take": "fb-49.mp3"
   },
   {
-   "i": 50,
+   "i": 48,
    "chapter": 3,
    "text": "我们刚才的计算，就是和刘徽一样的思路。",
-   "start": 172.946,
-   "end": 176.498,
+   "start": 163.543,
+   "end": 167.095,
    "pause_after": 0.35,
    "take": "fa-50.mp3"
   },
   {
-   "i": 51,
+   "i": 49,
    "chapter": 3,
    "text": "用这个办法，刘徽算出，π约等于三点一四。",
-   "start": 176.848,
-   "end": 180.897,
+   "start": 167.445,
+   "end": 171.494,
    "pause_after": 0.35,
    "take": "fa-51.mp3"
   },
   {
-   "i": 52,
+   "i": 50,
    "chapter": 3,
    "text": "后来又算到，三点一四一六。",
-   "start": 181.247,
-   "end": 184.147,
+   "start": 171.844,
+   "end": 174.744,
    "pause_after": 0.35,
    "take": "fb-52.mp3"
   },
   {
-   "i": 53,
+   "i": 51,
    "chapter": 3,
    "text": "比他早五百年，古希腊的阿基米德，也想到了多边形。",
-   "start": 184.497,
-   "end": 188.781,
+   "start": 175.094,
+   "end": 179.378,
    "pause_after": 0.35,
    "take": "fb-53.mp3"
   },
   {
-   "i": 54,
+   "i": 52,
    "chapter": 3,
    "text": "他在圆里面画一个，圆外面也画一个，把圆夹在中间。",
-   "start": 189.131,
-   "end": 194.198,
+   "start": 179.728,
+   "end": 184.795,
    "pause_after": 0.35,
    "take": "fa-54.mp3"
   },
   {
-   "i": 55,
+   "i": 53,
    "chapter": 3,
    "text": "一直算到九十六边形，知道π在这两个数之间。",
-   "start": 194.548,
-   "end": 198.388,
+   "start": 185.145,
+   "end": 188.985,
    "pause_after": 0.35,
    "take": "fb-55.mp3"
   },
   {
-   "i": 56,
+   "i": 54,
    "chapter": 3,
    "text": "两个人相隔很远，却想到了同一个好主意。",
-   "start": 198.738,
-   "end": 202.421,
+   "start": 189.335,
+   "end": 193.018,
    "pause_after": 0.35,
    "take": "fb-56.mp3"
   },
   {
-   "i": 57,
+   "i": 55,
    "chapter": 3,
    "text": "动手试一试：",
-   "start": 202.771,
-   "end": 203.816,
+   "start": 193.368,
+   "end": 194.413,
    "pause_after": 0.25,
    "take": "fa-57.mp3"
   },
   {
-   "i": 58,
+   "i": 56,
    "chapter": 3,
    "text": "画个圆，先连成六边形，再找弧的中点，连成十二边形。",
-   "start": 204.066,
-   "end": 208.794,
+   "start": 194.663,
+   "end": 199.391,
    "pause_after": 0.35,
    "take": "fb-58.mp3"
   },
   {
-   "i": 59,
+   "i": 57,
    "chapter": 3,
    "text": "一百九十二边形，已经这么准了。",
-   "start": 209.144,
-   "end": 211.652,
+   "start": 199.741,
+   "end": 202.249,
    "pause_after": 0.35,
    "take": "fa-59.mp3"
   },
   {
-   "i": 60,
+   "i": 58,
    "chapter": 3,
    "text": "如果，一直切下去呢？",
-   "start": 212.002,
-   "end": 214.274,
+   "start": 202.599,
+   "end": 204.872,
    "pause_after": 1.0,
    "take": "fa-60.mp3"
   },
   {
-   "i": 61,
+   "i": 59,
    "chapter": 4,
    "text": "大约一千五百年前，真的有人，这样做了。",
-   "start": 215.274,
-   "end": 219.506,
+   "start": 205.872,
+   "end": 210.103,
    "pause_after": 0.35,
    "take": "fa-61.mp3"
   },
   {
-   "i": 62,
+   "i": 60,
    "chapter": 4,
    "text": "他就是，南北朝的祖冲之。",
-   "start": 219.856,
-   "end": 222.416,
+   "start": 210.453,
+   "end": 213.013,
    "pause_after": 0.35,
    "take": "fa-62.mp3"
   },
   {
-   "i": 63,
+   "i": 61,
    "chapter": 4,
    "text": "他沿着刘徽的割圆术，继续往下切。",
-   "start": 222.766,
-   "end": 225.979,
+   "start": 213.363,
+   "end": 216.576,
    "pause_after": 0.35,
    "take": "fa-63.mp3"
   },
   {
-   "i": 64,
+   "i": 62,
    "chapter": 4,
    "text": "那时没有计算器，他用的是算筹，一根根小竹棍。",
-   "start": 226.329,
-   "end": 230.378,
+   "start": 216.926,
+   "end": 220.975,
    "pause_after": 0.35,
    "take": "fa-64.mp3"
   },
   {
-   "i": 65,
+   "i": 63,
    "chapter": 4,
    "text": "每算一步，都要摆满一大桌。",
-   "start": 230.728,
-   "end": 233.601,
+   "start": 221.325,
+   "end": 224.198,
    "pause_after": 0.35,
    "take": "fb-65.mp3"
   },
   {
-   "i": 66,
+   "i": 64,
    "chapter": 4,
    "text": "切到边数非常多的时候，他终于算出，π大于三点一四一五九二六，小于三点一四一五九二七。",
-   "start": 233.951,
-   "end": 242.572,
+   "start": 224.548,
+   "end": 233.169,
    "pause_after": 0.35,
    "take": "fa-66.mp3"
   },
   {
-   "i": 67,
+   "i": 65,
    "chapter": 4,
    "text": "精确到小数点后七位。",
-   "start": 242.922,
-   "end": 245.299,
+   "start": 233.519,
+   "end": 235.896,
    "pause_after": 0.35,
    "take": "fa-67.mp3"
   },
   {
-   "i": 68,
+   "i": 66,
    "chapter": 4,
    "text": "这比国外，早了大约一千年。",
-   "start": 245.649,
-   "end": 248.13,
+   "start": 236.246,
+   "end": 238.727,
    "pause_after": 0.35,
    "take": "fb-68.mp3"
   },
   {
-   "i": 69,
+   "i": 67,
    "chapter": 4,
    "text": "想一想，七位小数，有多准？",
-   "start": 248.48,
-   "end": 251.354,
+   "start": 239.077,
+   "end": 241.951,
    "pause_after": 2.0,
    "take": "fa-69.mp3"
   },
   {
-   "i": 70,
+   "i": 68,
    "chapter": 4,
    "text": "如果拿它，去算一个大圆形广场的周长，误差还没有一粒沙子大。",
-   "start": 253.354,
-   "end": 259.101,
+   "start": 243.951,
+   "end": 249.698,
    "pause_after": 0.35,
    "take": "gb-70.mp3"
   },
   {
-   "i": 71,
+   "i": 69,
    "chapter": 4,
    "text": "要记住，圆周率，不是祖冲之发现的，他是把它，算得更准。",
-   "start": 259.451,
-   "end": 264.362,
+   "start": 250.048,
+   "end": 254.959,
    "pause_after": 0.35,
    "take": "fa-71.mp3"
   },
   {
-   "i": 72,
+   "i": 70,
    "chapter": 4,
    "text": "七位已经很厉害了。",
-   "start": 264.712,
-   "end": 266.305,
+   "start": 255.309,
+   "end": 256.902,
    "pause_after": 0.35,
    "take": "fa-72.mp3"
   },
   {
-   "i": 73,
+   "i": 71,
    "chapter": 4,
    "text": "可是，π还能算得更准吗？",
-   "start": 266.655,
-   "end": 268.771,
+   "start": 257.252,
+   "end": 259.368,
    "pause_after": 1.0,
    "take": "fa-73.mp3"
   },
   {
-   "i": 74,
+   "i": 72,
    "chapter": 5,
    "text": "能，而且远远不止。",
-   "start": 269.771,
-   "end": 271.599,
+   "start": 260.368,
+   "end": 262.196,
    "pause_after": 0.35,
    "take": "fb-74.mp3"
   },
   {
-   "i": 75,
+   "i": 73,
    "chapter": 5,
    "text": "后来，人们找到了更快的方法，又有了计算机。",
-   "start": 271.949,
-   "end": 275.737,
+   "start": 262.546,
+   "end": 266.334,
    "pause_after": 0.35,
    "take": "fa-75.mp3"
   },
   {
-   "i": 76,
+   "i": 74,
    "chapter": 5,
    "text": "截至二零二六年，世界纪录是，三百一十四万亿位小数。",
-   "start": 276.087,
-   "end": 281.207,
+   "start": 266.684,
+   "end": 271.804,
    "pause_after": 0.35,
    "take": "fb-76.mp3"
   },
   {
-   "i": 77,
+   "i": 75,
    "chapter": 5,
    "text": "一台计算机，连续算了，大约一百一十天。",
-   "start": 281.557,
-   "end": 285.109,
+   "start": 272.154,
+   "end": 275.706,
    "pause_after": 0.35,
    "take": "fa-77.mp3"
   },
   {
-   "i": 78,
+   "i": 76,
    "chapter": 5,
    "text": "想一想，如果每秒念一位，念完要多久？",
-   "start": 285.459,
-   "end": 289.064,
+   "start": 276.056,
+   "end": 279.661,
    "pause_after": 2.0,
    "take": "fa-78.mp3"
   },
   {
-   "i": 79,
+   "i": 77,
    "chapter": 5,
    "text": "大约一千万年。",
-   "start": 291.064,
-   "end": 292.71,
+   "start": 281.661,
+   "end": 283.307,
    "pause_after": 0.35,
    "take": "fa-79.mp3"
   },
   {
-   "i": 80,
+   "i": 78,
    "chapter": 5,
    "text": "可就算这样，π还是没写完。",
-   "start": 293.06,
-   "end": 295.437,
+   "start": 283.657,
+   "end": 286.034,
    "pause_after": 0.35,
    "take": "fb-80.mp3"
   },
   {
-   "i": 81,
+   "i": 79,
    "chapter": 5,
    "text": "它是无限不循环小数，一直写下去，永远没有尽头，也不会重复同一段。",
-   "start": 295.787,
-   "end": 301.717,
+   "start": 286.384,
+   "end": 292.314,
    "pause_after": 0.35,
    "take": "fa-81.mp3"
   },
   {
-   "i": 82,
+   "i": 80,
    "chapter": 5,
    "text": "所以三点一四，只是它的近似值。",
-   "start": 302.067,
-   "end": 305.175,
+   "start": 292.664,
+   "end": 295.772,
    "pause_after": 0.35,
    "take": "fa-82.mp3"
   },
   {
-   "i": 83,
+   "i": 81,
    "chapter": 5,
    "text": "这个写不完的数，为什么用π，来表示呢？",
-   "start": 305.525,
-   "end": 308.712,
+   "start": 296.122,
+   "end": 299.309,
    "pause_after": 1.0,
    "take": "fa-83.mp3"
   },
   {
-   "i": 84,
+   "i": 82,
    "chapter": 6,
    "text": "三百多年前，一位英国数学家，先用了π这个符号。",
-   "start": 309.712,
-   "end": 313.891,
+   "start": 300.309,
+   "end": 304.489,
    "pause_after": 0.35,
    "take": "fb-84.mp3"
   },
   {
-   "i": 85,
+   "i": 83,
    "chapter": 6,
    "text": "后来，大数学家欧拉也用它，大家就都用开了。",
-   "start": 314.241,
-   "end": 318.029,
+   "start": 304.839,
+   "end": 308.626,
    "pause_after": 0.35,
    "take": "fa-85.mp3"
   },
   {
-   "i": 86,
+   "i": 84,
    "chapter": 6,
    "text": "每年三月十四日，就是π日，也叫国际数学日。",
-   "start": 318.379,
-   "end": 322.428,
+   "start": 308.976,
+   "end": 313.025,
    "pause_after": 0.35,
    "take": "fb-86.mp3"
   },
   {
-   "i": 87,
+   "i": 85,
    "chapter": 6,
    "text": "那天可以比一比，谁背得更多。",
-   "start": 322.778,
-   "end": 324.946,
+   "start": 313.375,
+   "end": 315.543,
    "pause_after": 0.35,
    "take": "fa-87.mp3"
   },
   {
-   "i": 88,
+   "i": 86,
    "chapter": 6,
    "text": "下次看到一个圆，别忘了，里面藏着一个，永远写不完的数。",
-   "start": 325.296,
-   "end": 330.547,
+   "start": 315.893,
+   "end": 321.144,
    "pause_after": 1.0,
    "take": "fa-88.mp3"
   }
@@ -3757,4340 +3739,4172 @@
   {
    "text": "一",
    "start": 139.035,
-   "end": 139.115,
+   "end": 139.035,
    "sentence": 40
   },
   {
    "text": "想",
-   "start": 139.115,
+   "start": 139.035,
    "end": 139.435,
    "sentence": 40
   },
   {
-   "text": "边",
+   "text": "这",
+   "start": 139.515,
+   "end": 139.675,
+   "sentence": 40
+  },
+  {
+   "text": "些",
    "start": 139.675,
-   "end": 139.915,
+   "end": 139.835,
    "sentence": 40
   },
   {
    "text": "数",
-   "start": 139.915,
-   "end": 140.075,
+   "start": 139.835,
+   "end": 139.995,
    "sentence": 40
   },
   {
-   "text": "翻",
-   "start": 140.075,
+   "text": "字",
+   "start": 139.995,
    "end": 140.395,
    "sentence": 40
   },
   {
-   "text": "一",
-   "start": 140.395,
-   "end": 140.475,
-   "sentence": 40
-  },
-  {
-   "text": "倍",
+   "text": "会",
    "start": 140.475,
-   "end": 140.795,
+   "end": 140.715,
    "sentence": 40
   },
   {
-   "text": "和",
-   "start": 140.955,
+   "text": "超",
+   "start": 140.715,
+   "end": 140.875,
+   "sentence": 40
+  },
+  {
+   "text": "过",
+   "start": 140.875,
+   "end": 141.035,
+   "sentence": 40
+  },
+  {
+   "text": "派",
+   "start": 141.035,
    "end": 141.195,
    "sentence": 40
   },
   {
-   "text": "派",
-   "start": 141.195,
-   "end": 141.595,
-   "sentence": 40
-  },
-  {
-   "text": "的",
-   "start": 141.595,
-   "end": 141.755,
-   "sentence": 40
-  },
-  {
-   "text": "差",
-   "start": 141.755,
-   "end": 141.995,
-   "sentence": 40
-  },
-  {
-   "text": "距",
-   "start": 141.995,
-   "end": 142.315,
-   "sentence": 40
-  },
-  {
-   "text": "大",
-   "start": 142.395,
-   "end": 142.635,
-   "sentence": 40
-  },
-  {
-   "text": "约",
-   "start": 142.635,
-   "end": 142.795,
-   "sentence": 40
-  },
-  {
-   "text": "变",
-   "start": 142.795,
-   "end": 142.955,
-   "sentence": 40
-  },
-  {
-   "text": "成",
-   "start": 143.035,
-   "end": 143.355,
-   "sentence": 40
-  },
-  {
-   "text": "几",
-   "start": 143.355,
-   "end": 143.515,
-   "sentence": 40
-  },
-  {
-   "text": "分",
-   "start": 143.515,
-   "end": 143.755,
-   "sentence": 40
-  },
-  {
-   "text": "之",
-   "start": 143.755,
-   "end": 143.915,
-   "sentence": 40
-  },
-  {
-   "text": "几",
-   "start": 143.915,
-   "end": 144.315,
-   "sentence": 40
-  },
-  {
-   "text": "大",
-   "start": 146.462,
-   "end": 146.622,
-   "sentence": 41
-  },
-  {
-   "text": "约",
-   "start": 146.622,
-   "end": 146.782,
-   "sentence": 41
-  },
-  {
-   "text": "四",
-   "start": 146.782,
-   "end": 146.942,
-   "sentence": 41
-  },
-  {
-   "text": "分",
-   "start": 146.942,
-   "end": 147.022,
-   "sentence": 41
-  },
-  {
-   "text": "之",
-   "start": 147.022,
-   "end": 147.182,
-   "sentence": 41
-  },
-  {
-   "text": "一",
-   "start": 147.182,
-   "end": 147.502,
-   "sentence": 41
-  },
-  {
-   "text": "再",
-   "start": 148.093,
-   "end": 148.253,
-   "sentence": 42
-  },
-  {
-   "text": "想",
-   "start": 148.253,
-   "end": 148.413,
-   "sentence": 42
-  },
-  {
-   "text": "一",
-   "start": 148.413,
-   "end": 148.493,
-   "sentence": 42
-  },
-  {
-   "text": "想",
-   "start": 148.493,
-   "end": 148.733,
-   "sentence": 42
-  },
-  {
-   "text": "这",
-   "start": 148.973,
-   "end": 149.133,
-   "sentence": 42
-  },
-  {
-   "text": "些",
-   "start": 149.133,
-   "end": 149.293,
-   "sentence": 42
-  },
-  {
-   "text": "数",
-   "start": 149.293,
-   "end": 149.453,
-   "sentence": 42
-  },
-  {
-   "text": "字",
-   "start": 149.453,
-   "end": 149.773,
-   "sentence": 42
-  },
-  {
-   "text": "会",
-   "start": 149.853,
-   "end": 150.093,
-   "sentence": 42
-  },
-  {
-   "text": "超",
-   "start": 150.093,
-   "end": 150.253,
-   "sentence": 42
-  },
-  {
-   "text": "过",
-   "start": 150.253,
-   "end": 150.413,
-   "sentence": 42
-  },
-  {
-   "text": "派",
-   "start": 150.413,
-   "end": 150.653,
-   "sentence": 42
-  },
-  {
    "text": "吗",
-   "start": 150.653,
-   "end": 150.813,
-   "sentence": 42
+   "start": 141.195,
+   "end": 141.515,
+   "sentence": 40
   },
   {
    "text": "不",
-   "start": 153.096,
-   "end": 153.416,
-   "sentence": 43
+   "start": 143.693,
+   "end": 144.013,
+   "sentence": 41
   },
   {
    "text": "会",
-   "start": 153.416,
-   "end": 153.816,
+   "start": 144.013,
+   "end": 144.413,
+   "sentence": 41
+  },
+  {
+   "text": "多",
+   "start": 145.244,
+   "end": 145.404,
+   "sentence": 42
+  },
+  {
+   "text": "边",
+   "start": 145.404,
+   "end": 145.644,
+   "sentence": 42
+  },
+  {
+   "text": "形",
+   "start": 145.644,
+   "end": 145.964,
+   "sentence": 42
+  },
+  {
+   "text": "一",
+   "start": 145.964,
+   "end": 146.044,
+   "sentence": 42
+  },
+  {
+   "text": "直",
+   "start": 146.044,
+   "end": 146.204,
+   "sentence": 42
+  },
+  {
+   "text": "在",
+   "start": 146.204,
+   "end": 146.364,
+   "sentence": 42
+  },
+  {
+   "text": "圆",
+   "start": 146.364,
+   "end": 146.684,
+   "sentence": 42
+  },
+  {
+   "text": "里",
+   "start": 146.684,
+   "end": 146.764,
+   "sentence": 42
+  },
+  {
+   "text": "面",
+   "start": 146.764,
+   "end": 147.004,
+   "sentence": 42
+  },
+  {
+   "text": "所",
+   "start": 147.084,
+   "end": 147.324,
+   "sentence": 42
+  },
+  {
+   "text": "以",
+   "start": 147.324,
+   "end": 147.484,
+   "sentence": 42
+  },
+  {
+   "text": "永",
+   "start": 147.484,
+   "end": 147.724,
+   "sentence": 42
+  },
+  {
+   "text": "远",
+   "start": 147.724,
+   "end": 147.964,
+   "sentence": 42
+  },
+  {
+   "text": "小",
+   "start": 147.964,
+   "end": 148.204,
+   "sentence": 42
+  },
+  {
+   "text": "一",
+   "start": 148.204,
+   "end": 148.284,
+   "sentence": 42
+  },
+  {
+   "text": "点",
+   "start": 148.284,
+   "end": 148.524,
+   "sentence": 42
+  },
+  {
+   "text": "一",
+   "start": 149.095,
+   "end": 149.255,
+   "sentence": 43
+  },
+  {
+   "text": "千",
+   "start": 149.255,
+   "end": 149.495,
+   "sentence": 43
+  },
+  {
+   "text": "七",
+   "start": 149.495,
+   "end": 149.655,
+   "sentence": 43
+  },
+  {
+   "text": "百",
+   "start": 149.655,
+   "end": 149.815,
    "sentence": 43
   },
   {
    "text": "多",
-   "start": 154.647,
-   "end": 154.807,
-   "sentence": 44
-  },
-  {
-   "text": "边",
-   "start": 154.807,
-   "end": 155.047,
-   "sentence": 44
-  },
-  {
-   "text": "形",
-   "start": 155.047,
-   "end": 155.367,
-   "sentence": 44
-  },
-  {
-   "text": "一",
-   "start": 155.367,
-   "end": 155.447,
-   "sentence": 44
-  },
-  {
-   "text": "直",
-   "start": 155.447,
-   "end": 155.607,
-   "sentence": 44
-  },
-  {
-   "text": "在",
-   "start": 155.607,
-   "end": 155.767,
-   "sentence": 44
-  },
-  {
-   "text": "圆",
-   "start": 155.767,
-   "end": 156.087,
-   "sentence": 44
-  },
-  {
-   "text": "里",
-   "start": 156.087,
-   "end": 156.167,
-   "sentence": 44
-  },
-  {
-   "text": "面",
-   "start": 156.167,
-   "end": 156.407,
-   "sentence": 44
-  },
-  {
-   "text": "所",
-   "start": 156.487,
-   "end": 156.727,
-   "sentence": 44
-  },
-  {
-   "text": "以",
-   "start": 156.727,
-   "end": 156.887,
-   "sentence": 44
-  },
-  {
-   "text": "永",
-   "start": 156.887,
-   "end": 157.127,
-   "sentence": 44
-  },
-  {
-   "text": "远",
-   "start": 157.127,
-   "end": 157.367,
-   "sentence": 44
-  },
-  {
-   "text": "小",
-   "start": 157.367,
-   "end": 157.607,
-   "sentence": 44
-  },
-  {
-   "text": "一",
-   "start": 157.607,
-   "end": 157.687,
-   "sentence": 44
-  },
-  {
-   "text": "点",
-   "start": 157.687,
-   "end": 157.927,
-   "sentence": 44
-  },
-  {
-   "text": "一",
-   "start": 158.498,
-   "end": 158.658,
-   "sentence": 45
-  },
-  {
-   "text": "千",
-   "start": 158.658,
-   "end": 158.898,
-   "sentence": 45
-  },
-  {
-   "text": "七",
-   "start": 158.898,
-   "end": 159.058,
-   "sentence": 45
-  },
-  {
-   "text": "百",
-   "start": 159.058,
-   "end": 159.218,
-   "sentence": 45
-  },
-  {
-   "text": "多",
-   "start": 159.218,
-   "end": 159.298,
-   "sentence": 45
+   "start": 149.815,
+   "end": 149.895,
+   "sentence": 43
   },
   {
    "text": "年",
-   "start": 159.298,
-   "end": 159.458,
-   "sentence": 45
+   "start": 149.895,
+   "end": 150.055,
+   "sentence": 43
   },
   {
    "text": "前",
-   "start": 159.458,
-   "end": 159.858,
-   "sentence": 45
+   "start": 150.055,
+   "end": 150.455,
+   "sentence": 43
   },
   {
    "text": "中",
-   "start": 159.858,
-   "end": 160.018,
-   "sentence": 45
+   "start": 150.455,
+   "end": 150.615,
+   "sentence": 43
   },
   {
    "text": "国",
-   "start": 160.018,
-   "end": 160.178,
-   "sentence": 45
+   "start": 150.615,
+   "end": 150.775,
+   "sentence": 43
   },
   {
    "text": "数",
-   "start": 160.178,
-   "end": 160.338,
-   "sentence": 45
+   "start": 150.775,
+   "end": 150.935,
+   "sentence": 43
   },
   {
    "text": "学",
-   "start": 160.338,
-   "end": 160.498,
-   "sentence": 45
+   "start": 150.935,
+   "end": 151.095,
+   "sentence": 43
   },
   {
    "text": "家",
-   "start": 160.498,
-   "end": 160.658,
-   "sentence": 45
+   "start": 151.095,
+   "end": 151.255,
+   "sentence": 43
   },
   {
    "text": "刘",
-   "start": 160.658,
-   "end": 160.898,
-   "sentence": 45
+   "start": 151.255,
+   "end": 151.495,
+   "sentence": 43
   },
   {
    "text": "徽",
-   "start": 160.898,
-   "end": 161.298,
-   "sentence": 45
+   "start": 151.495,
+   "end": 151.895,
+   "sentence": 43
   },
   {
    "text": "就",
-   "start": 161.298,
-   "end": 161.538,
-   "sentence": 45
+   "start": 151.895,
+   "end": 152.135,
+   "sentence": 43
   },
   {
    "text": "是",
-   "start": 161.538,
-   "end": 161.698,
-   "sentence": 45
+   "start": 152.135,
+   "end": 152.295,
+   "sentence": 43
   },
   {
    "text": "这",
-   "start": 161.698,
-   "end": 161.778,
-   "sentence": 45
+   "start": 152.295,
+   "end": 152.375,
+   "sentence": 43
   },
   {
    "text": "样",
-   "start": 161.778,
-   "end": 161.938,
-   "sentence": 45
+   "start": 152.375,
+   "end": 152.535,
+   "sentence": 43
   },
   {
    "text": "想",
-   "start": 161.938,
-   "end": 162.178,
-   "sentence": 45
+   "start": 152.535,
+   "end": 152.775,
+   "sentence": 43
   },
   {
    "text": "的",
-   "start": 162.178,
-   "end": 162.338,
-   "sentence": 45
+   "start": 152.775,
+   "end": 152.935,
+   "sentence": 43
   },
   {
    "text": "他",
-   "start": 162.897,
-   "end": 163.057,
-   "sentence": 46
+   "start": 153.494,
+   "end": 153.654,
+   "sentence": 44
   },
   {
    "text": "说",
-   "start": 163.057,
-   "end": 163.377,
-   "sentence": 46
+   "start": 153.654,
+   "end": 153.974,
+   "sentence": 44
   },
   {
    "text": "割",
-   "start": 164.139,
-   "end": 164.379,
-   "sentence": 47
+   "start": 154.736,
+   "end": 154.976,
+   "sentence": 45
   },
   {
    "text": "之",
-   "start": 164.379,
-   "end": 164.539,
-   "sentence": 47
+   "start": 154.976,
+   "end": 155.136,
+   "sentence": 45
   },
   {
    "text": "弥",
-   "start": 164.539,
-   "end": 164.859,
-   "sentence": 47
+   "start": 155.136,
+   "end": 155.456,
+   "sentence": 45
   },
   {
    "text": "细",
-   "start": 164.859,
-   "end": 165.339,
-   "sentence": 47
+   "start": 155.456,
+   "end": 155.936,
+   "sentence": 45
   },
   {
    "text": "所",
-   "start": 165.579,
-   "end": 165.899,
-   "sentence": 47
+   "start": 156.176,
+   "end": 156.496,
+   "sentence": 45
   },
   {
    "text": "失",
-   "start": 165.899,
-   "end": 166.139,
-   "sentence": 47
+   "start": 156.496,
+   "end": 156.736,
+   "sentence": 45
   },
   {
    "text": "弥",
-   "start": 166.139,
-   "end": 166.379,
-   "sentence": 47
+   "start": 156.736,
+   "end": 156.976,
+   "sentence": 45
   },
   {
    "text": "少",
-   "start": 166.379,
-   "end": 166.699,
-   "sentence": 47
+   "start": 156.976,
+   "end": 157.296,
+   "sentence": 45
   },
   {
    "text": "切",
-   "start": 167.312,
-   "end": 167.472,
-   "sentence": 48
+   "start": 157.909,
+   "end": 158.069,
+   "sentence": 46
   },
   {
    "text": "得",
-   "start": 167.472,
-   "end": 167.552,
-   "sentence": 48
+   "start": 158.069,
+   "end": 158.149,
+   "sentence": 46
   },
   {
    "text": "越",
-   "start": 167.552,
-   "end": 167.792,
-   "sentence": 48
+   "start": 158.149,
+   "end": 158.389,
+   "sentence": 46
   },
   {
    "text": "细",
-   "start": 167.792,
-   "end": 168.112,
-   "sentence": 48
+   "start": 158.389,
+   "end": 158.709,
+   "sentence": 46
   },
   {
    "text": "丢",
-   "start": 168.272,
-   "end": 168.432,
-   "sentence": 48
+   "start": 158.869,
+   "end": 159.029,
+   "sentence": 46
   },
   {
    "text": "掉",
-   "start": 168.432,
-   "end": 168.592,
-   "sentence": 48
+   "start": 159.029,
+   "end": 159.189,
+   "sentence": 46
   },
   {
    "text": "的",
-   "start": 168.592,
-   "end": 168.672,
-   "sentence": 48
+   "start": 159.189,
+   "end": 159.269,
+   "sentence": 46
   },
   {
    "text": "就",
-   "start": 168.672,
-   "end": 168.832,
-   "sentence": 48
+   "start": 159.269,
+   "end": 159.429,
+   "sentence": 46
   },
   {
    "text": "越",
-   "start": 168.832,
-   "end": 168.992,
-   "sentence": 48
+   "start": 159.429,
+   "end": 159.589,
+   "sentence": 46
   },
   {
    "text": "少",
-   "start": 168.992,
-   "end": 169.312,
-   "sentence": 48
+   "start": 159.589,
+   "end": 159.909,
+   "sentence": 46
   },
   {
    "text": "这",
-   "start": 169.802,
-   "end": 170.042,
-   "sentence": 49
+   "start": 160.399,
+   "end": 160.639,
+   "sentence": 47
   },
   {
    "text": "个",
-   "start": 170.042,
-   "end": 170.042,
-   "sentence": 49
+   "start": 160.639,
+   "end": 160.639,
+   "sentence": 47
   },
   {
    "text": "方",
-   "start": 170.042,
-   "end": 170.282,
-   "sentence": 49
+   "start": 160.639,
+   "end": 160.879,
+   "sentence": 47
   },
   {
    "text": "法",
-   "start": 170.282,
-   "end": 170.602,
-   "sentence": 49
+   "start": 160.879,
+   "end": 161.199,
+   "sentence": 47
   },
   {
    "text": "叫",
-   "start": 170.682,
-   "end": 170.842,
-   "sentence": 49
+   "start": 161.279,
+   "end": 161.439,
+   "sentence": 47
   },
   {
    "text": "作",
-   "start": 170.842,
-   "end": 171.002,
-   "sentence": 49
+   "start": 161.439,
+   "end": 161.599,
+   "sentence": 47
   },
   {
    "text": "割",
-   "start": 171.002,
-   "end": 171.322,
-   "sentence": 49
+   "start": 161.599,
+   "end": 161.919,
+   "sentence": 47
   },
   {
    "text": "圆",
-   "start": 171.322,
-   "end": 171.562,
-   "sentence": 49
+   "start": 161.919,
+   "end": 162.159,
+   "sentence": 47
   },
   {
    "text": "术",
-   "start": 171.562,
-   "end": 172.042,
-   "sentence": 49
+   "start": 162.159,
+   "end": 162.639,
+   "sentence": 47
   },
   {
    "text": "我",
-   "start": 173.266,
-   "end": 173.426,
-   "sentence": 50
+   "start": 163.863,
+   "end": 164.023,
+   "sentence": 48
   },
   {
    "text": "们",
-   "start": 173.426,
-   "end": 173.506,
-   "sentence": 50
+   "start": 164.023,
+   "end": 164.103,
+   "sentence": 48
   },
   {
    "text": "刚",
-   "start": 173.506,
-   "end": 173.666,
-   "sentence": 50
+   "start": 164.103,
+   "end": 164.263,
+   "sentence": 48
   },
   {
    "text": "才",
-   "start": 173.666,
-   "end": 173.826,
-   "sentence": 50
+   "start": 164.263,
+   "end": 164.423,
+   "sentence": 48
   },
   {
    "text": "的",
-   "start": 173.826,
-   "end": 173.906,
-   "sentence": 50
+   "start": 164.423,
+   "end": 164.503,
+   "sentence": 48
   },
   {
    "text": "计",
-   "start": 173.906,
-   "end": 174.146,
-   "sentence": 50
+   "start": 164.503,
+   "end": 164.743,
+   "sentence": 48
   },
   {
    "text": "算",
-   "start": 174.146,
-   "end": 174.546,
-   "sentence": 50
+   "start": 164.743,
+   "end": 165.143,
+   "sentence": 48
   },
   {
    "text": "就",
-   "start": 174.546,
-   "end": 174.706,
-   "sentence": 50
+   "start": 165.143,
+   "end": 165.303,
+   "sentence": 48
   },
   {
    "text": "是",
-   "start": 174.706,
-   "end": 174.786,
-   "sentence": 50
+   "start": 165.303,
+   "end": 165.383,
+   "sentence": 48
   },
   {
    "text": "和",
-   "start": 174.786,
-   "end": 174.946,
-   "sentence": 50
+   "start": 165.383,
+   "end": 165.543,
+   "sentence": 48
   },
   {
    "text": "刘",
-   "start": 174.946,
-   "end": 175.186,
-   "sentence": 50
+   "start": 165.543,
+   "end": 165.783,
+   "sentence": 48
   },
   {
    "text": "徽",
-   "start": 175.186,
-   "end": 175.426,
-   "sentence": 50
+   "start": 165.783,
+   "end": 166.023,
+   "sentence": 48
   },
   {
    "text": "一",
-   "start": 175.426,
-   "end": 175.666,
-   "sentence": 50
+   "start": 166.023,
+   "end": 166.263,
+   "sentence": 48
   },
   {
    "text": "样",
-   "start": 175.666,
-   "end": 175.826,
-   "sentence": 50
+   "start": 166.263,
+   "end": 166.423,
+   "sentence": 48
   },
   {
    "text": "的",
-   "start": 175.826,
-   "end": 175.906,
-   "sentence": 50
+   "start": 166.423,
+   "end": 166.503,
+   "sentence": 48
   },
   {
    "text": "思",
-   "start": 175.906,
-   "end": 176.146,
-   "sentence": 50
+   "start": 166.503,
+   "end": 166.743,
+   "sentence": 48
   },
   {
    "text": "路",
-   "start": 176.146,
-   "end": 176.386,
-   "sentence": 50
+   "start": 166.743,
+   "end": 166.983,
+   "sentence": 48
   },
   {
    "text": "用",
-   "start": 176.928,
-   "end": 177.168,
-   "sentence": 51
+   "start": 167.525,
+   "end": 167.765,
+   "sentence": 49
   },
   {
    "text": "这",
-   "start": 177.168,
-   "end": 177.248,
-   "sentence": 51
+   "start": 167.765,
+   "end": 167.845,
+   "sentence": 49
   },
   {
    "text": "个",
-   "start": 177.248,
-   "end": 177.328,
-   "sentence": 51
+   "start": 167.845,
+   "end": 167.925,
+   "sentence": 49
   },
   {
    "text": "办",
-   "start": 177.328,
-   "end": 177.488,
-   "sentence": 51
+   "start": 167.925,
+   "end": 168.085,
+   "sentence": 49
   },
   {
    "text": "法",
-   "start": 177.488,
-   "end": 177.808,
-   "sentence": 51
+   "start": 168.085,
+   "end": 168.405,
+   "sentence": 49
   },
   {
    "text": "刘",
-   "start": 177.888,
-   "end": 178.128,
-   "sentence": 51
+   "start": 168.485,
+   "end": 168.725,
+   "sentence": 49
   },
   {
    "text": "徽",
-   "start": 178.128,
-   "end": 178.288,
-   "sentence": 51
+   "start": 168.725,
+   "end": 168.885,
+   "sentence": 49
   },
   {
    "text": "算",
-   "start": 178.288,
-   "end": 178.528,
-   "sentence": 51
+   "start": 168.885,
+   "end": 169.125,
+   "sentence": 49
   },
   {
    "text": "出",
-   "start": 178.528,
-   "end": 178.848,
-   "sentence": 51
+   "start": 169.125,
+   "end": 169.445,
+   "sentence": 49
   },
   {
    "text": "派",
-   "start": 178.848,
-   "end": 179.088,
-   "sentence": 51
+   "start": 169.445,
+   "end": 169.685,
+   "sentence": 49
   },
   {
    "text": "约",
-   "start": 179.088,
-   "end": 179.248,
-   "sentence": 51
+   "start": 169.685,
+   "end": 169.845,
+   "sentence": 49
   },
   {
    "text": "等",
-   "start": 179.248,
-   "end": 179.488,
-   "sentence": 51
+   "start": 169.845,
+   "end": 170.085,
+   "sentence": 49
   },
   {
    "text": "于",
-   "start": 179.488,
-   "end": 179.808,
-   "sentence": 51
+   "start": 170.085,
+   "end": 170.405,
+   "sentence": 49
   },
   {
    "text": "三",
-   "start": 179.808,
-   "end": 180.128,
-   "sentence": 51
+   "start": 170.405,
+   "end": 170.725,
+   "sentence": 49
   },
   {
    "text": "点",
-   "start": 180.128,
-   "end": 180.288,
-   "sentence": 51
+   "start": 170.725,
+   "end": 170.885,
+   "sentence": 49
   },
   {
    "text": "一",
-   "start": 180.288,
-   "end": 180.448,
-   "sentence": 51
+   "start": 170.885,
+   "end": 171.045,
+   "sentence": 49
   },
   {
    "text": "四",
-   "start": 180.448,
-   "end": 180.768,
-   "sentence": 51
+   "start": 171.045,
+   "end": 171.365,
+   "sentence": 49
   },
   {
    "text": "后",
-   "start": 181.327,
-   "end": 181.727,
-   "sentence": 52
+   "start": 171.924,
+   "end": 172.324,
+   "sentence": 50
   },
   {
    "text": "来",
-   "start": 181.727,
-   "end": 181.887,
-   "sentence": 52
+   "start": 172.324,
+   "end": 172.484,
+   "sentence": 50
   },
   {
    "text": "又",
-   "start": 181.887,
-   "end": 182.047,
-   "sentence": 52
+   "start": 172.484,
+   "end": 172.644,
+   "sentence": 50
   },
   {
    "text": "算",
-   "start": 182.047,
-   "end": 182.287,
-   "sentence": 52
+   "start": 172.644,
+   "end": 172.884,
+   "sentence": 50
   },
   {
    "text": "到",
-   "start": 182.287,
-   "end": 182.527,
-   "sentence": 52
+   "start": 172.884,
+   "end": 173.124,
+   "sentence": 50
   },
   {
    "text": "三",
-   "start": 182.607,
-   "end": 182.927,
-   "sentence": 52
+   "start": 173.204,
+   "end": 173.524,
+   "sentence": 50
   },
   {
    "text": "点",
-   "start": 182.927,
-   "end": 183.167,
-   "sentence": 52
+   "start": 173.524,
+   "end": 173.764,
+   "sentence": 50
   },
   {
    "text": "一",
-   "start": 183.167,
-   "end": 183.247,
-   "sentence": 52
+   "start": 173.764,
+   "end": 173.844,
+   "sentence": 50
   },
   {
    "text": "四",
-   "start": 183.247,
-   "end": 183.487,
-   "sentence": 52
+   "start": 173.844,
+   "end": 174.084,
+   "sentence": 50
   },
   {
    "text": "一",
-   "start": 183.487,
-   "end": 183.647,
-   "sentence": 52
+   "start": 174.084,
+   "end": 174.244,
+   "sentence": 50
   },
   {
    "text": "六",
-   "start": 183.647,
-   "end": 183.967,
-   "sentence": 52
+   "start": 174.244,
+   "end": 174.564,
+   "sentence": 50
   },
   {
    "text": "比",
-   "start": 184.577,
-   "end": 184.737,
-   "sentence": 53
+   "start": 175.174,
+   "end": 175.334,
+   "sentence": 51
   },
   {
    "text": "他",
-   "start": 184.737,
-   "end": 184.897,
-   "sentence": 53
+   "start": 175.334,
+   "end": 175.494,
+   "sentence": 51
   },
   {
    "text": "早",
-   "start": 184.897,
-   "end": 185.137,
-   "sentence": 53
+   "start": 175.494,
+   "end": 175.734,
+   "sentence": 51
   },
   {
    "text": "五",
-   "start": 185.137,
-   "end": 185.297,
-   "sentence": 53
+   "start": 175.734,
+   "end": 175.894,
+   "sentence": 51
   },
   {
    "text": "百",
-   "start": 185.297,
-   "end": 185.457,
-   "sentence": 53
+   "start": 175.894,
+   "end": 176.054,
+   "sentence": 51
   },
   {
    "text": "年",
-   "start": 185.457,
-   "end": 185.777,
-   "sentence": 53
+   "start": 176.054,
+   "end": 176.374,
+   "sentence": 51
   },
   {
    "text": "古",
-   "start": 186.017,
-   "end": 186.177,
-   "sentence": 53
+   "start": 176.614,
+   "end": 176.774,
+   "sentence": 51
   },
   {
    "text": "希",
-   "start": 186.177,
-   "end": 186.337,
-   "sentence": 53
+   "start": 176.774,
+   "end": 176.934,
+   "sentence": 51
   },
   {
    "text": "腊",
-   "start": 186.337,
-   "end": 186.497,
-   "sentence": 53
+   "start": 176.934,
+   "end": 177.094,
+   "sentence": 51
   },
   {
    "text": "的",
-   "start": 186.497,
-   "end": 186.577,
-   "sentence": 53
+   "start": 177.094,
+   "end": 177.174,
+   "sentence": 51
   },
   {
    "text": "阿",
-   "start": 186.577,
-   "end": 186.737,
-   "sentence": 53
+   "start": 177.174,
+   "end": 177.334,
+   "sentence": 51
   },
   {
    "text": "基",
-   "start": 186.737,
-   "end": 186.817,
-   "sentence": 53
+   "start": 177.334,
+   "end": 177.414,
+   "sentence": 51
   },
   {
    "text": "米",
-   "start": 186.817,
-   "end": 186.977,
-   "sentence": 53
+   "start": 177.414,
+   "end": 177.574,
+   "sentence": 51
   },
   {
    "text": "德",
-   "start": 186.977,
-   "end": 187.297,
-   "sentence": 53
+   "start": 177.574,
+   "end": 177.894,
+   "sentence": 51
   },
   {
    "text": "也",
-   "start": 187.377,
-   "end": 187.617,
-   "sentence": 53
+   "start": 177.974,
+   "end": 178.214,
+   "sentence": 51
   },
   {
    "text": "想",
-   "start": 187.617,
-   "end": 187.857,
-   "sentence": 53
+   "start": 178.214,
+   "end": 178.454,
+   "sentence": 51
   },
   {
    "text": "到",
-   "start": 187.857,
-   "end": 187.937,
-   "sentence": 53
+   "start": 178.454,
+   "end": 178.534,
+   "sentence": 51
   },
   {
    "text": "了",
-   "start": 187.937,
-   "end": 188.017,
-   "sentence": 53
+   "start": 178.534,
+   "end": 178.614,
+   "sentence": 51
   },
   {
    "text": "多",
-   "start": 188.017,
-   "end": 188.177,
-   "sentence": 53
+   "start": 178.614,
+   "end": 178.774,
+   "sentence": 51
   },
   {
    "text": "边",
-   "start": 188.177,
-   "end": 188.337,
-   "sentence": 53
+   "start": 178.774,
+   "end": 178.934,
+   "sentence": 51
   },
   {
    "text": "形",
-   "start": 188.337,
-   "end": 188.657,
-   "sentence": 53
+   "start": 178.934,
+   "end": 179.254,
+   "sentence": 51
   },
   {
    "text": "他",
-   "start": 189.211,
-   "end": 189.371,
-   "sentence": 54
+   "start": 179.808,
+   "end": 179.968,
+   "sentence": 52
   },
   {
    "text": "在",
-   "start": 189.371,
-   "end": 189.451,
-   "sentence": 54
+   "start": 179.968,
+   "end": 180.048,
+   "sentence": 52
   },
   {
    "text": "圆",
-   "start": 189.451,
-   "end": 189.771,
-   "sentence": 54
+   "start": 180.048,
+   "end": 180.368,
+   "sentence": 52
   },
   {
    "text": "里",
-   "start": 189.771,
-   "end": 189.851,
-   "sentence": 54
+   "start": 180.368,
+   "end": 180.448,
+   "sentence": 52
   },
   {
    "text": "面",
-   "start": 189.851,
-   "end": 190.011,
-   "sentence": 54
+   "start": 180.448,
+   "end": 180.608,
+   "sentence": 52
   },
   {
    "text": "画",
-   "start": 190.011,
-   "end": 190.171,
-   "sentence": 54
+   "start": 180.608,
+   "end": 180.768,
+   "sentence": 52
   },
   {
    "text": "一",
-   "start": 190.171,
-   "end": 190.331,
-   "sentence": 54
+   "start": 180.768,
+   "end": 180.928,
+   "sentence": 52
   },
   {
    "text": "个",
-   "start": 190.331,
-   "end": 190.651,
-   "sentence": 54
+   "start": 180.928,
+   "end": 181.248,
+   "sentence": 52
   },
   {
    "text": "圆",
-   "start": 190.731,
-   "end": 190.971,
-   "sentence": 54
+   "start": 181.328,
+   "end": 181.568,
+   "sentence": 52
   },
   {
    "text": "外",
-   "start": 190.971,
-   "end": 191.131,
-   "sentence": 54
+   "start": 181.568,
+   "end": 181.728,
+   "sentence": 52
   },
   {
    "text": "面",
-   "start": 191.131,
-   "end": 191.371,
-   "sentence": 54
+   "start": 181.728,
+   "end": 181.968,
+   "sentence": 52
   },
   {
    "text": "也",
-   "start": 191.371,
-   "end": 191.451,
-   "sentence": 54
+   "start": 181.968,
+   "end": 182.048,
+   "sentence": 52
   },
   {
    "text": "画",
-   "start": 191.451,
-   "end": 191.691,
-   "sentence": 54
+   "start": 182.048,
+   "end": 182.288,
+   "sentence": 52
   },
   {
    "text": "一",
-   "start": 191.691,
-   "end": 191.851,
-   "sentence": 54
+   "start": 182.288,
+   "end": 182.448,
+   "sentence": 52
   },
   {
    "text": "个",
-   "start": 191.851,
-   "end": 192.091,
-   "sentence": 54
+   "start": 182.448,
+   "end": 182.688,
+   "sentence": 52
   },
   {
    "text": "把",
-   "start": 192.171,
-   "end": 192.331,
-   "sentence": 54
+   "start": 182.768,
+   "end": 182.928,
+   "sentence": 52
   },
   {
    "text": "圆",
-   "start": 192.331,
-   "end": 192.731,
-   "sentence": 54
+   "start": 182.928,
+   "end": 183.328,
+   "sentence": 52
   },
   {
    "text": "夹",
-   "start": 192.731,
-   "end": 192.891,
-   "sentence": 54
+   "start": 183.328,
+   "end": 183.488,
+   "sentence": 52
   },
   {
    "text": "在",
-   "start": 192.891,
-   "end": 193.051,
-   "sentence": 54
+   "start": 183.488,
+   "end": 183.648,
+   "sentence": 52
   },
   {
    "text": "中",
-   "start": 193.051,
-   "end": 193.291,
-   "sentence": 54
+   "start": 183.648,
+   "end": 183.888,
+   "sentence": 52
   },
   {
    "text": "间",
-   "start": 193.291,
-   "end": 193.611,
-   "sentence": 54
+   "start": 183.888,
+   "end": 184.208,
+   "sentence": 52
   },
   {
    "text": "一",
-   "start": 194.628,
-   "end": 194.788,
-   "sentence": 55
+   "start": 185.225,
+   "end": 185.385,
+   "sentence": 53
   },
   {
    "text": "直",
-   "start": 194.788,
-   "end": 194.948,
-   "sentence": 55
+   "start": 185.385,
+   "end": 185.545,
+   "sentence": 53
   },
   {
    "text": "算",
-   "start": 194.948,
-   "end": 195.188,
-   "sentence": 55
+   "start": 185.545,
+   "end": 185.785,
+   "sentence": 53
   },
   {
    "text": "到",
-   "start": 195.188,
-   "end": 195.348,
-   "sentence": 55
+   "start": 185.785,
+   "end": 185.945,
+   "sentence": 53
   },
   {
    "text": "九",
-   "start": 195.348,
-   "end": 195.588,
-   "sentence": 55
+   "start": 185.945,
+   "end": 186.185,
+   "sentence": 53
   },
   {
    "text": "十",
-   "start": 195.588,
-   "end": 195.748,
-   "sentence": 55
+   "start": 186.185,
+   "end": 186.345,
+   "sentence": 53
   },
   {
    "text": "六",
-   "start": 195.748,
-   "end": 195.908,
-   "sentence": 55
+   "start": 186.345,
+   "end": 186.505,
+   "sentence": 53
   },
   {
    "text": "边",
-   "start": 195.908,
-   "end": 196.068,
-   "sentence": 55
+   "start": 186.505,
+   "end": 186.665,
+   "sentence": 53
   },
   {
    "text": "形",
-   "start": 196.068,
-   "end": 196.388,
-   "sentence": 55
+   "start": 186.665,
+   "end": 186.985,
+   "sentence": 53
   },
   {
    "text": "知",
-   "start": 196.548,
-   "end": 196.708,
-   "sentence": 55
+   "start": 187.145,
+   "end": 187.305,
+   "sentence": 53
   },
   {
    "text": "道",
-   "start": 196.708,
-   "end": 196.868,
-   "sentence": 55
+   "start": 187.305,
+   "end": 187.465,
+   "sentence": 53
   },
   {
    "text": "派",
-   "start": 196.868,
-   "end": 197.108,
-   "sentence": 55
+   "start": 187.465,
+   "end": 187.705,
+   "sentence": 53
   },
   {
    "text": "在",
-   "start": 197.108,
-   "end": 197.268,
-   "sentence": 55
+   "start": 187.705,
+   "end": 187.865,
+   "sentence": 53
   },
   {
    "text": "这",
-   "start": 197.268,
-   "end": 197.428,
-   "sentence": 55
+   "start": 187.865,
+   "end": 188.025,
+   "sentence": 53
   },
   {
    "text": "两",
-   "start": 197.428,
-   "end": 197.588,
-   "sentence": 55
+   "start": 188.025,
+   "end": 188.185,
+   "sentence": 53
   },
   {
    "text": "个",
-   "start": 197.588,
-   "end": 197.668,
-   "sentence": 55
+   "start": 188.185,
+   "end": 188.265,
+   "sentence": 53
   },
   {
    "text": "数",
-   "start": 197.668,
-   "end": 197.828,
-   "sentence": 55
+   "start": 188.265,
+   "end": 188.425,
+   "sentence": 53
   },
   {
    "text": "之",
-   "start": 197.828,
-   "end": 197.988,
-   "sentence": 55
+   "start": 188.425,
+   "end": 188.585,
+   "sentence": 53
   },
   {
    "text": "间",
-   "start": 197.988,
-   "end": 198.308,
-   "sentence": 55
+   "start": 188.585,
+   "end": 188.905,
+   "sentence": 53
   },
   {
    "text": "两",
-   "start": 198.978,
-   "end": 199.138,
-   "sentence": 56
+   "start": 189.575,
+   "end": 189.735,
+   "sentence": 54
   },
   {
    "text": "个",
-   "start": 199.138,
-   "end": 199.218,
-   "sentence": 56
+   "start": 189.735,
+   "end": 189.815,
+   "sentence": 54
   },
   {
    "text": "人",
-   "start": 199.218,
-   "end": 199.378,
-   "sentence": 56
+   "start": 189.815,
+   "end": 189.975,
+   "sentence": 54
   },
   {
    "text": "相",
-   "start": 199.378,
-   "end": 199.538,
-   "sentence": 56
+   "start": 189.975,
+   "end": 190.135,
+   "sentence": 54
   },
   {
    "text": "隔",
-   "start": 199.538,
-   "end": 199.698,
-   "sentence": 56
+   "start": 190.135,
+   "end": 190.295,
+   "sentence": 54
   },
   {
    "text": "很",
-   "start": 199.698,
-   "end": 199.938,
-   "sentence": 56
+   "start": 190.295,
+   "end": 190.535,
+   "sentence": 54
   },
   {
    "text": "远",
-   "start": 199.938,
-   "end": 200.338,
-   "sentence": 56
+   "start": 190.535,
+   "end": 190.935,
+   "sentence": 54
   },
   {
    "text": "却",
-   "start": 200.338,
-   "end": 200.578,
-   "sentence": 56
+   "start": 190.935,
+   "end": 191.175,
+   "sentence": 54
   },
   {
    "text": "想",
-   "start": 200.578,
-   "end": 200.898,
-   "sentence": 56
+   "start": 191.175,
+   "end": 191.495,
+   "sentence": 54
   },
   {
    "text": "到",
-   "start": 200.898,
-   "end": 201.058,
-   "sentence": 56
+   "start": 191.495,
+   "end": 191.655,
+   "sentence": 54
   },
   {
    "text": "了",
-   "start": 201.058,
-   "end": 201.138,
-   "sentence": 56
+   "start": 191.655,
+   "end": 191.735,
+   "sentence": 54
   },
   {
    "text": "同",
-   "start": 201.138,
-   "end": 201.458,
-   "sentence": 56
+   "start": 191.735,
+   "end": 192.055,
+   "sentence": 54
   },
   {
    "text": "一",
-   "start": 201.458,
-   "end": 201.618,
-   "sentence": 56
+   "start": 192.055,
+   "end": 192.215,
+   "sentence": 54
   },
   {
    "text": "个",
-   "start": 201.618,
-   "end": 201.698,
-   "sentence": 56
+   "start": 192.215,
+   "end": 192.295,
+   "sentence": 54
   },
   {
    "text": "好",
-   "start": 201.698,
-   "end": 201.858,
-   "sentence": 56
+   "start": 192.295,
+   "end": 192.455,
+   "sentence": 54
   },
   {
    "text": "主",
-   "start": 201.858,
-   "end": 202.018,
-   "sentence": 56
+   "start": 192.455,
+   "end": 192.615,
+   "sentence": 54
   },
   {
    "text": "意",
-   "start": 202.018,
-   "end": 202.338,
-   "sentence": 56
+   "start": 192.615,
+   "end": 192.935,
+   "sentence": 54
   },
   {
    "text": "动",
-   "start": 202.851,
-   "end": 203.091,
-   "sentence": 57
+   "start": 193.448,
+   "end": 193.688,
+   "sentence": 55
   },
   {
    "text": "手",
-   "start": 203.091,
-   "end": 203.251,
-   "sentence": 57
+   "start": 193.688,
+   "end": 193.848,
+   "sentence": 55
   },
   {
    "text": "试",
-   "start": 203.251,
-   "end": 203.411,
-   "sentence": 57
+   "start": 193.848,
+   "end": 194.008,
+   "sentence": 55
   },
   {
    "text": "一",
-   "start": 203.411,
-   "end": 203.491,
-   "sentence": 57
+   "start": 194.008,
+   "end": 194.088,
+   "sentence": 55
   },
   {
    "text": "试",
-   "start": 203.491,
-   "end": 203.731,
-   "sentence": 57
+   "start": 194.088,
+   "end": 194.328,
+   "sentence": 55
   },
   {
    "text": "画",
-   "start": 204.146,
-   "end": 204.386,
-   "sentence": 58
+   "start": 194.743,
+   "end": 194.983,
+   "sentence": 56
   },
   {
    "text": "个",
-   "start": 204.386,
-   "end": 204.466,
-   "sentence": 58
+   "start": 194.983,
+   "end": 195.063,
+   "sentence": 56
   },
   {
    "text": "圆",
-   "start": 204.466,
-   "end": 204.866,
-   "sentence": 58
+   "start": 195.063,
+   "end": 195.463,
+   "sentence": 56
   },
   {
    "text": "先",
-   "start": 204.866,
-   "end": 205.106,
-   "sentence": 58
+   "start": 195.463,
+   "end": 195.703,
+   "sentence": 56
   },
   {
    "text": "连",
-   "start": 205.106,
-   "end": 205.266,
-   "sentence": 58
+   "start": 195.703,
+   "end": 195.863,
+   "sentence": 56
   },
   {
    "text": "成",
-   "start": 205.266,
-   "end": 205.426,
-   "sentence": 58
+   "start": 195.863,
+   "end": 196.023,
+   "sentence": 56
   },
   {
    "text": "六",
-   "start": 205.426,
-   "end": 205.586,
-   "sentence": 58
+   "start": 196.023,
+   "end": 196.183,
+   "sentence": 56
   },
   {
    "text": "边",
-   "start": 205.586,
-   "end": 205.746,
-   "sentence": 58
+   "start": 196.183,
+   "end": 196.343,
+   "sentence": 56
   },
   {
    "text": "形",
-   "start": 205.746,
-   "end": 206.146,
-   "sentence": 58
+   "start": 196.343,
+   "end": 196.743,
+   "sentence": 56
   },
   {
    "text": "再",
-   "start": 206.146,
-   "end": 206.306,
-   "sentence": 58
+   "start": 196.743,
+   "end": 196.903,
+   "sentence": 56
   },
   {
    "text": "找",
-   "start": 206.306,
-   "end": 206.546,
-   "sentence": 58
+   "start": 196.903,
+   "end": 197.143,
+   "sentence": 56
   },
   {
    "text": "弧",
-   "start": 206.546,
-   "end": 206.786,
-   "sentence": 58
+   "start": 197.143,
+   "end": 197.383,
+   "sentence": 56
   },
   {
    "text": "的",
-   "start": 206.786,
-   "end": 206.946,
-   "sentence": 58
+   "start": 197.383,
+   "end": 197.543,
+   "sentence": 56
   },
   {
    "text": "中",
-   "start": 206.946,
-   "end": 207.106,
-   "sentence": 58
+   "start": 197.543,
+   "end": 197.703,
+   "sentence": 56
   },
   {
    "text": "点",
-   "start": 207.106,
-   "end": 207.426,
-   "sentence": 58
+   "start": 197.703,
+   "end": 198.023,
+   "sentence": 56
   },
   {
    "text": "连",
-   "start": 207.426,
-   "end": 207.666,
-   "sentence": 58
+   "start": 198.023,
+   "end": 198.263,
+   "sentence": 56
   },
   {
    "text": "成",
-   "start": 207.666,
-   "end": 207.826,
-   "sentence": 58
+   "start": 198.263,
+   "end": 198.423,
+   "sentence": 56
   },
   {
    "text": "十",
-   "start": 207.826,
-   "end": 208.066,
-   "sentence": 58
+   "start": 198.423,
+   "end": 198.663,
+   "sentence": 56
   },
   {
    "text": "二",
-   "start": 208.066,
-   "end": 208.226,
-   "sentence": 58
+   "start": 198.663,
+   "end": 198.823,
+   "sentence": 56
   },
   {
    "text": "边",
-   "start": 208.226,
-   "end": 208.386,
-   "sentence": 58
+   "start": 198.823,
+   "end": 198.983,
+   "sentence": 56
   },
   {
    "text": "形",
-   "start": 208.386,
-   "end": 208.706,
-   "sentence": 58
+   "start": 198.983,
+   "end": 199.303,
+   "sentence": 56
   },
   {
    "text": "一",
-   "start": 209.224,
-   "end": 209.384,
-   "sentence": 59
+   "start": 199.821,
+   "end": 199.981,
+   "sentence": 57
   },
   {
    "text": "百",
-   "start": 209.384,
-   "end": 209.624,
-   "sentence": 59
+   "start": 199.981,
+   "end": 200.221,
+   "sentence": 57
   },
   {
    "text": "九",
-   "start": 209.624,
-   "end": 209.784,
-   "sentence": 59
+   "start": 200.221,
+   "end": 200.381,
+   "sentence": 57
   },
   {
    "text": "十",
-   "start": 209.784,
-   "end": 209.944,
-   "sentence": 59
+   "start": 200.381,
+   "end": 200.541,
+   "sentence": 57
   },
   {
    "text": "二",
-   "start": 209.944,
-   "end": 210.024,
-   "sentence": 59
+   "start": 200.541,
+   "end": 200.621,
+   "sentence": 57
   },
   {
    "text": "边",
-   "start": 210.024,
-   "end": 210.264,
-   "sentence": 59
+   "start": 200.621,
+   "end": 200.861,
+   "sentence": 57
   },
   {
    "text": "形",
-   "start": 210.264,
-   "end": 210.584,
-   "sentence": 59
+   "start": 200.861,
+   "end": 201.181,
+   "sentence": 57
   },
   {
    "text": "已",
-   "start": 210.664,
-   "end": 210.744,
-   "sentence": 59
+   "start": 201.261,
+   "end": 201.341,
+   "sentence": 57
   },
   {
    "text": "经",
-   "start": 210.744,
-   "end": 210.904,
-   "sentence": 59
+   "start": 201.341,
+   "end": 201.501,
+   "sentence": 57
   },
   {
    "text": "这",
-   "start": 210.904,
-   "end": 211.064,
-   "sentence": 59
+   "start": 201.501,
+   "end": 201.661,
+   "sentence": 57
   },
   {
    "text": "么",
-   "start": 211.064,
-   "end": 211.144,
-   "sentence": 59
+   "start": 201.661,
+   "end": 201.741,
+   "sentence": 57
   },
   {
    "text": "准",
-   "start": 211.144,
-   "end": 211.384,
-   "sentence": 59
+   "start": 201.741,
+   "end": 201.981,
+   "sentence": 57
   },
   {
    "text": "了",
-   "start": 211.384,
-   "end": 211.544,
-   "sentence": 59
+   "start": 201.981,
+   "end": 202.141,
+   "sentence": 57
   },
   {
    "text": "如",
-   "start": 212.082,
-   "end": 212.402,
-   "sentence": 60
+   "start": 202.679,
+   "end": 202.999,
+   "sentence": 58
   },
   {
    "text": "果",
-   "start": 212.402,
-   "end": 212.722,
-   "sentence": 60
+   "start": 202.999,
+   "end": 203.319,
+   "sentence": 58
   },
   {
    "text": "一",
-   "start": 212.882,
-   "end": 213.122,
-   "sentence": 60
+   "start": 203.479,
+   "end": 203.719,
+   "sentence": 58
   },
   {
    "text": "直",
-   "start": 213.122,
-   "end": 213.362,
-   "sentence": 60
+   "start": 203.719,
+   "end": 203.959,
+   "sentence": 58
   },
   {
    "text": "切",
-   "start": 213.362,
-   "end": 213.602,
-   "sentence": 60
+   "start": 203.959,
+   "end": 204.199,
+   "sentence": 58
   },
   {
    "text": "下",
-   "start": 213.602,
-   "end": 213.762,
-   "sentence": 60
+   "start": 204.199,
+   "end": 204.359,
+   "sentence": 58
   },
   {
    "text": "去",
-   "start": 213.762,
-   "end": 213.922,
-   "sentence": 60
+   "start": 204.359,
+   "end": 204.519,
+   "sentence": 58
   },
   {
    "text": "呢",
-   "start": 213.922,
-   "end": 214.162,
-   "sentence": 60
+   "start": 204.519,
+   "end": 204.759,
+   "sentence": 58
   },
   {
    "text": "大",
-   "start": 215.514,
-   "end": 215.754,
-   "sentence": 61
+   "start": 206.112,
+   "end": 206.352,
+   "sentence": 59
   },
   {
    "text": "约",
-   "start": 215.754,
-   "end": 215.914,
-   "sentence": 61
+   "start": 206.352,
+   "end": 206.512,
+   "sentence": 59
   },
   {
    "text": "一",
-   "start": 215.914,
-   "end": 216.074,
-   "sentence": 61
+   "start": 206.512,
+   "end": 206.672,
+   "sentence": 59
   },
   {
    "text": "千",
-   "start": 216.074,
-   "end": 216.394,
-   "sentence": 61
+   "start": 206.672,
+   "end": 206.992,
+   "sentence": 59
   },
   {
    "text": "五",
-   "start": 216.394,
-   "end": 216.474,
-   "sentence": 61
+   "start": 206.992,
+   "end": 207.072,
+   "sentence": 59
   },
   {
    "text": "百",
-   "start": 216.474,
-   "end": 216.634,
-   "sentence": 61
+   "start": 207.072,
+   "end": 207.232,
+   "sentence": 59
   },
   {
    "text": "年",
-   "start": 216.634,
-   "end": 216.874,
-   "sentence": 61
+   "start": 207.232,
+   "end": 207.472,
+   "sentence": 59
   },
   {
    "text": "前",
-   "start": 216.874,
-   "end": 217.274,
-   "sentence": 61
+   "start": 207.472,
+   "end": 207.872,
+   "sentence": 59
   },
   {
    "text": "真",
-   "start": 217.274,
-   "end": 217.514,
-   "sentence": 61
+   "start": 207.872,
+   "end": 208.112,
+   "sentence": 59
   },
   {
    "text": "的",
-   "start": 217.514,
-   "end": 217.674,
-   "sentence": 61
+   "start": 208.112,
+   "end": 208.272,
+   "sentence": 59
   },
   {
    "text": "有",
-   "start": 217.674,
-   "end": 217.834,
-   "sentence": 61
+   "start": 208.272,
+   "end": 208.432,
+   "sentence": 59
   },
   {
    "text": "人",
-   "start": 217.834,
-   "end": 218.234,
-   "sentence": 61
+   "start": 208.432,
+   "end": 208.832,
+   "sentence": 59
   },
   {
    "text": "这",
-   "start": 218.234,
-   "end": 218.394,
-   "sentence": 61
+   "start": 208.832,
+   "end": 208.992,
+   "sentence": 59
   },
   {
    "text": "样",
-   "start": 218.394,
-   "end": 218.554,
-   "sentence": 61
+   "start": 208.992,
+   "end": 209.152,
+   "sentence": 59
   },
   {
    "text": "做",
-   "start": 218.554,
-   "end": 218.794,
-   "sentence": 61
+   "start": 209.152,
+   "end": 209.392,
+   "sentence": 59
   },
   {
    "text": "了",
-   "start": 218.794,
-   "end": 218.954,
-   "sentence": 61
+   "start": 209.392,
+   "end": 209.552,
+   "sentence": 59
   },
   {
    "text": "他",
-   "start": 219.936,
-   "end": 220.096,
-   "sentence": 62
+   "start": 210.533,
+   "end": 210.693,
+   "sentence": 60
   },
   {
    "text": "就",
-   "start": 220.096,
-   "end": 220.256,
-   "sentence": 62
+   "start": 210.693,
+   "end": 210.853,
+   "sentence": 60
   },
   {
    "text": "是",
-   "start": 220.256,
-   "end": 220.576,
-   "sentence": 62
+   "start": 210.853,
+   "end": 211.173,
+   "sentence": 60
   },
   {
    "text": "南",
-   "start": 220.576,
-   "end": 220.816,
-   "sentence": 62
+   "start": 211.173,
+   "end": 211.413,
+   "sentence": 60
   },
   {
    "text": "北",
-   "start": 220.816,
-   "end": 220.976,
-   "sentence": 62
+   "start": 211.413,
+   "end": 211.573,
+   "sentence": 60
   },
   {
    "text": "朝",
-   "start": 220.976,
-   "end": 221.136,
-   "sentence": 62
+   "start": 211.573,
+   "end": 211.733,
+   "sentence": 60
   },
   {
    "text": "的",
-   "start": 221.136,
-   "end": 221.456,
-   "sentence": 62
+   "start": 211.733,
+   "end": 212.053,
+   "sentence": 60
   },
   {
    "text": "祖",
-   "start": 221.456,
-   "end": 221.696,
-   "sentence": 62
+   "start": 212.053,
+   "end": 212.293,
+   "sentence": 60
   },
   {
    "text": "冲",
-   "start": 221.696,
-   "end": 222.016,
-   "sentence": 62
+   "start": 212.293,
+   "end": 212.613,
+   "sentence": 60
   },
   {
    "text": "之",
-   "start": 222.016,
-   "end": 222.336,
-   "sentence": 62
+   "start": 212.613,
+   "end": 212.933,
+   "sentence": 60
   },
   {
    "text": "他",
-   "start": 223.006,
-   "end": 223.086,
-   "sentence": 63
+   "start": 213.603,
+   "end": 213.683,
+   "sentence": 61
   },
   {
    "text": "沿",
-   "start": 223.086,
-   "end": 223.326,
-   "sentence": 63
+   "start": 213.683,
+   "end": 213.923,
+   "sentence": 61
   },
   {
    "text": "着",
-   "start": 223.326,
-   "end": 223.486,
-   "sentence": 63
+   "start": 213.923,
+   "end": 214.083,
+   "sentence": 61
   },
   {
    "text": "刘",
-   "start": 223.486,
-   "end": 223.646,
-   "sentence": 63
+   "start": 214.083,
+   "end": 214.243,
+   "sentence": 61
   },
   {
    "text": "徽",
-   "start": 223.646,
-   "end": 223.806,
-   "sentence": 63
+   "start": 214.243,
+   "end": 214.403,
+   "sentence": 61
   },
   {
    "text": "的",
-   "start": 223.806,
-   "end": 223.886,
-   "sentence": 63
+   "start": 214.403,
+   "end": 214.483,
+   "sentence": 61
   },
   {
    "text": "割",
-   "start": 223.886,
-   "end": 224.046,
-   "sentence": 63
+   "start": 214.483,
+   "end": 214.643,
+   "sentence": 61
   },
   {
    "text": "圆",
-   "start": 224.046,
-   "end": 224.286,
-   "sentence": 63
+   "start": 214.643,
+   "end": 214.883,
+   "sentence": 61
   },
   {
    "text": "术",
-   "start": 224.286,
-   "end": 224.686,
-   "sentence": 63
+   "start": 214.883,
+   "end": 215.283,
+   "sentence": 61
   },
   {
    "text": "继",
-   "start": 224.686,
-   "end": 224.926,
-   "sentence": 63
+   "start": 215.283,
+   "end": 215.523,
+   "sentence": 61
   },
   {
    "text": "续",
-   "start": 224.926,
-   "end": 225.086,
-   "sentence": 63
+   "start": 215.523,
+   "end": 215.683,
+   "sentence": 61
   },
   {
    "text": "往",
-   "start": 225.086,
-   "end": 225.326,
-   "sentence": 63
+   "start": 215.683,
+   "end": 215.923,
+   "sentence": 61
   },
   {
    "text": "下",
-   "start": 225.326,
-   "end": 225.486,
-   "sentence": 63
+   "start": 215.923,
+   "end": 216.083,
+   "sentence": 61
   },
   {
    "text": "切",
-   "start": 225.486,
-   "end": 225.806,
-   "sentence": 63
+   "start": 216.083,
+   "end": 216.403,
+   "sentence": 61
   },
   {
    "text": "那",
-   "start": 226.569,
-   "end": 226.649,
-   "sentence": 64
+   "start": 217.166,
+   "end": 217.246,
+   "sentence": 62
   },
   {
    "text": "时",
-   "start": 226.649,
-   "end": 226.809,
-   "sentence": 64
+   "start": 217.246,
+   "end": 217.406,
+   "sentence": 62
   },
   {
    "text": "没",
-   "start": 226.809,
-   "end": 226.889,
-   "sentence": 64
+   "start": 217.406,
+   "end": 217.486,
+   "sentence": 62
   },
   {
    "text": "有",
-   "start": 226.889,
-   "end": 227.049,
-   "sentence": 64
+   "start": 217.486,
+   "end": 217.646,
+   "sentence": 62
   },
   {
    "text": "计",
-   "start": 227.049,
-   "end": 227.129,
-   "sentence": 64
+   "start": 217.646,
+   "end": 217.726,
+   "sentence": 62
   },
   {
    "text": "算",
-   "start": 227.129,
-   "end": 227.369,
-   "sentence": 64
+   "start": 217.726,
+   "end": 217.966,
+   "sentence": 62
   },
   {
    "text": "器",
-   "start": 227.369,
-   "end": 227.689,
-   "sentence": 64
+   "start": 217.966,
+   "end": 218.286,
+   "sentence": 62
   },
   {
    "text": "他",
-   "start": 227.769,
-   "end": 227.849,
-   "sentence": 64
+   "start": 218.366,
+   "end": 218.446,
+   "sentence": 62
   },
   {
    "text": "用",
-   "start": 227.849,
-   "end": 228.009,
-   "sentence": 64
+   "start": 218.446,
+   "end": 218.606,
+   "sentence": 62
   },
   {
    "text": "的",
-   "start": 228.009,
-   "end": 228.089,
-   "sentence": 64
+   "start": 218.606,
+   "end": 218.686,
+   "sentence": 62
   },
   {
    "text": "是",
-   "start": 228.089,
-   "end": 228.249,
-   "sentence": 64
+   "start": 218.686,
+   "end": 218.846,
+   "sentence": 62
   },
   {
    "text": "算",
-   "start": 228.249,
-   "end": 228.489,
-   "sentence": 64
+   "start": 218.846,
+   "end": 219.086,
+   "sentence": 62
   },
   {
    "text": "筹",
-   "start": 228.489,
-   "end": 228.889,
-   "sentence": 64
+   "start": 219.086,
+   "end": 219.486,
+   "sentence": 62
   },
   {
    "text": "一",
-   "start": 228.969,
-   "end": 229.129,
-   "sentence": 64
+   "start": 219.566,
+   "end": 219.726,
+   "sentence": 62
   },
   {
    "text": "根",
-   "start": 229.129,
-   "end": 229.369,
-   "sentence": 64
+   "start": 219.726,
+   "end": 219.966,
+   "sentence": 62
   },
   {
    "text": "根",
-   "start": 229.369,
-   "end": 229.529,
-   "sentence": 64
+   "start": 219.966,
+   "end": 220.126,
+   "sentence": 62
   },
   {
    "text": "小",
-   "start": 229.529,
-   "end": 229.769,
-   "sentence": 64
+   "start": 220.126,
+   "end": 220.366,
+   "sentence": 62
   },
   {
    "text": "竹",
-   "start": 229.769,
-   "end": 229.929,
-   "sentence": 64
+   "start": 220.366,
+   "end": 220.526,
+   "sentence": 62
   },
   {
    "text": "棍",
-   "start": 229.929,
-   "end": 230.249,
-   "sentence": 64
+   "start": 220.526,
+   "end": 220.846,
+   "sentence": 62
   },
   {
    "text": "每",
-   "start": 230.808,
-   "end": 231.048,
-   "sentence": 65
+   "start": 221.405,
+   "end": 221.645,
+   "sentence": 63
   },
   {
    "text": "算",
-   "start": 231.048,
-   "end": 231.368,
-   "sentence": 65
+   "start": 221.645,
+   "end": 221.965,
+   "sentence": 63
   },
   {
    "text": "一",
-   "start": 231.368,
-   "end": 231.448,
-   "sentence": 65
+   "start": 221.965,
+   "end": 222.045,
+   "sentence": 63
   },
   {
    "text": "步",
-   "start": 231.448,
-   "end": 231.768,
-   "sentence": 65
+   "start": 222.045,
+   "end": 222.365,
+   "sentence": 63
   },
   {
    "text": "都",
-   "start": 231.768,
-   "end": 231.848,
-   "sentence": 65
+   "start": 222.365,
+   "end": 222.445,
+   "sentence": 63
   },
   {
    "text": "要",
-   "start": 231.848,
-   "end": 232.008,
-   "sentence": 65
+   "start": 222.445,
+   "end": 222.605,
+   "sentence": 63
   },
   {
    "text": "摆",
-   "start": 232.008,
-   "end": 232.248,
-   "sentence": 65
+   "start": 222.605,
+   "end": 222.845,
+   "sentence": 63
   },
   {
    "text": "满",
-   "start": 232.248,
-   "end": 232.408,
-   "sentence": 65
+   "start": 222.845,
+   "end": 223.005,
+   "sentence": 63
   },
   {
    "text": "一",
-   "start": 232.488,
-   "end": 232.568,
-   "sentence": 65
+   "start": 223.085,
+   "end": 223.165,
+   "sentence": 63
   },
   {
    "text": "大",
-   "start": 232.568,
-   "end": 232.808,
-   "sentence": 65
+   "start": 223.165,
+   "end": 223.405,
+   "sentence": 63
   },
   {
    "text": "桌",
-   "start": 232.808,
-   "end": 233.128,
-   "sentence": 65
+   "start": 223.405,
+   "end": 223.725,
+   "sentence": 63
   },
   {
    "text": "切",
-   "start": 234.351,
-   "end": 234.511,
-   "sentence": 66
+   "start": 224.948,
+   "end": 225.108,
+   "sentence": 64
   },
   {
    "text": "到",
-   "start": 234.511,
-   "end": 234.591,
-   "sentence": 66
+   "start": 225.108,
+   "end": 225.188,
+   "sentence": 64
   },
   {
    "text": "边",
-   "start": 234.591,
-   "end": 234.831,
-   "sentence": 66
+   "start": 225.188,
+   "end": 225.428,
+   "sentence": 64
   },
   {
    "text": "数",
-   "start": 234.831,
-   "end": 234.991,
-   "sentence": 66
+   "start": 225.428,
+   "end": 225.588,
+   "sentence": 64
   },
   {
    "text": "非",
-   "start": 234.991,
-   "end": 235.231,
-   "sentence": 66
+   "start": 225.588,
+   "end": 225.828,
+   "sentence": 64
   },
   {
    "text": "常",
-   "start": 235.231,
-   "end": 235.391,
-   "sentence": 66
+   "start": 225.828,
+   "end": 225.988,
+   "sentence": 64
   },
   {
    "text": "多",
-   "start": 235.391,
-   "end": 235.551,
-   "sentence": 66
+   "start": 225.988,
+   "end": 226.148,
+   "sentence": 64
   },
   {
    "text": "的",
-   "start": 235.551,
-   "end": 235.631,
-   "sentence": 66
+   "start": 226.148,
+   "end": 226.228,
+   "sentence": 64
   },
   {
    "text": "时",
-   "start": 235.631,
-   "end": 235.791,
-   "sentence": 66
+   "start": 226.228,
+   "end": 226.388,
+   "sentence": 64
   },
   {
    "text": "候",
-   "start": 235.791,
-   "end": 236.031,
-   "sentence": 66
+   "start": 226.388,
+   "end": 226.628,
+   "sentence": 64
   },
   {
    "text": "他",
-   "start": 236.031,
-   "end": 236.191,
-   "sentence": 66
+   "start": 226.628,
+   "end": 226.788,
+   "sentence": 64
   },
   {
    "text": "终",
-   "start": 236.191,
-   "end": 236.431,
-   "sentence": 66
+   "start": 226.788,
+   "end": 227.028,
+   "sentence": 64
   },
   {
    "text": "于",
-   "start": 236.431,
-   "end": 236.591,
-   "sentence": 66
+   "start": 227.028,
+   "end": 227.188,
+   "sentence": 64
   },
   {
    "text": "算",
-   "start": 236.591,
-   "end": 236.751,
-   "sentence": 66
+   "start": 227.188,
+   "end": 227.348,
+   "sentence": 64
   },
   {
    "text": "出",
-   "start": 236.751,
-   "end": 237.071,
-   "sentence": 66
+   "start": 227.348,
+   "end": 227.668,
+   "sentence": 64
   },
   {
    "text": "派",
-   "start": 237.151,
-   "end": 237.391,
-   "sentence": 66
+   "start": 227.748,
+   "end": 227.988,
+   "sentence": 64
   },
   {
    "text": "大",
-   "start": 237.391,
-   "end": 237.711,
-   "sentence": 66
+   "start": 227.988,
+   "end": 228.308,
+   "sentence": 64
   },
   {
    "text": "于",
-   "start": 237.711,
-   "end": 237.871,
-   "sentence": 66
+   "start": 228.308,
+   "end": 228.468,
+   "sentence": 64
   },
   {
    "text": "三",
-   "start": 237.871,
-   "end": 238.111,
-   "sentence": 66
+   "start": 228.468,
+   "end": 228.708,
+   "sentence": 64
   },
   {
    "text": "点",
-   "start": 238.111,
-   "end": 238.351,
-   "sentence": 66
+   "start": 228.708,
+   "end": 228.948,
+   "sentence": 64
   },
   {
    "text": "一",
-   "start": 238.351,
-   "end": 238.431,
-   "sentence": 66
+   "start": 228.948,
+   "end": 229.028,
+   "sentence": 64
   },
   {
    "text": "四",
-   "start": 238.431,
-   "end": 238.671,
-   "sentence": 66
+   "start": 229.028,
+   "end": 229.268,
+   "sentence": 64
   },
   {
    "text": "一",
-   "start": 238.751,
-   "end": 238.831,
-   "sentence": 66
+   "start": 229.348,
+   "end": 229.428,
+   "sentence": 64
   },
   {
    "text": "五",
-   "start": 238.831,
-   "end": 239.071,
-   "sentence": 66
+   "start": 229.428,
+   "end": 229.668,
+   "sentence": 64
   },
   {
    "text": "九",
-   "start": 239.071,
-   "end": 239.151,
-   "sentence": 66
+   "start": 229.668,
+   "end": 229.748,
+   "sentence": 64
   },
   {
    "text": "二",
-   "start": 239.151,
-   "end": 239.311,
-   "sentence": 66
+   "start": 229.748,
+   "end": 229.908,
+   "sentence": 64
   },
   {
    "text": "六",
-   "start": 239.311,
-   "end": 239.631,
-   "sentence": 66
+   "start": 229.908,
+   "end": 230.228,
+   "sentence": 64
   },
   {
    "text": "小",
-   "start": 239.871,
-   "end": 240.191,
-   "sentence": 66
+   "start": 230.468,
+   "end": 230.788,
+   "sentence": 64
   },
   {
    "text": "于",
-   "start": 240.191,
-   "end": 240.351,
-   "sentence": 66
+   "start": 230.788,
+   "end": 230.948,
+   "sentence": 64
   },
   {
    "text": "三",
-   "start": 240.351,
-   "end": 240.591,
-   "sentence": 66
+   "start": 230.948,
+   "end": 231.188,
+   "sentence": 64
   },
   {
    "text": "点",
-   "start": 240.591,
-   "end": 240.751,
-   "sentence": 66
+   "start": 231.188,
+   "end": 231.348,
+   "sentence": 64
   },
   {
    "text": "一",
-   "start": 240.751,
-   "end": 240.831,
-   "sentence": 66
+   "start": 231.348,
+   "end": 231.428,
+   "sentence": 64
   },
   {
    "text": "四",
-   "start": 240.831,
-   "end": 241.071,
-   "sentence": 66
+   "start": 231.428,
+   "end": 231.668,
+   "sentence": 64
   },
   {
    "text": "一",
-   "start": 241.151,
-   "end": 241.311,
-   "sentence": 66
+   "start": 231.748,
+   "end": 231.908,
+   "sentence": 64
   },
   {
    "text": "五",
-   "start": 241.311,
-   "end": 241.471,
-   "sentence": 66
+   "start": 231.908,
+   "end": 232.068,
+   "sentence": 64
   },
   {
    "text": "九",
-   "start": 241.471,
-   "end": 241.631,
-   "sentence": 66
+   "start": 232.068,
+   "end": 232.228,
+   "sentence": 64
   },
   {
    "text": "二",
-   "start": 241.631,
-   "end": 241.791,
-   "sentence": 66
+   "start": 232.228,
+   "end": 232.388,
+   "sentence": 64
   },
   {
    "text": "七",
-   "start": 241.791,
-   "end": 242.271,
-   "sentence": 66
+   "start": 232.388,
+   "end": 232.868,
+   "sentence": 64
   },
   {
    "text": "精",
-   "start": 243.002,
-   "end": 243.322,
-   "sentence": 67
+   "start": 233.599,
+   "end": 233.919,
+   "sentence": 65
   },
   {
    "text": "确",
-   "start": 243.322,
-   "end": 243.482,
-   "sentence": 67
+   "start": 233.919,
+   "end": 234.079,
+   "sentence": 65
   },
   {
    "text": "到",
-   "start": 243.482,
-   "end": 243.722,
-   "sentence": 67
+   "start": 234.079,
+   "end": 234.319,
+   "sentence": 65
   },
   {
    "text": "小",
-   "start": 243.722,
-   "end": 244.042,
-   "sentence": 67
+   "start": 234.319,
+   "end": 234.639,
+   "sentence": 65
   },
   {
    "text": "数",
-   "start": 244.042,
-   "end": 244.202,
-   "sentence": 67
+   "start": 234.639,
+   "end": 234.799,
+   "sentence": 65
   },
   {
    "text": "点",
-   "start": 244.202,
-   "end": 244.362,
-   "sentence": 67
+   "start": 234.799,
+   "end": 234.959,
+   "sentence": 65
   },
   {
    "text": "后",
-   "start": 244.362,
-   "end": 244.522,
-   "sentence": 67
+   "start": 234.959,
+   "end": 235.119,
+   "sentence": 65
   },
   {
    "text": "七",
-   "start": 244.522,
-   "end": 244.842,
-   "sentence": 67
+   "start": 235.119,
+   "end": 235.439,
+   "sentence": 65
   },
   {
    "text": "位",
-   "start": 244.842,
-   "end": 245.162,
-   "sentence": 67
+   "start": 235.439,
+   "end": 235.759,
+   "sentence": 65
   },
   {
    "text": "这",
-   "start": 245.729,
-   "end": 245.889,
-   "sentence": 68
+   "start": 236.326,
+   "end": 236.486,
+   "sentence": 66
   },
   {
    "text": "比",
-   "start": 245.889,
-   "end": 245.969,
-   "sentence": 68
+   "start": 236.486,
+   "end": 236.566,
+   "sentence": 66
   },
   {
    "text": "国",
-   "start": 245.969,
-   "end": 246.209,
-   "sentence": 68
+   "start": 236.566,
+   "end": 236.806,
+   "sentence": 66
   },
   {
    "text": "外",
-   "start": 246.209,
-   "end": 246.529,
-   "sentence": 68
+   "start": 236.806,
+   "end": 237.126,
+   "sentence": 66
   },
   {
    "text": "早",
-   "start": 246.609,
-   "end": 246.849,
-   "sentence": 68
+   "start": 237.206,
+   "end": 237.446,
+   "sentence": 66
   },
   {
    "text": "了",
-   "start": 246.849,
-   "end": 246.929,
-   "sentence": 68
+   "start": 237.446,
+   "end": 237.526,
+   "sentence": 66
   },
   {
    "text": "大",
-   "start": 246.929,
-   "end": 247.089,
-   "sentence": 68
+   "start": 237.526,
+   "end": 237.686,
+   "sentence": 66
   },
   {
    "text": "约",
-   "start": 247.089,
-   "end": 247.249,
-   "sentence": 68
+   "start": 237.686,
+   "end": 237.846,
+   "sentence": 66
   },
   {
    "text": "一",
-   "start": 247.249,
-   "end": 247.409,
-   "sentence": 68
+   "start": 237.846,
+   "end": 238.006,
+   "sentence": 66
   },
   {
    "text": "千",
-   "start": 247.409,
-   "end": 247.729,
-   "sentence": 68
+   "start": 238.006,
+   "end": 238.326,
+   "sentence": 66
   },
   {
    "text": "年",
-   "start": 247.729,
-   "end": 247.969,
-   "sentence": 68
+   "start": 238.326,
+   "end": 238.566,
+   "sentence": 66
   },
   {
    "text": "想",
-   "start": 248.56,
-   "end": 248.88,
-   "sentence": 69
+   "start": 239.157,
+   "end": 239.477,
+   "sentence": 67
   },
   {
    "text": "一",
-   "start": 248.88,
-   "end": 248.96,
-   "sentence": 69
+   "start": 239.477,
+   "end": 239.557,
+   "sentence": 67
   },
   {
    "text": "想",
-   "start": 248.96,
-   "end": 249.28,
-   "sentence": 69
+   "start": 239.557,
+   "end": 239.877,
+   "sentence": 67
   },
   {
    "text": "七",
-   "start": 249.36,
-   "end": 249.68,
-   "sentence": 69
+   "start": 239.957,
+   "end": 240.277,
+   "sentence": 67
   },
   {
    "text": "位",
-   "start": 249.68,
-   "end": 249.84,
-   "sentence": 69
+   "start": 240.277,
+   "end": 240.437,
+   "sentence": 67
   },
   {
    "text": "小",
-   "start": 249.84,
-   "end": 250.08,
-   "sentence": 69
+   "start": 240.437,
+   "end": 240.677,
+   "sentence": 67
   },
   {
    "text": "数",
-   "start": 250.08,
-   "end": 250.48,
-   "sentence": 69
+   "start": 240.677,
+   "end": 241.077,
+   "sentence": 67
   },
   {
    "text": "有",
-   "start": 250.48,
-   "end": 250.64,
-   "sentence": 69
+   "start": 241.077,
+   "end": 241.237,
+   "sentence": 67
   },
   {
    "text": "多",
-   "start": 250.64,
-   "end": 250.88,
-   "sentence": 69
+   "start": 241.237,
+   "end": 241.477,
+   "sentence": 67
   },
   {
    "text": "准",
-   "start": 250.88,
-   "end": 251.2,
-   "sentence": 69
+   "start": 241.477,
+   "end": 241.797,
+   "sentence": 67
   },
   {
    "text": "如",
-   "start": 253.674,
-   "end": 253.834,
-   "sentence": 70
+   "start": 244.271,
+   "end": 244.431,
+   "sentence": 68
   },
   {
    "text": "果",
-   "start": 253.834,
-   "end": 253.914,
-   "sentence": 70
+   "start": 244.431,
+   "end": 244.511,
+   "sentence": 68
   },
   {
    "text": "拿",
-   "start": 253.914,
-   "end": 254.074,
-   "sentence": 70
+   "start": 244.511,
+   "end": 244.671,
+   "sentence": 68
   },
   {
    "text": "它",
-   "start": 254.074,
-   "end": 254.474,
-   "sentence": 70
+   "start": 244.671,
+   "end": 245.071,
+   "sentence": 68
   },
   {
    "text": "去",
-   "start": 254.554,
-   "end": 254.714,
-   "sentence": 70
+   "start": 245.151,
+   "end": 245.311,
+   "sentence": 68
   },
   {
    "text": "算",
-   "start": 254.714,
-   "end": 255.034,
-   "sentence": 70
+   "start": 245.311,
+   "end": 245.631,
+   "sentence": 68
   },
   {
    "text": "一",
-   "start": 255.034,
-   "end": 255.114,
-   "sentence": 70
+   "start": 245.631,
+   "end": 245.711,
+   "sentence": 68
   },
   {
    "text": "个",
-   "start": 255.114,
-   "end": 255.274,
-   "sentence": 70
+   "start": 245.711,
+   "end": 245.871,
+   "sentence": 68
   },
   {
    "text": "大",
-   "start": 255.274,
-   "end": 255.594,
-   "sentence": 70
+   "start": 245.871,
+   "end": 246.191,
+   "sentence": 68
   },
   {
    "text": "圆",
-   "start": 255.594,
-   "end": 255.754,
-   "sentence": 70
+   "start": 246.191,
+   "end": 246.351,
+   "sentence": 68
   },
   {
    "text": "形",
-   "start": 255.754,
-   "end": 255.994,
-   "sentence": 70
+   "start": 246.351,
+   "end": 246.591,
+   "sentence": 68
   },
   {
    "text": "广",
-   "start": 255.994,
-   "end": 256.154,
-   "sentence": 70
+   "start": 246.591,
+   "end": 246.751,
+   "sentence": 68
   },
   {
    "text": "场",
-   "start": 256.154,
-   "end": 256.314,
-   "sentence": 70
+   "start": 246.751,
+   "end": 246.911,
+   "sentence": 68
   },
   {
    "text": "的",
-   "start": 256.314,
-   "end": 256.394,
-   "sentence": 70
+   "start": 246.911,
+   "end": 246.991,
+   "sentence": 68
   },
   {
    "text": "周",
-   "start": 256.394,
-   "end": 256.634,
-   "sentence": 70
+   "start": 246.991,
+   "end": 247.231,
+   "sentence": 68
   },
   {
    "text": "长",
-   "start": 256.634,
-   "end": 256.954,
-   "sentence": 70
+   "start": 247.231,
+   "end": 247.551,
+   "sentence": 68
   },
   {
    "text": "误",
-   "start": 257.114,
-   "end": 257.274,
-   "sentence": 70
+   "start": 247.711,
+   "end": 247.871,
+   "sentence": 68
   },
   {
    "text": "差",
-   "start": 257.274,
-   "end": 257.594,
-   "sentence": 70
+   "start": 247.871,
+   "end": 248.191,
+   "sentence": 68
   },
   {
    "text": "还",
-   "start": 257.674,
-   "end": 257.834,
-   "sentence": 70
+   "start": 248.271,
+   "end": 248.431,
+   "sentence": 68
   },
   {
    "text": "没",
-   "start": 257.834,
-   "end": 257.914,
-   "sentence": 70
+   "start": 248.431,
+   "end": 248.511,
+   "sentence": 68
   },
   {
    "text": "有",
-   "start": 257.914,
-   "end": 258.074,
-   "sentence": 70
+   "start": 248.511,
+   "end": 248.671,
+   "sentence": 68
   },
   {
    "text": "一",
-   "start": 258.074,
-   "end": 258.234,
-   "sentence": 70
+   "start": 248.671,
+   "end": 248.831,
+   "sentence": 68
   },
   {
    "text": "粒",
-   "start": 258.234,
-   "end": 258.394,
-   "sentence": 70
+   "start": 248.831,
+   "end": 248.991,
+   "sentence": 68
   },
   {
    "text": "沙",
-   "start": 258.394,
-   "end": 258.634,
-   "sentence": 70
+   "start": 248.991,
+   "end": 249.231,
+   "sentence": 68
   },
   {
    "text": "子",
-   "start": 258.634,
-   "end": 258.714,
-   "sentence": 70
+   "start": 249.231,
+   "end": 249.311,
+   "sentence": 68
   },
   {
    "text": "大",
-   "start": 258.714,
-   "end": 259.034,
-   "sentence": 70
+   "start": 249.311,
+   "end": 249.631,
+   "sentence": 68
   },
   {
    "text": "要",
-   "start": 259.531,
-   "end": 259.771,
-   "sentence": 71
+   "start": 250.128,
+   "end": 250.368,
+   "sentence": 69
   },
   {
    "text": "记",
-   "start": 259.771,
-   "end": 259.931,
-   "sentence": 71
+   "start": 250.368,
+   "end": 250.528,
+   "sentence": 69
   },
   {
    "text": "住",
-   "start": 259.931,
-   "end": 260.171,
-   "sentence": 71
+   "start": 250.528,
+   "end": 250.768,
+   "sentence": 69
   },
   {
    "text": "圆",
-   "start": 260.251,
-   "end": 260.491,
-   "sentence": 71
+   "start": 250.848,
+   "end": 251.088,
+   "sentence": 69
   },
   {
    "text": "周",
-   "start": 260.491,
-   "end": 260.651,
-   "sentence": 71
+   "start": 251.088,
+   "end": 251.248,
+   "sentence": 69
   },
   {
    "text": "率",
-   "start": 260.651,
-   "end": 260.971,
-   "sentence": 71
+   "start": 251.248,
+   "end": 251.568,
+   "sentence": 69
   },
   {
    "text": "不",
-   "start": 260.971,
-   "end": 261.131,
-   "sentence": 71
+   "start": 251.568,
+   "end": 251.728,
+   "sentence": 69
   },
   {
    "text": "是",
-   "start": 261.131,
-   "end": 261.291,
-   "sentence": 71
+   "start": 251.728,
+   "end": 251.888,
+   "sentence": 69
   },
   {
    "text": "祖",
-   "start": 261.291,
-   "end": 261.451,
-   "sentence": 71
+   "start": 251.888,
+   "end": 252.048,
+   "sentence": 69
   },
   {
    "text": "冲",
-   "start": 261.451,
-   "end": 261.611,
-   "sentence": 71
+   "start": 252.048,
+   "end": 252.208,
+   "sentence": 69
   },
   {
    "text": "之",
-   "start": 261.611,
-   "end": 261.691,
-   "sentence": 71
+   "start": 252.208,
+   "end": 252.288,
+   "sentence": 69
   },
   {
    "text": "发",
-   "start": 261.691,
-   "end": 261.851,
-   "sentence": 71
+   "start": 252.288,
+   "end": 252.448,
+   "sentence": 69
   },
   {
    "text": "现",
-   "start": 261.851,
-   "end": 262.091,
-   "sentence": 71
+   "start": 252.448,
+   "end": 252.688,
+   "sentence": 69
   },
   {
    "text": "的",
-   "start": 262.091,
-   "end": 262.251,
-   "sentence": 71
+   "start": 252.688,
+   "end": 252.848,
+   "sentence": 69
   },
   {
    "text": "他",
-   "start": 262.571,
-   "end": 262.731,
-   "sentence": 71
+   "start": 253.168,
+   "end": 253.328,
+   "sentence": 69
   },
   {
    "text": "是",
-   "start": 262.731,
-   "end": 262.811,
-   "sentence": 71
+   "start": 253.328,
+   "end": 253.408,
+   "sentence": 69
   },
   {
    "text": "把",
-   "start": 262.811,
-   "end": 262.971,
-   "sentence": 71
+   "start": 253.408,
+   "end": 253.568,
+   "sentence": 69
   },
   {
    "text": "它",
-   "start": 262.971,
-   "end": 263.291,
-   "sentence": 71
+   "start": 253.568,
+   "end": 253.888,
+   "sentence": 69
   },
   {
    "text": "算",
-   "start": 263.371,
-   "end": 263.611,
-   "sentence": 71
+   "start": 253.968,
+   "end": 254.208,
+   "sentence": 69
   },
   {
    "text": "得",
-   "start": 263.611,
-   "end": 263.771,
-   "sentence": 71
+   "start": 254.208,
+   "end": 254.368,
+   "sentence": 69
   },
   {
    "text": "更",
-   "start": 263.771,
-   "end": 263.931,
-   "sentence": 71
+   "start": 254.368,
+   "end": 254.528,
+   "sentence": 69
   },
   {
    "text": "准",
-   "start": 263.931,
-   "end": 264.251,
-   "sentence": 71
+   "start": 254.528,
+   "end": 254.848,
+   "sentence": 69
   },
   {
    "text": "七",
-   "start": 264.792,
-   "end": 265.112,
-   "sentence": 72
+   "start": 255.389,
+   "end": 255.709,
+   "sentence": 70
   },
   {
    "text": "位",
-   "start": 265.112,
-   "end": 265.272,
-   "sentence": 72
+   "start": 255.709,
+   "end": 255.869,
+   "sentence": 70
   },
   {
    "text": "已",
-   "start": 265.272,
-   "end": 265.352,
-   "sentence": 72
+   "start": 255.869,
+   "end": 255.949,
+   "sentence": 70
   },
   {
    "text": "经",
-   "start": 265.352,
-   "end": 265.512,
-   "sentence": 72
+   "start": 255.949,
+   "end": 256.109,
+   "sentence": 70
   },
   {
    "text": "很",
-   "start": 265.512,
-   "end": 265.672,
-   "sentence": 72
+   "start": 256.109,
+   "end": 256.269,
+   "sentence": 70
   },
   {
    "text": "厉",
-   "start": 265.672,
-   "end": 265.832,
-   "sentence": 72
+   "start": 256.269,
+   "end": 256.429,
+   "sentence": 70
   },
   {
    "text": "害",
-   "start": 265.832,
-   "end": 265.992,
-   "sentence": 72
+   "start": 256.429,
+   "end": 256.589,
+   "sentence": 70
   },
   {
    "text": "了",
-   "start": 265.992,
-   "end": 266.232,
-   "sentence": 72
+   "start": 256.589,
+   "end": 256.829,
+   "sentence": 70
   },
   {
    "text": "可",
-   "start": 266.735,
-   "end": 266.895,
-   "sentence": 73
+   "start": 257.332,
+   "end": 257.492,
+   "sentence": 71
   },
   {
    "text": "是",
-   "start": 266.895,
-   "end": 267.215,
-   "sentence": 73
+   "start": 257.492,
+   "end": 257.812,
+   "sentence": 71
   },
   {
    "text": "派",
-   "start": 267.295,
-   "end": 267.455,
-   "sentence": 73
+   "start": 257.892,
+   "end": 258.052,
+   "sentence": 71
   },
   {
    "text": "还",
-   "start": 267.455,
-   "end": 267.615,
-   "sentence": 73
+   "start": 258.052,
+   "end": 258.212,
+   "sentence": 71
   },
   {
    "text": "能",
-   "start": 267.615,
-   "end": 267.775,
-   "sentence": 73
+   "start": 258.212,
+   "end": 258.372,
+   "sentence": 71
   },
   {
    "text": "算",
-   "start": 267.775,
-   "end": 267.935,
-   "sentence": 73
+   "start": 258.372,
+   "end": 258.532,
+   "sentence": 71
   },
   {
    "text": "得",
-   "start": 267.935,
-   "end": 268.015,
-   "sentence": 73
+   "start": 258.532,
+   "end": 258.612,
+   "sentence": 71
   },
   {
    "text": "更",
-   "start": 268.015,
-   "end": 268.255,
-   "sentence": 73
+   "start": 258.612,
+   "end": 258.852,
+   "sentence": 71
   },
   {
    "text": "准",
-   "start": 268.255,
-   "end": 268.415,
-   "sentence": 73
+   "start": 258.852,
+   "end": 259.012,
+   "sentence": 71
   },
   {
    "text": "吗",
-   "start": 268.415,
-   "end": 268.655,
-   "sentence": 73
+   "start": 259.012,
+   "end": 259.252,
+   "sentence": 71
   },
   {
    "text": "能",
-   "start": 269.851,
-   "end": 270.331,
-   "sentence": 74
+   "start": 260.448,
+   "end": 260.928,
+   "sentence": 72
   },
   {
    "text": "而",
-   "start": 270.411,
-   "end": 270.491,
-   "sentence": 74
+   "start": 261.008,
+   "end": 261.088,
+   "sentence": 72
   },
   {
    "text": "且",
-   "start": 270.491,
-   "end": 270.651,
-   "sentence": 74
+   "start": 261.088,
+   "end": 261.248,
+   "sentence": 72
   },
   {
    "text": "远",
-   "start": 270.731,
-   "end": 270.891,
-   "sentence": 74
+   "start": 261.328,
+   "end": 261.488,
+   "sentence": 72
   },
   {
    "text": "远",
-   "start": 270.891,
-   "end": 271.131,
-   "sentence": 74
+   "start": 261.488,
+   "end": 261.728,
+   "sentence": 72
   },
   {
    "text": "不",
-   "start": 271.131,
-   "end": 271.211,
-   "sentence": 74
+   "start": 261.728,
+   "end": 261.808,
+   "sentence": 72
   },
   {
    "text": "止",
-   "start": 271.211,
-   "end": 271.531,
-   "sentence": 74
+   "start": 261.808,
+   "end": 262.128,
+   "sentence": 72
   },
   {
    "text": "后",
-   "start": 272.269,
-   "end": 272.429,
-   "sentence": 75
+   "start": 262.866,
+   "end": 263.026,
+   "sentence": 73
   },
   {
    "text": "来",
-   "start": 272.429,
-   "end": 272.749,
-   "sentence": 75
+   "start": 263.026,
+   "end": 263.346,
+   "sentence": 73
   },
   {
    "text": "人",
-   "start": 272.829,
-   "end": 272.989,
-   "sentence": 75
+   "start": 263.426,
+   "end": 263.586,
+   "sentence": 73
   },
   {
    "text": "们",
-   "start": 272.989,
-   "end": 273.149,
-   "sentence": 75
+   "start": 263.586,
+   "end": 263.746,
+   "sentence": 73
   },
   {
    "text": "找",
-   "start": 273.149,
-   "end": 273.309,
-   "sentence": 75
+   "start": 263.746,
+   "end": 263.906,
+   "sentence": 73
   },
   {
    "text": "到",
-   "start": 273.309,
-   "end": 273.389,
-   "sentence": 75
+   "start": 263.906,
+   "end": 263.986,
+   "sentence": 73
   },
   {
    "text": "了",
-   "start": 273.389,
-   "end": 273.549,
-   "sentence": 75
+   "start": 263.986,
+   "end": 264.146,
+   "sentence": 73
   },
   {
    "text": "更",
-   "start": 273.549,
-   "end": 273.709,
-   "sentence": 75
+   "start": 264.146,
+   "end": 264.306,
+   "sentence": 73
   },
   {
    "text": "快",
-   "start": 273.709,
-   "end": 273.949,
-   "sentence": 75
+   "start": 264.306,
+   "end": 264.546,
+   "sentence": 73
   },
   {
    "text": "的",
-   "start": 273.949,
-   "end": 274.109,
-   "sentence": 75
+   "start": 264.546,
+   "end": 264.706,
+   "sentence": 73
   },
   {
    "text": "方",
-   "start": 274.109,
-   "end": 274.269,
-   "sentence": 75
+   "start": 264.706,
+   "end": 264.866,
+   "sentence": 73
   },
   {
    "text": "法",
-   "start": 274.269,
-   "end": 274.509,
-   "sentence": 75
+   "start": 264.866,
+   "end": 265.106,
+   "sentence": 73
   },
   {
    "text": "又",
-   "start": 274.589,
-   "end": 274.749,
-   "sentence": 75
+   "start": 265.186,
+   "end": 265.346,
+   "sentence": 73
   },
   {
    "text": "有",
-   "start": 274.749,
-   "end": 274.909,
-   "sentence": 75
+   "start": 265.346,
+   "end": 265.506,
+   "sentence": 73
   },
   {
    "text": "了",
-   "start": 274.909,
-   "end": 274.989,
-   "sentence": 75
+   "start": 265.506,
+   "end": 265.586,
+   "sentence": 73
   },
   {
    "text": "计",
-   "start": 274.989,
-   "end": 275.149,
-   "sentence": 75
+   "start": 265.586,
+   "end": 265.746,
+   "sentence": 73
   },
   {
    "text": "算",
-   "start": 275.149,
-   "end": 275.309,
-   "sentence": 75
+   "start": 265.746,
+   "end": 265.906,
+   "sentence": 73
   },
   {
    "text": "机",
-   "start": 275.309,
-   "end": 275.629,
-   "sentence": 75
+   "start": 265.906,
+   "end": 266.226,
+   "sentence": 73
   },
   {
    "text": "截",
-   "start": 276.567,
-   "end": 276.727,
-   "sentence": 76
+   "start": 267.164,
+   "end": 267.324,
+   "sentence": 74
   },
   {
    "text": "至",
-   "start": 276.727,
-   "end": 276.887,
-   "sentence": 76
+   "start": 267.324,
+   "end": 267.484,
+   "sentence": 74
   },
   {
    "text": "二",
-   "start": 276.887,
-   "end": 277.127,
-   "sentence": 76
+   "start": 267.484,
+   "end": 267.724,
+   "sentence": 74
   },
   {
    "text": "零",
-   "start": 277.127,
-   "end": 277.287,
-   "sentence": 76
+   "start": 267.724,
+   "end": 267.884,
+   "sentence": 74
   },
   {
    "text": "二",
-   "start": 277.287,
-   "end": 277.367,
-   "sentence": 76
+   "start": 267.884,
+   "end": 267.964,
+   "sentence": 74
   },
   {
    "text": "六",
-   "start": 277.367,
-   "end": 277.527,
-   "sentence": 76
+   "start": 267.964,
+   "end": 268.124,
+   "sentence": 74
   },
   {
    "text": "年",
-   "start": 277.527,
-   "end": 277.927,
-   "sentence": 76
+   "start": 268.124,
+   "end": 268.524,
+   "sentence": 74
   },
   {
    "text": "世",
-   "start": 277.927,
-   "end": 278.247,
-   "sentence": 76
+   "start": 268.524,
+   "end": 268.844,
+   "sentence": 74
   },
   {
    "text": "界",
-   "start": 278.247,
-   "end": 278.407,
-   "sentence": 76
+   "start": 268.844,
+   "end": 269.004,
+   "sentence": 74
   },
   {
    "text": "纪",
-   "start": 278.407,
-   "end": 278.567,
-   "sentence": 76
+   "start": 269.004,
+   "end": 269.164,
+   "sentence": 74
   },
   {
    "text": "录",
-   "start": 278.567,
-   "end": 278.727,
-   "sentence": 76
+   "start": 269.164,
+   "end": 269.324,
+   "sentence": 74
   },
   {
    "text": "是",
-   "start": 278.727,
-   "end": 279.047,
-   "sentence": 76
+   "start": 269.324,
+   "end": 269.644,
+   "sentence": 74
   },
   {
    "text": "三",
-   "start": 279.127,
-   "end": 279.447,
-   "sentence": 76
+   "start": 269.724,
+   "end": 270.044,
+   "sentence": 74
   },
   {
    "text": "百",
-   "start": 279.447,
-   "end": 279.607,
-   "sentence": 76
+   "start": 270.044,
+   "end": 270.204,
+   "sentence": 74
   },
   {
    "text": "一",
-   "start": 279.687,
-   "end": 279.767,
-   "sentence": 76
+   "start": 270.284,
+   "end": 270.364,
+   "sentence": 74
   },
   {
    "text": "十",
-   "start": 279.767,
-   "end": 279.927,
-   "sentence": 76
+   "start": 270.364,
+   "end": 270.524,
+   "sentence": 74
   },
   {
    "text": "四",
-   "start": 279.927,
-   "end": 280.167,
-   "sentence": 76
+   "start": 270.524,
+   "end": 270.764,
+   "sentence": 74
   },
   {
    "text": "万",
-   "start": 280.167,
-   "end": 280.407,
-   "sentence": 76
+   "start": 270.764,
+   "end": 271.004,
+   "sentence": 74
   },
   {
    "text": "亿",
-   "start": 280.407,
-   "end": 280.567,
-   "sentence": 76
+   "start": 271.004,
+   "end": 271.164,
+   "sentence": 74
   },
   {
    "text": "位",
-   "start": 280.567,
-   "end": 280.647,
-   "sentence": 76
+   "start": 271.164,
+   "end": 271.244,
+   "sentence": 74
   },
   {
    "text": "小",
-   "start": 280.647,
-   "end": 280.807,
-   "sentence": 76
+   "start": 271.244,
+   "end": 271.404,
+   "sentence": 74
   },
   {
    "text": "数",
-   "start": 280.807,
-   "end": 281.127,
-   "sentence": 76
+   "start": 271.404,
+   "end": 271.724,
+   "sentence": 74
   },
   {
    "text": "一",
-   "start": 281.637,
-   "end": 281.797,
-   "sentence": 77
+   "start": 272.234,
+   "end": 272.394,
+   "sentence": 75
   },
   {
    "text": "台",
-   "start": 281.797,
-   "end": 281.957,
-   "sentence": 77
+   "start": 272.394,
+   "end": 272.554,
+   "sentence": 75
   },
   {
    "text": "计",
-   "start": 281.957,
-   "end": 282.117,
-   "sentence": 77
+   "start": 272.554,
+   "end": 272.714,
+   "sentence": 75
   },
   {
    "text": "算",
-   "start": 282.117,
-   "end": 282.357,
-   "sentence": 77
+   "start": 272.714,
+   "end": 272.954,
+   "sentence": 75
   },
   {
    "text": "机",
-   "start": 282.357,
-   "end": 282.517,
-   "sentence": 77
+   "start": 272.954,
+   "end": 273.114,
+   "sentence": 75
   },
   {
    "text": "连",
-   "start": 282.677,
-   "end": 282.997,
-   "sentence": 77
+   "start": 273.274,
+   "end": 273.594,
+   "sentence": 75
   },
   {
    "text": "续",
-   "start": 282.997,
-   "end": 283.157,
-   "sentence": 77
+   "start": 273.594,
+   "end": 273.754,
+   "sentence": 75
   },
   {
    "text": "算",
-   "start": 283.157,
-   "end": 283.477,
-   "sentence": 77
+   "start": 273.754,
+   "end": 274.074,
+   "sentence": 75
   },
   {
    "text": "了",
-   "start": 283.477,
-   "end": 283.637,
-   "sentence": 77
+   "start": 274.074,
+   "end": 274.234,
+   "sentence": 75
   },
   {
    "text": "大",
-   "start": 283.717,
-   "end": 283.877,
-   "sentence": 77
+   "start": 274.314,
+   "end": 274.474,
+   "sentence": 75
   },
   {
    "text": "约",
-   "start": 283.877,
-   "end": 284.037,
-   "sentence": 77
+   "start": 274.474,
+   "end": 274.634,
+   "sentence": 75
   },
   {
    "text": "一",
-   "start": 284.037,
-   "end": 284.197,
-   "sentence": 77
+   "start": 274.634,
+   "end": 274.794,
+   "sentence": 75
   },
   {
    "text": "百",
-   "start": 284.197,
-   "end": 284.357,
-   "sentence": 77
+   "start": 274.794,
+   "end": 274.954,
+   "sentence": 75
   },
   {
    "text": "一",
-   "start": 284.357,
-   "end": 284.597,
-   "sentence": 77
+   "start": 274.954,
+   "end": 275.194,
+   "sentence": 75
   },
   {
    "text": "十",
-   "start": 284.597,
-   "end": 284.677,
-   "sentence": 77
+   "start": 275.194,
+   "end": 275.274,
+   "sentence": 75
   },
   {
    "text": "天",
-   "start": 284.677,
-   "end": 284.997,
-   "sentence": 77
+   "start": 275.274,
+   "end": 275.594,
+   "sentence": 75
   },
   {
    "text": "想",
-   "start": 285.539,
-   "end": 285.859,
-   "sentence": 78
+   "start": 276.136,
+   "end": 276.456,
+   "sentence": 76
   },
   {
    "text": "一",
-   "start": 285.859,
-   "end": 285.939,
-   "sentence": 78
+   "start": 276.456,
+   "end": 276.536,
+   "sentence": 76
   },
   {
    "text": "想",
-   "start": 285.939,
-   "end": 286.259,
-   "sentence": 78
+   "start": 276.536,
+   "end": 276.856,
+   "sentence": 76
   },
   {
    "text": "如",
-   "start": 286.499,
-   "end": 286.659,
-   "sentence": 78
+   "start": 277.096,
+   "end": 277.256,
+   "sentence": 76
   },
   {
    "text": "果",
-   "start": 286.659,
-   "end": 286.739,
-   "sentence": 78
+   "start": 277.256,
+   "end": 277.336,
+   "sentence": 76
   },
   {
    "text": "每",
-   "start": 286.739,
-   "end": 286.979,
-   "sentence": 78
+   "start": 277.336,
+   "end": 277.576,
+   "sentence": 76
   },
   {
    "text": "秒",
-   "start": 286.979,
-   "end": 287.219,
-   "sentence": 78
+   "start": 277.576,
+   "end": 277.816,
+   "sentence": 76
   },
   {
    "text": "念",
-   "start": 287.219,
-   "end": 287.459,
-   "sentence": 78
+   "start": 277.816,
+   "end": 278.056,
+   "sentence": 76
   },
   {
    "text": "一",
-   "start": 287.459,
-   "end": 287.539,
-   "sentence": 78
+   "start": 278.056,
+   "end": 278.136,
+   "sentence": 76
   },
   {
    "text": "位",
-   "start": 287.539,
-   "end": 287.939,
-   "sentence": 78
+   "start": 278.136,
+   "end": 278.536,
+   "sentence": 76
   },
   {
    "text": "念",
-   "start": 288.019,
-   "end": 288.179,
-   "sentence": 78
+   "start": 278.616,
+   "end": 278.776,
+   "sentence": 76
   },
   {
    "text": "完",
-   "start": 288.179,
-   "end": 288.339,
-   "sentence": 78
+   "start": 278.776,
+   "end": 278.936,
+   "sentence": 76
   },
   {
    "text": "要",
-   "start": 288.339,
-   "end": 288.419,
-   "sentence": 78
+   "start": 278.936,
+   "end": 279.016,
+   "sentence": 76
   },
   {
    "text": "多",
-   "start": 288.419,
-   "end": 288.659,
-   "sentence": 78
+   "start": 279.016,
+   "end": 279.256,
+   "sentence": 76
   },
   {
    "text": "久",
-   "start": 288.659,
-   "end": 288.979,
-   "sentence": 78
+   "start": 279.256,
+   "end": 279.576,
+   "sentence": 76
   },
   {
    "text": "大",
-   "start": 291.144,
-   "end": 291.304,
-   "sentence": 79
+   "start": 281.741,
+   "end": 281.901,
+   "sentence": 77
   },
   {
    "text": "约",
-   "start": 291.304,
-   "end": 291.544,
-   "sentence": 79
+   "start": 281.901,
+   "end": 282.141,
+   "sentence": 77
   },
   {
    "text": "一",
-   "start": 291.624,
-   "end": 291.704,
-   "sentence": 79
+   "start": 282.221,
+   "end": 282.301,
+   "sentence": 77
   },
   {
    "text": "千",
-   "start": 291.704,
-   "end": 292.104,
-   "sentence": 79
+   "start": 282.301,
+   "end": 282.701,
+   "sentence": 77
   },
   {
    "text": "万",
-   "start": 292.104,
-   "end": 292.264,
-   "sentence": 79
+   "start": 282.701,
+   "end": 282.861,
+   "sentence": 77
   },
   {
    "text": "年",
-   "start": 292.264,
-   "end": 292.584,
-   "sentence": 79
+   "start": 282.861,
+   "end": 283.181,
+   "sentence": 77
   },
   {
    "text": "可",
-   "start": 293.14,
-   "end": 293.3,
-   "sentence": 80
+   "start": 283.737,
+   "end": 283.897,
+   "sentence": 78
   },
   {
    "text": "就",
-   "start": 293.3,
-   "end": 293.46,
-   "sentence": 80
+   "start": 283.897,
+   "end": 284.057,
+   "sentence": 78
   },
   {
    "text": "算",
-   "start": 293.46,
-   "end": 293.62,
-   "sentence": 80
+   "start": 284.057,
+   "end": 284.217,
+   "sentence": 78
   },
   {
    "text": "这",
-   "start": 293.62,
-   "end": 293.78,
-   "sentence": 80
+   "start": 284.217,
+   "end": 284.377,
+   "sentence": 78
   },
   {
    "text": "样",
-   "start": 293.78,
-   "end": 294.02,
-   "sentence": 80
+   "start": 284.377,
+   "end": 284.617,
+   "sentence": 78
   },
   {
    "text": "派",
-   "start": 294.1,
-   "end": 294.42,
-   "sentence": 80
+   "start": 284.697,
+   "end": 285.017,
+   "sentence": 78
   },
   {
    "text": "还",
-   "start": 294.42,
-   "end": 294.66,
-   "sentence": 80
+   "start": 285.017,
+   "end": 285.257,
+   "sentence": 78
   },
   {
    "text": "是",
-   "start": 294.66,
-   "end": 294.74,
-   "sentence": 80
+   "start": 285.257,
+   "end": 285.337,
+   "sentence": 78
   },
   {
    "text": "没",
-   "start": 294.74,
-   "end": 294.82,
-   "sentence": 80
+   "start": 285.337,
+   "end": 285.417,
+   "sentence": 78
   },
   {
    "text": "写",
-   "start": 294.82,
-   "end": 294.98,
-   "sentence": 80
+   "start": 285.417,
+   "end": 285.577,
+   "sentence": 78
   },
   {
    "text": "完",
-   "start": 294.98,
-   "end": 295.3,
-   "sentence": 80
+   "start": 285.577,
+   "end": 285.897,
+   "sentence": 78
   },
   {
    "text": "它",
-   "start": 296.107,
-   "end": 296.267,
-   "sentence": 81
+   "start": 286.704,
+   "end": 286.864,
+   "sentence": 79
   },
   {
    "text": "是",
-   "start": 296.267,
-   "end": 296.427,
-   "sentence": 81
+   "start": 286.864,
+   "end": 287.024,
+   "sentence": 79
   },
   {
    "text": "无",
-   "start": 296.427,
-   "end": 296.587,
-   "sentence": 81
+   "start": 287.024,
+   "end": 287.184,
+   "sentence": 79
   },
   {
    "text": "限",
-   "start": 296.587,
-   "end": 296.907,
-   "sentence": 81
+   "start": 287.184,
+   "end": 287.504,
+   "sentence": 79
   },
   {
    "text": "不",
-   "start": 296.907,
-   "end": 296.987,
-   "sentence": 81
+   "start": 287.504,
+   "end": 287.584,
+   "sentence": 79
   },
   {
    "text": "循",
-   "start": 296.987,
-   "end": 297.147,
-   "sentence": 81
+   "start": 287.584,
+   "end": 287.744,
+   "sentence": 79
   },
   {
    "text": "环",
-   "start": 297.147,
-   "end": 297.307,
-   "sentence": 81
+   "start": 287.744,
+   "end": 287.904,
+   "sentence": 79
   },
   {
    "text": "小",
-   "start": 297.307,
-   "end": 297.467,
-   "sentence": 81
+   "start": 287.904,
+   "end": 288.064,
+   "sentence": 79
   },
   {
    "text": "数",
-   "start": 297.467,
-   "end": 297.787,
-   "sentence": 81
+   "start": 288.064,
+   "end": 288.384,
+   "sentence": 79
   },
   {
    "text": "一",
-   "start": 297.867,
-   "end": 298.027,
-   "sentence": 81
+   "start": 288.464,
+   "end": 288.624,
+   "sentence": 79
   },
   {
    "text": "直",
-   "start": 298.027,
-   "end": 298.267,
-   "sentence": 81
+   "start": 288.624,
+   "end": 288.864,
+   "sentence": 79
   },
   {
    "text": "写",
-   "start": 298.267,
-   "end": 298.427,
-   "sentence": 81
+   "start": 288.864,
+   "end": 289.024,
+   "sentence": 79
   },
   {
    "text": "下",
-   "start": 298.427,
-   "end": 298.587,
-   "sentence": 81
+   "start": 289.024,
+   "end": 289.184,
+   "sentence": 79
   },
   {
    "text": "去",
-   "start": 298.587,
-   "end": 298.827,
-   "sentence": 81
+   "start": 289.184,
+   "end": 289.424,
+   "sentence": 79
   },
   {
    "text": "永",
-   "start": 298.907,
-   "end": 299.227,
-   "sentence": 81
+   "start": 289.504,
+   "end": 289.824,
+   "sentence": 79
   },
   {
    "text": "远",
-   "start": 299.227,
-   "end": 299.387,
-   "sentence": 81
+   "start": 289.824,
+   "end": 289.984,
+   "sentence": 79
   },
   {
    "text": "没",
-   "start": 299.387,
-   "end": 299.467,
-   "sentence": 81
+   "start": 289.984,
+   "end": 290.064,
+   "sentence": 79
   },
   {
    "text": "有",
-   "start": 299.467,
-   "end": 299.627,
-   "sentence": 81
+   "start": 290.064,
+   "end": 290.224,
+   "sentence": 79
   },
   {
    "text": "尽",
-   "start": 299.627,
-   "end": 299.787,
-   "sentence": 81
+   "start": 290.224,
+   "end": 290.384,
+   "sentence": 79
   },
   {
    "text": "头",
-   "start": 299.787,
-   "end": 300.107,
-   "sentence": 81
+   "start": 290.384,
+   "end": 290.704,
+   "sentence": 79
   },
   {
    "text": "也",
-   "start": 300.267,
-   "end": 300.427,
-   "sentence": 81
+   "start": 290.864,
+   "end": 291.024,
+   "sentence": 79
   },
   {
    "text": "不",
-   "start": 300.427,
-   "end": 300.587,
-   "sentence": 81
+   "start": 291.024,
+   "end": 291.184,
+   "sentence": 79
   },
   {
    "text": "会",
-   "start": 300.587,
-   "end": 300.667,
-   "sentence": 81
+   "start": 291.184,
+   "end": 291.264,
+   "sentence": 79
   },
   {
    "text": "重",
-   "start": 300.667,
-   "end": 300.907,
-   "sentence": 81
+   "start": 291.264,
+   "end": 291.504,
+   "sentence": 79
   },
   {
    "text": "复",
-   "start": 300.907,
-   "end": 300.987,
-   "sentence": 81
+   "start": 291.504,
+   "end": 291.584,
+   "sentence": 79
   },
   {
    "text": "同",
-   "start": 300.987,
-   "end": 301.227,
-   "sentence": 81
+   "start": 291.584,
+   "end": 291.824,
+   "sentence": 79
   },
   {
    "text": "一",
-   "start": 301.227,
-   "end": 301.307,
-   "sentence": 81
+   "start": 291.824,
+   "end": 291.904,
+   "sentence": 79
   },
   {
    "text": "段",
-   "start": 301.307,
-   "end": 301.627,
-   "sentence": 81
+   "start": 291.904,
+   "end": 292.224,
+   "sentence": 79
   },
   {
    "text": "所",
-   "start": 302.147,
-   "end": 302.307,
-   "sentence": 82
+   "start": 292.744,
+   "end": 292.904,
+   "sentence": 80
   },
   {
    "text": "以",
-   "start": 302.307,
-   "end": 302.467,
-   "sentence": 82
+   "start": 292.904,
+   "end": 293.064,
+   "sentence": 80
   },
   {
    "text": "三",
-   "start": 302.467,
-   "end": 302.707,
-   "sentence": 82
+   "start": 293.064,
+   "end": 293.304,
+   "sentence": 80
   },
   {
    "text": "点",
-   "start": 302.707,
-   "end": 302.867,
-   "sentence": 82
+   "start": 293.304,
+   "end": 293.464,
+   "sentence": 80
   },
   {
    "text": "一",
-   "start": 302.867,
-   "end": 302.947,
-   "sentence": 82
+   "start": 293.464,
+   "end": 293.544,
+   "sentence": 80
   },
   {
    "text": "四",
-   "start": 302.947,
-   "end": 303.267,
-   "sentence": 82
+   "start": 293.544,
+   "end": 293.864,
+   "sentence": 80
   },
   {
    "text": "只",
-   "start": 303.587,
-   "end": 303.827,
-   "sentence": 82
+   "start": 294.184,
+   "end": 294.424,
+   "sentence": 80
   },
   {
    "text": "是",
-   "start": 303.827,
-   "end": 304.067,
-   "sentence": 82
+   "start": 294.424,
+   "end": 294.664,
+   "sentence": 80
   },
   {
    "text": "它",
-   "start": 304.067,
-   "end": 304.227,
-   "sentence": 82
+   "start": 294.664,
+   "end": 294.824,
+   "sentence": 80
   },
   {
    "text": "的",
-   "start": 304.227,
-   "end": 304.307,
-   "sentence": 82
+   "start": 294.824,
+   "end": 294.904,
+   "sentence": 80
   },
   {
    "text": "近",
-   "start": 304.307,
-   "end": 304.547,
-   "sentence": 82
+   "start": 294.904,
+   "end": 295.144,
+   "sentence": 80
   },
   {
    "text": "似",
-   "start": 304.547,
-   "end": 304.707,
-   "sentence": 82
+   "start": 295.144,
+   "end": 295.304,
+   "sentence": 80
   },
   {
    "text": "值",
-   "start": 304.707,
-   "end": 305.107,
+   "start": 295.304,
+   "end": 295.704,
+   "sentence": 80
+  },
+  {
+   "text": "这",
+   "start": 296.202,
+   "end": 296.442,
+   "sentence": 81
+  },
+  {
+   "text": "个",
+   "start": 296.442,
+   "end": 296.522,
+   "sentence": 81
+  },
+  {
+   "text": "写",
+   "start": 296.522,
+   "end": 296.682,
+   "sentence": 81
+  },
+  {
+   "text": "不",
+   "start": 296.682,
+   "end": 296.842,
+   "sentence": 81
+  },
+  {
+   "text": "完",
+   "start": 296.842,
+   "end": 297.002,
+   "sentence": 81
+  },
+  {
+   "text": "的",
+   "start": 297.002,
+   "end": 297.082,
+   "sentence": 81
+  },
+  {
+   "text": "数",
+   "start": 297.082,
+   "end": 297.482,
+   "sentence": 81
+  },
+  {
+   "text": "为",
+   "start": 297.482,
+   "end": 297.642,
+   "sentence": 81
+  },
+  {
+   "text": "什",
+   "start": 297.642,
+   "end": 297.802,
+   "sentence": 81
+  },
+  {
+   "text": "么",
+   "start": 297.802,
+   "end": 297.882,
+   "sentence": 81
+  },
+  {
+   "text": "用",
+   "start": 297.882,
+   "end": 298.042,
+   "sentence": 81
+  },
+  {
+   "text": "派",
+   "start": 298.042,
+   "end": 298.442,
+   "sentence": 81
+  },
+  {
+   "text": "来",
+   "start": 298.522,
+   "end": 298.602,
+   "sentence": 81
+  },
+  {
+   "text": "表",
+   "start": 298.602,
+   "end": 298.762,
+   "sentence": 81
+  },
+  {
+   "text": "示",
+   "start": 298.762,
+   "end": 298.922,
+   "sentence": 81
+  },
+  {
+   "text": "呢",
+   "start": 298.922,
+   "end": 299.162,
+   "sentence": 81
+  },
+  {
+   "text": "三",
+   "start": 300.389,
+   "end": 300.709,
+   "sentence": 82
+  },
+  {
+   "text": "百",
+   "start": 300.709,
+   "end": 300.869,
+   "sentence": 82
+  },
+  {
+   "text": "多",
+   "start": 300.869,
+   "end": 300.949,
+   "sentence": 82
+  },
+  {
+   "text": "年",
+   "start": 300.949,
+   "end": 301.189,
+   "sentence": 82
+  },
+  {
+   "text": "前",
+   "start": 301.189,
+   "end": 301.589,
+   "sentence": 82
+  },
+  {
+   "text": "一",
+   "start": 301.589,
+   "end": 301.749,
+   "sentence": 82
+  },
+  {
+   "text": "位",
+   "start": 301.749,
+   "end": 301.989,
+   "sentence": 82
+  },
+  {
+   "text": "英",
+   "start": 301.989,
+   "end": 302.229,
+   "sentence": 82
+  },
+  {
+   "text": "国",
+   "start": 302.229,
+   "end": 302.389,
+   "sentence": 82
+  },
+  {
+   "text": "数",
+   "start": 302.389,
+   "end": 302.549,
+   "sentence": 82
+  },
+  {
+   "text": "学",
+   "start": 302.549,
+   "end": 302.709,
+   "sentence": 82
+  },
+  {
+   "text": "家",
+   "start": 302.709,
+   "end": 302.949,
+   "sentence": 82
+  },
+  {
+   "text": "先",
+   "start": 303.029,
+   "end": 303.269,
+   "sentence": 82
+  },
+  {
+   "text": "用",
+   "start": 303.269,
+   "end": 303.429,
+   "sentence": 82
+  },
+  {
+   "text": "了",
+   "start": 303.429,
+   "end": 303.509,
+   "sentence": 82
+  },
+  {
+   "text": "派",
+   "start": 303.509,
+   "end": 303.749,
    "sentence": 82
   },
   {
    "text": "这",
-   "start": 305.605,
-   "end": 305.845,
-   "sentence": 83
+   "start": 303.749,
+   "end": 303.829,
+   "sentence": 82
   },
   {
    "text": "个",
-   "start": 305.845,
-   "end": 305.925,
-   "sentence": 83
-  },
-  {
-   "text": "写",
-   "start": 305.925,
-   "end": 306.085,
-   "sentence": 83
-  },
-  {
-   "text": "不",
-   "start": 306.085,
-   "end": 306.245,
-   "sentence": 83
-  },
-  {
-   "text": "完",
-   "start": 306.245,
-   "end": 306.405,
-   "sentence": 83
-  },
-  {
-   "text": "的",
-   "start": 306.405,
-   "end": 306.485,
-   "sentence": 83
-  },
-  {
-   "text": "数",
-   "start": 306.485,
-   "end": 306.885,
-   "sentence": 83
-  },
-  {
-   "text": "为",
-   "start": 306.885,
-   "end": 307.045,
-   "sentence": 83
-  },
-  {
-   "text": "什",
-   "start": 307.045,
-   "end": 307.205,
-   "sentence": 83
-  },
-  {
-   "text": "么",
-   "start": 307.205,
-   "end": 307.285,
-   "sentence": 83
-  },
-  {
-   "text": "用",
-   "start": 307.285,
-   "end": 307.445,
-   "sentence": 83
-  },
-  {
-   "text": "派",
-   "start": 307.445,
-   "end": 307.845,
-   "sentence": 83
-  },
-  {
-   "text": "来",
-   "start": 307.925,
-   "end": 308.005,
-   "sentence": 83
-  },
-  {
-   "text": "表",
-   "start": 308.005,
-   "end": 308.165,
-   "sentence": 83
-  },
-  {
-   "text": "示",
-   "start": 308.165,
-   "end": 308.325,
-   "sentence": 83
-  },
-  {
-   "text": "呢",
-   "start": 308.325,
-   "end": 308.565,
-   "sentence": 83
-  },
-  {
-   "text": "三",
-   "start": 309.792,
-   "end": 310.112,
-   "sentence": 84
-  },
-  {
-   "text": "百",
-   "start": 310.112,
-   "end": 310.272,
-   "sentence": 84
-  },
-  {
-   "text": "多",
-   "start": 310.272,
-   "end": 310.352,
-   "sentence": 84
-  },
-  {
-   "text": "年",
-   "start": 310.352,
-   "end": 310.592,
-   "sentence": 84
-  },
-  {
-   "text": "前",
-   "start": 310.592,
-   "end": 310.992,
-   "sentence": 84
-  },
-  {
-   "text": "一",
-   "start": 310.992,
-   "end": 311.152,
-   "sentence": 84
-  },
-  {
-   "text": "位",
-   "start": 311.152,
-   "end": 311.392,
-   "sentence": 84
-  },
-  {
-   "text": "英",
-   "start": 311.392,
-   "end": 311.632,
-   "sentence": 84
-  },
-  {
-   "text": "国",
-   "start": 311.632,
-   "end": 311.792,
-   "sentence": 84
-  },
-  {
-   "text": "数",
-   "start": 311.792,
-   "end": 311.952,
-   "sentence": 84
-  },
-  {
-   "text": "学",
-   "start": 311.952,
-   "end": 312.112,
-   "sentence": 84
-  },
-  {
-   "text": "家",
-   "start": 312.112,
-   "end": 312.352,
-   "sentence": 84
-  },
-  {
-   "text": "先",
-   "start": 312.432,
-   "end": 312.672,
-   "sentence": 84
-  },
-  {
-   "text": "用",
-   "start": 312.672,
-   "end": 312.832,
-   "sentence": 84
-  },
-  {
-   "text": "了",
-   "start": 312.832,
-   "end": 312.912,
-   "sentence": 84
-  },
-  {
-   "text": "派",
-   "start": 312.912,
-   "end": 313.152,
-   "sentence": 84
-  },
-  {
-   "text": "这",
-   "start": 313.152,
-   "end": 313.232,
-   "sentence": 84
-  },
-  {
-   "text": "个",
-   "start": 313.232,
-   "end": 313.312,
-   "sentence": 84
+   "start": 303.829,
+   "end": 303.909,
+   "sentence": 82
   },
   {
    "text": "符",
-   "start": 313.312,
-   "end": 313.472,
-   "sentence": 84
+   "start": 303.909,
+   "end": 304.069,
+   "sentence": 82
   },
   {
    "text": "号",
-   "start": 313.472,
-   "end": 313.792,
-   "sentence": 84
+   "start": 304.069,
+   "end": 304.389,
+   "sentence": 82
   },
   {
    "text": "后",
-   "start": 314.481,
-   "end": 314.641,
-   "sentence": 85
+   "start": 305.079,
+   "end": 305.239,
+   "sentence": 83
   },
   {
    "text": "来",
-   "start": 314.641,
-   "end": 314.881,
-   "sentence": 85
+   "start": 305.239,
+   "end": 305.479,
+   "sentence": 83
   },
   {
    "text": "大",
-   "start": 314.881,
-   "end": 315.121,
-   "sentence": 85
+   "start": 305.479,
+   "end": 305.719,
+   "sentence": 83
   },
   {
    "text": "数",
-   "start": 315.121,
-   "end": 315.201,
-   "sentence": 85
+   "start": 305.719,
+   "end": 305.799,
+   "sentence": 83
   },
   {
    "text": "学",
-   "start": 315.201,
-   "end": 315.361,
-   "sentence": 85
+   "start": 305.799,
+   "end": 305.959,
+   "sentence": 83
   },
   {
    "text": "家",
-   "start": 315.361,
-   "end": 315.521,
-   "sentence": 85
+   "start": 305.959,
+   "end": 306.119,
+   "sentence": 83
   },
   {
    "text": "欧",
-   "start": 315.521,
-   "end": 315.681,
-   "sentence": 85
+   "start": 306.119,
+   "end": 306.279,
+   "sentence": 83
   },
   {
    "text": "拉",
-   "start": 315.681,
-   "end": 315.921,
-   "sentence": 85
+   "start": 306.279,
+   "end": 306.519,
+   "sentence": 83
   },
   {
    "text": "也",
-   "start": 315.921,
-   "end": 316.081,
-   "sentence": 85
+   "start": 306.519,
+   "end": 306.679,
+   "sentence": 83
   },
   {
    "text": "用",
-   "start": 316.081,
-   "end": 316.241,
-   "sentence": 85
+   "start": 306.679,
+   "end": 306.839,
+   "sentence": 83
   },
   {
    "text": "它",
-   "start": 316.241,
-   "end": 316.641,
-   "sentence": 85
+   "start": 306.839,
+   "end": 307.239,
+   "sentence": 83
   },
   {
    "text": "大",
-   "start": 316.641,
-   "end": 316.801,
-   "sentence": 85
+   "start": 307.239,
+   "end": 307.399,
+   "sentence": 83
   },
   {
    "text": "家",
-   "start": 316.801,
-   "end": 316.961,
-   "sentence": 85
+   "start": 307.399,
+   "end": 307.559,
+   "sentence": 83
   },
   {
    "text": "就",
-   "start": 316.961,
-   "end": 317.121,
-   "sentence": 85
+   "start": 307.559,
+   "end": 307.719,
+   "sentence": 83
   },
   {
    "text": "都",
-   "start": 317.121,
-   "end": 317.361,
-   "sentence": 85
+   "start": 307.719,
+   "end": 307.959,
+   "sentence": 83
   },
   {
    "text": "用",
-   "start": 317.361,
-   "end": 317.441,
-   "sentence": 85
+   "start": 307.959,
+   "end": 308.039,
+   "sentence": 83
   },
   {
    "text": "开",
-   "start": 317.441,
-   "end": 317.681,
-   "sentence": 85
+   "start": 308.039,
+   "end": 308.279,
+   "sentence": 83
   },
   {
    "text": "了",
-   "start": 317.681,
-   "end": 317.921,
-   "sentence": 85
+   "start": 308.279,
+   "end": 308.519,
+   "sentence": 83
   },
   {
    "text": "每",
-   "start": 318.459,
-   "end": 318.699,
-   "sentence": 86
+   "start": 309.056,
+   "end": 309.296,
+   "sentence": 84
   },
   {
    "text": "年",
-   "start": 318.699,
-   "end": 318.859,
-   "sentence": 86
+   "start": 309.296,
+   "end": 309.456,
+   "sentence": 84
   },
   {
    "text": "三",
-   "start": 318.859,
-   "end": 319.099,
-   "sentence": 86
+   "start": 309.456,
+   "end": 309.696,
+   "sentence": 84
   },
   {
    "text": "月",
-   "start": 319.099,
-   "end": 319.179,
-   "sentence": 86
+   "start": 309.696,
+   "end": 309.776,
+   "sentence": 84
   },
   {
    "text": "十",
-   "start": 319.179,
-   "end": 319.339,
-   "sentence": 86
+   "start": 309.776,
+   "end": 309.936,
+   "sentence": 84
   },
   {
    "text": "四",
-   "start": 319.339,
-   "end": 319.579,
-   "sentence": 86
+   "start": 309.936,
+   "end": 310.176,
+   "sentence": 84
   },
   {
    "text": "日",
-   "start": 319.579,
-   "end": 319.899,
-   "sentence": 86
+   "start": 310.176,
+   "end": 310.496,
+   "sentence": 84
   },
   {
    "text": "就",
-   "start": 319.899,
-   "end": 320.059,
-   "sentence": 86
+   "start": 310.496,
+   "end": 310.656,
+   "sentence": 84
   },
   {
    "text": "是",
-   "start": 320.059,
-   "end": 320.219,
-   "sentence": 86
+   "start": 310.656,
+   "end": 310.816,
+   "sentence": 84
   },
   {
    "text": "派",
-   "start": 320.219,
-   "end": 320.379,
-   "sentence": 86
+   "start": 310.816,
+   "end": 310.976,
+   "sentence": 84
   },
   {
    "text": "日",
-   "start": 320.379,
-   "end": 320.699,
-   "sentence": 86
+   "start": 310.976,
+   "end": 311.296,
+   "sentence": 84
   },
   {
    "text": "也",
-   "start": 320.779,
-   "end": 320.939,
-   "sentence": 86
+   "start": 311.376,
+   "end": 311.536,
+   "sentence": 84
   },
   {
    "text": "叫",
-   "start": 320.939,
-   "end": 321.179,
-   "sentence": 86
+   "start": 311.536,
+   "end": 311.776,
+   "sentence": 84
   },
   {
    "text": "国",
-   "start": 321.179,
-   "end": 321.499,
-   "sentence": 86
+   "start": 311.776,
+   "end": 312.096,
+   "sentence": 84
   },
   {
    "text": "际",
-   "start": 321.499,
-   "end": 321.659,
-   "sentence": 86
+   "start": 312.096,
+   "end": 312.256,
+   "sentence": 84
   },
   {
    "text": "数",
-   "start": 321.659,
-   "end": 321.819,
-   "sentence": 86
+   "start": 312.256,
+   "end": 312.416,
+   "sentence": 84
   },
   {
    "text": "学",
-   "start": 321.819,
-   "end": 322.059,
-   "sentence": 86
+   "start": 312.416,
+   "end": 312.656,
+   "sentence": 84
   },
   {
    "text": "日",
-   "start": 322.059,
-   "end": 322.299,
-   "sentence": 86
+   "start": 312.656,
+   "end": 312.896,
+   "sentence": 84
   },
   {
    "text": "那",
-   "start": 322.858,
-   "end": 323.018,
-   "sentence": 87
+   "start": 313.455,
+   "end": 313.615,
+   "sentence": 85
   },
   {
    "text": "天",
-   "start": 323.018,
-   "end": 323.178,
-   "sentence": 87
+   "start": 313.615,
+   "end": 313.775,
+   "sentence": 85
   },
   {
    "text": "可",
-   "start": 323.178,
-   "end": 323.338,
-   "sentence": 87
+   "start": 313.775,
+   "end": 313.935,
+   "sentence": 85
   },
   {
    "text": "以",
-   "start": 323.338,
-   "end": 323.418,
-   "sentence": 87
+   "start": 313.935,
+   "end": 314.015,
+   "sentence": 85
   },
   {
    "text": "比",
-   "start": 323.418,
-   "end": 323.578,
-   "sentence": 87
+   "start": 314.015,
+   "end": 314.175,
+   "sentence": 85
   },
   {
    "text": "一",
-   "start": 323.578,
-   "end": 323.738,
-   "sentence": 87
+   "start": 314.175,
+   "end": 314.335,
+   "sentence": 85
   },
   {
    "text": "比",
-   "start": 323.738,
-   "end": 323.978,
-   "sentence": 87
+   "start": 314.335,
+   "end": 314.575,
+   "sentence": 85
   },
   {
    "text": "谁",
-   "start": 324.058,
-   "end": 324.218,
-   "sentence": 87
+   "start": 314.655,
+   "end": 314.815,
+   "sentence": 85
   },
   {
    "text": "背",
-   "start": 324.218,
-   "end": 324.378,
-   "sentence": 87
+   "start": 314.815,
+   "end": 314.975,
+   "sentence": 85
   },
   {
    "text": "得",
-   "start": 324.378,
-   "end": 324.458,
-   "sentence": 87
+   "start": 314.975,
+   "end": 315.055,
+   "sentence": 85
   },
   {
    "text": "更",
-   "start": 324.458,
-   "end": 324.618,
-   "sentence": 87
+   "start": 315.055,
+   "end": 315.215,
+   "sentence": 85
   },
   {
    "text": "多",
-   "start": 324.618,
-   "end": 324.858,
-   "sentence": 87
+   "start": 315.215,
+   "end": 315.455,
+   "sentence": 85
   },
   {
    "text": "下",
-   "start": 325.616,
-   "end": 325.856,
-   "sentence": 88
+   "start": 316.213,
+   "end": 316.453,
+   "sentence": 86
   },
   {
    "text": "次",
-   "start": 325.856,
-   "end": 326.096,
-   "sentence": 88
+   "start": 316.453,
+   "end": 316.693,
+   "sentence": 86
   },
   {
    "text": "看",
-   "start": 326.096,
-   "end": 326.176,
-   "sentence": 88
+   "start": 316.693,
+   "end": 316.773,
+   "sentence": 86
   },
   {
    "text": "到",
-   "start": 326.176,
-   "end": 326.336,
-   "sentence": 88
+   "start": 316.773,
+   "end": 316.933,
+   "sentence": 86
   },
   {
    "text": "一",
-   "start": 326.336,
-   "end": 326.416,
-   "sentence": 88
+   "start": 316.933,
+   "end": 317.013,
+   "sentence": 86
   },
   {
    "text": "个",
-   "start": 326.416,
-   "end": 326.496,
-   "sentence": 88
+   "start": 317.013,
+   "end": 317.093,
+   "sentence": 86
   },
   {
    "text": "圆",
-   "start": 326.496,
-   "end": 326.896,
-   "sentence": 88
+   "start": 317.093,
+   "end": 317.493,
+   "sentence": 86
   },
   {
    "text": "别",
-   "start": 326.976,
-   "end": 327.136,
-   "sentence": 88
+   "start": 317.573,
+   "end": 317.733,
+   "sentence": 86
   },
   {
    "text": "忘",
-   "start": 327.136,
-   "end": 327.376,
-   "sentence": 88
+   "start": 317.733,
+   "end": 317.973,
+   "sentence": 86
   },
   {
    "text": "了",
-   "start": 327.376,
-   "end": 327.616,
-   "sentence": 88
+   "start": 317.973,
+   "end": 318.213,
+   "sentence": 86
   },
   {
    "text": "里",
-   "start": 327.696,
-   "end": 327.856,
-   "sentence": 88
+   "start": 318.293,
+   "end": 318.453,
+   "sentence": 86
   },
   {
    "text": "面",
-   "start": 327.856,
-   "end": 328.096,
-   "sentence": 88
+   "start": 318.453,
+   "end": 318.693,
+   "sentence": 86
   },
   {
    "text": "藏",
-   "start": 328.096,
-   "end": 328.336,
-   "sentence": 88
+   "start": 318.693,
+   "end": 318.933,
+   "sentence": 86
   },
   {
    "text": "着",
-   "start": 328.336,
-   "end": 328.496,
-   "sentence": 88
+   "start": 318.933,
+   "end": 319.093,
+   "sentence": 86
   },
   {
    "text": "一",
-   "start": 328.496,
-   "end": 328.576,
-   "sentence": 88
+   "start": 319.093,
+   "end": 319.173,
+   "sentence": 86
   },
   {
    "text": "个",
-   "start": 328.576,
-   "end": 328.896,
-   "sentence": 88
+   "start": 319.173,
+   "end": 319.493,
+   "sentence": 86
   },
   {
    "text": "永",
-   "start": 328.976,
-   "end": 329.216,
-   "sentence": 88
+   "start": 319.573,
+   "end": 319.813,
+   "sentence": 86
   },
   {
    "text": "远",
-   "start": 329.216,
-   "end": 329.456,
-   "sentence": 88
+   "start": 319.813,
+   "end": 320.053,
+   "sentence": 86
   },
   {
    "text": "写",
-   "start": 329.456,
-   "end": 329.696,
-   "sentence": 88
+   "start": 320.053,
+   "end": 320.293,
+   "sentence": 86
   },
   {
    "text": "不",
-   "start": 329.696,
-   "end": 329.776,
-   "sentence": 88
+   "start": 320.293,
+   "end": 320.373,
+   "sentence": 86
   },
   {
    "text": "完",
-   "start": 329.776,
-   "end": 329.936,
-   "sentence": 88
+   "start": 320.373,
+   "end": 320.533,
+   "sentence": 86
   },
   {
    "text": "的",
-   "start": 329.936,
-   "end": 330.016,
-   "sentence": 88
+   "start": 320.533,
+   "end": 320.613,
+   "sentence": 86
   },
   {
    "text": "数",
-   "start": 330.016,
-   "end": 330.416,
-   "sentence": 88
+   "start": 320.613,
+   "end": 321.013,
+   "sentence": 86
   }
  ]
 }

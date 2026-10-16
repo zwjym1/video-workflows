@@ -5,7 +5,7 @@
   "scripts": {
     "studio": "remotion studio src/index.tsx",
     "check": "tsc --noEmit",
-    "render": "remotion render src/index.tsx PiLesson out/pi-lesson.mp4 --gl=angle --concurrency=4",
+    "render": "remotion render src/index.tsx PiLesson out/pi-lesson.mp4 --gl=angle --concurrency=8",
     "render:master": "npm run render && ffmpeg -y -i out/pi-lesson.mp4 -c:v copy -af loudnorm=I=-16:TP=-1.5:LRA=11 out/pi-lesson-master.mp4",
     "render:ch": "remotion render src/index.tsx"
   },
