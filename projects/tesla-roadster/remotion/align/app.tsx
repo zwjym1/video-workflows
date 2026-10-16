@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {createRoot} from 'react-dom/client';
 import {Player, PlayerRef} from '@remotion/player';
 import {project as P} from 'align-project';
-import type {Shot, Timeline} from './types';
+import type {Shot, Timeline, AudioMix} from './types';
 
 const FPS = P.fps, DUR = P.durationInFrames / FPS;
 const LABEL_W = 170;
@@ -58,10 +58,38 @@ const SourcePanel: React.FC<{shot: Shot | null; t: number; cursor: number; setCu
     {out > dur + 0.05 && dur > 0 && <div className="warn">⚠ 出点超出素材长度，结尾会黑屏/停帧</div>}
   </div>; };
 
+/* ---------- audio mixer ---------- */
+const Slider: React.FC<{label: string; v: number; min: number; max: number; on: (x: number) => void; unit?: string}> = ({label, v, min, max, on, unit = 'dB'}) =>
+  <label className="sl"><span>{label}</span><input type="range" min={min} max={max} step={0.5} value={v} onChange={(e) => on(+e.target.value)} /><b>{v > 0 && unit === 'dB' ? '+' : ''}{v}{unit}</b></label>;
+const Mixer: React.FC<{a: AudioMix; set: (a: AudioMix) => void}> = ({a, set}) => <div className="mixer"><b>混音</b>
+  <Slider label="配音" v={a.voiceDb} min={-12} max={6} on={(x) => set({...a, voiceDb: x})} />
+  <Slider label="音效" v={a.sfxDb} min={-24} max={6} on={(x) => set({...a, sfxDb: x})} />
+  <Slider label="BGM" v={a.bgmDb} min={-24} max={12} on={(x) => set({...a, bgmDb: x})} />
+  <Slider label="说话时压低BGM" v={a.duckDb} min={0} max={24} on={(x) => set({...a, duckDb: x})} />
+  <button onClick={() => set({...a, bgmEnv: []})}>清空包络点</button><span className="dim">改动会实时反映在预览里；保存后渲染使用同样的数值</span></div>;
+const ENV_H = 56, ENV_MAX = 12, ENV_MIN = -24;
+const EnvLane: React.FC<{a: AudioMix; set: (a: AudioMix) => void; pps: number}> = ({a, set, pps}) => {
+  const y = (d: number) => ((ENV_MAX - d) / (ENV_MAX - ENV_MIN)) * ENV_H; const d = (yy: number) => Math.round((ENV_MAX - (yy / ENV_H) * (ENV_MAX - ENV_MIN)) * 2) / 2;
+  const pts = [...a.bgmEnv].sort((p, q) => p.t - q.t);
+  const curve = useMemo(() => { if (!P.bgmGain) return ''; const out: string[] = []; for (let t = 0; t <= DUR; t += 0.1) { const g = P.bgmGain(t, a) / P.bgmGain(t, {...a, bgmDb: 0, bgmEnv: [], duckDb: 0}); const dd = 20 * Math.log10(Math.max(1e-4, g)); out.push(`${(t * pps).toFixed(1)},${clamp(y(dd), 0, ENV_H).toFixed(1)}`); } return out.join(' '); }, [a, pps]);
+  const lane = useRef<HTMLDivElement>(null);
+  const add = (e: React.PointerEvent) => { if ((e.target as HTMLElement).tagName === 'circle') return; const r = lane.current!.getBoundingClientRect(); set({...a, bgmEnv: [...a.bgmEnv, {t: r3((e.clientX - r.left) / pps), db: d(e.clientY - r.top)}]}); };
+  const dragPt = (e: React.PointerEvent, i: number) => { e.stopPropagation(); const r = lane.current!.getBoundingClientRect(); const base = pts;
+    const mv = (ev: PointerEvent) => set({...a, bgmEnv: base.map((p, k) => (k === i ? {t: r3(clamp((ev.clientX - r.left) / pps, 0, DUR)), db: clamp(d(ev.clientY - r.top), ENV_MIN, ENV_MAX)} : p))});
+    const up = () => { window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', up); }; window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up); };
+  return <div className="row env" ref={lane} onPointerDown={add}>
+    <svg width={DUR * pps} height={ENV_H} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible'}}>
+      <line x1={0} x2={DUR * pps} y1={y(0)} y2={y(0)} stroke="#444" strokeDasharray="4 4" />
+      <polyline points={curve} fill="none" stroke="#7ee787" strokeWidth={1.5} />
+      {pts.map((p, i) => <circle key={i} cx={p.t * pps} cy={y(p.db)} r={6} fill="#ffd25a" stroke="#000" style={{cursor: 'move'}} onPointerDown={(e) => dragPt(e, i)} onDoubleClick={(e) => { e.stopPropagation(); set({...a, bgmEnv: pts.filter((_, k) => k !== i)}); }}><title>{`${p.t.toFixed(2)}s  ${p.db > 0 ? '+' : ''}${p.db} dB（双击删除）`}</title></circle>)}
+    </svg></div>; };
+
 /* ---------- app ---------- */
 const App: React.FC = () => {
   const player = useRef<PlayerRef>(null);
   const [shots, setShots] = useState<Shot[]>(() => P.mergeShots(null));
+  const [audio, setAudioRaw] = useState<AudioMix | null>(() => P.defaultAudio ? P.defaultAudio() : null);
+  const setAudio = (a: AudioMix) => { setAudioRaw(a); setDirty(true); };
   const [hist, setHist] = useState<{past: Shot[][]; fut: Shot[][]}>({past: [], fut: []});
   const [sel, setSel] = useState<string | null>(null);
   const [frame, setFrame] = useState(0); const [playing, setPlaying] = useState(false);
@@ -71,11 +99,11 @@ const App: React.FC = () => {
   const t = frame / FPS;
   const colored = useMemo(() => shots.map((s, i) => ({...s, __color: COLORS[i % COLORS.length]})) as (Shot & {__color: string})[], [shots]);
   const shot = colored.find((s) => s.id === sel) ?? null;
-  const timeline: Timeline = useMemo(() => ({version: 1, composition: P.composition, fps: FPS, shots}), [shots]);
+  const timeline: Timeline = useMemo(() => ({version: 1, composition: P.composition, fps: FPS, shots, ...(audio ? {audio} : {})}), [shots, audio]);
   const inputProps = useMemo(() => P.inputProps(timeline), [timeline]);
   const srcs = useMemo(() => [...new Set(P.defaultShots().map((s) => s.src).concat(shots.map((s) => s.src)))], [shots]);
 
-  useEffect(() => { fetch('/api/timeline').then((r) => r.json()).then((j) => { setShots(P.mergeShots(j)); setMsg('已载入 ' + (j.shots?.length ?? 0) + ' 个镜头的保存值'); }).catch(() => setMsg('未找到时间线文件，使用默认值')); }, []);
+  useEffect(() => { fetch('/api/timeline').then((r) => r.json()).then((j) => { setShots(P.mergeShots(j)); if (P.mergeAudio) setAudioRaw(P.mergeAudio(j)); setMsg('已载入 ' + (j.shots?.length ?? 0) + ' 个镜头的保存值'); }).catch(() => setMsg('未找到时间线文件，使用默认值')); }, []);
   useEffect(() => { const p = player.current; if (!p) return; const f = (e: any) => setFrame(e.detail.frame); const pl = () => setPlaying(true), pa = () => setPlaying(false);
     p.addEventListener('frameupdate', f); p.addEventListener('seeked', f); p.addEventListener('play', pl); p.addEventListener('pause', pa);
     return () => { p.removeEventListener('frameupdate', f); p.removeEventListener('seeked', f); p.removeEventListener('play', pl); p.removeEventListener('pause', pa); }; }, []);
@@ -90,7 +118,7 @@ const App: React.FC = () => {
   const seek = (sec: number) => player.current?.seekTo(clamp(Math.round(sec * FPS), 0, P.durationInFrames - 1));
   const save = async () => { const r = await fetch('/api/timeline', {method: 'POST', body: JSON.stringify({...timeline, savedAt: new Date().toISOString()}, null, 2)}); setMsg(r.ok ? '✔ 已保存到项目（渲染会直接读取）' : '✖ 保存失败：' + (await r.text())); if (r.ok) setDirty(false); };
   const exportJson = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(timeline, null, 2)], {type: 'application/json'})); a.download = 'footage-timeline.json'; a.click(); };
-  const importJson = (f: File) => f.text().then((s) => { commit(P.mergeShots(JSON.parse(s))); setMsg('已导入 ' + f.name); });
+  const importJson = (f: File) => f.text().then((s) => { const j = JSON.parse(s); commit(P.mergeShots(j)); if (P.mergeAudio) setAudioRaw(P.mergeAudio(j)); setMsg('已导入 ' + f.name); });
 
   // keyboard
   useEffect(() => { const k = (e: KeyboardEvent) => { if ((e.target as HTMLElement).tagName === 'INPUT' || (e.target as HTMLElement).tagName === 'SELECT') return;
@@ -151,9 +179,10 @@ const App: React.FC = () => {
     <div className="tlbar"><span>缩放</span><input type="range" min={15} max={300} value={pps} onChange={(e) => setPps(+e.target.value)} />
       <label className="chk"><input type="checkbox" checked={snap} onChange={(e) => setSnap(e.target.checked)} /> 吸附到字/句/播放头</label>
       <span className="dim">拖动色条＝移动 · 拖左/右边缘＝裁剪 · Shift+拖色条＝换素材片段（时间线位置不变）· Alt+拖左边缘＝只改开始 · 空格播放 · ←/→ 逐帧</span></div>
+    {audio && <Mixer a={audio} set={setAudio} />}
     <div className="tl" ref={scroller}>
       <div className="labels" style={{width: LABEL_W}}>
-        <div className="lh ruler">时间</div><div className="lh sent">句子</div><div className="lh words">逐字</div><div className="lh wave">配音波形</div><div className="lh gfx">图形段（锁定）</div>
+        <div className="lh ruler">时间</div><div className="lh sent">句子</div><div className="lh words">逐字</div><div className="lh wave">配音波形</div><div className="lh gfx">图形段（锁定）</div>{audio && <div className="lh env" title="点击空白处加点，拖动点调整，双击点删除">BGM 音量包络</div>}
         {colored.map((s) => <div key={s.id} className={'lh lane' + (s.id === sel ? ' sel' : '')} onClick={() => { setSel(s.id); seek(s.start); }} style={{borderLeft: `4px solid ${s.__color}`}}>{s.label ?? s.id}</div>)}
       </div>
       <div className="tracks" style={{width: W + 40}}>
@@ -162,6 +191,7 @@ const App: React.FC = () => {
         <div className="row words" onPointerDown={seekDrag}>{WORDS.map((w, k) => <div key={k} className={'wd' + (curWord === w ? ' on' : '')} style={{left: w.start * pps, width: Math.max(2, (w.end - w.start) * pps)}}>{pps > 35 ? w.text : ''}</div>)}</div>
         <div className="row wave" onPointerDown={seekDrag}><Wave peaks={peaks} pps={pps} h={56} /></div>
         <div className="row gfx">{P.graphicSegments().map((g) => <div key={g.id} className="gfxb" style={{left: g.start * pps, width: (g.end - g.start) * pps}}>{g.label}</div>)}</div>
+        {audio && <EnvLane a={audio} set={setAudio} pps={pps} />}
         {colored.map((s) => <div key={s.id} className="row lane" onPointerDown={() => setSel(null)}>
           <div className={'bar' + (s.id === sel ? ' sel' : '') + (overl(s) ? ' ovl' : '')} style={{left: s.start * pps, width: Math.max(6, (s.end - s.start) * pps), background: s.__color + (s.id === sel ? 'ee' : '99')}}
             onPointerDown={(e) => drag(e, s, 'move')} onDoubleClick={() => { seek(s.start); player.current?.play(); }} title={`${s.src}\n入点 ${s.in.toFixed(2)}s → 出点 ${outOf(s).toFixed(2)}s  速度 ${s.rate}×`}>

@@ -3,7 +3,7 @@ import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile} from 're
 import {C, Callout, Credit, F, FPS, NumberPop, SpeedLines, Vignette, e, lin, usePop, Chip} from './theme';
 import {Explain3D} from './Explain3D';
 import {Seq, useT3} from './warp';
-import {W, s, T, V3_END, V3_FRAMES, sentences as SS, mergeShots, fileTimeline} from './shots';
+import {W, s, T, V3_END, V3_FRAMES, sentences as SS, mergeShots, fileTimeline, mergeAudio, bgmGain, linDb, AudioMix} from './shots';
 import {ShotProvider, useShot, Timeline} from './shotctx';
 export {V3_FRAMES};
 type Wd = {text: string; start: number; end: number};
@@ -151,19 +151,25 @@ export const SFX3 = () => [
   ['v3/sting.wav', T.me, 0.45, 2] as [string, number, number, number],
   sf('whoosh.wav', T.src - 0.1, 0.22),
   sf('shutter.wav', T.A, 0.45), sf('fanhum.wav', T.feng, 0.2, T.musk - T.feng), sf('ding.wav', T.bei, 0.22),
-  sf('whoosh.wav', T.q - 0.1, 0.28), sf('shutter.wav', T.B, 0.45), sf('click.wav', T.fa, 0.45), sf('jet.wav', T.pen2 - 0.1, 0.28, 4.2),
+  sf('shutter.wav', T.B, 0.45), sf('click.wav', T.fa, 0.45), sf('jet.wav', T.pen2 - 0.1, 0.28, 4.2),
   sf('hiss.wav', T.qq, 0.2, 2.5), sf('puff.wav', T.pk, 0.28), sf('puff.wav', T.pk + 0.45, 0.25), sf('puff.wav', T.pk + 0.9, 0.25),
-  sf('whoosh.wav', T.sum - 0.1, 0.24), sf('ding.wav', T.y28, 0.24), sf('ding.wav', T.w25, 0.26),
+  sf('whoosh.wav', T.q - 0.1, 0.28), sf('whoosh.wav', T.sum - 0.1, 0.24), sf('ding.wav', T.y28, 0.24), sf('ding.wav', T.w25, 0.26),
 ];
-const SFXL: React.FC = () => <>{SFX3().map(([f, a, v, d], i) => <Sequence key={i} from={Math.max(0, Math.round(a * FPS))} durationInFrames={Math.max(1, Math.round(d * FPS))}>
-  <Audio src={staticFile(f.startsWith('v3/') ? f : 'sfx/' + f)} volume={v} /></Sequence>)}</>;
+const SFXL: React.FC<{g: number}> = ({g}) => <>{SFX3().map(([f, a, v, d], i) => <Sequence key={i} from={Math.max(0, Math.round(a * FPS))} durationInFrames={Math.max(1, Math.round(d * FPS))}>
+  <Audio src={staticFile(f.startsWith('v3/') ? f : 'sfx/' + f)} volume={v * g} /></Sequence>)}</>;
+/** BGM A until "那真正", then B (drums), 0.4 s crossfade; gain = level + envelope − duck while speaking */
+const BGM: React.FC<{mix: AudioMix}> = ({mix}) => { const sw = T.q, xf = 0.4, swF = Math.round((sw - 0.05) * FPS);
+  const fade = (t: number, isA: boolean) => { const k = Math.min(1, Math.max(0, (t - (sw - 0.05)) / xf)); const endF = Math.min(1, Math.max(0, (V3_END - t) / 1.4)); return (isA ? 1 - k : k) * endF; };
+  return <><Audio src={staticFile('v3/bgm_A.wav')} volume={(f) => bgmGain(f / FPS, mix) * 0.85 * fade(f / FPS, true)} endAt={Math.round((sw + xf + 0.1) * FPS)} />
+    <Sequence from={swF}><Audio src={staticFile('v3/bgm_B.wav')} volume={(f) => bgmGain((f + swF) / FPS, mix) * fade((f + swF) / FPS, false)} /></Sequence></>; };
 
-export const RoadsterShortV3: React.FC<{withVoice?: boolean; timeline?: Timeline | null}> = ({withVoice = true, timeline}) => {
-  const shots = mergeShots(timeline ?? fileTimeline); const G = Object.fromEntries(shots.map((x) => [x.id, x]));
+export const RoadsterShortV3: React.FC<{withVoice?: boolean; withBgm?: boolean; timeline?: Timeline | null}> = ({withVoice = true, withBgm = true, timeline}) => {
+  const mix = mergeAudio(timeline ?? fileTimeline); const shots = mergeShots(timeline ?? fileTimeline); const G = Object.fromEntries(shots.map((x) => [x.id, x]));
   const F2 = (id: string, el: React.ReactNode, anchors?: [number, number][]) => <Seq a={G[id].start} b={G[id].end} anchors={anchors}>{el}</Seq>;
   return <ShotProvider shots={shots}><AbsoluteFill style={{background: '#000'}}>
-  {withVoice && <Audio src={staticFile('v3/voice-v3.wav')} />}
-  <SFXL />
+  {withVoice && <Audio src={staticFile('v3/voice-v3.wav')} volume={linDb(mix.voiceDb)} />}
+  <SFXL g={linDb(mix.sfxDb)} />
+  {withBgm && <BGM mix={mix} />}
   {F2('hook-launch', <Hook3 part="launch" />)}
   {F2('hook-fly', <Hook3 part="fly" />)}
   {F2('comments-bg', <><Danmaku /><Comments /></>, [[T.cm, 6.35], [s(2).end, 9.4]])}

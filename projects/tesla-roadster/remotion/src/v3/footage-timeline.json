@@ -1,1 +1,14 @@
-{"version": 1, "composition": "RoadsterShortV3", "fps": 30, "shots": []}
+{
+  "version": 1,
+  "composition": "RoadsterShortV3",
+  "fps": 30,
+  "shots": [],
+  "audio": {
+    "voiceDb": 0,
+    "sfxDb": 0,
+    "bgmDb": 0,
+    "duckDb": 10,
+    "bgmEnv": [],
+    "lufs": -16
+  }
+}

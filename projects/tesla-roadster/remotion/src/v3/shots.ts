@@ -68,3 +68,19 @@ export const mergeShots = (tl?: Partial<Timeline> | null): Shot[] => { const o =
   return defaultShots().map((d) => ({...d, ...(o[d.id] ?? {})})); };
 export const fileTimeline = TL as Timeline;
 export const sentences = SS;
+
+/* ---------- audio mix (saved in footage-timeline.json under "audio") ---------- */
+export type AudioMix = {voiceDb: number; sfxDb: number; bgmDb: number; duckDb: number; bgmEnv: {t: number; db: number}[]; lufs: number};
+// bgmDb 0 = previous v3 level (+3 dB vs v3.1, as requested)
+export const defaultAudio = (): AudioMix => ({voiceDb: 0, sfxDb: 0, bgmDb: 0, duckDb: 10, bgmEnv: [], lufs: -16});
+export const mergeAudio = (tl?: any): AudioMix => ({...defaultAudio(), ...((tl && tl.audio) || {})});
+export const BGM_BASE = 0.238; // calibrated: overall BGM level = v3.1 + 3 dB (with duckDb 10)
+export const BGM_SWITCH = () => T.q; // A → B at "那真正把它送上天的"
+const db = (x: number) => Math.pow(10, x / 20);
+const envDb = (t: number, env: {t: number; db: number}[]) => { if (!env.length) return 0; const e = [...env].sort((a, b) => a.t - b.t);
+  if (t <= e[0].t) return e[0].db; for (let i = 0; i < e.length - 1; i++) if (t <= e[i + 1].t) return e[i].db + ((t - e[i].t) / (e[i + 1].t - e[i].t)) * (e[i + 1].db - e[i].db); return e[e.length - 1].db; };
+/** 0..1, how much the voice is speaking (attack 0.08 s, release 0.35 s) */
+export const speechAmt = (t: number) => { let m = 0; for (const s of SS) { const a = s.start - 0.08, b = s.end + 0.35;
+  if (t >= a && t <= b) m = Math.max(m, Math.min(1, (t - a) / 0.08, t <= s.end ? 1 : (b - t) / 0.35)); } return m; };
+export const bgmGain = (t: number, mix: AudioMix) => BGM_BASE * db(mix.bgmDb + envDb(t, mix.bgmEnv) - mix.duckDb * speechAmt(t));
+export const linDb = db;
