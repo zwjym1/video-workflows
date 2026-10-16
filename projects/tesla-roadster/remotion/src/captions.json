@@ -1,0 +1,2025 @@
+{
+  "cues": [
+    {
+      "sentence": 0,
+      "text": "这辆车",
+      "start": 0.33,
+      "end": 0.89,
+      "words": [
+        {
+          "text": "这",
+          "start": 0.33,
+          "end": 0.49,
+          "sentence": 0
+        },
+        {
+          "text": "辆",
+          "start": 0.49,
+          "end": 0.57,
+          "sentence": 0
+        },
+        {
+          "text": "车",
+          "start": 0.57,
+          "end": 0.81,
+          "sentence": 0
+        }
+      ]
+    },
+    {
+      "sentence": 0,
+      "text": "刚刚飞过了一辆大卡车",
+      "start": 0.89,
+      "end": 2.49,
+      "words": [
+        {
+          "text": "刚",
+          "start": 0.89,
+          "end": 1.05,
+          "sentence": 0
+        },
+        {
+          "text": "刚",
+          "start": 1.05,
+          "end": 1.21,
+          "sentence": 0
+        },
+        {
+          "text": "飞",
+          "start": 1.21,
+          "end": 1.45,
+          "sentence": 0
+        },
+        {
+          "text": "过",
+          "start": 1.45,
+          "end": 1.53,
+          "sentence": 0
+        },
+        {
+          "text": "了",
+          "start": 1.53,
+          "end": 1.69,
+          "sentence": 0
+        },
+        {
+          "text": "一",
+          "start": 1.69,
+          "end": 1.69,
+          "sentence": 0
+        },
+        {
+          "text": "辆",
+          "start": 1.69,
+          "end": 1.85,
+          "sentence": 0
+        },
+        {
+          "text": "大",
+          "start": 1.85,
+          "end": 2.01,
+          "sentence": 0
+        },
+        {
+          "text": "卡",
+          "start": 2.01,
+          "end": 2.17,
+          "sentence": 0
+        },
+        {
+          "text": "车",
+          "start": 2.17,
+          "end": 2.41,
+          "sentence": 0
+        }
+      ]
+    },
+    {
+      "sentence": 1,
+      "text": "不是特效",
+      "start": 3.273,
+      "end": 4.0729999999999995,
+      "words": [
+        {
+          "text": "不",
+          "start": 3.273,
+          "end": 3.433,
+          "sentence": 1
+        },
+        {
+          "text": "是",
+          "start": 3.433,
+          "end": 3.593,
+          "sentence": 1
+        },
+        {
+          "text": "特",
+          "start": 3.593,
+          "end": 3.753,
+          "sentence": 1
+        },
+        {
+          "text": "效",
+          "start": 3.753,
+          "end": 3.993,
+          "sentence": 1
+        }
+      ]
+    },
+    {
+      "sentence": 2,
+      "text": "也不是AI",
+      "start": 4.613,
+      "end": 5.573,
+      "words": [
+        {
+          "text": "也",
+          "start": 4.613,
+          "end": 4.853,
+          "sentence": 2
+        },
+        {
+          "text": "不",
+          "start": 4.853,
+          "end": 4.933,
+          "sentence": 2
+        },
+        {
+          "text": "是",
+          "start": 4.933,
+          "end": 5.093,
+          "sentence": 2
+        },
+        {
+          "text": "A",
+          "start": 5.093,
+          "end": 5.493,
+          "sentence": 2
+        },
+        {
+          "text": "I",
+          "start": 5.493,
+          "end": 5.493,
+          "sentence": 2
+        }
+      ]
+    },
+    {
+      "sentence": 3,
+      "text": "评论区问得最多的就一句",
+      "start": 6.43,
+      "end": 7.95,
+      "words": [
+        {
+          "text": "评",
+          "start": 6.43,
+          "end": 6.59,
+          "sentence": 3
+        },
+        {
+          "text": "论",
+          "start": 6.59,
+          "end": 6.67,
+          "sentence": 3
+        },
+        {
+          "text": "区",
+          "start": 6.67,
+          "end": 6.83,
+          "sentence": 3
+        },
+        {
+          "text": "问",
+          "start": 6.83,
+          "end": 6.99,
+          "sentence": 3
+        },
+        {
+          "text": "得",
+          "start": 6.99,
+          "end": 6.99,
+          "sentence": 3
+        },
+        {
+          "text": "最",
+          "start": 6.99,
+          "end": 7.23,
+          "sentence": 3
+        },
+        {
+          "text": "多",
+          "start": 7.23,
+          "end": 7.31,
+          "sentence": 3
+        },
+        {
+          "text": "的",
+          "start": 7.31,
+          "end": 7.39,
+          "sentence": 3
+        },
+        {
+          "text": "就",
+          "start": 7.39,
+          "end": 7.55,
+          "sentence": 3
+        },
+        {
+          "text": "一",
+          "start": 7.55,
+          "end": 7.63,
+          "sentence": 3
+        },
+        {
+          "text": "句",
+          "start": 7.63,
+          "end": 7.87,
+          "sentence": 3
+        }
+      ]
+    },
+    {
+      "sentence": 4,
+      "text": "它到底怎么飞起来的",
+      "start": 8.423,
+      "end": 9.623,
+      "words": [
+        {
+          "text": "它",
+          "start": 8.423,
+          "end": 8.583,
+          "sentence": 4
+        },
+        {
+          "text": "到",
+          "start": 8.583,
+          "end": 8.663,
+          "sentence": 4
+        },
+        {
+          "text": "底",
+          "start": 8.663,
+          "end": 8.823,
+          "sentence": 4
+        },
+        {
+          "text": "怎",
+          "start": 8.823,
+          "end": 8.903,
+          "sentence": 4
+        },
+        {
+          "text": "么",
+          "start": 8.903,
+          "end": 8.983,
+          "sentence": 4
+        },
+        {
+          "text": "飞",
+          "start": 8.983,
+          "end": 9.143,
+          "sentence": 4
+        },
+        {
+          "text": "起",
+          "start": 9.143,
+          "end": 9.303,
+          "sentence": 4
+        },
+        {
+          "text": "来",
+          "start": 9.303,
+          "end": 9.383,
+          "sentence": 4
+        },
+        {
+          "text": "的",
+          "start": 9.383,
+          "end": 9.543,
+          "sentence": 4
+        }
+      ]
+    },
+    {
+      "sentence": 5,
+      "text": "答案是",
+      "start": 10.299,
+      "end": 10.859,
+      "words": [
+        {
+          "text": "答",
+          "start": 10.299,
+          "end": 10.459,
+          "sentence": 5
+        },
+        {
+          "text": "案",
+          "start": 10.459,
+          "end": 10.539,
+          "sentence": 5
+        },
+        {
+          "text": "是",
+          "start": 10.539,
+          "end": 10.779,
+          "sentence": 5
+        }
+      ]
+    },
+    {
+      "sentence": 5,
+      "text": "车上装了两套系统",
+      "start": 10.859,
+      "end": 12.379,
+      "words": [
+        {
+          "text": "车",
+          "start": 10.859,
+          "end": 11.019,
+          "sentence": 5
+        },
+        {
+          "text": "上",
+          "start": 11.019,
+          "end": 11.179,
+          "sentence": 5
+        },
+        {
+          "text": "装",
+          "start": 11.179,
+          "end": 11.339,
+          "sentence": 5
+        },
+        {
+          "text": "了",
+          "start": 11.339,
+          "end": 11.419,
+          "sentence": 5
+        },
+        {
+          "text": "两",
+          "start": 11.419,
+          "end": 11.659,
+          "sentence": 5
+        },
+        {
+          "text": "套",
+          "start": 11.659,
+          "end": 11.899,
+          "sentence": 5
+        },
+        {
+          "text": "系",
+          "start": 11.899,
+          "end": 12.059,
+          "sentence": 5
+        },
+        {
+          "text": "统",
+          "start": 12.059,
+          "end": 12.299,
+          "sentence": 5
+        }
+      ]
+    },
+    {
+      "sentence": 6,
+      "text": "先看这里",
+      "start": 13.194,
+      "end": 13.834,
+      "words": [
+        {
+          "text": "先",
+          "start": 13.194,
+          "end": 13.354,
+          "sentence": 6
+        },
+        {
+          "text": "看",
+          "start": 13.354,
+          "end": 13.514,
+          "sentence": 6
+        },
+        {
+          "text": "这",
+          "start": 13.514,
+          "end": 13.674,
+          "sentence": 6
+        },
+        {
+          "text": "里",
+          "start": 13.674,
+          "end": 13.754,
+          "sentence": 6
+        }
+      ]
+    },
+    {
+      "sentence": 7,
+      "text": "车头朝天",
+      "start": 14.431,
+      "end": 15.151,
+      "words": [
+        {
+          "text": "车",
+          "start": 14.431,
+          "end": 14.591,
+          "sentence": 7
+        },
+        {
+          "text": "头",
+          "start": 14.591,
+          "end": 14.751,
+          "sentence": 7
+        },
+        {
+          "text": "朝",
+          "start": 14.751,
+          "end": 14.911,
+          "sentence": 7
+        },
+        {
+          "text": "天",
+          "start": 14.911,
+          "end": 15.071,
+          "sentence": 7
+        }
+      ]
+    },
+    {
+      "sentence": 7,
+      "text": "贴着竖直的墙往上开",
+      "start": 15.151,
+      "end": 16.590999999999998,
+      "words": [
+        {
+          "text": "贴",
+          "start": 15.151,
+          "end": 15.311,
+          "sentence": 7
+        },
+        {
+          "text": "着",
+          "start": 15.311,
+          "end": 15.391,
+          "sentence": 7
+        },
+        {
+          "text": "竖",
+          "start": 15.391,
+          "end": 15.551,
+          "sentence": 7
+        },
+        {
+          "text": "直",
+          "start": 15.551,
+          "end": 15.711,
+          "sentence": 7
+        },
+        {
+          "text": "的",
+          "start": 15.711,
+          "end": 15.791,
+          "sentence": 7
+        },
+        {
+          "text": "墙",
+          "start": 15.791,
+          "end": 16.031,
+          "sentence": 7
+        },
+        {
+          "text": "往",
+          "start": 16.031,
+          "end": 16.111,
+          "sentence": 7
+        },
+        {
+          "text": "上",
+          "start": 16.111,
+          "end": 16.271,
+          "sentence": 7
+        },
+        {
+          "text": "开",
+          "start": 16.271,
+          "end": 16.511,
+          "sentence": 7
+        }
+      ]
+    },
+    {
+      "sentence": 8,
+      "text": "靠的是车底一个大风扇",
+      "start": 17.102,
+      "end": 18.622,
+      "words": [
+        {
+          "text": "靠",
+          "start": 17.102,
+          "end": 17.342,
+          "sentence": 8
+        },
+        {
+          "text": "的",
+          "start": 17.342,
+          "end": 17.422,
+          "sentence": 8
+        },
+        {
+          "text": "是",
+          "start": 17.422,
+          "end": 17.662,
+          "sentence": 8
+        },
+        {
+          "text": "车",
+          "start": 17.662,
+          "end": 17.822,
+          "sentence": 8
+        },
+        {
+          "text": "底",
+          "start": 17.822,
+          "end": 17.982,
+          "sentence": 8
+        },
+        {
+          "text": "一",
+          "start": 17.982,
+          "end": 18.062,
+          "sentence": 8
+        },
+        {
+          "text": "个",
+          "start": 18.062,
+          "end": 18.142,
+          "sentence": 8
+        },
+        {
+          "text": "大",
+          "start": 18.142,
+          "end": 18.222,
+          "sentence": 8
+        },
+        {
+          "text": "风",
+          "start": 18.222,
+          "end": 18.382,
+          "sentence": 8
+        },
+        {
+          "text": "扇",
+          "start": 18.382,
+          "end": 18.542,
+          "sentence": 8
+        }
+      ]
+    },
+    {
+      "sentence": 9,
+      "text": "它把车底的空气抽走",
+      "start": 19.095,
+      "end": 20.615,
+      "words": [
+        {
+          "text": "它",
+          "start": 19.095,
+          "end": 19.255,
+          "sentence": 9
+        },
+        {
+          "text": "把",
+          "start": 19.255,
+          "end": 19.335,
+          "sentence": 9
+        },
+        {
+          "text": "车",
+          "start": 19.335,
+          "end": 19.495,
+          "sentence": 9
+        },
+        {
+          "text": "底",
+          "start": 19.495,
+          "end": 19.655,
+          "sentence": 9
+        },
+        {
+          "text": "的",
+          "start": 19.655,
+          "end": 19.735,
+          "sentence": 9
+        },
+        {
+          "text": "空",
+          "start": 19.735,
+          "end": 19.895,
+          "sentence": 9
+        },
+        {
+          "text": "气",
+          "start": 19.895,
+          "end": 19.975,
+          "sentence": 9
+        },
+        {
+          "text": "抽",
+          "start": 19.975,
+          "end": 20.215,
+          "sentence": 9
+        },
+        {
+          "text": "走",
+          "start": 20.215,
+          "end": 20.535,
+          "sentence": 9
+        }
+      ]
+    },
+    {
+      "sentence": 10,
+      "text": "下面气压一低",
+      "start": 21.169,
+      "end": 22.209,
+      "words": [
+        {
+          "text": "下",
+          "start": 21.169,
+          "end": 21.329,
+          "sentence": 10
+        },
+        {
+          "text": "面",
+          "start": 21.329,
+          "end": 21.409,
+          "sentence": 10
+        },
+        {
+          "text": "气",
+          "start": 21.409,
+          "end": 21.569,
+          "sentence": 10
+        },
+        {
+          "text": "压",
+          "start": 21.569,
+          "end": 21.729,
+          "sentence": 10
+        },
+        {
+          "text": "一",
+          "start": 21.729,
+          "end": 21.809,
+          "sentence": 10
+        },
+        {
+          "text": "低",
+          "start": 21.809,
+          "end": 22.129,
+          "sentence": 10
+        }
+      ]
+    },
+    {
+      "sentence": 11,
+      "text": "外面的空气",
+      "start": 22.664,
+      "end": 23.384,
+      "words": [
+        {
+          "text": "外",
+          "start": 22.664,
+          "end": 22.824,
+          "sentence": 11
+        },
+        {
+          "text": "面",
+          "start": 22.824,
+          "end": 22.904,
+          "sentence": 11
+        },
+        {
+          "text": "的",
+          "start": 22.904,
+          "end": 22.984,
+          "sentence": 11
+        },
+        {
+          "text": "空",
+          "start": 22.984,
+          "end": 23.144,
+          "sentence": 11
+        },
+        {
+          "text": "气",
+          "start": 23.144,
+          "end": 23.384,
+          "sentence": 11
+        }
+      ]
+    },
+    {
+      "sentence": 11,
+      "text": "就把车死死按在墙上",
+      "start": 23.384,
+      "end": 25.144,
+      "words": [
+        {
+          "text": "就",
+          "start": 23.384,
+          "end": 23.464,
+          "sentence": 11
+        },
+        {
+          "text": "把",
+          "start": 23.464,
+          "end": 23.624,
+          "sentence": 11
+        },
+        {
+          "text": "车",
+          "start": 23.624,
+          "end": 23.784,
+          "sentence": 11
+        },
+        {
+          "text": "死",
+          "start": 23.784,
+          "end": 24.184,
+          "sentence": 11
+        },
+        {
+          "text": "死",
+          "start": 24.184,
+          "end": 24.344,
+          "sentence": 11
+        },
+        {
+          "text": "按",
+          "start": 24.344,
+          "end": 24.504,
+          "sentence": 11
+        },
+        {
+          "text": "在",
+          "start": 24.504,
+          "end": 24.664,
+          "sentence": 11
+        },
+        {
+          "text": "墙",
+          "start": 24.664,
+          "end": 24.904,
+          "sentence": 11
+        },
+        {
+          "text": "上",
+          "start": 24.904,
+          "end": 25.064,
+          "sentence": 11
+        }
+      ]
+    },
+    {
+      "sentence": 12,
+      "text": "按住的力",
+      "start": 25.65,
+      "end": 26.29,
+      "words": [
+        {
+          "text": "按",
+          "start": 25.65,
+          "end": 25.89,
+          "sentence": 12
+        },
+        {
+          "text": "住",
+          "start": 25.89,
+          "end": 25.97,
+          "sentence": 12
+        },
+        {
+          "text": "的",
+          "start": 25.97,
+          "end": 26.05,
+          "sentence": 12
+        },
+        {
+          "text": "力",
+          "start": 26.05,
+          "end": 26.29,
+          "sentence": 12
+        }
+      ]
+    },
+    {
+      "sentence": 12,
+      "text": "最大有车重的两倍",
+      "start": 26.29,
+      "end": 27.65,
+      "words": [
+        {
+          "text": "最",
+          "start": 26.29,
+          "end": 26.53,
+          "sentence": 12
+        },
+        {
+          "text": "大",
+          "start": 26.53,
+          "end": 26.69,
+          "sentence": 12
+        },
+        {
+          "text": "有",
+          "start": 26.69,
+          "end": 26.77,
+          "sentence": 12
+        },
+        {
+          "text": "车",
+          "start": 26.77,
+          "end": 27.01,
+          "sentence": 12
+        },
+        {
+          "text": "重",
+          "start": 27.01,
+          "end": 27.17,
+          "sentence": 12
+        },
+        {
+          "text": "的",
+          "start": 27.17,
+          "end": 27.25,
+          "sentence": 12
+        },
+        {
+          "text": "两",
+          "start": 27.25,
+          "end": 27.41,
+          "sentence": 12
+        },
+        {
+          "text": "倍",
+          "start": 27.41,
+          "end": 27.57,
+          "sentence": 12
+        }
+      ]
+    },
+    {
+      "sentence": 13,
+      "text": "再看飞的这一下",
+      "start": 28.566,
+      "end": 29.605999999999998,
+      "words": [
+        {
+          "text": "再",
+          "start": 28.566,
+          "end": 28.726,
+          "sentence": 13
+        },
+        {
+          "text": "看",
+          "start": 28.726,
+          "end": 28.886,
+          "sentence": 13
+        },
+        {
+          "text": "飞",
+          "start": 28.886,
+          "end": 29.046,
+          "sentence": 13
+        },
+        {
+          "text": "的",
+          "start": 29.046,
+          "end": 29.126,
+          "sentence": 13
+        },
+        {
+          "text": "这",
+          "start": 29.126,
+          "end": 29.206,
+          "sentence": 13
+        },
+        {
+          "text": "一",
+          "start": 29.206,
+          "end": 29.286,
+          "sentence": 13
+        },
+        {
+          "text": "下",
+          "start": 29.286,
+          "end": 29.526,
+          "sentence": 13
+        }
+      ]
+    },
+    {
+      "sentence": 14,
+      "text": "座椅后面",
+      "start": 30.141,
+      "end": 30.781,
+      "words": [
+        {
+          "text": "座",
+          "start": 30.141,
+          "end": 30.381,
+          "sentence": 14
+        },
+        {
+          "text": "椅",
+          "start": 30.381,
+          "end": 30.381,
+          "sentence": 14
+        },
+        {
+          "text": "后",
+          "start": 30.381,
+          "end": 30.621,
+          "sentence": 14
+        },
+        {
+          "text": "面",
+          "start": 30.621,
+          "end": 30.781,
+          "sentence": 14
+        }
+      ]
+    },
+    {
+      "sentence": 14,
+      "text": "藏着一个高压气罐",
+      "start": 30.781,
+      "end": 32.061,
+      "words": [
+        {
+          "text": "藏",
+          "start": 30.781,
+          "end": 31.021,
+          "sentence": 14
+        },
+        {
+          "text": "着",
+          "start": 31.021,
+          "end": 31.101,
+          "sentence": 14
+        },
+        {
+          "text": "一",
+          "start": 31.101,
+          "end": 31.101,
+          "sentence": 14
+        },
+        {
+          "text": "个",
+          "start": 31.101,
+          "end": 31.261,
+          "sentence": 14
+        },
+        {
+          "text": "高",
+          "start": 31.261,
+          "end": 31.421,
+          "sentence": 14
+        },
+        {
+          "text": "压",
+          "start": 31.421,
+          "end": 31.581,
+          "sentence": 14
+        },
+        {
+          "text": "气",
+          "start": 31.581,
+          "end": 31.741,
+          "sentence": 14
+        },
+        {
+          "text": "罐",
+          "start": 31.741,
+          "end": 31.981,
+          "sentence": 14
+        }
+      ]
+    },
+    {
+      "sentence": 15,
+      "text": "阀门一开",
+      "start": 32.579,
+      "end": 33.299,
+      "words": [
+        {
+          "text": "阀",
+          "start": 32.579,
+          "end": 32.739,
+          "sentence": 15
+        },
+        {
+          "text": "门",
+          "start": 32.739,
+          "end": 32.899,
+          "sentence": 15
+        },
+        {
+          "text": "一",
+          "start": 32.899,
+          "end": 32.979,
+          "sentence": 15
+        },
+        {
+          "text": "开",
+          "start": 32.979,
+          "end": 33.299,
+          "sentence": 15
+        }
+      ]
+    },
+    {
+      "sentence": 15,
+      "text": "气体从车尾猛地喷出去",
+      "start": 33.299,
+      "end": 35.059,
+      "words": [
+        {
+          "text": "气",
+          "start": 33.299,
+          "end": 33.459,
+          "sentence": 15
+        },
+        {
+          "text": "体",
+          "start": 33.459,
+          "end": 33.619,
+          "sentence": 15
+        },
+        {
+          "text": "从",
+          "start": 33.619,
+          "end": 33.779,
+          "sentence": 15
+        },
+        {
+          "text": "车",
+          "start": 33.779,
+          "end": 34.019,
+          "sentence": 15
+        },
+        {
+          "text": "尾",
+          "start": 34.019,
+          "end": 34.179,
+          "sentence": 15
+        },
+        {
+          "text": "猛",
+          "start": 34.179,
+          "end": 34.419,
+          "sentence": 15
+        },
+        {
+          "text": "地",
+          "start": 34.419,
+          "end": 34.419,
+          "sentence": 15
+        },
+        {
+          "text": "喷",
+          "start": 34.499,
+          "end": 34.739,
+          "sentence": 15
+        },
+        {
+          "text": "出",
+          "start": 34.739,
+          "end": 34.819,
+          "sentence": 15
+        },
+        {
+          "text": "去",
+          "start": 34.819,
+          "end": 34.979,
+          "sentence": 15
+        }
+      ]
+    },
+    {
+      "sentence": 16,
+      "text": "气往后喷",
+      "start": 35.565,
+      "end": 36.365,
+      "words": [
+        {
+          "text": "气",
+          "start": 35.565,
+          "end": 35.805,
+          "sentence": 16
+        },
+        {
+          "text": "往",
+          "start": 35.805,
+          "end": 35.965,
+          "sentence": 16
+        },
+        {
+          "text": "后",
+          "start": 35.965,
+          "end": 36.125,
+          "sentence": 16
+        },
+        {
+          "text": "喷",
+          "start": 36.125,
+          "end": 36.365,
+          "sentence": 16
+        }
+      ]
+    },
+    {
+      "sentence": 16,
+      "text": "车就往前",
+      "start": 36.365,
+      "end": 37.005,
+      "words": [
+        {
+          "text": "车",
+          "start": 36.365,
+          "end": 36.605,
+          "sentence": 16
+        },
+        {
+          "text": "就",
+          "start": 36.605,
+          "end": 36.685,
+          "sentence": 16
+        },
+        {
+          "text": "往",
+          "start": 36.685,
+          "end": 36.845,
+          "sentence": 16
+        },
+        {
+          "text": "前",
+          "start": 36.845,
+          "end": 37.005,
+          "sentence": 16
+        }
+      ]
+    },
+    {
+      "sentence": 16,
+      "text": "往上冲",
+      "start": 37.005,
+      "end": 37.565,
+      "words": [
+        {
+          "text": "往",
+          "start": 37.005,
+          "end": 37.085,
+          "sentence": 16
+        },
+        {
+          "text": "上",
+          "start": 37.085,
+          "end": 37.245,
+          "sentence": 16
+        },
+        {
+          "text": "冲",
+          "start": 37.245,
+          "end": 37.485,
+          "sentence": 16
+        }
+      ]
+    },
+    {
+      "sentence": 17,
+      "text": "跟你松开一个吹满的气球",
+      "start": 38.107,
+      "end": 39.626999999999995,
+      "words": [
+        {
+          "text": "跟",
+          "start": 38.107,
+          "end": 38.267,
+          "sentence": 17
+        },
+        {
+          "text": "你",
+          "start": 38.267,
+          "end": 38.347,
+          "sentence": 17
+        },
+        {
+          "text": "松",
+          "start": 38.347,
+          "end": 38.507,
+          "sentence": 17
+        },
+        {
+          "text": "开",
+          "start": 38.507,
+          "end": 38.667,
+          "sentence": 17
+        },
+        {
+          "text": "一",
+          "start": 38.667,
+          "end": 38.667,
+          "sentence": 17
+        },
+        {
+          "text": "个",
+          "start": 38.667,
+          "end": 38.827,
+          "sentence": 17
+        },
+        {
+          "text": "吹",
+          "start": 38.827,
+          "end": 38.987,
+          "sentence": 17
+        },
+        {
+          "text": "满",
+          "start": 38.987,
+          "end": 39.067,
+          "sentence": 17
+        },
+        {
+          "text": "的",
+          "start": 39.067,
+          "end": 39.147,
+          "sentence": 17
+        },
+        {
+          "text": "气",
+          "start": 39.147,
+          "end": 39.307,
+          "sentence": 17
+        },
+        {
+          "text": "球",
+          "start": 39.307,
+          "end": 39.547,
+          "sentence": 17
+        }
+      ]
+    },
+    {
+      "sentence": 17,
+      "text": "是一个道理",
+      "start": 39.627,
+      "end": 40.347,
+      "words": [
+        {
+          "text": "是",
+          "start": 39.627,
+          "end": 39.707,
+          "sentence": 17
+        },
+        {
+          "text": "一",
+          "start": 39.707,
+          "end": 39.787,
+          "sentence": 17
+        },
+        {
+          "text": "个",
+          "start": 39.787,
+          "end": 39.867,
+          "sentence": 17
+        },
+        {
+          "text": "道",
+          "start": 39.867,
+          "end": 40.027,
+          "sentence": 17
+        },
+        {
+          "text": "理",
+          "start": 40.027,
+          "end": 40.267,
+          "sentence": 17
+        }
+      ]
+    },
+    {
+      "sentence": 18,
+      "text": "车身四周还有小喷口",
+      "start": 41.121,
+      "end": 42.481,
+      "words": [
+        {
+          "text": "车",
+          "start": 41.121,
+          "end": 41.281,
+          "sentence": 18
+        },
+        {
+          "text": "身",
+          "start": 41.281,
+          "end": 41.441,
+          "sentence": 18
+        },
+        {
+          "text": "四",
+          "start": 41.441,
+          "end": 41.601,
+          "sentence": 18
+        },
+        {
+          "text": "周",
+          "start": 41.601,
+          "end": 41.681,
+          "sentence": 18
+        },
+        {
+          "text": "还",
+          "start": 41.681,
+          "end": 41.761,
+          "sentence": 18
+        },
+        {
+          "text": "有",
+          "start": 41.761,
+          "end": 41.841,
+          "sentence": 18
+        },
+        {
+          "text": "小",
+          "start": 41.841,
+          "end": 42.001,
+          "sentence": 18
+        },
+        {
+          "text": "喷",
+          "start": 42.001,
+          "end": 42.161,
+          "sentence": 18
+        },
+        {
+          "text": "口",
+          "start": 42.161,
+          "end": 42.481,
+          "sentence": 18
+        }
+      ]
+    },
+    {
+      "sentence": 18,
+      "text": "在空中帮它转身",
+      "start": 42.481,
+      "end": 43.601,
+      "words": [
+        {
+          "text": "在",
+          "start": 42.481,
+          "end": 42.641,
+          "sentence": 18
+        },
+        {
+          "text": "空",
+          "start": 42.641,
+          "end": 42.801,
+          "sentence": 18
+        },
+        {
+          "text": "中",
+          "start": 42.801,
+          "end": 42.961,
+          "sentence": 18
+        },
+        {
+          "text": "帮",
+          "start": 42.961,
+          "end": 43.041,
+          "sentence": 18
+        },
+        {
+          "text": "它",
+          "start": 43.041,
+          "end": 43.121,
+          "sentence": 18
+        },
+        {
+          "text": "转",
+          "start": 43.121,
+          "end": 43.281,
+          "sentence": 18
+        },
+        {
+          "text": "身",
+          "start": 43.281,
+          "end": 43.521,
+          "sentence": 18
+        }
+      ]
+    },
+    {
+      "sentence": 19,
+      "text": "这套技术",
+      "start": 44.131,
+      "end": 44.771,
+      "words": [
+        {
+          "text": "这",
+          "start": 44.131,
+          "end": 44.291,
+          "sentence": 19
+        },
+        {
+          "text": "套",
+          "start": 44.291,
+          "end": 44.371,
+          "sentence": 19
+        },
+        {
+          "text": "技",
+          "start": 44.371,
+          "end": 44.531,
+          "sentence": 19
+        },
+        {
+          "text": "术",
+          "start": 44.531,
+          "end": 44.771,
+          "sentence": 19
+        }
+      ]
+    },
+    {
+      "sentence": 19,
+      "text": "借自SpaceX的火箭",
+      "start": 44.771,
+      "end": 46.211,
+      "words": [
+        {
+          "text": "借",
+          "start": 44.771,
+          "end": 44.931,
+          "sentence": 19
+        },
+        {
+          "text": "自",
+          "start": 44.931,
+          "end": 45.011,
+          "sentence": 19
+        },
+        {
+          "text": "SpaceX",
+          "start": 45.011,
+          "end": 45.411,
+          "sentence": 19
+        },
+        {
+          "text": "的",
+          "start": 45.731,
+          "end": 45.811,
+          "sentence": 19
+        },
+        {
+          "text": "火",
+          "start": 45.811,
+          "end": 45.971,
+          "sentence": 19
+        },
+        {
+          "text": "箭",
+          "start": 45.971,
+          "end": 46.131,
+          "sentence": 19
+        }
+      ]
+    },
+    {
+      "sentence": 20,
+      "text": "所以记住一句话",
+      "start": 47.024,
+      "end": 47.903999999999996,
+      "words": [
+        {
+          "text": "所",
+          "start": 47.024,
+          "end": 47.184,
+          "sentence": 20
+        },
+        {
+          "text": "以",
+          "start": 47.184,
+          "end": 47.264,
+          "sentence": 20
+        },
+        {
+          "text": "记",
+          "start": 47.264,
+          "end": 47.344,
+          "sentence": 20
+        },
+        {
+          "text": "住",
+          "start": 47.344,
+          "end": 47.504,
+          "sentence": 20
+        },
+        {
+          "text": "一",
+          "start": 47.504,
+          "end": 47.584,
+          "sentence": 20
+        },
+        {
+          "text": "句",
+          "start": 47.584,
+          "end": 47.664,
+          "sentence": 20
+        },
+        {
+          "text": "话",
+          "start": 47.664,
+          "end": 47.824,
+          "sentence": 20
+        }
+      ]
+    },
+    {
+      "sentence": 21,
+      "text": "风扇负责吸",
+      "start": 48.442,
+      "end": 49.321999999999996,
+      "words": [
+        {
+          "text": "风",
+          "start": 48.442,
+          "end": 48.682,
+          "sentence": 21
+        },
+        {
+          "text": "扇",
+          "start": 48.682,
+          "end": 48.842,
+          "sentence": 21
+        },
+        {
+          "text": "负",
+          "start": 48.842,
+          "end": 48.922,
+          "sentence": 21
+        },
+        {
+          "text": "责",
+          "start": 48.922,
+          "end": 49.082,
+          "sentence": 21
+        },
+        {
+          "text": "吸",
+          "start": 49.082,
+          "end": 49.242,
+          "sentence": 21
+        }
+      ]
+    },
+    {
+      "sentence": 21,
+      "text": "喷气负责飞",
+      "start": 49.402,
+      "end": 50.282,
+      "words": [
+        {
+          "text": "喷",
+          "start": 49.402,
+          "end": 49.562,
+          "sentence": 21
+        },
+        {
+          "text": "气",
+          "start": 49.562,
+          "end": 49.722,
+          "sentence": 21
+        },
+        {
+          "text": "负",
+          "start": 49.722,
+          "end": 49.802,
+          "sentence": 21
+        },
+        {
+          "text": "责",
+          "start": 49.802,
+          "end": 49.962,
+          "sentence": 21
+        },
+        {
+          "text": "飞",
+          "start": 49.962,
+          "end": 50.202,
+          "sentence": 21
+        }
+      ]
+    },
+    {
+      "sentence": 22,
+      "text": "那你能开上它吗",
+      "start": 51.302,
+      "end": 52.501999999999995,
+      "words": [
+        {
+          "text": "那",
+          "start": 51.302,
+          "end": 51.462,
+          "sentence": 22
+        },
+        {
+          "text": "你",
+          "start": 51.462,
+          "end": 51.622,
+          "sentence": 22
+        },
+        {
+          "text": "能",
+          "start": 51.622,
+          "end": 51.782,
+          "sentence": 22
+        },
+        {
+          "text": "开",
+          "start": 51.782,
+          "end": 51.942,
+          "sentence": 22
+        },
+        {
+          "text": "上",
+          "start": 51.942,
+          "end": 52.102,
+          "sentence": 22
+        },
+        {
+          "text": "它",
+          "start": 52.102,
+          "end": 52.262,
+          "sentence": 22
+        },
+        {
+          "text": "吗",
+          "start": 52.262,
+          "end": 52.422,
+          "sentence": 22
+        }
+      ]
+    },
+    {
+      "sentence": 23,
+      "text": "它2028年才量产",
+      "start": 53.008,
+      "end": 54.768,
+      "words": [
+        {
+          "text": "它",
+          "start": 53.008,
+          "end": 53.088,
+          "sentence": 23
+        },
+        {
+          "text": "二",
+          "start": 53.088,
+          "end": 53.328,
+          "sentence": 23
+        },
+        {
+          "text": "零",
+          "start": 53.328,
+          "end": 53.408,
+          "sentence": 23
+        },
+        {
+          "text": "二",
+          "start": 53.488,
+          "end": 53.648,
+          "sentence": 23
+        },
+        {
+          "text": "八",
+          "start": 53.648,
+          "end": 53.888,
+          "sentence": 23
+        },
+        {
+          "text": "年",
+          "start": 53.888,
+          "end": 54.048,
+          "sentence": 23
+        },
+        {
+          "text": "才",
+          "start": 54.048,
+          "end": 54.208,
+          "sentence": 23
+        },
+        {
+          "text": "量",
+          "start": 54.208,
+          "end": 54.368,
+          "sentence": 23
+        },
+        {
+          "text": "产",
+          "start": 54.368,
+          "end": 54.688,
+          "sentence": 23
+        }
+      ]
+    },
+    {
+      "sentence": 24,
+      "text": "会飞的那个版本",
+      "start": 55.21,
+      "end": 56.33,
+      "words": [
+        {
+          "text": "会",
+          "start": 55.21,
+          "end": 55.37,
+          "sentence": 24
+        },
+        {
+          "text": "飞",
+          "start": 55.37,
+          "end": 55.61,
+          "sentence": 24
+        },
+        {
+          "text": "的",
+          "start": 55.61,
+          "end": 55.77,
+          "sentence": 24
+        },
+        {
+          "text": "那",
+          "start": 55.77,
+          "end": 55.85,
+          "sentence": 24
+        },
+        {
+          "text": "个",
+          "start": 55.85,
+          "end": 55.93,
+          "sentence": 24
+        },
+        {
+          "text": "版",
+          "start": 55.93,
+          "end": 56.09,
+          "sentence": 24
+        },
+        {
+          "text": "本",
+          "start": 56.09,
+          "end": 56.33,
+          "sentence": 24
+        }
+      ]
+    },
+    {
+      "sentence": 24,
+      "text": "只能在封闭场地玩",
+      "start": 56.33,
+      "end": 57.69,
+      "words": [
+        {
+          "text": "只",
+          "start": 56.33,
+          "end": 56.57,
+          "sentence": 24
+        },
+        {
+          "text": "能",
+          "start": 56.57,
+          "end": 56.65,
+          "sentence": 24
+        },
+        {
+          "text": "在",
+          "start": 56.65,
+          "end": 56.81,
+          "sentence": 24
+        },
+        {
+          "text": "封",
+          "start": 56.81,
+          "end": 56.97,
+          "sentence": 24
+        },
+        {
+          "text": "闭",
+          "start": 56.97,
+          "end": 57.05,
+          "sentence": 24
+        },
+        {
+          "text": "场",
+          "start": 57.05,
+          "end": 57.29,
+          "sentence": 24
+        },
+        {
+          "text": "地",
+          "start": 57.29,
+          "end": 57.37,
+          "sentence": 24
+        },
+        {
+          "text": "玩",
+          "start": 57.37,
+          "end": 57.61,
+          "sentence": 24
+        }
+      ]
+    },
+    {
+      "sentence": 25,
+      "text": "售价没公布",
+      "start": 58.196,
+      "end": 59.076,
+      "words": [
+        {
+          "text": "售",
+          "start": 58.196,
+          "end": 58.436,
+          "sentence": 25
+        },
+        {
+          "text": "价",
+          "start": 58.436,
+          "end": 58.516,
+          "sentence": 25
+        },
+        {
+          "text": "没",
+          "start": 58.516,
+          "end": 58.676,
+          "sentence": 25
+        },
+        {
+          "text": "公",
+          "start": 58.676,
+          "end": 58.836,
+          "sentence": 25
+        },
+        {
+          "text": "布",
+          "start": 58.836,
+          "end": 58.996,
+          "sentence": 25
+        }
+      ]
+    },
+    {
+      "sentence": 25,
+      "text": "订金最高二十五万美元",
+      "start": 59.076,
+      "end": 60.516,
+      "words": [
+        {
+          "text": "订",
+          "start": 59.076,
+          "end": 59.236,
+          "sentence": 25
+        },
+        {
+          "text": "金",
+          "start": 59.236,
+          "end": 59.316,
+          "sentence": 25
+        },
+        {
+          "text": "最",
+          "start": 59.316,
+          "end": 59.476,
+          "sentence": 25
+        },
+        {
+          "text": "高",
+          "start": 59.476,
+          "end": 59.556,
+          "sentence": 25
+        },
+        {
+          "text": "二",
+          "start": 59.556,
+          "end": 59.716,
+          "sentence": 25
+        },
+        {
+          "text": "十",
+          "start": 59.716,
+          "end": 59.876,
+          "sentence": 25
+        },
+        {
+          "text": "五",
+          "start": 59.876,
+          "end": 59.956,
+          "sentence": 25
+        },
+        {
+          "text": "万",
+          "start": 59.956,
+          "end": 60.116,
+          "sentence": 25
+        },
+        {
+          "text": "美",
+          "start": 60.116,
+          "end": 60.196,
+          "sentence": 25
+        },
+        {
+          "text": "元",
+          "start": 60.196,
+          "end": 60.436,
+          "sentence": 25
+        }
+      ]
+    },
+    {
+      "sentence": 26,
+      "text": "如果真能买",
+      "start": 61.272,
+      "end": 62.072,
+      "words": [
+        {
+          "text": "如",
+          "start": 61.272,
+          "end": 61.432,
+          "sentence": 26
+        },
+        {
+          "text": "果",
+          "start": 61.432,
+          "end": 61.592,
+          "sentence": 26
+        },
+        {
+          "text": "真",
+          "start": 61.592,
+          "end": 61.672,
+          "sentence": 26
+        },
+        {
+          "text": "能",
+          "start": 61.672,
+          "end": 61.832,
+          "sentence": 26
+        },
+        {
+          "text": "买",
+          "start": 61.832,
+          "end": 62.072,
+          "sentence": 26
+        }
+      ]
+    },
+    {
+      "sentence": 26,
+      "text": "你敢坐吗",
+      "start": 62.072,
+      "end": 62.872,
+      "words": [
+        {
+          "text": "你",
+          "start": 62.072,
+          "end": 62.232,
+          "sentence": 26
+        },
+        {
+          "text": "敢",
+          "start": 62.232,
+          "end": 62.392,
+          "sentence": 26
+        },
+        {
+          "text": "坐",
+          "start": 62.392,
+          "end": 62.552,
+          "sentence": 26
+        },
+        {
+          "text": "吗",
+          "start": 62.552,
+          "end": 62.792,
+          "sentence": 26
+        }
+      ]
+    }
+  ],
+  "duration": 63.660408,
+  "fps": 30,
+  "frames": 1915
+}

@@ -1,0 +1,28 @@
+{
+  "name": "tesla-roadster-short",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "check": "tsc --noEmit",
+    "stills": "node scripts/render-stills.mjs",
+    "preview:scrub": "remotion render src/index.tsx RoadsterShort out/scrub-preview.mp4 --scale=0.5 --crf=28 --concurrency=2 --gl=angle --muted=false",
+    "render:master": "echo 'DO NOT run until user approved keyframes' && exit 1"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "^4.0.535",
+    "@remotion/media": "^4.0.535",
+    "@remotion/three": "^4.0.535",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.535",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "typescript": "^7.0.2"
+  }
+}
