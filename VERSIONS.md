@@ -1,0 +1,36 @@
+# 版本标签说明
+
+每个能用的版本都打了一个 git 标签，以后怎么改都能退回去。
+
+| 标签 | 内容 |
+|---|---|
+| `pi-lesson-v1` | π 的历史 第一版：首次全片渲染，偏普通 2D 画风 |
+| `pi-lesson-v2` | 第二版：改回剪纸/纵深/光影实物风，固定分区不遮挡，转场先退后进 |
+| `pi-lesson-v3` | 第三版（已渲染，待审核）：圆形广场新文案、「量」读 liáng 修正、删掉"四分之一"段落、第三章加放大镜；附配音脚本和渲染指南 |
+| `gradient-descent-v4` | 梯度下降科普短视频 v4 源码和配音脚本 |
+
+## 怎么退回某个版本
+
+```bash
+git fetch --tags
+git tag                      # 看所有版本
+git checkout pi-lesson-v2    # 只看/渲染旧版本（只读状态）
+git checkout main            # 回到最新
+```
+想在旧版本基础上继续改：
+```bash
+git checkout -b fix-from-v2 pi-lesson-v2
+```
+只恢复某个文件到旧版本：
+```bash
+git checkout pi-lesson-v2 -- projects/pi-lesson/remotion/src/某文件.tsx
+```
+
+## 以后新增版本
+确认一版可用后：
+```bash
+git add -A && git commit -m "说明改了什么"
+git tag -a pi-lesson-v4 -m "说明"
+git push && git push --tags
+```
+成片 mp4 不入库，放在 `D:\编程\项目\教学动画\<视频名>\`。

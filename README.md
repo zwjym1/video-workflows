@@ -19,6 +19,12 @@ projects/
     step4-storyboard.md            分镜与视觉方案
     assets/SOURCES.md              素材来源
     style-frames/                  效果图及生成脚本 make.py
+    remotion/                      Remotion 源码（WINDOWS-RENDER.md 为渲染指南）
+    voice/                         配音记录和脚本
+  gradient-descent/                科普示例：梯度下降 v4 源码和配音脚本
+docs/VOICE-CONFIG.md               配音（Fish TTS）音色 ID 和配置教程
+VERSIONS.md                        版本标签和回退方法
+.env.example                       环境变量模板（只有占位符）
 ```
 
-大体积素材和音频未入库。
+成片视频和大体积素材未入库；密钥只放环境变量，不入库。
