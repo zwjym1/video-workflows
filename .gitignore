@@ -1,0 +1,14 @@
+# secrets
+.env
+.env.*
+!.env.example
+# deps / build output
+node_modules/
+out/
+.lc/
+__pycache__/
+# renders & large media
+*.mp4
+*.mov
+*.wav
+*.zip
