@@ -7,10 +7,11 @@
     "check": "tsc --noEmit",
     "stills": "node scripts/render-stills.mjs",
     "preview:scrub": "remotion render src/index.tsx RoadsterShort out/scrub-preview.mp4 --scale=0.5 --crf=28 --concurrency=2 --gl=angle --muted=false",
-    "render:master": "echo 'DO NOT run until user approved keyframes' && exit 1",
+    "render:master": "node scripts/master.mjs render:master",
     "align": "node align/server.mjs",
     "studio:v3": "remotion studio src/index.tsx",
-    "preview:scrub:v3": "remotion render src/index.tsx RoadsterShortV3 out/v3-raw.mp4 --scale=0.5 --crf=28 --gl=angle && python scripts/mix_v3.py out/v3-raw.mp4 out/scrub-preview-v3.mp4"
+    "preview:scrub:v3": "remotion render src/index.tsx RoadsterShortV3 out/v3-raw.mp4 --scale=0.5 --crf=28 --gl=angle && python scripts/mix_v3.py out/v3-raw.mp4 out/scrub-preview-v3.mp4",
+    "remix-audio": "node scripts/master.mjs remix-audio"
   },
   "dependencies": {
     "@react-three/fiber": "^9.8.2",

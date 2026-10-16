@@ -35,18 +35,30 @@ const serveFile = (req, res, file) => {
   fs.stat(file, (err, st) => {
     if (err || !st.isFile()) return send(res, 404, 'not found');
     const type = MIME[path.extname(file).toLowerCase()] ?? 'application/octet-stream';
+    const head = {'Content-Type': type, 'Accept-Ranges': 'bytes', 'Cache-Control': 'no-cache', 'Last-Modified': st.mtime.toUTCString()};
+    let a = 0, b = st.size - 1, code = 200;
     const range = req.headers.range;
-    if (range) { // video seeking needs byte ranges
-      const m = /bytes=(\d*)-(\d*)/.exec(range); let a = m[1] ? +m[1] : 0, b = m[2] ? +m[2] : st.size - 1;
-      if (!m[1] && m[2]) { a = st.size - +m[2]; b = st.size - 1; }
-      res.writeHead(206, {'Content-Type': type, 'Content-Range': `bytes ${a}-${b}/${st.size}`, 'Accept-Ranges': 'bytes', 'Content-Length': b - a + 1});
-      fs.createReadStream(file, {start: a, end: b}).pipe(res);
-    } else { res.writeHead(200, {'Content-Type': type, 'Content-Length': st.size, 'Accept-Ranges': 'bytes'}); fs.createReadStream(file).pipe(res); }
+    if (range) { // video seeking needs byte ranges: "bytes=a-b", "bytes=a-", "bytes=-n"
+      const m = /^bytes=(\d*)-(\d*)/.exec(range);
+      if (m && (m[1] || m[2])) {
+        if (m[1]) { a = +m[1]; if (m[2]) b = Math.min(+m[2], st.size - 1); } else { a = Math.max(0, st.size - +m[2]); }
+        if (a > b || a >= st.size) { res.writeHead(416, {'Content-Range': `bytes */${st.size}`}); return res.end(); }
+        code = 206; head['Content-Range'] = `bytes ${a}-${b}/${st.size}`;
+      }
+    }
+    head['Content-Length'] = b - a + 1;
+    res.writeHead(code, head);
+    if (req.method === 'HEAD') return res.end();
+    const stream = fs.createReadStream(file, {start: a, end: b});
+    stream.on('error', (e) => { console.warn('读取失败', path.basename(file), e.message); res.destroy(); });
+    res.on('close', () => stream.destroy()); // browser cancelled (seek) -> free the file handle
+    stream.pipe(res);
   });
 };
 const inside = (base, p) => { const r = path.resolve(base, '.' + p); return r.startsWith(base) ? r : null; };
 
-http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
+  req.on('error', () => {}); res.on('error', () => {});
   const url = decodeURIComponent(new URL(req.url, 'http://x').pathname);
   if (url === '/' || url === '/index.html') return serveFile(req, res, path.join(HERE, 'index.html'));
   if (url === '/__align/app.js' || url === '/__align/app.js.map' || url === '/__align/app.css') return serveFile(req, res, path.join(OUT, url.slice(9)));
@@ -63,7 +75,10 @@ http.createServer((req, res) => {
   }
   const f = inside(PUB, url); if (!f) return send(res, 403, 'forbidden');
   serveFile(req, res, f);
-}).listen(PORT, '127.0.0.1', () => {
+});
+server.keepAliveTimeout = 65000; server.headersTimeout = 70000; server.requestTimeout = 0;
+server.on('clientError', (e, sock) => sock.destroy());
+server.listen(PORT, '127.0.0.1', () => {
   const u = `http://localhost:${PORT}/`;
   console.log(`\n  素材对齐工具已启动 → ${u}\n  时间线文件: ${path.relative(ROOT, TL)}\n  按 Ctrl+C 退出\n`);
   if (!process.env.NO_OPEN) exec(process.platform === 'win32' ? `start "" "${u}"` : process.platform === 'darwin' ? `open ${u}` : `xdg-open ${u} >/dev/null 2>&1 || true`);

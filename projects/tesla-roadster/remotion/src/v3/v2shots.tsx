@@ -17,7 +17,7 @@ const Clip: React.FC<{id?: string; src: string; at: number; rate?: number; start
   const t = useAbs(start); const sh = useShot(id); const src = sh?.src ?? src0, at = sh?.in ?? at0, rate = sh?.rate ?? rate0;
   const s = zoom ? interpolate(t, [zoom[2], zoom[3]], [zoom[0], zoom[1]], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad)}) : 1;
   return <AbsoluteFill style={{overflow: 'hidden', background: '#000'}}>
-    <OffthreadVideo muted src={staticFile(src)} startFrom={Math.round(at * 30)} playbackRate={rate}
+    <OffthreadVideo muted pauseWhenBuffering src={staticFile(src)} startFrom={Math.round(at * 30)} playbackRate={rate}
       style={{width: 1920, height: 1080, objectFit: 'cover', transform: `scale(${s})`, transformOrigin: origin, filter: `brightness(${1 - dark}) blur(${blur}px)`}} />
   </AbsoluteFill>;
 };

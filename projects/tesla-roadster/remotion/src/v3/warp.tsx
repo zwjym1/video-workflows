@@ -15,4 +15,4 @@ export const warp = (t: number, a: A) => {
 };
 export const useWarpT = () => { const {anchors} = useContext(Ctx); return warp(useT3(), anchors); };
 export const Seq: React.FC<{a: number; b: number; anchors?: A; children: React.ReactNode}> = ({a, b, anchors = [], children}) =>
-  <Sequence from={fr(a)} durationInFrames={Math.max(1, fr(b) - fr(a))}><Ctx.Provider value={{from: fr(a), anchors}}>{children}</Ctx.Provider></Sequence>;
+  <Sequence from={fr(a)} durationInFrames={Math.max(1, fr(b) - fr(a))} premountFor={20}><Ctx.Provider value={{from: fr(a), anchors}}>{children}</Ctx.Provider></Sequence>;

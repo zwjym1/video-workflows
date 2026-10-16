@@ -22,3 +22,4 @@ button.pri{background:#1f6feb;border-color:#1f6feb}button.dirty{box-shadow:0 0 0
 .playhead{position:absolute;top:0;bottom:0;width:2px;background:#ff3b4f;pointer-events:none;z-index:4}
 .mixer{display:flex;gap:16px;align-items:center;padding:6px 12px;border-top:1px solid #30363d;flex-wrap:wrap}.sl{display:flex;gap:6px;align-items:center}.sl input{width:110px}.sl b{width:56px;color:#ffd25a}
 .lh.env{height:58px}.row.env{height:58px;cursor:crosshair;background:#0f1520}
+.perr{position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;background:rgba(0,0,0,.85);color:#ffb347;padding:20px;text-align:center}

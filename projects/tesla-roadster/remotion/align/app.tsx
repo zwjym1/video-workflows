@@ -92,6 +92,7 @@ const App: React.FC = () => {
   const setAudio = (a: AudioMix) => { setAudioRaw(a); setDirty(true); };
   const [hist, setHist] = useState<{past: Shot[][]; fut: Shot[][]}>({past: [], fut: []});
   const [sel, setSel] = useState<string | null>(null);
+  const [playerKey, setPlayerKey] = useState(0);
   const [frame, setFrame] = useState(0); const [playing, setPlaying] = useState(false);
   const [pps, setPps] = useState(60); const [snap, setSnap] = useState(true); const [keepDur, setKeepDur] = useState(false);
   const [cursor, setCursor] = useState(0); const [dirty, setDirty] = useState(false); const [msg, setMsg] = useState('');
@@ -106,7 +107,7 @@ const App: React.FC = () => {
   useEffect(() => { fetch('/api/timeline').then((r) => r.json()).then((j) => { setShots(P.mergeShots(j)); if (P.mergeAudio) setAudioRaw(P.mergeAudio(j)); setMsg('已载入 ' + (j.shots?.length ?? 0) + ' 个镜头的保存值'); }).catch(() => setMsg('未找到时间线文件，使用默认值')); }, []);
   useEffect(() => { const p = player.current; if (!p) return; const f = (e: any) => setFrame(e.detail.frame); const pl = () => setPlaying(true), pa = () => setPlaying(false);
     p.addEventListener('frameupdate', f); p.addEventListener('seeked', f); p.addEventListener('play', pl); p.addEventListener('pause', pa);
-    return () => { p.removeEventListener('frameupdate', f); p.removeEventListener('seeked', f); p.removeEventListener('play', pl); p.removeEventListener('pause', pa); }; }, []);
+    return () => { p.removeEventListener('frameupdate', f); p.removeEventListener('seeked', f); p.removeEventListener('play', pl); p.removeEventListener('pause', pa); }; }, [playerKey]);
   // source cursor follows playhead inside the selected shot
   useEffect(() => { if (shot && t >= shot.start && t < shot.end) setCursor(r3(shot.in + (t - shot.start) * shot.rate)); }, [frame, sel, shot?.in, shot?.start, shot?.rate]);
   useEffect(() => { if (shot && !(t >= shot.start && t < shot.end)) setCursor(shot.in); }, [sel]);
@@ -170,7 +171,9 @@ const App: React.FC = () => {
     <div className="top">
       <div className="playerwrap">
         <Player ref={player} component={P.component} inputProps={inputProps} durationInFrames={P.durationInFrames} fps={FPS} compositionWidth={P.width} compositionHeight={P.height}
-          style={{width: '100%', aspectRatio: `${P.width}/${P.height}`}} controls clickToPlay={false} acknowledgeRemotionLicense />
+          style={{width: '100%', aspectRatio: `${P.width}/${P.height}`}} controls clickToPlay={false} acknowledgeRemotionLicense numberOfSharedAudioTags={0} bufferStateDelayInMilliseconds={300}
+          errorFallback={({error}) => <div className="perr"><b>预览出错，已暂停</b><div>{String(error?.message ?? error).slice(0, 300)}</div>
+            <button className="pri" onClick={() => { setPlayerKey((k) => k + 1); setTimeout(() => seek(t), 300); }}>重试（从当前位置）</button></div>} key={playerKey} />
         <div className="now"><b>{fmt(t)}</b>　第 {frame} 帧　{curWord ? <>当前字：<b className="word">{curWord.text}</b>（第 {curWord.si + 1} 句）</> : ''}</div>
       </div>
       <SourcePanel shot={shot} t={t} cursor={cursor} setCursor={setCursor} update={(p) => shot && update(shot.id, p)} keepDur={keepDur} setKeepDur={setKeepDur} srcs={srcs}
