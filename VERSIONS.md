@@ -40,3 +40,9 @@ git tag -a pi-lesson-v4 -m "说明"
 git push && git push --tags
 ```
 成片 mp4 不入库，放在 `D:\编程\项目\教学动画\<视频名>\`。
+
+## 文档与技能
+
+| 版本 | 内容 |
+|---|---|
+| `v-preprod-2026-10-18` | 新增 `skills/tech-preproduction/`（科技短视频前期调研与核查）和 `docs/PREPRODUCTION-WORKFLOW.md`。对照附件核对 `skills/kepu-short-video/SKILL.md` 与 `skills/primary-lesson-video/SKILL.md`，内容一致，未改。 |
