@@ -1,0 +1,42 @@
+{
+  "template": "hot-science-roadster",
+  "frozen_from": "Roadster V3 final source (V4 source missing)",
+  "voice": {
+    "provider": "fish.audio",
+    "endpoint": "/v1/tts/stream/with-timestamp",
+    "reference_id": "cfd828bdf120410c923fac0056c687c2",
+    "model": "s2.1-pro-free",
+    "temperature": 0.65,
+    "prosody_speed": 1.05,
+    "latency": "normal",
+    "takes_per_sentence": ["ta", "tb", "tc"],
+    "asr": "faster-whisper medium int8",
+    "intra_silence_trim": {"threshold_s": 0.3, "keep_each_side_s": 0.15},
+    "global_tempo": 1.15,
+    "tempo_filter": "rubberband=tempo=1.15 (fallback atempo=1.15)",
+    "pauses_s": {"default": 0.30, "after_1": 0.55, "after_4": 0.35, "after_11": 0.55, "after_last": 0.6, "lead_in": 0.12},
+    "voice_loudnorm": "I=-16:TP=-1.5:LRA=11",
+    "tts_text_replacements": {"2028年": "二零二八年", "AI": "A I"},
+    "key": "env FISH_API_KEY only",
+    "speed_1_08": "NOT FOUND in Roadster records (1.08 is gradient-descent v4)"
+  },
+  "remotion": {
+    "composition": "RoadsterShortV3",
+    "width": 1920, "height": 1080, "fps": 30,
+    "font": "\"Noto Sans CJK SC\",\"Noto Sans SC\",sans-serif",
+    "remotion_version": "^4.0.535",
+    "timeline": "src/v3/footage-timeline.json",
+    "align_tool": "http://localhost:3210"
+  },
+  "mix": {"voiceDb": 0, "sfxDb": 0, "bgmDb": 10, "duckDb": 10, "lufs": -16, "tp": -1.5, "lra": 11, "bgm_bpm": 112},
+  "render": {
+    "pc": "R5 5600 / 16GB / RTX 3080",
+    "cmd": "npm run render:master",
+    "video": "--muted --codec=h264 --crf=18",
+    "flags": "--concurrency=8 --gl=angle --x264-preset=veryfast --offthreadvideo-video-threads=4",
+    "audio": "aac 320k 48k, +faststart",
+    "bench_fps": 7.66
+  },
+  "v3_final_measured": {"duration_s": 89.53, "lufs": -15.9, "tp_dbfs": -2.3},
+  "v4_24h": {"plays": 13320, "completion": 0.0727, "completion_5s": 0.464, "bounce_2s": 0.4081, "avg_watch_s": 16.96, "search_share": 0.80}
+}

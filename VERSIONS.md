@@ -14,6 +14,8 @@
 | `roadster-v3.1` | v3.1：footage-timeline.json 控制镜头、对齐工具、三处画面修正 |
 | `roadster-v3.2` | v3.2：自制 BGM +3dB、混音写进 JSON、对齐工具混音台 |
 | `roadster-v3` | **v3 定稿**：播放器卡死修复、用户定稿的 footage-timeline.json、render:master / remix-audio；成片 特斯拉Roadster-v3.mp4 |
+| `roadster-workflow-v1` | 「热点科普（Roadster 款）」工作流模板冻结版：workflows/hot-science-roadster/（README、params.json、V3 终版源码快照）。原定标签名 roadster-v1 已被 Roadster 第一版占用，所以改用这个名字 |
+| `ai-debunk-v1` | 「AI 辟谣拆解（iPhone 款）」工作流模板冻结版：workflows/ai-debunk-iphone/（README、params.json、v3f_naming.md、V3f 源码和打码/OCR/配音脚本快照） |
 
 ## 怎么退回某个版本
 

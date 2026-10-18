@@ -1,0 +1,497 @@
+{
+ "fps": 30,
+ "total": 84.29,
+ "frames": 2529,
+ "shots": [
+  {
+   "id": "01",
+   "start": 0,
+   "end": 1.89,
+   "from": 0,
+   "plate": "plates/01.webp",
+   "holes": [
+    {
+     "kind": "full",
+     "x": 528,
+     "y": 0,
+     "w": 864,
+     "h": 1080,
+     "r": 0,
+     "feather": 40
+    }
+   ],
+   "clip": "clips/01.mp4"
+  },
+  {
+   "id": "02",
+   "start": 1.89,
+   "end": 4.71,
+   "from": 57,
+   "plate": "plates/02.webp",
+   "holes": [
+    {
+     "kind": "full",
+     "x": 528,
+     "y": 0,
+     "w": 864,
+     "h": 1080,
+     "r": 0,
+     "feather": 40
+    }
+   ],
+   "clip": "clips/02.mp4"
+  },
+  {
+   "id": "03",
+   "start": 4.71,
+   "end": 7.53,
+   "from": 141,
+   "plate": "plates/03.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 578,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "beat": {
+    "t": 6.096,
+    "img": "plates/03_beat.webp",
+    "bbox": [
+     134,
+     154,
+     1888,
+     630
+    ]
+   },
+   "clip": "clips/03.mp4"
+  },
+  {
+   "id": "04",
+   "start": 7.53,
+   "end": 9.78,
+   "from": 226,
+   "plate": "plates/04.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 578,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/04.mp4"
+  },
+  {
+   "id": "05",
+   "start": 9.78,
+   "end": 12.04,
+   "from": 293,
+   "plate": "plates/05.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 578,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/05.mp4"
+  },
+  {
+   "id": "06",
+   "start": 12.04,
+   "end": 14.87,
+   "from": 361,
+   "plate": "plates/06.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 438,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/06.mp4"
+  },
+  {
+   "id": "07",
+   "start": 14.87,
+   "end": 17.69,
+   "from": 446,
+   "plate": "plates/07.webp",
+   "holes": []
+  },
+  {
+   "id": "08",
+   "start": 17.69,
+   "end": 20.57,
+   "from": 531,
+   "plate": "plates/08.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 298,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/08.mp4"
+  },
+  {
+   "id": "09",
+   "start": 20.57,
+   "end": 22.74,
+   "from": 617,
+   "plate": "plates/09.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 298,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/09.mp4"
+  },
+  {
+   "id": "10",
+   "start": 22.74,
+   "end": 26.49,
+   "from": 682,
+   "plate": "plates/10.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 298,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/10.mp4"
+  },
+  {
+   "id": "11",
+   "start": 26.49,
+   "end": 28.01,
+   "from": 795,
+   "plate": "plates/11.webp",
+   "holes": []
+  },
+  {
+   "id": "12a",
+   "start": 28.01,
+   "end": 30.75,
+   "from": 840,
+   "plate": "plates/12a.webp",
+   "holes": []
+  },
+  {
+   "id": "12b",
+   "start": 30.75,
+   "end": 32.59,
+   "from": 922,
+   "plate": "plates/12b.webp",
+   "holes": [],
+   "beat": {
+    "t": 31.314,
+    "img": "plates/12b_beat.webp",
+    "bbox": [
+     952,
+     190,
+     1888,
+     880
+    ]
+   }
+  },
+  {
+   "id": "13",
+   "start": 32.59,
+   "end": 35.15,
+   "from": 978,
+   "plate": "plates/13.webp",
+   "holes": [],
+   "beat": {
+    "t": 34.371,
+    "img": "plates/13_beat.webp",
+    "bbox": [
+     1139,
+     454,
+     1242,
+     483
+    ]
+   }
+  },
+  {
+   "id": "14",
+   "start": 35.15,
+   "end": 37.75,
+   "from": 1054,
+   "plate": "plates/14.webp",
+   "holes": []
+  },
+  {
+   "id": "15",
+   "start": 37.75,
+   "end": 40.59,
+   "from": 1132,
+   "plate": "plates/15.webp",
+   "holes": []
+  },
+  {
+   "id": "16",
+   "start": 40.59,
+   "end": 42.51,
+   "from": 1218,
+   "plate": "plates/16.webp",
+   "holes": [],
+   "beat": {
+    "t": 41.735,
+    "img": "plates/16_beat.webp",
+    "bbox": [
+     614,
+     204,
+     1451,
+     427
+    ]
+   }
+  },
+  {
+   "id": "17",
+   "start": 42.51,
+   "end": 45.59,
+   "from": 1275,
+   "plate": "plates/17.webp",
+   "holes": []
+  },
+  {
+   "id": "18",
+   "start": 45.59,
+   "end": 48.42,
+   "from": 1368,
+   "plate": "plates/18.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 438,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "beat": {
+    "t": 47.369,
+    "img": "plates/18_beat.webp",
+    "bbox": [
+     602,
+     348,
+     833,
+     451
+    ]
+   },
+   "clip": "clips/18.mp4"
+  },
+  {
+   "id": "19",
+   "start": 48.42,
+   "end": 51.03,
+   "from": 1453,
+   "plate": "plates/19.webp",
+   "holes": []
+  },
+  {
+   "id": "20",
+   "start": 51.03,
+   "end": 53.03,
+   "from": 1531,
+   "plate": "plates/20.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 578,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/20.mp4"
+  },
+  {
+   "id": "21",
+   "start": 53.03,
+   "end": 56.93,
+   "from": 1591,
+   "plate": "plates/21.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 298,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "beat": {
+    "t": 54.971,
+    "img": "plates/21_beat.webp",
+    "bbox": [
+     1268,
+     323,
+     1688,
+     771
+    ]
+   },
+   "clip": "clips/21.mp4"
+  },
+  {
+   "id": "22",
+   "start": 56.93,
+   "end": 60.83,
+   "from": 1708,
+   "plate": "plates/22.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 298,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/22.mp4"
+  },
+  {
+   "id": "23",
+   "start": 60.83,
+   "end": 62.23,
+   "from": 1825,
+   "plate": "plates/23.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 218,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/23.mp4"
+  },
+  {
+   "id": "24",
+   "start": 62.23,
+   "end": 65.61,
+   "from": 1867,
+   "plate": "plates/24.webp",
+   "holes": [],
+   "beat": {
+    "t": 63.527,
+    "img": "plates/24_beat.webp",
+    "bbox": [
+     872,
+     300,
+     1708,
+     889
+    ]
+   }
+  },
+  {
+   "id": "25",
+   "start": 65.61,
+   "end": 67.99,
+   "from": 1968,
+   "plate": "plates/25.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 578,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/25.mp4"
+  },
+  {
+   "id": "26",
+   "start": 67.99,
+   "end": 72.27,
+   "from": 2040,
+   "plate": "plates/26.webp",
+   "holes": [
+    {
+     "kind": "phone",
+     "x": 298,
+     "y": 158,
+     "w": 378,
+     "h": 672,
+     "r": 40
+    }
+   ],
+   "clip": "clips/26.mp4"
+  },
+  {
+   "id": "27",
+   "start": 72.27,
+   "end": 74.88,
+   "from": 2168,
+   "plate": "plates/27.webp",
+   "holes": [],
+   "beat": {
+    "t": 73.971,
+    "img": "plates/27_beat.webp",
+    "bbox": [
+     236,
+     344,
+     552,
+     628
+    ]
+   }
+  },
+  {
+   "id": "28",
+   "start": 74.88,
+   "end": 78.88,
+   "from": 2246,
+   "plate": "plates/28.webp",
+   "holes": []
+  },
+  {
+   "id": "29",
+   "start": 78.88,
+   "end": 82.96,
+   "from": 2366,
+   "plate": "plates/29.webp",
+   "holes": []
+  },
+  {
+   "id": "30",
+   "start": 82.96,
+   "end": 84.29,
+   "from": 2489,
+   "plate": "plates/30.webp",
+   "holes": []
+  }
+ ]
+}

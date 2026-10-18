@@ -1,0 +1,112 @@
+[
+ {
+  "t": 0.1,
+  "file": "sfx/message_ping.wav",
+  "vol": 0.35
+ },
+ {
+  "t": 3.907,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.5
+ },
+ {
+  "t": 6.096,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.8
+ },
+ {
+  "t": 6.146,
+  "file": "sfx/alarm_short.wav",
+  "vol": 0.25
+ },
+ {
+  "t": 14.95,
+  "file": "sfx/shutter_burst.wav",
+  "vol": 0.35
+ },
+ {
+  "t": 17.75,
+  "file": "sfx/message_ping.wav",
+  "vol": 0.35
+ },
+ {
+  "t": 20.62,
+  "file": "sfx/message_ping.wav",
+  "vol": 0.3
+ },
+ {
+  "t": 25.395,
+  "file": "sfx/bubble_gudu.wav",
+  "vol": 0.45
+ },
+ {
+  "t": 31.314,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.7
+ },
+ {
+  "t": 31.364,
+  "file": "sfx/alarm_short.wav",
+  "vol": 0.2
+ },
+ {
+  "t": 34.371,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.45
+ },
+ {
+  "t": 36.616,
+  "file": "sfx/counter_beep.wav",
+  "vol": 0.35
+ },
+ {
+  "t": 41.735,
+  "file": "sfx/stamp_seal.wav",
+  "vol": 0.55
+ },
+ {
+  "t": 47.369,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.6
+ },
+ {
+  "t": 54.971,
+  "file": "sfx/stamp_seal.wav",
+  "vol": 0.4
+ },
+ {
+  "t": 58.6,
+  "file": "sfx/counter_beep.wav",
+  "vol": 0.35
+ },
+ {
+  "t": 59.353,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.55
+ },
+ {
+  "t": 63.527,
+  "file": "sfx/plane_whoosh.wav",
+  "vol": 0.45
+ },
+ {
+  "t": 73.171,
+  "file": "sfx/plane_whoosh.wav",
+  "vol": 0.35
+ },
+ {
+  "t": 73.971,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.5
+ },
+ {
+  "t": 79.0,
+  "file": "sfx/typing_clicks.wav",
+  "vol": 0.25
+ },
+ {
+  "t": 83.0,
+  "file": "sfx/thud_dong.wav",
+  "vol": 0.5
+ }
+]

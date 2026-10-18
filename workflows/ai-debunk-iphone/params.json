@@ -1,0 +1,18 @@
+{
+  "template": "ai-debunk-iphone",
+  "frozen_from": "IphoneFakeV3f",
+  "voice": {"reference_id": "cfd828bdf120410c923fac0056c687c2", "model": "s2.1-pro-free", "temperature": 0.65, "speed": 1.25,
+            "emotion_tags": "none", "takes_per_unit": 3, "asr": "faster-whisper large-v3 int8", "lufs": -16, "tp_max": -1.5, "key": "env FISH_API_KEY only"},
+  "video": {"composition": "IphoneFakeV3f", "width": 1920, "height": 1080, "fps": 30, "remotion": "4.0.536", "image_format": "jpeg", "jpeg_quality": 92,
+            "font": "NotoSansSC-Bold-sub.otf"},
+  "render": {"concurrency": 6, "crf": 18, "audio_bitrate": "320k", "where": "box, then chunked copy (7MB) to PC"},
+  "rules": {"circle_min_s": 2.5, "pushin_max": 1.4, "reveal_window_s": [2, 5]},
+  "sr": {"tool": "realesrgan-ncnn-vulkan", "model": "realesrgan-x4plus", "scale": 4, "post": "lanczos 1440x2560, unsharp=5:5:0.4, crf 17"},
+  "faceblur": {"detector": "YuNet", "scale": 1.5, "threshold": 0.55, "reject": "w>40 and h/w<1", "temporal_union_frames": 3, "mosaic": "5x5 + gaussian, feathered ellipse"},
+  "ocr": {"fps": 3, "engine": "tesseract eng+chi_sim psm 11", "omp_thread_limit": 1, "eng_conf_report": 70,
+          "whitelist": ["own subtitles", "AI", "99.9%", "iPhone", "digits"],
+          "ban": ["BBC","Verify","OpenAI","Hive","Instagram","Annahar","Grok","Twitter","推特","外网","外媒","B站","搬运号","来源","信源","素材","照片：","半岛","霍尔木兹","海峡","沉船","事故","战争","封锁","Social","media","GENERATED","Content","JAL","CARGO","UNICEF","@","Likely","POWERED"]},
+  "acceptance": {"lufs": [-16.5, -15.5], "true_peak_max": -1.0},
+  "v3f_measured": {"duration_s": 75.755, "lufs": -15.97, "tp": -2.75, "lra": 2.50, "frames": 2272, "shots": 31, "sfx": 49},
+  "publish": {"ai_label": true, "quote_source": "站外", "location": "none"}
+}

@@ -1,0 +1,69 @@
+{
+ "bgm": {
+  "file": "v3/audio/bgm_281.wav",
+  "track_start": 23.84,
+  "gain_db": -5.8
+ },
+ "sfx": {
+  "whoosh_c": {
+   "src": "whoosh_c.mp3",
+   "dur": 0.55,
+   "peak": 0.209
+  },
+  "whoosh_d": {
+   "src": "whoosh_d.mp3",
+   "dur": 0.361,
+   "peak": 0.215
+  },
+  "whoosh_e": {
+   "src": "whoosh_e.mp3",
+   "dur": 0.503,
+   "peak": 0.043
+  },
+  "whoosh_b": {
+   "src": "whoosh_b.mp3",
+   "dur": 0.6,
+   "peak": 0.554
+  },
+  "whoosh_f": {
+   "src": "whoosh_f.mp3",
+   "dur": 0.6,
+   "peak": 0.085
+  },
+  "pop_a": {
+   "src": "pop_a.mp3",
+   "dur": 0.17,
+   "peak": 0.023
+  },
+  "pop_b": {
+   "src": "pop_b.mp3",
+   "dur": 0.3,
+   "peak": 0.045
+  },
+  "pop_c": {
+   "src": "pop_c.mp3",
+   "dur": 0.274,
+   "peak": 0.103
+  },
+  "click_b": {
+   "src": "click_b.mp3",
+   "dur": 0.199,
+   "peak": 0.005
+  },
+  "click_c": {
+   "src": "click_c.mp3",
+   "dur": 0.141,
+   "peak": 0.009
+  },
+  "hit_d": {
+   "src": "hit_d.mp3",
+   "dur": 1.2,
+   "peak": 0.018
+  },
+  "hit_c": {
+   "src": "hit_c.mp3",
+   "dur": 1.2,
+   "peak": 0.192
+  }
+ }
+}

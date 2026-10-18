@@ -1,0 +1,3570 @@
+{
+ "fps": 30,
+ "total": 75.74,
+ "frames": 2272,
+ "shots": [
+  {
+   "id": "s01",
+   "t0": 0,
+   "t1": 1.14,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s01.mp4"
+   },
+   "cam": [
+    {
+     "t": 0,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 1.14,
+     "s": 1.05,
+     "x": 960,
+     "y": 560
+    }
+   ],
+   "ov": [
+    {
+     "k": "danmaku",
+     "t": 0.3,
+     "text": "在哪捡？",
+     "y": 300
+    }
+   ],
+   "src": null,
+   "enter": "none",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s02",
+   "t0": 1.14,
+   "t1": 2.377,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s02.mp4"
+   },
+   "cam": [
+    {
+     "t": 1.14,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 2.377,
+     "s": 1.06,
+     "x": 960,
+     "y": 560
+    }
+   ],
+   "ov": [
+    {
+     "k": "cap",
+     "t": 1.38,
+     "text": "免费 iPhone？",
+     "color": "yellow",
+     "x": 1380,
+     "y": 300,
+     "size": 64,
+     "rot": -4,
+     "sfx": "pop"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s03",
+   "t0": 2.377,
+   "t1": 4.657,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s03.mp4"
+   },
+   "cam": [
+    {
+     "t": 2.377,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 3.827,
+     "s": 1.02,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 4.027,
+     "s": 1.08,
+     "x": 1180,
+     "y": 560
+    },
+    {
+     "t": 4.657,
+     "s": 1.1,
+     "x": 1180,
+     "y": 560
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 2.477,
+     "src": "v3/qban/02_oar_c1.png",
+     "x": 1180,
+     "y": 250,
+     "w": 560,
+     "enter": "slideRight",
+     "dropAt": 3.907
+    },
+    {
+     "k": "danmaku",
+     "t": 2.4269999999999996,
+     "text": "真的假的？",
+     "y": 230
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s04",
+   "t0": 4.657,
+   "t1": 6.347,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_grid.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 4.657,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 6.347,
+     "s": 1.05,
+     "x": 960,
+     "y": 520
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 4.657,
+     "src": "v3/img/fb_e_fk_g1.png",
+     "x": 150,
+     "y": 260,
+     "w": 360,
+     "rot": -6,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 4.707,
+     "src": "v3/img/fb_e_fk_beach.png",
+     "x": 570,
+     "y": 280,
+     "w": 360,
+     "rot": 3,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 4.757,
+     "src": "v3/img/f_fk_boat.png",
+     "x": 990,
+     "y": 260,
+     "w": 360,
+     "rot": -3,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 4.807,
+     "src": "v3/img/fb_f_fk_fish.png",
+     "x": 1410,
+     "y": 280,
+     "w": 360,
+     "rot": 5,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "stamp",
+     "t": 5.817,
+     "text": "AI 生成",
+     "x": 960,
+     "y": 500,
+     "size": 150,
+     "rot": -10,
+     "sfx": "hit"
+    },
+    {
+     "k": "shake",
+     "t": 5.817
+    },
+    {
+     "k": "flash",
+     "t": 5.817
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": 5.817,
+   "note": ""
+  },
+  {
+   "id": "s05",
+   "t0": 6.347,
+   "t1": 8.88,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_f_s05.mp4"
+   },
+   "cam": [
+    {
+     "t": 6.347,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 8.88,
+     "s": 1.03,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "split",
+     "t": 6.3469999999999995
+    },
+    {
+     "k": "tag",
+     "t": 6.3469999999999995,
+     "text": "网传画面 · AI 生成",
+     "color": "red",
+     "x": 40,
+     "y": 150
+    },
+    {
+     "k": "stamp",
+     "t": 6.3469999999999995,
+     "text": "AI 生成",
+     "x": 477,
+     "y": 560,
+     "size": 96,
+     "rot": -10,
+     "still": true
+    },
+    {
+     "k": "tag",
+     "t": 7.92,
+     "text": "实拍画面",
+     "color": "green",
+     "x": 1006,
+     "y": 150,
+     "sfx": "pop",
+     "popin": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s06",
+   "t0": 8.88,
+   "t1": 11.29,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_f_s06.mp4"
+   },
+   "cam": [
+    {
+     "t": 8.88,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 10.07,
+     "s": 1.04,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 10.55,
+     "s": 1.16,
+     "x": 900,
+     "y": 560
+    },
+    {
+     "t": 11.29,
+     "s": 1.18,
+     "x": 900,
+     "y": 560
+    }
+   ],
+   "ov": [
+    {
+     "k": "cap",
+     "t": 10.45,
+     "text": "也是真的",
+     "color": "green",
+     "x": 1480,
+     "y": 300,
+     "size": 60,
+     "rot": 3,
+     "sfx": "pop"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s07",
+   "t0": 11.29,
+   "t1": 14.15,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_f_s07.mp4"
+   },
+   "cam": [
+    {
+     "t": 11.29,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 14.15,
+     "s": 1.03,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "split",
+     "t": 11.29
+    },
+    {
+     "k": "tag",
+     "t": 11.29,
+     "text": "网传假片",
+     "color": "red",
+     "x": 40,
+     "y": 150
+    },
+    {
+     "k": "tag",
+     "t": 11.29,
+     "text": "实拍画面",
+     "color": "green",
+     "x": 1006,
+     "y": 150
+    },
+    {
+     "k": "quote",
+     "t": 11.86,
+     "title": "原声直译",
+     "text": "「要 iPhone 吗？」",
+     "x": 1180,
+     "y": 560
+    },
+    {
+     "k": "cap",
+     "t": 13.34,
+     "text": "也是真的",
+     "color": "green",
+     "x": 1500,
+     "y": 330,
+     "size": 58,
+     "rot": -3
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s08",
+   "t0": 14.15,
+   "t1": 15.958,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_flood.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 14.15,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 15.958,
+     "s": 1.06,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 14.200000000000001,
+     "src": "v3/img/fb_e_fk_g1.png",
+     "x": 210,
+     "y": 245,
+     "w": 340,
+     "rot": -8,
+     "enter": "slam",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 14.45,
+     "src": "v3/img/f_fk_boat.png",
+     "x": 590,
+     "y": 295,
+     "w": 340,
+     "rot": 5,
+     "enter": "slam",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 14.85,
+     "src": "v3/img/fb_e_fk_beach.png",
+     "x": 970,
+     "y": 245,
+     "w": 340,
+     "rot": -4,
+     "enter": "slam",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 15.05,
+     "src": "v3/img/fb_f_fk_fish2.png",
+     "x": 1350,
+     "y": 295,
+     "w": 340,
+     "rot": 7,
+     "enter": "slam",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 15.11,
+     "src": "v3/img/fb_f_fk_fish.png",
+     "x": 390,
+     "y": 335,
+     "w": 340,
+     "rot": 9,
+     "enter": "slam",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 15.35,
+     "src": "v3/img/fb_f_fk_sea.png",
+     "x": 1170,
+     "y": 335,
+     "w": 340,
+     "rot": -6,
+     "enter": "slam",
+     "frame": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s09",
+   "t0": 15.958,
+   "t1": 17.557,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s09.mp4"
+   },
+   "cam": [
+    {
+     "t": 15.958,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 17.557,
+     "s": 1.05,
+     "x": 1100,
+     "y": 520
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 16.008,
+     "src": "v3/img/f_c1.png",
+     "x": 880,
+     "y": 330,
+     "w": 820,
+     "enter": "slideRight",
+     "shadow": true
+    },
+    {
+     "k": "cursor",
+     "t": 16.058,
+     "path": [
+      [
+       16.058,
+       1700,
+       860
+      ],
+      [
+       16.218,
+       1040.5282738095239,
+       488.0
+      ]
+     ],
+     "click": 16.238,
+     "sfx": "click"
+    },
+    {
+     "k": "hl",
+     "t": 16.238,
+     "x": 983.8519345238095,
+     "y": 427.4761904761905,
+     "w": 72.67633928571428,
+     "h": 72.52380952380953,
+     "color": "yellow"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s10",
+   "t0": 17.557,
+   "t1": 19.689,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s10.mp4"
+   },
+   "cam": [
+    {
+     "t": 17.557,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 19.689,
+     "s": 1.05,
+     "x": 960,
+     "y": 520
+    }
+   ],
+   "ov": [
+    {
+     "k": "dim",
+     "t": 17.557,
+     "a": 0.45
+    },
+    {
+     "k": "img",
+     "t": 17.596999999999998,
+     "src": "v3/img/f_c2.png",
+     "x": 460,
+     "y": 300,
+     "w": 1000,
+     "enter": "pop",
+     "shadow": true
+    },
+    {
+     "k": "underline",
+     "t": 18.057,
+     "t1": 19.007,
+     "x": 510.4761904761905,
+     "y": 514.0,
+     "w": 362.6190476190476,
+     "color": "red"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s11",
+   "t0": 19.689,
+   "t1": 22.451,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s11.mp4"
+   },
+   "cam": [
+    {
+     "t": 19.689,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 21.349,
+     "s": 1.02,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 21.699,
+     "s": 1.08,
+     "x": 1300,
+     "y": 500
+    },
+    {
+     "t": 22.451,
+     "s": 1.1,
+     "x": 1300,
+     "y": 500
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 19.839,
+     "src": "v3/img/f_c3.png",
+     "x": 900,
+     "y": 360,
+     "w": 820,
+     "enter": "pop",
+     "shadow": true,
+     "rot": -2,
+     "sfx": "pop"
+    },
+    {
+     "k": "bubbles",
+     "t": 21.699,
+     "x": 1500,
+     "y": 640
+    },
+    {
+     "k": "underline",
+     "t": 21.399,
+     "t1": 22.109,
+     "x": 1266.7222222222222,
+     "y": 505.77777777777777,
+     "w": 170.83333333333334,
+     "color": "yellow"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s12",
+   "t0": 22.451,
+   "t1": 24.733,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_cmt.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 22.451,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 24.733,
+     "s": 1.04,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "scroll",
+     "t": 22.451,
+     "items": [
+      "v3/img/f_c3.png",
+      "v3/img/f_c1.png",
+      "v3/img/f_c2.png",
+      "v3/img/f_c3.png",
+      "v3/img/f_c1.png"
+     ],
+     "x": 1060,
+     "w": 700,
+     "y0": 160,
+     "speed": 230,
+     "gap": 40
+    },
+    {
+     "k": "img",
+     "t": 22.501,
+     "src": "v3/qban/10_cover_mouth_c1.png",
+     "x": 180,
+     "y": 230,
+     "w": 600,
+     "enter": "slideLeft"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s13",
+   "t0": 24.733,
+   "t1": 27.576,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_q1.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 24.733,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 26.316,
+     "s": 1.02,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 26.766,
+     "s": 2.15,
+     "x": 1170,
+     "y": 560
+    },
+    {
+     "t": 27.576,
+     "s": 2.3,
+     "x": 1114.8,
+     "y": 556.0
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 24.733,
+     "src": "v3/img/fb_e_fk_g1.png",
+     "x": 150,
+     "y": 320,
+     "w": 360,
+     "rot": -5,
+     "enter": "none",
+     "frame": true,
+     "hiAt": null
+    },
+    {
+     "k": "img",
+     "t": 24.733,
+     "src": "v3/img/fb_e_fk_beach.png",
+     "x": 570,
+     "y": 340,
+     "w": 360,
+     "rot": 3,
+     "enter": "none",
+     "frame": true,
+     "hiAt": null
+    },
+    {
+     "k": "img",
+     "t": 24.733,
+     "src": "v3/img/f_fk_boat.png",
+     "x": 990,
+     "y": 320,
+     "w": 360,
+     "rot": 0,
+     "enter": "none",
+     "frame": true,
+     "hiAt": null
+    },
+    {
+     "k": "img",
+     "t": 24.733,
+     "src": "v3/img/fb_f_fk_fish.png",
+     "x": 1410,
+     "y": 340,
+     "w": 360,
+     "rot": 4,
+     "enter": "none",
+     "frame": true,
+     "hiAt": null
+    },
+    {
+     "k": "qmark",
+     "t": 24.823,
+     "x": 960,
+     "y": 250,
+     "size": 210,
+     "sfx": "pop",
+     "t1": 26.266
+    },
+    {
+     "k": "img",
+     "t": 24.873,
+     "src": "v3/qban/st_think.png",
+     "x": 1620,
+     "y": 120,
+     "w": 250,
+     "enter": "pop",
+     "t1": 26.266
+    },
+    {
+     "k": "dash",
+     "t": 27.066,
+     "t1": 27.576,
+     "cx": 1134.8,
+     "cy": 586.0,
+     "rx": 34,
+     "ry": 28,
+     "color": "red"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": "小船卡推满屏（卡片源图 900×1200）"
+  },
+  {
+   "id": "s14",
+   "t0": 27.576,
+   "t1": 30.126,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_mag.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 27.576,
+     "s": 1.0,
+     "x": 811.6,
+     "y": 665.8
+    },
+    {
+     "t": 30.126,
+     "s": 1.08,
+     "x": 811.6,
+     "y": 665.8
+    }
+   ],
+   "ov": [
+    {
+     "k": "dash",
+     "t": 27.576,
+     "t1": 30.125999999999998,
+     "cx": 811.6,
+     "cy": 665.8,
+     "rx": 368.66666666666663,
+     "ry": 368.66666666666663,
+     "color": "red",
+     "noDraw": true
+    },
+    {
+     "k": "ring",
+     "t": 28.506,
+     "cx": 848.0,
+     "cy": 492.4,
+     "r": 85.11111111111111,
+     "label": "①"
+    },
+    {
+     "k": "ring",
+     "t": 28.646,
+     "cx": 709.3,
+     "cy": 711.1,
+     "r": 85.11111111111111,
+     "label": "②"
+    },
+    {
+     "k": "cap",
+     "t": 28.506,
+     "text": "画了两组摄像头",
+     "color": "red",
+     "x": 1490,
+     "y": 230,
+     "size": 60,
+     "rot": -3,
+     "sfx": "pop",
+     "kit": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s15",
+   "t0": 30.126,
+   "t1": 32.691,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_text.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 30.126,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 32.691,
+     "s": 1.06,
+     "x": 1150,
+     "y": 520
+    }
+   ],
+   "ov": [
+    {
+     "k": "leader",
+     "t": 30.125999999999998,
+     "x0": 1091.7,
+     "y0": 556.8,
+     "x1": 990,
+     "y1": 500,
+     "r0": 40
+    },
+    {
+     "k": "img",
+     "t": 30.125999999999998,
+     "src": "v3/img/lens_text.png",
+     "x": 978,
+     "y": 188,
+     "w": 624,
+     "enter": "pop"
+    },
+    {
+     "k": "dash",
+     "t": 30.156,
+     "t1": 32.691,
+     "cx": 1245.7894736842106,
+     "cy": 576.6315789473684,
+     "rx": 150,
+     "ry": 70,
+     "color": "red",
+     "rot": -12
+    },
+    {
+     "k": "wavy",
+     "t": 31.066,
+     "x": 1125.7894736842106,
+     "y": 642.6315789473684,
+     "w": 240,
+     "rot": -12
+    },
+    {
+     "k": "cap",
+     "t": 31.066,
+     "text": "字全是扭的",
+     "color": "red",
+     "x": 560,
+     "y": 250,
+     "size": 60,
+     "rot": -3,
+     "sfx": "pop",
+     "kit": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s16",
+   "t0": 32.691,
+   "t1": 35.311,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_openai.webp",
+    "k": 2
+   },
+   "cam": [
+    {
+     "t": 32.691,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 33.861,
+     "s": 1.03,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 34.181,
+     "s": 1.375,
+     "x": 960.0,
+     "y": 542.0
+    },
+    {
+     "t": 35.311,
+     "s": 1.4,
+     "x": 960.0,
+     "y": 542.0
+    }
+   ],
+   "ov": [
+    {
+     "k": "cursor",
+     "t": 32.691,
+     "path": [
+      [
+       32.691,
+       1650,
+       900
+      ],
+      [
+       32.811,
+       1298.0,
+       502.0
+      ]
+     ],
+     "circle": {
+      "t": 32.791000000000004,
+      "cx": 960.0,
+      "cy": 502.0,
+      "rx": 358.0,
+      "ry": 76.0,
+      "dur": 0.7,
+      "t1": 35.311
+     }
+    },
+    {
+     "k": "cap",
+     "t": 33.971,
+     "text": "AI 工具生成",
+     "color": "red",
+     "x": 960,
+     "y": 800,
+     "size": 64,
+     "rot": 0,
+     "sfx": "pop",
+     "kit": true,
+     "screen": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s17",
+   "t0": 35.311,
+   "t1": 37.114,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_fish.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 35.311,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 37.114,
+     "s": 1.05,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 35.311,
+     "src": "v3/img/fb_f_fk_fish2.png",
+     "x": 330,
+     "y": 150,
+     "w": 460,
+     "rot": -3,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "chip",
+     "t": 36.201,
+     "text": "✓ 也有水印",
+     "x": 450,
+     "y": 770,
+     "light": true,
+     "sfx": "click"
+    },
+    {
+     "k": "img",
+     "t": 35.361,
+     "src": "v3/img/fb_f_fk_fish.png",
+     "x": 1130,
+     "y": 150,
+     "w": 460,
+     "rot": 3,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "chip",
+     "t": 36.201,
+     "text": "✓ 也有水印",
+     "x": 1250,
+     "y": 770,
+     "light": true,
+     "sfx": null
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s18",
+   "t0": 37.114,
+   "t1": 40.863,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_split3.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 37.114,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 40.863,
+     "s": 1.04,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "split",
+     "t": 37.114000000000004
+    },
+    {
+     "k": "tag",
+     "t": 37.114000000000004,
+     "text": "网传图 · 改过的",
+     "color": "red",
+     "x": 40,
+     "y": 150
+    },
+    {
+     "k": "tag",
+     "t": 38.684,
+     "text": "原照片 · 真",
+     "color": "green",
+     "x": 1006,
+     "y": 150,
+     "popin": true
+    },
+    {
+     "k": "dashrect",
+     "t": 39.344,
+     "x": 14.0,
+     "y": 630.6,
+     "w": 924.9,
+     "h": 259.4,
+     "color": "yellow",
+     "label": "加上去的盒子"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s19",
+   "t0": 40.863,
+   "t1": 44.296,
+   "world": {
+    "type": "image",
+    "src": "v3/img/fb_e_w_s19.png",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 40.863,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 41.521,
+     "s": 1.02,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 44.296,
+     "s": 1.08,
+     "x": 1023.5,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "qmark",
+     "t": 40.893,
+     "x": 1430,
+     "y": 330,
+     "size": 200,
+     "sfx": "pop",
+     "t1": 41.571000000000005
+    },
+    {
+     "k": "img",
+     "t": 40.943,
+     "src": "v3/qban/st_surprise.png",
+     "x": 1520,
+     "y": 520,
+     "w": 280,
+     "enter": "pop",
+     "t1": 41.571000000000005
+    },
+    {
+     "k": "dash",
+     "t": 41.571000000000005,
+     "t1": 44.296,
+     "cx": 1087.0,
+     "cy": 292.2,
+     "rx": 193.0416197975253,
+     "ry": 71.91226096737907,
+     "color": "red"
+    },
+    {
+     "k": "waves",
+     "t": 43.001,
+     "x": 833.9583802024747,
+     "y": 394.11226096737903
+    },
+    {
+     "k": "cap",
+     "t": 43.321,
+     "text": "人一动不动",
+     "color": "red",
+     "x": 960,
+     "y": 220,
+     "size": 66,
+     "rot": -2,
+     "sfx": "hit",
+     "kit": true,
+     "screen": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s20",
+   "t0": 44.296,
+   "t1": 47.289,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s20.mp4"
+   },
+   "cam": [
+    {
+     "t": 44.296,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 47.289,
+     "s": 1.03,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "split",
+     "t": 44.296
+    },
+    {
+     "k": "tag",
+     "t": 44.296,
+     "text": "网传视频截帧（放大）",
+     "color": "red",
+     "x": 40,
+     "y": 150
+    },
+    {
+     "k": "tag",
+     "t": 44.296,
+     "text": "实拍海面",
+     "color": "green",
+     "x": 1006,
+     "y": 150
+    },
+    {
+     "k": "dash",
+     "t": 44.316,
+     "t1": 47.289,
+     "cx": 477.9,
+     "cy": 541.6,
+     "rx": 190,
+     "ry": 150,
+     "color": "red"
+    },
+    {
+     "k": "sparkle",
+     "t": 44.876,
+     "pts": [
+      [
+       627.9,
+       381.6,
+       110
+      ],
+      [
+       287.9,
+       451.6,
+       80
+      ],
+      [
+       677.9,
+       631.6,
+       70
+      ]
+     ]
+    },
+    {
+     "k": "cap",
+     "t": 44.876,
+     "text": "新得像刚出厂",
+     "color": "red",
+     "x": 477,
+     "y": 780,
+     "size": 60,
+     "rot": -3,
+     "sfx": "pop",
+     "kit": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s21",
+   "t0": 47.289,
+   "t1": 48.819,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_e_s21.mp4"
+   },
+   "cam": [
+    {
+     "t": 47.289,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 48.819,
+     "s": 1.05,
+     "x": 1100,
+     "y": 520
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 48.179,
+     "src": "v3/img/fb_e_ig.png",
+     "x": 1110,
+     "y": 170,
+     "w": 360,
+     "enter": "slideRight",
+     "shadow": true,
+     "rot": 2
+    },
+    {
+     "k": "text",
+     "t": 47.809,
+     "text": "这批视频合计约 8000 万播放",
+     "x": 1290,
+     "y": 790,
+     "size": 40,
+     "color": "yellow"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s22",
+   "t0": 48.819,
+   "t1": 51.483,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_quote.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 48.819,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 51.483,
+     "s": 1.07,
+     "x": 535.6125,
+     "y": 617.2
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 48.819,
+     "src": "v3/img/f_quote.png",
+     "x": 360,
+     "y": 220,
+     "w": 1200,
+     "enter": "pop",
+     "shadow": true
+    },
+    {
+     "k": "cursor",
+     "t": 48.839000000000006,
+     "path": [
+      [
+       48.839000000000006,
+       1700,
+       900
+      ],
+      [
+       48.919000000000004,
+       668.425,
+       617.2
+      ]
+     ],
+     "circle": {
+      "t": 48.939,
+      "cx": 535.6125,
+      "cy": 617.2,
+      "rx": 162.8125,
+      "ry": 72.8,
+      "dur": 0.6,
+      "t1": 51.483
+     }
+    },
+    {
+     "k": "cap",
+     "t": 50.559,
+     "text": "自己标了 AI 内容",
+     "color": "red",
+     "x": 1310,
+     "y": 610,
+     "size": 60,
+     "rot": -2,
+     "sfx": "pop",
+     "kit": true,
+     "screen": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s23",
+   "t0": 51.483,
+   "t1": 54.703,
+   "world": {
+    "type": "image",
+    "src": "v3/img/fb_f_w_hive.png",
+    "k": 2
+   },
+   "cam": [
+    {
+     "t": 51.483,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 52.613,
+     "s": 1.03,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 52.913,
+     "s": 1.358,
+     "x": 1361.1974738887538,
+     "y": 432.09982997328154
+    },
+    {
+     "t": 54.703,
+     "s": 1.4,
+     "x": 1361.1974738887538,
+     "y": 432.09982997328154
+    }
+   ],
+   "ov": [
+    {
+     "k": "cursor",
+     "t": 51.503,
+     "path": [
+      [
+       51.503,
+       600,
+       900
+      ],
+      [
+       51.663,
+       1599.7255282973038,
+       392.09982997328154
+      ]
+     ],
+     "circle": {
+      "t": 51.683,
+      "cx": 1421.1974738887538,
+      "cy": 392.09982997328154,
+      "rx": 204.5280544085499,
+      "ry": 74.58294874908914,
+      "dur": 0.55,
+      "t1": 54.703
+     },
+     "t1": 54.703
+    },
+    {
+     "k": "penring",
+     "t": 52.933,
+     "cx": 1421.1974738887538,
+     "cy": 392.09982997328154,
+     "rx": 204.5280544085499,
+     "ry": 74.58294874908914
+    },
+    {
+     "k": "counter",
+     "t": 53.193,
+     "t2": 53.813,
+     "to": 99.9,
+     "prefix": "AI 概率 ",
+     "suffix": "%",
+     "x": 960,
+     "y": 780,
+     "size": 72,
+     "sfx": "pop",
+     "kit": true,
+     "screen": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": "s23+s24 合并：圈选单镜停留 ≥2.5s，说到 AI 概率时快推"
+  },
+  {
+   "id": "s25",
+   "t0": 54.703,
+   "t1": 55.872,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_repost.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 54.703,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 55.872,
+     "s": 1.07,
+     "x": 760,
+     "y": 500
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 54.703,
+     "src": "v3/img/fb_f_tv.png",
+     "x": 120,
+     "y": 200,
+     "w": 900,
+     "enter": "pop",
+     "shadow": true,
+     "rot": -2
+    },
+    {
+     "k": "img",
+     "t": 54.833,
+     "src": "v3/img/f_xrepost.png",
+     "x": 1110,
+     "y": 470,
+     "w": 700,
+     "enter": "slideRight",
+     "shadow": true,
+     "rot": 3
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s26",
+   "t0": 55.872,
+   "t1": 58.388,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_truck.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 55.872,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 58.388,
+     "s": 1.05,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 55.912,
+     "src": "v3/qban/24_facepalm_c2.png",
+     "x": 200,
+     "y": 210,
+     "w": 560,
+     "enter": "slideLeft"
+    },
+    {
+     "k": "move",
+     "t": 56.932,
+     "t1": 58.288,
+     "src": "v3/img/f_truck.png",
+     "w": 520,
+     "x0": 2000,
+     "x1": 1080,
+     "y": 260,
+     "x2": 2300,
+     "tmid": 57.472
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s27",
+   "t0": 58.388,
+   "t1": 60.833,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_f_s27.mp4"
+   },
+   "cam": [
+    {
+     "t": 58.388,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 60.833,
+     "s": 1.08,
+     "x": 960,
+     "y": 520
+    }
+   ],
+   "ov": [
+    {
+     "k": "qmark",
+     "t": 59.298,
+     "x": 1500,
+     "y": 360,
+     "size": 230,
+     "sfx": "pop"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s28",
+   "t0": 60.833,
+   "t1": 63.539,
+   "world": {
+    "type": "video",
+    "src": "v3/clips/fb_s28.mp4"
+   },
+   "cam": [
+    {
+     "t": 60.833,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 63.539,
+     "s": 1.04,
+     "x": 1000,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "quote",
+     "t": 61.103,
+     "title": "专家说",
+     "text": "「不能排除」",
+     "x": 960,
+     "y": 270,
+     "w": 760,
+     "accent": "gray"
+    },
+    {
+     "k": "quote",
+     "t": 62.323,
+     "title": "",
+     "text": "「但可能性很低」",
+     "x": 960,
+     "y": 520,
+     "w": 760,
+     "accent": "red",
+     "big": true,
+     "sfx": "pop"
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s29",
+   "t0": 63.539,
+   "t1": 66.32,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_air.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 63.539,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 66.32,
+     "s": 1.04,
+     "x": 960,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 63.539,
+     "src": "v3/img/f_ph_plane.png",
+     "x": 90,
+     "y": 170,
+     "w": 880,
+     "enter": "slideLeft",
+     "shadow": true,
+     "rot": -2
+    },
+    {
+     "k": "cap",
+     "t": 64.679,
+     "text": "一般走空运 ✓",
+     "color": "green",
+     "x": 520,
+     "y": 760,
+     "size": 56,
+     "rot": -2
+    },
+    {
+     "k": "img",
+     "t": 63.639,
+     "src": "v3/img/ph_ship.png",
+     "x": 1110,
+     "y": 260,
+     "w": 680,
+     "enter": "slideRight",
+     "shadow": true,
+     "rot": 3
+    },
+    {
+     "k": "cross",
+     "t": 65.309,
+     "x": 1450,
+     "y": 490,
+     "size": 300
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s29b",
+   "t0": 66.32,
+   "t1": 68.48,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_air.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 66.32,
+     "s": 1.22,
+     "x": 960,
+     "y": 470
+    },
+    {
+     "t": 68.48,
+     "s": 1.26,
+     "x": 960,
+     "y": 470
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 65.32,
+     "src": "v3/img/f_ph_plane.png",
+     "x": 90,
+     "y": 170,
+     "w": 880,
+     "enter": "slideLeft",
+     "shadow": true,
+     "rot": -2
+    },
+    {
+     "k": "cap",
+     "t": 65.32,
+     "text": "一般走空运 ✓",
+     "color": "green",
+     "x": 520,
+     "y": 760,
+     "size": 56,
+     "rot": -2
+    },
+    {
+     "k": "img",
+     "t": 65.32,
+     "src": "v3/img/ph_ship.png",
+     "x": 1110,
+     "y": 260,
+     "w": 680,
+     "enter": "slideRight",
+     "shadow": true,
+     "rot": 3
+    },
+    {
+     "k": "cross",
+     "t": 65.32,
+     "x": 1450,
+     "y": 490,
+     "size": 300
+    },
+    {
+     "k": "text",
+     "t": 67.24,
+     "text": "基本没戏",
+     "x": 960,
+     "y": 430,
+     "size": 150,
+     "color": "white",
+     "box": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": 66.32,
+   "note": ""
+  },
+  {
+   "id": "s30",
+   "t0": 68.48,
+   "t1": 72.414,
+   "world": {
+    "type": "image",
+    "src": "v3/img/w_search.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 68.48,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 70.7,
+     "s": 1.02,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 71.02,
+     "s": 1.18,
+     "x": 1180,
+     "y": 470
+    },
+    {
+     "t": 72.414,
+     "s": 1.2,
+     "x": 1180,
+     "y": 470
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 68.52000000000001,
+     "src": "v3/qban/29_show_phone_c2.png",
+     "x": 130,
+     "y": 200,
+     "w": 560,
+     "enter": "slideLeft"
+    },
+    {
+     "k": "text",
+     "t": 69.28,
+     "text": "刷到「白捡 iPhone」",
+     "x": 1210,
+     "y": 400,
+     "size": 72,
+     "color": "white",
+     "box": true
+    },
+    {
+     "k": "text",
+     "t": 70.92,
+     "text": "先看谁最先发的",
+     "x": 1210,
+     "y": 600,
+     "size": 84,
+     "color": "yellow",
+     "box": true
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  },
+  {
+   "id": "s31",
+   "t0": 72.414,
+   "t1": 75.74,
+   "world": {
+    "type": "image",
+    "src": "v3/img/f_w_end.webp",
+    "k": 1
+   },
+   "cam": [
+    {
+     "t": 72.414,
+     "s": 1.0,
+     "x": 960,
+     "y": 540
+    },
+    {
+     "t": 75.74,
+     "s": 1.06,
+     "x": 1000,
+     "y": 540
+    }
+   ],
+   "ov": [
+    {
+     "k": "img",
+     "t": 72.414,
+     "src": "v3/img/fb_e_fk_g1.png",
+     "x": 140,
+     "y": 250,
+     "w": 200,
+     "rot": -4,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 72.45400000000001,
+     "src": "v3/img/fb_e_fk_beach.png",
+     "x": 360,
+     "y": 250,
+     "w": 200,
+     "rot": 3,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 72.494,
+     "src": "v3/img/f_fk_boat.png",
+     "x": 580,
+     "y": 250,
+     "w": 200,
+     "rot": -2,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 72.534,
+     "src": "v3/img/fb_f_fk_fish.png",
+     "x": 800,
+     "y": 250,
+     "w": 200,
+     "rot": 4,
+     "enter": "drop",
+     "frame": true
+    },
+    {
+     "k": "img",
+     "t": 72.414,
+     "src": "v3/qban/30_point_v2_c3.png",
+     "x": 1160,
+     "y": 230,
+     "w": 600,
+     "enter": "slideRight"
+    },
+    {
+     "k": "text",
+     "t": 73.274,
+     "text": "你信了哪条？",
+     "x": 570,
+     "y": 620,
+     "size": 84,
+     "color": "yellow"
+    },
+    {
+     "k": "img",
+     "t": 74.464,
+     "src": "v3/img/bubble.png",
+     "x": 330,
+     "y": 700,
+     "w": 140,
+     "enter": "pop",
+     "sfx": "pop"
+    },
+    {
+     "k": "img",
+     "t": 74.584,
+     "src": "v3/img/bubble.png",
+     "x": 710,
+     "y": 690,
+     "w": 120,
+     "enter": "pop",
+     "rot": 8
+    }
+   ],
+   "src": null,
+   "enter": "cut",
+   "grayAt": null,
+   "note": ""
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.931,
+   "at": 1.14,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 1.38,
+   "at": 1.38,
+   "file": "v3/sfx/pop_a.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 2.162,
+   "at": 2.377,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 4.614,
+   "at": 4.657,
+   "file": "v3/sfx/whoosh_e.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 5.799,
+   "at": 5.817,
+   "file": "v3/sfx/hit_d.wav",
+   "vol": 0.62,
+   "kind": "hit"
+  },
+  {
+   "t": 6.262,
+   "at": 6.347,
+   "file": "v3/sfx/whoosh_f.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 7.92,
+   "at": 7.92,
+   "file": "v3/sfx/pop_c.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 8.671,
+   "at": 8.88,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 10.45,
+   "at": 10.45,
+   "file": "v3/sfx/pop_b.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 11.075,
+   "at": 11.29,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 14.107,
+   "at": 14.15,
+   "file": "v3/sfx/whoosh_e.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 15.873,
+   "at": 15.958,
+   "file": "v3/sfx/whoosh_f.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 16.238,
+   "at": 16.238,
+   "file": "v3/sfx/click_b.wav",
+   "vol": 0.38,
+   "kind": "click"
+  },
+  {
+   "t": 17.348,
+   "at": 17.557,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 19.474,
+   "at": 19.689,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 19.839,
+   "at": 19.839,
+   "file": "v3/sfx/pop_a.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 22.408,
+   "at": 22.451,
+   "file": "v3/sfx/whoosh_e.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 24.648,
+   "at": 24.733,
+   "file": "v3/sfx/whoosh_f.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 24.823,
+   "at": 24.823,
+   "file": "v3/sfx/pop_c.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 27.367,
+   "at": 27.576,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 28.506,
+   "at": 28.506,
+   "file": "v3/sfx/pop_b.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 29.911,
+   "at": 30.126,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 31.066,
+   "at": 31.066,
+   "file": "v3/sfx/pop_a.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 32.648,
+   "at": 32.691,
+   "file": "v3/sfx/whoosh_e.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 33.971,
+   "at": 33.971,
+   "file": "v3/sfx/pop_c.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 35.226,
+   "at": 35.311,
+   "file": "v3/sfx/whoosh_f.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 36.201,
+   "at": 36.201,
+   "file": "v3/sfx/click_c.wav",
+   "vol": 0.38,
+   "kind": "click"
+  },
+  {
+   "t": 36.905,
+   "at": 37.114,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 40.648,
+   "at": 40.863,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 40.893,
+   "at": 40.893,
+   "file": "v3/sfx/pop_b.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 43.129,
+   "at": 43.321,
+   "file": "v3/sfx/hit_c.wav",
+   "vol": 0.62,
+   "kind": "hit"
+  },
+  {
+   "t": 44.253,
+   "at": 44.296,
+   "file": "v3/sfx/whoosh_e.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 44.876,
+   "at": 44.876,
+   "file": "v3/sfx/pop_a.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 47.204,
+   "at": 47.289,
+   "file": "v3/sfx/whoosh_f.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 48.61,
+   "at": 48.819,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 50.559,
+   "at": 50.559,
+   "file": "v3/sfx/pop_c.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 51.268,
+   "at": 51.483,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 53.193,
+   "at": 53.193,
+   "file": "v3/sfx/pop_b.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 54.66,
+   "at": 54.703,
+   "file": "v3/sfx/whoosh_e.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 55.787,
+   "at": 55.872,
+   "file": "v3/sfx/whoosh_f.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 58.179,
+   "at": 58.388,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 59.298,
+   "at": 59.298,
+   "file": "v3/sfx/pop_a.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 60.618,
+   "at": 60.833,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 62.323,
+   "at": 62.323,
+   "file": "v3/sfx/pop_c.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  },
+  {
+   "t": 63.496,
+   "at": 63.539,
+   "file": "v3/sfx/whoosh_e.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 66.235,
+   "at": 66.32,
+   "file": "v3/sfx/whoosh_f.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 68.271,
+   "at": 68.48,
+   "file": "v3/sfx/whoosh_c.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 72.199,
+   "at": 72.414,
+   "file": "v3/sfx/whoosh_d.wav",
+   "vol": 0.32,
+   "kind": "whoosh"
+  },
+  {
+   "t": 74.464,
+   "at": 74.464,
+   "file": "v3/sfx/pop_b.wav",
+   "vol": 0.42,
+   "kind": "pop"
+  }
+ ],
+ "subs": [
+  {
+   "sid": "01",
+   "start": 0,
+   "end": 0.67,
+   "text": "一整片海面",
+   "segs": [
+    [
+     "一整片",
+     null
+    ],
+    [
+     "海面",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "01",
+   "start": 0.67,
+   "end": 2.327,
+   "text": "漂满了免费 iPhone？",
+   "segs": [
+    [
+     "漂满了",
+     null
+    ],
+    [
+     "免费",
+     "#FFD84A"
+    ],
+    [
+     " ",
+     null
+    ],
+    [
+     "iPhone",
+     "#FFD84A"
+    ],
+    [
+     "？",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "02",
+   "start": 2.327,
+   "end": 3.177,
+   "text": "想去捡漏的",
+   "segs": [
+    [
+     "想去捡漏的",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "02",
+   "start": 3.177,
+   "end": 4.607,
+   "text": "先把船桨放下",
+   "segs": [
+    [
+     "先把船桨",
+     null
+    ],
+    [
+     "放下",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "03",
+   "start": 4.607,
+   "end": 5.057,
+   "text": "这些画面",
+   "segs": [
+    [
+     "这些画面",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "03",
+   "start": 5.057,
+   "end": 6.73,
+   "text": "全是 AI 做的",
+   "segs": [
+    [
+     "全是 ",
+     null
+    ],
+    [
+     "AI",
+     "#FF5A45"
+    ],
+    [
+     " 做的",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "04",
+   "start": 6.73,
+   "end": 7.43,
+   "text": "但那艘船",
+   "segs": [
+    [
+     "但那艘船",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "04",
+   "start": 7.43,
+   "end": 8.83,
+   "text": "是真的",
+   "segs": [
+    [
+     "是真的",
+     "#4BE38A"
+    ]
+   ]
+  },
+  {
+   "sid": "05",
+   "start": 8.83,
+   "end": 10.02,
+   "text": "小船围着集装箱",
+   "segs": [
+    [
+     "小船围着集装箱",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "05",
+   "start": 10.02,
+   "end": 11.24,
+   "text": "也是真的",
+   "segs": [
+    [
+     "也是真的",
+     "#4BE38A"
+    ]
+   ]
+  },
+  {
+   "sid": "06",
+   "start": 11.24,
+   "end": 11.81,
+   "text": "还有人喊",
+   "segs": [
+    [
+     "还有人喊",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "06",
+   "start": 11.81,
+   "end": 13.17,
+   "text": "要 iPhone 吗？",
+   "segs": [
+    [
+     "要 iPhone 吗？",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "07",
+   "start": 13.17,
+   "end": 14.1,
+   "text": "也是真的",
+   "segs": [
+    [
+     "也是真的",
+     "#4BE38A"
+    ]
+   ]
+  },
+  {
+   "sid": "08",
+   "start": 14.1,
+   "end": 14.4,
+   "text": "接着",
+   "segs": [
+    [
+     "接着",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "08",
+   "start": 14.4,
+   "end": 15.908,
+   "text": "假图就刷屏了",
+   "segs": [
+    [
+     "假图就",
+     null
+    ],
+    [
+     "刷屏",
+     "#FF5A45"
+    ],
+    [
+     "了",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "09",
+   "start": 15.908,
+   "end": 16.388,
+   "text": "有人问 AI",
+   "segs": [
+    [
+     "有人问 ",
+     null
+    ],
+    [
+     "AI",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "09",
+   "start": 16.388,
+   "end": 17.507,
+   "text": "这是真的吗？",
+   "segs": [
+    [
+     "这是真的吗？",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "10",
+   "start": 17.507,
+   "end": 18.007,
+   "text": "有人说",
+   "segs": [
+    [
+     "有人说",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "10",
+   "start": 18.007,
+   "end": 19.639,
+   "text": "一眼 AI",
+   "segs": [
+    [
+     "一眼",
+     "#FF5A45"
+    ],
+    [
+     " ",
+     null
+    ],
+    [
+     "AI",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "11",
+   "start": 19.639,
+   "end": 20.449,
+   "text": "有人玩梗",
+   "segs": [
+    [
+     "有人玩梗",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "12",
+   "start": 20.449,
+   "end": 21.349,
+   "text": "全新未激活",
+   "segs": [
+    [
+     "全新未激活",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "12",
+   "start": 21.349,
+   "end": 22.401,
+   "text": "仅泡水",
+   "segs": [
+    [
+     "仅泡水",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "13",
+   "start": 22.401,
+   "end": 22.891,
+   "text": "评论区",
+   "segs": [
+    [
+     "评论区",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "13",
+   "start": 22.891,
+   "end": 24.683,
+   "text": "比海面还热闹",
+   "segs": [
+    [
+     "比海面还热闹",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "14",
+   "start": 24.683,
+   "end": 26.266,
+   "text": "凭什么说它们是假的？",
+   "segs": [
+    [
+     "凭什么说它们是",
+     null
+    ],
+    [
+     "假的",
+     "#FF5A45"
+    ],
+    [
+     "？",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "15",
+   "start": 26.266,
+   "end": 27.526,
+   "text": "先看小船这张",
+   "segs": [
+    [
+     "先看小船这张",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "16",
+   "start": 27.526,
+   "end": 29.676,
+   "text": "盒子上画了两组摄像头",
+   "segs": [
+    [
+     "盒子上画了",
+     null
+    ],
+    [
+     "两组摄像头",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "17",
+   "start": 29.676,
+   "end": 30.296,
+   "text": "盒子上的字",
+   "segs": [
+    [
+     "盒子上的字",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "17",
+   "start": 30.296,
+   "end": 31.771,
+   "text": "全是扭的",
+   "segs": [
+    [
+     "全是扭的",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "18",
+   "start": 31.771,
+   "end": 32.701,
+   "text": "专业机构一查",
+   "segs": [
+    [
+     "专业机构一查",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "18",
+   "start": 32.701,
+   "end": 33.831,
+   "text": "有隐形水印",
+   "segs": [
+    [
+     "有",
+     null
+    ],
+    [
+     "隐形水印",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "19",
+   "start": 33.831,
+   "end": 35.261,
+   "text": "是 AI 工具做的",
+   "segs": [
+    [
+     "是 ",
+     null
+    ],
+    [
+     "AI",
+     "#FF5A45"
+    ],
+    [
+     " ",
+     null
+    ],
+    [
+     "工具",
+     "#FF5A45"
+    ],
+    [
+     "做的",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "20",
+   "start": 35.261,
+   "end": 36.151,
+   "text": "渔民这两张",
+   "segs": [
+    [
+     "渔民这两张",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "20",
+   "start": 36.151,
+   "end": 37.254,
+   "text": "也有",
+   "segs": [
+    [
+     "也有",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "21",
+   "start": 37.254,
+   "end": 38.134,
+   "text": "冒烟货轮这张",
+   "segs": [
+    [
+     "冒烟货轮这张",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "21",
+   "start": 38.134,
+   "end": 40.003,
+   "text": "是真照片改的",
+   "segs": [
+    [
+     "是",
+     null
+    ],
+    [
+     "真照片改的",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "22",
+   "start": 40.003,
+   "end": 41.821,
+   "text": "那视频总是真的吧？",
+   "segs": [
+    [
+     "那视频总是",
+     null
+    ],
+    [
+     "真的吧",
+     "#FFD84A"
+    ],
+    [
+     "？",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "23",
+   "start": 41.821,
+   "end": 42.531,
+   "text": "满海那段",
+   "segs": [
+    [
+     "满海那段",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "23",
+   "start": 42.531,
+   "end": 43.271,
+   "text": "海在晃",
+   "segs": [
+    [
+     "海在晃",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "23",
+   "start": 43.271,
+   "end": 44.246,
+   "text": "人不动",
+   "segs": [
+    [
+     "人不动",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "24",
+   "start": 44.246,
+   "end": 46.319,
+   "text": "盒子还新得像刚出厂",
+   "segs": [
+    [
+     "盒子还新得像",
+     null
+    ],
+    [
+     "刚出厂",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "25",
+   "start": 46.319,
+   "end": 48.199,
+   "text": "海滩捡 iPhone 那条",
+   "segs": [
+    [
+     "海滩捡 iPhone 那条",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "26",
+   "start": 48.199,
+   "end": 49.809,
+   "text": "最早发它的账号",
+   "segs": [
+    [
+     "最早发它的账号",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "27",
+   "start": 49.809,
+   "end": 51.433,
+   "text": "自己标了 AI 内容",
+   "segs": [
+    [
+     "自己标了 ",
+     null
+    ],
+    [
+     "AI",
+     "#FF5A45"
+    ],
+    [
+     " ",
+     null
+    ],
+    [
+     "内容",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "28",
+   "start": 51.433,
+   "end": 52.583,
+   "text": "检测工具一测",
+   "segs": [
+    [
+     "检测工具一测",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "29",
+   "start": 52.583,
+   "end": 54.653,
+   "text": "AI 概率九成九以上",
+   "segs": [
+    [
+     "AI 概率",
+     null
+    ],
+    [
+     "九成九",
+     "#FF5A45"
+    ],
+    [
+     "以上",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "30",
+   "start": 54.653,
+   "end": 55.822,
+   "text": "不少账号也信了",
+   "segs": [
+    [
+     "不少账号也信了",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "31",
+   "start": 55.822,
+   "end": 56.172,
+   "text": "这波",
+   "segs": [
+    [
+     "这波",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "31",
+   "start": 56.172,
+   "end": 58.338,
+   "text": "转发的人也被 AI 骗了",
+   "segs": [
+    [
+     "转发的人也",
+     null
+    ],
+    [
+     "被",
+     "#FFD84A"
+    ],
+    [
+     " ",
+     null
+    ],
+    [
+     "AI",
+     "#FFD84A"
+    ],
+    [
+     " ",
+     null
+    ],
+    [
+     "骗了",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "32",
+   "start": 58.338,
+   "end": 60.783,
+   "text": "那船上到底有没有 iPhone？",
+   "segs": [
+    [
+     "那船上",
+     null
+    ],
+    [
+     "到底有没有",
+     "#FFD84A"
+    ],
+    [
+     " iPhone？",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "33",
+   "start": 60.783,
+   "end": 61.253,
+   "text": "专家说",
+   "segs": [
+    [
+     "专家说",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "33",
+   "start": 61.253,
+   "end": 62.228,
+   "text": "不能排除",
+   "segs": [
+    [
+     "不能排除",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "34",
+   "start": 62.228,
+   "end": 63.489,
+   "text": "但可能性很低",
+   "segs": [
+    [
+     "但可能性",
+     null
+    ],
+    [
+     "很低",
+     "#FF5A45"
+    ]
+   ]
+  },
+  {
+   "sid": "35",
+   "start": 63.489,
+   "end": 65.259,
+   "text": "iPhone 一般走空运",
+   "segs": [
+    [
+     "iPhone 一般走",
+     null
+    ],
+    [
+     "空运",
+     "#4BE38A"
+    ]
+   ]
+  },
+  {
+   "sid": "36",
+   "start": 65.259,
+   "end": 66.27,
+   "text": "不走海运",
+   "segs": [
+    [
+     "不走海运",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "37",
+   "start": 66.27,
+   "end": 67.19,
+   "text": "想靠捞海发财",
+   "segs": [
+    [
+     "想靠捞海发财",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "37",
+   "start": 67.19,
+   "end": 68.43,
+   "text": "基本没戏",
+   "segs": [
+    [
+     "基本没戏",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "38",
+   "start": 68.43,
+   "end": 70.67,
+   "text": "下次刷到白捡 iPhone",
+   "segs": [
+    [
+     "下次刷到白捡 iPhone",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "39",
+   "start": 70.67,
+   "end": 72.364,
+   "text": "先查是谁先发的",
+   "segs": [
+    [
+     "先查是",
+     null
+    ],
+    [
+     "谁先发的",
+     "#FFD84A"
+    ]
+   ]
+  },
+  {
+   "sid": "40",
+   "start": 72.364,
+   "end": 73.224,
+   "text": "你第一眼",
+   "segs": [
+    [
+     "你第一眼",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "40",
+   "start": 73.224,
+   "end": 74.414,
+   "text": "信了哪条？",
+   "segs": [
+    [
+     "信了哪条",
+     "#FFD84A"
+    ],
+    [
+     "？",
+     null
+    ]
+   ]
+  },
+  {
+   "sid": "41",
+   "start": 74.414,
+   "end": 75.74,
+   "text": "评论区说说",
+   "segs": [
+    [
+     "评论区",
+     "#FFD84A"
+    ],
+    [
+     "说说",
+     null
+    ]
+   ]
+  }
+ ],
+ "speech": [
+  [
+   0.0,
+   2.127
+  ],
+  [
+   2.377,
+   4.367
+  ],
+  [
+   4.657,
+   6.46
+  ],
+  [
+   6.78,
+   8.59
+  ],
+  [
+   8.88,
+   10.97
+  ],
+  [
+   11.29,
+   13.0
+  ],
+  [
+   13.22,
+   13.83
+  ],
+  [
+   14.15,
+   15.708
+  ],
+  [
+   15.958,
+   17.307
+  ],
+  [
+   17.557,
+   19.439
+  ],
+  [
+   19.689,
+   20.389
+  ],
+  [
+   20.499,
+   22.171
+  ],
+  [
+   22.451,
+   24.333
+  ],
+  [
+   24.733,
+   26.053
+  ],
+  [
+   26.316,
+   27.516
+  ],
+  [
+   27.576,
+   29.436
+  ],
+  [
+   29.726,
+   31.556
+  ],
+  [
+   31.821,
+   33.881
+  ],
+  [
+   33.881,
+   35.061
+  ],
+  [
+   35.311,
+   37.054
+  ],
+  [
+   37.304,
+   39.773
+  ],
+  [
+   40.053,
+   41.621
+  ],
+  [
+   41.871,
+   44.046
+  ],
+  [
+   44.296,
+   46.089
+  ],
+  [
+   46.369,
+   48.179
+  ],
+  [
+   48.179,
+   49.759
+  ],
+  [
+   49.859,
+   51.233
+  ],
+  [
+   51.483,
+   52.563
+  ],
+  [
+   52.633,
+   54.383
+  ],
+  [
+   54.703,
+   55.592
+  ],
+  [
+   55.872,
+   57.988
+  ],
+  [
+   58.388,
+   60.583
+  ],
+  [
+   60.833,
+   62.278
+  ],
+  [
+   62.278,
+   63.289
+  ],
+  [
+   63.539,
+   65.239
+  ],
+  [
+   65.309,
+   66.07
+  ],
+  [
+   66.32,
+   68.18
+  ],
+  [
+   68.48,
+   70.61
+  ],
+  [
+   70.72,
+   72.114
+  ],
+  [
+   72.414,
+   74.224
+  ],
+  [
+   74.464,
+   75.114
+  ]
+ ],
+ "vo": "v3/audio/vo_v3f.wav",
+ "bgm": "v3/audio/bgm_281.wav",
+ "title": "满海漂着免费 iPhone？真相拆给你看"
+}

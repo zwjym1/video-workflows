@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "composition": "RoadsterShortV3",
+  "fps": 30,
+  "shots": [
+    {
+      "id": "hook-launch",
+      "label": "开场·起步加速",
+      "src": "clip-launch.mp4",
+      "start": 0,
+      "end": 3.592,
+      "in": 5,
+      "rate": 1
+    },
+    {
+      "id": "hook-fly",
+      "label": "开场·飞越Semi",
+      "src": "clip-fly.mp4",
+      "start": 3.592,
+      "end": 8.906,
+      "in": 41.355,
+      "rate": 1
+    },
+    {
+      "id": "comments-bg",
+      "label": "评论区背景",
+      "src": "clip-ramp.mp4",
+      "start": 8.906,
+      "end": 13.032,
+      "in": 72.5,
+      "rate": 1
+    },
+    {
+      "id": "me-bg",
+      "label": "自我介绍背景",
+      "src": "clip-ramp-official.mp4",
+      "start": 13.032,
+      "end": 14.584,
+      "in": 10,
+      "rate": 1
+    },
+    {
+      "id": "concl",
+      "label": "结论",
+      "src": "clip-fly.mp4",
+      "start": 14.584,
+      "end": 19.024,
+      "in": 42,
+      "rate": 0.5
+    },
+    {
+      "id": "two-bg",
+      "label": "两套系统背景",
+      "src": "clip-ramp.mp4",
+      "start": 21.889,
+      "end": 26.05,
+      "in": 40,
+      "rate": 1
+    },
+    {
+      "id": "suck-live",
+      "label": "先说吸·俯视实拍→定格",
+      "src": "hliveA.mp4",
+      "start": 26.05,
+      "end": 27.281,
+      "in": 0,
+      "rate": 0.812
+    },
+    {
+      "id": "musk-downforce",
+      "label": "马斯克说·下压力读数",
+      "src": "clip-ramp.mp4",
+      "start": 34.332,
+      "end": 35.932,
+      "in": 4.4,
+      "rate": 1
+    },
+    {
+      "id": "climb",
+      "label": "冲上弯墙·爬坡过程",
+      "src": "clip-ramp.mp4",
+      "start": 37.941,
+      "end": 39.788,
+      "in": 9.553,
+      "rate": 1
+    },
+    {
+      "id": "top-inverted",
+      "label": "顶上倒过来一下",
+      "src": "clip-ramp.mp4",
+      "start": 39.788,
+      "end": 43.891,
+      "in": 20.9,
+      "rate": 0.6
+    },
+    {
+      "id": "fly-q",
+      "label": "设问·飞行实拍",
+      "src": "clip-fly.mp4",
+      "start": 43.891,
+      "end": 50.257,
+      "in": 38.95,
+      "rate": 0.66
+    },
+    {
+      "id": "buy-promo",
+      "label": "能开上吗·官方片",
+      "src": "promo-garage.mp4",
+      "start": 74.278,
+      "end": 77.676,
+      "in": 0,
+      "rate": 1
+    },
+    {
+      "id": "buy-musk",
+      "label": "2028量产·马斯克",
+      "src": "musk2028.mp4",
+      "start": 77.676,
+      "end": 79.833,
+      "in": 0,
+      "rate": 1
+    },
+    {
+      "id": "buy-closed",
+      "label": "封闭场地",
+      "src": "clip-ramp.mp4",
+      "start": 79.833,
+      "end": 82.78,
+      "in": 82,
+      "rate": 1
+    },
+    {
+      "id": "end",
+      "label": "结尾",
+      "src": "clip-ramp-official.mp4",
+      "start": 86.184,
+      "end": 89.517,
+      "in": 24.3,
+      "rate": 1
+    }
+  ],
+  "audio": {
+    "voiceDb": 0,
+    "sfxDb": 0,
+    "bgmDb": 10,
+    "duckDb": 10,
+    "bgmEnv": [],
+    "lufs": -16
+  },
+  "savedAt": "2026-10-16T16:49:40.003Z"
+}
