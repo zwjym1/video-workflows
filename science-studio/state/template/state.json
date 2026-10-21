@@ -1,0 +1,35 @@
+{
+  "id": "",
+  "title": "",
+  "tier": "daily",
+  "created_at": "",
+  "updated_at": "",
+  "stage": "A_topic",
+  "stage_status": "in_progress",
+  "next_action": "采集与选题初筛（douyin-field-collect）",
+  "stages": {
+    "A_topic": "in_progress", "B_creative": "todo", "C_script": "todo", "D_storyboard": "todo",
+    "E_production": "todo", "F_qc": "todo", "G_review": "todo", "H_delivery": "todo"
+  },
+  "approved_decisions": [],
+  "completed": [],
+  "topic": {"chosen": null, "candidates_file": "research/topics.md"},
+  "creative": {"chosen": null, "file": "creative/directions.md"},
+  "script": {"latest": null, "versions": [], "approved": false, "locked_paragraphs": []},
+  "vo": {"model": "s2.1-pro-free", "voice_id": "cfd828bdf120410c923fac0056c687c2", "latest": null, "listen_approved": false},
+  "storyboard": {"latest": null, "versions": []},
+  "shots": [],
+  "project_paths": {"remotion": null, "blender": null, "renders": "render/", "pc_folder": null},
+  "renders": [],
+  "failures": [],
+  "open_issues": [],
+  "depends": {
+    "topic": ["creative", "script", "storyboard", "vo", "shots", "renders"],
+    "creative": ["script", "storyboard", "vo", "shots", "renders"],
+    "script": ["vo", "storyboard", "shots", "renders"],
+    "vo": ["shots(timing)", "renders"],
+    "storyboard": ["shots", "renders"],
+    "shots": ["renders"]
+  },
+  "log": []
+}

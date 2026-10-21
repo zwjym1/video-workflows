@@ -1,0 +1,175 @@
+{
+  "id": "EP-20261021-01",
+  "title": "池塘里的绿藻，凭什么帮人类「用光控制大脑」？（2026 诺奖光遗传学）",
+  "tier": "premium",
+  "created_at": "2026-10-21 10:14 (UTC+8)",
+  "updated_at": "2026-10-21 10:37 (UTC+8)",
+  "stage": "H_delivery",
+  "stage_status": "待发布",
+  "next_action": "待发布：用户按发布包自行发布（建议今晚 20:00）；发布后补 published_at、作品数据（创作者中心导出）→ work_metrics/content_dna.metrics_note → 复盘数据段",
+  "stages": {
+    "A_topic": "done",
+    "B_creative": "done",
+    "C_script": "done",
+    "D_storyboard": "done",
+    "E_production": "done",
+    "F_qc": "done",
+    "G_review": "done",
+    "H_delivery": "in_progress"
+  },
+  "approved_decisions": [
+    {
+      "at": "2026-10-20",
+      "what": "配音用第一版 vo_master.wav + v3 开头动画（v4/v5 试验作废）"
+    },
+    {
+      "at": "2026-10-21",
+      "what": "选全部渲染成片（1080，PC）"
+    },
+    {
+      "at": "2026-10-21",
+      "what": "14–18s、1:26–1:30、2:20–2:30 四句全用 B 重配"
+    },
+    {
+      "at": "2026-10-21",
+      "what": "v1p「勉强能听不用改了」定稿；出发布包"
+    }
+  ],
+  "completed": [
+    "2026-10-21 发布包（封面 A/B、3 标题、简介、置顶评论、发布页逐项清单）"
+  ],
+  "topic": {
+    "chosen": "2026 诺贝尔生理学或医学奖：光遗传学（池塘绿藻→用光控制大脑）",
+    "candidates_file": "research/topics.md"
+  },
+  "creative": {
+    "chosen": "用户原方案 /workspace/optogenetics/user_plan.md（逐字用用户原稿）",
+    "file": "creative/directions.md"
+  },
+  "script": {
+    "latest": "/workspace/optogenetics/script_original.md",
+    "versions": [
+      "/workspace/optogenetics/script_original.md",
+      "/workspace/optogenetics/script.md"
+    ],
+    "approved": true,
+    "locked_paragraphs": []
+  },
+  "vo": {
+    "model": "s2.1-pro-free",
+    "voice_id": "cfd828bdf120410c923fac0056c687c2",
+    "latest": "/workspace/optogenetics/vo/vo_master.wav + 4 句 B 重配（混音 audio/film_mix_v1p.wav）",
+    "listen_approved": true
+  },
+  "storyboard": {
+    "latest": "/workspace/optogenetics/storyboard_2d.md",
+    "versions": [
+      "/workspace/optogenetics/storyboard_original.md",
+      "/workspace/optogenetics/storyboard.md",
+      "/workspace/optogenetics/storyboard_2d.md"
+    ]
+  },
+  "shots": [
+    {
+      "id": "hook",
+      "status": "done",
+      "note": "帧 0–443（Hook3）"
+    },
+    {
+      "id": "seg2",
+      "status": "done",
+      "note": "444–1430"
+    },
+    {
+      "id": "seg3",
+      "status": "done",
+      "note": "1431–2254"
+    },
+    {
+      "id": "seg4",
+      "status": "done",
+      "note": "2255–3457"
+    },
+    {
+      "id": "seg5",
+      "status": "done",
+      "note": "3458–4327"
+    },
+    {
+      "id": "seg6",
+      "status": "done",
+      "note": "4328–5245"
+    }
+  ],
+  "project_paths": {
+    "remotion": "/workspace/optogenetics/remotion（composition OptoFilm，5246 帧@30fps）",
+    "blender": null,
+    "renders": "/workspace/optogenetics/render",
+    "pc_folder": "D:\\编程\\项目\\视频制作\\作品\\2026-10-21_光遗传学\\",
+    "legacy_dir": "/workspace/optogenetics",
+    "pc_pack": "/workspace/optogenetics/pc_pack（render_film_pc.ps1、opto_film_v1_src.zip）",
+    "publish_pack": "/workspace/optogenetics/publish",
+    "final_film": "D:\\编程\\项目\\视频制作\\作品\\2026-10-21_光遗传学\\out\\光遗传学_成片_v1p_1080.mp4（PC，291MB，不传 Drive）",
+    "audio_final": "/workspace/optogenetics/audio/film_mix_v1p.m4a",
+    "drive_folder": "1vo1XITRrRqxeUbH65LNxaQzVKIOgKR8-",
+    "review": "reviews/EP-20261021-01_光遗传学_复盘.md",
+    "planned_publish_time": "2026-10-21T20:00:00+08:00"
+  },
+  "renders": [
+    "2026-10-21 PC 1080 全片 opto_film_v1_1080.mp4（13 分钟，174.9 s）",
+    "2026-10-21 换声不重渲 → 光遗传学_成片_v1p_1080.mp4（定稿）"
+  ],
+  "failures": [
+    "CopyFromBox 32MB zip 失败 → 拆 ≤4MB 分块 + SHA256 核对解决",
+    "单句重配后硬拉时长 → 停顿不自然、个别字发紧（已记教训）"
+  ],
+  "open_issues": [
+    "默认音色 cfd828… 可能是真人克隆，商用授权风险待用户定",
+    "片中说张锋「共同第一作者」查不到依据；备用评论写「第二作者」",
+    "发布后数据待用户导出",
+    "PC 上空目录 C:\\Users\\Administrator\\opto_film_v1\\out 被占用未删"
+  ],
+  "depends": {
+    "topic": [
+      "creative",
+      "script",
+      "storyboard",
+      "vo",
+      "shots",
+      "renders"
+    ],
+    "creative": [
+      "script",
+      "storyboard",
+      "vo",
+      "shots",
+      "renders"
+    ],
+    "script": [
+      "vo",
+      "storyboard",
+      "shots",
+      "renders"
+    ],
+    "vo": [
+      "shots(timing)",
+      "renders"
+    ],
+    "storyboard": [
+      "shots",
+      "renders"
+    ],
+    "shots": [
+      "renders"
+    ]
+  },
+  "log": [
+    "2026-10-21 10:14 (UTC+8) 建档（premium）",
+    "2026-10-21 10:15 (UTC+8) 收编旧目录并归档：状态=待发布",
+    "2026-10-21 10:18 (UTC+8) log 归档：DB works#7 待发布、anim_assets 173–211、lessons 11–17、content_dna；Drive 06/EP-20261021-01_光遗传学（12 文件含 07 复盘）+ 08 快照 studio_20261021_1018",
+    "2026-10-21 10:18 (UTC+8) set project_paths.drive_folder 1vo1XITRrRqxeUbH65LNxaQzVKIOgKR8-",
+    "2026-10-21 10:18 (UTC+8) set project_paths.review reviews/EP-20261021-01_光遗传学_复盘.md",
+    "2026-10-21 10:37 (UTC+8) 计划发布 2026-10-21T20:00:00+08:00"
+  ],
+  "adopted_from": "/workspace/optogenetics"
+}

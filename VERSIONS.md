@@ -48,3 +48,12 @@ git push && git push --tags
 | 版本 | 内容 |
 |---|---|
 | `v-preprod-2026-10-18` | 新增 `skills/tech-preproduction/`（科技短视频前期调研与核查）和 `docs/PREPRODUCTION-WORKFLOW.md`。对照附件核对 `skills/kepu-short-video/SKILL.md` 与 `skills/primary-lesson-video/SKILL.md`，内容一致，未改。 |
+
+## 2026-10-21 全流程入库（workflow-full-2026-10-21）
+新增四个目录：
+- `agent-skills/`：五个当前在用的 skill。
+- `science-studio/`：数据闭环和 Feedback Engine，schema v3。
+- `topics-workflow/`：选题、文案和前期 SOP。
+- `templates/`：渲染、传输、质检、混音的模板。
+
+回退到上一版：`git checkout 97923ab`。旧目录都没有改动。

@@ -1,0 +1,34 @@
+{
+ "status": "ACTIVE — 2026-10-20 23:20 用户确认 <用户 Google Pro 账号（见盒上 config/drive.json）> 就是 Pro 账号（350MB 是已用量，不是配额）。",
+ "namespace": "user-Google-drive",
+ "namespace_alias": "user-Google-drive--pro（同一账号，二者均可）",
+ "account": "<用户 Google Pro 账号（见盒上 config/drive.json）>",
+ "root": {
+  "name": "AI科学内容资产中心",
+  "id": "1JSMXiO93pxGfn-xKvj-fKywx0pCQnJIt",
+  "url": "https://drive.google.com/drive/folders/1JSMXiO93pxGfn-xKvj-fKywx0pCQnJIt"
+ },
+ "folders": {
+  "01_原始数据": "158b0AxMtwnsvzIVayaRyZODS_wPa7w6O",
+  "02_观众需求与选题": "1KZAJAzk2Dsz3fMunvG-SCK-wiI8qC7Ch",
+  "03_科学知识库": "1H1IKxVy9_D9PYfZh3uPIy_pMHqt8I_FV",
+  "04_BGM与音效库": "1M1ToUKDjmDsU06J7AQHtpPPg-IxLAb_i",
+  "05_动画资产库": "1aI627dwv3pASrTtCTZv7QPGykDTMPLMP",
+  "06_视频项目": "1jSQtD544-GjDEaJAlGQf24VBEoMoqTVW",
+  "07_创作经验与数据复盘": "1jjDUGgPVdldo7ovNGYiuy6OGjBhlAHf7",
+  "08_索引与数据库备份": "1IVqOJYi0pjb3TxlsvuS-dyhqXEba4Sop"
+ },
+ "episode_folders": {
+  "LEGACY-roadster-v4": "17HV5nuKXnNbLntBWTQAq77FAaiV2os_o",
+  "LEGACY-iphone-fake": "1mqut82Jbrnd9fAov36pjW24fC1iah-Ln",
+  "LEGACY-canton-robot": "1-_kEZKjEvL7krRYjZ57209mE-TNxyUvn",
+  "EP-20261021-01": "1vo1XITRrRqxeUbH65LNxaQzVKIOgKR8-"
+ },
+ "existing_root_files": {
+  "这些iPhone是假的_秘书丞_1080p.mp4（旧 v2 版，非发布版 V3f）": "1b2gQKahOV6WXFWA8vEpLd_FHS1VWymp5",
+  "iPhone假封面_B_16x9.png": "1xsjWhVwM_j14rx0huoD3wBlD3ZQkuUjt",
+  "iPhone假封面_B_3x4.png（sha256 与本地 B_3x4_1080x1440 一致）": "1fx7VTrbgnZT3J9fXf4TzW5CTguKjuRe9",
+  "秘书丞交接.zip": "1V8Dp6REW6QEKXNK1HxZ0QIEFoJXVtziP"
+ },
+ "note": "06 下每期一个子文件夹；新一期先 create_folder 再把 id 写进 episode_folders。配额连接器读不到，用户口头确认空间充足。"
+}
