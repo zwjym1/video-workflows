@@ -15,7 +15,9 @@
 | 配音 | Roadster 音色，speed 1.25，不加情绪标记，不变速 | Roadster 音色，speed 1.05 + 整体 1.15× 变速 |
 | 工程 | build_v3.py → v3f.json → `IphoneFakeV3f`；超分、人脸打码、OCR 脚本 | `RoadsterShortV3` + 对齐工具 + 3D |
 | 合规 | 过审清单 + OCR 白名单 + AI 生成内容标识 | 常规 |
-| 渲染 | box：c6 crf18，传到 PC | PC：c8 angle veryfast |
+| 渲染 | 冻结版在盒上：c6 crf18，再传到 PC | 冻结版在 PC（含 3D） |
+
+上表是冻结版当时的做法。2026-10-29 起，约 60 秒及以内的短片默认在盒上渲，传到 PC 的只有定稿成片和两张封面（`science-studio/config/workflow_spec.md` §1.1）。本款当时整包分块传到 PC，以后不再这么做。
 
 ## 1. 叙事：先信后揭
 - 第 0 帧放大家信以为真的那个画面（V3f：满海漂着 iPhone 盒子），第一句话就是提问（「满海的免费 iPhone？」约 1.9 秒）
@@ -68,7 +70,7 @@
 - 渲染：`npx remotion render src/index.ts IphoneFakeV3f out/<名字>.mp4 --concurrency=6 --crf=18 --audio-bitrate=320k`（box 上约 6 分钟）
 - 预览帧：`COMP=IphoneFakeV3f JSONP=src/v3f/data/v3f.json node scripts/v3/stills_v3.mjs <目录> 0.5`
 - 音效（49 个，都在 `public/v3/sfx/`）：whoosh_c/d/e/f、pop_a/b/c、hit_c/d、click_b/c；BGM `public/v3/audio/bgm_281.wav`
-- 传到 PC：拆成 7 MB 分块，逐块 CopyFromBox 到 `C:\Users\Administrator`（只有这个目录能直接写），再移到 `out\_staging_<版本>\`，在 PC 上拼回并核对 sha256。断线就重试，Administrator 里不留文件
+- 传到 PC（V3f 当时）：拆成 7 MB 分块，逐块 CopyFromBox 到 `C:\Users\Administrator`（只有这个目录能直接写），再移到 `out\_staging_<版本>\`，在 PC 上拼回并核对 sha256。断线就重试，Administrator 里不留文件。2026-10-29 起短片不再搬工程：只把定稿成片和两张封面传到 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\发布\`。
 
 ## 7. 验收
 - ffprobe：1920×1080，30 fps，aac 48k
@@ -110,7 +112,7 @@
 
 ## 共用效率模板（2026-10-29）
 
-本款的选题、叙事、画风和渲染机器不改。返修和传文件用仓库共用模板（`science-studio/config/workflow_spec.md` §5.1，依据 `docs/效率审计_2026-10-29.md`）：
+本款的选题、叙事、画风不改。短片在盒子上渲（`science-studio/config/workflow_spec.md` §1.1）。定稿后只把成片和两张封面传到 `发布\`，不再把工程搬到 PC。返修用共用模板（§5.1，依据 `docs/效率审计_2026-10-29.md`）：
 
 - 渲前：`templates/qc/structure_gate.py`，清单 `templates/qc/prerender_checklist.md`。有 FAIL 不渲。
 - 审片：`templates/review/审片官交接单模板.md`。主观自审限时 15 分钟，和审片官并行。一次改动算改进，只当路人划走中位数比上一版高 ≥1.5 秒，且同一版本至少 4 次。局部补丁最多 2 轮，然后改结构，或把当前最好的一版交给用户拍板。

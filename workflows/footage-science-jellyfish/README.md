@@ -15,7 +15,7 @@
 | BGM | 抖音热歌榜曲（dy_hot_bgm.py）+ 切点吸附强拍 + −8 dB 闪避 | 自制 BGM | 无 BGM |
 | 字幕 | 一句一字幕（OneLineSubtitles） | 多行 | — |
 | 审片 | 自检（cutquality/bgmfit/qwen×3）+ 审片官（review.py + 5 人设） | 人工 | QC 脚本 |
-| 渲染 | 盒上 render_box.mjs，51.5 s 片 70–95 s | PC | PC 在线优先 |
+| 渲染 | 盒上 render_box.mjs，51.5 s 片 70–95 s | 冻结版在 PC（含 3D）。新短片改盒上 | 短片盒上渲。v1.3「PC 在线优先」已废止（2026-10-29） |
 
 ## 1. 阶段与产物（`snapshot/`）
 

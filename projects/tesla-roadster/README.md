@@ -15,7 +15,9 @@ notes/                    选题、风格、受众、来源、BGM 候选记录
 ```
 public/ 下的图片、视频、音频不入库（clip-*.mp4、hlive*.mp4、voice*.mp3、sfx/、v3/ 等），需从 PC 项目目录拷回。
 
-## 渲染（Windows PC：R5 5600 / 16GB / RTX 3080）
+## 渲染（V3 当时在 Windows PC：R5 5600 / 16GB / RTX 3080）
+
+这是 89 秒、带 3D 的 V3 实测。约 60 秒的新短片改在盒子上渲，只把成片和两张封面传到 `发布\`（`science-studio/config/workflow_spec.md` §1.1，2026-10-29）。
 ```
 npm run render:master    # 无声画面 + 纯音频 wav + loudnorm(-16 LUFS) + 合成
 npm run remix-audio      # 只改了音量/BGM 时用
