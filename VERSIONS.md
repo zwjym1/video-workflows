@@ -16,7 +16,7 @@
 | `roadster-v3` | **v3 定稿**：播放器卡死修复、用户定稿的 footage-timeline.json、render:master / remix-audio；成片 特斯拉Roadster-v3.mp4 |
 | `roadster-workflow-v1` | 「热点科普（Roadster 款）」工作流模板冻结版：workflows/hot-science-roadster/（README、params.json、V3 终版源码快照）。原定标签名 roadster-v1 已被 Roadster 第一版占用，所以改用这个名字 |
 | `ai-debunk-v1` | 「AI 辟谣拆解（iPhone 款）」工作流模板冻结版：workflows/ai-debunk-iphone/（README、params.json、v3f_naming.md、V3f 源码和打码/OCR/配音脚本快照） |
-| `footage-science-workflow-v1` | 「实拍热点科普（火箭水母款）」工作流模板冻结版：workflows/footage-science-jellyfish/（README、params.json、EP-20261029-01 源码快照，不含媒体）+ science-studio/tools/review（审片系统）、tools/dy_hot_bgm.py、lib/sound_palette_v1.py、scripts/subs/oneline.py、lib/remotion/OneLineSubtitles.tsx + templates/qc/structure_gate.py、templates/transfer/make_pc_bundle.sh、templates/review、templates/state + docs/效率审计_2026-10-29.md。2026-10-29 |
+| `footage-science-workflow-v1` | 「实拍热点科普（火箭水母款）」工作流模板冻结版：workflows/footage-science-jellyfish/（README、params.json、EP-20261029-01 源码快照，不含媒体）+ science-studio/tools/review（审片系统）、tools/dy_hot_bgm.py、lib/sound_palette_v1.py、scripts/subs/oneline.py、lib/remotion/OneLineSubtitles.tsx + templates/qc/structure_gate.py、templates/transfer/make_pc_bundle.sh、templates/review、templates/state + docs/效率审计_2026-10-29.md。效率规则写入 workflow_spec §5.1 和各工作流入口。2026-10-29 |
 
 ## 怎么退回某个版本
 

@@ -25,6 +25,9 @@
 6. 回传：只把小体积预览或抽帧取回盒子质检；>100 MB 母版留 PC，告诉用户 D 盘路径。
 7. 换声不重渲画面：`ffmpeg -i 成片.mp4 -i 新混音.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k` 输出新文件名，旧版保留。
 
+## 渲前结构闸门（2026-10-29，workflow_spec §5.1）
+渲染前跑 `templates/qc/structure_gate.py`，对照 `templates/qc/prerender_checklist.md`。退出码 1（有 FAIL）先改再渲。主观自审限时 15 分钟，和审片官并行。定稿后的大文件用 `templates/transfer/make_pc_bundle.sh` + `assemble_from_home.ps1` 打包一次，审片阶段不打包。渲染在哪台机器做，仍按上面的「渲染路由」，本段不改。
+
 ## 渲后质检（workflow_spec §1.1-3）
 - ffmpeg：`blackdetect`、`freezedetect`、`ebur128`（约 −16 LUFS，真峰 ≤ −1.5 dBTP）、接缝前后 ±0.1 s 峰值查爆音、帧数=时长×fps。
 - 抽帧：`ffmpeg -vf fps=1/5` → 每 ≤5 张一组调 `qoderclicn -p -m Qwen3.8-Flash --permission-mode bypass_permissions --attachment ...`，问字幕/人名卡是否出框、黑块、错字、角标是否在。我只汇总 Flash 结论；可疑处用前后 ±0.5 s 再抽帧交 Flash 判是否为滑入滑出瞬间（是则不算硬错）。

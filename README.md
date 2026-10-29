@@ -35,9 +35,17 @@ flowchart LR
 | `templates/review/`、`templates/state/` | 审片官一次交接单（时限 + 停止规则）；`stage_log.py` 给 STATE.md 记阶段用时（2026-10-29） | — |
 | `templates/audio/`、`templates/vo/` | 混音（film_mix）、配音拼接（stitch_v2）、ASR 抽查脚本 | 来源 `/workspace/optogenetics/audio`、`/workspace/optogenetics/vo` |
 | `workflows/footage-science-jellyfish/` | 实拍热点科普（火箭水母款）：网友/官方实拍逐镜署名 + 程序示意图 → Fish 整稿一条配音 → 抖音热歌 BGM（切点吸附强拍、−8 dB 闪避）→ 一句一字幕 → 盒上渲染 → 渲前结构闸门 → 自检 + 审片官 → 竖横两封面 + 「丞」朱印。标签 `footage-science-workflow-v1`；配套 `science-studio/tools/review/`（审片系统）、`templates/qc/structure_gate.py`、`templates/transfer/make_pc_bundle.sh`、`docs/效率审计_2026-10-29.md` | 来源 `/workspace/science-studio/projects/EP-20261029-01/` |
-| `skills/`、`workflows/`、`projects/`、`docs/` | 2026-10-18/19 的旧版 skill、Roadster 和 iPhone 模板、示例工程、运营文档（保留，未改） | — |
+| `skills/`、`workflows/`、`projects/`、`docs/` | 2026-10-18/19 的旧版 skill、Roadster 和 iPhone 模板、示例工程、运营文档。Roadster / iPhone 款 README 只加了共用效率模板的引用（2026-10-29），画风和渲染规则未改 | — |
 
 模板里写死了光遗传学那期的 composition 名、zip 名和混音文件名。新一期复制后照 `science-studio/config/production_config.md` 的「PC 渲染步骤」改。
+
+## 返修效率（2026-10-29）
+各款片子共用，不另起画风。细则在 `science-studio/config/workflow_spec.md` §5.1，依据 `docs/效率审计_2026-10-29.md`。
+
+- 一次改动算改进，只当路人划走中位数比上一版高 ≥1.5 秒，且同一版本至少 4 次。局部补丁最多 2 轮，然后改结构，或把当前最好的一版交给用户拍板。
+- 主观自审限时 15 分钟，和审片官并行（`templates/review/审片官交接单模板.md`）。
+- 渲前过 `templates/qc/structure_gate.py`。定稿后才用 `templates/transfer/make_pc_bundle.sh` 打包一次。
+- 渲染在哪台机器做，仍是「PC 在线就在 PC 渲」。短片改默认盒上渲是未决问题，这里不改。
 
 ## 启动口令（对 Bot 说）
 - 「开始新一期科普视频」走日常档，「开始新一期精品科普视频」走精品档，「继续上一期」接着上次做。

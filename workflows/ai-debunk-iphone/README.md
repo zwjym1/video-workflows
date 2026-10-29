@@ -108,6 +108,15 @@
 - 原始素材：box `/workspace/iphone-fake/source/`
 - 人脸模型：box `/workspace/models/yunet.onnx`
 
+## 共用效率模板（2026-10-29）
+
+本款的选题、叙事、画风和渲染机器不改。返修和传文件用仓库共用模板（`science-studio/config/workflow_spec.md` §5.1，依据 `docs/效率审计_2026-10-29.md`）：
+
+- 渲前：`templates/qc/structure_gate.py`，清单 `templates/qc/prerender_checklist.md`。有 FAIL 不渲。
+- 审片：`templates/review/审片官交接单模板.md`。主观自审限时 15 分钟，和审片官并行。一次改动算改进，只当路人划走中位数比上一版高 ≥1.5 秒，且同一版本至少 4 次。局部补丁最多 2 轮，然后改结构，或把当前最好的一版交给用户拍板。
+- 定稿后才打包：`templates/transfer/make_pc_bundle.sh` + `assemble_from_home.ps1`。审片阶段不切分块、不挪旧版。
+- 阶段用时：`templates/state/stage_log.py` 记进 STATE.md。
+
 ## 目录
 ```
 README.md           本文件

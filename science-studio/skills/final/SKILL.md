@@ -18,6 +18,7 @@ description: >-
 | 资产库（需求/选题/BGM/动画资产/作品/经验） | `db/studio.db`，入口 `scripts/search.py`，说明 `db/README.md` |
 | 素材与旧规范索引（含已废止标注） | `assets/INDEX.md` |
 | 首期样板（全流程跑通） | `projects/EP-20261021-01`（工程 `/workspace/optogenetics`） |
+| 返修效率（停止规则、15 分钟自审、渲前闸门、定稿后打包） | `config/workflow_spec.md` §5.1；模板在仓库 `templates/qc`、`templates/review`、`templates/transfer`、`templates/state` |
 
 ## 硬规则（只有这 6 条是闸门）
 1. 字幕一句一卡。
@@ -28,6 +29,8 @@ description: >-
 6. 改稿按段验收：只重渲不合格的那段，不全片重渲。
 
 执行规则（spec §1.1，同样照做）：PC 在线就在 PC 渲染（含 720p 预览）；PC 文件只放 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\{out,发布,工程,预览}`，不在 `C:\Users\Administrator` 下建目录；大文件 ≤4 MB 分块传 + SHA256；渲后 ffmpeg + qoder Flash 质检、我只汇总；配音按意思段生成、只出一条；发布包自动附发布页逐项清单；创意文案能路由 opus5.5 就路由。
+
+返修效率（spec §5.1，2026-10-29）：渲前跑 `templates/qc/structure_gate.py`；自审限时 15 分钟，和审片官并行；划走中位数高 ≥1.5 秒且同一版本 ≥4 次才算改进；局部补丁最多 2 轮，然后改结构或交给用户拍板；定稿后才用 `templates/transfer/make_pc_bundle.sh` 打包一次。渲染机器仍按上一句：PC 在线就在 PC 渲。
 
 ## 启动
 - 「开始新一期科普视频」→ `python3 /workspace/science-studio/scripts/new_episode.py --tier daily --title "<暂定题>"`
