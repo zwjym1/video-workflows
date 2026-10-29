@@ -30,9 +30,11 @@ flowchart LR
 | `topics-workflow/` | 选题采集系统 v2、文案系统 v2、口播自检清单、抖音实地硬规则、field 模板、前期 SOP | `/workspace/topics/workflow/` |
 | `science-studio/` | 资产库和数据闭环：scripts/（含 Feedback Engine）、config/（workflow_spec、production_config）、docs/feedback_engine.md、adapters/（开放平台 stub）、reports/、projects/、reviews/ | `/workspace/science-studio/`（`db/studio.db` 不入库） |
 | `templates/render/` | PC 渲染 ps1 模板（光遗传学全片 1080 实测 13 分钟），以及 README | 来源 `/workspace/optogenetics/pc_pack/` |
-| `templates/transfer/` | 大文件分块传输：盒上 `split_for_pc.sh` 切块，PC 上 `merge_on_pc.ps1` 合并并校验 sha256 | — |
-| `templates/qc/` | `qc_render.sh` 跑黑场、冻帧、响度、帧数和接缝峰值机检；`contact_sheet_stills.sh` 生成抽帧联系表 | — |
+| `templates/transfer/` | 大文件分块传输：盒上 `split_for_pc.sh` 切块，PC 上 `merge_on_pc.ps1` 合并并校验 sha256；通用版 `make_pc_bundle.sh` + `assemble_from_home.ps1`（PC 上在 $HOME/下载/桌面自动找分块，按 sha256 校验，只新建不删除，2026-10-29） | — |
+| `templates/qc/` | `qc_render.sh` 跑黑场、冻帧、响度、帧数和接缝峰值机检；`contact_sheet_stills.sh` 生成抽帧联系表；`structure_gate.py` + `prerender_checklist.md` 渲前结构闸门（2026-10-29） | — |
+| `templates/review/`、`templates/state/` | 审片官一次交接单（时限 + 停止规则）；`stage_log.py` 给 STATE.md 记阶段用时（2026-10-29） | — |
 | `templates/audio/`、`templates/vo/` | 混音（film_mix）、配音拼接（stitch_v2）、ASR 抽查脚本 | 来源 `/workspace/optogenetics/audio`、`/workspace/optogenetics/vo` |
+| `workflows/footage-science-jellyfish/` | 实拍热点科普（火箭水母款）：网友/官方实拍逐镜署名 + 程序示意图 → Fish 整稿一条配音 → 抖音热歌 BGM（切点吸附强拍、−8 dB 闪避）→ 一句一字幕 → 盒上渲染 → 渲前结构闸门 → 自检 + 审片官 → 竖横两封面 + 「丞」朱印。标签 `footage-science-workflow-v1`；配套 `science-studio/tools/review/`（审片系统）、`templates/qc/structure_gate.py`、`templates/transfer/make_pc_bundle.sh`、`docs/效率审计_2026-10-29.md` | 来源 `/workspace/science-studio/projects/EP-20261029-01/` |
 | `skills/`、`workflows/`、`projects/`、`docs/` | 2026-10-18/19 的旧版 skill、Roadster 和 iPhone 模板、示例工程、运营文档（保留，未改） | — |
 
 模板里写死了光遗传学那期的 composition 名、zip 名和混音文件名。新一期复制后照 `science-studio/config/production_config.md` 的「PC 渲染步骤」改。

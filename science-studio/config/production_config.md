@@ -3,6 +3,7 @@
 ## 规格
 - 抖音竖屏：1080×1920，30 fps，H.264 High，yuv420p，AAC 192k 48 kHz。预览：720×1280（`--scale=0.6667 --crf=23`）。母版 `--crf=18`。
 - B 站横屏（如需）：1920×1080，同上参数。
+- **抖音横版封面 4:3**：1440×1080 PNG（不是 16:9）；竖版封面 1080×1920。模板 `src/Cover.tsx`：`CoverV` 1080×1920，`CoverH` 默认 1440×1080。
 - 响度：母版 loudnorm 两遍，约 −16 LUFS integrated，真峰 ≤ −1.5 dBTP（技术规格，不是创作规则）。
 - 字幕：一句一卡（硬规则），下方安全区，同时导出 `.srt`。
 - 角标：「丞」朱印，`/workspace/brand/v2/avatar_1_朱印丞.png`，全片统一。
@@ -78,3 +79,28 @@
 - **审批**：`approve_suggestion.py approve <id>` 只能在用户明确批准后执行。
 - **检索**：脚本和分镜阶段先跑 `search.py feedback "<关键词>"`。
 - **备份**：`fb_backup.py plan`，然后 UploadFile，再 record、DownloadFile 回读，最后 `verify --readback`。
+
+## 字幕：一句一字幕（全局通用，2026-10-21 起所有片必须调用）
+- 规则：每张字幕卡只显示一句——按 ，。？！；：、… 切成短句，一屏一句、单行、不换行、不拼接；句末逗号/句号不显示（？！保留）；小数点不切；单句超过 16 字在语义处再拆成前后两张卡（仍各自单行）；第 0 帧就有字幕（H7）。
+- 切句+字级对时脚本：`/workspace/science-studio/scripts/subs/oneline.py`
+  `python3 scripts/subs/oneline.py --cards <cards.json> --words <asr_chunks.json(含 words 字级时间)> --silences <silences.txt> --out-json <subs.json> --out-srt <subs.srt> --out-ts <remotion/src/subs_oneline.ts> --end <成片时长>`
+  对时：用 ASR 字级时间戳把每句句首映射到对应字的发声时刻，邻近停顿（±0.3s）时吸附到停顿；无 ASR 时按字数比例。输出自带校验：任何一卡含逗号/句号或超长即报错退出。
+- Remotion 公共组件：`/workspace/science-studio/lib/remotion/OneLineSubtitles.tsx`（复制到工程 `src/common/`，`<OneLineSubtitles t={t} subs={SUBS} fontFamily={...} />`）；禁止再用工程内自写的多行/拼接字幕组件。
+- 逐字稿卡片（cards_*.json）可以一卡多句（用于配音段落），但画面字幕只能用 oneline.py 的输出。
+
+## 音效（2026-10-21 起）
+- 一律按 config/sound_design_spec.md：先定风格家族，按类别固定电平自动归一，禁跨家族梗音；实现 lib/sound_palette_v1.py。
+
+## Gemini 交接（2026-10-22 新增；只是附加的交接层，spec 和 skill 的方法部分未改）
+- 依据：用户 10-22 08:55 / 08:57。从抖音实地采集到逐字稿、第四部分：分镜要点，都由 Gemini 完成（Spark 浏览 + Deep Research）。我们从配音开始接手，并负责入库。
+- 文档：`docs/gemini_handoff/`，内含 01_部署方案、02_交接文档、03_提示词集、04_字段格式_gemini_field_v1。Drive 位置：`00_Gemini交接/`（id 记在 `config/drive.json` 的 `handoff_folder`）。
+- 每期 Drive 文件命名：`00_数据包_<EP>_<时间>.md`｜`G1_实地_<EP>_<批次>.json`（+摘要 md）｜`G2_选题卡_<EP>`｜`G3_事实表_<EP>`｜`G4_方案与逐字稿_<EP>_v<N>`｜`G5_修订记录_<EP>.md`｜`G6_数据复盘_<EP>_<检查点>`。
+- 导出数据包（只读，不采集、不写库）：
+  `python3 scripts/export_gemini_pack.py <EP> [--topic N] [--all-candidates] [--q 词…]`
+  → `projects/<EP>/handoff/gemini_pack_<EP>_<时间>.md`。之后用 UploadFile 传到 06/<EP>，再跑 `backup.py record`。
+- G1 入库（用户下指令后才执行）：
+  `python3 scripts/gemini_field_convert.py check <json>` → `convert <json> --out projects/<EP>/research/field_gemini/<批次>` → `ingest_field.py <目录> --topic "<选题>" --label gemini-spark`。
+  check 有错误就不转换（退出码 2），把错误清单交给 Gemini，用提示词 E 让它重交。
+- 对照验证（上线前一次，用户下指令才执行）：
+  `python3 scripts/gemini_field_convert.py diff <json> <douyin-field-collect 输出目录> --out projects/<EP>/research/gemini_vs_script.md`
+- 接手前的硬规则复核清单：见 01_部署方案 §5。
