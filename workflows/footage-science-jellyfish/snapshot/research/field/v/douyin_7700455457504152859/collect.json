@@ -1,0 +1,195 @@
+{
+ "platform": "douyin",
+ "video_id": "7700455457504152859",
+ "collected_at": "2026-10-29 00:23:48 (UTC+8)",
+ "login": "none（游客/公开接口）",
+ "detail": {
+  "status": "available",
+  "id": "7700455457504152859",
+  "url": "https://www.douyin.com/video/7700455457504152859",
+  "desc": "原来是人类智慧的花朵在冲破苍穹##火箭发射  #中国航天永不止步  #长征六号甲 #中国航天",
+  "published": "2026-10-25 12:20 (UTC+8)",
+  "duration_s": 46.5,
+  "likes": 326451,
+  "comments": 2144,
+  "collects": 8349,
+  "shares": 97124,
+  "hashtags": [
+   "火箭发射",
+   "中国航天永不止步",
+   "长征六号甲",
+   "中国航天"
+  ],
+  "bgm": {
+   "title": "@抓马刘铁柱创作的原声",
+   "author": "抓马刘铁柱"
+  },
+  "author": "抓马刘铁柱",
+  "is_image_post": false,
+  "is_subtitled": null,
+  "platform_download": {
+   "allowed": false,
+   "reason": "risk_info"
+  }
+ },
+ "comments": {
+  "status": "partial",
+  "collected_unique": 30,
+  "platform_total": 2144,
+  "has_more": true,
+  "pages": 3,
+  "stop_reason": "limit_reached",
+  "limit": 30,
+  "file": "comments.json"
+ },
+ "replies": {
+  "status": "not_requested"
+ },
+ "recommendations": {
+  "comment_top_rec": {
+   "status": "missing",
+   "reason": "suggest_words 中无 comment_top_rec 场景"
+  },
+  "detail_suggest_words": {
+   "status": "available",
+   "field_path": "aweme_detail.suggest_words[scene!=comment_top_rec]",
+   "scenes": {
+    "feed_bottom_rec": {
+     "status": "available",
+     "hint_text": "相关搜索",
+     "words": [
+      "长征六号甲火箭"
+     ]
+    },
+    "detail_inbox_rex": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号"
+     ]
+    },
+    "image_detail_related_search": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号甲火箭"
+     ]
+    }
+   }
+  },
+  "page_suggest_words": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "related_videos": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "search_sug": {
+   "status": "not_requested",
+   "hint": "加 --kw 关键词"
+  },
+  "search_page_related": {
+   "status": "not_requested",
+   "hint": "加 --kw 与 --search-rel"
+  }
+ },
+ "media": {
+  "status": "available",
+  "source": "dlpanda",
+  "seconds": 8.4,
+  "tried": [
+   {
+    "source": "iesdouyin_share",
+    "reason": "分享页无 item_list"
+   }
+  ],
+  "frames": {
+   "status": "available",
+   "duration_s": 46.49,
+   "resolution": "1080x1920",
+   "has_audio": true,
+   "hook_frames": 11,
+   "uniform_frames": 16,
+   "files": [
+    "hook_sheet.jpg",
+    "contact_sheet.jpg"
+   ]
+  },
+  "video_file": "video.mp4"
+ },
+ "bgm": {
+  "status": "available",
+  "meta": {
+   "title": {
+    "status": "available",
+    "value": "@抓马刘铁柱创作的原声",
+    "field_path": "music.title"
+   },
+   "author": {
+    "status": "available",
+    "value": "抓马刘铁柱",
+    "field_path": "music.author"
+   },
+   "music_id": {
+    "status": "available",
+    "value": "7700455424748636978",
+    "field_path": "music.id_str"
+   },
+   "is_original_sound": {
+    "status": "available",
+    "value": true,
+    "field_path": "music.is_original_sound"
+   },
+   "license_type": {
+    "status": "available",
+    "value": "original_sound（作者/他人上传的原声）",
+    "field_path": "music.is_original_sound/is_pgc/is_commerce_music",
+    "raw_flags": {
+     "is_original": false,
+     "is_original_sound": true,
+     "is_pgc": false,
+     "is_commerce_music": false,
+     "pgc_music_type": 2,
+     "is_matched_metadata": false
+    }
+   },
+   "music_page_url": {
+    "status": "available",
+    "value": "https://www.douyin.com/music/7700455424748636978",
+    "field_path": "由 music.id_str 拼出",
+    "note": "公开音乐页链接（拼接，未逐条打开验证）"
+   },
+   "play_url": {
+    "status": "observed_empty",
+    "value": null,
+    "field_path": "music.play_url.url_list",
+    "reason": "字段存在但 url_list 为空（游客态常见，或原声未单独开放）"
+   },
+   "duration_s": {
+    "status": "available",
+    "value": 46,
+    "field_path": "music.duration"
+   },
+   "user_count": {
+    "status": "available",
+    "value": 0,
+    "field_path": "music.user_count"
+   }
+  },
+  "audio_analysis": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio"
+  },
+  "style": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio",
+   "note": "粗略启发式：基于本地音频特征的规则打分，不是模型识别，混了口播时偏差较大，只作参考"
+  }
+ },
+ "subtitle": {
+  "status": "missing",
+  "source": "platform_caption",
+  "reason": "详情无字幕字段（is_subtitled=None）"
+ }
+}

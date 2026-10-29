@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jellyfish_v6f/extra_3-10/focus_run.json"
+ ],
+ "n_checks": 1,
+ "confirmed": 0,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 1,
+ "precision_est": 0.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "persona:expert",
+   "text": "上一镜太原、下一镜山西并列，地理口径自相矛盾",
+   "t": [
+    9.0,
+    9.0
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

@@ -1,0 +1,200 @@
+{
+ "platform": "douyin",
+ "video_id": "7700034022797287887",
+ "collected_at": "2026-10-29 00:25:44 (UTC+8)",
+ "login": "none（游客/公开接口）",
+ "detail": {
+  "status": "available",
+  "id": "7700034022797287887",
+  "url": "https://www.douyin.com/video/7700034022797287887",
+  "desc": "邂逅中国航天独有的浪漫！长征六号改运载火箭成功发射当晚，青岛上空捕捉到梦幻“火箭云”（来源 央视新闻 人民日报 编辑 王春红）",
+  "published": "2026-10-24 09:04 (UTC+8)",
+  "duration_s": 8.2,
+  "likes": 26515,
+  "comments": 684,
+  "collects": 3309,
+  "shares": 2042,
+  "hashtags": [],
+  "bgm": {
+   "title": "日出伏羲",
+   "author": "美年达"
+  },
+  "author": "大众新闻•半岛都市报",
+  "is_image_post": false,
+  "is_subtitled": 0,
+  "platform_download": {
+   "allowed": false,
+   "reason": "only_self"
+  }
+ },
+ "comments": {
+  "status": "partial",
+  "collected_unique": 30,
+  "platform_total": 684,
+  "has_more": true,
+  "pages": 2,
+  "stop_reason": "limit_reached",
+  "limit": 30,
+  "file": "comments.json"
+ },
+ "replies": {
+  "status": "not_requested"
+ },
+ "recommendations": {
+  "comment_top_rec": {
+   "status": "available",
+   "hint_text": "大家都在搜：",
+   "words": [
+    "长征六号甲火箭云怎么拍"
+   ],
+   "field_path": "aweme_detail.suggest_words[scene=comment_top_rec]",
+   "meaning": "评论区顶部“大家都在搜”"
+  },
+  "detail_suggest_words": {
+   "status": "available",
+   "field_path": "aweme_detail.suggest_words[scene!=comment_top_rec]",
+   "scenes": {
+    "image_detail_related_search": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号甲火箭云怎么拍"
+     ]
+    },
+    "detail_inbox_rex": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号甲火箭云怎么拍"
+     ]
+    },
+    "feed_bottom_rec": {
+     "status": "available",
+     "hint_text": "相关搜索",
+     "words": [
+      "长征六号甲火箭云怎么拍"
+     ]
+    }
+   }
+  },
+  "page_suggest_words": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "related_videos": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "search_sug": {
+   "status": "not_requested",
+   "hint": "加 --kw 关键词"
+  },
+  "search_page_related": {
+   "status": "not_requested",
+   "hint": "加 --kw 与 --search-rel"
+  }
+ },
+ "media": {
+  "status": "available",
+  "source": "dlpanda",
+  "seconds": 6.4,
+  "tried": [
+   {
+    "source": "iesdouyin_share",
+    "reason": "分享页无 item_list"
+   }
+  ],
+  "frames": {
+   "status": "available",
+   "duration_s": 8.23,
+   "resolution": "1080x1920",
+   "has_audio": true,
+   "hook_frames": 11,
+   "uniform_frames": 16,
+   "files": [
+    "hook_sheet.jpg",
+    "contact_sheet.jpg"
+   ]
+  },
+  "video_file": "video.mp4"
+ },
+ "bgm": {
+  "status": "available",
+  "meta": {
+   "title": {
+    "status": "available",
+    "value": "日出伏羲",
+    "field_path": "music.title"
+   },
+   "author": {
+    "status": "available",
+    "value": "美年达",
+    "field_path": "music.author"
+   },
+   "music_id": {
+    "status": "available",
+    "value": "7533446066131666982",
+    "field_path": "music.id_str"
+   },
+   "is_original_sound": {
+    "status": "available",
+    "value": false,
+    "field_path": "music.is_original_sound"
+   },
+   "license_type": {
+    "status": "available",
+    "value": "licensed_library（抖音曲库/版权音乐）",
+    "field_path": "music.is_original_sound/is_pgc/is_commerce_music",
+    "raw_flags": {
+     "is_original": false,
+     "is_original_sound": false,
+     "is_pgc": true,
+     "is_commerce_music": false,
+     "pgc_music_type": 1,
+     "is_matched_metadata": false
+    }
+   },
+   "music_page_url": {
+    "status": "available",
+    "value": "https://www.douyin.com/music/7533446066131666982",
+    "field_path": "由 music.id_str 拼出",
+    "note": "公开音乐页链接（拼接，未逐条打开验证）"
+   },
+   "play_url": {
+    "status": "observed_empty",
+    "value": null,
+    "field_path": "music.play_url.url_list",
+    "reason": "字段存在但 url_list 为空（游客态常见，或原声未单独开放）"
+   },
+   "duration_s": {
+    "status": "available",
+    "value": 200,
+    "field_path": "music.duration"
+   },
+   "album": {
+    "status": "available",
+    "value": "千年万岁 椒花颂声",
+    "field_path": "music.album"
+   },
+   "user_count": {
+    "status": "available",
+    "value": 0,
+    "field_path": "music.user_count"
+   }
+  },
+  "audio_analysis": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio"
+  },
+  "style": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio",
+   "note": "粗略启发式：基于本地音频特征的规则打分，不是模型识别，混了口播时偏差较大，只作参考"
+  }
+ },
+ "subtitle": {
+  "status": "missing",
+  "source": "platform_caption",
+  "reason": "详情无字幕字段（is_subtitled=0）"
+ }
+}

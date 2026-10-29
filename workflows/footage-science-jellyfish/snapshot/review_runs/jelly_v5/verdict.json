@@ -1,0 +1,141 @@
+{
+ "id": "jelly_v5",
+ "verdict": "改完必改项后可发",
+ "total": 73.6,
+ "hook": 76.1,
+ "body": 76.5,
+ "value": 41.4,
+ "hook_obj": 65.9,
+ "body_obj": 85.7,
+ "hook_obj_items": {
+  "frame0_probe": 78.0,
+  "first_voice_s": 100.0,
+  "info3": 50.0,
+  "no_term_10s": 0.0,
+  "visual3": 100.0
+ },
+ "body_obj_items": {
+  "cps": 100.0,
+  "terms_per_min": 82.0,
+  "info_max_gap": 97.5,
+  "static_s": 100.0,
+  "sub_height": 100.0,
+  "sub_contrast": 100.0,
+  "loudness": 100,
+  "beat_sync": 64.0,
+  "cover": 60.0,
+  "bgm_fit": 30.0
+ },
+ "subj": {
+  "stay2": 1.0,
+  "stay5": 0.8,
+  "finish": 0.45,
+  "share": 0.2,
+  "save": 0.35,
+  "swipe_med": 4.25,
+  "swipe_never": 0.6,
+  "hook": 72.5,
+  "clarity": 70.0,
+  "novelty": 51.25,
+  "payoff": 52.5,
+  "visual": 75.0,
+  "emotion": 58.75,
+  "f0_rec": 1.0,
+  "f0_conf": 0.78,
+  "f0_subject": "发光水母",
+  "S_hook": 86.25,
+  "S_body": 62.75,
+  "S_value": 41.438,
+  "runs": 1
+ },
+ "vetoes": [],
+ "must_fix": [
+  "事实已核但观众会质疑 → 画面上把出处写大写清：44.6s「少一样，同一次发射，天上就什么也没有」：高空风大主要吹歪尾迹形状，不等于完全不可见；绝对化表述不严谨",
+  "用了第三方素材（片内署名：AlphaStar、Atumu、Windsky、央视CCTV、玻纤轻木）：署名≠授权，抖音对搬运/非原创会限流，发前确认授权或合理引用（解说为主、引用片段短）"
+ ],
+ "persona_fixes": [
+  {
+   "t": "0.0–3.0",
+   "fix": "首屏改用1.5–2.0秒真实连续画面，叠“10月23日傍晚·北方多地拍到”",
+   "why": "让路人1秒内对上真实事件，去掉静帧感，抬hook和visual"
+  },
+  {
+   "t": "4.6–7.6",
+   "fix": "报日期和型号前，先抛“天黑还亮、越高越像伞”两个反常识并预闪后文",
+   "why": "在5秒处补新悬念，留住路人和看惯同题的科技粉"
+  },
+  {
+   "t": 0.0,
+   "fix": "补标题“10月23日北方多地目击UFO？其实是长征六号改”",
+   "why": "补事件与型号检索词，改善零粉账号的搜索和推荐点击"
+  },
+  {
+   "t": "22.2–29.1",
+   "fix": "删掉1/75、百万分之一等数字，改用气球膨胀动画讲“越高越胀”",
+   "why": "让长辈和学生一遍看懂，提升clarity和完播"
+  },
+  {
+   "t": "44.6–47.8",
+   "fix": "把“少一样就什么也没有”改成“风大只吹歪形状，厚云才会挡住”",
+   "why": "去掉绝对化硬伤，避免懂行用户在评论区纠错"
+  }
+ ],
+ "rubric_version": 2,
+ "edit": 89.2,
+ "edit_detail": {
+  "edit": 89.2,
+  "edit_obj": 97.0,
+  "edit_subj": 71.0,
+  "deductions": {
+   "flash": 0,
+   "intra": 0,
+   "cluster": 0,
+   "pingpong": 3.0,
+   "lumflip": 0,
+   "mismatch": 0,
+   "style_switch": 0.0
+  },
+  "after3s": {
+   "flash": 0,
+   "intra": 0,
+   "cluster": 0,
+   "pingpong": 0,
+   "lumflip": 0,
+   "mismatch": 0
+  },
+  "fixes": [
+   "1.43–2.38s 实拍↔2D 来回跳（实拍-2D-实拍）：中间这镜删掉或换成同风格"
+  ],
+  "false_positives": [],
+  "focus_failed_segments": [],
+  "focus_segments": [
+   {
+    "seg": [
+     3.0,
+     10.0
+    ],
+    "score": 71,
+    "bgm": {
+     "fit": 78,
+     "note": "切点全部落在129bpm拍格上(#4/#6=2拍、#7/#8=1拍、#9/#10=3拍)，清单段节奏感成立；但#5的4.4拍静止与「生命力」 upbeat 略脱节，且火箭升空缺一次重音抬升。需人耳确认"
+    }
+   }
+  ]
+ },
+ "bgm_fit": {
+  "score": 30.0,
+  "subscores": {
+   "tempo": 100.0,
+   "drums": 23.1,
+   "first3": 100.0,
+   "hits": 0.0,
+   "mode": 40.0,
+   "mask": 70.0
+  },
+  "tempo_bpm": 129.2,
+  "first3s_rel_db": 1.7,
+  "hit_lift": 0.47,
+  "has_bgm": false,
+  "note": "特征推断（避开人声频段），情绪/版权需人耳确认；目标=科技揭秘「哇」：利落鼓点、前 3 s 有能量、踩切点、不压人声"
+ }
+}

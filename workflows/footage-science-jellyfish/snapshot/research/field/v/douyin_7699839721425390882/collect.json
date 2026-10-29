@@ -1,0 +1,201 @@
+{
+ "platform": "douyin",
+ "video_id": "7699839721425390882",
+ "collected_at": "2026-10-29 00:26:04 (UTC+8)",
+ "login": "none（游客/公开接口）",
+ "detail": {
+  "status": "available",
+  "id": "7699839721425390882",
+  "url": "https://www.douyin.com/video/7699839721425390882",
+  "desc": "长征六号改运载火箭过境山西忻州，上演“太空水母”， 暮光效应造就的火箭尾迹云\n在夜空缓缓舒展，像一只发光水母漫游天际\n这是独属于中国航天的硬核浪漫🇨🇳\n#长征六号改  #太空水母  #火箭云  #山西上空奇观  #中国航天",
+  "published": "2026-10-23 20:30 (UTC+8)",
+  "duration_s": 29.8,
+  "likes": 7202,
+  "comments": 601,
+  "collects": 861,
+  "shares": 1927,
+  "hashtags": [
+   "长征六号改",
+   "太空水母",
+   "火箭云",
+   "山西上空奇观",
+   "中国航天"
+  ],
+  "bgm": {
+   "title": "@Atumu 📸创作的原声",
+   "author": "Atumu 📸"
+  },
+  "author": "Atumu 📸",
+  "is_image_post": false,
+  "is_subtitled": null,
+  "platform_download": {
+   "allowed": true,
+   "reason": null
+  }
+ },
+ "comments": {
+  "status": "partial",
+  "collected_unique": 30,
+  "platform_total": 601,
+  "has_more": true,
+  "pages": 3,
+  "stop_reason": "limit_reached",
+  "limit": 30,
+  "file": "comments.json"
+ },
+ "replies": {
+  "status": "not_requested"
+ },
+ "recommendations": {
+  "comment_top_rec": {
+   "status": "available",
+   "hint_text": "大家都在搜：",
+   "words": [
+    "太空水母"
+   ],
+   "field_path": "aweme_detail.suggest_words[scene=comment_top_rec]",
+   "meaning": "评论区顶部“大家都在搜”"
+  },
+  "detail_suggest_words": {
+   "status": "available",
+   "field_path": "aweme_detail.suggest_words[scene!=comment_top_rec]",
+   "scenes": {
+    "feed_bottom_rec": {
+     "status": "available",
+     "hint_text": "相关搜索",
+     "words": [
+      "长征六号火箭"
+     ]
+    },
+    "image_detail_related_search": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号火箭"
+     ]
+    },
+    "detail_inbox_rex": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "太空水母"
+     ]
+    }
+   }
+  },
+  "page_suggest_words": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "related_videos": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "search_sug": {
+   "status": "not_requested",
+   "hint": "加 --kw 关键词"
+  },
+  "search_page_related": {
+   "status": "not_requested",
+   "hint": "加 --kw 与 --search-rel"
+  }
+ },
+ "media": {
+  "status": "available",
+  "source": "dlpanda",
+  "seconds": 13.0,
+  "tried": [
+   {
+    "source": "iesdouyin_share",
+    "reason": "分享页无 item_list"
+   }
+  ],
+  "frames": {
+   "status": "available",
+   "duration_s": 29.72,
+   "resolution": "3840x2160",
+   "has_audio": true,
+   "hook_frames": 11,
+   "uniform_frames": 16,
+   "files": [
+    "hook_sheet.jpg",
+    "contact_sheet.jpg"
+   ]
+  },
+  "video_file": "video.mp4"
+ },
+ "bgm": {
+  "status": "available",
+  "meta": {
+   "title": {
+    "status": "available",
+    "value": "@Atumu 📸创作的原声",
+    "field_path": "music.title"
+   },
+   "author": {
+    "status": "available",
+    "value": "Atumu 📸",
+    "field_path": "music.author"
+   },
+   "music_id": {
+    "status": "available",
+    "value": "7699839692908415786",
+    "field_path": "music.id_str"
+   },
+   "is_original_sound": {
+    "status": "available",
+    "value": true,
+    "field_path": "music.is_original_sound"
+   },
+   "license_type": {
+    "status": "available",
+    "value": "original_sound（作者/他人上传的原声）",
+    "field_path": "music.is_original_sound/is_pgc/is_commerce_music",
+    "raw_flags": {
+     "is_original": false,
+     "is_original_sound": true,
+     "is_pgc": false,
+     "is_commerce_music": false,
+     "pgc_music_type": 2,
+     "is_matched_metadata": false
+    }
+   },
+   "music_page_url": {
+    "status": "available",
+    "value": "https://www.douyin.com/music/7699839692908415786",
+    "field_path": "由 music.id_str 拼出",
+    "note": "公开音乐页链接（拼接，未逐条打开验证）"
+   },
+   "play_url": {
+    "status": "observed_empty",
+    "value": null,
+    "field_path": "music.play_url.url_list",
+    "reason": "字段存在但 url_list 为空（游客态常见，或原声未单独开放）"
+   },
+   "duration_s": {
+    "status": "available",
+    "value": 29,
+    "field_path": "music.duration"
+   },
+   "user_count": {
+    "status": "available",
+    "value": 0,
+    "field_path": "music.user_count"
+   }
+  },
+  "audio_analysis": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio"
+  },
+  "style": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio",
+   "note": "粗略启发式：基于本地音频特征的规则打分，不是模型识别，混了口播时偏差较大，只作参考"
+  }
+ },
+ "subtitle": {
+  "status": "missing",
+  "source": "platform_caption",
+  "reason": "详情无字幕字段（is_subtitled=None）"
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v6c/focus_run.json"
+ ],
+ "n_checks": 6,
+ "confirmed": 4,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 2,
+ "precision_est": 1.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#5",
+   "text": "   修改 style_jump 实拍-2D-实拍夹心，尾迹动线被切断 subtitle 顶部日期标签与底部字幕重复 vo_mismatch 念到起飞时画面仍在发射台",
+   "t": [
+    4.3,
+    6.2
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "shot#9",
+   "text": "   修改 rhythm 山东贴纸晚于念词约0.5-0.9s other 来源署名济源，与山东不符 style_jump 实拍-2D-实拍再次来回跳",
+   "t": [
+    9.5,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    },
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "#5压缩到1.2s，切点提到5.74 实拍-2D夹心变短，且「起飞」落在尾迹上",
+   "t": [
+    4.6,
+    5.8
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "#9换掉济源来源署名，或裁掉来源行 署名地点与山东矛盾，易被懂行挑错",
+   "t": [
+    9.5,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "若仍显跳，把#9换成实拍城市尾迹镜 避免段内第二次实拍-2D来回跳",
+   "t": [
+    9.5,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

@@ -1,0 +1,201 @@
+{
+ "platform": "douyin",
+ "video_id": "7699881476779184315",
+ "collected_at": "2026-10-29 00:24:12 (UTC+8)",
+ "login": "none（游客/公开接口）",
+ "detail": {
+  "status": "available",
+  "id": "7699881476779184315",
+  "url": "https://www.douyin.com/video/7699881476779184315",
+  "desc": "长征六号甲在太理大学上空拉出巨型水母云 10月23日，长征六号甲火箭发射取得圆满成功，火箭在太原上空冲出地球阴影区，被地平线下的太阳照耀形成暮光效应。视频拍摄于太原理工大学航模协会……版本过低，升级后可展示全部信息",
+  "published": "2026-10-23 23:12 (UTC+8)",
+  "duration_s": 177.5,
+  "likes": 195870,
+  "comments": 3311,
+  "collects": 16550,
+  "shares": 46417,
+  "hashtags": [
+   "网友拍到绝美火箭云",
+   "火箭云",
+   "太原理工大学",
+   "长征六号",
+   "航天"
+  ],
+  "bgm": {
+   "title": "@Hexmalo创作的原声",
+   "author": "Hexmalo"
+  },
+  "author": "玻纤轻木",
+  "is_image_post": false,
+  "is_subtitled": 0,
+  "platform_download": {
+   "allowed": true,
+   "reason": null
+  }
+ },
+ "comments": {
+  "status": "partial",
+  "collected_unique": 30,
+  "platform_total": 3311,
+  "has_more": true,
+  "pages": 3,
+  "stop_reason": "limit_reached",
+  "limit": 30,
+  "file": "comments.json"
+ },
+ "replies": {
+  "status": "not_requested"
+ },
+ "recommendations": {
+  "comment_top_rec": {
+   "status": "available",
+   "hint_text": "大家都在搜：",
+   "words": [
+    "长征六号甲"
+   ],
+   "field_path": "aweme_detail.suggest_words[scene=comment_top_rec]",
+   "meaning": "评论区顶部“大家都在搜”"
+  },
+  "detail_suggest_words": {
+   "status": "available",
+   "field_path": "aweme_detail.suggest_words[scene!=comment_top_rec]",
+   "scenes": {
+    "detail_inbox_rex": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号甲"
+     ]
+    },
+    "image_detail_related_search": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号甲"
+     ]
+    },
+    "feed_bottom_rec": {
+     "status": "available",
+     "hint_text": "相关搜索",
+     "words": [
+      "长征六号甲"
+     ]
+    }
+   }
+  },
+  "page_suggest_words": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "related_videos": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "search_sug": {
+   "status": "not_requested",
+   "hint": "加 --kw 关键词"
+  },
+  "search_page_related": {
+   "status": "not_requested",
+   "hint": "加 --kw 与 --search-rel"
+  }
+ },
+ "media": {
+  "status": "available",
+  "source": "dlpanda",
+  "seconds": 12.6,
+  "tried": [
+   {
+    "source": "iesdouyin_share",
+    "reason": "分享页无 item_list"
+   }
+  ],
+  "frames": {
+   "status": "available",
+   "duration_s": 177.52,
+   "resolution": "1920x1080",
+   "has_audio": true,
+   "hook_frames": 11,
+   "uniform_frames": 16,
+   "files": [
+    "hook_sheet.jpg",
+    "contact_sheet.jpg"
+   ]
+  },
+  "video_file": "video.mp4"
+ },
+ "bgm": {
+  "status": "available",
+  "meta": {
+   "title": {
+    "status": "available",
+    "value": "@Hexmalo创作的原声",
+    "field_path": "music.title"
+   },
+   "author": {
+    "status": "available",
+    "value": "Hexmalo",
+    "field_path": "music.author"
+   },
+   "music_id": {
+    "status": "available",
+    "value": "7639585303832890175",
+    "field_path": "music.id_str"
+   },
+   "is_original_sound": {
+    "status": "available",
+    "value": true,
+    "field_path": "music.is_original_sound"
+   },
+   "license_type": {
+    "status": "available",
+    "value": "original_sound（作者/他人上传的原声）",
+    "field_path": "music.is_original_sound/is_pgc/is_commerce_music",
+    "raw_flags": {
+     "is_original": false,
+     "is_original_sound": true,
+     "is_pgc": false,
+     "is_commerce_music": false,
+     "pgc_music_type": 2,
+     "is_matched_metadata": false
+    }
+   },
+   "music_page_url": {
+    "status": "available",
+    "value": "https://www.douyin.com/music/7639585303832890175",
+    "field_path": "由 music.id_str 拼出",
+    "note": "公开音乐页链接（拼接，未逐条打开验证）"
+   },
+   "play_url": {
+    "status": "observed_empty",
+    "value": null,
+    "field_path": "music.play_url.url_list",
+    "reason": "字段存在但 url_list 为空（游客态常见，或原声未单独开放）"
+   },
+   "duration_s": {
+    "status": "available",
+    "value": 182,
+    "field_path": "music.duration"
+   },
+   "user_count": {
+    "status": "available",
+    "value": 0,
+    "field_path": "music.user_count"
+   }
+  },
+  "audio_analysis": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio"
+  },
+  "style": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio",
+   "note": "粗略启发式：基于本地音频特征的规则打分，不是模型识别，混了口播时偏差较大，只作参考"
+  }
+ },
+ "subtitle": {
+  "status": "missing",
+  "source": "platform_caption",
+  "reason": "详情无字幕字段（is_subtitled=0）"
+ }
+}

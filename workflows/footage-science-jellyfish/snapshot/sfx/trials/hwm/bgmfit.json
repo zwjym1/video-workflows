@@ -1,0 +1,26 @@
+{
+ "version": 1,
+ "source": "../../projects/EP-20261029-01/sfx/trials/hwm/mix.wav",
+ "decoded_from": "proxy",
+ "has_bgm": true,
+ "tempo_bpm": 117.5,
+ "perc_ratio_nonspeech": 0.163,
+ "first3s_rel_db": 1.45,
+ "strong_onsets_per_s": 2.74,
+ "cut_hits_40ms": 0,
+ "cut_hits_chance": 4.6,
+ "hit_lift": 0.0,
+ "mode": "major",
+ "mode_conf": 0.033,
+ "speech_band_snr_db": 28.6,
+ "subscores": {
+  "tempo": 100.0,
+  "drums": 6.3,
+  "first3": 100.0,
+  "hits": 0.0,
+  "mode": 100.0,
+  "mask": 100.0
+ },
+ "score": 56.6,
+ "note": "特征推断（避开人声频段），情绪/版权需人耳确认；目标=科技揭秘「哇」：利落鼓点、前 3 s 有能量、踩切点、不压人声"
+}

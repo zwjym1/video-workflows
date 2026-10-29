@@ -1,0 +1,5 @@
+// 由 sfx/snap_v2.py 生成
+export const NAMES = ["c01_am_open", "c02_jn_city", "c03_jn_ufo", "c04_am_rocket", "c05_cc_lift", "c06b_cc_ty", "c07_cc_bj", "c08_tl_sx", "c09_jn_sd", "c10_tl_climb", "d1_shadow", "c11_ws_lit", "c12_ws_why", "d2_plume", "c13_am_burst", "c14_ws_ice", "c15_am_jelly", "c16_tl_campus", "c17_ws_clear", "c18_ws_empty", "c19_jn_end"];
+export const CUTS = [0.0, 1.472, 2.424, 3.61, 4.6, 6.186, 7.602, 8.531, 9.483, 10.9, 12.17, 18.4, 21.256, 22.649, 29.815, 33.005, 36.302, 39.599, 41.48, 45.393, 48.307];
+export const TOTAL = 51.536;
+export const BGM_OFF = 0.5;
