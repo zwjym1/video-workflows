@@ -20,6 +20,27 @@
 
 [团队 Gitee 仓库](https://gitee.com/MarvinQin/energy-trustspace)：基于 SecretPad / SecretFlow 的团队项目；线上访问权限及与本地一致性待确认。比赛结果与本人具体贡献需进一步核实。
 
+
+## 其他科普视频与样片（压缩预览）
+
+- [特斯拉Roadster](videos/tesla-roadster.mp4)
+- [iPhone真假](videos/iphone-fake.mp4)
+- [广交会机器人](videos/robot.mp4)
+- [机车水上漂](videos/water-bike.mp4)
+- [黑洞527天](videos/black-hole.mp4)
+- [iPhone折痕](videos/iphone-fold.mp4)
+- [健身房](videos/gym.mp4)
+- [蜜雪冰城](videos/mixue.mp4)
+- [拿铁因子](videos/latte.mp4)
+- [反物质](videos/antimatter.mp4)
+- [iPhone路灯](videos/iphone-light.mp4)
+- [白鹤滩拱坝](videos/dam.mp4)
+- [火流星](videos/fireball.mp4)
+- [诱饵效应](videos/decoy.mp4)
+- [Roadster下压起飞（方案预览）](videos/roadster-lift.mp4)
+
+视频来自不同制作期，含外部影像素材，未在本轮逐条核实公开版权及科学事实；Roadster下压起飞为预览。GitHub如果无法直接播放，请下载。
+
 ## 其他项目
 
 其他项目和版本仍需逐项核对与上传。源视频目录包含多个中间版本，不能把它们视作不同成品；未完成方案单独标注。
