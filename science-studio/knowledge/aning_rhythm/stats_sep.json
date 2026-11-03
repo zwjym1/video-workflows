@@ -1,0 +1,71 @@
+{
+ "7701615317113457929": {
+  "shazam": [
+   [
+    null,
+    null
+   ],
+   [
+    null,
+    null
+   ],
+   [
+    null,
+    null
+   ]
+  ],
+  "lufs_vocal": -12.8,
+  "lufs_bgm": -26.8,
+  "gap_n": 80,
+  "gap_median": 0.23,
+  "gap_p25": 0.18,
+  "gap_p75": 0.33,
+  "gap_over_0_6": 0
+ },
+ "7701927915331636515": {
+  "shazam": [
+   [
+    null,
+    null
+   ],
+   [
+    null,
+    null
+   ],
+   [
+    null,
+    null
+   ]
+  ],
+  "lufs_vocal": -11.9,
+  "lufs_bgm": -25.5,
+  "gap_n": 81,
+  "gap_median": 0.22,
+  "gap_p25": 0.18,
+  "gap_p75": 0.28,
+  "gap_over_0_6": 0
+ },
+ "7702426566919212315": {
+  "shazam": [
+   [
+    null,
+    null
+   ],
+   [
+    null,
+    null
+   ],
+   [
+    null,
+    null
+   ]
+  ],
+  "lufs_vocal": -12.0,
+  "lufs_bgm": -26.0,
+  "gap_n": 86,
+  "gap_median": 0.21,
+  "gap_p25": 0.18,
+  "gap_p75": 0.28,
+  "gap_over_0_6": 0
+ }
+}
