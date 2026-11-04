@@ -1,0 +1,7 @@
+# 本项目的素材（像素精灵、音效）是渲染必需的源资源，体积小（约 330KB），
+# 需要覆盖仓库根的全局 *.png / *.wav 忽略规则。
+!remotion/public/sprites/*.png
+!remotion/public/sfx/*.wav
+# 配音和 BGM 属于媒体，按仓库规则不入库；生成方式见 README
+remotion/public/vo/
+remotion/public/bgm/
