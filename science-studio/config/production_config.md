@@ -3,19 +3,26 @@
 ## 规格
 - 抖音竖屏：1080×1920，30 fps，H.264 High，yuv420p，AAC 192k 48 kHz。预览：720×1280（`--scale=0.6667 --crf=23`）。母版 `--crf=18`。
 - B 站横屏（如需）：1920×1080，同上参数。
+- **抖音横版封面 4:3**：1440×1080 PNG（不是 16:9）；竖版封面 1080×1920。模板 `src/Cover.tsx`：`CoverV` 1080×1920，`CoverH` 默认 1440×1080。
 - 响度：母版 loudnorm 两遍，约 −16 LUFS integrated，真峰 ≤ −1.5 dBTP（技术规格，不是创作规则）。
 - 字幕：一句一卡（硬规则），下方安全区，同时导出 `.srt`。
 - 角标：「丞」朱印，`/workspace/brand/v2/avatar_1_朱印丞.png`，全片统一。
 
-## 渲染路由
+## 渲染路由（2026-10-29 改定）
+短片默认在**盒子**（助手的 Linux）上渲。~~PC 在线就全部在 PC 渲，含 720p 预览；只有离线才用盒子~~【已废止 2026-10-29】。
+
 | 条件 | 在哪渲 | 怎么做 |
 |---|---|---|
-| 用户 PC 在线（ListMachines 显示 PC-20260301WTTM connected） | **用户 PC**（Windows，RTX 3080） | 每条命令需用户点批准（见下） |
-| PC 离线 | 盒子（8 核 CPU、15 GB RAM、无 GPU、`/usr/bin/google-chrome`） | `npx remotion render ... --gl=angle --concurrency=4` |
+| 短片（约 60 秒及以内） | **盒子**（8 核 CPU、15 GB RAM、无 GPU、`/usr/bin/google-chrome`） | 默认，不看 PC 在不在线。预览和成片都在盒上：`npx remotion render ... --gl=angle --concurrency=4`，或该期 `render_box.mjs` |
+| 更长的片子、盒上渲不动 | 用户 PC（Windows，RTX 3080） | 每条命令需用户点批准（见下「PC 渲染步骤」） |
 | 3D 重渲染 / Blender | 只能用户 PC（盒上无 Blender、无 GPU） | 同 PC 流程；PC 上 Blender 是否安装待确认 |
-| ~~720p 片段预览、1 段局部修在盒子~~ | 【已废止 2026-10-21】PC 在线时预览也在 PC | — |
 
-### PC 渲染步骤（v1.1，光遗传学实测：1080 全片 5246 帧 13 分钟）
+### 短片交给 PC（2026-10-29）
+定稿后只传 3 个文件：成片、两张封面。目录 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\发布\`。不传工程、不传预览、不传中间版。
+`templates/transfer/make_pc_bundle.sh <TAG> 'D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\发布' <盒上输出目录> 成片 封面 封面`
+审片阶段不打包。分块可以暂时落在 PC 的 $HOME，由 `assemble_from_home.ps1` 合并进 `发布\`，不在 `C:\Users\Administrator` 下建工程目录。
+
+### PC 渲染步骤（只给长片、3D、盒上渲不动的；光遗传学实测：1080 全片 5246 帧 13 分钟）
 1. 盒上打源码包（去掉 `node_modules`、`out`，python zipfile）+ 混音 wav + 参数化脚本（模板 `/workspace/optogenetics/pc_pack/render_film_pc.ps1`；新一期复制后改 composition 名、zip 名、混音文件名（模板里写死 `audio\film_mix_v1.wav`）、冒烟帧号，`-Root` 指向 D 盘工程目录）。
 2. **传输**：≥30 MB 的 CopyFromBox 会失败 → 盒上切成 ≤4 MB 分块逐个 CopyFromBox，PC 上合并后 `Get-FileHash -Algorithm SHA256` 与盒上 `sha256sum` 比对，一致才继续。
 3. **位置**：全部放 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\`：`工程\`（源码包、解压后工程、ps1）、`预览\`（720p）、`out\`（1080 成片）、`发布\`（封面、文案、清单）。~~`%USERPROFILE%\<EP>_<版本>\`~~【已废止 2026-10-21，不在 C:\Users\Administrator 下建目录】。
@@ -23,6 +30,9 @@
 5. PC 环境（2026-10-21 实测）：Node v24.19.0、npm 11.17.0、ffmpeg 9.0、RTX 3080 10GB、桌面 Chrome。脚本自带：解压/依赖幂等跳过、桌面 Chrome 冒烟失败自动切 Headless Shell、gl=angle 失败切 swangle、并发默认 75% 核、ffmpeg 合轨与 ffprobe 核对。
 6. 回传：只把小体积预览或抽帧取回盒子质检；>100 MB 母版留 PC，告诉用户 D 盘路径。
 7. 换声不重渲画面：`ffmpeg -i 成片.mp4 -i 新混音.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k` 输出新文件名，旧版保留。
+
+## 渲前结构闸门（2026-10-29，workflow_spec §5.1）
+渲染前跑 `templates/qc/structure_gate.py`，对照 `templates/qc/prerender_checklist.md`。退出码 1（有 FAIL）先改再渲。主观自审限时 15 分钟，和审片官并行。短片在盒上渲；定稿后只用 `templates/transfer/make_pc_bundle.sh` + `assemble_from_home.ps1` 把成片和两张封面打进 `发布\`，审片阶段不打包。渲染路由见上一节。
 
 ## 渲后质检（workflow_spec §1.1-3）
 - ffmpeg：`blackdetect`、`freezedetect`、`ebur128`（约 −16 LUFS，真峰 ≤ −1.5 dBTP）、接缝前后 ±0.1 s 峰值查爆音、帧数=时长×fps。
@@ -78,3 +88,28 @@
 - **审批**：`approve_suggestion.py approve <id>` 只能在用户明确批准后执行。
 - **检索**：脚本和分镜阶段先跑 `search.py feedback "<关键词>"`。
 - **备份**：`fb_backup.py plan`，然后 UploadFile，再 record、DownloadFile 回读，最后 `verify --readback`。
+
+## 字幕：一句一字幕（全局通用，2026-10-21 起所有片必须调用）
+- 规则：每张字幕卡只显示一句——按 ，。？！；：、… 切成短句，一屏一句、单行、不换行、不拼接；句末逗号/句号不显示（？！保留）；小数点不切；单句超过 16 字在语义处再拆成前后两张卡（仍各自单行）；第 0 帧就有字幕（H7）。
+- 切句+字级对时脚本：`/workspace/science-studio/scripts/subs/oneline.py`
+  `python3 scripts/subs/oneline.py --cards <cards.json> --words <asr_chunks.json(含 words 字级时间)> --silences <silences.txt> --out-json <subs.json> --out-srt <subs.srt> --out-ts <remotion/src/subs_oneline.ts> --end <成片时长>`
+  对时：用 ASR 字级时间戳把每句句首映射到对应字的发声时刻，邻近停顿（±0.3s）时吸附到停顿；无 ASR 时按字数比例。输出自带校验：任何一卡含逗号/句号或超长即报错退出。
+- Remotion 公共组件：`/workspace/science-studio/lib/remotion/OneLineSubtitles.tsx`（复制到工程 `src/common/`，`<OneLineSubtitles t={t} subs={SUBS} fontFamily={...} />`）；禁止再用工程内自写的多行/拼接字幕组件。
+- 逐字稿卡片（cards_*.json）可以一卡多句（用于配音段落），但画面字幕只能用 oneline.py 的输出。
+
+## 音效（2026-10-21 起）
+- 一律按 config/sound_design_spec.md：先定风格家族，按类别固定电平自动归一，禁跨家族梗音；实现 lib/sound_palette_v1.py。
+
+## Gemini 交接（2026-10-22 新增；只是附加的交接层，spec 和 skill 的方法部分未改）
+- 依据：用户 10-22 08:55 / 08:57。从抖音实地采集到逐字稿、第四部分：分镜要点，都由 Gemini 完成（Spark 浏览 + Deep Research）。我们从配音开始接手，并负责入库。
+- 文档：`docs/gemini_handoff/`，内含 01_部署方案、02_交接文档、03_提示词集、04_字段格式_gemini_field_v1。Drive 位置：`00_Gemini交接/`（id 记在 `config/drive.json` 的 `handoff_folder`）。
+- 每期 Drive 文件命名：`00_数据包_<EP>_<时间>.md`｜`G1_实地_<EP>_<批次>.json`（+摘要 md）｜`G2_选题卡_<EP>`｜`G3_事实表_<EP>`｜`G4_方案与逐字稿_<EP>_v<N>`｜`G5_修订记录_<EP>.md`｜`G6_数据复盘_<EP>_<检查点>`。
+- 导出数据包（只读，不采集、不写库）：
+  `python3 scripts/export_gemini_pack.py <EP> [--topic N] [--all-candidates] [--q 词…]`
+  → `projects/<EP>/handoff/gemini_pack_<EP>_<时间>.md`。之后用 UploadFile 传到 06/<EP>，再跑 `backup.py record`。
+- G1 入库（用户下指令后才执行）：
+  `python3 scripts/gemini_field_convert.py check <json>` → `convert <json> --out projects/<EP>/research/field_gemini/<批次>` → `ingest_field.py <目录> --topic "<选题>" --label gemini-spark`。
+  check 有错误就不转换（退出码 2），把错误清单交给 Gemini，用提示词 E 让它重交。
+- 对照验证（上线前一次，用户下指令才执行）：
+  `python3 scripts/gemini_field_convert.py diff <json> <douyin-field-collect 输出目录> --out projects/<EP>/research/gemini_vs_script.md`
+- 接手前的硬规则复核清单：见 01_部署方案 §5。

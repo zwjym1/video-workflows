@@ -1,0 +1,173 @@
+{
+ "id": "jellyfish_v6g",
+ "verdict": "返修（卡在：路人 3–10s 4/4 轮划走，中位 7.7s，理由分散）",
+ "total": 73.8,
+ "hook": 76.7,
+ "body": 73.7,
+ "value": 40.3,
+ "hook_obj": 69.0,
+ "body_obj": 82.7,
+ "hook_obj_items": {
+  "frame0_probe": 55.0,
+  "first_voice_s": 100.0,
+  "info3": 90.0,
+  "no_term_10s": 0.0,
+  "visual3": 100.0
+ },
+ "body_obj_items": {
+  "cps": 86.2,
+  "terms_per_min": 82.3,
+  "info_max_gap": 54.4,
+  "static_s": 100.0,
+  "sub_height": 100.0,
+  "sub_contrast": 100.0,
+  "loudness": 100,
+  "beat_sync": 70.7,
+  "cover": 60.0,
+  "bgm_fit": 75.2
+ },
+ "subj": {
+  "stay2": 1.0,
+  "stay5": 1.0,
+  "finish": 0.5,
+  "share": 0.2,
+  "save": 0.4,
+  "swipe_med": 15.75,
+  "swipe_never": 0.6,
+  "hook": 68.75,
+  "clarity": 63.75,
+  "novelty": 43.75,
+  "payoff": 52.5,
+  "visual": 72.5,
+  "emotion": 52.5,
+  "f0_rec": 1.0,
+  "f0_conf": 0.55,
+  "f0_subject": "发光水母状尾迹",
+  "S_hook": 84.375,
+  "S_body": 60.25,
+  "S_value": 40.312,
+  "runs": 1
+ },
+ "vetoes": [],
+ "must_fix": [
+  "事实已核但观众会质疑 → 画面上把出处写大写清：24.2s「尾焰被压成细细一条」：因果说反：高空低压应使尾焰膨胀而非压细，且与29.7秒「向四周猛烈膨胀」自相矛盾",
+  "用了第三方素材（片内署名：AlphaStar、Atumu、Windsky、央视CCTV、玻纤轻木）：署名≠授权，抖音对搬运/非原创会限流，发前确认授权或合理引用（解说为主、引用片段短）"
+ ],
+ "persona_fixes": [
+  {
+   "t": "0.0–1.5",
+   "fix": "首帧改用1.5秒济南城市实拍全景，别用放大裁切，保留天黑还发光的悬念",
+   "why": "hook/visual：路人一眼看懂且有反差"
+  },
+  {
+   "t": "2.5–4.4",
+   "fix": "2.5秒揭晓是火箭时同步上角标「长征六号改·太原·18:15」，别拖到4.4秒",
+   "why": "novelty：科技粉提前拿到硬信息"
+  },
+  {
+   "t": "16.1–21.2",
+   "fix": "16秒地影换成「山顶还能看日落」类比，加50/100公里高度标尺动画",
+   "why": "clarity：学生长辈一遍能懂"
+  },
+  {
+   "t": "23.4–29.3",
+   "fix": "删掉尾焰被压成细细一条，改成空气越稀尾焰越膨胀，加地面/高空对比",
+   "why": "fact/clarity：消除机制矛盾"
+  },
+  {
+   "t": "39.6–51.5",
+   "fix": "三条件做成可截图定格卡，结尾3秒复述傍晚+无风+无云",
+   "why": "payoff/save/share：便于收藏转发"
+  }
+ ],
+ "rubric_version": 2,
+ "edit": 93.1,
+ "edit_detail": {
+  "edit": 93.1,
+  "edit_obj": 100.0,
+  "edit_subj": 77,
+  "deductions": {
+   "flash": 0,
+   "intra": 0,
+   "cluster": 0,
+   "pingpong": 0,
+   "lumflip": 0,
+   "mismatch": 0,
+   "style_switch": 0.0
+  },
+  "after3s": {
+   "flash": 0,
+   "intra": 0,
+   "cluster": 0,
+   "pingpong": 2,
+   "lumflip": 0,
+   "mismatch": 0
+  },
+  "fixes": [],
+  "false_positives": [],
+  "focus_failed_segments": null,
+  "focus_segments": null
+ },
+ "bgm_fit": {
+  "score": 75.2,
+  "subscores": {
+   "tempo": 100.0,
+   "drums": 24.9,
+   "first3": 100.0,
+   "hits": 100.0,
+   "mode": 40.0,
+   "mask": 70.0
+  },
+  "tempo_bpm": 129.2,
+  "first3s_rel_db": 1.8,
+  "hit_lift": 1.76,
+  "has_bgm": true,
+  "note": "特征推断（避开人声频段），情绪/版权需人耳确认；目标=科技揭秘「哇」：利落鼓点、前 3 s 有能量、踩切点、不压人声"
+ },
+ "focus_3_10": {
+  "runs": [
+   78,
+   76,
+   72,
+   78
+  ],
+  "median": 77,
+  "swipe": {
+   "passerby": [
+    4.1,
+    6.9,
+    8.4,
+    8.9
+   ],
+   "student_elder": [
+    7.9,
+    5.4,
+    4.0,
+    7.8
+   ],
+   "tech_fan": [
+    8.4,
+    9.0,
+    6.9,
+    4.2
+   ],
+   "expert": [
+    8.8,
+    7.7,
+    8.0,
+    9.6
+   ],
+   "social_sharer": [
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ },
+ "yunzhi_selfcheck_3.2_5.3": "判波动：本轮及 v6b–v6f 共 20 轮无「亮光/发射架」理由；c03 运动 3.11、c05 2.02，自 v6e 未变，远高于定格阈 0.15",
+ "arbitration": [
+  "剔除 24.2s 因果说反误报（facts F9）",
+  "pingpong 全退 85→100"
+ ]
+}

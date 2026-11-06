@@ -5,7 +5,7 @@
 |---|---|---|
 | douyin-field-collect | /home/box/agent-data/workflows/douyin-field-collect/SKILL.md（脚本 /workspace/skill_pkg/douyin-field-collect/scripts） | 阶段 A 采集（唯一采集入口） |
 | skill-1792258671706 科技短视频前期调研与核查（选题闸门） | /home/box/agent-data/workflows/skill-1792258671706/SKILL.md | 阶段 A/B 的事实表、素材溯源、红线参考；其中「抖音权重 40%」「通政使交包为硬门槛」「万能壳禁令」已废止 |
-| skill-1792258650910 科普短视频（猫学长 2D Remotion） | /home/box/agent-data/workflows/skill-1792258650910/SKILL.md | 阶段 D–F 的 2D 制作方法（时间戳驱动、分区防遮挡、5 帧布局检查、审核图集、PC 渲染）；§2 钩子公式、§3 句式要求、§5 逐句配音已废止 |
+| skill-1792258650910 科普短视频（猫学长 2D Remotion） | /home/box/agent-data/workflows/skill-1792258650910/SKILL.md | 阶段 D–F 的 2D 制作方法（时间戳驱动、分区防遮挡、5 帧布局检查、审核图集）；短片在盒上渲，只把成片和两张封面传到 PC（2026-10-29）。§2 钩子公式、§3 句式要求、§5 逐句配音已废止 |
 | skill-1792258664507 小学讲题课程视频 | /home/box/agent-data/workflows/skill-1792258664507/SKILL.md | 讲题/课程类选题时替代猫学长路线 |
 | GitHub 仓库 video-workflows | /workspace/video-workflows（= /workspace/vw 副本），最新 97923ab | 上述 skill 的版本存档、两套模板 workflows/hot-science-roadster、ai-debunk-iphone |
 

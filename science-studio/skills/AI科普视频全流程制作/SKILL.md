@@ -31,7 +31,7 @@ description: >-
 每步结束：`scripts/state.py stage|set|log|approve`。
 
 ## 渲染
-PC 在线（ListMachines）→ PC，每条命令用户批准；否则盒子。步骤见 production_config。
+短片默认在盒子上渲；传到 PC 的只有定稿成片和两张封面。~~PC 在线（ListMachines）→ PC，否则盒子~~【已废止 2026-10-29】。步骤见 production_config。本 skill 草稿已废止，以 `skills/final/SKILL.md` 和 `config/workflow_spec.md` 为准。
 
 ## 待首期验证后补
 - PC 实测并发/耗时、PC 端 ffmpeg/Blender 情况

@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jellyfish_v6h/extra_3-10/focus_run.json"
+ ],
+ "n_checks": 1,
+ "confirmed": 0,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 1,
+ "precision_est": 0.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "把 #5 央视升空入点提前到 4.42（#4 缩到 0.8s），让「10月23号傍晚」第一帧就落在太原画面；#5 开头亮度压到 75%→100% 消除句首画面与地名不符、并压平暗→强光的亮度跳",
+   "t": [
+    4.42,
+    4.6
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

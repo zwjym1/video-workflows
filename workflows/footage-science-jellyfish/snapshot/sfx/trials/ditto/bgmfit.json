@@ -1,0 +1,26 @@
+{
+ "version": 1,
+ "source": "../../projects/EP-20261029-01/sfx/trials/ditto/mix.wav",
+ "decoded_from": "proxy",
+ "has_bgm": true,
+ "tempo_bpm": 107.7,
+ "perc_ratio_nonspeech": 0.159,
+ "first3s_rel_db": 1.74,
+ "strong_onsets_per_s": 2.72,
+ "cut_hits_40ms": 2,
+ "cut_hits_chance": 4.56,
+ "hit_lift": 0.44,
+ "mode": "minor",
+ "mode_conf": 0.068,
+ "speech_band_snr_db": 42.9,
+ "subscores": {
+  "tempo": 98.1,
+  "drums": 4.3,
+  "first3": 100.0,
+  "hits": 0.0,
+  "mode": 40.0,
+  "mask": 100.0
+ },
+ "score": 52.7,
+ "note": "特征推断（避开人声频段），情绪/版权需人耳确认；目标=科技揭秘「哇」：利落鼓点、前 3 s 有能量、踩切点、不压人声"
+}

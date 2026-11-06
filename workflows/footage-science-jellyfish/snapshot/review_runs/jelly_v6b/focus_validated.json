@@ -1,0 +1,47 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v6b/focus_run.json"
+ ],
+ "n_checks": 2,
+ "confirmed": 2,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 0,
+ "precision_est": 1.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#9",
+   "text": "   修改 style_jump 脚本标记段内实拍-2D-实拍来回跳，需核对图层 composition 轨迹偏左上角，印章居中，视觉重心分离",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "核对#9内实拍-2D-实拍跳变，统一为实拍城市底+2D轨迹/印章两层 脚本已标风格来回跳，会被懂行观众看出穿帮",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

@@ -1,0 +1,63 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v6h/focus_run.json"
+ ],
+ "n_checks": 3,
+ "confirmed": 2,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 1,
+ "precision_est": 1.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#9",
+   "text": "   修改 style_jump 检到实拍-2D-实拍来回跳，本镜内翻 vo_mismatch 细白斜线像飞机尾迹，看不出火箭 composition 天际线静止，尾段0.4s无新信息",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "锁定「山东」贴纸不再二次弹动，保持同一条实拍长镜；10.5-10.9静态天际线剪掉0.3s 消掉实拍-2D-实拍来回跳，且尾部无信息",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "在细尾迹上叠一层箭体/尾焰小图标或标注「长征六号改尾迹」 当前画面像飞机，与口播「它」指代偏弱",
+   "t": [
+    9.5,
+    10.4
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

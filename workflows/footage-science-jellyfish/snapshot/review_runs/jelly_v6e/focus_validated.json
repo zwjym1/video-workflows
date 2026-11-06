@@ -1,0 +1,63 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v6e/focus_run.json"
+ ],
+ "n_checks": 3,
+ "confirmed": 2,
+ "false_positive": 1,
+ "overstated": 0,
+ "unverified": 0,
+ "precision_est": 0.667,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#9",
+   "text": "   修改 style_jump 脚本测得实拍-2D-实拍，夜景天际线风格反复 subtitle 底部字幕压城市灯光，双行文字堆叠",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "统一#9为实拍调色（与#7#8同夜景质感），或整段套同一2D描边 消除实拍-2D-实拍来回跳",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "persona:student_elder",
+   "text": "那团像水母的烟是什么？没字幕说明",
+   "t": [
+    7.8,
+    7.8
+   ],
+   "checks": [
+    {
+     "type": "nosub",
+     "status": "false_positive",
+     "evidence": "ASR 有 2 句、OCR 在画面里读到其中 2 句的字幕文字"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

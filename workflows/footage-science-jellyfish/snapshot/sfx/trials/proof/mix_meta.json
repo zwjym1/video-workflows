@@ -1,0 +1,119 @@
+{
+ "total_s": 51.536,
+ "vo_hf4k_peak_before_after": [
+  -10.0,
+  -12.34
+ ],
+ "Rv_dB": -15.74,
+ "bgm": {
+  "title": "Proof(Slowed)",
+  "author": "GOLD999",
+  "music_id": "7604414083081996298",
+  "in_point_s": 0.9,
+  "src_lufs": -8.4,
+  "base_dB": -17.5,
+  "duck_dB": -8.0,
+  "tail_fade_s": 1.5
+ },
+ "results": {
+  "mix": {
+   "I": -15.9,
+   "TP": -2.5,
+   "LRA": 3.2,
+   "hf4k_peak_dBFS": -14.2
+  },
+  "mix_aac": {
+   "I": -16.0,
+   "TP": -2.5,
+   "LRA": 3.2,
+   "hf4k_peak_dBFS": -14.42,
+   "pre_gain_dB": 0.0
+  }
+ },
+ "events": [
+  {
+   "t": 3.37,
+   "sfx": "pop",
+   "rel_Rv_dB": -14,
+   "note": "UFO 打叉"
+  },
+  {
+   "t": 3.9,
+   "sfx": "pop_up1",
+   "rel_Rv_dB": -14,
+   "note": "名词戳 huojian"
+  },
+  {
+   "t": 5.66,
+   "sfx": "pop",
+   "rel_Rv_dB": -14,
+   "note": "名词戳 cz6"
+  },
+  {
+   "t": 7.343,
+   "sfx": "pop",
+   "rel_Rv_dB": -15,
+   "note": "地名戳 c07_cc_bj"
+  },
+  {
+   "t": 8.46,
+   "sfx": "pop",
+   "rel_Rv_dB": -15,
+   "note": "地名戳 c08_tl_sx"
+  },
+  {
+   "t": 9.41,
+   "sfx": "pop",
+   "rel_Rv_dB": -15,
+   "note": "地名戳 c09_jn_sd"
+  },
+  {
+   "t": 11.44,
+   "sfx": "pop",
+   "rel_Rv_dB": -14,
+   "note": "名词戳 gaodu"
+  },
+  {
+   "t": 22.016,
+   "sfx": "pop_up1",
+   "rel_Rv_dB": -14,
+   "note": "名词戳 why"
+  },
+  {
+   "t": 28.486,
+   "sfx": "thud",
+   "rel_Rv_dB": -14,
+   "note": "名词戳 bwfz"
+  },
+  {
+   "t": 31.205,
+   "sfx": "thud",
+   "rel_Rv_dB": -13,
+   "note": "尾气猛地胀开"
+  },
+  {
+   "t": 41.705,
+   "sfx": "pop_up1",
+   "rel_Rv_dB": -15,
+   "note": "清单打勾 k1"
+  },
+  {
+   "t": 43.145,
+   "sfx": "pop_up1",
+   "rel_Rv_dB": -15,
+   "note": "清单打勾 k2"
+  },
+  {
+   "t": 44.105,
+   "sfx": "pop_up1",
+   "rel_Rv_dB": -15,
+   "note": "清单打勾 k3"
+  },
+  {
+   "t": 45.443,
+   "sfx": "thud",
+   "rel_Rv_dB": -14,
+   "note": "少一样 打叉"
+  }
+ ]
+}

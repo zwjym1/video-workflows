@@ -1,0 +1,68 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v3/focus_run.json"
+ ],
+ "n_checks": 4,
+ "confirmed": 2,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 2,
+ "precision_est": 1.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#9",
+   "text": "   修改 style_jump 实拍-2D-实拍来回跳（脚本8.49-9.90） composition 主体又黑又糊，几乎看不清是什么 subtitle 底部字幕压在城市灯光高亮上，可读性差",
+   "t": [
+    8.49,
+    9.9
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    },
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "#9 提亮暗部并给主体加描边，或直接换成片内已有的#7同款尾迹实拍 2D暗块看不清，且触发实拍-2D-实拍跳",
+   "t": [
+    8.49,
+    9.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "删顶部「10月23日 18:15·太原」，只留底部口播字幕 顶部时间信息与口播重复、画面三层字",
+   "t": [
+    5.6,
+    6.61
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

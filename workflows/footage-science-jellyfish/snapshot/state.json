@@ -1,0 +1,170 @@
+{
+  "id": "EP-20261029-01",
+  "title": "火箭水母云：天黑了它为什么还在发光",
+  "tier": "daily",
+  "created_at": "2026-10-29 00:19 (UTC+8)",
+  "updated_at": "2026-10-29 04:59 (UTC+8)",
+  "stage": "H_delivery",
+  "stage_status": "in_progress",
+  "next_action": "v6h 已交付 deliver/ 与 xfer_jelly，待用户早上传 PC",
+  "stages": {
+    "A_topic": "done",
+    "B_creative": "done",
+    "C_script": "done",
+    "D_storyboard": "done",
+    "E_production": "done",
+    "F_qc": "done",
+    "G_review": "done",
+    "H_delivery": "in_progress"
+  },
+  "approved_decisions": [],
+  "completed": [
+    "2026-10-29 01:21 (UTC+8) A 选题 完成",
+    "2026-10-29 01:21 (UTC+8) B 创意 完成",
+    "2026-10-29 01:21 (UTC+8) C 逐字稿 完成",
+    "2026-10-29 01:21 (UTC+8) D 分镜 完成",
+    "2026-10-29 01:21 (UTC+8) E 制作 完成",
+    "2026-10-29 01:21 (UTC+8) F 质检 完成",
+    "2026-10-29 01:21 (UTC+8) G 审片 完成"
+  ],
+  "topic": {
+    "chosen": null,
+    "candidates_file": "research/topics.md"
+  },
+  "creative": {
+    "chosen": null,
+    "file": "creative/directions.md"
+  },
+  "script": {
+    "latest": "vo/subs_v6.srt",
+    "versions": [],
+    "approved": false,
+    "locked_paragraphs": []
+  },
+  "vo": {
+    "model": "s2.1-pro-free",
+    "voice_id": "cfd828bdf120410c923fac0056c687c2",
+    "latest": null,
+    "listen_approved": false
+  },
+  "storyboard": {
+    "latest": null,
+    "versions": []
+  },
+  "shots": [],
+  "project_paths": {
+    "remotion": null,
+    "blender": null,
+    "renders": "render/",
+    "pc_folder": null
+  },
+  "renders": [],
+  "failures": [],
+  "open_issues": [],
+  "depends": {
+    "topic": [
+      "creative",
+      "script",
+      "storyboard",
+      "vo",
+      "shots",
+      "renders"
+    ],
+    "creative": [
+      "script",
+      "storyboard",
+      "vo",
+      "shots",
+      "renders"
+    ],
+    "script": [
+      "vo",
+      "storyboard",
+      "shots",
+      "renders"
+    ],
+    "vo": [
+      "shots(timing)",
+      "renders"
+    ],
+    "storyboard": [
+      "shots",
+      "renders"
+    ],
+    "shots": [
+      "renders"
+    ]
+  },
+  "log": [
+    "2026-10-29 00:19 (UTC+8) 建档（daily）",
+    "2026-10-29 01:21 (UTC+8) stage A_topic done",
+    "2026-10-29 01:21 (UTC+8) stage B_creative done",
+    "2026-10-29 01:21 (UTC+8) stage C_script done",
+    "2026-10-29 01:21 (UTC+8) stage D_storyboard done",
+    "2026-10-29 01:21 (UTC+8) stage E_production done",
+    "2026-10-29 01:21 (UTC+8) stage F_qc done",
+    "2026-10-29 01:21 (UTC+8) stage G_review done",
+    "2026-10-29 01:21 (UTC+8) set script.latest vo/subs_v1.srt",
+    "2026-10-29 01:21 (UTC+8) set render.latest remotion/out/v5/film_v5.mp4",
+    "2026-10-29 01:21 (UTC+8) log v5 审片：总分73.6 钩子76.1 剪辑89.2 cutq97 bgmfit30 focus(3–10s,qoder-flash-qwen×3)=74/62/71 中位71；闪帧0；返修2轮已用完",
+    "2026-10-29 01:21 (UTC+8) stage H_delivery in_progress PC 离线：待 PC 上线后分块(8MB)传 成片+2封面 到 D:\\编程\\项目\\视频制作\\作品\\2026-10-29_火箭水母云\\发布\\ 并校验 sha256",
+    "2026-10-29 03:06 (UTC+8) log v6b 检查1：render.log 完整(DONE 77s)，成片51.53s，封面与v5逐字节相同；口播已改「少一样，就很难看到这么完整的水母」(成片ASR确认)；北京0.929s 山西0.952s；c05换成央视升空段1.417s；BGM保留 一切都在变好（生命力BGM）",
+    "2026-10-29 03:06 (UTC+8) log v6b 自审2：cutquality(设计切点)85.0(v6首版64.2，v5 97)；bgmfit 75.2(review无分轨)/75.5(带分轨)，v5为30",
+    "2026-10-29 03:06 (UTC+8) log v6b 自审3：qwen精审3–10s ×3 = 71/76/66 中位71",
+    "2026-10-29 03:06 (UTC+8) log v6b 自审4：review --runs 2 总分65.5 钩子63.6 剪辑80.8；同条件重跑v5对照=70.9/67.2；r3/r4 补跑中",
+    "2026-10-29 03:14 (UTC+8) log v6b 自审5：4轮主观合并 v6b 总分65.4 钩子64.2（v5同条件对照68.3/63.3）；未达用户标准73.6/76.1 → 按规则保留v5为最终版，deliver/与xfer_jelly不动（sha256已复核）；v6b产物留在 remotion/out/v6b 与 tools/review/out/jelly_v6b",
+    "2026-10-29 03:16 (UTC+8) set render.latest remotion/out/v6b/film_v6b.mp4",
+    "2026-10-29 03:16 (UTC+8) set script.latest vo/subs_v6.srt",
+    "2026-10-29 03:16 (UTC+8) log 用户拍板最终版=v6b（事实改正优先）：deliver/ 换成片 sha256 06c9eff9…4a53，v5 移入 deliver/v5旧版/，封面与v5逐字节相同未换；xfer_jelly 重切4块+SUMS+传输步骤已更新；发布文案改 v6b 版（章节 00:10/00:33/00:39，署名加太原网友）",
+    "2026-10-29 03:16 (UTC+8) stage H_delivery in_progress 待 PC 上线：按 /workspace/xfer_jelly/PC传输步骤.md 分块传 v6b 成片+2封面到 发布\\ 并校验 sha256 06c9eff9…4a53",
+    "2026-10-29 03:30 (UTC+8) log v6c 开工：v6b 源文件备份到 backup_v6b/；分轨核对：stem_bgm+stem_vo+sfx_only 与 mix.wav 同一次导出(01:58)，求和×(-2.28dB)后残差 -81.7dB，一致；成片音轨解码与 mix_aac 一致。v6c 不动音频",
+    "2026-10-29 03:31 (UTC+8) log v6c 改动完成：snap FORCE c05→4.305（最近 4.4 的强拍）；c04 去摇(cx 3070 固定)+PUSH 1.00→1.12；c05 1.9 倍速可见源 101–104.57；c06b 加太原戳+6.3–7.1 尾迹描线；四地名戳统一 (300,1350)；空气稠条改两行右缘≈990；太阳已落山条底 .88；山东镜字幕 40% 暗条；tsc 通过；开始渲染 out/v6c",
+    "2026-10-29 03:34 (UTC+8) log v6c 渲染+混流完成 sha256 f4865943…3f8（音轨与 v6b 同一 mix_aac）；自检：闪帧 0（逐帧扫描+cutquality），lumflip 0，大跳变全在设计切点；cutquality_design 85→79，唯一新增扣分为 4.305–6.186 pingpong，系 c06b 风格分类 p2d 0.556→0.498 擦边翻转（c05/c06b 均为实拍，检测器误判类）；五处静帧已看过。开始 qwen focus 3–10s ×3",
+    "2026-10-29 03:39 (UTC+8) log v6c focus 3–10s ×3：71/72/74 中位 72（v6b 71/76/66 中位 71），未变差；focus_run.json 取中位 r2。判定通过，开始替换交付",
+    "2026-10-29 03:40 (UTC+8) log v6c 交付：deliver/ 成片换 v6c（sha256 f48659433a8aa65477df0703f1f9833a2250ccf2599cfcde0b0260e733e093f8，26322051 B），v6b 移入 deliver/v6b旧版/；封面与 v6b 逐字节相同未换；SHA256SUMS 更新；xfer_jelly 重切 4 块，SUMS 与 PC传输步骤 已更新；发布文案章节时间以口播为准，不变，未改；分轨一致未重导",
+    "2026-10-29 03:40 (UTC+8) set final_version v6c",
+    "2026-10-29 03:40 (UTC+8) stage H_delivery in_progress 待 PC 上线：按 /workspace/xfer_jelly/PC传输步骤.md 传 v6c",
+    "2026-10-29 03:46 (UTC+8) log v6d 开工（审片官复审 v6c 返修：划走中位 4.4s；c04 0.7s 一闪、4.305 切在「箭」字中间；误判 2D 的是 c05）",
+    "2026-10-29 03:48 (UTC+8) set vertical 热门科技和奇观背后的原理 / 太空天文奇观",
+    "2026-10-29 03:48 (UTC+8) set vertical_by 允知标注",
+    "2026-10-29 03:48 (UTC+8) log 垂类：「热门科技和奇观背后的原理 / 太空天文奇观」（由允知标注）",
+    "2026-10-29 03:48 (UTC+8) log v6d 改动完成：c05 入点 4.305→4.6（VO 能量：「箭」4.46 收尾、「十」4.64 起，4.6 落在气口，非拍点）；c04 0.695→0.99s，PUSH 1.00→1.18 不摇；c05 倍速 1.9→2.2（可见源 101–104.49）、开头 0.2s 亮度 85%→100%、高光顶 0.86→0.73；太原戳改「太原·起飞」6.80 弹入、居中 size120；描线 6.8→7.5 走完并静止到 7.6，线宽 7→14；tsc 通过；开始渲染 out/v6d",
+    "2026-10-29 03:50 (UTC+8) log v6d 渲染+混流 sha256 390f653a…e4f7（26314914 B，音轨同 v6b）；闪帧 0，大跳变全在设计切点；cutquality 85 / 设计 79（同 v6c；4.6–6.186 pingpong 仍因 c05 亮白尾焰被判 2D p2d 0.88，检测器误判）；静帧已看：c05 开头压暗渐亮、太原·起飞 6.8 弹入、描线 7.45 走完并保持。开始 focus ×3",
+    "2026-10-29 03:54 (UTC+8) log v6d focus ×3：分 66/71/68 中位 68；路人划走 6.4/4.9/5.0 中位 5.0s < v6b 6.6s → 不达标，按规则恢复 v6b 交付（主因：c05 高光再压 15% 后发灰发糊，路人/科技迷 4.6–5.0 划走理由为「雾里火箭、灰调、像 CG」）",
+    "2026-10-29 03:55 (UTC+8) log 恢复 v6b 交付：deliver/ 成片换回 v6b（sha256 06c9eff9…4af4a53），v6c 移入 deliver/v6c旧版/（返修单补记 c05 2.2×→1.9×），v6d 返修单放 deliver/v6d未采用/ 与 review/返修单_v6d.md；SHA256SUMS 恢复 v6b 版并校验 OK；xfer_jelly 重切回 v6b 4 块（分块哈希与原 v6b 完全一致），SUMS 与 PC传输步骤 已改回；发布文案未变（一直是 v6b 版）。工程源码停在 v6d，v6b/v6c 源码在 backup_v6b/ backup_v6c/",
+    "2026-10-29 03:55 (UTC+8) set final_version v6b",
+    "2026-10-29 03:55 (UTC+8) stage H_delivery in_progress 待 PC 上线：按 /workspace/xfer_jelly/PC传输步骤.md 传 v6b",
+    "2026-10-29 03:56 (UTC+8) log v6e 开工（最后一轮，5:00 收尾）：c05 高光恢复 v6c 0.86，保留开头亮度渐强；检查 c05 开头帧决定是否后移入点",
+    "2026-10-29 03:56 (UTC+8) log v6e 改动：c05 高光曲线恢复 v6c（0.85/0.74 1/0.86）；开头 0.2s 亮度 85%→100% 保留；查帧：源 101.0–102.0 为雾里光团、箭体几乎不动 → 源入点 101.0→102.3，倍速 2.2→1.55，可见源 102.3–104.76（<104.97）；成片入点仍 4.6；其余与 v6d 相同。开始渲染 out/v6e",
+    "2026-10-29 03:58 (UTC+8) log v6e 渲染+混流 sha256 98dd47d0…74b0d（26292722 B，音轨同 v6b，封面同）；闪帧 0，大跳变全在设计切点；cutquality 85 / 设计 85（c05 p2d 0.88→0.80）；抽帧：c05 开头即箭体+清楚喷焰、6.16 无下一段素材串帧。开始 focus ×3",
+    "2026-10-29 04:02 (UTC+8) log v6e focus ×3：分 71/71/71 中位 71；路人划走 6.4/7.9/7.7 中位 7.7s ≥ v6b 6.6s → 达标，替换交付（focus_run.json 取 r3）",
+    "2026-10-29 04:02 (UTC+8) log v6e 交付：deliver/ 成片换 v6e（sha256 98dd47d0c9f7fcb00992193e3cd384a1df1233bda6f54c6b54df614c49e74b0d，26292722 B），v6b 移入 deliver/v6b旧版/；审片_返修单_v6e.md 列出相对 v6d 与相对 v6b 的全部改动（含倍速 2.2→1.9→2.2→1.55）；SHA256SUMS 更新校验 OK；封面未变；发布文案未变；xfer_jelly 重切 4 块，SUMS/PC传输步骤 已更新",
+    "2026-10-29 04:02 (UTC+8) set final_version v6e",
+    "2026-10-29 04:02 (UTC+8) stage H_delivery in_progress 待 PC 上线：按 /workspace/xfer_jelly/PC传输步骤.md 传 v6e",
+    "2026-10-29 04:14 (UTC+8) log v6f 开工（复审 v6e：路人 6.4s 划走，6.2–6.8 只有灰弧不动）：只改描线时间与太原镜推镜/提亮",
+    "2026-10-29 04:15 (UTC+8) log v6f 改动：c06b 去微摇（cx 1010→1000 改固定 1005）、缓推 1.06→1.08、尾迹提亮约 20%（curves 0.6→0.72，天空 <0.36 不动）；描线 6.8–7.5 改 6.2–7.4 走完、7.4–7.6 定住，坐标改取 c06b 素材自身并套同一缓推变换；太原·起飞 6.8 不动；tsc 通过；开始渲染 out/v6f",
+    "2026-10-29 04:17 (UTC+8) log v6f 渲染+混流 sha256 e93bdb34…0cbd（26456739 B，音轨同 v6b，封面同）；抽帧 6.2/6.5/6.8/7.2/7.5 看过：描线贴尾迹、7.5 定住、太原·起飞 6.8 起弹；开始 focus ×3",
+    "2026-10-29 04:21 (UTC+8) log v6f 自检：闪帧 0，大跳变全在设计切点，cutquality 设计 85（同 v6e）；focus ×3 分 76/76/76 中位 76，路人划走 9.9/7.9/7.8 中位 7.9s ≥ v6e 7.7s → 达标，替换交付（focus_run.json 取 r2）",
+    "2026-10-29 04:21 (UTC+8) log v6f 交付：deliver/ 成片换 v6f（sha256 e93bdb34d26066735b2eb3570ee8d53ef658f8d1873ea93016586946084f0cbd，26456739 B），v6e 移入 deliver/v6e旧版/；审片_返修单_v6f.md；SHA256SUMS 更新校验 OK；封面/文案未变；xfer_jelly 重切 4 块，SUMS/PC传输步骤 已更新",
+    "2026-10-29 04:21 (UTC+8) set final_version v6f",
+    "2026-10-29 04:21 (UTC+8) stage H_delivery in_progress 待 PC 上线：按 /workspace/xfer_jelly/PC传输步骤.md 传 v6f",
+    "2026-10-29 04:32 (UTC+8) log v6g 开工（复审 v6f：路人 6.5s，6.2–6.8 只有细线；实测提亮 11–17%）",
+    "2026-10-29 04:33 (UTC+8) log v6g 改动：太原·起飞 6.8→6.186 随切点弹入；描线 14→22px（黑描边 26→34），笔头加发光光点（径向渐变光晕 r≈58 微闪 + 白芯 r13，走完后消失）；尾迹提亮曲线改 0.55/0.67 0.8/0.95（同法实测 v6f 17%→约 20.5%，天空 −1.6%）；描线时长 6.2–7.4、坐标不变；开始渲染 out/v6g",
+    "2026-10-29 04:35 (UTC+8) log v6g 渲染完成 sha256 f5c7a4d4…7ea6（26455169 B），封面与 v6b 逐字节一致；抽帧 6.2/6.5/6.8/7.2 描线贴尾迹、光点在笔头、戳 6.2 起弹；qwen 3–10s ×3 运行中",
+    "2026-10-29 04:41 (UTC+8) set final_version v6g",
+    "2026-10-29 04:41 (UTC+8) stage H_delivery in_progress v6g 已交付 deliver/ 与 xfer_jelly，待用户早上传 PC",
+    "2026-10-29 04:41 (UTC+8) log v6g 自检：闪帧 0，描线贴尾迹，qwen 74/72/71（中位 72）、路人 8.1/3.2/5.3s；无硬伤→替换 deliver（v6f→v6f旧版/），重切 xfer_jelly 4 块，返修单 v6g 已写",
+    "2026-10-29 04:51 (UTC+8) log v6h 开工：c08 山西镜改尾迹头部局部 100→125% 缓推；更正 v6g 返修单光点描述",
+    "2026-10-29 04:52 (UTC+8) log v6h 改动：c08 取景固定 cx820（不摇，原 1150→1100 摇）框住尾迹头部，源级 unsharp 0.7 锐化，PUSH 1→1.25 中心 340,275；时长切点贴纸不动；v6g 返修单光点描述已更正；开始渲染",
+    "2026-10-29 04:54 (UTC+8) log v6h 渲染完成 sha256 ca9c1936…29a5（26428493 B），封面一致；抽帧 9.0/9.4 头部特写推近、贴纸不动（8.5 仍是 c07，切点 8.53）；qwen ×3 运行中",
+    "2026-10-29 04:59 (UTC+8) set final_version v6h",
+    "2026-10-29 04:59 (UTC+8) stage H_delivery in_progress v6h 已交付 deliver/ 与 xfer_jelly，待用户早上传 PC",
+    "2026-10-29 04:59 (UTC+8) log v6h 自检：闪帧 0，qwen 72/76/66（中位 72）、路人 7.7/8.8/8.0s（中位 8.0）；无硬伤→替换 deliver（v6g→v6g旧版/），重切 xfer_jelly 4 块，返修单 v6h 已写"
+  ],
+  "render": {
+    "latest": "remotion/out/v6b/film_v6b.mp4"
+  },
+  "final_version": "v6h",
+  "vertical": "热门科技和奇观背后的原理 / 太空天文奇观",
+  "vertical_by": "允知标注"
+}

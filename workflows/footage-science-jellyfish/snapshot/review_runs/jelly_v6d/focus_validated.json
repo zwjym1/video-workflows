@@ -1,0 +1,84 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v6d/focus_run.json"
+ ],
+ "n_checks": 5,
+ "confirmed": 3,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 2,
+ "precision_est": 1.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#5",
+   "text": "   保留 style_jump 实拍-2D-实拍，4.60硬切进CCTV发射画面 subtitle 「10月23日18:15·太原」贴纸压在箭体正上方",
+   "t": [
+    4.6,
+    6.19
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "shot#6",
+   "text": "   修改 other 深色斜尾迹与#4高度雷同，信息零增量 rhythm 「太原·起飞」贴纸比口播「从太原起飞」晚1.1s style_jump 2D发射→实拍尾迹，主体由竖居中变斜线",
+   "t": [
+    6.19,
+    7.6
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "shot#9",
+   "text": "   修改 vo_mismatch 左上署名「佛山」，贴纸却写「山东」 style_jump 实拍-2D-实拍，且复用#3同一素材 other 尾迹极细几乎不可见，无圈注",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    },
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "把「山东」贴纸改成与署名一致的「佛山」，或换成片内已有的山西/山东实拍尾迹 署名与地名矛盾，懂行观众一眼穿帮",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

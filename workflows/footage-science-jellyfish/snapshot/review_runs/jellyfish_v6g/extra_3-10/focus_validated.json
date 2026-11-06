@@ -1,0 +1,14 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jellyfish_v6g/extra_3-10/focus_run.json"
+ ],
+ "n_checks": 0,
+ "confirmed": 0,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 0,
+ "precision_est": 0.0,
+ "claims": [],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

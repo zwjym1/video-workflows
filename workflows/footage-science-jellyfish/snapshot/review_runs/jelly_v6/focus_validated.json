@@ -1,0 +1,79 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v6/focus_run.json"
+ ],
+ "n_checks": 4,
+ "confirmed": 0,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 4,
+ "precision_est": 0.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#6",
+   "text": "   修改 vo_mismatch 口播说“起飞”，画面只有细斜线无箭体 composition 主体从巨大尾焰突变成几乎看不见的一条线",
+   "t": [
+    5.7,
+    6.65
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "shot#10",
+   "text": "   修改 vo_mismatch 说山东拍到，尾迹只占右侧一条几乎不可见 other 贴纸“山东”，左上署名却写河南平顶山 composition 满幅斜线突跳成远景城市天际线，主体消失",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "对#10做1.6倍放大裁切把尾迹和楼顶同框，左上署名改为实际山东来源 主体看不见＋署地与贴纸矛盾，是硬伤",
+   "t": [
+    9.48,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "persona:expert",
+   "text": "山东画面署河南，来源对不上",
+   "t": [
+    9.6,
+    9.6
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}

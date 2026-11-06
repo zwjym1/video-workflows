@@ -30,12 +30,22 @@ flowchart LR
 | `topics-workflow/` | 选题采集系统 v2、文案系统 v2、口播自检清单、抖音实地硬规则、field 模板、前期 SOP | `/workspace/topics/workflow/` |
 | `science-studio/` | 资产库和数据闭环：scripts/（含 Feedback Engine）、config/（workflow_spec、production_config）、docs/feedback_engine.md、adapters/（开放平台 stub）、reports/、projects/、reviews/ | `/workspace/science-studio/`（`db/studio.db` 不入库） |
 | `templates/render/` | PC 渲染 ps1 模板（光遗传学全片 1080 实测 13 分钟），以及 README | 来源 `/workspace/optogenetics/pc_pack/` |
-| `templates/transfer/` | 大文件分块传输：盒上 `split_for_pc.sh` 切块，PC 上 `merge_on_pc.ps1` 合并并校验 sha256 | — |
-| `templates/qc/` | `qc_render.sh` 跑黑场、冻帧、响度、帧数和接缝峰值机检；`contact_sheet_stills.sh` 生成抽帧联系表 | — |
+| `templates/transfer/` | 大文件分块传输：盒上 `split_for_pc.sh` 切块，PC 上 `merge_on_pc.ps1` 合并并校验 sha256；通用版 `make_pc_bundle.sh` + `assemble_from_home.ps1`（PC 上在 $HOME/下载/桌面自动找分块，按 sha256 校验，只新建不删除，2026-10-29） | — |
+| `templates/qc/` | `qc_render.sh` 跑黑场、冻帧、响度、帧数和接缝峰值机检；`contact_sheet_stills.sh` 生成抽帧联系表；`structure_gate.py` + `prerender_checklist.md` 渲前结构闸门（2026-10-29） | — |
+| `templates/review/`、`templates/state/` | 审片官一次交接单（时限 + 停止规则）；`stage_log.py` 给 STATE.md 记阶段用时（2026-10-29） | — |
 | `templates/audio/`、`templates/vo/` | 混音（film_mix）、配音拼接（stitch_v2）、ASR 抽查脚本 | 来源 `/workspace/optogenetics/audio`、`/workspace/optogenetics/vo` |
-| `skills/`、`workflows/`、`projects/`、`docs/` | 2026-10-18/19 的旧版 skill、Roadster 和 iPhone 模板、示例工程、运营文档（保留，未改） | — |
+| `workflows/footage-science-jellyfish/` | 实拍热点科普（火箭水母款）：网友/官方实拍逐镜署名 + 程序示意图 → Fish 整稿一条配音 → 抖音热歌 BGM（切点吸附强拍、−8 dB 闪避）→ 一句一字幕 → 盒上渲染 → 渲前结构闸门 → 自检 + 审片官 → 竖横两封面 + 「丞」朱印。标签 `footage-science-workflow-v1`；配套 `science-studio/tools/review/`（审片系统）、`templates/qc/structure_gate.py`、`templates/transfer/make_pc_bundle.sh`、`docs/效率审计_2026-10-29.md` | 来源 `/workspace/science-studio/projects/EP-20261029-01/` |
+| `skills/`、`workflows/`、`projects/`、`docs/` | 2026-10-18/19 的旧版 skill、Roadster 和 iPhone 模板、示例工程、运营文档。Roadster / iPhone 款 README 只加了共用效率模板的引用（2026-10-29），画风和渲染规则未改 | — |
 
-模板里写死了光遗传学那期的 composition 名、zip 名和混音文件名。新一期复制后照 `science-studio/config/production_config.md` 的「PC 渲染步骤」改。
+`templates/render/` 里写死了光遗传学那期的 composition 名、zip 名和混音文件名，只留给长片和 3D。短片按 `science-studio/config/production_config.md` 的渲染路由在盒上渲。
+
+## 返修效率（2026-10-29）
+各款片子共用，不另起画风。细则在 `science-studio/config/workflow_spec.md` §5.1，依据 `docs/效率审计_2026-10-29.md`。
+
+- 一次改动算改进，只当路人划走中位数比上一版高 ≥1.5 秒，且同一版本至少 4 次。局部补丁最多 2 轮，然后改结构，或把当前最好的一版交给用户拍板。
+- 主观自审限时 15 分钟，和审片官并行（`templates/review/审片官交接单模板.md`）。
+- 渲前过 `templates/qc/structure_gate.py`。定稿后才用 `templates/transfer/make_pc_bundle.sh` 打包一次，只含成片和两张封面。
+- **短片默认在盒子上渲**（2026-10-29 已定，约 60 秒及以内，预览和成片都在盒上）。传到 PC 的只有这 3 个文件，目录 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\发布\`。长片、3D、盒上渲不动的仍在 PC。~~PC 在线就在 PC 渲~~已废止。
 
 ## 启动口令（对 Bot 说）
 - 「开始新一期科普视频」走日常档，「开始新一期精品科普视频」走精品档，「继续上一期」接着上次做。

@@ -1,0 +1,122 @@
+{
+ "template": "footage-science-jellyfish",
+ "frozen_from": "EP-20261029-01 火箭水母云 v6h（2026-10-29 04:59 UTC+8 交付，成片 sha256 ca9c1936…29a5，26428493 B，51.536 s）",
+ "fit": "真实热点画面（网友/官方实拍）+ 程序示意图讲原理，竖屏 45–60 s",
+ "research": {
+  "field_collect": "douyin-field-collect（免登录）→ research/field/v/<id>/collect.json+report.md",
+  "facts": "research/facts.md（每条事实带来源）",
+  "footage_sources": "research/footage_sources.md → deliver/素材来源.md（每个实拍镜头片内署名）"
+ },
+ "voice": {
+  "provider": "fish.audio",
+  "endpoint": "/v1/tts/stream/with-timestamp",
+  "model": "s2.1-pro-free",
+  "reference_id": "906524668b6d4afe84736962e005cd09",
+  "note_state_json": "state.json 的 vo.voice_id 写的是 cfd828…（默认音色），实际 gen_v1/gen_v2.py 用的是 906524…；以脚本为准",
+  "speed": 1.0,
+  "temperature": 0.7,
+  "top_p": 0.7,
+  "latency": "normal",
+  "chunk_length": 300,
+  "takes": "整稿一条（带情绪提示 HINT），不逐句多条择优",
+  "post": "master_v4.py：去齿音 5–8 kHz、句间停顿 pause_v4.py、loudnorm",
+  "timing": "build_timing_v2.py + cards_timed_v4.json（字级时间）→ build_kt.py 生成 remotion/src/data/kt.ts（关键词时间点）",
+  "key": "env FISH_API_KEY only"
+ },
+ "subtitles": {
+  "rule": "一句一字幕（production_config.md）",
+  "component": "src/common/OneLineSubtitles.tsx",
+  "font": "SmileySans-Oblique（得意黑，媒体文件不入库）",
+  "maxFont": 84
+ },
+ "footage": {
+  "tool": "footage/clips.py",
+  "how": "每个镜头先用 ffmpeg 裁成 1080x1920@30（含变速、调色 curves、delogo、unsharp），Remotion 只做单向缓推，不摇",
+  "credit": "每镜左下署名小字（clips.py 的 credit 字段）"
+ },
+ "bgm": {
+  "tool": "science-studio/tools/dy_hot_bgm.py（抖音热歌榜免登录取曲 + 高能段/炸开起点分析）",
+  "pick": "按情绪选 4–5 首 → sfx/trials/run_trials.sh 逐首试混 + bgmfit 打分",
+  "final": {
+   "title": "一切都在变好（生命力BGM）",
+   "author": "Martins Garix",
+   "music_id": "7552893524178733082",
+   "in_point_s": 0.5
+  },
+  "snap": "sfx/snap_v2.py：切点吸附 BGM 强拍（strong_beat.json）"
+ },
+ "mix": {
+  "script": "sfx/mix_v2.py",
+  "bgm_src_lufs": -7.7,
+  "bgm_base_db": -18.2,
+  "bgm_base_formula": "-17.5 + (-8.4 - SRC_LUFS)",
+  "duck_db": -8.0,
+  "no_duck_first_s": 3.0,
+  "sfx_rel_vo_db": -14,
+  "vo_hf4k_limit_dbfs": -13.5,
+  "mix_hf4k_target_dbfs": -14.2,
+  "loudnorm": "两遍 I=-16 TP=-1.5 LRA=11",
+  "tail_fade_s": 1.5,
+  "measured": {
+   "I": -15.9,
+   "TP": -3.0,
+   "LRA": 3.2,
+   "hf4k_peak_dBFS": -14.64
+  }
+ },
+ "remotion": {
+  "version": "4.0.539",
+  "composition": "JellyFilm",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "stills": {
+   "CoverV": "1080x1920",
+   "CoverH": "1440x1080（抖音横封面 4:3）"
+  },
+  "seal": "BrandBadge：右上角「丞」朱印 brand/seal_t.png（78 px，第 4 帧盖下）"
+ },
+ "render": {
+  "where": "盒上（PC 离线）",
+  "cmd": "node scripts/render_box.mjs out/<ver> [起帧-止帧]",
+  "opts": {
+   "gl": "swangle",
+   "concurrency": 6,
+   "crf": 18,
+   "imageFormat": "jpeg",
+   "jpegQuality": 93,
+   "muted": true
+  },
+  "audio": "mix_aac.m4a 用 -c:a copy 混流",
+  "measured_s": {
+   "v1": 95,
+   "v2": 83,
+   "v3": 84,
+   "v4": 77,
+   "v5": 78,
+   "v6": 80,
+   "v6b": 77,
+   "v6c": 74,
+   "v6d": 76,
+   "v6e": 70,
+   "v6f": 75,
+   "v6g": 71,
+   "v6h": 73
+  }
+ },
+ "review": {
+  "self": "tools/review：cutquality（设计切点）、bgmfit、qwen 3–10 s 分段精审 ×3（focus_run.py）",
+  "reviewer": "审片官（另一个 bot）跑 review.py 全套 + 5 人设，出 返修单.md + verdict.json",
+  "gate_before_render": "templates/qc/structure_gate.py + templates/qc/prerender_checklist.md（本分支新增）"
+ },
+ "delivery": {
+  "pc_dir": "D:\\编程\\项目\\视频制作\\作品\\2026-10-29_火箭水母云\\发布\\",
+  "files": [
+   "火箭水母云_成片_1080x1920.mp4",
+   "火箭水母云_封面_竖9x16_1080x1920.png",
+   "火箭水母云_封面_横4x3_1440x1080.png"
+  ],
+  "transfer_used": "snapshot/transfer/assemble_final.ps1（CopyFromBox 只能落 C:\\Users\\Administrator，脚本在 $HOME 校验分块后合并到 D:）",
+  "transfer_next": "templates/transfer/make_pc_bundle.sh + assemble_from_home.ps1（本分支新增，通用）"
+ }
+}

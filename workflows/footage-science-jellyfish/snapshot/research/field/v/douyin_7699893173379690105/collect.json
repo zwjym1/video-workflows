@@ -1,0 +1,201 @@
+{
+ "platform": "douyin",
+ "video_id": "7699893173379690105",
+ "collected_at": "2026-10-29 00:24:39 (UTC+8)",
+ "login": "none（游客/公开接口）",
+ "detail": {
+  "status": "available",
+  "id": "7699893173379690105",
+  "url": "https://www.douyin.com/video/7699893173379690105",
+  "desc": "我用十万块钱的设备拍摄到了彩色的火箭云！ 2026年10月23日傍晚，成功观测到长六甲火箭发射，并看到了非常壮丽的火箭云🚀 其形成原理是：火箭推进剂燃烧产生的大量水蒸气，在距地面的……版本过低，升级后可展示全部信息",
+  "published": "2026-10-23 23:58 (UTC+8)",
+  "duration_s": 272.8,
+  "likes": 20590,
+  "comments": 899,
+  "collects": 3200,
+  "shares": 4498,
+  "hashtags": [
+   "windsky的风与天空",
+   "长六甲",
+   "火箭",
+   "火箭云",
+   "航天"
+  ],
+  "bgm": {
+   "title": "@Windsky创作的原声",
+   "author": "Windsky"
+  },
+  "author": "Windsky",
+  "is_image_post": false,
+  "is_subtitled": 0,
+  "platform_download": {
+   "allowed": false,
+   "reason": "risk_info"
+  }
+ },
+ "comments": {
+  "status": "partial",
+  "collected_unique": 30,
+  "platform_total": 899,
+  "has_more": true,
+  "pages": 3,
+  "stop_reason": "limit_reached",
+  "limit": 30,
+  "file": "comments.json"
+ },
+ "replies": {
+  "status": "not_requested"
+ },
+ "recommendations": {
+  "comment_top_rec": {
+   "status": "available",
+   "hint_text": "大家都在搜：",
+   "words": [
+    "长征6号火箭为什么会有火箭云"
+   ],
+   "field_path": "aweme_detail.suggest_words[scene=comment_top_rec]",
+   "meaning": "评论区顶部“大家都在搜”"
+  },
+  "detail_suggest_words": {
+   "status": "available",
+   "field_path": "aweme_detail.suggest_words[scene!=comment_top_rec]",
+   "scenes": {
+    "feed_bottom_rec": {
+     "status": "available",
+     "hint_text": "相关搜索",
+     "words": [
+      "长征6号火箭为什么会有火箭云"
+     ]
+    },
+    "detail_inbox_rex": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "飞机上看火箭发射"
+     ]
+    },
+    "image_detail_related_search": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征6号火箭为什么会有火箭云"
+     ]
+    }
+   }
+  },
+  "page_suggest_words": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "related_videos": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "search_sug": {
+   "status": "not_requested",
+   "hint": "加 --kw 关键词"
+  },
+  "search_page_related": {
+   "status": "not_requested",
+   "hint": "加 --kw 与 --search-rel"
+  }
+ },
+ "media": {
+  "status": "available",
+  "source": "dlpanda",
+  "seconds": 40.5,
+  "tried": [
+   {
+    "source": "iesdouyin_share",
+    "reason": "分享页无 item_list"
+   }
+  ],
+  "frames": {
+   "status": "available",
+   "duration_s": 272.77,
+   "resolution": "3840x2160",
+   "has_audio": true,
+   "hook_frames": 11,
+   "uniform_frames": 16,
+   "files": [
+    "hook_sheet.jpg",
+    "contact_sheet.jpg"
+   ]
+  },
+  "video_file": "video.mp4"
+ },
+ "bgm": {
+  "status": "available",
+  "meta": {
+   "title": {
+    "status": "available",
+    "value": "@Windsky创作的原声",
+    "field_path": "music.title"
+   },
+   "author": {
+    "status": "available",
+    "value": "Windsky",
+    "field_path": "music.author"
+   },
+   "music_id": {
+    "status": "available",
+    "value": "7699893108200590107",
+    "field_path": "music.id_str"
+   },
+   "is_original_sound": {
+    "status": "available",
+    "value": true,
+    "field_path": "music.is_original_sound"
+   },
+   "license_type": {
+    "status": "available",
+    "value": "original_sound（作者/他人上传的原声）",
+    "field_path": "music.is_original_sound/is_pgc/is_commerce_music",
+    "raw_flags": {
+     "is_original": false,
+     "is_original_sound": true,
+     "is_pgc": false,
+     "is_commerce_music": false,
+     "pgc_music_type": 2,
+     "is_matched_metadata": false
+    }
+   },
+   "music_page_url": {
+    "status": "available",
+    "value": "https://www.douyin.com/music/7699893108200590107",
+    "field_path": "由 music.id_str 拼出",
+    "note": "公开音乐页链接（拼接，未逐条打开验证）"
+   },
+   "play_url": {
+    "status": "observed_empty",
+    "value": null,
+    "field_path": "music.play_url.url_list",
+    "reason": "字段存在但 url_list 为空（游客态常见，或原声未单独开放）"
+   },
+   "duration_s": {
+    "status": "available",
+    "value": 272,
+    "field_path": "music.duration"
+   },
+   "user_count": {
+    "status": "available",
+    "value": 0,
+    "field_path": "music.user_count"
+   }
+  },
+  "audio_analysis": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio"
+  },
+  "style": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio",
+   "note": "粗略启发式：基于本地音频特征的规则打分，不是模型识别，混了口播时偏差较大，只作参考"
+  }
+ },
+ "subtitle": {
+  "status": "missing",
+  "source": "platform_caption",
+  "reason": "详情无字幕字段（is_subtitled=0）"
+ }
+}

@@ -17,6 +17,7 @@ description: >-
 | 资产库（需求/选题/BGM/动画资产/作品/经验/数据/规律） | `db/studio.db`，入口 `scripts/search.py`，说明 `db/README.md` |
 | 素材与旧规范索引（含已废止标注） | `assets/INDEX.md` |
 | 首期样板（全流程跑通） | `projects/EP-20261021-01`（工程 `/workspace/optogenetics`） |
+| 返修效率（停止规则、15 分钟自审、渲前闸门、定稿后打包） | `config/workflow_spec.md` §5.1；模板在仓库 `templates/qc`、`templates/review`、`templates/transfer`、`templates/state` |
 
 ## 硬规则（只有这 6 条是闸门）
 1. 字幕一句一卡。
@@ -26,7 +27,9 @@ description: >-
 5. 文案通过才配音；配音听审通过才对齐画面；不交无声骨架预览。
 6. 改稿按段验收：只重渲不合格的那段，不全片重渲。
 
-执行规则（spec §1.1，同样照做）：PC 在线就在 PC 渲染（含 720p 预览）；PC 文件只放 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\{out,发布,工程,预览}`，不在 `C:\Users\Administrator` 下建目录；大文件 ≤4 MB 分块传 + SHA256；渲后 ffmpeg + qoder Flash 质检、我只汇总；配音按意思段生成、只出一条；发布包自动附发布页逐项清单；创意文案能路由 opus5.5 就路由。
+执行规则（spec §1.1，同样照做）：短片（约 60 秒及以内）默认在盒子上渲染，预览和成片都在盒上；传到 PC 的只有定稿成片和两张封面，放 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\发布\`，不在 `C:\Users\Administrator` 下建工程目录。长片、3D、盒上渲不动的仍在 PC，每条命令用户批准。~~PC 在线就在 PC 渲~~【已废止 2026-10-29】。渲后 ffmpeg + qoder Flash 质检、我只汇总；配音按意思段生成、只出一条；发布包自动附发布页逐项清单；创意文案能路由 opus5.5 就路由。
+
+返修效率（spec §5.1，2026-10-29）：渲前跑 `templates/qc/structure_gate.py`；自审限时 15 分钟，和审片官并行；划走中位数高 ≥1.5 秒且同一版本 ≥4 次才算改进；局部补丁最多 2 轮，然后改结构或交给用户拍板；定稿后才用 `templates/transfer/make_pc_bundle.sh` 把成片和两张封面打包一次。
 
 ## 启动
 - 「开始新一期科普视频」→ `python3 /workspace/science-studio/scripts/new_episode.py --tier daily --title "<暂定题>"`
@@ -39,7 +42,7 @@ description: >-
 ## 阶段
 
 ### 1 选题与实地包　【用户闸门：选题】
-0. 先读数据规律：`python3 scripts/search.py insights`。「已验证」的当依据（在选题理由里写引用了哪条）；「验证中」的只当线索，要用就写明是试验。也看周报里的追更候选（`follow_up_of` 需求）。
+0. 选题可参考 `python3 scripts/search.py insights`。权重以 workflow_spec §9 为准：后台数据只作低权重参考，选题仍按原方法。「已验证」可以引用，不当闸门；「验证中」只当线索。周报里的追更候选（`follow_up_of`）同样只作参考。
 1. 再查库：`search.py q "<关键词>"`、`search.py radar`（看旧需求、做过没、可复用资产、复活需求）。
 2. 采集：skill **douyin-field-collect**（`/home/box/agent-data/workflows/douyin-field-collect/SKILL.md`），两级筛：先 `dy_search`+`sug` 低成本过滤，再对入选题跑 `video`。输出到 `projects/<EP>/research/field/`。
 3. 采完立刻入库：`python3 scripts/ingest_field.py <输出目录> --topic "<候选题>"`。
@@ -47,7 +50,7 @@ description: >-
 5. 产出 `research/topics.md`：日常档 2–3 个、精品档 5 个，用文字推荐，写清真实来源和不确定性，不编播放量。等用户选。
 
 ### 2 事实表 + 创意方向 + 逐字稿　【用户闸门：方向、「文案通过」】
-0. 同样先读 `search.py insights`，开头、标题、时长、段落节奏按已验证规律来，并在稿件说明里写引用。
+0. 写稿同样可参考 `search.py insights`，权重同上：不按后台规律改开头、标题或时长。选题和结构仍按本节原方法。
 1. 事实表 `research/facts.md`：权威来源，数字用代码复算，每条核到原文（人名、作者顺序这类细节也要核）。
 2. 创意方向 `creative/directions.md`：至少 2 个明显不同的方向，推荐 1 个。
 3. 逐字稿：`script/v1_draft.md` → 一轮深编 → `script/v2_edit.md`。用户给了原稿就逐字用原稿。
@@ -66,13 +69,14 @@ description: >-
 - 画面按新配音的时间轴对齐，画跟声走；AI 生成的画面要标「AI 生成」，来源写进 `assets/SOURCES.md`。
 - 把逐句/分段时间轴路径写进 works.timeline_path，发布后 diagnose 要用。
 
-### 5 分段预览（PC 并行）　【用户闸门：逐段审】
+### 5 分段预览　【用户闸门：逐段审】
 - 每段做独立入口（参照 `/workspace/optogenetics/remotion/src/film/seg4/entry.tsx`），各段可以并行做。
-- 渲染：先 ListMachines。PC（PC-20260301WTTM）在线就在 PC 渲，每条命令都要用户批准；离线才用盒子。脚本模板是 `/workspace/optogenetics/pc_pack/render_film_pc.ps1`，用 `-Mode 720 -Frames a-b -Root <D盘工程>`（-Root 必填），`Start-Process` 脱离运行并写日志。
+- 短片的 720p 预览在盒子上渲。长片或 3D 才用 PC：`render_film_pc.ps1 -Mode 720 -Frames a-b -Root <D盘工程>`，每条命令用户批准。
 - 每段带声 720p 预览交用户人工审。用户点哪段就只改哪段（硬规则 6），新版本用新文件名，旧版本保留；改动记进 `review/changes.md`。
 
 ### 6 全片渲染 + 质检
-- 所有段都过了，在 PC 上 `-Mode 1080` 渲全片，输出到 `out\`。只改声音时不重渲画面，用 ffmpeg `-c:v copy` 换音轨。
+- 短片的全片在盒子上渲。长片或 3D 才在 PC 上 `-Mode 1080`，输出到 `out\`。只改声音时不重渲画面，用 ffmpeg `-c:v copy` 换音轨。
+- 定稿后只把成片和两张封面传到 `D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\发布\`。
 - 质检按 production_config 的「渲后质检」：
   - ffmpeg 测黑屏、冻帧、响度（−16 LUFS，真峰 ≤ −1.5 dBTP）、接缝爆音。
   - 每 5 秒抽 1 帧交 qoder Flash 判，每次 ≤5 张；我只汇总 Flash 的结论。

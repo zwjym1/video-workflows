@@ -1,0 +1,124 @@
+{
+ "id": "jelly_v2",
+ "verdict": "小改后可发",
+ "total": 61.4,
+ "hook": 51.4,
+ "body": 74.1,
+ "value": 39.1,
+ "hook_obj": 45.2,
+ "body_obj": 85.8,
+ "hook_obj_items": {
+  "frame0_probe": 9.0,
+  "first_voice_s": 100.0,
+  "info3": 50.0,
+  "no_term_10s": 0.0,
+  "visual3": 100.0
+ },
+ "body_obj_items": {
+  "cps": 100.0,
+  "terms_per_min": 82.0,
+  "info_max_gap": 97.5,
+  "static_s": 100.0,
+  "sub_height": 100.0,
+  "sub_contrast": 100.0,
+  "loudness": 100,
+  "beat_sync": 80.0,
+  "cover": 30.0,
+  "bgm_fit": 30.0
+ },
+ "subj": {
+  "stay2": 0.65,
+  "stay5": 0.65,
+  "finish": 0.5,
+  "share": 0.2,
+  "save": 0.4,
+  "swipe_med": 14.25,
+  "swipe_never": 0.6,
+  "hook": 50.0,
+  "clarity": 63.75,
+  "novelty": 51.25,
+  "payoff": 43.75,
+  "visual": 62.5,
+  "emotion": 46.25,
+  "f0_rec": 0.0,
+  "f0_conf": 0.3,
+  "f0_subject": "天上的发光水母",
+  "S_hook": 57.5,
+  "S_body": 56.5,
+  "S_value": 39.125,
+  "runs": 1
+ },
+ "vetoes": [],
+ "must_fix": [
+  "用了第三方素材（片内署名：AlphaStar、Atumu、Windsky、央视CCTV、玻纤轻木）：署名≠授权，抖音对搬运/非原创会限流，发前确认授权或合理引用（解说为主、引用片段短）"
+ ],
+ "persona_fixes": [
+  {
+   "t": "0.0-3.0",
+   "fix": "封面标题：华北夜空「水母云」真相是火箭；首帧换清晰实拍，1.5s别切黑烟空镜",
+   "why": "hook：路人1秒能认出主体并知道是真事"
+  },
+  {
+   "t": "23.9-30.3",
+   "fix": "两张气压图合成一张，用「吸管vs真空」类比，只留百万分之一",
+   "why": "clarity：学生长辈一遍看懂气压差，减少中途划走"
+  },
+  {
+   "t": "10.1-20.4",
+   "fix": "地影段压到8秒，用「楼下阴影、楼顶夕阳」类比替代剖面图口播",
+   "why": "clarity/完播：抽象概念一遍懂，中段不拖"
+  },
+  {
+   "t": 2.5,
+   "fix": "2.5s「不是UFO」改成「不是外星飞船」，钩子保留又不偷换概念",
+   "why": "comment：减少纠错型评论，保住可信度"
+  }
+ ],
+ "rubric_version": 2,
+ "edit": 82.4,
+ "edit_detail": {
+  "edit": 82.4,
+  "edit_obj": 91.0,
+  "edit_subj": 62.5,
+  "deductions": {
+   "flash": 0,
+   "intra": 0,
+   "cluster": 0,
+   "pingpong": 6.0,
+   "lumflip": 3.0,
+   "mismatch": 0,
+   "style_switch": 0.0
+  },
+  "after3s": {
+   "flash": 0,
+   "intra": 0,
+   "cluster": 0,
+   "pingpong": 1,
+   "lumflip": 1,
+   "mismatch": 0
+  },
+  "fixes": [
+   "3.60–4.57s 明暗来回翻（亮度 90/28/140）：去掉或加 0.2 s 叠化",
+   "8.49–9.90s 实拍↔2D 来回跳（实拍-2D-实拍）：中间这镜删掉或换成同风格"
+  ],
+  "false_positives": [],
+  "focus_failed_segments": null,
+  "focus_segments": null
+ },
+ "bgm_fit": {
+  "score": 30.0,
+  "subscores": {
+   "tempo": 100.0,
+   "drums": 23.1,
+   "first3": 100.0,
+   "hits": 0.0,
+   "mode": 40.0,
+   "mask": 70.0
+  },
+  "tempo_bpm": 129.2,
+  "first3s_rel_db": 1.7,
+  "hit_lift": 0.47,
+  "has_bgm": false,
+  "note": "特征推断（避开人声频段），情绪/版权需人耳确认；目标=科技揭秘「哇」：利落鼓点、前 3 s 有能量、踩切点、不压人声"
+ }
+}

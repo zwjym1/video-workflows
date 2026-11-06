@@ -1,0 +1,195 @@
+{
+ "platform": "douyin",
+ "video_id": "7700114551659924779",
+ "collected_at": "2026-10-29 00:28:52 (UTC+8)",
+ "login": "none（游客/公开接口）",
+ "detail": {
+  "status": "available",
+  "id": "7700114551659924779",
+  "url": "https://www.douyin.com/video/7700114551659924779",
+  "desc": "#媒体人精选计划 太原卫星发射中心，长征六号改火箭成功发射遥感五十号 03 星！天上的火箭云，是独属于中国航天的浪漫，为中国航天点赞🚀#网友拍到绝美火箭云 #火箭云 #中国航空",
+  "published": "2026-10-24 14:17 (UTC+8)",
+  "duration_s": 215.4,
+  "likes": 55091,
+  "comments": 2228,
+  "collects": 9081,
+  "shares": 7966,
+  "hashtags": [
+   "媒体人精选计划",
+   "网友拍到绝美火箭云",
+   "火箭云",
+   "中国航空"
+  ],
+  "bgm": {
+   "title": "@小强说创作的原声",
+   "author": "小强说"
+  },
+  "author": "小强说",
+  "is_image_post": false,
+  "is_subtitled": null,
+  "platform_download": {
+   "allowed": false,
+   "reason": "aigc_forbidden"
+  }
+ },
+ "comments": {
+  "status": "partial",
+  "collected_unique": 30,
+  "platform_total": 2228,
+  "has_more": true,
+  "pages": 3,
+  "stop_reason": "limit_reached",
+  "limit": 30,
+  "file": "comments.json"
+ },
+ "replies": {
+  "status": "not_requested"
+ },
+ "recommendations": {
+  "comment_top_rec": {
+   "status": "missing",
+   "reason": "suggest_words 中无 comment_top_rec 场景"
+  },
+  "detail_suggest_words": {
+   "status": "available",
+   "field_path": "aweme_detail.suggest_words[scene!=comment_top_rec]",
+   "scenes": {
+    "detail_inbox_rex": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号火箭"
+     ]
+    },
+    "image_detail_related_search": {
+     "status": "available",
+     "hint_text": "",
+     "words": [
+      "长征六号火箭"
+     ]
+    },
+    "feed_bottom_rec": {
+     "status": "available",
+     "hint_text": "相关搜索",
+     "words": [
+      "长征六号火箭"
+     ]
+    }
+   }
+  },
+  "page_suggest_words": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "related_videos": {
+   "status": "not_requested",
+   "hint": "加 --browse"
+  },
+  "search_sug": {
+   "status": "not_requested",
+   "hint": "加 --kw 关键词"
+  },
+  "search_page_related": {
+   "status": "not_requested",
+   "hint": "加 --kw 与 --search-rel"
+  }
+ },
+ "media": {
+  "status": "available",
+  "source": "dlpanda",
+  "seconds": 21.2,
+  "tried": [
+   {
+    "source": "iesdouyin_share",
+    "reason": "分享页无 item_list"
+   }
+  ],
+  "frames": {
+   "status": "available",
+   "duration_s": 215.39,
+   "resolution": "1080x1920",
+   "has_audio": true,
+   "hook_frames": 11,
+   "uniform_frames": 16,
+   "files": [
+    "hook_sheet.jpg",
+    "contact_sheet.jpg"
+   ]
+  },
+  "video_file": "video.mp4"
+ },
+ "bgm": {
+  "status": "available",
+  "meta": {
+   "title": {
+    "status": "available",
+    "value": "@小强说创作的原声",
+    "field_path": "music.title"
+   },
+   "author": {
+    "status": "available",
+    "value": "小强说",
+    "field_path": "music.author"
+   },
+   "music_id": {
+    "status": "available",
+    "value": "7700114627455650586",
+    "field_path": "music.id_str"
+   },
+   "is_original_sound": {
+    "status": "available",
+    "value": true,
+    "field_path": "music.is_original_sound"
+   },
+   "license_type": {
+    "status": "available",
+    "value": "original_sound（作者/他人上传的原声）",
+    "field_path": "music.is_original_sound/is_pgc/is_commerce_music",
+    "raw_flags": {
+     "is_original": false,
+     "is_original_sound": true,
+     "is_pgc": false,
+     "is_commerce_music": false,
+     "pgc_music_type": 2,
+     "is_matched_metadata": false
+    }
+   },
+   "music_page_url": {
+    "status": "available",
+    "value": "https://www.douyin.com/music/7700114627455650586",
+    "field_path": "由 music.id_str 拼出",
+    "note": "公开音乐页链接（拼接，未逐条打开验证）"
+   },
+   "play_url": {
+    "status": "observed_empty",
+    "value": null,
+    "field_path": "music.play_url.url_list",
+    "reason": "字段存在但 url_list 为空（游客态常见，或原声未单独开放）"
+   },
+   "duration_s": {
+    "status": "available",
+    "value": 215,
+    "field_path": "music.duration"
+   },
+   "user_count": {
+    "status": "available",
+    "value": 0,
+    "field_path": "music.user_count"
+   }
+  },
+  "audio_analysis": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio"
+  },
+  "style": {
+   "status": "not_requested",
+   "hint": "已加 --no-bgm-audio",
+   "note": "粗略启发式：基于本地音频特征的规则打分，不是模型识别，混了口播时偏差较大，只作参考"
+  }
+ },
+ "subtitle": {
+  "status": "missing",
+  "source": "platform_caption",
+  "reason": "详情无字幕字段（is_subtitled=None）"
+ }
+}

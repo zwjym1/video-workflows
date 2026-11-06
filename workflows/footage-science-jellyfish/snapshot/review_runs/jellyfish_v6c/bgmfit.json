@@ -1,0 +1,26 @@
+{
+ "version": 1,
+ "source": "/workspace/science-studio/projects/EP-20261029-01/deliver/火箭水母云_成片_1080x1920.mp4",
+ "decoded_from": "original",
+ "has_bgm": true,
+ "tempo_bpm": 129.2,
+ "perc_ratio_nonspeech": 0.2,
+ "first3s_rel_db": 1.8,
+ "strong_onsets_per_s": 2.83,
+ "cut_hits_40ms": 8,
+ "cut_hits_chance": 4.53,
+ "hit_lift": 1.76,
+ "mode": "minor",
+ "mode_conf": 0.17,
+ "speech_band_snr_db": null,
+ "subscores": {
+  "tempo": 100.0,
+  "drums": 24.9,
+  "first3": 100.0,
+  "hits": 100.0,
+  "mode": 40.0,
+  "mask": 70.0
+ },
+ "score": 75.2,
+ "note": "特征推断（避开人声频段），情绪/版权需人耳确认；目标=科技揭秘「哇」：利落鼓点、前 3 s 有能量、踩切点、不压人声"
+}

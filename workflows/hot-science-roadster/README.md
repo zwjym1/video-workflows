@@ -15,7 +15,9 @@
 | 配音 | Roadster 音色，speed 1.05 + 整体 1.15× 变速 | Roadster 音色，speed 1.25，不再变速 |
 | 工程 | `RoadsterShortV3`，footage-timeline.json + 对齐工具，含 3D（three.js） | `IphoneFakeV3f`，build_v3.py 生成 JSON，超分 + 人脸打码 + OCR |
 | 合规 | 常规 | 过审清单 + OCR 白名单（V3/V3d 曾被判「不适宜公开」） |
-| 渲染 | PC：`npm run render:master`，c8 angle veryfast | box：c6 crf18，再传到 PC |
+| 渲染 | 冻结版在 PC（含 3D）：`npm run render:master`，c8 angle veryfast | 冻结版在盒上：c6 crf18，再传到 PC |
+
+上表是冻结版当时的做法。2026-10-29 起，约 60 秒及以内的短片默认在盒上渲，传到 PC 的只有定稿成片和两张封面（`science-studio/config/workflow_spec.md` §1.1）。本款冻结版含 3D、片长约 90 秒，仍属 PC 那一档。
 
 ## 1. 脚本结构（V3 实稿，`snapshot/voice/v3/script.txt`，共 22 句）
 1. 钩子：一句奇观（V3 是「…最出圈的不是加速，是这一下。它飞起来了。」）+ 奇观补充（「连Semi大卡车都在它肚子底下」）
@@ -71,7 +73,10 @@ V3 的问题（反面例子）：0–3.6 秒是起步加速，飞越的奇观到
 - click ×4、shutter ×2、fanhum、jet、hiss、puff ×3（评论卡、定格、拟音）
 - 文件在 `remotion/public/sfx/` 和 `public/v3/`（媒体文件不入库，路径见下）
 
-## 5. 渲染（PC：R5 5600 / 16GB / RTX 3080）
+## 5. 渲染（V3 当时在 PC：R5 5600 / 16GB / RTX 3080）
+
+下面是 V3 的实测。新的短片不要把工程拿到 PC 渲，见 `science-studio/config/workflow_spec.md` §1.1。本款含 3D、片长约 90 秒，仍走 PC。
+
 - `npm run render:master`：先渲无声画面（`--muted --codec=h264 --crf=18`），再渲纯音频 wav，loudnorm −16 / TP −1.5 / LRA 11，最后用 aac 320k、`+faststart` 合成
 - 推荐参数：`--concurrency=8 --gl=angle --x264-preset=veryfast --offthreadvideo-video-threads=4`（基准测试 7.66 fps，全片画面约 5.5 分钟；c12 反而更慢；Remotion 没有 NVENC）
 - 只改了音量时用 `npm run remix-audio`（约 2 分钟，画面 `-c:v copy` 不重编码）
@@ -97,6 +102,15 @@ V3 的问题（反面例子）：0–3.6 秒是起步加速，飞越的奇观到
 - V4 相对 V3 改了哪些内容（开头、脚本、镜头），没有记录
 - V4 的配音参数、渲染日志、响度实测值
 - 「speed 1.08」：没有出处
+
+## 共用效率模板（2026-10-29）
+
+本款的选题、叙事、画风不改。渲染地点按 `science-studio/config/workflow_spec.md` §1.1：约 60 秒的短片在盒上渲，本款含 3D、片长约 90 秒，仍在 PC。定稿后只把成片和两张封面传到 `发布\`。返修用共用模板（§5.1，依据 `docs/效率审计_2026-10-29.md`）：
+
+- 渲前：`templates/qc/structure_gate.py`，清单 `templates/qc/prerender_checklist.md`。有 FAIL 不渲。
+- 审片：`templates/review/审片官交接单模板.md`。主观自审限时 15 分钟，和审片官并行。一次改动算改进，只当路人划走中位数比上一版高 ≥1.5 秒，且同一版本至少 4 次。局部补丁最多 2 轮，然后改结构，或把当前最好的一版交给用户拍板。
+- 定稿后才打包：`templates/transfer/make_pc_bundle.sh` + `assemble_from_home.ps1`。审片阶段不切分块、不挪旧版。
+- 阶段用时：`templates/state/stage_log.py` 记进 STATE.md。
 
 ## 目录
 ```

@@ -1,0 +1,79 @@
+{
+ "version": 1,
+ "inputs": [
+  "out/jelly_v6f/focus_run.json"
+ ],
+ "n_checks": 4,
+ "confirmed": 3,
+ "false_positive": 0,
+ "overstated": 0,
+ "unverified": 1,
+ "precision_est": 1.0,
+ "claims": [
+  {
+   "src": "focus_run.json",
+   "where": "shot#9",
+   "text": "   修改 style_jump 脚本检测实拍-2D-实拍来回跳，素材观感不连续 subtitle 「山东」贴纸疑晚于口播「山东」，需对音轨",
+   "t": [
+    9.5,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "#5 裁至 4.60-5.60，#6 起飞弧线提前到 5.60 起，让「太原·起飞」贴纸落在口播「起飞」上 消除口播先于画面0.4秒的错位，同时砍掉最闷的1秒",
+   "t": [
+    4.6,
+    6.2
+   ],
+   "checks": [
+    {
+     "type": "mismatch",
+     "status": "unverified",
+     "evidence": "脚本没查到对应的 f 值/UI 冲突，需人看"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "fix",
+   "text": "#9 整镜统一为实拍（或全程叠同一套2D描线），去掉脚本检测到的实拍-2D-实拍跳变 三连地名单元里最后一条风格突变，最容易被看出拼素材",
+   "t": [
+    9.5,
+    10.9
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  },
+  {
+   "src": "focus_run.json",
+   "where": "persona:expert",
+   "text": "实拍2D来回跳，素材来源明显拼凑",
+   "t": [
+    9.6,
+    9.6
+   ],
+   "checks": [
+    {
+     "type": "style",
+     "status": "confirmed",
+     "evidence": "风格分类器在此处有实拍↔2D 切换"
+    }
+   ]
+  }
+ ],
+ "rule": "false_positive/invalid 的说法不进返修单、不扣分；overstated 按实测数改写；unverified 保留但标「需人看」"
+}
