@@ -1,0 +1,15 @@
+{
+ "offset": 0.0015,
+ "period": 0.51064,
+ "bpm": 117.5,
+ "n": 328,
+ "matched": "168/328",
+ "source": "bgm_loop.wav",
+ "design": {
+  "offset": 0.0,
+  "period": 0.51064
+ },
+ "design_drift_frames_at_end": 0.1,
+ "note": "B(k)=offset+k*period；k%4==downbeat_mod 为小节第一拍（按曲子自查）",
+ "ok": false
+}

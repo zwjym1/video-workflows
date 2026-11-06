@@ -1,0 +1,705 @@
+{
+ "rows": [
+  {
+   "i": 1,
+   "who": "O",
+   "audio": [
+    0.365,
+    6.265
+   ],
+   "mouth_on": 0.002,
+   "mouth_off": 0.002,
+   "sub_on": -0.005,
+   "sub_off": 0.065,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 2,
+   "who": "F",
+   "audio": [
+    6.509,
+    8.704
+   ],
+   "mouth_on": 0.013,
+   "mouth_off": 0.052,
+   "sub_on": 0.001,
+   "sub_off": 0.056,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 3,
+   "who": "O",
+   "audio": [
+    8.94,
+    9.285
+   ],
+   "mouth_on": 0.018,
+   "mouth_off": 0.04,
+   "sub_on": 0.0,
+   "sub_off": 0.065,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 4,
+   "who": "O",
+   "audio": [
+    9.433,
+    10.593
+   ],
+   "mouth_on": 0.03,
+   "mouth_off": 0.037,
+   "sub_on": -0.003,
+   "sub_off": 0.057,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 5,
+   "who": "O",
+   "audio": [
+    10.896,
+    12.841
+   ],
+   "mouth_on": 0.022,
+   "mouth_off": 0.043,
+   "sub_on": 0.004,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 6,
+   "who": "F",
+   "audio": [
+    13.069,
+    14.779
+   ],
+   "mouth_on": 0.023,
+   "mouth_off": 0.047,
+   "sub_on": 0.001,
+   "sub_off": 0.061,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 7,
+   "who": "O",
+   "audio": [
+    15.01,
+    15.79
+   ],
+   "mouth_on": -0.01,
+   "mouth_off": 0.043,
+   "sub_on": 0.0,
+   "sub_off": 0.06,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 8,
+   "who": "O",
+   "audio": [
+    16.004,
+    19.544
+   ],
+   "mouth_on": 0.0,
+   "mouth_off": 0.027,
+   "sub_on": -0.004,
+   "sub_off": 0.056,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 9,
+   "who": "O",
+   "audio": [
+    19.71,
+    21.155
+   ],
+   "mouth_on": -0.008,
+   "mouth_off": 0.013,
+   "sub_on": 0.0,
+   "sub_off": 0.055,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 10,
+   "who": "O",
+   "audio": [
+    21.381,
+    24.561
+   ],
+   "mouth_on": -0.005,
+   "mouth_off": 0.015,
+   "sub_on": -0.001,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 11,
+   "who": "O",
+   "audio": [
+    24.831,
+    27.426
+   ],
+   "mouth_on": -0.002,
+   "mouth_off": 0.07,
+   "sub_on": -0.001,
+   "sub_off": 0.064,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 12,
+   "who": "O",
+   "audio": [
+    27.613,
+    31.163
+   ],
+   "mouth_on": 0.005,
+   "mouth_off": 0.022,
+   "sub_on": -0.003,
+   "sub_off": 0.057,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 13,
+   "who": "F",
+   "audio": [
+    31.413,
+    33.268
+   ],
+   "mouth_on": 0.013,
+   "mouth_off": 0.058,
+   "sub_on": -0.003,
+   "sub_off": 0.062,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 14,
+   "who": "O",
+   "audio": [
+    33.498,
+    35.908
+   ],
+   "mouth_on": 0.028,
+   "mouth_off": 0.052,
+   "sub_on": 0.002,
+   "sub_off": 0.062,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 15,
+   "who": "F",
+   "audio": [
+    36.183,
+    39.603
+   ],
+   "mouth_on": 0.008,
+   "mouth_off": 0.022,
+   "sub_on": -0.003,
+   "sub_off": 0.057,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 16,
+   "who": "O",
+   "audio": [
+    39.836,
+    43.446
+   ],
+   "mouth_on": 0.023,
+   "mouth_off": 0.047,
+   "sub_on": 0.004,
+   "sub_off": 0.064,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 17,
+   "who": "O",
+   "audio": [
+    43.694,
+    48.439
+   ],
+   "mouth_on": 0.013,
+   "mouth_off": 0.035,
+   "sub_on": -0.004,
+   "sub_off": 0.061,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 18,
+   "who": "O",
+   "audio": [
+    48.623,
+    50.493
+   ],
+   "mouth_on": 0.038,
+   "mouth_off": 0.035,
+   "sub_on": -0.003,
+   "sub_off": 0.057,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 19,
+   "who": "O",
+   "audio": [
+    50.774,
+    52.259
+   ],
+   "mouth_on": -0.012,
+   "mouth_off": 0.037,
+   "sub_on": -0.004,
+   "sub_off": 0.061,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 20,
+   "who": "O",
+   "audio": [
+    52.416,
+    55.931
+   ],
+   "mouth_on": -0.013,
+   "mouth_off": 0.038,
+   "sub_on": 0.004,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 21,
+   "who": "O",
+   "audio": [
+    56.131,
+    59.106
+   ],
+   "mouth_on": -0.028,
+   "mouth_off": 0.03,
+   "sub_on": -0.001,
+   "sub_off": 0.064,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 22,
+   "who": "F",
+   "audio": [
+    59.326,
+    62.776
+   ],
+   "mouth_on": 0.028,
+   "mouth_off": 0.045,
+   "sub_on": 0.004,
+   "sub_off": 0.064,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 23,
+   "who": "O",
+   "audio": [
+    63.176,
+    68.146
+   ],
+   "mouth_on": 0.01,
+   "mouth_off": 0.04,
+   "sub_on": 0.004,
+   "sub_off": 0.064,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 24,
+   "who": "F",
+   "audio": [
+    68.43,
+    70.915
+   ],
+   "mouth_on": 0.003,
+   "mouth_off": 0.018,
+   "sub_on": 0.0,
+   "sub_off": 0.055,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 25,
+   "who": "O",
+   "audio": [
+    71.138,
+    72.118
+   ],
+   "mouth_on": 0.028,
+   "mouth_off": 0.048,
+   "sub_on": 0.002,
+   "sub_off": 0.062,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 26,
+   "who": "O",
+   "audio": [
+    72.303,
+    77.608
+   ],
+   "mouth_on": 0.005,
+   "mouth_off": 0.033,
+   "sub_on": -0.003,
+   "sub_off": 0.062,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 27,
+   "who": "O",
+   "audio": [
+    77.767,
+    79.297
+   ],
+   "mouth_on": 0.002,
+   "mouth_off": 0.005,
+   "sub_on": 0.003,
+   "sub_off": 0.063,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 28,
+   "who": "O",
+   "audio": [
+    79.544,
+    83.474
+   ],
+   "mouth_on": 0.013,
+   "mouth_off": 0.05,
+   "sub_on": -0.004,
+   "sub_off": 0.056,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 29,
+   "who": "O",
+   "audio": [
+    83.652,
+    86.182
+   ],
+   "mouth_on": 0.02,
+   "mouth_off": 0.023,
+   "sub_on": -0.002,
+   "sub_off": 0.058,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 30,
+   "who": "O",
+   "audio": [
+    86.38,
+    89.585
+   ],
+   "mouth_on": 0.01,
+   "mouth_off": 0.038,
+   "sub_on": 0.0,
+   "sub_off": 0.055,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 31,
+   "who": "F",
+   "audio": [
+    89.831,
+    91.961
+   ],
+   "mouth_on": 0.018,
+   "mouth_off": 0.022,
+   "sub_on": -0.001,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 32,
+   "who": "O",
+   "audio": [
+    92.187,
+    97.042
+   ],
+   "mouth_on": 0.028,
+   "mouth_off": 0.04,
+   "sub_on": 0.003,
+   "sub_off": 0.058,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 33,
+   "who": "F",
+   "audio": [
+    98.84,
+    100.5
+   ],
+   "mouth_on": 0.013,
+   "mouth_off": 0.053,
+   "sub_on": 0.0,
+   "sub_off": 0.06,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 34,
+   "who": "O",
+   "audio": [
+    100.732,
+    104.337
+   ],
+   "mouth_on": 0.028,
+   "mouth_off": 0.057,
+   "sub_on": -0.002,
+   "sub_off": 0.063,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 35,
+   "who": "O",
+   "audio": [
+    104.507,
+    109.162
+   ],
+   "mouth_on": 0.02,
+   "mouth_off": 0.065,
+   "sub_on": 0.003,
+   "sub_off": 0.058,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 36,
+   "who": "O",
+   "audio": [
+    109.356,
+    112.681
+   ],
+   "mouth_on": 0.043,
+   "mouth_off": 0.052,
+   "sub_on": 0.004,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 37,
+   "who": "F",
+   "audio": [
+    112.925,
+    114.205
+   ],
+   "mouth_on": 0.018,
+   "mouth_off": 0.038,
+   "sub_on": -0.005,
+   "sub_off": 0.065,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 38,
+   "who": "O",
+   "audio": [
+    114.433,
+    117.298
+   ],
+   "mouth_on": 0.033,
+   "mouth_off": 0.035,
+   "sub_on": -0.003,
+   "sub_off": 0.062,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 39,
+   "who": "O",
+   "audio": [
+    117.464,
+    121.624
+   ],
+   "mouth_on": 0.02,
+   "mouth_off": 0.027,
+   "sub_on": -0.004,
+   "sub_off": 0.056,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 40,
+   "who": "O",
+   "audio": [
+    121.861,
+    125.481
+   ],
+   "mouth_on": 0.028,
+   "mouth_off": 0.042,
+   "sub_on": -0.001,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 41,
+   "who": "O",
+   "audio": [
+    125.73,
+    129.875
+   ],
+   "mouth_on": 0.013,
+   "mouth_off": 0.035,
+   "sub_on": 0.0,
+   "sub_off": 0.065,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 42,
+   "who": "F",
+   "audio": [
+    131.629,
+    133.334
+   ],
+   "mouth_on": 0.013,
+   "mouth_off": 0.042,
+   "sub_on": 0.001,
+   "sub_off": 0.056,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 43,
+   "who": "O",
+   "audio": [
+    133.569,
+    135.114
+   ],
+   "mouth_on": 0.023,
+   "mouth_off": 0.045,
+   "sub_on": 0.001,
+   "sub_off": 0.056,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 44,
+   "who": "O",
+   "audio": [
+    135.277,
+    140.162
+   ],
+   "mouth_on": -0.003,
+   "mouth_off": 0.012,
+   "sub_on": 0.003,
+   "sub_off": 0.058,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 45,
+   "who": "O",
+   "audio": [
+    140.361,
+    145.121
+   ],
+   "mouth_on": -0.023,
+   "mouth_off": 0.017,
+   "sub_on": -0.001,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 46,
+   "who": "O",
+   "audio": [
+    145.364,
+    148.734
+   ],
+   "mouth_on": 0.018,
+   "mouth_off": 0.048,
+   "sub_on": -0.004,
+   "sub_off": 0.056,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 47,
+   "who": "F",
+   "audio": [
+    149.069,
+    151.859
+   ],
+   "mouth_on": 0.03,
+   "mouth_off": 0.04,
+   "sub_on": 0.001,
+   "sub_off": 0.061,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 48,
+   "who": "O",
+   "audio": [
+    152.152,
+    153.152
+   ],
+   "mouth_on": -0.007,
+   "mouth_off": 0.027,
+   "sub_on": -0.002,
+   "sub_off": 0.058,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 49,
+   "who": "O",
+   "audio": [
+    153.316,
+    157.661
+   ],
+   "mouth_on": -0.008,
+   "mouth_off": 0.013,
+   "sub_on": 0.004,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 50,
+   "who": "F",
+   "audio": [
+    157.962,
+    158.682
+   ],
+   "mouth_on": -0.022,
+   "mouth_off": 0.025,
+   "sub_on": -0.002,
+   "sub_off": 0.058,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 51,
+   "who": "O",
+   "audio": [
+    158.906,
+    163.971
+   ],
+   "mouth_on": 0.0,
+   "mouth_off": 0.035,
+   "sub_on": 0.004,
+   "sub_off": 0.059,
+   "other_mouth": 0.0
+  },
+  {
+   "i": 52,
+   "who": "F",
+   "audio": [
+    164.211,
+    166.596
+   ],
+   "mouth_on": 0.018,
+   "mouth_off": 0.033,
+   "sub_on": -0.001,
+   "sub_off": 0.064,
+   "other_mouth": 0.0
+  }
+ ],
+ "summary": {
+  "mouth_on": {
+   "max": 0.043,
+   "mean": 0.017
+  },
+  "mouth_off": {
+   "max": 0.07,
+   "mean": 0.036
+  },
+  "sub_on": {
+   "max": 0.005,
+   "mean": 0.002
+  },
+  "sub_off": {
+   "max": 0.065,
+   "mean": 0.06
+  },
+  "sub_chunk_on": {
+   "n": 93,
+   "max": 0.239,
+   "mean": 0.005
+  },
+  "other_mouth_max": 0.0,
+  "fail": []
+ }
+}

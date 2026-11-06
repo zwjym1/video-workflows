@@ -1,0 +1,44 @@
+{
+ "MCP": {
+  "dur": 308.8,
+  "lines": 66,
+  "line_dur_mean": 4.68,
+  "line_dur_median": 4.5,
+  "chars": 1953,
+  "cps_overall": 6.32,
+  "cps_line_median": 6.18,
+  "short_le8": 1,
+  "long_ge30": 30,
+  "cuts": 24,
+  "sec_per_cut": 12.9,
+  "has_words": false
+ },
+ "Harness": {
+  "dur": 237.2,
+  "lines": 80,
+  "line_dur_mean": 2.96,
+  "line_dur_median": 3.0,
+  "chars": 1581,
+  "cps_overall": 6.66,
+  "cps_line_median": 6.4,
+  "short_le8": 5,
+  "long_ge30": 9,
+  "cuts": 5,
+  "sec_per_cut": 47.4,
+  "has_words": false
+ },
+ "Skill": {
+  "dur": 258.5,
+  "lines": 47,
+  "line_dur_mean": 5.49,
+  "line_dur_median": 5.08,
+  "chars": 1712,
+  "cps_overall": 6.62,
+  "cps_line_median": 6.67,
+  "short_le8": 0,
+  "long_ge30": 30,
+  "cuts": 12,
+  "sec_per_cut": 21.5,
+  "has_words": false
+ }
+}
