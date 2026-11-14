@@ -9,7 +9,9 @@
   python dy_search.py "XX原理" -n 10 --src so,sm,360 --json out.json --days 30
   python dy_search.py "XX实测" --urls                           # 只输出链接，可接 dy_collect.py
 """
-import argparse, asyncio, datetime as dt, html, json, re, sys, time, urllib.parse as up
+import argparse, asyncio, datetime as dt, html, json, os, re, sys, time, urllib.parse as up
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from dy_common import format_exc
 import requests
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36",
@@ -94,13 +96,23 @@ async def src_so(kw, pages):
 
 def src_html(kw, name):
     found = {}
+    saw_ok = saw_block = saw_err = None
     for p in (1, 2, 3):
         url = (f"https://m.sm.cn/s?q={up.quote(kw + ' 抖音')}&page={p}" if name == "sm"
                else f"https://www.so.com/s?q={up.quote(kw + ' 抖音')}&pn={p}")
         try:
-            t = requests.get(url, headers=UA, timeout=20).text
+            r = requests.get(url, headers=UA, timeout=20)
+            t = r.text or ""
         except requests.RequestException as e:
-            print(f"[{name}] {type(e).__name__}", file=sys.stderr); continue
+            print(f"[{name}] {format_exc(e)}", file=sys.stderr)
+            saw_err = "error"
+            time.sleep(1)
+            continue
+        if r.status_code in (401, 403, 429):
+            saw_block = "blocked_login" if r.status_code == 401 else "blocked_verification"
+            time.sleep(1)
+            continue
+        saw_ok = True
         for m in PAT.finditer(t):
             i = m.group(1)
             if i in found:
@@ -113,7 +125,15 @@ def src_html(kw, name):
                 mm = re.search(r">\s*([^<>]{6,})<", raw[k:k + 1500]); desc = mm.group(1).strip() if mm else ""
             found[i] = {"id": i, "desc": re.sub(r"<[^>]+>", "", desc)[:60], "src": name}
         time.sleep(1)
-    return found, ("available" if found else "observed_empty")
+    if found:
+        return found, "available"
+    if saw_ok:
+        return found, "observed_empty"
+    if saw_block:
+        return found, saw_block
+    if saw_err:
+        return found, "error"
+    return found, "observed_empty"
 
 
 def search(kw, srcs=("so", "sm"), pages=8):
@@ -122,7 +142,7 @@ def search(kw, srcs=("so", "sm"), pages=8):
         try:
             got, st = asyncio.run(src_so(kw, pages)) if s == "so" else src_html(kw, s)
         except Exception as e:
-            got, st = {}, "error"; print(f"[{s}] 失败：{type(e).__name__}", file=sys.stderr)
+            got, st = {}, "error"; print(f"[{s}] 失败：{format_exc(e)}", file=sys.stderr)
         states[s] = {"status": st if got or st != "available" else "observed_empty", "count": len(got)}
         for i, v in got.items():
             if i in allv:

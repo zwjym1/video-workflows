@@ -33,8 +33,9 @@ description: 需要免登录采集抖音同题视频的实地数据（详情、�
 ## 命令
 
 ```bash
-pip install -r requirements.txt && python -m playwright install chromium   # 一次性
+pip install -r requirements.txt && python -m playwright install chromium   # 一次性；已有系统 Chrome 可跳过浏览器下载
 cd scripts
+python dy_collect.py check                                          # 只检查本机依赖，不访问网络
 python dy_search.py "XX怎么做" -n 20 --src so,sm --json search.json
 python dy_search.py "XX实测" --urls --days 30 > urls.txt
 python dy_collect.py video <链接或ID> -o ./out -n 200            # 只调接口，最省
@@ -45,7 +46,8 @@ python dy_collect.py sug "关键词" --rel
 批量：`while read u; do python dy_collect.py video "$u" -o ./out; done < urls.txt`，每条之间留间隔。
 
 ## 限制
-- 全程免登录：不带账号 cookie、不做签名逆向、不换身份重试；遇验证码或 403/429 如实记录并停该项。
+- 全程免登录：不带账号 cookie、不做签名逆向、不换身份重试；遇验证码或 403/429 如实记录并停该项。页面正文里同时出现“登录”时，403/429 仍记 `blocked_verification`，不记成 `blocked_login`。
+- 缺 Python 包、ffmpeg/curl/yt-dlp 或浏览器时，`status=error`，`reason` 以 `missing_dependency` 开头。这是本机环境问题，不是登录失败。默认 `video`（不加 `--browse`/`--media`）只需要 `requests`。
 - www.douyin.com 搜索页有登录墙，只用 so.douyin.com/神马/360，偶尔漏最新视频。
 - 很多视频没有平台字幕（`is_subtitled=0`），只能本地转写，必须复核；歌曲/强 BGM 时 VAD 可能判无人声，脚本会关掉 VAD 再跑一次。
 - AI 生成标识或禁止下载的作品官方下载会被拒，靠解析站换源；全失败则 `media.status=error`，`tried` 里逐源列原因。

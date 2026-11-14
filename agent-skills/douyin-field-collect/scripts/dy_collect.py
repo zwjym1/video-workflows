@@ -14,7 +14,8 @@
 """
 import argparse, json, os, re, sys, time, urllib.parse as up
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from dy_common import BASE, UA_PC, UA_M, S, T, now, log, get_json, vid_of, Blocked, launch_sync
+from dy_common import (BASE, UA_PC, UA_M, S, T, now, log, get_json, vid_of, Blocked, launch_sync,
+                       format_exc, preflight)
 
 API = "https://so.douyin.com/aweme/v1/web"
 
@@ -48,22 +49,33 @@ def summarize(a, vid):
 
 
 # ---------- 字幕：平台自带优先 ----------
+def first_url(value):
+    """字幕地址可能是字符串，也可能是 {url_list: [...]}。只返回字符串。"""
+    if isinstance(value, dict):
+        lst = value.get("url_list") or []
+        return first_url(lst[0]) if lst else None
+    if isinstance(value, (list, tuple)):
+        return first_url(value[0]) if value else None
+    if isinstance(value, str) and value.strip():
+        return value.strip()
+    return None
+
+
 def subtitle_source(a):
     """字段路径参考：interaction_stickers[].auto_video_caption_info.auto_captions[].url、video.cla_info.caption_infos[].url、subtitle_infos"""
     v = a.get("video") or {}
     for i, sk in enumerate(a.get("interaction_stickers") or []):
         for k, c in enumerate(((sk or {}).get("auto_video_caption_info") or {}).get("auto_captions") or []):
-            u = c.get("url") or {}
-            urls = (u.get("url_list") or []) if isinstance(u, dict) else [u]
-            if urls and urls[0]:
-                return urls[0], f"interaction_stickers[{i}].auto_video_caption_info.auto_captions[{k}]", c.get("language")
+            u = first_url(c.get("url"))
+            if u:
+                return u, f"interaction_stickers[{i}].auto_video_caption_info.auto_captions[{k}]", c.get("language")
     for i, c in enumerate((v.get("cla_info") or {}).get("caption_infos") or []):
-        u = c.get("url") or (c.get("url_list") or [None])[0]
+        u = first_url(c.get("url")) or first_url(c.get("url_list"))
         if u:
             return u, f"video.cla_info.caption_infos[{i}]", c.get("lang") or c.get("language_code_name")
     for owner, pre in ((v, "video.subtitle_infos"), (a, "subtitle_infos")):
         for i, c in enumerate(owner.get("subtitle_infos") or []):
-            u = c.get("url") or (c.get("url_list") or [None])[0]
+            u = first_url(c.get("url")) or first_url(c.get("url_list"))
             if u:
                 return u, f"{pre}[{i}]", c.get("language_code_name")
     return None, None, None
@@ -103,7 +115,7 @@ def platform_subtitle(a):
             return st("blocked_verification", source="platform_caption", field_path=path, reason=f"HTTP {r.status_code}")
         segs = parse_segments(r.content.decode("utf-8-sig", "replace"))
     except Exception as e:
-        return st("error", source="platform_caption", field_path=path, reason=type(e).__name__)
+        return st("error", source="platform_caption", field_path=path, reason=format_exc(e))
     return st("available" if segs else "observed_empty", source="platform_caption", field_path=path, language=lang,
               needs_review=False, segments=segs, text="\n".join(s["text"] for s in segs))
 
@@ -122,7 +134,9 @@ def _page_loop(url, params, limit, parent=""):
         try:
             j = get_json(url, {**params, "cursor": cur, "count": 20})
         except Blocked as e:
-            status, reason = e.status, "blocked"; break
+            status = e.status
+            reason = "blocked" if status in ("blocked_login", "blocked_verification") else "api_error"
+            break
         if j.get("status_code") not in (0, None):
             status, reason = "error", "api_error"; break
         pages += 1; total = j.get("total", total); has_more = bool(j.get("has_more"))
@@ -192,6 +206,20 @@ def detail_recs(a):
     return top, dsw
 
 
+def http_gate(title, responses, n_items):
+    """页面请求的状态。有数据就是 available；403/429 是验证拦截，401 才是登录墙。"""
+    if n_items:
+        return "available"
+    if title and "验证" in title:
+        return "blocked_verification"
+    codes = {s for s, _ in responses}
+    if 401 in codes:
+        return "blocked_login"
+    if codes & {403, 429}:
+        return "blocked_verification"
+    return "observed_empty" if responses else "missing"
+
+
 def browse(vid, wait_ms=9000):
     """无头浏览器以游客身份正常打开视频弹窗页，只读页面自己发出的请求：/aweme/related/（相关推荐视频）与 suggest_words 接口（看后搜/页面级推荐词）。"""
     from playwright.sync_api import sync_playwright
@@ -213,15 +241,8 @@ def browse(vid, wait_ms=9000):
         pg.wait_for_timeout(wait_ms)
         title = pg.title()
         b.close()
-    gate = "blocked_verification" if "验证" in title else None
     def judge(lst, n_items):
-        if n_items:
-            return "available"
-        if gate:
-            return gate
-        if any(s in (401, 403) for s, _ in lst):
-            return "blocked_login"
-        return "observed_empty" if lst else "missing"   # 页面没发出该请求（游客态常见）
+        return http_gate(title, lst, n_items)
     rel = []
     for _, j in got["related"]:
         for x in (j or {}).get("aweme_list") or []:
@@ -300,14 +321,14 @@ def collect(a_):
         try:
             recs["page_suggest_words"], recs["related_videos"] = browse(vid)
         except Exception as e:
-            recs["page_suggest_words"] = recs["related_videos"] = st("error", reason=type(e).__name__)
+            recs["page_suggest_words"] = recs["related_videos"] = st("error", reason=format_exc(e))
     if a_.kw:
         recs["search_sug"] = search_sug(a_.kw)
         if a_.search_rel:
             try:
                 recs["search_page_related"] = search_page_related(a_.kw)
             except Exception as e:
-                recs["search_page_related"] = st("error", reason=type(e).__name__)
+                recs["search_page_related"] = st("error", reason=format_exc(e))
     res["recommendations"] = recs
     # 媒体 / 截帧 / ASR
     res["media"] = st("not_requested", hint="加 --media")
@@ -318,7 +339,7 @@ def collect(a_):
             try:
                 mst["frames"] = media.frames(path, od, a_.hook_sec)
             except Exception as e:
-                mst["frames"] = st("error", reason=type(e).__name__)
+                mst["frames"] = st("error", reason=format_exc(e))
             if sub["status"] != "available" and a_.asr:
                 if not mst["frames"].get("has_audio", True):
                     sub = st("observed_empty", source="local_asr", reason="视频无音轨", platform_caption=sub)
@@ -330,7 +351,7 @@ def collect(a_):
                                  language=lang, seconds=round(time.time() - t0, 1), platform_caption=sub,
                                  segments=segs, text="\n".join(s["text"] for s in segs))
                     except Exception as e:
-                        sub = st("error", source="local_asr", reason=type(e).__name__, platform_caption=sub)
+                        sub = st("error", source="local_asr", reason=format_exc(e), platform_caption=sub)
             if not a_.keep_video:
                 os.remove(path); mst["video_file"] = "已删除（加 --keep-video 保留）"
             else:
@@ -397,7 +418,11 @@ def main():
     v.add_argument("--media", action="store_true", help="下载视频并截帧"); v.add_argument("--asr", action="store_true", help="无平台字幕时本地 ASR（需 --media）")
     v.add_argument("--asr-model", default="small"); v.add_argument("--hook-sec", type=float, default=5.0); v.add_argument("--keep-video", action="store_true")
     g = sp.add_parser("sug", help="只取搜索联想词"); g.add_argument("kw"); g.add_argument("--rel", action="store_true")
+    sp.add_parser("check", help="检查本机依赖，不访问网络")
     a = ap.parse_args()
+    if a.cmd == "check":
+        print(json.dumps(preflight(), ensure_ascii=False, indent=1))
+        return
     if a.cmd == "video":
         collect(a)
     else:
