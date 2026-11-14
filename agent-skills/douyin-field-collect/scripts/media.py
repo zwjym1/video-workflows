@@ -3,7 +3,7 @@
 任一源 403/失败就换下一个；全部失败如实返回 status=error 与每个源的失败原因。
 """
 import html, json, os, re, shutil, subprocess, sys, tempfile, time, urllib.request
-from dy_common import UA_M, UA_PC, log
+from dy_common import UA_M, UA_PC, format_exc, log
 
 FONT_CANDIDATES = ["/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
                    "/System/Library/Fonts/PingFang.ttc", "C:/Windows/Fonts/msyh.ttc"]
@@ -111,6 +111,8 @@ def download_video(vid, od):
             return path, {"status": "available", "source": name, "seconds": round(time.time() - t0, 1), "tried": tried}
         except Exception as e:
             msg = str(e)[:160]
+            if isinstance(e, (FileNotFoundError, ModuleNotFoundError, ImportError)):
+                msg = format_exc(e)[:160]
             # 只记原因，不记带签名的直链
             tried.append({"source": name, "reason": re.sub(r"https?://\S+", "<url>", msg)})
             log(f"下载源 {name} 失败：{tried[-1]['reason']}，换下一个")
@@ -119,6 +121,9 @@ def download_video(vid, od):
 
 def probe(path):
     r = run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_type,width,height", "-of", "json", path])
+    if r.returncode != 0 or not (r.stdout or "").strip():
+        err = (r.stderr or "").strip().splitlines()
+        raise RuntimeError("ffprobe 失败: " + (err[-1][:160] if err else f"rc={r.returncode}"))
     j = json.loads(r.stdout)
     vs = [s for s in j["streams"] if s["codec_type"] == "video"]
     return float(j["format"]["duration"]), ((vs[0]["width"], vs[0]["height"]) if vs else (0, 0)), any(s["codec_type"] == "audio" for s in j["streams"])
@@ -169,10 +174,16 @@ def frames(video, od, hook_sec=5.0, n=16):
 
 def asr(video, od, model="small"):
     """faster-whisper 本地识别（CPU，int8）。结果是机器转写，需人工复核。
-    音频用 ffmpeg 解码成 16k 单声道数组再喂给模型，不依赖 PyAV 版本。"""
+    音频用 ffmpeg 解码成 16k 单声道数组再喂给模型，不依赖 PyAV 版本。
+    ffmpeg 失败直接报错，不当成“没有人声”。"""
+    r = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", video, "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True)
+    if r.returncode != 0:
+        err = (r.stderr or b"").decode("utf-8", "replace").strip().splitlines()
+        raise RuntimeError("ffmpeg 解码失败: " + (err[-1][:160] if err else f"rc={r.returncode}"))
+    if not r.stdout:
+        raise RuntimeError("ffmpeg 未输出音频")
     import numpy as np
     from faster_whisper import WhisperModel
-    r = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", video, "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True)
     audio = np.frombuffer(r.stdout, np.int16).astype(np.float32) / 32768.0
     m = WhisperModel(model, device="cpu", compute_type="int8")
     kw = dict(language="zh", beam_size=1, initial_prompt="以下是普通话的句子，使用简体中文和标点。")
