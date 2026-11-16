@@ -130,7 +130,7 @@ def render_to(episode, out_dir, only_boards=None):
         "geometry_verified": episode.get("geometry_verified", False),
         "orientation": episode["orientation"],
         "font": _font_of(cache),
-        "limits": "没有核实过的 2020-08-14 穆勒回合坐标。本目录不是那粒进球的真实关系板。",
+        "limits": _limits(episode),
         "files": files,
     }
     (out / "MANIFEST.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -142,6 +142,17 @@ def _board(episode, board_id):
         if board["id"] == board_id:
             return board
     raise EpisodeRejected("geometry", f"场次里没有板 {board_id}。")
+
+
+def _limits(episode):
+    if episode.get("geometry_verified"):
+        return (
+            "这些板对照过列出的证据帧。俯视是同一机位的示意，不是测绘。"
+            "1920×1080 只说明文件尺寸，不是无压缩广播母带。观众成片不烧这句。"
+        )
+    if episode.get("claim") == "regression_arsenal_2018":
+        return "阿森纳关系几何只用于视觉回归，不是 2020-08-14 的比赛板。"
+    return "这份输出没有完成证据帧对照，不能当作已核验的比赛关系板。"
 
 
 def _font_of(cache):

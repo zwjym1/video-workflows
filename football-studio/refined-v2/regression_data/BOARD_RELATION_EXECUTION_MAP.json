@@ -1,0 +1,151 @@
+{
+  "base_geometry": "/workspace/football-demo/full-phase-production/assets/BOARD_RELATIONS.json",
+  "base_geometry_status": "手工关系示意，不是tracking/米数测绘；只复用经实帧核对的关系，不盲复制旧全显态",
+  "projection": "orthographic fixed attack-left, uniform scale; no shear/rotation",
+  "removed_old_board": "B1: pure sequence labels retained in actual footage instead",
+  "boards": [
+    {
+      "id": "Q1",
+      "reuse_base": "B2",
+      "focus_ids": [
+        "A34",
+        "L14",
+        "A11",
+        "L10"
+      ],
+      "visible_context_ids_keep_if_in_shot": [
+        "L25"
+      ],
+      "source_frame_times_s": [
+        86.6,
+        88.6,
+        90.2
+      ],
+      "progressive_layers": [
+        "34及L14",
+        "L14前侧→身后",
+        "11与下一名蓝衣",
+        "继续中圈的球路"
+      ],
+      "counterexample_guard": "不能说整条压迫线已过",
+      "return_to_source": true
+    },
+    {
+      "id": "Q2",
+      "reuse_base": "B3",
+      "focus_ids": [
+        "A10",
+        "A29",
+        "A2",
+        "L24"
+      ],
+      "visible_context_ids_keep_if_in_shot": [
+        "A11",
+        "L25",
+        "L6",
+        "L15"
+      ],
+      "source_frame_times_s": [
+        91.6,
+        93.6,
+        95.6
+      ],
+      "progressive_layers": [
+        "中路接点/附近防守",
+        "29中转/24邻近",
+        "外侧2",
+        "逐段传递与2后续推进"
+      ],
+      "counterexample_guard": "不能说外侧无人或直带必丢",
+      "return_to_source": true
+    },
+    {
+      "id": "Q3",
+      "reuse_base": "B4",
+      "focus_ids": [
+        "A2",
+        "L24",
+        "A17",
+        "L3",
+        "A10",
+        "L25"
+      ],
+      "visible_context_ids_keep_if_in_shot": [
+        "L6",
+        "L15",
+        "A9",
+        "L18"
+      ],
+      "source_frame_times_s": [
+        93.6,
+        97.6,
+        98.4
+      ],
+      "progressive_layers": [
+        "外侧持球",
+        "17/L3及10/L25",
+        "原位/新接点",
+        "真实回传"
+      ],
+      "counterexample_guard": "内侧跟进不是自动内套/牵制，不造2v1",
+      "return_to_source": true
+    },
+    {
+      "id": "Q4",
+      "reuse_base": "B5",
+      "focus_ids": [
+        "A2",
+        "A10",
+        "L15",
+        "A9"
+      ],
+      "visible_context_ids_keep_if_in_shot": [
+        "L25",
+        "L6",
+        "L18"
+      ],
+      "source_frame_times_s": [
+        98.4,
+        99.2,
+        100.8
+      ],
+      "progressive_layers": [
+        "10身前15及9",
+        "来球经过10旧点到9",
+        "10在球过原位后前插",
+        "9回做与15前→后"
+      ],
+      "counterexample_guard": "保持既有通过交汇，不复活旧审片误报；不硬叫第三人",
+      "return_to_source": true
+    },
+    {
+      "id": "Q5",
+      "reuse_base": "B6",
+      "focus_ids": [
+        "A10",
+        "L1",
+        "A14",
+        "L14"
+      ],
+      "visible_context_ids_keep_if_in_shot": [
+        "L15",
+        "L18",
+        "A9",
+        "L25"
+      ],
+      "source_frame_times_s": [
+        100.8,
+        101.24,
+        102.2
+      ],
+      "progressive_layers": [
+        "门将朝持球侧出来",
+        "另一侧A14与追者L14",
+        "跨门将移动方向的横传",
+        "真实终结"
+      ],
+      "counterexample_guard": "不补奥巴前段画外跑线，不称唯一正确/必进",
+      "return_to_source": true
+    }
+  ]
+}

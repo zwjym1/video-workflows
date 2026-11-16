@@ -30,11 +30,11 @@ def project(projection, uv):
     )
 
 
-def render_board(episode, board, t):
+def render_board(episode, board, t, show_stamp=True):
     if t < -1e-6 or t > board["duration_s"] + 1e-6:
         raise EpisodeRejected("timeline", f"{board['id']} 的时间 {t} 超出 0–{board['duration_s']}。")
     font_info = D.resolve_font()
-    image = _base(episode, board, font_info["path"]).copy()
+    image = _base(episode, board, font_info["path"], show_stamp).copy()
     pen = ImageDraw.Draw(image)
     catalog = {node["id"]: list(node["uv"]) for node in board["nodes"]}
     catalog.update({key: list(value) for key, value in board["extras"].items()})
@@ -99,6 +99,8 @@ def render_board(episode, board, t):
         "supersample": D.SS,
         "upscaled": False,
         "audio": None,
+        "audience": not show_stamp,
+        "stamp_burned": bool(show_stamp),
         "font": font_info,
         "orientation": episode["orientation"],
         "ids": [node["id"] for node in board["nodes"]],
@@ -115,8 +117,8 @@ def render_board(episode, board, t):
     return rgb, state
 
 
-def _base(episode, board, font_path):
-    key = (episode["episode_id"], board["id"], episode["stamp"], font_path)
+def _base(episode, board, font_path, show_stamp=True):
+    key = (episode["episode_id"], board["id"], episode["stamp"], font_path, bool(show_stamp))
     cached = _BASES.get(key)
     if cached is not None:
         return cached
@@ -129,8 +131,9 @@ def _base(episode, board, font_path):
     D.text(pen, (44, 27), board["question"], 27, D.WHITE, font_path=font_path)
     D.text(pen, (1080, 41), "← 进攻", 19, D.MUT, font_path=font_path)
     _minimap(image, board)
-    stamp_color = D.ATT if episode["claim"] != "regression_arsenal_2018" else D.MUT
-    D.text(pen, (44, 624), episode["stamp"], 16, stamp_color, font_path=font_path)
+    if show_stamp:
+        stamp_color = D.ATT if episode["claim"] != "regression_arsenal_2018" else D.MUT
+        D.text(pen, (44, 624), episode["stamp"], 16, stamp_color, font_path=font_path)
     _BASES[key] = image
     return image
 

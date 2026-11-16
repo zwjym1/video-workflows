@@ -10,9 +10,25 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-RELATIONS = ROOT / "snapshot-20261116/football-demo/full-phase-production/assets/BOARD_RELATIONS.json"
-EXECUTION = ROOT / "snapshot-20261116/football-demo/two-reference-refinement/BOARD_RELATION_EXECUTION_MAP.json"
+PACK = Path(__file__).resolve().parents[1] / "regression_data"
+SNAPSHOT = Path(__file__).resolve().parents[2] / "snapshot-20261116"
+
+
+def _pack_or_snapshot(pack_name, snapshot_rel):
+    packaged = PACK / pack_name
+    if packaged.is_file():
+        return packaged
+    return SNAPSHOT / snapshot_rel
+
+
+RELATIONS = _pack_or_snapshot(
+    "BOARD_RELATIONS.json",
+    "football-demo/full-phase-production/assets/BOARD_RELATIONS.json",
+)
+EXECUTION = _pack_or_snapshot(
+    "BOARD_RELATION_EXECUTION_MAP.json",
+    "football-demo/two-reference-refinement/BOARD_RELATION_EXECUTION_MAP.json",
+)
 
 QUESTIONS = {
     "Q1": "过掉眼前这一人，下一脚怎么办？",

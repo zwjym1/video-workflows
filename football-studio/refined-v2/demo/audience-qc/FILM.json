@@ -1,0 +1,18 @@
+{
+  "path": "demo/audience-example.mp4",
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "frames": 442,
+  "duration_s": 17.68,
+  "audience": true,
+  "master": false,
+  "audio": null,
+  "upscaled": false,
+  "source_size": [
+    1280,
+    720
+  ],
+  "subtitle_margin_px": 41,
+  "note": "示例装配，不是最终母带。核验戳只在这个 QC 目录。"
+}

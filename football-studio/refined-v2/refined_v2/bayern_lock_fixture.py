@@ -60,16 +60,7 @@ def build():
                 _player(high, "Kin", "attack", None, None, 560, 340, 0.9),
                 _player(high, "Kin2", "attack", None, None, 700, 330, 1.0, False),
             ],
-            "motions": [
-                {
-                    "id": "K14",
-                    "frm": _pt(high, 520, 570),
-                    "to": _pt(high, 520, 500),
-                    "t0": 0.5,
-                    "t1": 1.3,
-                    "kind": "run",
-                }
-            ],
+            "motions": [],
             "labels": [
                 {"id": "K14", "text": "左边路持球", "t0": 0.2, "t1": 4.0, "offset": [36, 20]},
                 {"id": "Cmark", "text": "身前有人", "t0": 0.36, "t1": 2.0, "offset": [-150, -28]},
@@ -77,7 +68,7 @@ def build():
             ],
             "layers": [
                 {"t": 0.24, "name": "回放A 14号"},
-                {"t": 1.0, "name": "向禁区带"},
+                {"t": 1.0, "name": "身前的人"},
                 {"t": 2.2, "name": "禁区里的人"},
                 {"t": 3.4, "name": "停在边路"},
             ],
@@ -107,8 +98,8 @@ def build():
             ],
             "routes": [{"ids": ["ball_96", "ball_102"], "t0": 1.5, "t1": 2.4, "intent": "forward"}],
             "labels": [
-                {"id": "Kshot", "text": "出球人无号码", "t0": 0.2, "t1": 1.7, "offset": [28, -42]},
-                {"id": "Ktall", "text": "另一白衣无号码", "t0": 0.32, "t1": 1.7, "offset": [24, 26]},
+                {"id": "Kshot", "text": "回做点", "t0": 0.2, "t1": 1.7, "offset": [28, -42]},
+                {"id": "Ktall", "text": "接应点", "t0": 0.32, "t1": 1.7, "offset": [24, 26]},
                 {"id": "C5", "text": "5号在禁区左侧", "t0": 0.9, "t1": 4.8, "offset": [32, 18]},
             ],
             "layers": [
@@ -139,7 +130,7 @@ def build():
                 {"id": "K9", "text": "回放确认9号", "t0": 0.32, "t1": 4.4, "offset": [-168, 6]},
                 {"id": "C21", "text": "回放确认21号", "t0": 0.48, "t1": 1.2, "offset": [30, 22]},
                 {"id": "K18", "text": "远端18未参与", "t0": 0.64, "t1": 4.4, "offset": [28, 24]},
-                {"id": "Kair", "text": "起脚人无号码", "t0": 1.3, "t1": 4.4, "offset": [36, -40]},
+                {"id": "Kair", "text": "射门点", "t0": 1.3, "t1": 4.4, "offset": [36, -40]},
             ],
             "layers": [
                 {"t": 0.2, "name": "回放B 门将"},

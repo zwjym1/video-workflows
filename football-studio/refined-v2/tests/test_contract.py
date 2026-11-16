@@ -45,11 +45,9 @@ class ContractTest(unittest.TestCase):
     def test_q4_does_not_invent_l6(self):
         source = VENDOR.read_text(encoding="utf-8")
         self.assertIn("b['pos']['L6']", source)
-        relations = json.loads(
-            (ROOT.parent / "snapshot-20261116/football-demo/full-phase-production/assets/BOARD_RELATIONS.json").read_text(
-                encoding="utf-8"
-            )
-        )
+        from refined_v2.arsenal_fixture import RELATIONS
+
+        relations = json.loads(RELATIONS.read_text(encoding="utf-8"))
         b5 = next(board for board in relations["boards"] if board["id"] == "B5")
         self.assertNotIn("L6", {node["id"] for node in b5["nodes"]})
         q4 = next(board for board in json.loads(REGRESSION.read_text(encoding="utf-8"))["boards"] if board["id"] == "Q4")

@@ -1,4 +1,7 @@
+/workspace/football-studio/refined-v2/tests/test_film.py:67: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmpe5jvcqfx/late.png'>
+  self.assertEqual(Image.open(decoded).size, (1280, 720))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ----------------------------------------------------------------------
-Ran 32 tests in 0.987s
+Ran 36 tests in 5.722s
 
 OK
