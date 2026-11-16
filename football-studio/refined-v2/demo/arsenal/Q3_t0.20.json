@@ -1,0 +1,60 @@
+{
+  "episode_id": "arsenal-2018-regression",
+  "claim": "regression_arsenal_2018",
+  "stamp": "回归 · 2018阿森纳关系板 · 非新场次",
+  "board": "Q3",
+  "t": 0.2,
+  "question": "球在边上，里面的人为什么还要跑？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "A2",
+    "L24",
+    "A17",
+    "L3",
+    "A10",
+    "L25"
+  ],
+  "numbers": {
+    "A2": "2",
+    "L24": "24",
+    "A17": "17",
+    "L3": "3",
+    "A10": "10",
+    "L25": "25"
+  },
+  "labels": [
+    "外侧推进"
+  ],
+  "visible_ids": [
+    "A2",
+    "L24"
+  ],
+  "motion_progress": {
+    "A2": 0.0,
+    "A17": 0.0,
+    "A10": 0.0,
+    "L24": 0.0,
+    "L3": 0.0,
+    "L25": 0.0
+  },
+  "route_progress": {}
+}

@@ -1,0 +1,71 @@
+{
+  "episode_id": "bayern-20200814-mueller-open-lock-draft",
+  "claim": "lock_draft",
+  "stamp": "锁帧草稿 · 未见源帧 · 几何未核验",
+  "board": "R1",
+  "t": 3.4,
+  "question": "14号身前，边路还有空当吗？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "K14",
+    "Cnear",
+    "Kbox",
+    "Cbox",
+    "Kcen",
+    "Ccen",
+    "Kpost",
+    "Cpost",
+    "Cd",
+    "Kkeep"
+  ],
+  "numbers": {
+    "K14": "14",
+    "Cnear": null,
+    "Kbox": null,
+    "Cbox": null,
+    "Kcen": null,
+    "Ccen": null,
+    "Kpost": null,
+    "Cpost": null,
+    "Cd": null,
+    "Kkeep": null
+  },
+  "labels": [
+    "禁区里已有人"
+  ],
+  "visible_ids": [
+    "K14",
+    "Cnear",
+    "Kbox",
+    "Cbox",
+    "Kcen",
+    "Ccen",
+    "Kpost",
+    "Cpost",
+    "Cd",
+    "Kkeep"
+  ],
+  "motion_progress": {
+    "K14": 1.0
+  },
+  "route_progress": {}
+}

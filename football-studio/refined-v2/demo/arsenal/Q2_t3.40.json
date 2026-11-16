@@ -1,0 +1,57 @@
+{
+  "episode_id": "arsenal-2018-regression",
+  "claim": "regression_arsenal_2018",
+  "stamp": "回归 · 2018阿森纳关系板 · 非新场次",
+  "board": "Q2",
+  "t": 3.4,
+  "question": "中间这脚中转，多接上哪条路？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "A10",
+    "A29",
+    "A2",
+    "L24"
+  ],
+  "numbers": {
+    "A10": "10",
+    "A29": "29",
+    "A2": "2",
+    "L24": "24"
+  },
+  "labels": [
+    "一脚中转",
+    "外侧继续推进"
+  ],
+  "visible_ids": [
+    "A10",
+    "A29",
+    "A2",
+    "L24"
+  ],
+  "motion_progress": {
+    "L24": 1.0
+  },
+  "route_progress": {
+    "A10-A29": 1.0,
+    "A29-A2": 1.0
+  }
+}

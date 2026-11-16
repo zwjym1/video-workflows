@@ -1,0 +1,53 @@
+{
+  "episode_id": "arsenal-2018-regression",
+  "claim": "regression_arsenal_2018",
+  "stamp": "回归 · 2018阿森纳关系板 · 非新场次",
+  "board": "Q5",
+  "t": 0.2,
+  "question": "门将来到这一侧，横传改变了什么？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "A10",
+    "L1",
+    "A14",
+    "L14"
+  ],
+  "numbers": {
+    "A10": "10",
+    "L1": "1",
+    "A14": "14",
+    "L14": "14"
+  },
+  "labels": [
+    "门将已向球侧出来"
+  ],
+  "visible_ids": [
+    "A10",
+    "L1"
+  ],
+  "motion_progress": {
+    "L14": 0.0
+  },
+  "route_progress": {
+    "A10-A14": 0.0
+  }
+}

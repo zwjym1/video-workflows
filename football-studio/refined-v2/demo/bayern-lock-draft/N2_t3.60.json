@@ -1,0 +1,71 @@
+{
+  "episode_id": "bayern-20200814-mueller-open-lock-draft",
+  "claim": "lock_draft",
+  "stamp": "锁帧草稿 · 未见源帧 · 几何未核验",
+  "board": "N2",
+  "t": 3.6,
+  "question": "禁区这一脚，球是怎么出去的？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "Kshot",
+    "Ktall",
+    "Ctall",
+    "Cshot",
+    "C20",
+    "C5",
+    "C2",
+    "C3",
+    "Kkeep",
+    "Kleft"
+  ],
+  "numbers": {
+    "Kshot": null,
+    "Ktall": null,
+    "Ctall": null,
+    "Cshot": null,
+    "C20": "20",
+    "C5": "5",
+    "C2": "2",
+    "C3": "3",
+    "Kkeep": null,
+    "Kleft": null
+  },
+  "labels": [
+    "门将在球门侧"
+  ],
+  "visible_ids": [
+    "Kshot",
+    "Ktall",
+    "Ctall",
+    "Cshot",
+    "C20",
+    "C5",
+    "C2",
+    "C3",
+    "Kkeep",
+    "Kleft"
+  ],
+  "motion_progress": {},
+  "route_progress": {
+    "ball_a-ball_b-ball_c": 1.0
+  }
+}

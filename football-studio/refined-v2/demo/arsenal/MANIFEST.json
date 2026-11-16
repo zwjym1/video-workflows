@@ -1,0 +1,59 @@
+{
+  "episode_id": "arsenal-2018-regression",
+  "claim": "regression_arsenal_2018",
+  "stamp": "回归 · 2018阿森纳关系板 · 非新场次",
+  "statement": "这是 2018 阿森纳对莱斯特的关系板回归。几何来自已确认的关系数据和精修 v2 动作表。不是 2020-08-14 的任何回合。",
+  "timing_basis": "board_local_seconds",
+  "timing_note": "新版配音没有生成，快照里没有 Q 板的字级时钟。这里用板上的分层秒数回归出现顺序，不把旧旁白词时点冒充成新版。仓库里也没有这场的实拍帧，所以回归包不输出并排画面。",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "audio_note": "本轮不渲音频，不调用配音。",
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "limits": "没有核实过的 2020-08-14 穆勒回合坐标。本目录不是那粒进球的真实关系板。",
+  "files": [
+    "Q1_t0.20.png",
+    "Q1_t1.00.png",
+    "Q1_t2.40.png",
+    "Q1_t3.60.png",
+    "Q1_PROGRESS.png",
+    "Q2_t0.20.png",
+    "Q2_t1.00.png",
+    "Q2_t2.00.png",
+    "Q2_t3.40.png",
+    "Q2_PROGRESS.png",
+    "Q3_t0.20.png",
+    "Q3_t1.40.png",
+    "Q3_t2.60.png",
+    "Q3_t3.80.png",
+    "Q3_PROGRESS.png",
+    "Q4_t0.20.png",
+    "Q4_t1.60.png",
+    "Q4_t2.80.png",
+    "Q4_t3.80.png",
+    "Q4_PROGRESS.png",
+    "Q5_t0.20.png",
+    "Q5_t1.00.png",
+    "Q5_t1.72.png",
+    "Q5_t2.48.png",
+    "Q5_PROGRESS.png",
+    "Q4_BEFORE_AFTER.png",
+    "Q4_LAYERS.mp4"
+  ]
+}

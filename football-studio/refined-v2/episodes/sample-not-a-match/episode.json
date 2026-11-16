@@ -1,0 +1,58 @@
+{
+  "episode_id": "sample-not-a-match",
+  "claim": "sample_not_a_match",
+  "statement": "这是接口样例，不是任何一场比赛的几何，更不是2020-08-14穆勒回合。",
+  "timing_basis": "board_local_seconds",
+  "timing_note": "秒数只为演示分层。没有字级旁白，也没有核实过的比赛坐标。",
+  "input_attack": "left",
+  "coordinate_kind": "invented_for_the_interface",
+  "evidence_frames": [
+    {
+      "id": "placeholder-not-footage",
+      "path": "evidence/NOT_A_MATCH_FRAME.png",
+      "role": "版式占位，不是比赛画面",
+      "native_size": [480, 270]
+    }
+  ],
+  "boards": [
+    {
+      "id": "S1",
+      "question": "样例：这一脚先找哪侧接点？",
+      "duration_s": 4.0,
+      "legend_s": 1.75,
+      "legend_fade_s": 1.3,
+      "nodes": [
+        {"id": "P7", "number": "7", "team": "attack", "uv": [58, 32], "focus": true, "appear_s": 0.16},
+        {"id": "P11", "number": "11", "team": "attack", "uv": [46, 58], "focus": true, "appear_s": 0.72},
+        {"id": "D4", "number": "4", "team": "defense", "uv": [71, 44], "focus": true, "appear_s": 0.2},
+        {"id": "D5", "number": "5", "team": "defense", "uv": [40, 62], "focus": true, "appear_s": 0.88},
+        {"id": "D8", "number": "8", "team": "defense", "uv": [52, 48], "focus": false, "appear_s": 0.24}
+      ],
+      "motions": [
+        {"id": "P7", "frm": [74, 28], "to": [58, 32], "t0": 0.28, "t1": 1.2, "kind": "run"},
+        {"id": "D4", "frm": [66, 36], "to": [71, 44], "t0": 0.36, "t1": 1.12, "kind": "def"}
+      ],
+      "routes": [
+        {"ids": ["P7", "P11"], "t0": 1.56, "t1": 2.16, "intent": "forward"}
+      ],
+      "labels": [
+        {"id": "P7", "text": "持球向左", "t0": 0.28, "t1": 1.4, "offset": [28, -48]},
+        {"id": "D4", "text": "先在身侧", "t0": 0.4, "t1": 1.48, "offset": [36, 22]},
+        {"id": "P11", "text": "前侧接点", "t0": 0.8, "t1": 4.0, "offset": [36, -36]}
+      ],
+      "layers": [
+        {"t": 0.2, "name": "对象"},
+        {"t": 1.0, "name": "跑动与防守"},
+        {"t": 2.0, "name": "球路"},
+        {"t": 3.2, "name": "接点留下"}
+      ],
+      "notes": "五个点都是编出来的。D8 故意淡显，用来看非焦点，不是某场被漏掉的人。"
+    }
+  ],
+  "demo": {
+    "mp4_boards": ["S1"],
+    "side_by_side": [
+      {"board": "S1", "t": 2.6, "evidence": "placeholder-not-footage"}
+    ]
+  }
+}

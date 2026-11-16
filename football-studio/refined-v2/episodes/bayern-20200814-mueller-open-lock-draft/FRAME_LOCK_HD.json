@@ -1,0 +1,506 @@
+{
+  "created_at_asia_shanghai": "2026-11-17 00:52",
+  "match": {
+    "date_kickoff": "2020-08-14",
+    "competition": "UEFA Champions League 2019/20 quarter-final",
+    "score": "FC Barcelona 2-8 FC Bayern Munich",
+    "topic": "Thomas Mueller opening goal, match clock 3:02-3:04 (4th minute), not his later goal"
+  },
+  "source": {
+    "url": "https://www.youtube.com/watch?v=WNED5YVCuwM",
+    "title": "Bayern Munich vs Barcelona | 8-2 | extended highlights and Goals | UCL 2019/20",
+    "uploader": "Föötbäll ⚽ frënzy",
+    "upload_date": "2024-11-22",
+    "authorization": "Uploader is not the rights holder; authorization unknown; research/learning copy only; do not publish. Broadcast graphics and a small uploader watermark are present. English commentary is on the track (ASR 需复核).",
+    "user_pc_full_file": "C:\\Users\\Administrator\\football-hd-20261117\\downloads\\unofficial\\WNED5YVCuwM.mp4",
+    "full_bytes": 242649022,
+    "full_sha256": "c812bcb4a0a6de702cac3926d84d083dd38c04b97c7b7fca416944acdd2a9622",
+    "full_duration_s": 664.508662,
+    "full_resolution": "1920x1080",
+    "video_codec": "h264 High yuv420p 30fps",
+    "audio_codec": "aac LC 44100 stereo eng",
+    "box_clip": "/workspace/football-demand-20261116/rework-hd/source/WNED5YVCuwM_muller_open_50-92s_1080p.mp4",
+    "clip_note": "Re-encoded CRF18 cut of source 50.0-92.0s for transfer (<100MiB). Use full file on the user PC as the master research copy. Clip time = source time - 50.",
+    "clip_bytes": 31051655,
+    "clip_sha256": "adb51973041743c297ee2604bf4ea194f26c3a275c84a5304bae07b9e74e2521",
+    "clip_duration_s": 42.0
+  },
+  "timeline_source_s": {
+    "50-54": "pre-kickoff close-ups (Messi #10, Lewandowski face). Not the attack.",
+    "56-58": "wide kickoff / opening midfield. White #14 (Perisic) readable around (1020,640). This is NOT continuous with the 3:02 box; there is an edit jump. Do not draw a pass/run from this shot into the goal sequence.",
+    "59.0-61.5": "LIVE first-goal box combination and finish. Clock 3:02-3:04, BAR 0-0 BAY. Attack to the LEFT. Continuous same camera.",
+    "61.5-71": "celebration and sideline reaction (white #6 Thiago readable in one cele frame).",
+    "72-74": "REPLAY A high-wide, attack LEFT: Perisic #14 carries on the near/left flank into the box; ball then appears near the D.",
+    "75-77.5": "REPLAY B behind-goal (attack toward BOTTOM of frame): #9 Lewandowski and #21 De Jong visible; loose/second ball in the box; shot toward goal.",
+    "78-80": "Müller celebration close-up, clock 3:15, BAR 0-1 BAY. Shirt 25 only partially visible; identity from face + scoreboard, not a fully clear 25.",
+    "81-86": "REPLAY C another wide angle of the same finish (do not mix with the later Alaba own-goal, which starts after ~104s / clip 54s — not in this cut)."
+  },
+  "canvas": {
+    "w": 1920,
+    "h": 1080,
+    "origin": "top-left",
+    "grid": "100px"
+  },
+  "identity_evidence": {
+    "confirmed_numbers": {
+      "Bayern_14": "Perisic, midfield kickoff frame and replay A (t073/t074)",
+      "Bayern_9": "Lewandowski, behind-goal replay B t075",
+      "Bayern_18": "Goretzka, replay B t075 right edge",
+      "Bayern_6": "Thiago, celebration only, not in the action frames",
+      "Barcelona_2": "Semedo, live box 3:02-3:03",
+      "Barcelona_3": "Pique, live t59p6 and replay A t074",
+      "Barcelona_5": "Busquets, live box and replays",
+      "Barcelona_20": "Sergi Roberto, live box and t074",
+      "Barcelona_21": "Frenkie de Jong, behind-goal t075",
+      "Barcelona_10": "Messi, only in pre-kickoff close-up",
+      "ter_Stegen": "green kit, left goal live / bottom goal behind-goal"
+    },
+    "finisher": "Thomas Müller confirmed after the fact by celebration close-up + scoreboard 3:15 BAR 0-1 BAY + English commentary (ASR 需复核: 'Muller, onto Lewandowski and then back to Muller'). Shirt 25 is only suspected on t074 and partially visible on t078, not a clean number lock on the shooting frame. On the shooting frames label him as white finisher, not a hard-locked #25.",
+    "do_not_invent": "Any player not visible in that frame. A continuous midfield-to-flank passing chain (the 56-58 kickoff is a different moment). A complete one-two with numbered Müller/Lewandowski on the live shooting frames (numbers are not readable there; #9 is locked only on replay B)."
+  },
+  "frames": [
+    {
+      "id": "B1_flank_t072",
+      "source_s": 72.0,
+      "clip_s": 22.0,
+      "camera": "high-wide, goal left, attack left",
+      "match_clock": null,
+      "ball_px": [
+        790,
+        835
+      ],
+      "players_px": [
+        {
+          "team": "BAY",
+          "id": "14",
+          "name": "Perisic",
+          "role": "left-wing carrier",
+          "xy": [
+            790,
+            835
+          ],
+          "evidence": "number clear on t073-t074 same path"
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "near-side marker on 14",
+          "xy": [
+            770,
+            720
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "near-side runner inside box",
+          "xy": [
+            1100,
+            690
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "near-side box mid",
+          "xy": [
+            1080,
+            600
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "central box runner",
+          "xy": [
+            880,
+            430
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "central box marker",
+          "xy": [
+            830,
+            410
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "far-post runner",
+          "xy": [
+            1010,
+            400
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "far-post marker",
+          "xy": [
+            980,
+            380
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "top of D",
+          "xy": [
+            1190,
+            370
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "right-side midfielder",
+          "xy": [
+            1410,
+            580
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "far right midfield",
+          "xy": [
+            1710,
+            420
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "GK",
+          "name": "ter Stegen",
+          "xy": [
+            530,
+            430
+          ]
+        }
+      ],
+      "arrows": [
+        {
+          "type": "carry",
+          "from": [
+            790,
+            835
+          ],
+          "to": [
+            790,
+            780
+          ],
+          "note": "space ahead along the near/left channel toward the box; continue on t073"
+        }
+      ],
+      "board": "flank space: #14 has the ball on the attacking left / near touchline with room to go; box already occupied by unnumbered runners"
+    },
+    {
+      "id": "B1b_flank_t073",
+      "source_s": 73.0,
+      "clip_s": 23.0,
+      "camera": "high-wide, goal left, attack left",
+      "ball_px": [
+        800,
+        810
+      ],
+      "players_px": [
+        {
+          "team": "BAY",
+          "id": "14",
+          "name": "Perisic",
+          "xy": [
+            800,
+            800
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "pressing 14",
+          "xy": [
+            780,
+            780
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "near-side box support",
+          "xy": [
+            880,
+            710
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "5",
+          "name": "Busquets",
+          "xy": [
+            900,
+            680
+          ],
+          "evidence": "Qoder + later t074"
+        },
+        {
+          "team": "BAR",
+          "id": "GK",
+          "name": "ter Stegen",
+          "xy": [
+            580,
+            450
+          ]
+        }
+      ],
+      "note": "Carry continues; a possible released ball into the box is uncertain on this single frame."
+    },
+    {
+      "id": "B2_box_live_t059",
+      "source_s": 59.0,
+      "clip_s": 9.0,
+      "camera": "sideline, goal left, attack left",
+      "match_clock": "3:02",
+      "score": "BAR 0-0 BAY",
+      "ball_px": [
+        1145,
+        553
+      ],
+      "players_px": [
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "white on the ball / about to play (finisher candidate, number unreadable)",
+          "xy": [
+            1310,
+            520
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "white tall, just off the ball (CF candidate; #9 only locked on replay B)",
+          "xy": [
+            1105,
+            490
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "marker on the tall white",
+          "xy": [
+            1040,
+            480
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "marker on the ball-carrier",
+          "xy": [
+            1365,
+            490
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "20",
+          "name": "Sergi Roberto",
+          "xy": [
+            1045,
+            640
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "5",
+          "name": "Busquets",
+          "xy": [
+            150,
+            720
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "2",
+          "name": "Semedo",
+          "xy": [
+            990,
+            940
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "3",
+          "name": "Pique",
+          "xy": [
+            300,
+            660
+          ],
+          "evidence": "clearer on t59p6"
+        },
+        {
+          "team": "BAR",
+          "id": "GK",
+          "name": "ter Stegen",
+          "xy": [
+            215,
+            480
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "white left of box, unnumbered",
+          "xy": [
+            120,
+            620
+          ]
+        }
+      ],
+      "arrows": [
+        {
+          "type": "ball",
+          "from": [
+            1145,
+            553
+          ],
+          "to": [
+            845,
+            637
+          ],
+          "note": "ball then travels left toward goal on t59p6 (3:02) and is airborne at t60p2 (3:03, 583,558)"
+        }
+      ]
+    },
+    {
+      "id": "B2b_shot_t59p6_t60p2",
+      "source_s": [
+        59.6,
+        60.2
+      ],
+      "clip_s": [
+        9.6,
+        10.2
+      ],
+      "camera": "same as B2, continuous",
+      "match_clock": "3:02 then 3:03",
+      "ball_px_t59p6": [
+        845,
+        637
+      ],
+      "ball_px_t60p2": [
+        583,
+        558
+      ],
+      "note": "White who was at ~ (1185,565) has already released the ball (body falling/follow-through). ter Stegen dives at t60p2 ~(400,520). Goal confirmed on t061 (3:04) and later 0-1 graphic."
+    },
+    {
+      "id": "B3_behind_goal_t075_t077",
+      "source_s": [
+        75.0,
+        77.0
+      ],
+      "clip_s": [
+        25.0,
+        27.0
+      ],
+      "camera": "behind Barca goal; attack toward BOTTOM of the frame (rotate 90° CCW to get attack-left for the board)",
+      "players_px_t075": [
+        {
+          "team": "BAY",
+          "id": "9",
+          "name": "Lewandowski",
+          "xy": [
+            540,
+            560
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "21",
+          "name": "De Jong",
+          "xy": [
+            680,
+            550
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": "18",
+          "name": "Goretzka",
+          "xy": [
+            1900,
+            650
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": "GK",
+          "name": "ter Stegen",
+          "xy": [
+            1100,
+            850
+          ]
+        },
+        {
+          "team": "BAY",
+          "id": null,
+          "role": "white in aerial/challenge at the D",
+          "xy": [
+            750,
+            400
+          ]
+        },
+        {
+          "team": "BAR",
+          "id": null,
+          "role": "challenger at the D",
+          "xy": [
+            750,
+            430
+          ]
+        }
+      ],
+      "ball_px_t075": [
+        750,
+        370
+      ],
+      "ball_px_t077": [
+        960,
+        580
+      ],
+      "t077_note": "Ball central in the box heading toward the bottom goal; keeper diving. The kicker's number is not readable on this frame."
+    }
+  ],
+  "board_plan": [
+    {
+      "board": 1,
+      "title": "左边路空间：14号持球内切",
+      "lock_frame": "B1_flank_t072 plus t073",
+      "must_show": "attack-left half-pitch; #14 on the left channel; unnumbered runners in the box; do not invent midfield passers"
+    },
+    {
+      "board": 2,
+      "title": "禁区右肋回做后出球",
+      "lock_frame": "B2_box_live_t059 plus t59p6",
+      "must_show": "two whites at the right-edge of the box, ball going left; Barca 2/3/5/20 and ter Stegen; label whites by function unless a number is readable"
+    },
+    {
+      "board": 3,
+      "title": "射门对门将",
+      "lock_frame": "t60p2 live + t077 behind-goal",
+      "must_show": "ball path into the left/bottom goal, diving keeper; shooter is the white who released at the right-edge, identified as Müller only with celebration+scoreboard, not a clean #25 on the shot"
+    }
+  ],
+  "qoder": {
+    "tool": "qoder-flash",
+    "logs": [
+      "/workspace/football-demand-20261116/rework-hd/notes/qoder_hd_live.out",
+      "/workspace/football-demand-20261116/rework-hd/notes/qoder_hd_replay.out"
+    ],
+    "note": "Qoder confirmed the live 3:02-3:03 cut is continuous, midfield 56s is a separate kickoff shot, and numbers 14/9/18/2/3/5/20/21. Replay pixel estimates from Qoder on flank frames were inconsistent with the 100px grid and were not used; pixels below are from the grid stills."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "episode_id": "bayern-20200814-mueller-open-lock-draft",
+  "claim": "lock_draft",
+  "stamp": "锁帧草稿 · 未见源帧 · 几何未核验",
+  "board": "R3",
+  "t": 1.68,
+  "question": "门后回放里，哪几个号码清楚？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "K9",
+    "C21",
+    "K18",
+    "Kkeep",
+    "Kair",
+    "Cair"
+  ],
+  "numbers": {
+    "K9": "9",
+    "C21": "21",
+    "K18": "18",
+    "Kkeep": null,
+    "Kair": null,
+    "Cair": null
+  },
+  "labels": [
+    "回放确认9号",
+    "起脚人无号码"
+  ],
+  "visible_ids": [
+    "K9",
+    "C21",
+    "K18",
+    "Kkeep",
+    "Kair",
+    "Cair"
+  ],
+  "motion_progress": {},
+  "route_progress": {
+    "ball_d-ball_e": 0.23517
+  }
+}
