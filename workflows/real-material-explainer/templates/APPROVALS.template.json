@@ -1,0 +1,40 @@
+{
+  "gate1": {
+    "bundle": [
+      "full_script",
+      "all_storyboards",
+      "actual_assets_phone_board",
+      "meme_originals_and_risk_screen",
+      "terms_audio"
+    ],
+    "status": "pending",
+    "user_confirmation": null,
+    "confirmed_version_hashes": {}
+  },
+  "gate2": {
+    "continuous_audio_segment": null,
+    "duration_s": null,
+    "complete_causal_chain": false,
+    "status": "pending",
+    "user_confirmation": null
+  },
+  "gate3": {
+    "full_video": null,
+    "release_checklist": null,
+    "dual_covers": [],
+    "status": "pending",
+    "user_confirmation": null
+  },
+  "platform_check": {
+    "raw_message": null,
+    "timestamp_given": false,
+    "suspected_assets_not_proven": [],
+    "approved_removal_scope": [],
+    "retest_status": "not_confirmed"
+  },
+  "publication": {
+    "explicit_send_authorization": false,
+    "actually_published": false,
+    "actual_url": null
+  }
+}

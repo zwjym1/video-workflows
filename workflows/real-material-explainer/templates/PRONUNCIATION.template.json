@@ -1,0 +1,65 @@
+{
+  "schema_version": "2026.11.17",
+  "scope": "本路线案例参数；资源ID非凭据，授权与新项目适用性另核",
+  "fish": {
+    "model": "s2.1-pro-free",
+    "reference_id": "906524668b6d4afe84736962e005cd09",
+    "temperature": 0.7,
+    "top_p": 0.7,
+    "speed": 1.0,
+    "hint_policy": "沿用该项目真实默认HINT 不临时添加情绪词",
+    "api_key": "ENVIRONMENT_ONLY_NEVER_COMMIT_REAL_VALUE"
+  },
+  "terms": [
+    {
+      "display": "5070 Ti",
+      "spoken_input": "五零七零 tie",
+      "expected_sound": "五零七零 tai",
+      "actual_sentence_audio": null,
+      "listening_status": "pending"
+    },
+    {
+      "display": "5080",
+      "spoken_input": "五零八零",
+      "expected_sound": "逐位读",
+      "listening_status": "pending"
+    },
+    {
+      "display": "5090",
+      "spoken_input": "五零九零",
+      "expected_sound": "逐位读",
+      "listening_status": "pending"
+    },
+    {
+      "display": "GB203",
+      "spoken_input": "G B 二零三",
+      "expected_sound": "字母加二零三",
+      "listening_status": "pending"
+    },
+    {
+      "display": "GB202",
+      "spoken_input": "G B 二零二",
+      "expected_sound": "字母加二零二",
+      "listening_status": "pending"
+    },
+    {
+      "display": "BIOS",
+      "spoken_input": "bye-oss",
+      "expected_sound": "自然英文 BIOS 非逐字母",
+      "listening_status": "pending"
+    },
+    {
+      "display": "eFuse",
+      "spoken_input": "eFuse",
+      "expected_sound": "自然技术术语 必须实听确认 不自动标通过",
+      "listening_status": "pending"
+    }
+  ],
+  "rules": [
+    "用自然完整句试听",
+    "ASR相同不等于读音正确",
+    "每次改读法重生成整句或句群 不拼数字音节",
+    "输出字幕保留正常英文 不把朗读替代输入写入字幕",
+    "未获同意不换声/付费/充值"
+  ]
+}

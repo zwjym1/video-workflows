@@ -1,0 +1,83 @@
+{
+  "schema_version": "2026.11.17",
+  "implementation_note": "字段模板；当前项目已按镜头缓存/局部导出，统一依赖自动失效尚未实现",
+  "project": {
+    "id": "<PROJECT_ID>",
+    "topic": "<已选同题>",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "final_audio_sha256": null,
+    "script_version": null,
+    "captions_version": null
+  },
+  "shots": [
+    {
+      "shot_id": "A01",
+      "sentence_group": "<完整讲解功能与连续起承转合>",
+      "display_text": "<正常显示文字>",
+      "spoken_text": "<实际TTS整句输入>",
+      "subtitle_cues": [
+        {
+          "cue_id": "C001",
+          "text": "<无标点自然完整短句>",
+          "start": null,
+          "end": null,
+          "font_px": 40,
+          "bbox_actual": null,
+          "min_side_margin_px": 60
+        }
+      ],
+      "audio": {
+        "take_id": null,
+        "file": null,
+        "sha256": null,
+        "voice_params_hash": null,
+        "actual_duration_s": null,
+        "listening_verified": false
+      },
+      "assets": [
+        {
+          "asset_id": "ASSET001",
+          "file": null,
+          "sha256": null,
+          "source_url": null,
+          "author": null,
+          "license_seen": null,
+          "usage_scope_confirmed": false,
+          "original_and_phone_preview": null,
+          "risky_text_or_imagery": null,
+          "user_selection_status": "pending"
+        }
+      ],
+      "motion": {
+        "identity_before": null,
+        "object_action": null,
+        "cause_and_response": null,
+        "result_held": null,
+        "attention_handoff": null,
+        "next_shot_bridge": null,
+        "示意边界": null,
+        "cue_times_actual": []
+      },
+      "sfx": [],
+      "layout_reserved_regions": {
+        "top_titles": null,
+        "product_images": null,
+        "captions": null
+      },
+      "approval_status": "pending",
+      "cache": {
+        "video_path": null,
+        "input_hashes": {},
+        "render_version": null,
+        "content_hash_invalidation_implemented": false
+      },
+      "qc": {
+        "encoded_phone_frames": [],
+        "layout_collision_checked": false,
+        "causal_review_verified": false
+      }
+    }
+  ]
+}
