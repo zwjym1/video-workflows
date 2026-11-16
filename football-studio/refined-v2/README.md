@@ -20,7 +20,7 @@ cd football-studio/refined-v2
 python -m pip install -r requirements.txt
 ```
 
-需要本机有中文字体。当前环境用的是文泉驿微米黑，不是规范里的 `NotoSansSC-700`。输出清单会写明这一点。若要换字体：
+字体优先用包内 `fonts/NotoSansSC-700.ttf`。找不到时才用系统字体，并在清单里写明没有对齐。若要换字体：
 
 ```bash
 export REFINED_V2_FONT=/path/to/NotoSansSC-700.ttf
@@ -58,7 +58,11 @@ python -m refined_v2 episodes/sample-not-a-match --out demo/sample
 
 `episode_id` 不要用 `arsenal-2018-regression` 或 `sample-not-a-match`。这两份是固定夹具。
 
-`episodes/bayern-20200814-mueller-open-lock-draft/` 是 2020-08-14 首球的锁帧草稿。号码政策写在场次包里：实况白衣不标 9 或 25，9/18/21 只出现在门后回放，14 只出现在左边路回放。源 56–58 秒的中圈开球被禁止和 59 秒后的禁区接成一段。`geometry_verified` 固定为 false，因为这份环境里没有 42 秒高清源帧，不能把像素相对位置说成已经核验。
+`episodes/bayern-20200814-mueller-open-lock-draft/` 是 2020-08-14 首球。坐标在 1280×720 审阅代理上对照过，接触图来自 1080p 的同一时刻。`geometry_verified` 为 true 只表示这三块板和这些证据帧对过，并写出了源帧|板帧。俯视仍是 `schematic_shared_window`，不是场地测绘。
+
+能连续播放的画面是三段，合计 8.8 秒：实况裁切 9.0–12.0，回放 A 21.8–24.6，回放 B 24.8–27.8。讲解稿里的 84 秒要等配音，这里不凑。源 56–58 秒的中圈开球不能拼进来。
+
+巴萨 5 号按裁切 9.6 秒重标，不再用 (150, 720)。实况两名白衣不标 9 或 25。18 号只在门后右缘，不进入回做。门将背上的数字在这份 720p 代理里不够清楚，不标 1。
 
 ## 已生成的图
 

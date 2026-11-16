@@ -1,10 +1,10 @@
 {
   "episode_id": "bayern-20200814-mueller-open-lock-draft",
   "claim": "lock_draft",
-  "stamp": "锁帧草稿 · 未见源帧 · 几何未核验",
-  "statement": "这是 2020-08-14 拜仁对巴萨首球的锁帧草稿，几何未核验。本环境没有源帧，不是已经核对过的关系板，也不是中圈开球接上射门的连续推进。",
+  "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
+  "statement": "已对照 720p 证据帧。俯视是同一机位的示意，不是场地测绘。不是中圈开球接上的连续推进，也不是 84 秒成片。",
   "timing_basis": "board_local_seconds",
-  "timing_note": "分层秒数只用来把对象、防守和球路分开，不是字级旁白。源 56–58 秒是中圈开球，禁止和 59 秒之后的禁区剪成一段。",
+  "timing_note": "板上的秒数只排层次。能连续播放的画面只有三段，合计 8.8 秒。讲解稿的 84 秒要等配音，这里不凑。",
   "native_size": [
     1280,
     720
@@ -14,7 +14,7 @@
   "upscaled": false,
   "audio": null,
   "audio_note": "本轮不渲音频，不调用配音。",
-  "geometry_verified": false,
+  "geometry_verified": true,
   "orientation": {
     "input_attack": "left",
     "rendered_attack": "left",
@@ -23,28 +23,35 @@
     "consistent": true
   },
   "font": {
-    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
-    "spec_match": false,
-    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+    "path": "/workspace/football-studio/refined-v2/fonts/NotoSansSC-700.ttf",
+    "spec_match": true,
+    "note": "文件名符合 NotoSansSC-700。"
   },
   "limits": "没有核实过的 2020-08-14 穆勒回合坐标。本目录不是那粒进球的真实关系板。",
   "files": [
     "R1_t0.24.png",
     "R1_t1.00.png",
-    "R1_t1.80.png",
+    "R1_t2.20.png",
     "R1_t3.40.png",
     "R1_PROGRESS.png",
     "N2_t0.28.png",
-    "N2_t1.20.png",
-    "N2_t2.20.png",
+    "N2_t1.12.png",
+    "N2_t2.08.png",
     "N2_t3.60.png",
     "N2_PROGRESS.png",
-    "R3_t0.24.png",
+    "R3_t0.20.png",
     "R3_t0.72.png",
-    "R3_t1.68.png",
+    "R3_t1.52.png",
     "R3_t3.20.png",
     "R3_PROGRESS.png",
+    "N2_SIDE_BY_SIDE.png",
+    "N2_SIDE_BY_SIDE.json",
+    "R1_SIDE_BY_SIDE.png",
+    "R1_SIDE_BY_SIDE.json",
+    "R3_SIDE_BY_SIDE.png",
+    "R3_SIDE_BY_SIDE.json",
     "N2_LAYERS.mp4",
-    "R1_LAYERS.mp4"
+    "R1_LAYERS.mp4",
+    "R3_LAYERS.mp4"
   ]
 }

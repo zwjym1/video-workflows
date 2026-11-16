@@ -1,9 +1,9 @@
 {
   "episode_id": "bayern-20200814-mueller-open-lock-draft",
   "claim": "lock_draft",
-  "stamp": "锁帧草稿 · 未见源帧 · 几何未核验",
+  "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
   "board": "N2",
-  "t": 1.2,
+  "t": 2.08,
   "question": "禁区这一脚，球是怎么出去的？",
   "native_size": [
     1280,
@@ -14,9 +14,9 @@
   "upscaled": false,
   "audio": null,
   "font": {
-    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
-    "spec_match": false,
-    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+    "path": "/workspace/football-studio/refined-v2/fonts/NotoSansSC-700.ttf",
+    "spec_match": true,
+    "note": "文件名符合 NotoSansSC-700。"
   },
   "orientation": {
     "input_attack": "left",
@@ -28,46 +28,38 @@
   "ids": [
     "Kshot",
     "Ktall",
-    "Ctall",
-    "Cshot",
     "C20",
     "C5",
-    "C2",
     "C3",
+    "C2",
     "Kkeep",
-    "Kleft"
+    "Cjump"
   ],
   "numbers": {
     "Kshot": null,
     "Ktall": null,
-    "Ctall": null,
-    "Cshot": null,
     "C20": "20",
     "C5": "5",
-    "C2": "2",
     "C3": "3",
+    "C2": "2",
     "Kkeep": null,
-    "Kleft": null
+    "Cjump": null
   },
   "labels": [
-    "出球人无号码",
-    "另一白衣无号码",
-    "门将在球门侧"
+    "5号在禁区左侧"
   ],
   "visible_ids": [
     "Kshot",
     "Ktall",
-    "Ctall",
-    "Cshot",
     "C20",
     "C5",
-    "C2",
     "C3",
+    "C2",
     "Kkeep",
-    "Kleft"
+    "Cjump"
   ],
   "motion_progress": {},
   "route_progress": {
-    "ball_a-ball_b-ball_c": 0.0
+    "ball_96-ball_102": 0.74329
   }
 }

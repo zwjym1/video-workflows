@@ -66,9 +66,11 @@ def col(c, a=255):
 
 def resolve_font():
     env = os.environ.get("REFINED_V2_FONT")
+    packaged = Path(__file__).resolve().parents[1] / "fonts" / "NotoSansSC-700.ttf"
     candidates = []
     if env:
         candidates.append(env)
+    candidates.append(str(packaged))
     candidates.append("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc")
     for raw in candidates:
         path = Path(raw)

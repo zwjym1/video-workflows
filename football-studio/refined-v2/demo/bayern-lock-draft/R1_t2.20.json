@@ -1,0 +1,57 @@
+{
+  "episode_id": "bayern-20200814-mueller-open-lock-draft",
+  "claim": "lock_draft",
+  "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
+  "board": "R1",
+  "t": 2.2,
+  "question": "14号身前，边路还有空当吗？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/workspace/football-studio/refined-v2/fonts/NotoSansSC-700.ttf",
+    "spec_match": true,
+    "note": "文件名符合 NotoSansSC-700。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "K14",
+    "Cmark",
+    "Kkeep",
+    "Kin",
+    "Kin2"
+  ],
+  "numbers": {
+    "K14": "14",
+    "Cmark": null,
+    "Kkeep": null,
+    "Kin": null,
+    "Kin2": null
+  },
+  "labels": [
+    "左边路持球",
+    "禁区里已有人"
+  ],
+  "visible_ids": [
+    "K14",
+    "Cmark",
+    "Kkeep",
+    "Kin",
+    "Kin2"
+  ],
+  "motion_progress": {
+    "K14": 1.0
+  },
+  "route_progress": {}
+}

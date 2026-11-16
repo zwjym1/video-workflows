@@ -68,13 +68,26 @@ def compile_episode(data, base_dir=None) -> dict:
         raise EpisodeRejected("claim", "样例包的 statement 必须同时包含「样例」和「不是」。")
     if claim == "evidence_locked" and "证据" not in statement:
         raise EpisodeRejected("claim", "证据稿的 statement 必须写明「证据」。")
+    stamp = CLAIMS[claim]
     if claim == "lock_draft":
-        if "未核验" not in statement or "不是" not in statement:
-            raise EpisodeRejected("claim", "锁帧草稿的 statement 必须写明「未核验」和「不是」。")
-        if data.get("geometry_verified") is not False:
-            raise EpisodeRejected("evidence", "没有源帧时不能把 geometry_verified 标成通过。缺帧就拒绝核验。")
+        verified = data.get("geometry_verified")
+        if verified is True:
+            if data.get("pitch_calibration") != "schematic_shared_window":
+                raise EpisodeRejected(
+                    "evidence",
+                    "对照过证据帧的俯视如果不是测绘，pitch_calibration 必须是 schematic_shared_window。不能把示意写成标定。",
+                )
+            if "已对照" not in statement or "示意" not in statement:
+                raise EpisodeRejected("claim", "已对照的锁帧稿必须在 statement 里写明「已对照」和「示意」。")
+            if not data.get("evidence_frames"):
+                raise EpisodeRejected("evidence", "没有证据帧文件，不能把 geometry_verified 标成通过。")
+            stamp = "已对照证据帧 · 俯视示意 · 非测绘"
+        elif verified is not False:
+            raise EpisodeRejected("evidence", "锁帧稿必须显式写 geometry_verified。缺帧就只能是 false。")
+        elif "未核验" not in statement or "不是" not in statement:
+            raise EpisodeRejected("claim", "未对照的锁帧草稿必须写明「未核验」和「不是」。")
     elif data.get("geometry_verified") is True and claim != "evidence_locked":
-        raise EpisodeRejected("evidence", "只有证据稿能声明几何已核验，而且帧文件必须在。")
+        raise EpisodeRejected("evidence", "只有带证据帧的稿子能声明几何已对照，而且帧文件必须在。")
     attack = data.get("input_attack")
     if attack not in ("left", "right"):
         raise EpisodeRejected("orientation", "input_attack 只能是 left 或 right。攻向不明时拒绝渲染。")
@@ -110,10 +123,11 @@ def compile_episode(data, base_dir=None) -> dict:
         seen.add(compiled["id"])
         boards.append(compiled)
     _continuity(data, boards)
+    _segments(data, boards)
     return {
         "episode_id": episode_id,
         "claim": claim,
-        "stamp": CLAIMS[claim],
+        "stamp": stamp,
         "statement": statement,
         "timing_basis": basis,
         "timing_note": working.get("timing_note") or "",
@@ -195,6 +209,30 @@ def _evidence_index(data, base_dir, claim):
     if claim == "evidence_locked" and not frames:
         raise EpisodeRejected("evidence", "证据稿没有任何证据帧。拒绝渲染。")
     return frames
+
+
+def _segments(data, boards):
+    segments = data.get("segments") or []
+    if data.get("claim") != "lock_draft" or not data.get("geometry_verified"):
+        return
+    if not segments:
+        raise EpisodeRejected("continuity", "已对照的稿子要写明实况和回放各段的时长，不能用讲解稿的总长代替。")
+    total = 0.0
+    by_id = {item["id"]: item for item in segments}
+    for item in segments:
+        total += float(item["duration_s"])
+        if item.get("kind") not in ("live", "replay"):
+            raise EpisodeRejected("continuity", f"{item['id']} 必须标明实况或回放。")
+    if total > 30:
+        raise EpisodeRejected("continuity", "现有连续画面不到半分钟。不要把未配音的 84 秒规划写成已经有的成片。")
+    for board in boards:
+        segment = by_id.get(board.get("segment"))
+        if segment is None:
+            raise EpisodeRejected("continuity", f"{board['id']} 没有落到实况或回放段里。")
+        start, end = board["source_s"]
+        seg_start, seg_end = segment["source_s"]
+        if start < seg_start - 0.05 or end > seg_end + 0.05:
+            raise EpisodeRejected("continuity", f"{board['id']} 的源时间超出它所属的{segment['kind']}段。")
 
 
 def _overlaps(a0, a1, b0, b1):
@@ -305,6 +343,7 @@ def _compile_board(board, index, basis, clock, claim, evidence, number_policy):
         "still_marks": stills,
         "notes": board.get("notes") or "",
         "source_s": board.get("source_s"),
+        "segment": board.get("segment"),
         "projection": projection,
     }
 

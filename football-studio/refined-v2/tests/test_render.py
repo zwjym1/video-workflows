@@ -34,8 +34,10 @@ class RenderTest(unittest.TestCase):
         self.assertEqual(find_legacy(json.dumps(state, ensure_ascii=False)), [])
         self.assertEqual(set(state["ids"]), {"P7", "P11", "D4", "D5", "D8"})
         self.assertIn("D8", state["visible_ids"])
-        self.assertFalse(state["font"]["spec_match"])
-        self.assertIn("不是", state["font"]["note"])
+        if state["font"]["spec_match"]:
+            self.assertIn("NotoSansSC-700", state["font"]["path"])
+        else:
+            self.assertIn("不是", state["font"]["note"])
 
     def test_sample_render_does_not_open_the_arsenal_package(self):
         opened = []

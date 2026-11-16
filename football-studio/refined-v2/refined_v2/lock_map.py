@@ -7,21 +7,22 @@
 
 from __future__ import annotations
 
+# Windows are in the 1280×720 review proxy. 1080p contact sheets use the same moments at 1.5×.
 CAMERAS = {
     "high_wide_attack_left": {
         "kind": "attack_left",
-        "width": 1920,
-        "window": {"x0": 400, "x1": 1850, "y0": 300, "y1": 980, "u0": 4, "u1": 76, "v0": 8, "v1": 92},
+        "width": 1280,
+        "window": {"x0": 250, "x1": 900, "y0": 250, "y1": 650, "u0": 4, "u1": 72, "v0": 8, "v1": 88},
     },
     "sideline_attack_left": {
         "kind": "attack_left",
-        "width": 1920,
-        "window": {"x0": 50, "x1": 1550, "y0": 420, "y1": 1020, "u0": 4, "u1": 74, "v0": 10, "v1": 90},
+        "width": 1280,
+        "window": {"x0": 80, "x1": 1000, "y0": 280, "y1": 700, "u0": 4, "u1": 72, "v0": 8, "v1": 90},
     },
     "behind_goal_attack_bottom": {
         "kind": "attack_bottom",
-        "width": 1920,
-        "window": {"x0": 1000, "x1": 1650, "y0": 0, "y1": 1500, "u0": 6, "u1": 70, "v0": 8, "v1": 90},
+        "width": 1280,
+        "window": {"x0": 600, "x1": 1100, "y0": 0, "y1": 1000, "u0": 6, "u1": 68, "v0": 6, "v1": 90},
     },
 }
 
