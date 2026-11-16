@@ -80,6 +80,36 @@ class LockDraftTest(unittest.TestCase):
             compile_episode(data, base_dir=EP.parent)
         self.assertEqual(caught.exception.code, "evidence")
 
+    def test_r1_and_r3_open_on_a_point_and_hold_the_closing_labels(self):
+        data = build()
+        compiled = compile_episode(data, base_dir=EP.parent)
+        self.assertEqual(data["demo"]["side_by_side"][2]["t"], 6.4)
+        for board in data["boards"]:
+            if board["id"] in ("R1", "R3"):
+                self.assertEqual(board.get("motions") or [], [])
+                self.assertTrue(all(note["type"] == "emphasis" and note.get("kind") not in ("run", "def") for note in board["annotations"]))
+        r1 = next(board for board in compiled["boards"] if board["id"] == "R1")
+        r3 = next(board for board in compiled["boards"] if board["id"] == "R3")
+        opening, _ = render_board(compiled, r1, 0.0, show_stamp=False)
+        self.assertEqual(opening.size, (1280, 720))
+        _, open_state = render_board(compiled, r1, 0.0, show_stamp=False)
+        self.assertIn("K14", open_state["visible_ids"])
+        _, end_state = render_board(compiled, r1, 6.4, show_stamp=False)
+        self.assertEqual(end_state["labels"], ["左边路持球", "身前有人", "禁区里已有人"])
+        self.assertEqual(end_state["motion_progress"], {})
+        _, r3_open = render_board(compiled, r3, 0.0, show_stamp=False)
+        self.assertIn("Kkeep", r3_open["visible_ids"])
+        _, r3_end = render_board(compiled, r3, 6.4, show_stamp=False)
+        self.assertIn("射门点", r3_end["labels"])
+        self.assertIn("远端18未参与", r3_end["labels"])
+        self.assertIn("回放确认9号", r3_end["labels"])
+        self.assertIn("C21", r3_end["visible_ids"])
+        for note in r3["annotations"]:
+            if note.get("link"):
+                self.assertNotIn("K18", note["ids"])
+        self.assertGreaterEqual(r1["label_px"], 30)
+        self.assertGreaterEqual(r3["label_px"], 30)
+
     def test_render_side_by_side_inputs_exist(self):
         compiled = compile_episode(build(), base_dir=EP.parent)
         board = next(item for item in compiled["boards"] if item["id"] == "N2")

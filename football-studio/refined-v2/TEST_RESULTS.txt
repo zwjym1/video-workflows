@@ -1,7 +1,15 @@
-/workspace/football-studio/refined-v2/tests/test_film.py:67: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmp63q6go1p/late.png'>
-  self.assertEqual(Image.open(decoded).size, (1280, 720))
-ResourceWarning: Enable tracemalloc to get the object allocation traceback
-----------------------------------------------------------------------
-Ran 39 tests in 5.627s
-
+python3 -m unittest discover -s tests -v
+Ran 44 tests in 13.253s
 OK
+
+干净解压 refined-v2-box.zip 后再跑：
+Ran 44 tests in 12.730s
+OK
+
+合成 1080 全程（不是真实候选）：
+53.84s / 1346 帧 / 1920x1080
+进程内 VmRSS 峰值 254996 KiB（249 MiB）
+此前 OOM 的 anon-rss 约 10143900 KiB
+片头 mean -91.0 dB（文件 0 秒蜂鸣未进入）
+源 28 秒映射窗 mean -39.1 dB
+R1 板段 mean -91.0 dB

@@ -12,19 +12,49 @@ from PIL import Image
 from refined_v2.board import render_board
 from refined_v2.episode import load_episode
 from refined_v2.errors import EpisodeRejected
-from refined_v2.film import assemble, captions_from_words, load_edl, subtitle_margin
+from refined_v2.film import _validate_bed, assemble, captions_from_words, load_edl, plan_timeline, subtitle_margin
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = ROOT / "episodes" / "bayern-20200814-mueller-open-lock-draft"
 
 
-def _color_clip(path, seconds=2.0):
+def _color_clip(path, seconds=2.0, size="1280x720"):
     subprocess.check_call(
         [
-            "ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=c=0x14302a:s=1280x720:d={seconds}:r=25",
+            "ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=c=0x14302a:s={size}:d={seconds}:r=25",
             "-c:v", "libx264", "-pix_fmt", "yuv420p", str(path),
         ]
     )
+
+
+def _beep_then_silence(path):
+    subprocess.check_call(
+        [
+            "ffmpeg", "-v", "error", "-y",
+            "-f", "lavfi", "-i", "color=c=0x14302a:s=1280x720:d=4:r=25",
+            "-f", "lavfi", "-i", "sine=frequency=1800:sample_rate=48000:duration=0.5",
+            "-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono:d=3.5",
+            "-filter_complex", "[1:a][2:a]concat=n=2:v=0:a=1[a]",
+            "-map", "0:v", "-map", "[a]",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest",
+            str(path),
+        ]
+    )
+
+
+def _mean_db(path, start, duration):
+    raw = subprocess.run(
+        ["ffmpeg", "-v", "info", "-ss", f"{start:.3f}", "-t", f"{duration:.3f}", "-i", str(path), "-af", "volumedetect", "-f", "null", "-"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        check=False,
+    ).stdout
+    for line in raw.splitlines():
+        if "mean_volume:" in line:
+            token = line.split("mean_volume:")[1].strip().split()[0]
+            return -99.0 if token == "-inf" else float(token)
+    raise AssertionError(raw)
 
 
 class FilmTest(unittest.TestCase):
@@ -64,7 +94,8 @@ class FilmTest(unittest.TestCase):
             subprocess.check_call(
                 ["ffmpeg", "-v", "error", "-y", "-ss", f"{late['output_s']:.3f}", "-i", str(out), "-frames:v", "1", str(decoded)]
             )
-            self.assertEqual(Image.open(decoded).size, (1280, 720))
+            with Image.open(decoded) as frame:
+                self.assertEqual(frame.size, (1280, 720))
 
     def test_caption_cannot_invent_a_shirt_number(self):
         edl = load_edl(EP / "audience_example.edl.json")
@@ -109,6 +140,85 @@ class FilmTest(unittest.TestCase):
     def test_margin_matches_the_1080_rule(self):
         self.assertGreater(subtitle_margin(1080), 60)
         self.assertGreater(subtitle_margin(720), 40)
+
+    def test_live_audio_follows_the_edl_window_not_file_zero(self):
+        episode = load_episode(EP)
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "beep.mp4"
+            _beep_then_silence(source)
+            edl = {
+                "version": 1,
+                "output": {"width": 1280, "height": 720, "fps": 25},
+                "audio": {"source_gain_db": -6},
+                "shots": [{"kind": "live", "src_in": 1.2, "src_out": 1.7}],
+            }
+            out = Path(directory) / "quiet.mp4"
+            assemble(episode, edl, source, out)
+            quiet = _mean_db(out, 0.0, 0.35)
+            self.assertLess(quiet, -35)
+            loud = {
+                "version": 1,
+                "output": {"width": 1280, "height": 720, "fps": 25},
+                "audio": {"source_gain_db": -6},
+                "shots": [{"kind": "live", "src_in": 0.0, "src_out": 0.45}],
+            }
+            loud_out = Path(directory) / "loud.mp4"
+            assemble(episode, loud, source, loud_out)
+            heard = _mean_db(loud_out, 0.0, 0.3)
+            self.assertGreater(heard, quiet + 8)
+
+    def test_board_bed_needs_authorization_and_avoids_the_centre_circle(self):
+        episode = load_episode(EP)
+        forbidden = episode["forbidden_clip_s"]
+        self.assertEqual(forbidden, [[6.0, 8.0]])
+        with self.assertRaises(EpisodeRejected) as caught:
+            _validate_bed({"audio": {"board_bed": {"src_in": 1.0, "src_out": 1.4}}}, forbidden)
+        self.assertIn("authorized", str(caught.exception))
+        with self.assertRaises(EpisodeRejected) as caught:
+            _validate_bed(
+                {"audio": {"board_bed": {"authorized": True, "src_in": 6.2, "src_out": 7.4}}},
+                forbidden,
+            )
+        self.assertEqual(caught.exception.code, "continuity")
+        with self.assertRaises(EpisodeRejected):
+            plan_timeline(episode, {
+                "version": 1,
+                "output": {"fps": 25},
+                "shots": [{"kind": "live", "src_in": 6.4, "src_out": 7.2}],
+            })
+
+    def test_v4_timeline_is_the_full_length_and_skips_the_centre_circle(self):
+        episode = load_episode(EP)
+        edl = load_edl(EP / "v4_audience.edl.json")
+        frames, placements = plan_timeline(episode, edl)
+        self.assertEqual(frames, 1346)
+        self.assertAlmostEqual(frames / 25, 53.84, places=2)
+        self.assertFalse(edl["master"])
+        lives = [item for item in placements if item["kind"] == "live"]
+        self.assertTrue(lives)
+        self.assertTrue(all(item["src_in"] >= 9 for item in lives))
+        self.assertEqual(sum(1 for item in placements if item["kind"] == "board"), 3)
+
+    def test_long_1080_stream_stays_under_a_gigabyte(self):
+        episode = load_episode(EP)
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "hd.mp4"
+            _color_clip(source, 20, "1920x1080")
+            edl = {
+                "version": 1,
+                "output": {"width": 1920, "height": 1080, "fps": 25},
+                "shots": [
+                    {"kind": "live", "src_in": 9.0, "src_out": 17.0},
+                    {"kind": "board", "board": "R1", "t0": 0.0, "t1": 0.4, "dissolve_frames": 5},
+                    {"kind": "live", "src_in": 17.0, "src_out": 19.0, "dissolve_frames": 5},
+                ],
+            }
+            out = Path(directory) / "out.mp4"
+            report = assemble(episode, edl, source, out)
+            self.assertEqual(report["width"], 1920)
+            self.assertEqual(report["frames"], 250)
+            self.assertLess(report["peak_rss_kib"], 800 * 1024, msg=str(report["peak_rss_kib"]))
+            self.assertFalse(report["master"])
 
     def test_qc_stamp_is_absent_on_the_audience_board(self):
         episode = load_episode(EP)

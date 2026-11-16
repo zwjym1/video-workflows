@@ -1,0 +1,300 @@
+{
+  "version": 1,
+  "master": false,
+  "caption_status": "display_from_existing_words",
+  "present": "1920x1080",
+  "note": "v4 候选，不是最终母带。--source 为既有 1080p 母裁切。板从超采样缓冲直出 1920×1080。旁白为已有免费 s2.1-pro-free 成品，未再消费 TTS。首字幕先看这个球 0.08–1.16。题旨限禁区回做/接应空间，不写完整中场推进链。禁止冻末帧。回实拍 5 帧交叠。",
+  "theme": "只讲看得见的最后一脚回做和接应，不称完整反击。",
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 25
+  },
+  "audio": {
+    "source_gain_db": -18,
+    "voice": [
+      {
+        "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N00.mp3",
+        "start": 0.0
+      },
+      {
+        "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N01.mp3",
+        "start": 6.56
+      },
+      {
+        "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N02.mp3",
+        "start": 15.16
+      },
+      {
+        "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N03.mp3",
+        "start": 24.52
+      },
+      {
+        "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N04.mp3",
+        "start": 36.96
+      },
+      {
+        "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N05.mp3",
+        "start": 48.96
+      }
+    ],
+    "sfx": [
+      {
+        "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/sfx/whoosh_line_short.wav",
+        "start": 28.36,
+        "gain_db": -16,
+        "bind": "N2 球路 3.84–5.5 起画"
+      }
+    ]
+  },
+  "shots": [
+    {
+      "kind": "live",
+      "src_in": 10.0,
+      "src_out": 13.6,
+      "label": "进球入网"
+    },
+    {
+      "kind": "live",
+      "src_in": 28.0,
+      "src_out": 30.96,
+      "label": "穆勒特写"
+    },
+    {
+      "kind": "live",
+      "src_in": 9.0,
+      "src_out": 12.0,
+      "label": "完整实况"
+    },
+    {
+      "kind": "live",
+      "src_in": 21.8,
+      "src_out": 24.6,
+      "label": "回放A"
+    },
+    {
+      "kind": "live",
+      "src_in": 24.8,
+      "src_out": 27.8,
+      "label": "回放B"
+    },
+    {
+      "kind": "board",
+      "board": "R1",
+      "t0": 0.0,
+      "t1": 6.4,
+      "dissolve_frames": 5,
+      "label": "边路关系"
+    },
+    {
+      "kind": "live",
+      "src_in": 21.8,
+      "src_out": 24.6,
+      "dissolve_frames": 5,
+      "label": "回放A验证"
+    },
+    {
+      "kind": "live",
+      "src_in": 9.0,
+      "src_out": 9.55,
+      "label": "实况入点"
+    },
+    {
+      "kind": "board",
+      "board": "N2",
+      "t0": 0.0,
+      "t1": 10.4,
+      "dissolve_frames": 5,
+      "label": "禁区回做"
+    },
+    {
+      "kind": "live",
+      "src_in": 9.55,
+      "src_out": 12.0,
+      "dissolve_frames": 5,
+      "label": "实况验证"
+    },
+    {
+      "kind": "board",
+      "board": "R3",
+      "t0": 0.0,
+      "t1": 6.4,
+      "dissolve_frames": 5,
+      "label": "门后号码"
+    },
+    {
+      "kind": "live",
+      "src_in": 24.8,
+      "src_out": 26.2,
+      "dissolve_frames": 5,
+      "label": "回放B短验证"
+    },
+    {
+      "kind": "live",
+      "src_in": 28.0,
+      "src_out": 30.8,
+      "dissolve_frames": 5,
+      "label": "穆勒特写"
+    },
+    {
+      "kind": "live",
+      "src_in": 37.0,
+      "src_out": 38.8,
+      "label": "比分0-1"
+    },
+    {
+      "kind": "live",
+      "src_in": 14.4,
+      "src_out": 16.7,
+      "label": "庆祝收束A"
+    },
+    {
+      "kind": "live",
+      "src_in": 19.2,
+      "src_out": 21.8,
+      "label": "庆祝收束B"
+    }
+  ],
+  "captions": [
+    {
+      "start_s": 0.08,
+      "end_s": 1.16,
+      "text": "先看这个球。"
+    },
+    {
+      "start_s": 1.2,
+      "end_s": 2.84,
+      "text": "左边路把空间拉开之后，"
+    },
+    {
+      "start_s": 2.88,
+      "end_s": 4.44,
+      "text": "禁区前沿那一下回做，"
+    },
+    {
+      "start_s": 4.48,
+      "end_s": 6.32,
+      "text": "是怎么把球换到能射的位置的？"
+    },
+    {
+      "start_s": 6.64,
+      "end_s": 8.96,
+      "text": "先完整、原速看现有的连续画面。"
+    },
+    {
+      "start_s": 15.24,
+      "end_s": 15.84,
+      "text": "回放里，"
+    },
+    {
+      "start_s": 15.88,
+      "end_s": 18.16,
+      "text": "14号沿着进攻左路往禁区带，"
+    },
+    {
+      "start_s": 18.2,
+      "end_s": 19.28,
+      "text": "身前还有空当。"
+    },
+    {
+      "start_s": 19.32,
+      "end_s": 21.28,
+      "text": "禁区里已经有白衣在跑位。"
+    },
+    {
+      "start_s": 21.32,
+      "end_s": 23.16,
+      "text": "这段回放从禁区附近开始。"
+    },
+    {
+      "start_s": 24.6,
+      "end_s": 25.6,
+      "text": "3:02，"
+    },
+    {
+      "start_s": 25.64,
+      "end_s": 27.12,
+      "text": "球到禁区前沿偏右，"
+    },
+    {
+      "start_s": 27.16,
+      "end_s": 28.32,
+      "text": "没有停在第一落点。"
+    },
+    {
+      "start_s": 28.36,
+      "end_s": 30.8,
+      "text": "两名白衣把球换到面向球门的一侧，"
+    },
+    {
+      "start_s": 30.84,
+      "end_s": 31.68,
+      "text": "立刻出脚。"
+    },
+    {
+      "start_s": 31.72,
+      "end_s": 34.48,
+      "text": "巴萨 20、5、3、2 号都在周边，"
+    },
+    {
+      "start_s": 34.52,
+      "end_s": 35.8,
+      "text": "但没有封住这个换点。"
+    },
+    {
+      "start_s": 37.04,
+      "end_s": 39.64,
+      "text": "门后回放能看清：9号已经在门前，"
+    },
+    {
+      "start_s": 39.68,
+      "end_s": 40.76,
+      "text": "21号贴着他；"
+    },
+    {
+      "start_s": 40.8,
+      "end_s": 41.88,
+      "text": "18号在远端，"
+    },
+    {
+      "start_s": 41.92,
+      "end_s": 42.68,
+      "text": "没有参与。"
+    },
+    {
+      "start_s": 42.72,
+      "end_s": 44.52,
+      "text": "出球人这一帧没有号码。"
+    },
+    {
+      "start_s": 44.56,
+      "end_s": 45.88,
+      "text": "进球后特写是穆勒，"
+    },
+    {
+      "start_s": 45.92,
+      "end_s": 46.92,
+      "text": "3:15，"
+    },
+    {
+      "start_s": 46.96,
+      "end_s": 47.86,
+      "text": "比分 0 比 1。"
+    },
+    {
+      "start_s": 49.04,
+      "end_s": 50.76,
+      "text": "先把左边路的空间打出来，"
+    },
+    {
+      "start_s": 50.8,
+      "end_s": 52.2,
+      "text": "再在禁区前沿回做，"
+    },
+    {
+      "start_s": 52.24,
+      "end_s": 53.68,
+      "text": "换一个能直接结束的点。"
+    }
+  ]
+}

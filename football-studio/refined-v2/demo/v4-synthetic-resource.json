@@ -1,0 +1,20 @@
+{
+  "claim": "synthetic_resource_check",
+  "not_a_candidate": true,
+  "master": false,
+  "edl": "episodes/bayern-20200814-mueller-open-lock-draft/v4_audience.edl.json",
+  "source": "合成 1920x1080 纯色 40 秒，不是广播母带，也不能当成真实候选",
+  "duration_s": 53.84,
+  "frames": 1346,
+  "width": 1920,
+  "height": 1080,
+  "fps": 25,
+  "peak_rss_kib": 254996,
+  "peak_rss_mib": 249.0,
+  "previous_oom_anon_rss_kib": 10143900,
+  "audio_file_head_mean_db": -91.0,
+  "audio_mapped_src28_mean_db": -39.1,
+  "audio_board_mean_db": -91.0,
+  "audio_note": "成片 0.15 秒处对应源 10 秒以后，文件 0–0.8 秒的测试蜂鸣没有进来。3.7 秒对应源 28 秒的测试音。16.8 秒在 R1 板上，没有源声。旁白在这次资源测试里是静音占位。",
+  "elapsed_s": 69.6
+}

@@ -76,12 +76,12 @@ def render_board(episode, board, t, show_stamp=True, present=(1280, 720)):
             pen.ellipse((*D.xy((x - 6, y - 6)), *D.xy((x + 6, y + 6))), fill=D.WHITE, outline=D.BALL, width=2)
     visible = []
     for node in board["nodes"]:
-        fade = D.pr(t, node["appear_s"], node["appear_s"] + 0.22)
+        fade = _reveal(t, node["appear_s"], board.get("open_visible"))
         if fade <= 0:
             continue
-        if _player(pen, board["projection"], node, positions[node["id"]], t, fade, font_info["path"]):
+        if _player(pen, board["projection"], node, positions[node["id"]], t, fade, font_info["path"], board.get("open_visible")):
             visible.append(node["id"])
-    active = [label for label in board["labels"] if label["t0"] <= t < label["t1"]][-3:]
+    active = [label for label in board["labels"] if label["t0"] <= t <= label["t1"] + 1e-9][-3:]
     for label in active:
         if t < _appear(board, label["id"]):
             continue
@@ -198,17 +198,55 @@ def _annotations(pen, board, t, positions):
                 D.pr(t, note["t0"], note["t1"]),
                 (7, 5) if note["kind"] == "run" else (4, 6),
             )
+        elif note["type"] == "emphasis":
+            _emphasis(pen, board, positions, note, t)
 
 
-def _player(pen, projection, node, uv, t, fade, font_path):
+def _reveal(t, start, open_visible):
+    if t < start - 1e-9:
+        return 0.0
+    fade = D.pr(t, start, start + 0.22)
+    if open_visible:
+        fade = max(fade, 0.45)
+    return fade
+
+
+def _emphasis(pen, board, positions, note, t):
+    if t < note["t0"] - 1e-9 or t > note["t1"] + 1e-9:
+        return
+    span = 0.36
+    fade = 1.0 if t >= note["t0"] + span else max(0.4, D.pr(t, note["t0"], note["t0"] + span))
+    points = []
+    for identifier in note["ids"]:
+        uv = positions.get(identifier) or board["extras"].get(identifier)
+        if uv is None:
+            continue
+        points.append(project(board["projection"], uv))
+    for x, y in points:
+        pen.ellipse(
+            (*D.xy((x - 34, y - 34)), *D.xy((x + 34, y + 34))),
+            outline=D.col(D.ATT, 110 * fade),
+            width=3,
+        )
+    if note.get("link") and len(points) >= 2:
+        D.trace(pen, points, D.col(D.MUT, 170 * fade), 1.8, fade, None, False)
+
+
+def _player(pen, projection, node, uv, t, fade, font_path, open_visible=False):
     x, y = project(projection, uv)
-    radius = 22 if node["focus"] else 15
+    radius = (26 if open_visible else 22) if node["focus"] else 15
     if not (42 + radius < x < 1043 - radius and 90 + radius < y < 616 - radius):
         return False
     color = D.ATT if node["team"] == "attack" else D.DEF
     fill = (80, 93, 22) if node["team"] == "attack" else (104, 43, 39)
     opacity = (255 if node["focus"] else 125) * fade
     glow = (1 - D.pr(t, node["appear_s"] + 0.18, node["appear_s"] + 0.56)) * fade
+    if node["focus"] and open_visible:
+        pen.ellipse(
+            (*D.xy((x - radius - 10, y - radius - 10)), *D.xy((x + radius + 10, y + radius + 10))),
+            outline=D.col(color, 78 * fade),
+            width=4,
+        )
     if node["focus"] and glow > 0:
         pen.ellipse(
             (*D.xy((x - radius - 8, y - radius - 8)), *D.xy((x + radius + 8, y + radius + 8))),
@@ -238,15 +276,19 @@ def _appear(board, identifier):
 
 def _pill(pen, board, positions, label, t, font_path):
     fade = D.pr(t, label["t0"], label["t0"] + 0.24)
+    if board.get("open_visible"):
+        fade = max(fade, 0.55)
     anchor = project(board["projection"], positions[label["id"]])
     dest = (anchor[0] + label["offset"][0], anchor[1] + label["offset"][1])
-    size = 23
+    size = int(board.get("label_px") or 23)
     width = D.logical_text_width(pen, label["text"], size, font_path)
+    box = pen.textbbox((0, 0), label["text"], font=D.font(size, D.SS, font_path))
+    text_h = (box[3] - box[1]) / D.SS
     x = max(46, min(dest[0], 1020 - width))
     y = max(107, min(580, dest[1]))
     alpha = round(255 * fade)
     pen.rounded_rectangle(
-        (*D.xy((x - 8, y - 4)), *D.xy((x + width + 8, y + 31))),
+        (*D.xy((x - 10, y - 6)), *D.xy((x + width + 10, y + text_h + 6))),
         radius=8,
         fill=(9, 19, 24, round(alpha * 0.85)),
     )

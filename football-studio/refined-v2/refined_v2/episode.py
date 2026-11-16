@@ -147,6 +147,7 @@ def compile_episode(data, base_dir=None) -> dict:
         "evidence_frames": evidence,
         "boards": boards,
         "demo": working.get("demo") or {},
+        "forbidden_clip_s": _forbidden_clip(data),
     }
 
 
@@ -237,6 +238,30 @@ def _segments(data, boards):
 
 def _overlaps(a0, a1, b0, b1):
     return float(a0) < float(b1) and float(b0) < float(a1)
+
+
+def _clip_offset(data):
+    offsets = []
+    for item in data.get("segments") or []:
+        src = item.get("source_s")
+        clip = item.get("clip_s")
+        if isinstance(src, list) and isinstance(clip, list) and len(src) == 2 and len(clip) == 2:
+            offsets.append(float(src[0]) - float(clip[0]))
+    if not offsets or max(offsets) - min(offsets) > 0.2:
+        return None
+    return offsets[0]
+
+
+def _forbidden_clip(data):
+    """把禁止的源时间折成裁切文件上的秒。折不出就留空，不猜。"""
+    offset = _clip_offset(data)
+    if offset is None:
+        return []
+    windows = []
+    for ban in data.get("forbidden_source_s") or []:
+        if isinstance(ban, list) and len(ban) == 2:
+            windows.append([float(ban[0]) - offset, float(ban[1]) - offset])
+    return windows
 
 
 def _continuity(data, boards):
@@ -345,6 +370,8 @@ def _compile_board(board, index, basis, clock, claim, evidence, number_policy):
         "source_s": board.get("source_s"),
         "segment": board.get("segment"),
         "projection": projection,
+        "label_px": int(board["label_px"]) if board.get("label_px") else 0,
+        "open_visible": bool(board.get("open_visible")),
     }
 
 
@@ -492,6 +519,16 @@ def _annotation(item, board_id, basis, clock, scene_name, output_start, duration
         if claim == "evidence_locked":
             _require_evidence(item, claim, evidence, f"{board_id}.segment")
         return {"type": kind, "frm": frm, "to": to, "t0": t0, "t1": t1, "kind": item["kind"]}
+    if kind == "emphasis":
+        ids = item.get("ids")
+        if not isinstance(ids, list) or not ids or any(identifier not in catalog for identifier in ids):
+            raise EpisodeRejected("geometry", f"{board_id} 的空间强调必须指向已经在板上的点。")
+        link = bool(item.get("link"))
+        if link and len(ids) < 2:
+            raise EpisodeRejected("geometry", f"{board_id} 的位置关系至少要两个点。这不是跑动。")
+        if item.get("kind") in ("run", "def"):
+            raise EpisodeRejected("arrow", f"{board_id} 的空间强调不能标成跑动或防守位移。")
+        return {"type": kind, "ids": list(ids), "t0": t0, "t1": t1, "link": link}
     raise EpisodeRejected("geometry", f"{board_id} 有不认识的注释类型 {kind}。")
 
 
@@ -673,7 +710,7 @@ def _label_overlap(labels, duration, board_id):
     step = 1 / 25
     moment = 0.0
     while moment <= duration + 1e-9:
-        active = [label for label in labels if label["t0"] - 1e-9 <= moment < label["t1"] - 1e-9]
+        active = [label for label in labels if label["t0"] - 1e-9 <= moment <= label["t1"] + 1e-9]
         if len(active) > 3:
             raise EpisodeRejected("geometry", f"{board_id} 在 {moment:.2f}s 同时有 {len(active)} 个标签，最多 3 个。")
         moment += step

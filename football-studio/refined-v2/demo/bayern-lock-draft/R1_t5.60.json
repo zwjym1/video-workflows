@@ -3,16 +3,19 @@
   "claim": "lock_draft",
   "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
   "board": "R1",
-  "t": 1.0,
+  "t": 5.6,
   "question": "14号身前，边路还有空当吗？",
   "native_size": [
     1280,
     720
   ],
+  "present_from_supersample": false,
   "fps": 25,
   "supersample": 2,
   "upscaled": false,
   "audio": null,
+  "audience": false,
+  "stamp_burned": true,
   "font": {
     "path": "/workspace/football-studio/refined-v2/fonts/NotoSansSC-700.ttf",
     "spec_match": true,
@@ -41,16 +44,16 @@
   },
   "labels": [
     "左边路持球",
-    "身前有人"
+    "身前有人",
+    "禁区里已有人"
   ],
   "visible_ids": [
     "K14",
     "Cmark",
     "Kkeep",
-    "Kin"
+    "Kin",
+    "Kin2"
   ],
-  "motion_progress": {
-    "K14": 0.76483
-  },
+  "motion_progress": {},
   "route_progress": {}
 }

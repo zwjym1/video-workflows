@@ -2,17 +2,20 @@
   "episode_id": "bayern-20200814-mueller-open-lock-draft",
   "claim": "lock_draft",
   "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
-  "board": "R1",
-  "t": 2.2,
-  "question": "14号身前，边路还有空当吗？",
+  "board": "N2",
+  "t": 9.6,
+  "question": "禁区这一脚，球是怎么出去的？",
   "native_size": [
     1280,
     720
   ],
+  "present_from_supersample": false,
   "fps": 25,
   "supersample": 2,
   "upscaled": false,
   "audio": null,
+  "audience": false,
+  "stamp_burned": true,
   "font": {
     "path": "/workspace/football-studio/refined-v2/fonts/NotoSansSC-700.ttf",
     "spec_match": true,
@@ -26,32 +29,40 @@
     "consistent": true
   },
   "ids": [
-    "K14",
-    "Cmark",
+    "Kshot",
+    "Ktall",
+    "C20",
+    "C5",
+    "C3",
+    "C2",
     "Kkeep",
-    "Kin",
-    "Kin2"
+    "Cjump"
   ],
   "numbers": {
-    "K14": "14",
-    "Cmark": null,
+    "Kshot": null,
+    "Ktall": null,
+    "C20": "20",
+    "C5": "5",
+    "C3": "3",
+    "C2": "2",
     "Kkeep": null,
-    "Kin": null,
-    "Kin2": null
+    "Cjump": null
   },
   "labels": [
-    "左边路持球",
-    "禁区里已有人"
+    "5号在禁区左侧"
   ],
   "visible_ids": [
-    "K14",
-    "Cmark",
+    "Kshot",
+    "Ktall",
+    "C20",
+    "C5",
+    "C3",
+    "C2",
     "Kkeep",
-    "Kin",
-    "Kin2"
+    "Cjump"
   ],
-  "motion_progress": {
-    "K14": 1.0
-  },
-  "route_progress": {}
+  "motion_progress": {},
+  "route_progress": {
+    "ball_96-ball_102": 1.0
+  }
 }
