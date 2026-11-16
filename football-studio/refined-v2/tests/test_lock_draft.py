@@ -1,0 +1,155 @@
+import json
+import sys
+import unittest
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from refined_v2.bayern_lock_fixture import build
+from refined_v2.board import render_board
+from refined_v2.episode import compile_episode
+from refined_v2.errors import EpisodeRejected
+from refined_v2.lock_map import CAMERAS, to_uv
+
+ROOT = Path(__file__).resolve().parents[1]
+EP = ROOT / "episodes" / "bayern-20200814-mueller-open-lock-draft" / "episode.json"
+
+
+class LockDraftTest(unittest.TestCase):
+    def test_layers_span_the_voice_window(self):
+        for board in build()["boards"]:
+            gaps = [b["t"] - a["t"] for a, b in zip(board["layers"], board["layers"][1:])]
+            self.assertLessEqual(max(gaps), 3.4)
+            self.assertGreater(board["layers"][-1]["t"], board["duration_s"] - 1.2)
+            self.assertLess(board["layers"][0]["t"], 1.0)
+
+    def test_file_matches_builder(self):
+        self.assertEqual(json.loads(EP.read_text(encoding="utf-8")), build())
+
+    def test_number_five_was_moved_off_the_goal_line(self):
+        board = next(item for item in build()["boards"] if item["id"] == "N2")
+        five = next(node for node in board["nodes"] if node["id"] == "C5")
+        self.assertGreater(five["source_px"][0], 300)
+        self.assertNotEqual(five["source_px"], [150, 720])
+        self.assertEqual(five["source_canvas"], [1280, 720])
+
+    def test_same_camera_formula_and_eighteen_stays_out_of_the_layoff(self):
+        data = build()
+        for board in data["boards"]:
+            camera = CAMERAS[board["camera"]]
+            for node in board["nodes"]:
+                self.assertEqual(node["uv"], to_uv(*node["source_px"], camera))
+            for route in board.get("routes") or []:
+                for extra in board.get("extra_points") or []:
+                    if extra["id"] in route["ids"]:
+                        self.assertEqual(extra["uv"], extra["uv"])
+        live = next(board for board in data["boards"] if board["id"] == "N2")
+        self.assertNotIn("18", {node["number"] for node in live["nodes"]})
+        self.assertNotIn("9", {node["number"] for node in live["nodes"]})
+        self.assertTrue(all(node["id"] != "K18" for node in live["nodes"]))
+        replay = next(board for board in data["boards"] if board["id"] == "R3")
+        self.assertTrue(all("K18" not in route["ids"] for route in replay.get("routes") or []))
+        back = CAMERAS["behind_goal_attack_bottom"]
+        self.assertLess(to_uv(680, 620, back)[0], to_uv(370, 380, back)[0])
+
+    def test_verified_schematic_rejects_a_padded_runtime_and_the_kickoff(self):
+        compiled = compile_episode(build(), base_dir=EP.parent)
+        self.assertTrue(compiled["geometry_verified"])
+        self.assertIn("俯视示意", compiled["stamp"])
+        self.assertIn("非测绘", compiled["stamp"])
+        self.assertAlmostEqual(sum(item["duration_s"] for item in build()["segments"]), 8.8)
+        data = build()
+        data["segments"][0]["duration_s"] = 84
+        with self.assertRaises(EpisodeRejected) as caught:
+            compile_episode(data, base_dir=EP.parent)
+        self.assertEqual(caught.exception.code, "continuity")
+        data = build()
+        data["boards"][1]["source_s"] = [56, 61.5]
+        with self.assertRaises(EpisodeRejected) as caught:
+            compile_episode(data, base_dir=EP.parent)
+        self.assertEqual(caught.exception.code, "continuity")
+        data = build()
+        data["boards"][1]["nodes"][0]["number"] = "25"
+        data["boards"][1]["nodes"][0]["number_lock"] = "clip_9p6"
+        with self.assertRaises(EpisodeRejected) as caught:
+            compile_episode(data, base_dir=EP.parent)
+        self.assertEqual(caught.exception.code, "identity")
+        data = build()
+        data["pitch_calibration"] = "surveyed_homography"
+        with self.assertRaises(EpisodeRejected) as caught:
+            compile_episode(data, base_dir=EP.parent)
+        self.assertEqual(caught.exception.code, "evidence")
+
+    def test_r1_and_r3_open_on_a_point_and_hold_the_closing_labels(self):
+        data = build()
+        compiled = compile_episode(data, base_dir=EP.parent)
+        self.assertEqual(data["demo"]["side_by_side"][2]["t"], 6.4)
+        for board in data["boards"]:
+            if board["id"] in ("R1", "R3"):
+                self.assertEqual(board.get("motions") or [], [])
+                self.assertTrue(all(note["type"] in ("emphasis", "zone") and note.get("kind") not in ("run", "def") for note in board["annotations"]))
+        r1 = next(board for board in compiled["boards"] if board["id"] == "R1")
+        r3 = next(board for board in compiled["boards"] if board["id"] == "R3")
+        opening, _ = render_board(compiled, r1, 0.0, show_stamp=False)
+        self.assertEqual(opening.size, (1280, 720))
+        _, open_state = render_board(compiled, r1, 0.0, show_stamp=False)
+        self.assertIn("K14", open_state["visible_ids"])
+        self.assertEqual(open_state["legend"], "")
+        _, end_state = render_board(compiled, r1, 6.4, show_stamp=False)
+        self.assertEqual(end_state["labels"], ["左边路持球", "身前有人", "禁区里已有人"])
+        self.assertEqual(end_state["motion_progress"], {})
+        _, r3_open = render_board(compiled, r3, 0.0, show_stamp=False)
+        self.assertIn("Kkeep", r3_open["visible_ids"])
+        self.assertIn("K9", r3_open["visible_ids"])
+        self.assertGreater(len(r3_open["visible_ids"]), 1)
+        _, r3_end = render_board(compiled, r3, 6.4, show_stamp=False)
+        self.assertIn("射门点", r3_end["labels"])
+        self.assertIn("远端18未参与", r3_end["labels"])
+        self.assertIn("回放确认9号", r3_end["labels"])
+        self.assertIn("C21", r3_end["visible_ids"])
+        for note in r3["annotations"]:
+            if note.get("link"):
+                self.assertNotIn("K18", note["ids"])
+        self.assertGreaterEqual(r1["label_px"], 30)
+        self.assertGreaterEqual(r3["label_px"], 30)
+        k9 = next(item for item in data["boards"][2]["labels"] if item["id"] == "K9")
+        c21 = next(item for item in data["boards"][2]["labels"] if item["id"] == "C21")
+        self.assertLess(k9["offset"][0], 0)
+        self.assertGreater(c21["offset"][0], 40)
+        self.assertGreater(abs(k9["offset"][1] - c21["offset"][1]), 40)
+
+    def test_n2_opens_on_both_whites_and_holds_them_with_the_numbers(self):
+        data = build()
+        compiled = compile_episode(data, base_dir=EP.parent)
+        board = next(item for item in compiled["boards"] if item["id"] == "N2")
+        raw = next(item for item in data["boards"] if item["id"] == "N2")
+        self.assertEqual(raw.get("motions") or [], [])
+        self.assertTrue(all(note.get("kind") not in ("run", "def") for note in raw.get("annotations") or []))
+        self.assertTrue(any(note["type"] == "zone" and note["ids"] == ["ball_96", "ball_102"] for note in raw["annotations"]))
+        _, opening = render_board(compiled, board, 0.0, show_stamp=False)
+        self.assertIn("Kshot", opening["visible_ids"])
+        self.assertIn("Ktall", opening["visible_ids"])
+        self.assertEqual(opening["labels"], ["回做点", "接应点"])
+        self.assertEqual(opening["legend"], "")
+        _, late = render_board(compiled, board, 9.6, show_stamp=False)
+        self.assertEqual(late["labels"], ["回做点", "接应点", "5号在禁区左侧"])
+        self.assertIn("C20", late["visible_ids"])
+        self.assertEqual(late["motion_progress"], {})
+        self.assertEqual(late["route_progress"]["ball_96-ball_102"], 1)
+        self.assertTrue(any(note["type"] == "zone" and note["t0"] >= 5.5 for note in board["annotations"]))
+
+    def test_render_side_by_side_inputs_exist(self):
+        compiled = compile_episode(build(), base_dir=EP.parent)
+        board = next(item for item in compiled["boards"] if item["id"] == "N2")
+        image, state = render_board(compiled, board, 3.6)
+        self.assertEqual(image.size, (1280, 720))
+        self.assertTrue(state["font"]["spec_match"])
+        self.assertIsNone(state["numbers"]["Kshot"])
+        self.assertEqual(state["numbers"]["C5"], "5")
+        for frame in compiled["evidence_frames"].values():
+            self.assertTrue(Path(frame["path"]).is_file())
+            self.assertEqual(frame["native_size"], [1280, 720])
+
+
+if __name__ == "__main__":
+    unittest.main()

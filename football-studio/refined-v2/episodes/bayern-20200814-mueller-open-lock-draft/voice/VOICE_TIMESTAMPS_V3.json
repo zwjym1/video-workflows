@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "N00",
+    "text": "先看这个球。左边路把空间拉开之后，禁区前沿那一下回做，是怎么把球换到能射的位置的？",
+    "words": [
+      {
+        "text": "先",
+        "offset": 0.08,
+        "duration": 0.24
+      },
+      {
+        "text": "看",
+        "offset": 0.32,
+        "duration": 0.15999999999999998
+      },
+      {
+        "text": "这",
+        "offset": 0.48,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "个",
+        "offset": 0.56,
+        "duration": 0.07999999999999996
+      },
+      {
+        "text": "球",
+        "offset": 0.64,
+        "duration": 0.31999999999999995
+      },
+      {
+        "text": "左",
+        "offset": 1.2,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "边",
+        "offset": 1.36,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "路",
+        "offset": 1.52,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "把",
+        "offset": 1.68,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "空",
+        "offset": 1.84,
+        "duration": 0.24
+      },
+      {
+        "text": "间",
+        "offset": 2.08,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "拉",
+        "offset": 2.24,
+        "duration": 0.07999999999999963
+      },
+      {
+        "text": "开",
+        "offset": 2.32,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "之",
+        "offset": 2.48,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "后",
+        "offset": 2.56,
+        "duration": 0.31999999999999984
+      },
+      {
+        "text": "禁",
+        "offset": 2.88,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "区",
+        "offset": 3.12,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "前",
+        "offset": 3.28,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "沿",
+        "offset": 3.52,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "那",
+        "offset": 3.68,
+        "duration": 0.07999999999999963
+      },
+      {
+        "text": "一",
+        "offset": 3.76,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "下",
+        "offset": 3.84,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "回",
+        "offset": 4.0,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "做",
+        "offset": 4.16,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "是",
+        "offset": 4.48,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "怎",
+        "offset": 4.64,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "么",
+        "offset": 4.8,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "把",
+        "offset": 4.88,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "球",
+        "offset": 4.96,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "换",
+        "offset": 5.2,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "到",
+        "offset": 5.36,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "能",
+        "offset": 5.52,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "射",
+        "offset": 5.68,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "的",
+        "offset": 5.92,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "位",
+        "offset": 6.0,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "置",
+        "offset": 6.08,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "的",
+        "offset": 6.24,
+        "duration": 0.08000000000000007
+      }
+    ],
+    "core_end": 6.32,
+    "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N00.mp3",
+    "model": "s2.1-pro-free",
+    "bytes": 103234
+  },
+  {
+    "id": "N01",
+    "text": "先完整、原速看现有的连续画面。",
+    "words": [
+      {
+        "text": "先",
+        "offset": 0.08,
+        "duration": 0.24
+      },
+      {
+        "text": "完",
+        "offset": 0.32,
+        "duration": 0.24000000000000005
+      },
+      {
+        "text": "整",
+        "offset": 0.56,
+        "duration": 0.24
+      },
+      {
+        "text": "原",
+        "offset": 0.8,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "速",
+        "offset": 0.96,
+        "duration": 0.24
+      },
+      {
+        "text": "看",
+        "offset": 1.2,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "现",
+        "offset": 1.36,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "有",
+        "offset": 1.52,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "的",
+        "offset": 1.68,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "连",
+        "offset": 1.76,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "续",
+        "offset": 1.92,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "画",
+        "offset": 2.08,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "面",
+        "offset": 2.24,
+        "duration": 0.1599999999999997
+      }
+    ],
+    "core_end": 2.4,
+    "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N01.mp3",
+    "model": "s2.1-pro-free",
+    "bytes": 40123
+  },
+  {
+    "id": "N02",
+    "text": "回放里，14号沿着进攻左路往禁区带，身前还有空当。禁区里已经有白衣在跑位。这段回放从禁区附近开始。",
+    "words": [
+      {
+        "text": "回",
+        "offset": 0.08,
+        "duration": 0.24
+      },
+      {
+        "text": "放",
+        "offset": 0.32,
+        "duration": 0.15999999999999998
+      },
+      {
+        "text": "里",
+        "offset": 0.48,
+        "duration": 0.24
+      },
+      {
+        "text": "14",
+        "offset": 0.72,
+        "duration": 0.40000000000000013
+      },
+      {
+        "text": "号",
+        "offset": 1.12,
+        "duration": 0.07999999999999985
+      },
+      {
+        "text": "沿",
+        "offset": 1.2,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "着",
+        "offset": 1.36,
+        "duration": 0.07999999999999985
+      },
+      {
+        "text": "进",
+        "offset": 1.44,
+        "duration": 0.24
+      },
+      {
+        "text": "攻",
+        "offset": 1.68,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "左",
+        "offset": 1.84,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "路",
+        "offset": 2.0,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "往",
+        "offset": 2.24,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "禁",
+        "offset": 2.4,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "区",
+        "offset": 2.56,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "带",
+        "offset": 2.72,
+        "duration": 0.23999999999999977
+      },
+      {
+        "text": "身",
+        "offset": 3.04,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "前",
+        "offset": 3.2,
+        "duration": 0.23999999999999977
+      },
+      {
+        "text": "还",
+        "offset": 3.44,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "有",
+        "offset": 3.52,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "空",
+        "offset": 3.6,
+        "duration": 0.23999999999999977
+      },
+      {
+        "text": "当",
+        "offset": 3.84,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "禁",
+        "offset": 4.16,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "区",
+        "offset": 4.32,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "里",
+        "offset": 4.48,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "已",
+        "offset": 4.64,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "经",
+        "offset": 4.8,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "有",
+        "offset": 4.96,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "白",
+        "offset": 5.04,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "衣",
+        "offset": 5.28,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "在",
+        "offset": 5.36,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "跑",
+        "offset": 5.52,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "位",
+        "offset": 5.68,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "这",
+        "offset": 6.16,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "段",
+        "offset": 6.32,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "回",
+        "offset": 6.4,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "放",
+        "offset": 6.56,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "从",
+        "offset": 6.8,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "禁",
+        "offset": 6.96,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "区",
+        "offset": 7.2,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "附",
+        "offset": 7.28,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "近",
+        "offset": 7.44,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "开",
+        "offset": 7.6,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "始",
+        "offset": 7.76,
+        "duration": 0.2400000000000002
+      }
+    ],
+    "core_end": 8.0,
+    "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N02.mp3",
+    "model": "s2.1-pro-free",
+    "bytes": 129984
+  },
+  {
+    "id": "N03",
+    "text": "3:02，球到禁区前沿偏右，没有停在第一落点。两名白衣把球换到面向球门的一侧，立刻出脚。巴萨 20、5、3、2 号都在周边，但没有封住这个换点。",
+    "words": [
+      {
+        "text": "3",
+        "offset": 0.08,
+        "duration": 0.24
+      },
+      {
+        "text": "02",
+        "offset": 0.32,
+        "duration": 0.32
+      },
+      {
+        "text": "球",
+        "offset": 1.12,
+        "duration": 0.24
+      },
+      {
+        "text": "到",
+        "offset": 1.36,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "禁",
+        "offset": 1.52,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "区",
+        "offset": 1.68,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "前",
+        "offset": 1.84,
+        "duration": 0.24
+      },
+      {
+        "text": "沿",
+        "offset": 2.08,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "偏",
+        "offset": 2.16,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "右",
+        "offset": 2.32,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "没",
+        "offset": 2.64,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "有",
+        "offset": 2.8,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "停",
+        "offset": 2.88,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "在",
+        "offset": 3.04,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "第",
+        "offset": 3.2,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "一",
+        "offset": 3.36,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "落",
+        "offset": 3.44,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "点",
+        "offset": 3.52,
+        "duration": 0.31999999999999984
+      },
+      {
+        "text": "两",
+        "offset": 3.84,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "名",
+        "offset": 4.0,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "白",
+        "offset": 4.16,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "衣",
+        "offset": 4.32,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "把",
+        "offset": 4.48,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "球",
+        "offset": 4.64,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "换",
+        "offset": 4.8,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "到",
+        "offset": 5.04,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "面",
+        "offset": 5.12,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "向",
+        "offset": 5.28,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "球",
+        "offset": 5.44,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "门",
+        "offset": 5.6,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "的",
+        "offset": 5.76,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "一",
+        "offset": 5.84,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "侧",
+        "offset": 6.0,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "立",
+        "offset": 6.32,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "刻",
+        "offset": 6.48,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "出",
+        "offset": 6.64,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "脚",
+        "offset": 6.8,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "巴",
+        "offset": 7.2,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "萨",
+        "offset": 7.36,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "20",
+        "offset": 7.52,
+        "duration": 0.6400000000000006
+      },
+      {
+        "text": "5",
+        "offset": 8.16,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "3",
+        "offset": 8.48,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "2",
+        "offset": 8.8,
+        "duration": 0.0
+      },
+      {
+        "text": "号",
+        "offset": 9.04,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "都",
+        "offset": 9.2,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "在",
+        "offset": 9.36,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "周",
+        "offset": 9.44,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "边",
+        "offset": 9.6,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "但",
+        "offset": 10.0,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "没",
+        "offset": 10.08,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "有",
+        "offset": 10.24,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "封",
+        "offset": 10.32,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "住",
+        "offset": 10.56,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "这",
+        "offset": 10.64,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "个",
+        "offset": 10.72,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "换",
+        "offset": 10.88,
+        "duration": 0.15999999999999837
+      },
+      {
+        "text": "点",
+        "offset": 11.04,
+        "duration": 0.2400000000000002
+      }
+    ],
+    "core_end": 11.28,
+    "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N03.mp3",
+    "model": "s2.1-pro-free",
+    "bytes": 181811
+  },
+  {
+    "id": "N04",
+    "text": "门后回放能看清：9号已经在门前，21号贴着他；18号在远端，没有参与。出球人这一帧没有号码。进球后特写是穆勒，3:15，比分 0 比 1。",
+    "words": [
+      {
+        "text": "门",
+        "offset": 0.08,
+        "duration": 0.24
+      },
+      {
+        "text": "后",
+        "offset": 0.32,
+        "duration": 0.15999999999999998
+      },
+      {
+        "text": "回",
+        "offset": 0.48,
+        "duration": 0.16000000000000003
+      },
+      {
+        "text": "放",
+        "offset": 0.64,
+        "duration": 0.16000000000000003
+      },
+      {
+        "text": "能",
+        "offset": 0.8,
+        "duration": 0.07999999999999996
+      },
+      {
+        "text": "看",
+        "offset": 0.88,
+        "duration": 0.16000000000000003
+      },
+      {
+        "text": "清",
+        "offset": 1.04,
+        "duration": 0.32000000000000006
+      },
+      {
+        "text": "9",
+        "offset": 1.36,
+        "duration": 0.24
+      },
+      {
+        "text": "号",
+        "offset": 1.6,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "已",
+        "offset": 1.76,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "经",
+        "offset": 1.84,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "在",
+        "offset": 2.0,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "门",
+        "offset": 2.16,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "前",
+        "offset": 2.32,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "21",
+        "offset": 2.72,
+        "duration": 0.5599999999999996
+      },
+      {
+        "text": "号",
+        "offset": 3.28,
+        "duration": 0.0
+      },
+      {
+        "text": "贴",
+        "offset": 3.28,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "着",
+        "offset": 3.44,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "他",
+        "offset": 3.52,
+        "duration": 0.23999999999999977
+      },
+      {
+        "text": "18",
+        "offset": 3.84,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "号",
+        "offset": 4.16,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "在",
+        "offset": 4.32,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "远",
+        "offset": 4.48,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "端",
+        "offset": 4.64,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "没",
+        "offset": 4.96,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "有",
+        "offset": 5.04,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "参",
+        "offset": 5.12,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "与",
+        "offset": 5.36,
+        "duration": 0.15999999999999925
+      },
+      {
+        "text": "出",
+        "offset": 5.76,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "球",
+        "offset": 6.0,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "人",
+        "offset": 6.16,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "这",
+        "offset": 6.32,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "一",
+        "offset": 6.4,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "帧",
+        "offset": 6.48,
+        "duration": 0.23999999999999932
+      },
+      {
+        "text": "没",
+        "offset": 6.72,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "有",
+        "offset": 6.88,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "号",
+        "offset": 6.96,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "码",
+        "offset": 7.12,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "进",
+        "offset": 7.6,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "球",
+        "offset": 7.76,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "后",
+        "offset": 7.92,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "特",
+        "offset": 8.08,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "写",
+        "offset": 8.24,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "是",
+        "offset": 8.4,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "穆",
+        "offset": 8.48,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "勒",
+        "offset": 8.72,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "3",
+        "offset": 8.96,
+        "duration": 0.23999999999999844
+      },
+      {
+        "text": "15",
+        "offset": 9.2,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "比",
+        "offset": 10.0,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "分",
+        "offset": 10.16,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "0",
+        "offset": 10.32,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "比",
+        "offset": 10.48,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "1",
+        "offset": 10.64,
+        "duration": 0.16000000000000014
+      }
+    ],
+    "core_end": 10.8,
+    "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N04.mp3",
+    "model": "s2.1-pro-free",
+    "bytes": 175123
+  },
+  {
+    "id": "N05",
+    "text": "先把左边路的空间打出来，再在禁区前沿回做，换一个能直接结束的点。",
+    "words": [
+      {
+        "text": "先",
+        "offset": 0.08,
+        "duration": 0.24
+      },
+      {
+        "text": "把",
+        "offset": 0.32,
+        "duration": 0.08000000000000002
+      },
+      {
+        "text": "左",
+        "offset": 0.4,
+        "duration": 0.16000000000000003
+      },
+      {
+        "text": "边",
+        "offset": 0.56,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "路",
+        "offset": 0.72,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "的",
+        "offset": 0.8,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "空",
+        "offset": 0.96,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "间",
+        "offset": 1.12,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "打",
+        "offset": 1.28,
+        "duration": 0.15999999999999992
+      },
+      {
+        "text": "出",
+        "offset": 1.44,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "来",
+        "offset": 1.52,
+        "duration": 0.24
+      },
+      {
+        "text": "再",
+        "offset": 1.84,
+        "duration": 0.07999999999999985
+      },
+      {
+        "text": "在",
+        "offset": 1.92,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "禁",
+        "offset": 2.08,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "区",
+        "offset": 2.24,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "前",
+        "offset": 2.4,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "沿",
+        "offset": 2.56,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "回",
+        "offset": 2.72,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "做",
+        "offset": 2.88,
+        "duration": 0.3200000000000003
+      },
+      {
+        "text": "换",
+        "offset": 3.28,
+        "duration": 0.2400000000000002
+      },
+      {
+        "text": "一",
+        "offset": 3.52,
+        "duration": 0.0
+      },
+      {
+        "text": "个",
+        "offset": 3.52,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "能",
+        "offset": 3.6,
+        "duration": 0.1599999999999997
+      },
+      {
+        "text": "直",
+        "offset": 3.76,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "接",
+        "offset": 3.92,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "结",
+        "offset": 4.08,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "束",
+        "offset": 4.24,
+        "duration": 0.16000000000000014
+      },
+      {
+        "text": "的",
+        "offset": 4.4,
+        "duration": 0.08000000000000007
+      },
+      {
+        "text": "点",
+        "offset": 4.48,
+        "duration": 0.23999999999999932
+      }
+    ],
+    "core_end": 4.72,
+    "file": "/workspace/football-demand-20261116/rework-hd/produce-v3/audio/N05.mp3",
+    "model": "s2.1-pro-free",
+    "bytes": 77739
+  }
+]

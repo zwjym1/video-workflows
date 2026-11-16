@@ -1,0 +1,35 @@
+{
+  "note": "2026-11-17：R1/R3 起幅不再空板，结束帧仍留着收束标签。帧数没变。没有补跑动虚线。",
+  "R1": {
+    "duration_s": 6.4,
+    "frame_count": 160,
+    "expected_frames": 160,
+    "frames_match": true,
+    "longest_near_freeze_s": 2.76,
+    "route_end": {}
+  },
+  "N2": {
+    "duration_s": 10.4,
+    "frame_count": 260,
+    "expected_frames": 260,
+    "frames_match": true,
+    "longest_near_freeze_s": 4.76,
+    "route_end": {
+      "ball_96-ball_102": 1.0
+    },
+    "ball_draw_check": {
+      "from_s": 3.7,
+      "to_s": 5.4,
+      "yellow_pixels": [309, 1092],
+      "changed_pixels": 2000
+    }
+  },
+  "R3": {
+    "duration_s": 6.4,
+    "frame_count": 160,
+    "expected_frames": 160,
+    "frames_match": true,
+    "longest_near_freeze_s": 1.36,
+    "route_end": {}
+  }
+}

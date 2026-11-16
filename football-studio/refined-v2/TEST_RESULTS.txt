@@ -1,0 +1,11 @@
+python3 -m unittest discover -s tests -v
+Ran 46 tests in 12.736s
+OK
+
+合成 1080 全程（不是真实候选）：
+53.84s / 1346 帧 / 1920x1080
+进程内 VmRSS 峰值 254996 KiB（249 MiB）
+此前 OOM 的 anon-rss 约 10143900 KiB
+片头 mean -91.0 dB（文件 0 秒蜂鸣未进入）
+源 28 秒映射窗 mean -39.1 dB
+R1 板段 mean -91.0 dB

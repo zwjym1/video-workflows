@@ -1,0 +1,19 @@
+{
+  "evidence_native": [
+    1280,
+    720
+  ],
+  "evidence_drawn": [
+    600,
+    338
+  ],
+  "board_drawn": [
+    620,
+    349
+  ],
+  "upscaled": false,
+  "native_size": [
+    1280,
+    720
+  ]
+}

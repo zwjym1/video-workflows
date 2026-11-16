@@ -1,0 +1,52 @@
+{
+  "episode_id": "bayern-20200814-mueller-open-lock-draft",
+  "claim": "lock_draft",
+  "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
+  "board": "R1",
+  "t": 0.0,
+  "question": "14号身前，边路还有空当吗？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "present_from_supersample": false,
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "audience": false,
+  "stamp_burned": true,
+  "font": {
+    "path": "/workspace/football-studio/refined-v2/fonts/NotoSansSC-700.ttf",
+    "spec_match": true,
+    "note": "文件名符合 NotoSansSC-700。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "K14",
+    "Cmark",
+    "Kkeep",
+    "Kin",
+    "Kin2"
+  ],
+  "numbers": {
+    "K14": "14",
+    "Cmark": null,
+    "Kkeep": null,
+    "Kin": null,
+    "Kin2": null
+  },
+  "labels": [],
+  "legend": "",
+  "visible_ids": [
+    "K14"
+  ],
+  "motion_progress": {},
+  "route_progress": {}
+}

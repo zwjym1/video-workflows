@@ -32,3 +32,7 @@
 Git 收的是文本源码、可编辑 SVG、脚本、时轴、字幕、配置、小型 QC 记录、知识库，以及 4 个很短的原创近似音效（两处目录各一份，共 8 个 wav）。根目录 `.gitignore` 会忽略 `*.csv` 和 `*.wav`；这 15 个 csv 和 8 个 wav 是快照正文，已用强制纳入的方式跟踪。其余被忽略的大媒体类型没有放进来。
 
 成片 mp4、源帧、长配音、对标原片、分离 BGM、证据大图仍以 Drive 文件 ID 为准，见快照内 `MEDIA_ON_DRIVE.md` 和 `MANIFEST.json` 的 `exclusions_summary`。
+
+## 精修 v2 关系板
+
+`snapshot-20261116/` 保持原样。可复用的关系板在 [refined-v2/README.md](refined-v2/README.md)：沿用精修画法，用场次包输入。缺证据就拒绝，不回退阿森纳数据。样例不是 2020-08-14 的真实回合。

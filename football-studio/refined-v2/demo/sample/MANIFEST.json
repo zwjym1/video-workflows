@@ -1,0 +1,40 @@
+{
+  "episode_id": "sample-not-a-match",
+  "claim": "sample_not_a_match",
+  "stamp": "样例 · 非比赛几何 · 不是2020-08-14穆勒回合",
+  "statement": "这是接口样例，不是任何一场比赛的几何，更不是2020-08-14穆勒回合。",
+  "timing_basis": "board_local_seconds",
+  "timing_note": "秒数只为演示分层。没有字级旁白，也没有核实过的比赛坐标。",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "audio_note": "本轮不渲音频，不调用配音。",
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "limits": "没有核实过的 2020-08-14 穆勒回合坐标。本目录不是那粒进球的真实关系板。",
+  "files": [
+    "S1_t0.20.png",
+    "S1_t1.00.png",
+    "S1_t2.00.png",
+    "S1_t3.20.png",
+    "S1_PROGRESS.png",
+    "S1_SIDE_BY_SIDE.png",
+    "S1_SIDE_BY_SIDE.json",
+    "S1_LAYERS.mp4"
+  ]
+}

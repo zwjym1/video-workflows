@@ -1,0 +1,61 @@
+{
+  "episode_id": "sample-not-a-match",
+  "claim": "sample_not_a_match",
+  "stamp": "样例 · 非比赛几何 · 不是2020-08-14穆勒回合",
+  "board": "S1",
+  "t": 1.0,
+  "question": "样例：这一脚先找哪侧接点？",
+  "native_size": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "supersample": 2,
+  "upscaled": false,
+  "audio": null,
+  "font": {
+    "path": "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+    "spec_match": false,
+    "note": "使用系统里的文泉驿微米黑。这不是规范写的 NotoSansSC-700，字重不完全相同，没有把它当成已经对齐。"
+  },
+  "orientation": {
+    "input_attack": "left",
+    "rendered_attack": "left",
+    "transform": "identity",
+    "paths": [],
+    "consistent": true
+  },
+  "ids": [
+    "P7",
+    "P11",
+    "D4",
+    "D5",
+    "D8"
+  ],
+  "numbers": {
+    "P7": "7",
+    "P11": "11",
+    "D4": "4",
+    "D5": "5",
+    "D8": "8"
+  },
+  "labels": [
+    "持球向左",
+    "先在身侧",
+    "前侧接点"
+  ],
+  "visible_ids": [
+    "P7",
+    "P11",
+    "D4",
+    "D5",
+    "D8"
+  ],
+  "motion_progress": {
+    "P7": 0.92785,
+    "D4": 0.96937
+  },
+  "route_progress": {
+    "P7-P11": 0.0
+  }
+}
