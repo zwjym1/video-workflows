@@ -1,0 +1,17 @@
+[
+  {
+    "source": "public_share_page",
+    "status": "stopped",
+    "detail": "分享页无 item_list"
+  },
+  {
+    "source": "public_dlpanda_form",
+    "status": "media_url_available"
+  },
+  {
+    "source": "public_dlpanda_form",
+    "download_exit": 0,
+    "http_status": "200",
+    "stderr": ""
+  }
+]

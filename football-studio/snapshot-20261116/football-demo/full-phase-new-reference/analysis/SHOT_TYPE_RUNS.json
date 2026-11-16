@@ -1,0 +1,82 @@
+{
+  "method": "真实视频10fps草皮色占比；只区分实拍/板或黑底，不等于精确剪辑镜头检测；叠化需复看",
+  "runs": [
+    {
+      "start_s": 0.0,
+      "end_s": 2.5,
+      "mode": "board_or_black_title"
+    },
+    {
+      "start_s": 2.5,
+      "end_s": 2.7,
+      "mode": "live_or_live_freeze"
+    },
+    {
+      "start_s": 2.7,
+      "end_s": 4.0,
+      "mode": "board_or_black_title"
+    },
+    {
+      "start_s": 4.0,
+      "end_s": 6.1,
+      "mode": "live_or_live_freeze"
+    },
+    {
+      "start_s": 6.1,
+      "end_s": 14.1,
+      "mode": "board_or_black_title"
+    },
+    {
+      "start_s": 14.1,
+      "end_s": 21.6,
+      "mode": "live_or_live_freeze"
+    },
+    {
+      "start_s": 21.6,
+      "end_s": 31.6,
+      "mode": "board_or_black_title"
+    },
+    {
+      "start_s": 31.6,
+      "end_s": 47.3,
+      "mode": "live_or_live_freeze"
+    },
+    {
+      "start_s": 47.3,
+      "end_s": 58.3,
+      "mode": "board_or_black_title"
+    },
+    {
+      "start_s": 58.3,
+      "end_s": 67.0,
+      "mode": "live_or_live_freeze"
+    },
+    {
+      "start_s": 67.0,
+      "end_s": 80.0,
+      "mode": "board_or_black_title"
+    },
+    {
+      "start_s": 80.0,
+      "end_s": 87.2,
+      "mode": "live_or_live_freeze"
+    },
+    {
+      "start_s": 87.2,
+      "end_s": 98.2,
+      "mode": "board_or_black_title"
+    },
+    {
+      "start_s": 98.2,
+      "end_s": 104.7,
+      "mode": "live_or_live_freeze"
+    },
+    {
+      "start_s": 104.7,
+      "end_s": 113.7,
+      "mode": "board_or_black_title"
+    }
+  ],
+  "live_or_freeze_seconds_approx": 47.9,
+  "board_or_title_seconds_approx": 65.8
+}

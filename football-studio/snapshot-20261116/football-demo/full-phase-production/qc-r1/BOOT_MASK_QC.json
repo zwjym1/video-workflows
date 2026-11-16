@@ -1,0 +1,23 @@
+[
+  {
+    "source_s": 88.6,
+    "output_s": 15.04,
+    "boot_or_body_overlap_pixels_restored": 264,
+    "mask_on_vs_source_mean_abs_on_overlap": 3.8585858585858586,
+    "counterfactual_vs_source_mean_abs_on_overlap": 46.20075757575758
+  },
+  {
+    "source_s": 90.2,
+    "output_s": 26.0,
+    "boot_or_body_overlap_pixels_restored": 353,
+    "mask_on_vs_source_mean_abs_on_overlap": 3.903682719546742,
+    "counterfactual_vs_source_mean_abs_on_overlap": 51.080264400377715
+  },
+  {
+    "source_s": 100.8,
+    "output_s": 58.0,
+    "boot_or_body_overlap_pixels_restored": 415,
+    "mask_on_vs_source_mean_abs_on_overlap": 2.455421686746988,
+    "counterfactual_vs_source_mean_abs_on_overlap": 57.8289156626506
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "arsenal_full_phase_main.mp4": {
+    "top_level_boxes": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "size": 76579
+      },
+      {
+        "type": "free",
+        "offset": 76611,
+        "size": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 76619,
+        "size": 42160412
+      }
+    ],
+    "faststart": true,
+    "bytes": 42237031,
+    "sha256": "8c7a245b35b70e2f3369516fa42280e79cc3b306f322967e1092c64781bab287"
+  },
+  "arsenal_full_phase_light.mp4": {
+    "top_level_boxes": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "size": 76627
+      },
+      {
+        "type": "free",
+        "offset": 76659,
+        "size": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 76667,
+        "size": 11955782
+      }
+    ],
+    "faststart": true,
+    "bytes": 12032449,
+    "sha256": "9974cc88a85feb73eaa0e383e39596c3e24c63918db7fa8f338ac1f3b4d4a024"
+  }
+}

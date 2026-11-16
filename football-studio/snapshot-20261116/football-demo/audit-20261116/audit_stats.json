@@ -1,0 +1,43 @@
+{
+  "reference": {
+    "video_duration_s": 171.03333333333333,
+    "frame_count": 5131,
+    "full_near_static_total_s": 24.9,
+    "full_near_static_pct": 14.558565581757943,
+    "longest_near_static_s": 2.7666666666666666,
+    "first45_near_static_s": 6.600000000000001,
+    "candidate_count": 49
+  },
+  "sample": {
+    "video_duration_s": 61.1,
+    "frame_count": 1833,
+    "full_near_static_total_s": 28.833333333333332,
+    "full_near_static_pct": 47.190398254228036,
+    "longest_near_static_s": 6.066666666666666,
+    "first45_near_static_s": 20.266666666666666,
+    "candidate_count": 9
+  },
+  "sample_voice": {
+    "file_window_s": 15.646752000000001,
+    "file_window_pct": 25.60843207855974,
+    "vad_candidate_sum_s": 14.486437500000001,
+    "han_char_count": 84,
+    "largest_no_cn_vo_gap_s": 13.649062
+  },
+  "board_vo_free_tails": [
+    {
+      "start": 20.815188,
+      "end": 26.6
+    },
+    {
+      "start": 30.697875,
+      "end": 36.766666666666666
+    },
+    {
+      "start": 47.450938,
+      "end": 51.333333333333336
+    }
+  ],
+  "board_vo_free_tail_total_s": 15.735999000000003,
+  "board_vo_free_and_annotation_complete_total_s": 15.217207333333334
+}

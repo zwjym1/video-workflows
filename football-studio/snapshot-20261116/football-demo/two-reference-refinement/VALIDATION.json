@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-16T17:53:46+08:00",
+  "status": "proposal_only_no_new_render_TTS_or_global_changes",
+  "kb_cards_actually_retrieved": 20,
+  "new_voice_characters_excluding_punctuation": 415,
+  "proposed_question_boards": 5,
+  "old_new_application_pairs": 4,
+  "actual_encoded_new_stills": 27,
+  "portable_match_source_stills": 11,
+  "estimated_duration_s_not_final": 101.6,
+  "original_film_unchanged": true,
+  "drive_folder_url_confirmed_by_live_search": "https://drive.google.com/drive/folders/1ESUqsHNUNQJTGpkROGVv_QLL-ub4FKbz"
+}

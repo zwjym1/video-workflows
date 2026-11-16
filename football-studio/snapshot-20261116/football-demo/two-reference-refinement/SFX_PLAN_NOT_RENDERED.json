@@ -1,0 +1,48 @@
+{
+  "status": "proposal_only",
+  "no_new_audio_generated": true,
+  "events": [
+    {
+      "scene": "N02",
+      "board": "Q1",
+      "binding": "actual live→board strong cut, delete if final transition is not a strong cut",
+      "budget_only_start_s": 12.376,
+      "file": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/cut_hit_low_muted.wav",
+      "target_sfx_minus_active_voice_rms_db": -10,
+      "tolerance_db": 2,
+      "status": "planned_not_rendered",
+      "word_alignment": "follow actual Fish segment and picture cut, not this estimate"
+    },
+    {
+      "scene": "N05",
+      "board": "Q4",
+      "binding": "actual live→board strong cut, delete if final transition is not a strong cut",
+      "budget_only_start_s": 50.264,
+      "file": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/cut_hit_low_muted.wav",
+      "target_sfx_minus_active_voice_rms_db": -10,
+      "tolerance_db": 2,
+      "status": "planned_not_rendered",
+      "word_alignment": "follow actual Fish segment and picture cut, not this estimate"
+    },
+    {
+      "scene": "N06",
+      "board": "Q5",
+      "binding": "actual live→board strong cut, delete if final transition is not a strong cut",
+      "budget_only_start_s": 64.56,
+      "file": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/cut_hit_low_muted.wav",
+      "target_sfx_minus_active_voice_rms_db": -10,
+      "tolerance_db": 2,
+      "status": "planned_not_rendered",
+      "word_alignment": "follow actual Fish segment and picture cut, not this estimate"
+    },
+    {
+      "scene": "N05",
+      "board": "Q4",
+      "binding": "keyword 立即回做 and the return-route first stroke",
+      "file": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/whoosh_line_short.wav",
+      "budget_only_start_s": null,
+      "target_sfx_minus_active_voice_rms_db": -14,
+      "status": "optional_original_approximation_not_confirmed_reference_sound; planned_not_rendered"
+    }
+  ]
+}

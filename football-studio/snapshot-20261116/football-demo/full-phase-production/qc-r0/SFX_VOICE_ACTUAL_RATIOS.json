@@ -1,0 +1,26 @@
+[
+  {
+    "t": 15.28,
+    "file": "cut_hit_low_muted.wav",
+    "sfx_minus_voice_rms_db": -16.20995769850312,
+    "bgm_minus_voice_rms_db": -24.943452589045826
+  },
+  {
+    "t": 30.92,
+    "file": "cut_hit_low_muted.wav",
+    "sfx_minus_voice_rms_db": -14.570001509685628,
+    "bgm_minus_voice_rms_db": -21.776579874591402
+  },
+  {
+    "t": 46.08,
+    "file": "cut_hit_low_muted.wav",
+    "sfx_minus_voice_rms_db": -8.517256908688369,
+    "bgm_minus_voice_rms_db": -12.544104689048163
+  },
+  {
+    "t": 31.72,
+    "file": "whoosh_line_short.wav",
+    "sfx_minus_voice_rms_db": -14.217789583059856,
+    "bgm_minus_voice_rms_db": -17.962867362238974
+  }
+]

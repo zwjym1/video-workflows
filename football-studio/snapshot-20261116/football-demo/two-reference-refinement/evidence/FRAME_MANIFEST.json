@@ -1,0 +1,191 @@
+[
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 4.3,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_004.30.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 13,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_013.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 19,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_019.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 35,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_035.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 52,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_052.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 78,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_078.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 105,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_105.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 108.5,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_108.50.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R1",
+    "source": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "requested_time_s": 133.5,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R1_133.50.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 6.2,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_006.20.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 14.2,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_014.20.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 25,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_025.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 27.3,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_027.30.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 47.3,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_047.30.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 51.8,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_051.80.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 70,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_070.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 90,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_090.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "R2",
+    "source": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+    "requested_time_s": 106,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/R2_106.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 3,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_003.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 17,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_017.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 25,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_025.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 33,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_033.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 40,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_040.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 47,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_047.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 52,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_052.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 58,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_058.00.jpg",
+    "tolerance_s": 0.04
+  },
+  {
+    "asset": "CURRENT",
+    "source": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+    "requested_time_s": 67,
+    "evidence": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_067.00.jpg",
+    "tolerance_s": 0.04
+  }
+]

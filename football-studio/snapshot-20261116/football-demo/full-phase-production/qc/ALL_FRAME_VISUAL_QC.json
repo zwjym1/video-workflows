@@ -1,0 +1,76 @@
+{
+  "decoded_frame_count": 2484,
+  "expected_frame_count": 2484,
+  "near_static_threshold_mean_luma_128x72": 0.16,
+  "longest_near_static_runs": [
+    {
+      "start_s": 7.32,
+      "end_s": 8.76,
+      "duration_s": 1.44
+    },
+    {
+      "start_s": 19.68,
+      "end_s": 21.0,
+      "duration_s": 1.32
+    },
+    {
+      "start_s": 56.8,
+      "end_s": 58.12,
+      "duration_s": 1.32
+    },
+    {
+      "start_s": 50.24,
+      "end_s": 51.52,
+      "duration_s": 1.28
+    },
+    {
+      "start_s": 64.24,
+      "end_s": 65.48,
+      "duration_s": 1.24
+    },
+    {
+      "start_s": 49.04,
+      "end_s": 50.24,
+      "duration_s": 1.2
+    },
+    {
+      "start_s": 67.24,
+      "end_s": 68.44,
+      "duration_s": 1.2
+    },
+    {
+      "start_s": 21.04,
+      "end_s": 22.16,
+      "duration_s": 1.12
+    }
+  ],
+  "longest_no_voice_and_near_static_runs": [],
+  "replay_source_samples": [
+    {
+      "output_s": 81.2,
+      "source_s": 85.44,
+      "mean_abs_luma": 0.3965928852558136
+    },
+    {
+      "output_s": 85.2,
+      "source_s": 89.44,
+      "mean_abs_luma": 0.3758680522441864
+    },
+    {
+      "output_s": 90.2,
+      "source_s": 94.44,
+      "mean_abs_luma": 0.3812934160232544
+    },
+    {
+      "output_s": 95.2,
+      "source_s": 99.44,
+      "mean_abs_luma": 0.3848741352558136
+    },
+    {
+      "output_s": 99.32,
+      "source_s": 103.56,
+      "mean_abs_luma": 0.4446614682674408
+    }
+  ],
+  "caution": "算法近静态不是语义审片；需要听解释且标签/关系在变的定格不自动算缺陷。未声称逐帧人工观看。"
+}

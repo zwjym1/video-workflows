@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "bytes": 34312678,
+    "sha256": "0bb58877cb288215606e4c13e965cda4cbac337dd53333ec9cc8be53c14c54de"
+  },
+  {
+    "path": "/workspace/football-demo/manutd-tactics/out/manutd-tactics-v2-light.mp4",
+    "bytes": 8933064,
+    "sha256": "64f05c81bd143c54670488cb9f738867b909baf669e67ecffc89e1b523ebbe55"
+  },
+  {
+    "path": "/workspace/football-demo/manutd-commentary/footage/source/manutd-villa-20261108-extended-highlights.mp4",
+    "bytes": 113887319,
+    "sha256": "f204c5ac6b0ad5b047e1d26df453ef9bdbed5ed8551b967f778f688bba49639a"
+  }
+]

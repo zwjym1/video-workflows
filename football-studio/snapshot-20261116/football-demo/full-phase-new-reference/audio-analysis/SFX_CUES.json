@@ -1,0 +1,224 @@
+{
+  "title": "新参考《战术板解析系列|2022世界杯决赛：阿根廷高效反击》音效核查与新片可用独立音效",
+  "reference_video_id": "7697948895069900068",
+  "reference_watch_copy": "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+  "reference_audio": "/workspace/football-demo/full-phase-new-reference/audio/reference_original.wav",
+  "analysis_dir": "/workspace/football-demo/full-phase-new-reference/audio-analysis",
+  "method": {
+    "visual": "对 watch 副本做 30fps 帧差与红/黄/高饱和墨量变化，校正观看时码；并抽帧核对",
+    "audio": "原混音正对数谱通量（STFT 1024/256）；在视觉事件时刻±40–50ms 取值，而不是±0.4s 内最近高峰（后者会把旁白/BGM 误当成配套音效）",
+    "classifier": "本地 transformers zero-shot-audio-classification，模型 laion/clap-htsat-unfused，CPU；分数不是事实",
+    "asr": "analysis/local_asr.json 为机器转写，需人工复核（52–75s 有重复与错字），只用来判断瞬态是否落在字内",
+    "hearing": "未做人工听感判断，不声称听出某音色",
+    "separation": "本轮未把 Demucs 鼓轨当作独立音效"
+  },
+  "limitations": [
+    "对象是已混音轨（旁白+BGM+现场声+可能的音效），峰值几乎顶到 0 dBFS，短音效即使存在也被压在人声里",
+    "CLAP 常把低频短促标成 electronic kick / football kick，不能单独定名",
+    "机器 ASR 时码与用词可能不准",
+    "观看时码（1/5/13/21/30/46/51s 等）经帧差校正后有偏差，部分事件是渐进绘制而非硬切",
+    "未从参考片提取任何可发布音效"
+  ],
+  "reference_types": [
+    {
+      "id": "cut_aligned_low_hit",
+      "name": "硬切对齐的短促低频顿点",
+      "confidence": "中高（仅对存在画面锁定的低频瞬态）；是否为独立音效层仍待确认",
+      "evidence": {
+        "best_example": {
+          "visual_cut_s": 47.0,
+          "audio_peak_s": 46.994,
+          "lead_s": 0.006,
+          "visual": "实拍进入战术板叠层开始，帧差 mae≈50.5，墨量跳变 +0.73",
+          "audio": "通量百分位 99.0，质心约 440 Hz，250 Hz 以下能量约 0.61，相对前垫 RMS +2.9 dB，机器 ASR 未落在字内；CLAP 顶类 football kick 0.91（模型分，非事实）"
+        },
+        "similar_weaker": [
+          {
+            "visual_cut_s": 21.333,
+            "audio_peak_s": 21.267,
+            "lead_s": 0.066,
+            "note": "实拍改暗并上板的起始；低频、CLAP kick drum 0.71，未落在字内；通量百分位 95.8，弱于 47.000"
+          },
+          {
+            "visual_cut_s": 86.867,
+            "audio_peak_s": 86.857,
+            "lead_s": 0.01,
+            "note": "画面硬切且通量百分位 99.7，但字幕/ASR 为「再看远端…」，声词重叠，不能单独立为音效"
+          }
+        ]
+      },
+      "repeat_timbre": "21.333 与 47.000 同为低频短促、切点领先 0–70ms，像同一类顿点或同一类 BGM 踩点；未做成功声部分离，不能证明是独立音效层。",
+      "level_vs_vo": "成片旁白段 RMS 约 -9.2 至 -9.7 dBFS，47s 窗口 RMS 约 -7.5 dBFS（仅高约 2 dB），且全片峰值常顶到 0 dBFS，说明即使有顿点也被压限在旁白里。",
+      "duration": "有效体大致 20–80ms 量级（混音窗内），不是长 whoosh",
+      "not_every_cut": "以下硬切/转场没有同等配套瞬态：2.667 标题内换画面（通量 p79）、14.133 回实拍（p71.5，高频百分位仅 14）、80.000（p88）、98.267（p90，高频 p25）。不要每一切都加。",
+      "ambiguity": "可能是独立切点音效，也可能只是把 BGM 低频踩在切点上。新片应使用独立合成音效，不要抽参考混音，也不要去贴 BGM 节拍。"
+    }
+  ],
+  "not_supported_as_sfx": [
+    {
+      "watch_anchor": "约1s 标题弹出",
+      "corrected_visual": "至少 0.60s 起标题卡已完整在画面上；1.00s 不是弹出点。1.30–2.67s 的大帧差是标题卡右侧实拍在换镜头。",
+      "audio": "1.00s 处通量仅百分位 41.8。0.61s 高峰落在转写「拆」上。",
+      "verdict": "无标题弹出音效证据"
+    },
+    {
+      "watch_anchor": "约5s / 13s / 30s / 46s 实拍↔板切换",
+      "corrected_visual": "主要硬切/上板时刻约为 5.80–6.07（上板）、14.13（回实拍）、21.33–21.60（上板）、31.67（回实拍）、47.00–47.30（上板）、80.00、86.87、98.27、104.40（进总结板）。13.00 已在二维战术板内，不是切换点；30s、46s 为近似时码。",
+      "audio": "5.80 与旁白「皮球的落点」重叠；14.13 无配套通量；31.67 靠近「麦卡利斯特」；47.00 见上一条类型。",
+      "verdict": "不能把列表里的每个切换都写成有音效"
+    },
+    {
+      "watch_anchor": "约6s 落点标签",
+      "corrected_visual": "约 6.07s 画面变暗并出现黄线、红点与虚线，字幕已是「皮球的落点位于中场附近」",
+      "audio": "6.07s 通量 p96 但与「皮/球」字区重叠，高频不突出",
+      "verdict": "视觉成立，无独立落点音效证据"
+    },
+    {
+      "watch_anchor": "约14s 定格圈注",
+      "corrected_visual": "13s 已是带圈和「第一落点/接球人」的二维板；14.00–14.13 切回实拍并叠色点，随后色点淡出。",
+      "audio": "14.13s 通量百分位 71.5，高频百分位 14，无配套瞬态",
+      "verdict": "无圈注音效证据"
+    },
+    {
+      "watch_anchor": "约25s 红防守区域",
+      "corrected_visual": "25.00s 是绿色接应扇区（莫利纳 26→接应点 20），不是突然出现的大红区。红色虚线包围出现在约 27.17–27.23s，且为渐进绘制（帧差 mae 仅约 8）。",
+      "audio": "25.00s 通量 p76；27s 窗口落在「这时把球送到中场」字区",
+      "verdict": "时码需修正；渐进绘制，无独立区域音效证据"
+    },
+    {
+      "watch_anchor": "约27s 传球线画出",
+      "corrected_visual": "约 27.17–27.23s 绿箭与红虚线区域同时渐显，不是单帧弹出",
+      "audio": "与旁白重叠，不能分离出画线音效",
+      "verdict": "视觉成立，无独立画线音效证据；不要每次传球都加音效"
+    },
+    {
+      "watch_anchor": "约51s 包围连线",
+      "corrected_visual": "51.00s 已在二维板（10 号「背身串联」、周围红点，字幕「包围圈」）；51.3–51.9s 红圈逐渐加重，帧差 mae 仅约 2.5",
+      "audio": "51.00s 通量百分位 65.7，无配套瞬态",
+      "verdict": "渐进动画，无包围音效证据"
+    },
+    {
+      "watch_anchor": "105–113s 总结连续路线",
+      "corrected_visual": "104.40s 从进球实拍切向总结板（随后 104.67s 板面展开）；111.2s 路线与职责标签已在板上。路线为连续渐绘，单步墨量变化约 0.002。",
+      "audio": "104.40s 与「所以」重叠。段内高频峰多与转写「记/施/及/速」等擦音重合（如 106.74s「施」质心约 4 kHz），不能当成路线 whoosh。",
+      "verdict": "无总结路线连续音效证据"
+    },
+    {
+      "watch_anchor": "既有通量峰 T01–T12",
+      "corrected_visual": "多数不是上述视觉锚点。T01 7.532 低频、CLAP kick、未落在字内，更像 BGM 踩点。T02/T04/T05/T06/T07/T10/T11/T12 落在字内或与旁白一致。",
+      "audio": "原先 4s 间隔筛选会漏掉切点，也会把语音辅音当成候选",
+      "verdict": "不能把 12 个峰值都命名为音效；不把 Demucs 鼓轨或 BGM 节拍当作独立音效"
+    }
+  ],
+  "production_sfx": {
+    "disclaimer": "下列文件是原创合成近似音效，供新片独立铺轨。不是参考成片抽段，不是旁白切片，也不是已验证的参考音色复制。",
+    "assets": [
+      {
+        "id": "cut_hit_low_muted",
+        "type": "硬切低频顿点",
+        "design": "80–140Hz 阻尼正弦 + 短促低频噪声，约80ms有效体，峰值-14 dBFS",
+        "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/cut_hit_low_muted.wav",
+        "sr": 44100,
+        "channels": 2,
+        "duration_s": 0.2,
+        "peak_dbfs": -14.092976189413282,
+        "rms_dbfs": -28.984351825678406,
+        "source": "原创近似音效（合成，非参考片抽段）",
+        "bytes": 35324,
+        "filename": "cut_hit_low_muted.wav"
+      },
+      {
+        "id": "ui_tick_soft",
+        "type": "轻UI提示音",
+        "design": "2–3kHz 短点击，约40–60ms，峰值-16 dBFS，避免长余响",
+        "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/ui_tick_soft.wav",
+        "sr": 44100,
+        "channels": 2,
+        "duration_s": 0.16,
+        "peak_dbfs": -18.461857237305143,
+        "rms_dbfs": -44.25208296318794,
+        "source": "原创近似音效（合成，非参考片抽段）",
+        "bytes": 28268,
+        "filename": "ui_tick_soft.wav"
+      },
+      {
+        "id": "whoosh_line_short",
+        "type": "短促路线/画线气流",
+        "design": "带通噪声扫频约180–220ms，峰值-18 dBFS，比切点和旁白更弱",
+        "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/whoosh_line_short.wav",
+        "sr": 44100,
+        "channels": 2,
+        "duration_s": 0.28,
+        "peak_dbfs": -20.48294149916775,
+        "rms_dbfs": -36.57104407207855,
+        "source": "原创近似音效（合成，非参考片抽段）",
+        "bytes": 49436,
+        "filename": "whoosh_line_short.wav"
+      },
+      {
+        "id": "circle_lock_soft",
+        "type": "轻圈注/锁定提示",
+        "design": "中频短促＋极短空气点击，约90ms，峰值-17 dBFS",
+        "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/circle_lock_soft.wav",
+        "sr": 44100,
+        "channels": 2,
+        "duration_s": 0.2,
+        "peak_dbfs": -21.576351854511127,
+        "rms_dbfs": -39.67780345812054,
+        "source": "原创近似音效（合成，非参考片抽段）",
+        "bytes": 35324,
+        "filename": "circle_lock_soft.wav"
+      }
+    ],
+    "suggested_use": [
+      {
+        "asset": "cut_hit_low_muted.wav",
+        "use_on": "实拍↔战术板的硬切或上板叠层开始，且只有强切换",
+        "timing": "切点前 0–60ms 或与切点对齐",
+        "level": "有效响度比旁白低 8–12 dB，长度保持约 0.2s 文件内的短体，不要拉长",
+        "do_not": "不要每一切都用，不要对齐 BGM 鼓点，不要用在传球瞬间",
+        "reference_justification": "参考片仅在部分硬切（尤其 47.000）出现与画面锁定的低频短促；此文件是独立近似，不是抽段"
+      },
+      {
+        "asset": "ui_tick_soft.wav",
+        "use_on": "可选：标题第一次完整落下、或一条关键标签/落点首次出现",
+        "timing": "与图形弹出对齐，不提前超过 40ms",
+        "level": "再比切点顿点低 3–6 dB，全程不要盖旁白",
+        "do_not": "参考片 1s 标题与 6s 落点均未证实有此声；不要每个标签、每个红点都打",
+        "reference_justification": "参考未证实。仅作为新片可选轻提示。"
+      },
+      {
+        "asset": "whoosh_line_short.wav",
+        "use_on": "可选：一条关键传球路线或总结段第一条连续路线开始绘制",
+        "timing": "画线开始即起，约 180–220ms 内结束，不要循环跟线",
+        "level": "四条里最弱（峰值约 -18 至 -20 dBFS 文件电平，铺轨时仍要再按旁白下调）",
+        "do_not": "不要每次传球、每条包围线、总结段每段路线都加；参考 27s/51s/105–113s 均未证实有 whoosh",
+        "reference_justification": "参考未证实。仅作为新片可选画线气声。"
+      },
+      {
+        "asset": "circle_lock_soft.wav",
+        "use_on": "可选：第一次圈住关键球员或定格圈注",
+        "timing": "与圈出现对齐",
+        "level": "与 UI 提示相近，弱于切点顿点",
+        "do_not": "14s 定格圈注未证实有音效；不要每个色点、每个号码圈都加",
+        "reference_justification": "参考未证实。仅作为新片可选圈注提示。"
+      }
+    ]
+  },
+  "cue_rules": [
+    "只服务强视觉变化：硬切/上板、第一次关键标签、第一次关键画线或圈注。",
+    "不要每次传球、每次红点、每条包围线、总结段每一段路线都铺音效。",
+    "音效必须明显低于旁白（建议低 8–12 dB），短促收尾，避免与对白字首叠成更响的爆破。",
+    "不要把音效对齐到 BGM 节拍；切点顿点跟画面走，不跟鼓点走。",
+    "禁止使用 sfx-candidates/ 与 clips_mixed_study/ 里的混音短窗当作成片音效。",
+    "参考片本身多数图形是渐进画出的，新片若也是渐绘，优先不加或只用一条弱 whoosh。"
+  ],
+  "supporting_files": {
+    "probe_measurements": "/workspace/football-demo/full-phase-new-reference/audio-analysis/PROBE_MEASUREMENTS.json",
+    "visual_change_peaks": "/workspace/football-demo/full-phase-new-reference/audio-analysis/VISUAL_CHANGE_PEAKS.json",
+    "visual_overlay_and_flux": "/workspace/football-demo/full-phase-new-reference/audio-analysis/VISUAL_OVERLAY_AND_FLUX.json",
+    "key_frames": "/workspace/football-demo/full-phase-new-reference/audio-analysis/frames/key",
+    "mixed_study_clips_not_for_release": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study",
+    "spectra": "/workspace/football-demo/full-phase-new-reference/audio-analysis/spectra"
+  }
+}

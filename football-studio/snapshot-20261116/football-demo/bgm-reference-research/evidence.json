@@ -1,0 +1,539 @@
+{
+  "generated_at_asia_shanghai": "2026-11-16 04:01 Asia/Shanghai",
+  "task": "Identify and locate legal BGM used in the Douyin reference 战术拆解：绿茵场上的空间阅读者",
+  "tool": {
+    "name": "douyin-bgm-extract",
+    "description": "抖音视频 BGM 提取与识别 Skill：抓原始音轨、三轨分离量化、Shazam 曲名识别、定位正版音源",
+    "repo": "https://github.com/zwjym1/douyin-bgm-extract",
+    "docs": [
+      "https://github.com/zwjym1/douyin-bgm-extract/blob/main/SKILL.md",
+      "https://github.com/zwjym1/douyin-bgm-extract/blob/main/references/pitfalls.md",
+      "https://github.com/zwjym1/douyin-bgm-extract/blob/main/scripts/scan_bgm.py"
+    ],
+    "commit": "6efd545f9d71a10c3c542aa40b0c81cd34b723c7",
+    "default_branch": "main",
+    "releases": [],
+    "local_install_found": false,
+    "how_used": "Read docs via cursor-github only (no clone). Local 171s AAC already present, so used the documented local-audio path: ffmpeg copy of the video audio, then official scripts/scan_bgm.py + shazamio (pip --target). mediakit-cli was not installed; 3-stem separation was therefore not run.",
+    "scanner": "/workspace/football-demo/bgm-reference-research/tool/scan_bgm.py"
+  },
+  "source_video": {
+    "path": "/workspace/douyin-download-parser/7707868557603025643/video.mp4",
+    "id": "7707868557603025643",
+    "title": "战术拆解：绿茵场上的空间阅读者",
+    "author_display_name": "RooKie",
+    "duration_s": 171.038005,
+    "audio": "AAC HE-AACv2 44100 Hz stereo, ~60.7 kbps",
+    "video": "H.264 1920x1080 30fps",
+    "bytes": 34312678
+  },
+  "identification_method": "shazamio Shazam recognize on multiple 6–10s 16kHz mono clips with +8 dB gain, as documented. No human listening. One NO MATCH was never treated as a title. Official iTunes 30s previews were also recognized and waveform-aligned to the mix.",
+  "tracks_identified": [
+    {
+      "role": "main_bed",
+      "title": "人生志在一博",
+      "artist": "李富贵",
+      "album": "超速进行曲 - EP",
+      "label": "李富贵",
+      "release_date_utc": "2026-10-15T12:00:00Z",
+      "release_date_asia_shanghai": "2026-10-15 20:00 Asia/Shanghai",
+      "isrc": "QZNMZ2630446",
+      "shazam_id": "905406860",
+      "apple_track_id": 6822056789,
+      "apple_album_id": 6822056782,
+      "official_duration_ms": 112953,
+      "official_duration_s": 112.953,
+      "genre": "Pop",
+      "track_number": 5,
+      "in_video": "Consistently identified from the opening through ~144–146s (windows at 0,10,25,35,50,60,70,88,95,110,120,138,140,141,144s). Isolated NO MATCH at 76–82s are between same-track hits and are not a second title. Switch/overlap around 145–147s.",
+      "loop_evidence": "Shazam official offsets: video 8s→official 8.007s, video 50s→official 50.007s, video 120s→official 8.171s. Preview-to-mix NCC also peaks at 0.314s and again at 112.147s (interval 111.833s). Loop restarts ~1.12s earlier than the 112.953s catalog duration; treat as approximate, not sample-accurate, because the full official file was not obtained.",
+      "same_work_confirmation": "Official 30s iTunes preview also identified as the same Shazam id 905406860.",
+      "not_the_same_as": "Not a separated residual from the Douyin file, and not a lossless master.",
+      "official_pages": {
+        "shazam": "https://www.shazam.com/track/905406860/人生志在一博",
+        "apple_music_track": "https://music.apple.com/us/album/人生志在一博/6822056782?i=6822056789",
+        "apple_music_album": "https://music.apple.com/us/album/超速进行曲-ep/6822056782",
+        "netease": "https://music.163.com/song?id=3447281999",
+        "unitedmasters_album": "https://unitedmasters.com/m/chao-su-jin-xing-qu",
+        "audiomack": "https://audiomack.com/li-fu-gui-6a8325b83f5ca/song/ren-sheng-zhi-zai-yi-bo"
+      },
+      "catalog_notes": "iTunes Search country=CN returned 0; US/GB catalog has the track. NetEase search hit the same title/artist/album and the same 112953 ms duration; fee=8 so no free download was attempted. Deezer search returned 0. 剪映曲库 was not opened in this run."
+    },
+    {
+      "role": "ending",
+      "title": "passion",
+      "artist": "silent anthem & heart embrace",
+      "album": "passion - Single",
+      "label": "Goost Music",
+      "release_date_utc": "2024-11-01T12:00:00Z",
+      "release_date_asia_shanghai": "2024-11-01 20:00 Asia/Shanghai",
+      "isrc": "DGA0P2461646",
+      "shazam_id": "717257751",
+      "apple_track_id": 1773323114,
+      "apple_album_id": 1773323113,
+      "official_duration_ms": 132466,
+      "official_duration_s": 132.466,
+      "genre": "Dance",
+      "track_number": 1,
+      "in_video": "Identified from 147s through the end (windows at 147,149,151,152,158,163,165s). 144s window still matches the first song; 145s was NO MATCH (transition).",
+      "version": "Original 'passion', not 'passion (Speed Up)' ISRC DGA0P2461648 / 126149 ms, and not 'passion (Slowed)' / 156851 ms.",
+      "approx_official_section": "Shazam offsets: video 158s→official 25.339s, video 165s→official 32.158s. Extrapolated, video ~147–171s ≈ official ~14–38s. timeskew/frequencyskew ≈ -0.024, larger than the main track, so this section cue is approximate. Official 30s preview did not strongly cross-correlate with the ending (NCC < 0.08); Apple's preview is likely a different excerpt.",
+      "official_pages": {
+        "shazam": "https://www.shazam.com/track/717257751/passion",
+        "apple_music_track": "https://music.apple.com/us/album/passion/1773323113?i=1773323114",
+        "apple_music_album": "https://music.apple.com/us/album/passion-single/1773323113",
+        "spotify": "https://open.spotify.com/track/2y8eUQ1N8cfq37rrMRVORp",
+        "netease": "https://music.163.com/song?id=2635437250",
+        "beatport": "https://www.beatport.com/release/passion/4773387"
+      },
+      "catalog_notes": "Beatport is a paid store and was not used. NetEase has the original and the Speed Up/Slowed variants; use only the original 132466 ms / id 2635437250."
+    }
+  ],
+  "confidence": {
+    "main_bed": "High: 15+ independent windows across 3 passes plus the official preview, all the same Shazam id / ISRC. Offsets are mutually consistent with a near-start sync and one loop.",
+    "ending": "High that the work is the original 'passion'; medium for the exact in-song entry point because of larger skew and failed preview alignment.",
+    "numeric_shazam_confidence": "shazamio did not return a usable percent score; location.accuracy was 0.01 on dumps and was not treated as a confidence percentage."
+  },
+  "files": {
+    "mixed_source_extract": {
+      "path_m4a": "/workspace/football-demo/bgm-reference-research/tracks/Rookie_空间阅读者_source.m4a",
+      "path_wav": "/workspace/football-demo/bgm-reference-research/tracks/Rookie_空间阅读者_source.wav",
+      "duration_s": 171.038005,
+      "quality": "Direct copy of the Douyin video audio: HE-AACv2 44.1 kHz stereo ~60.7 kbps (m4a 1,315,828 bytes). WAV is a 16-bit 44.1 kHz PCM decode, not a higher-quality source.",
+      "legal_note": "Contains commentary mixed with music. This is a separation residual / mixed extract, NOT an official lossless master, and is not a production-ready clean BGM."
+    },
+    "official_previews_only": [
+      {
+        "path": "/workspace/football-demo/bgm-reference-research/official_previews/人生志在一博_李富贵_itunes_preview.m4a",
+        "duration_s": 30.000181,
+        "codec": "AAC 44.1 kHz stereo ~260 kbps",
+        "bytes": 982678,
+        "source": "Public iTunes/Apple official 30-second preview, not the full song."
+      },
+      {
+        "path": "/workspace/football-demo/bgm-reference-research/official_previews/passion_silent-anthem_heart-embrace_itunes_preview.m4a",
+        "duration_s": 30.000181,
+        "codec": "AAC 44.1 kHz stereo ~262 kbps",
+        "bytes": 990548,
+        "source": "Public iTunes/Apple official 30-second preview of the original version, not the full song."
+      }
+    ],
+    "full_official_masters": {
+      "obtained": false,
+      "reason": "No license purchase, paid download, or login/paywall bypass was performed. No free full-length official file was available on the paths used (CN iTunes empty, NetEase fee=8, Audiomack/UnitedMasters/Apple/Spotify are stream or store pages)."
+    }
+  },
+  "how_to_obtain_full_official": [
+    "Apple Music / iTunes: open the official track pages above and stream or buy legally. This was not done here.",
+    "网易云音乐: 人生志在一博 https://music.163.com/song?id=3447281999 ；passion（原速）https://music.163.com/song?id=2635437250 。主曲检索 fee=8，不能当成可免费下载。",
+    "Skill-recommended first path: 剪映「音频 → 音乐库」搜索「人生志在一博」「李富贵」和「passion」「silent anthem」。This run did not open 剪映, so in-library availability is unverified.",
+    "UnitedMasters / Audiomack / Spotify pages are official listening/distribution pages, not a completed local download.",
+    "Do not use Beatport or other paid checkouts unless the user later authorizes a purchase."
+  ],
+  "cues": {
+    "notes": "Cues combine Shazam offsets, preview-to-mix NCC, and the existing reference content map board times. Not from listening.",
+    "board_times_s_from_content_map": [
+      [
+        7.6,
+        24.733
+      ],
+      [
+        50.767,
+        62.3
+      ],
+      [
+        71.667,
+        79.1
+      ],
+      [
+        101.133,
+        110.333
+      ],
+      [
+        122.633,
+        141.333
+      ]
+    ],
+    "items": [
+      {
+        "region": "intro_hook",
+        "video_s": [
+          0.0,
+          7.6
+        ],
+        "music": "人生志在一博",
+        "official_approx_s": [
+          0.0,
+          7.6
+        ],
+        "advice": "Start the official track at its beginning (video is synced near official 0). Keep the bed under the hook; do not wait for the first board."
+      },
+      {
+        "region": "explain_and_boards",
+        "video_s": [
+          7.6,
+          141.3
+        ],
+        "music": "人生志在一博",
+        "official_approx_s": "0–111.83 then loop back to 0; e.g. video 120s ≈ official 8.2s",
+        "advice": "Continuous bed under boards and live verification, ducked under VO. 76–82s Shazam misses are not a song change. Loop once around video 111.83s / 112.15s; the catalog duration is 112.953s, so verify the loop point after the full official file is in hand."
+      },
+      {
+        "region": "post_last_board_hold",
+        "video_s": [
+          141.3,
+          146.5
+        ],
+        "music": "人生志在一博 still (144s window still hits it)",
+        "advice": "Do not switch yet; last board ends 141.3s and the first song still covers this short hold."
+      },
+      {
+        "region": "ending_replay_close",
+        "video_s": [
+          146.5,
+          171.04
+        ],
+        "music": "passion (original)",
+        "official_approx_s": [
+          14,
+          38
+        ],
+        "advice": "Cut or short crossfade around 146–147s to the original 'passion', entering about official 0:14, running to about official 0:38 at video end. Do not use Speed Up or Slowed versions. Confirm the in-song entry after the full official file is obtained."
+      }
+    ]
+  },
+  "gaps": [
+    "mediakit-cli not installed; documented 3-stem volume numbers were not produced.",
+    "No full-length official / clean production BGM file was obtained.",
+    "剪映 library availability not verified in-app.",
+    "Apple Music CN catalog search returned 0 for the main title (US/GB has it).",
+    "Ending in-song offset is approximate (larger Shazam skew; preview did not align)."
+  ],
+  "scan_logs": [
+    "/workspace/football-demo/bgm-reference-research/scan_pass1_default.log",
+    "/workspace/football-demo/bgm-reference-research/scan_pass2_tight.log",
+    "/workspace/football-demo/bgm-reference-research/scan_pass3_switch.log",
+    "/workspace/football-demo/bgm-reference-research/scan_preview_main.log",
+    "/workspace/football-demo/bgm-reference-research/scan_preview_passion.log"
+  ],
+  "windows": [
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 0,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 10,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 25,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 50,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 80,
+      "result": "NO_MATCH",
+      "artist": null,
+      "shazam_id": null,
+      "url": null
+    },
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 110,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 140,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 1,
+      "seg_s": 10,
+      "gain_db": 8,
+      "start_s": 165,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 35,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 60,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 70,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 76,
+      "result": "NO_MATCH",
+      "artist": null,
+      "shazam_id": null,
+      "url": null
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 82,
+      "result": "NO_MATCH",
+      "artist": null,
+      "shazam_id": null,
+      "url": null
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 88,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 95,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 120,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 145,
+      "result": "NO_MATCH",
+      "artist": null,
+      "shazam_id": null,
+      "url": null
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 152,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 158,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 163,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    },
+    {
+      "pass": 2,
+      "seg_s": 7,
+      "gain_db": 8,
+      "start_s": 165,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    },
+    {
+      "pass": 3,
+      "seg_s": 6,
+      "gain_db": 8,
+      "start_s": 138,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 3,
+      "seg_s": 6,
+      "gain_db": 8,
+      "start_s": 141,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 3,
+      "seg_s": 6,
+      "gain_db": 8,
+      "start_s": 144,
+      "result": "人生志在一博",
+      "artist": "李富贵",
+      "shazam_id": "905406860",
+      "url": "https://www.shazam.com/track/905406860/人生志在一博"
+    },
+    {
+      "pass": 3,
+      "seg_s": 6,
+      "gain_db": 8,
+      "start_s": 147,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    },
+    {
+      "pass": 3,
+      "seg_s": 6,
+      "gain_db": 8,
+      "start_s": 149,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    },
+    {
+      "pass": 3,
+      "seg_s": 6,
+      "gain_db": 8,
+      "start_s": 151,
+      "result": "passion",
+      "artist": "silent anthem & heart embrace",
+      "shazam_id": "717257751",
+      "url": "https://www.shazam.com/track/717257751/passion"
+    }
+  ],
+  "shazam_offsets": [
+    {
+      "clip": "main_8s",
+      "video_start_s": 8,
+      "title": "人生志在一博",
+      "match_id": "905551341",
+      "offset_in_official_s": 8.007206542,
+      "timeskew": -0.00065118074,
+      "frequencyskew": -0.00010740757
+    },
+    {
+      "clip": "main_50s",
+      "video_start_s": 50,
+      "title": "人生志在一博",
+      "match_id": "905551341",
+      "offset_in_official_s": 50.006609375,
+      "timeskew": -0.00024014711,
+      "frequencyskew": 4.029274e-05
+    },
+    {
+      "clip": "main_120s",
+      "video_start_s": 120,
+      "title": "人生志在一博",
+      "match_id": "905551341",
+      "offset_in_official_s": 8.170971679,
+      "timeskew": -0.001064837,
+      "frequencyskew": 0.00018417835
+    },
+    {
+      "clip": "end_158s",
+      "video_start_s": 158,
+      "title": "passion",
+      "match_id": "717257751",
+      "offset_in_official_s": 25.338978514999997,
+      "timeskew": -0.023808956,
+      "frequencyskew": -0.025681317
+    },
+    {
+      "clip": "end_165s",
+      "video_start_s": 165,
+      "title": "passion",
+      "match_id": "717257751",
+      "offset_in_official_s": 32.158001952999996,
+      "timeskew": -0.024019837,
+      "frequencyskew": -0.0252496
+    }
+  ],
+  "alignment_file": "/workspace/football-demo/bgm-reference-research/alignment.json"
+}

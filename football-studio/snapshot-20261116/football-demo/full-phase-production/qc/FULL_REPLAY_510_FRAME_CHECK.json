@@ -1,0 +1,18 @@
+{
+  "source_s": [
+    83.2,
+    103.6
+  ],
+  "output_s": [
+    78.96,
+    99.36
+  ],
+  "native_25fps_frame_count": 510,
+  "first_source_frame_s": 83.2,
+  "last_source_frame_s": 103.56,
+  "speed": 1,
+  "all_510_frames_source_order_verified": true,
+  "all_frames_mean_abs_luma_excluding_subtitle_margin": 0.38672497319240196,
+  "all_frames_max_mean_abs_luma_excluding_subtitle_margin": 0.4586181640625,
+  "analysis_graphics": "none; first invitation caption only, then clean source; no source commentary mixed"
+}

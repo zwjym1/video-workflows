@@ -1,0 +1,11 @@
+
+
+
+{
+ "resultCount":1,
+ "results": [
+{"wrapperType":"track", "kind":"song", "artistId":1699616447, "collectionId":1773323113, "trackId":1773323114, "artistName":"silent anthem & heart embrace", "collectionName":"passion - Single", "trackName":"passion", "collectionCensoredName":"passion - Single", "trackCensoredName":"passion", "artistViewUrl":"https://music.apple.com/us/artist/silent-anthem/1699616447?uo=4", "collectionViewUrl":"https://music.apple.com/us/album/passion/1773323113?i=1773323114&uo=4", "trackViewUrl":"https://music.apple.com/us/album/passion/1773323113?i=1773323114&uo=4", 
+"previewUrl":"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/73/6f/80736f62-838b-0349-110a-141ba01724f0/mzaf_301204446372056991.plus.aac.p.m4a", "artworkUrl30":"https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/30x30bb.jpg", "artworkUrl60":"https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/60x60bb.jpg", "artworkUrl100":"https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/100x100bb.jpg", "collectionPrice":2.97, "trackPrice":0.99, "releaseDate":"2024-11-01T12:00:00Z", "collectionExplicitness":"notExplicit", "trackExplicitness":"notExplicit", "discCount":1, "discNumber":1, "trackCount":3, "trackNumber":1, "trackTimeMillis":132466, "country":"USA", "currency":"USD", "primaryGenreName":"Dance", "isStreamable":true}]
+}
+
+

@@ -1,0 +1,223 @@
+{
+  "title": "这个射门空间，是怎么出现的？",
+  "fps_out": 30,
+  "width": 1280,
+  "height": 720,
+  "src_fps": 25,
+  "clip_dir": "src/clips/wide",
+  "clip_start_t": 621.76,
+  "clip_end_t": 629.0,
+  "clip_start_frame": 15544,
+  "n_src": 182,
+  "goal_src_t": 627.64,
+  "goal_src_frame": 15691,
+  "freeze": {
+    "f62400": {
+      "src_t": 624.0,
+      "src_frame": 15600,
+      "n": 56,
+      "winger": [
+        568,
+        228
+      ],
+      "p11": [
+        636,
+        312
+      ],
+      "ball": [
+        575,
+        220
+      ]
+    },
+    "f62488": {
+      "src_t": 624.88,
+      "src_frame": 15622,
+      "n": 78,
+      "winger": [
+        528,
+        228
+      ],
+      "p11": [
+        575,
+        318
+      ],
+      "ball": [
+        546,
+        226
+      ]
+    },
+    "f62704": {
+      "src_t": 627.04,
+      "src_frame": 15676,
+      "n": 132,
+      "p11": [
+        610,
+        358
+      ],
+      "ball": [
+        624,
+        338
+      ],
+      "v14": [
+        668,
+        348
+      ],
+      "v22": [
+        690,
+        410
+      ],
+      "v3": [
+        724,
+        308
+      ]
+    }
+  },
+  "segments": [
+    {
+      "id": "open",
+      "n_out": 240,
+      "kind": "open",
+      "n0": 2,
+      "n1": 131
+    },
+    {
+      "id": "first_watch",
+      "n_out": 218,
+      "kind": "play",
+      "n0": 0,
+      "n1": 181,
+      "speed": 1.0,
+      "caption": "先看这一回",
+      "caption_s": 1.8
+    },
+    {
+      "id": "play1",
+      "n_out": 67,
+      "kind": "play",
+      "n0": 0,
+      "n1": 55,
+      "speed": 1.0
+    },
+    {
+      "id": "freeze1",
+      "n_out": 81,
+      "kind": "freeze",
+      "key": "f62400"
+    },
+    {
+      "id": "board1",
+      "n_out": 192,
+      "kind": "board",
+      "board": "receive"
+    },
+    {
+      "id": "play2",
+      "n_out": 32,
+      "kind": "play",
+      "n0": 57,
+      "n1": 77,
+      "speed": 0.8
+    },
+    {
+      "id": "freeze2",
+      "n_out": 81,
+      "kind": "freeze",
+      "key": "f62488"
+    },
+    {
+      "id": "board2",
+      "n_out": 192,
+      "kind": "board",
+      "board": "pass"
+    },
+    {
+      "id": "play3",
+      "n_out": 91,
+      "kind": "play",
+      "n0": 79,
+      "n1": 131,
+      "speed": 0.7
+    },
+    {
+      "id": "freeze3",
+      "n_out": 84,
+      "kind": "freeze",
+      "key": "f62704"
+    },
+    {
+      "id": "slow_shot",
+      "n_out": 70,
+      "kind": "play",
+      "n0": 133,
+      "n1": 161,
+      "speed": 0.5,
+      "mark_shot": true
+    },
+    {
+      "id": "board_recap",
+      "n_out": 192,
+      "kind": "board",
+      "board": "recap"
+    },
+    {
+      "id": "replay",
+      "n_out": 218,
+      "kind": "play",
+      "n0": 0,
+      "n1": 181,
+      "speed": 1.0,
+      "unmarked": true
+    },
+    {
+      "id": "endcard",
+      "n_out": 75,
+      "kind": "endcard"
+    }
+  ],
+  "voice": [
+    {
+      "id": "open",
+      "file": "audio/voice/open.mp3",
+      "start": 1.0
+    },
+    {
+      "id": "first",
+      "file": "audio/voice/first.mp3",
+      "start": 8.15
+    },
+    {
+      "id": "s1",
+      "file": "audio/voice/s1.mp3",
+      "start": 17.55
+    },
+    {
+      "id": "s2",
+      "file": "audio/voice/s2.mp3",
+      "start": 27.72
+    },
+    {
+      "id": "s3",
+      "file": "audio/voice/s3.mp3",
+      "start": 39.85
+    },
+    {
+      "id": "recap",
+      "file": "audio/voice/recap.mp3",
+      "start": 45.1
+    }
+  ],
+  "captions": {
+    "open": "这个射门空间，是怎么出现的？",
+    "first": "先看这一回。",
+    "s1": "左边路拿住球。十一号已经插到禁区前沿。",
+    "s2": "他带着球往前走，再把低球送进禁区左侧。",
+    "s3": "十一号赶到身前空当，右脚第一下直接出脚，打远角。",
+    "recap": "空间就出在这一传、一插之间。"
+  },
+  "replay_label": [
+    1008,
+    34,
+    1136,
+    78
+  ]
+}

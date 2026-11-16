@@ -1,0 +1,24 @@
+{
+  "original_match_video": "/workspace/football-demo/new-source-candidates/arsenal-leicester-2018.mp4",
+  "official_public_origin": "https://www.youtube.com/watch?v=TyE3cP27VoY",
+  "clean_phase_source_s": [
+    83.2,
+    103.6
+  ],
+  "source_dimensions": [
+    1280,
+    720
+  ],
+  "source_fps": 25,
+  "unseen": "此前如何夺回球权未见，不编抢断反击；画外起跑不补画。",
+  "identity_sources": [
+    "https://www.arsenal.com/news/arsenal-3-1-leicester-how-it-happened-a2WhY2x57PnL",
+    "https://www.skysports.com/football/arsenal-vs-leicester-city/teams/390837",
+    "https://www.independent.co.uk/sport/football/premier-league/arsenal-news-mesut-ozil-goal-assist-vs-leicester-watch-video-highlights-unai-emery-tactics-a8596881.html"
+  ],
+  "new_structural_reference": "/workspace/football-demo/full-phase-new-reference/reference/video.mp4",
+  "reference_branding_not_verified_account_name": "Foot Studio | 战术板深度解析",
+  "reference_id": "7697948895069900068",
+  "sfx_provenance": "audio/sfx_original，父交原创近似独立SFX，非原参考混合截音。",
+  "bgm_provenance": "MUSIC_EDIT_AND_MIX.json，指定旧参考分离可用段；不是新世界杯参考同款音乐。"
+}

@@ -1,0 +1,362 @@
+{
+  "title": "GitHub 公开足球资源核验（战术知识库可用边界）",
+  "verified_at": "2026-11-16",
+  "verified_at_timezone": "Asia/Shanghai (UTC+8)",
+  "method": {
+    "access": "仅通过 cursor-github 读取公开仓库的 README、LICENSE、目录与文档，并用 list_commits 核验默认分支最新提交；不 clone、不安装、不跑模型、不下载整库数据。LICENSE.pdf 因是二进制，单独抽取文本核验条款。ReadTheDocs / kloppy 文档站点用公开网页核验未 404。",
+    "not_done": [
+      "不撰写理论百科",
+      "不把 StatsBomb、mplsoccer 或 SoccerNet 当作完整战术教练教材",
+      "不把大量 event 数据解读为全体球员无球 tracking",
+      "不开源许可证不等于覆盖教材、视频或数据"
+    ]
+  },
+  "headline_finding": "本轮核验的8个项目中，没有能直接充当完整教练教材的；未穷尽GitHub。它们主要提供事件/样本tracking、规范、模型方法与绘图/标准化工具。",
+  "how_this_helps_popular_explanations": [
+    "用 StatsBomb / Metrica / SPADL 的事件定义，把「压迫、接应、传球路线」落到可核对的事件类型，而不是口头发明术语。",
+    "用少量可核验比赛案例（公开事件或样本 tracking）支撑画面里的具体传球/射门/对位，避免只讲抽象阵型。",
+    "用 mplsoccer 一类球场图把职责、扇区、传球网络画成观众能一眼看懂的板，接近专业分析片的视觉语法。",
+    "在需要讲「这一脚为什么有价值」时，可引用 xT / VAEP / 球场控制（pitch control）的公开定义，并标明那是模型估计，不是教练手册结论。"
+  ],
+  "evidence_limits": [
+    "事件数据记录的是有球动作和部分上下文，不是 22 人全程无球 tracking。",
+    "StatsBomb 360 是事件时刻的冻结画面（freeze frame），不能当成全场跟踪。",
+    "Metrica 样本只有少数匿名比赛；不能外推为联赛规律。",
+    "xT、VAEP、EPV、pitch control 都是分析模型，受数据定义和训练样本限制。",
+    "Friends of Tracking 教程代码默认分支已多年无实质更新。",
+    "StatsBomb 数据受《Public Data User Agreement》约束：不得分发原始数据，不得商业利用数据或其衍生分析；公开引用须标注来源并使用官方 logo。这条对面向观众的内容尤其重要。",
+    "SoccerNet 是计算机视觉/视频标注研究套件，部分数据集需 NDA 或登录审批；其 MIT 许可证只管软件包，不管比赛视频与标注数据。",
+    "Soccermatics 原书受版权保护，配套脚本不是教材全文。"
+  ],
+  "projects": [
+    {
+      "id": "hudl-open-data",
+      "category": "verifiable_case_data",
+      "category_zh": "可验证案例数据（兼事件标注规范文档）",
+      "repo_full_name": "hudl/open-data",
+      "repo_url": "https://github.com/hudl/open-data",
+      "also_resolves_from": "https://github.com/statsbomb/open-data（本次用 API 查询该路径，返回同一仓库 hudl/open-data）",
+      "default_branch": "master",
+      "owner_login": "hudl",
+      "owner_legal_or_display_name": "Hudl；数据品牌与用户协议主体为 StatsBomb / StatsBomb Services Ltd（英格兰及威尔士公司编号 10377735）。仓库描述为 Free football data from StatsBomb。",
+      "license": {
+        "github_spdx": "NOASSERTION",
+        "file": "https://github.com/hudl/open-data/blob/master/LICENSE.pdf",
+        "verified_from": "LICENSE.pdf 全文，标题 StatsBomb Public Data User Agreement，文末 last updated 8 September 2023",
+        "summary": "自定义数据用户协议，不是 MIT/Apache 等默认可复用开源许可证。数据知识产权归 StatsBomb。允许用于分析、研究与促进对数据的共享理解。禁止向第三方编辑、歪曲、分发、复制、出售或以任何方式提供该数据；禁止商业利用该数据或由该服务产生的任何分析；公开发布分析须使用 StatsBomb 品牌 logo 署名。协议中的仓库地址仍写为 https://github.com/statsbomb/open-data。要求用户在 statsbomb.com/resource-centre 登记（姓名与邮箱）。受英格兰及威尔士法律管辖。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "特定联赛的 StatsBomb 公开事件、阵容、比赛元数据，以及部分比赛的 360 冻结画面 JSON。目录为 data/competitions.json、data/matches/、data/events/、data/lineups/、data/three-sixty/。doc/ 提供事件与 360 等规格说明书。",
+      "useful_docs_verified": [
+        "https://github.com/hudl/open-data/blob/master/README.md",
+        "https://github.com/hudl/open-data/blob/master/LICENSE.pdf",
+        "https://github.com/hudl/open-data/blob/master/doc/Open%20Data%20Events%20v4.0.0.pdf",
+        "https://github.com/hudl/open-data/blob/master/doc/Open%20Data%20360%20Frames%20v1.0.0%20(1).pdf",
+        "https://github.com/hudl/open-data/blob/master/doc/Open%20Data%20Lineups%20v2.0.0.pdf",
+        "https://github.com/hudl/open-data/blob/master/doc/Open%20Data%20Matches%20v3.0.0.pdf",
+        "https://github.com/hudl/open-data/blob/master/doc/Open%20Data%20Competitions%20v2.0.0.pdf",
+        "https://github.com/hudl/open-data/blob/master/doc/StatsBomb%20Open%20Data%20Specification%20v1.1.pdf",
+        "https://github.com/hudl/open-data/blob/master/data/competitions.json"
+      ],
+      "how_to_use": "作为可核验比赛案例和事件术语规范：先读 Events / 360 规格 PDF，再选与讲解主题对应的公开比赛事件（如传球、压力、射门），支撑「这一脚发生了什么」。公开引用须按协议署名并使用 logo。",
+      "how_not_to_use": "不能当作完整战术教练教材；不能把 events 或 360 说成全体球员全程无球 tracking；不能再分发原始 JSON；不能把衍生分析做商业利用（协议 1.2.2 原文禁止 commercially exploit the data or any analysis derived from the use of the Service）。本次未下载整库。",
+      "additional_data_terms": "见 LICENSE.pdf。代码工具的 MIT 等许可证不覆盖这些数据。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "4b73468fc5b0f1950f9f66fada70ad3a4f9327cb",
+        "default_branch_latest_commit_at_utc": "2026-09-07T16:27:15Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2026-09-08 00:27 Asia/Shanghai",
+        "default_branch_latest_commit_message": "chore: add required labels check (#79)",
+        "note": "仓库 pushed_at 为 2026-11-12T17:17:15Z，但 master 默认分支最新提交是 2026-09-07 的工作流标签检查，不一定代表数据本身在 11 月更新。"
+      }
+    },
+    {
+      "id": "metrica-sports-sample-data",
+      "category": "verifiable_case_data",
+      "category_zh": "可验证案例数据（兼事件类型文档；少量真正的 tracking）",
+      "repo_full_name": "metrica-sports/sample-data",
+      "repo_url": "https://github.com/metrica-sports/sample-data",
+      "default_branch": "master",
+      "owner_login": "metrica-sports",
+      "owner_legal_or_display_name": "Metrica Sports；README 联系人署名 Bruno（bruno@metrica-sports.com），最新提交作者 Bruno。",
+      "license": {
+        "github_spdx": null,
+        "file": null,
+        "verified_from": "仓库根目录无 LICENSE 文件（GitHub license 字段为 null）。条款只写在 README.md 的 Legal stuff 节。",
+        "summary": "没有标准开源许可证，不能默认为可自由复用、再分发或改许可。README 仅要求「responsible」使用，若用于任何公开场合须acknowledge the source。数据已匿名化（无球员/球队/赛事名称）。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "Elite 数据包的样本：两场标准 CSV 的 tracking+event，另加 Sample Game 3（EPTS FIFA tracking/metadata + JSON events）。场地 105×68 米，坐标 0–1，(0,0) 左上、(1,1) 右下。tracking 与 event 已同步。这是少数公开的、包含全体球员位置轨迹的样本，不能把它和 StatsBomb 事件库混为一谈。",
+      "useful_docs_verified": [
+        "https://github.com/metrica-sports/sample-data/blob/master/README.md",
+        "https://github.com/metrica-sports/sample-data/blob/master/documentation/events-definitions.pdf",
+        "https://github.com/metrica-sports/sample-data/tree/master/data"
+      ],
+      "how_to_use": "需要讲无球跑位、队形或球场控制时，优先用这类同步 tracking 样本，而不是用事件库硬凑。事件类型以 documentation/events-definitions.pdf 为准。公开使用须致谢来源。可与 LaurieOnTracking / kloppy 配合阅读，本次不安装、不整库下载。",
+      "how_not_to_use": "样本只有少数匿名场次，不能推广为联赛或某俱乐部的战术结论。无 LICENSE 文件，不要假设可以打包进自己的知识库再分发。不要把这份数据的许可范围套用到 StatsBomb 或 SoccerNet。",
+      "additional_data_terms": "仅 README「Legal stuff」。无 SPDX 许可证。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "e706dd506b360d69d9d123d5b8026e7294b13996",
+        "default_branch_latest_commit_at_utc": "2021-04-15T16:34:36Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2021-04-16 00:34 Asia/Shanghai",
+        "default_branch_latest_commit_message": "Added Sample Game 3",
+        "note": "默认分支自 2021-04-15 后再无提交。仓库 updated_at 较新只反映关注/星标活动，不代表数据仍在更新。"
+      }
+    },
+    {
+      "id": "socceraction",
+      "category": "tool_plus_partial_methodology",
+      "category_zh": "分析工具 + 部分方法论知识来源（不是教练课程）",
+      "repo_full_name": "ML-KULeuven/socceraction",
+      "repo_url": "https://github.com/ML-KULeuven/socceraction",
+      "default_branch": "master",
+      "owner_login": "ML-KULeuven",
+      "owner_legal_or_display_name": "KU Leuven Machine Learning Research Group（LICENSE.rst 版权人）。README 研究作者包括 Tom Decroos、Lotte Bransen、Jan Van Haaren、Jesse Davis、Maaike Van Roy、Pieter Robberechts。",
+      "license": {
+        "github_spdx": "MIT",
+        "file": "https://github.com/ML-KULeuven/socceraction/blob/master/LICENSE.rst",
+        "verified_from": "LICENSE.rst 全文，标题 MIT License，Copyright (c) 2019 KU Leuven Machine Learning Research Group",
+        "summary": "MIT 覆盖本仓库软件及随附文档。不覆盖经该库加载的 StatsBomb / Wyscout / Opta 等第三方数据，那些数据仍受各自条款约束。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "把多源事件流转为统一的 SPADL / atomic-SPADL，并实现 xT、VAEP、Atomic-VAEP。README 写明主要用途是研究可复现，且 not actively developed。文档站点与 public-notebooks 演示从公开 StatsBomb 事件到动作价值与球员评分的流程。",
+      "useful_docs_verified": [
+        "https://github.com/ML-KULeuven/socceraction/blob/master/README.md",
+        "https://github.com/ML-KULeuven/socceraction/blob/master/LICENSE.rst",
+        "https://socceraction.readthedocs.io/en/latest/（本次网页可访问）",
+        "https://socceraction.readthedocs.io/en/latest/documentation/spadl/index.html",
+        "https://github.com/ML-KULeuven/socceraction/blob/master/docs/documentation/spadl/SPADL_definitions.rst",
+        "https://socceraction.readthedocs.io/en/latest/documentation/valuing_actions/vaep.html",
+        "https://socceraction.readthedocs.io/en/latest/documentation/valuing_actions/xT.html",
+        "https://github.com/ML-KULeuven/socceraction/tree/master/public-notebooks",
+        "https://github.com/ML-KULeuven/socceraction/blob/master/public-notebooks/1-load-and-convert-statsbomb-data.ipynb"
+      ],
+      "how_to_use": "导入「动作如何被定义和估值」的专业口径：SPADL 动作类型、VAEP / xT 的含义与局限。向普通观众解释时，应先用白话（这脚增加了得分可能），再注明这是公开研究模型，不是官方教练评价。",
+      "how_not_to_use": "不是完整战术教材，不能用来规定压迫或阵型职责。xT 最初由 Karun Singh 博客提出，VAEP 是研究框架，都不是比赛事实。文档提醒基于旧版库的视频教程可能与现版本不完全一致。不要安装后默认对外发布由 StatsBomb 数据算出的商业分析。",
+      "additional_data_terms": "软件 MIT；输入数据走原厂协议。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "93a1242d46c104889205753accaabadb00c45c6d",
+        "default_branch_latest_commit_at_utc": "2026-01-07T08:40:04Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2026-01-07 16:40 Asia/Shanghai",
+        "default_branch_latest_commit_message": "docs: add FAIR acknowledgment",
+        "note": "仓库 pushed_at 为 2026-10-18T17:03:57Z，同时存在大量 dependabot / dev 分支；默认分支 master 最新内容提交为 2026-01-07。README 写明不是积极开发中。"
+      }
+    },
+    {
+      "id": "kloppy",
+      "category": "plotting_or_stats_tool",
+      "category_zh": "仅数据标准化 / 统计处理工具",
+      "repo_full_name": "PySport/kloppy",
+      "repo_url": "https://github.com/PySport/kloppy",
+      "homepage": "https://kloppy.pysport.org",
+      "default_branch": "master",
+      "owner_login": "PySport",
+      "owner_legal_or_display_name": "PySport（非营利，LICENSE 版权人 PySport，README 标注 RSIN: 866294211）。",
+      "license": {
+        "github_spdx": "BSD-3-Clause",
+        "file": "https://github.com/PySport/kloppy/blob/master/LICENSE",
+        "verified_from": "LICENSE 全文，BSD 3-Clause License，Copyright (c) 2020, PySport",
+        "summary": "BSD-3-Clause 覆盖本软件。不覆盖经 kloppy 加载的各供应商公开或专有数据。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "把多家事件与 tracking 格式读入统一数据模型，支持过滤、坐标/朝向变换，以及导出 DataFrame 或 SportsCode XML。文档列出对 StatsBomb（含 360）、Metrica、Wyscout、SkillCorner 等的支持及部分公开数据指针。",
+      "useful_docs_verified": [
+        "https://github.com/PySport/kloppy/blob/master/README.md",
+        "https://github.com/PySport/kloppy/blob/master/LICENSE",
+        "https://kloppy.pysport.org/（本次网页可访问，站点标明 kloppy 3.19.1）",
+        "https://kloppy.pysport.org/user-guide/loading-data/statsbomb",
+        "https://kloppy.pysport.org/user-guide/loading-data/metrica",
+        "https://github.com/PySport/kloppy/tree/master/examples",
+        "https://github.com/PySport/kloppy/tree/master/docs"
+      ],
+      "how_to_use": "以后若要用公开数据做案例图或对齐不同坐标系，把它当作读取与标准化层。它本身不提供战术理论。",
+      "how_not_to_use": "不是知识库或教练课程。不要安装后默认下载整份公开数据仓库。各数据源条款仍单独适用。本次不执行安装。",
+      "additional_data_terms": "软件 BSD-3-Clause；数据条款随源仓库。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "a9651eba7c4dbbe2d2fc6d4cffb4aea63fadac11",
+        "default_branch_latest_commit_at_utc": "2026-11-06T11:59:02Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2026-11-06 19:59 Asia/Shanghai",
+        "default_branch_latest_commit_message": "chore(deps-dev): bump ruff from 0.17.1 to 0.17.3 (#660)",
+        "note": "默认分支在 2026-11 仍有合并，属持续维护，但该笔最新提交是依赖更新。"
+      }
+    },
+    {
+      "id": "mplsoccer",
+      "category": "plotting_or_stats_tool",
+      "category_zh": "仅绘图 / 球场可视化工具",
+      "repo_full_name": "andrewRowlinson/mplsoccer",
+      "repo_url": "https://github.com/andrewRowlinson/mplsoccer",
+      "default_branch": "main",
+      "owner_login": "andrewRowlinson",
+      "owner_legal_or_display_name": "Andrew Rowlinson；LICENSE 版权人为 Anmol Durgapal, Andrew Rowlinson（2025）。",
+      "license": {
+        "github_spdx": "MIT",
+        "file": "https://github.com/andrewRowlinson/mplsoccer/blob/main/LICENSE",
+        "verified_from": "LICENSE 全文，MIT License，Copyright (c) 2025 Anmol Durgapal, Andrew Rowlinson",
+        "summary": "MIT 覆盖绘图库软件。若用它加载 StatsBomb 公开数据，数据仍受 StatsBomb 用户协议约束。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "在 Matplotlib 上画多种规格球场、雷达/披萨图、热图、传球箭头/网络、阵型、Sonar，以及 StatsBomb 360 冻结画面等。文档 gallery 含 Heatmap Juego de Posición、Pass Network、Shot freeze frame、Expected threat 教程。这些是绘图与分析可视化，不是位置打法理论教材。",
+      "useful_docs_verified": [
+        "https://github.com/andrewRowlinson/mplsoccer/blob/main/README.md",
+        "https://github.com/andrewRowlinson/mplsoccer/blob/main/LICENSE",
+        "https://github.com/andrewRowlinson/mplsoccer/blob/main/CHANGELOG.md",
+        "https://mplsoccer.readthedocs.io/",
+        "https://mplsoccer.readthedocs.io/en/latest/gallery/index.html（本次网页可访问）"
+      ],
+      "how_to_use": "给观众看的战术板/传球图/热区，优先用这类规范球场图，风格接近专业分析片。需要位置热图或传球网络时，到 gallery 找对应示例，不要手绘不标准的球场比例。",
+      "how_not_to_use": "不能替代教练理论。gallery 里的「Juego de Posición」只是分区画法，不是瓜迪奥拉体系教材。README 里指向 master 的 changelog 链接应以 main 分支文件为准（本次在 main 读到 CHANGELOG.md）。本次不安装。",
+      "additional_data_terms": "软件 MIT；StatsBomb 数据另计。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "150be3f5d891526506a4c35b03256f173a70a14a",
+        "default_branch_latest_commit_at_utc": "2026-09-14T18:54:50Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2026-09-15 02:54 Asia/Shanghai",
+        "default_branch_latest_commit_message": "changelog",
+        "note": "仓库 pushed_at 为 2026-10-27T06:07:00Z；默认分支 main 最新提交为 2026-09-14 的 changelog。CHANGELOG 顶部版本为 1.8.1。"
+      }
+    },
+    {
+      "id": "laurie-on-tracking",
+      "category": "tool_plus_partial_methodology",
+      "category_zh": "tracking 教学代码 + 部分分析概念（球场控制 / EPV），不是教练课程",
+      "repo_full_name": "Friends-of-Tracking-Data-FoTD/LaurieOnTracking",
+      "repo_url": "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking",
+      "default_branch": "master",
+      "owner_login": "Friends-of-Tracking-Data-FoTD",
+      "owner_legal_or_display_name": "Friends-of-Tracking-Data-FoTD 组织；README 说明为 Laurie Shaw（Sports Analytics Lab, Harvard University，Metrica README 亦如此介绍）的代码。LICENSE 版权人为 Friends-of-Tracking-Data-FoTD。默认分支最新合并提交作者显示为 soccermatics（djtsumpter@me.com）。",
+      "license": {
+        "github_spdx": "MIT",
+        "file": "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking/blob/master/LICENSE",
+        "verified_from": "LICENSE 全文，MIT License，Copyright (c) 2021 Friends-of-Tracking-Data-FoTD",
+        "summary": "MIT 覆盖本仓库代码与随附文档。Metrica 样本数据没有同等 LICENSE，须遵守 Metrica README 条款。配套 YouTube 讲座版权不在本 LICENSE 内。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "读取 Metrica tracking/event、可视化、速度、pitch control（README 写明基于 Will Spearman 发表的模型）以及 EPV（expected possession value）教程脚本 Tutorial1–4。数据不在本仓库，而在 metrica-sports/sample-data。",
+      "useful_docs_verified": [
+        "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking/blob/master/README.md",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking/blob/master/LICENSE",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking/blob/master/Tutorial1_GettingStarted.py",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking/blob/master/Tutorial3_PitchControl.py",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking/blob/master/Tutorial4_EPV.py"
+      ],
+      "how_to_use": "当讲解需要从「谁在控球」进到「这个空间是否可接应」时，可参考 Tutorial3/4 的概念定义，并用 Metrica 样本做可核验示意。面向普通人要先讲清：球场控制是概率模型，不是眼睛直接看见的事实。",
+      "how_not_to_use": "不是 FIFA/UEFA 教练课程。代码默认分支已多年未更新，可能与当前 Python 环境不兼容；本次未运行。不要把模型输出说成官方战术评价。",
+      "additional_data_terms": "代码 MIT；数据见 Metrica。YouTube 教程另有版权。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "7ed3ff857940d3f4611be55f3c08c79525c32171",
+        "default_branch_latest_commit_at_utc": "2021-06-15T08:40:03Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2021-06-15 16:40 Asia/Shanghai",
+        "default_branch_latest_commit_message": "Merge pull request #3 from Friends-of-Tracking-Data-FoTD/add-license-1\\n\\nCreate LICENSE",
+        "note": "组织搜索结果显示仓库 pushed_at 为 2022-11-03T01:16:07Z，但默认分支 list_commits 最新一条是 2021-06-15 的 LICENSE 合并。应按默认分支提交判断维护状态：已长期停滞。"
+      }
+    },
+    {
+      "id": "soccermatics-for-python",
+      "category": "tool_plus_partial_methodology",
+      "category_zh": "入门分析脚本（配合讲座），不是理论全书",
+      "repo_full_name": "Friends-of-Tracking-Data-FoTD/SoccermaticsForPython",
+      "repo_url": "https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython",
+      "default_branch": "master",
+      "owner_login": "Friends-of-Tracking-Data-FoTD",
+      "owner_legal_or_display_name": "Friends-of-Tracking-Data-FoTD 组织；README 写明概念来自 David Sumpter 所著 Soccermatics（2016），并跟随 Friends of Tracking YouTube 频道。最新提交作者显示为 David Sumpter（david@twelve.football / GitHub 用户 twelve-discovery）。",
+      "license": {
+        "github_spdx": "MIT",
+        "file": "https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython/blob/master/LICENSE",
+        "verified_from": "LICENSE 全文，MIT License，Copyright (c) 2020 Friends-of-Tracking-Data-FoTD",
+        "summary": "MIT 只覆盖这些 Python 脚本。Soccermatics 原书、YouTube 讲座、以及需自行放入的 StatsBomb / Wyscout 数据，都不在该 LICENSE 范围内。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "入门脚本 0helloworld.py 到 15PointsMovingAverage.py，内容包括加载数据、传球/射门图、xG 拟合、传球热图、比赛模拟等。README 仍写「more coming soon」，与实际已有 0–15 号脚本不同步。数据需用户自行放到 Statsbomb / Wyscout 等目录。",
+      "useful_docs_verified": [
+        "https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython/blob/master/README.md",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython/blob/master/LICENSE",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython/blob/master/1LoadInData.py",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython/blob/master/3xGModel.py",
+        "https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython/blob/master/7PassHeatMap.py"
+      ],
+      "how_to_use": "可作为「如何用公开事件数据画出传球/射门/xG」的入门对照，帮助把讲解从口号落到一张图。适合教普通人看懂分析图的制作思路，不是阵型或训练课大纲。",
+      "how_not_to_use": "不能把仓库当作 Soccermatics 一书的开源全文，也不能当作完整知识库。脚本和依赖可能已过时。使用 StatsBomb/Wyscout 数据时必须遵守原数据条款。",
+      "additional_data_terms": "代码 MIT；书、视频、数据另行授权。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "d6ec55b74a14885c525b517a8bc7f8b7ff00aeb9",
+        "default_branch_latest_commit_at_utc": "2021-03-13T07:38:43Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2021-03-13 15:38 Asia/Shanghai",
+        "default_branch_latest_commit_message": "MovingAverage",
+        "note": "组织搜索显示 pushed_at 为 2022-02-22T00:26:44Z，但默认分支最新提交是 2021-03-13。维护已停滞。"
+      }
+    },
+    {
+      "id": "soccernet-package",
+      "category": "plotting_or_stats_tool",
+      "category_zh": "计算机视觉数据工具包（不是战术教材）",
+      "repo_full_name": "SoccerNet/SoccerNet",
+      "repo_url": "https://github.com/SoccerNet/SoccerNet",
+      "default_branch": "main",
+      "owner_login": "SoccerNet",
+      "owner_legal_or_display_name": "SoccerNet 组织；LICENSE 版权人为 SoccerNet（2023）。默认分支最新提交作者为 Silvio Giancola。",
+      "license": {
+        "github_spdx": "MIT",
+        "file": "https://github.com/SoccerNet/SoccerNet/blob/main/LICENSE",
+        "verified_from": "LICENSE 全文，MIT License，Copyright (c) 2023 SoccerNet",
+        "summary": "MIT 只覆盖本 Python 软件包。比赛视频、特征与标注托管在 Hugging Face 的 SoccerNet 组织下，部分公开，部分需登录审批或电子签署 NDA（README 列出 SN-BAS-2024/2025、SN-PCBAS-2026 等为 NDA-gated；SoccerNet_raw_HQ 视频为 gated）。软件许可证不授予视频或标注数据的再利用权。",
+        "code_license_does_not_cover_data": true
+      },
+      "main_content": "下载与列出 SoccerNet 任务数据的开发包。数据已迁到 https://huggingface.co/SoccerNet。任务以动作定位、球员跟踪、镜头标定、球衣号、犯规识别、比赛状态重建等计算机视觉为主，不是战术板课程。",
+      "useful_docs_verified": [
+        "https://github.com/SoccerNet/SoccerNet/blob/main/README.md",
+        "https://github.com/SoccerNet/SoccerNet/blob/main/LICENSE",
+        "https://huggingface.co/SoccerNet"
+      ],
+      "how_to_use": "仅在明确需要视频层标注（如定位进球/换人/镜头）或研究用跟踪结果时，把它当作数据入口，并逐项遵守该数据集的访问与 NDA 要求。不要为了战术知识库去下载整套视频。",
+      "how_not_to_use": "绝不能当作完整战术教练教材。广播跟踪或检测框不等于官方光学 tracking，也不能当成全体球员无球职责的权威记录。部分数据需审批，本次不申请、不下载。README 中有的徽章仍指向 blob/master/LICENSE，实际默认分支是 main，应以 main 上的 LICENSE 为准。",
+      "additional_data_terms": "软件 MIT；数据集各自在 Hugging Face 上 gated / NDA-gated / public，需分别申请。",
+      "maintenance": {
+        "default_branch_latest_commit_sha": "dbf27e0633a11ea10cec048cbe0ebb8bdf80827b",
+        "default_branch_latest_commit_at_utc": "2026-10-04T12:41:16Z",
+        "default_branch_latest_commit_at_asia_shanghai": "2026-10-04 20:41 Asia/Shanghai",
+        "default_branch_latest_commit_message": "docs: update NDA access and authenticated Hugging Face downloads",
+        "note": "2026-10 仍在更新数据访问说明，软件包处于维护中。"
+      }
+    }
+  ],
+  "not_selected_or_only_pointers": [
+    {
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/Last-Row",
+      "reason": "组织仓库存在，但 GitHub license 为无。Metrica README 把它列为进球跟踪样本；因无 LICENSE，本次不列为可导入推荐。"
+    },
+    {
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/mapping-match-events-in-Python",
+      "reason": "GPL-3.0，Luca Pappalardo 的 Wyscout 公开事件绘图代码，默认分支最近推送约 2023-07-06。与本清单已有事件数据/绘图工具重叠，未再单列为主项目。"
+    },
+    {
+      "url": "https://github.com/SkillCorner/opendata",
+      "reason": "仅作为 Metrica README 中的指针提及：广播源 tracking，无事件、无视频。本次未完整核验其 LICENSE，故不作为主推荐。"
+    },
+    {
+      "url": "https://figshare.com/collections/Soccer_match_event_dataset/4415000",
+      "reason": "Wyscout 公开事件数据集在 figshare，不是本次核验的 GitHub 主项目；使用须看 figshare 与原论文条款。"
+    },
+    {
+      "note": "搜索「football tactics / coaching curriculum」得到的多为战术板绘图应用（如 TacticsJournal/board、iltempe/diagonale），是界面工具而非理论内容库，未列入，避免为凑开源知识库而硬选。"
+    }
+  ],
+  "recommendation_summary": {
+    "importable_knowledge_or_specs": [
+      "hudl/open-data 的 doc/ 事件与 360 规格 PDF（术语与标注规范）",
+      "metrica-sports/sample-data 的 events-definitions.pdf",
+      "socceraction 的 SPADL 定义与 VAEP/xT 文档（动作估值方法论）",
+      "LaurieOnTracking Tutorial3/4 中对 pitch control 与 EPV 的教学说明（须标明模型）"
+    ],
+    "importable_or_citable_cases": [
+      "hudl/open-data 中与讲解主题对应的公开比赛事件（遵守用户协议，不整库搬运）",
+      "metrica-sports/sample-data 中少数匿名场次的同步 tracking+event（须致谢，无标准许可证故不默认再分发）"
+    ],
+    "tools_only": [
+      "PySport/kloppy",
+      "andrewRowlinson/mplsoccer",
+      "socceraction 作为转换与估值程序",
+      "SoccerNet/SoccerNet 作为 CV 数据下载包"
+    ],
+    "theory_should_come_from": "FIFA / UEFA / 官方教练课程与经核验的教练读物（主线另路），而不是上述 GitHub 仓库。"
+  },
+  "integration_policy": "v1仅收资源URL、许可摘要与原创方法边界；未导入原始数据、规范PDF全文、书籍或视频。商业用途须按原协议/授权单独核验，代码许可不覆盖数据。"
+}

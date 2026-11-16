@@ -1,0 +1,5077 @@
+{
+  "source_wav": "/workspace/football-demo/full-phase-new-reference/audio/reference_original.wav",
+  "duration_s": 113.75596371882087,
+  "sr": 44100,
+  "method": {
+    "flux": "positive log-magnitude STFT flux, nperseg=1024, hop=256",
+    "classifier": "transformers pipeline zero-shot-audio-classification, laion/clap-htsat-unfused, CPU, local weights",
+    "limits": [
+      "分析对象是已混音轨，旁白、BGM、现场声与可能的音效叠加",
+      "未进行人工听感判断",
+      "CLAP 分数是文本-音频相似度，不能单独定名",
+      "既有 T01–T12 当时用 4s 间隔筛选，短间隔视觉事件可能被漏检，本脚本已在锚点±0.4s 重测"
+    ]
+  },
+  "flux_percentiles": {
+    "p50": 0.2922263741493225,
+    "p80": 0.4486769437789917,
+    "p90": 0.5671523809432983,
+    "p95": 0.6859439611434937,
+    "p99": 0.936985969543457,
+    "hi_p90": 0.29944920539855957,
+    "hi_p95": 0.42403972148895264
+  },
+  "title_window_0.6_1.8_max": [
+    {
+      "t_s": 0.6066213151927438,
+      "flux": 1.038984775543213,
+      "flux_hi": 0.7001485228538513,
+      "flux_percentile": 99.5049252283979,
+      "flux_hi_percentile": 99.14255091103966
+    }
+  ],
+  "summary_105_113_local_peaks_above_p80": [
+    {
+      "t_s": 104.50430839002267,
+      "flux": 0.7973474860191345,
+      "flux_hi": 0.09334070980548859,
+      "flux_percentile": 97.42254886949421
+    },
+    {
+      "t_s": 104.77133786848073,
+      "flux": 0.5456807017326355,
+      "flux_hi": 0.1741417497396469,
+      "flux_percentile": 88.66431888939927
+    },
+    {
+      "t_s": 105.02675736961451,
+      "flux": 0.7379065752029419,
+      "flux_hi": 0.06973742693662643,
+      "flux_percentile": 96.34563364466902
+    },
+    {
+      "t_s": 105.42730158730159,
+      "flux": 0.7697629928588867,
+      "flux_hi": 0.4782960116863251,
+      "flux_percentile": 96.9989281886388
+    },
+    {
+      "t_s": 105.7059410430839,
+      "flux": 1.1013721227645874,
+      "flux_hi": 0.842094898223877,
+      "flux_percentile": 99.65804113714081
+    },
+    {
+      "t_s": 106.1122902494331,
+      "flux": 0.9526163935661316,
+      "flux_hi": 0.5635715126991272,
+      "flux_percentile": 99.13234318379013
+    },
+    {
+      "t_s": 106.37351473922902,
+      "flux": 0.7074124813079834,
+      "flux_hi": 0.5718727111816406,
+      "flux_percentile": 95.67192364620017
+    },
+    {
+      "t_s": 106.73922902494331,
+      "flux": 0.9379012584686279,
+      "flux_hi": 0.7101118564605713,
+      "flux_percentile": 99.02005818404533
+    },
+    {
+      "t_s": 107.122358276644,
+      "flux": 0.6741797924041748,
+      "flux_hi": 0.2879597544670105,
+      "flux_percentile": 94.52865819425304
+    },
+    {
+      "t_s": 107.45324263038549,
+      "flux": 0.8971652388572693,
+      "flux_hi": 0.7803602814674377,
+      "flux_percentile": 98.71893023018426
+    },
+    {
+      "t_s": 107.72607709750567,
+      "flux": 0.518719494342804,
+      "flux_hi": 0.2708202600479126,
+      "flux_percentile": 86.83713571173378
+    },
+    {
+      "t_s": 108.138231292517,
+      "flux": 0.6731855869293213,
+      "flux_hi": 0.0640457347035408,
+      "flux_percentile": 94.508242739754
+    },
+    {
+      "t_s": 108.50975056689342,
+      "flux": 0.8050247430801392,
+      "flux_hi": 0.07686392962932587,
+      "flux_percentile": 97.57566477823713
+    },
+    {
+      "t_s": 109.09024943310658,
+      "flux": 0.6312578320503235,
+      "flux_hi": 0.5503510236740112,
+      "flux_percentile": 92.92604501607717
+    },
+    {
+      "t_s": 109.34566893424036,
+      "flux": 0.9922983646392822,
+      "flux_hi": 0.4632665514945984,
+      "flux_percentile": 99.35691318327974
+    },
+    {
+      "t_s": 109.67655328798186,
+      "flux": 0.7323587536811829,
+      "flux_hi": 0.5681109428405762,
+      "flux_percentile": 96.1925177359261
+    },
+    {
+      "t_s": 110.06548752834468,
+      "flux": 0.7994331121444702,
+      "flux_hi": 0.4277976155281067,
+      "flux_percentile": 97.46848364211709
+    },
+    {
+      "t_s": 110.50666666666666,
+      "flux": 0.9698590636253357,
+      "flux_hi": 0.7934272885322571,
+      "flux_percentile": 99.22421272903588
+    },
+    {
+      "t_s": 110.95945578231293,
+      "flux": 1.2424615621566772,
+      "flux_hi": 0.671440839767456,
+      "flux_percentile": 99.86729954575614
+    },
+    {
+      "t_s": 111.34839002267574,
+      "flux": 0.8751721382141113,
+      "flux_hi": 0.43274959921836853,
+      "flux_percentile": 98.53008727606797
+    },
+    {
+      "t_s": 111.74893424036281,
+      "flux": 1.0704008340835571,
+      "flux_hi": 0.11101186275482178,
+      "flux_percentile": 99.60700250089317
+    },
+    {
+      "t_s": 112.03337868480726,
+      "flux": 0.706689178943634,
+      "flux_hi": 0.09654836356639862,
+      "flux_percentile": 95.62088500995254
+    },
+    {
+      "t_s": 112.28879818594105,
+      "flux": 0.7108104825019836,
+      "flux_hi": 0.07773598283529282,
+      "flux_percentile": 95.7535854641964
+    },
+    {
+      "t_s": 112.62548752834468,
+      "flux": 0.7549554109573364,
+      "flux_hi": 0.11706314235925674,
+      "flux_percentile": 96.6875925075282
+    },
+    {
+      "t_s": 112.97378684807256,
+      "flux": 0.8080341815948486,
+      "flux_hi": 0.28807228803634644,
+      "flux_percentile": 97.63180727810953
+    },
+    {
+      "t_s": 113.2756462585034,
+      "flux": 0.9013264775276184,
+      "flux_hi": 0.15677016973495483,
+      "flux_percentile": 98.74955341193284
+    }
+  ],
+  "probes": [
+    {
+      "id": "V_title",
+      "probe_s": 1.0,
+      "note": "视觉锚：约1s标题弹出（时码可能近似）",
+      "local_peak": {
+        "t_s": 0.6066213151927438,
+        "flux": 1.038984775543213,
+        "flux_hi": 0.7001485228538513,
+        "flux_mid": 0.7342188358306885,
+        "flux_lo": 0.04707411676645279,
+        "offset_from_probe_s": -0.39337868480725624
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.26381632685661316,
+        0.02981533855199814,
+        0.2061052918434143,
+        0.04876802861690521
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        0.5666213151927437,
+        0.7666213151927438
+      ],
+      "peak_dbfs_200ms": -0.05917973835906411,
+      "rms_dbfs_200ms": -9.04900263182405,
+      "rms_dbfs_pre_bed_850ms": -9.254883951885626,
+      "sfx_minus_bed_db": 0.20588132006157522,
+      "centroid_hz_200ms": 1111.8263713224842,
+      "e_frac_lt250": 0.3094590739971479,
+      "e_frac_800_6k": 0.5623911630604769,
+      "e_frac_gt3k": 0.035244464593886644,
+      "e_frac_gt8k": 0.004795781120159768,
+      "env_dur_20pct_s": 0.030612244897959183,
+      "vis_locked_rms_dbfs_200ms": -9.692079905884668,
+      "vis_locked_centroid_hz": 641.396664102191,
+      "asr": {
+        "mid_word": "拆",
+        "mid_word_interval": [
+          0.56,
+          0.74
+        ],
+        "nearby": [
+          {
+            "word": "分",
+            "start": 0.24,
+            "end": 0.4
+          },
+          {
+            "word": "钟",
+            "start": 0.4,
+            "end": 0.56
+          },
+          {
+            "word": "拆",
+            "start": 0.56,
+            "end": 0.74
+          },
+          {
+            "word": "解",
+            "start": 0.74,
+            "end": 0.9
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "阿",
+        "mid_word_interval": [
+          0.9,
+          1.06
+        ],
+        "nearby": [
+          {
+            "word": "解",
+            "start": 0.74,
+            "end": 0.9
+          },
+          {
+            "word": "阿",
+            "start": 0.9,
+            "end": 1.06
+          },
+          {
+            "word": "根",
+            "start": 1.06,
+            "end": 1.16
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.5049252283979,
+      "local_peak_flux_hi_percentile": 99.14255091103966,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_title_peak0.607_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_title_visual1.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.4516863524913788
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.30129674077033997
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.14618192613124847
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.045925989747047424
+        },
+        {
+          "label": "background music",
+          "score": 0.03588351234793663
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.008754969574511051
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.007107250392436981
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0026615397073328495
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0004554486367851496
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 4.629501563613303e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_5",
+      "probe_s": 5.0,
+      "note": "视觉锚：约5s实拍/板切换（时码可能近似）",
+      "local_peak": {
+        "t_s": 5.0764625850340135,
+        "flux": 1.362709403038025,
+        "flux_hi": 1.0540114641189575,
+        "flux_mid": 0.8930676579475403,
+        "flux_lo": 0.02097816951572895,
+        "offset_from_probe_s": 0.07646258503401349
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.48770245909690857,
+        0.22536572813987732,
+        0.22681932151317596,
+        0.1361478567123413
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        5.0364625850340135,
+        5.236462585034014
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.99473321467092,
+      "rms_dbfs_pre_bed_850ms": -8.869659381101794,
+      "sfx_minus_bed_db": -0.12507383356912527,
+      "centroid_hz_200ms": 748.2778712512584,
+      "e_frac_lt250": 0.1870426813136487,
+      "e_frac_800_6k": 0.22757376955061415,
+      "e_frac_gt3k": 0.04261529100993122,
+      "e_frac_gt8k": 0.0032612255208223067,
+      "env_dur_20pct_s": 0.0025396825396825397,
+      "vis_locked_rms_dbfs_200ms": -8.744538782099687,
+      "vis_locked_centroid_hz": 1337.8257800989045,
+      "asr": {
+        "mid_word": "娇",
+        "mid_word_interval": [
+          5.04,
+          5.18
+        ],
+        "nearby": [
+          {
+            "word": "易",
+            "start": 4.98,
+            "end": 5.04
+          },
+          {
+            "word": "娇",
+            "start": 5.04,
+            "end": 5.18
+          },
+          {
+            "word": "解",
+            "start": 5.18,
+            "end": 5.38
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "易",
+        "mid_word_interval": [
+          4.98,
+          5.04
+        ],
+        "nearby": [
+          {
+            "word": "易",
+            "start": 4.98,
+            "end": 5.04
+          },
+          {
+            "word": "娇",
+            "start": 5.04,
+            "end": 5.18
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.93364977287807,
+      "local_peak_flux_hi_percentile": 99.94896136375236,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_5_peak5.076_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_5_visual5.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.6590656042098999
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.1511148363351822
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.15004755556583405
+        },
+        {
+          "label": "background music",
+          "score": 0.017763203009963036
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.006604274269193411
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.006288961507380009
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.005457424558699131
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0018617190653458238
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0017671610694378614
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.9395901947282255e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_label_6",
+      "probe_s": 6.0,
+      "note": "视觉锚：约6s落点标签",
+      "local_peak": {
+        "t_s": 5.7614512471655335,
+        "flux": 1.1142454147338867,
+        "flux_hi": 0.78750079870224,
+        "flux_mid": 0.6391390562057495,
+        "flux_lo": 0.022717807441949844,
+        "offset_from_probe_s": -0.23854875283446653
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.5286606550216675,
+        0.30284062027931213,
+        0.2652134895324707,
+        0.22885876893997192
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        5.7214512471655325,
+        5.921451247165533
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.596310610003536,
+      "rms_dbfs_pre_bed_850ms": -10.283440954423202,
+      "sfx_minus_bed_db": 1.687130344419666,
+      "centroid_hz_200ms": 668.2271925257961,
+      "e_frac_lt250": 0.8139263836033259,
+      "e_frac_800_6k": 0.09919765875053796,
+      "e_frac_gt3k": 0.09836639177310548,
+      "e_frac_gt8k": 0.009736773256531798,
+      "env_dur_20pct_s": 0.00727891156462585,
+      "vis_locked_rms_dbfs_200ms": -8.305320817120482,
+      "vis_locked_centroid_hz": 474.68776584140085,
+      "asr": {
+        "mid_word": "皮",
+        "mid_word_interval": [
+          5.76,
+          5.9
+        ],
+        "nearby": [
+          {
+            "word": "语，",
+            "start": 5.38,
+            "end": 5.56
+          },
+          {
+            "word": "皮",
+            "start": 5.76,
+            "end": 5.9
+          },
+          {
+            "word": "球",
+            "start": 5.9,
+            "end": 6.06
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "球",
+        "mid_word_interval": [
+          5.9,
+          6.06
+        ],
+        "nearby": [
+          {
+            "word": "皮",
+            "start": 5.76,
+            "end": 5.9
+          },
+          {
+            "word": "球",
+            "start": 5.9,
+            "end": 6.06
+          },
+          {
+            "word": "的",
+            "start": 6.06,
+            "end": 6.16
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.69887204613893,
+      "local_peak_flux_hi_percentile": 99.57127545551982,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_label_6_peak5.761_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_label_6_visual6.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.4533451497554779
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.315168172121048
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.09965381771326065
+        },
+        {
+          "label": "background music",
+          "score": 0.05941199138760567
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.04555928334593773
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.020725363865494728
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.003037672024220228
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0026469980366528034
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0003887361672241241
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 6.276402564253658e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_label_6.1",
+      "probe_s": 6.1,
+      "note": "模式切换：约6.1s入板",
+      "local_peak": {
+        "t_s": 5.7614512471655335,
+        "flux": 1.1142454147338867,
+        "flux_hi": 0.78750079870224,
+        "flux_mid": 0.6391390562057495,
+        "flux_lo": 0.022717807441949844,
+        "offset_from_probe_s": -0.33854875283446617
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.7256219387054443,
+        0.1743801385164261,
+        0.3499111235141754,
+        0.1443205326795578
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        5.7214512471655325,
+        5.921451247165533
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.596310610003536,
+      "rms_dbfs_pre_bed_850ms": -10.283440954423202,
+      "sfx_minus_bed_db": 1.687130344419666,
+      "centroid_hz_200ms": 668.2271925257961,
+      "e_frac_lt250": 0.8139263836033259,
+      "e_frac_800_6k": 0.09919765875053796,
+      "e_frac_gt3k": 0.09836639177310548,
+      "e_frac_gt8k": 0.009736773256531798,
+      "env_dur_20pct_s": 0.00727891156462585,
+      "vis_locked_rms_dbfs_200ms": -7.620974284458541,
+      "vis_locked_centroid_hz": 544.4694578833008,
+      "asr": {
+        "mid_word": "皮",
+        "mid_word_interval": [
+          5.76,
+          5.9
+        ],
+        "nearby": [
+          {
+            "word": "语，",
+            "start": 5.38,
+            "end": 5.56
+          },
+          {
+            "word": "皮",
+            "start": 5.76,
+            "end": 5.9
+          },
+          {
+            "word": "球",
+            "start": 5.9,
+            "end": 6.06
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "的",
+        "mid_word_interval": [
+          6.06,
+          6.16
+        ],
+        "nearby": [
+          {
+            "word": "球",
+            "start": 5.9,
+            "end": 6.06
+          },
+          {
+            "word": "的",
+            "start": 6.06,
+            "end": 6.16
+          },
+          {
+            "word": "落",
+            "start": 6.16,
+            "end": 6.3
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.69887204613893,
+      "local_peak_flux_hi_percentile": 99.57127545551982,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_label_6.1_peak5.761_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_label_6.1_visual6.100_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.4533451497554779
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.315168172121048
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.09965381771326065
+        },
+        {
+          "label": "background music",
+          "score": 0.05941199138760567
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.04555928334593773
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.020725363865494728
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.003037672024220228
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0026469980366528034
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0003887361672241241
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 6.276402564253658e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_13",
+      "probe_s": 13.0,
+      "note": "视觉锚：约13s实拍/板切换（时码可能近似）",
+      "local_peak": {
+        "t_s": 12.919002267573696,
+        "flux": 1.424430012702942,
+        "flux_hi": 0.9962449669837952,
+        "flux_mid": 0.6495676040649414,
+        "flux_lo": 0.0794726312160492,
+        "offset_from_probe_s": -0.08099773242630448
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.6068249344825745,
+        0.19282905757427216,
+        0.39430686831474304,
+        0.1288183033466339
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        12.879002267573696,
+        13.079002267573696
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.969857637006422,
+      "rms_dbfs_pre_bed_850ms": -10.814794445914496,
+      "sfx_minus_bed_db": 1.8449368089080735,
+      "centroid_hz_200ms": 1323.6830233145106,
+      "e_frac_lt250": 0.5868525193669083,
+      "e_frac_800_6k": 0.24360999762474284,
+      "e_frac_gt3k": 0.14392794760345343,
+      "e_frac_gt8k": 0.016419624974020514,
+      "env_dur_20pct_s": 0.011111111111111112,
+      "vis_locked_rms_dbfs_200ms": -8.90931561928673,
+      "vis_locked_centroid_hz": 1577.5180214797765,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "即",
+            "start": 12.92,
+            "end": 13.04
+          },
+          {
+            "word": "使",
+            "start": 13.04,
+            "end": 13.18
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": "即",
+        "mid_word_interval": [
+          12.92,
+          13.04
+        ],
+        "nearby": [
+          {
+            "word": "即",
+            "start": 12.92,
+            "end": 13.04
+          },
+          {
+            "word": "使",
+            "start": 13.04,
+            "end": 13.18
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.97448068187617,
+      "local_peak_flux_hi_percentile": 99.91323431837901,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_13_peak12.919_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_13_visual13.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.4497915506362915
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.18969859182834625
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.13517925143241882
+        },
+        {
+          "label": "background music",
+          "score": 0.12145096063613892
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.06562215089797974
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.03184424713253975
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.004550650715827942
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0010047343093901873
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0006800324190407991
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.0001778135629137978
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_circle_14",
+      "probe_s": 14.0,
+      "note": "视觉锚：约14s定格圈注",
+      "local_peak": {
+        "t_s": 13.725895691609978,
+        "flux": 1.3229224681854248,
+        "flux_hi": 1.1219571828842163,
+        "flux_mid": 0.48787614703178406,
+        "flux_lo": 0.022613130509853363,
+        "offset_from_probe_s": -0.2741043083900223
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.9726526737213135,
+        0.580626368522644,
+        0.4753569960594177,
+        0.24579545855522156
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        13.685895691609977,
+        13.885895691609978
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -9.603135904775058,
+      "rms_dbfs_pre_bed_850ms": -9.255723936663637,
+      "sfx_minus_bed_db": -0.3474119681114214,
+      "centroid_hz_200ms": 715.3164141664936,
+      "e_frac_lt250": 0.11466182896900526,
+      "e_frac_800_6k": 0.1103799117160805,
+      "e_frac_gt3k": 0.03817426223556245,
+      "e_frac_gt8k": 0.003672301630337781,
+      "env_dur_20pct_s": 0.1279591836734694,
+      "vis_locked_rms_dbfs_200ms": -9.252181224749862,
+      "vis_locked_centroid_hz": 1018.4282160567909,
+      "asr": {
+        "mid_word": "直接",
+        "mid_word_interval": [
+          13.5,
+          13.76
+        ],
+        "nearby": [
+          {
+            "word": "法",
+            "start": 13.36,
+            "end": 13.5
+          },
+          {
+            "word": "直接",
+            "start": 13.5,
+            "end": 13.76
+          },
+          {
+            "word": "抢",
+            "start": 13.76,
+            "end": 13.98
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "下",
+        "mid_word_interval": [
+          13.98,
+          14.14
+        ],
+        "nearby": [
+          {
+            "word": "抢",
+            "start": 13.76,
+            "end": 13.98
+          },
+          {
+            "word": "下",
+            "start": 13.98,
+            "end": 14.14
+          },
+          {
+            "word": "球，",
+            "start": 14.14,
+            "end": 14.36
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.91323431837901,
+      "local_peak_flux_hi_percentile": 99.97958454550094,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_circle_14_peak13.726_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_circle_14_visual14.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.38307055830955505
+        },
+        {
+          "label": "background music",
+          "score": 0.21259251236915588
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.16419100761413574
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.11495109647512436
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.11311177909374237
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.006544545292854309
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0023566216696053743
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.002148458966985345
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0009921373566612601
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 4.1266499465564266e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_circle_14.1",
+      "probe_s": 14.1,
+      "note": "模式切换：约14.1s板→实拍",
+      "local_peak": {
+        "t_s": 13.725895691609978,
+        "flux": 1.3229224681854248,
+        "flux_hi": 1.1219571828842163,
+        "flux_mid": 0.48787614703178406,
+        "flux_lo": 0.022613130509853363,
+        "offset_from_probe_s": -0.37410430839002196
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.7652037143707275,
+        0.1177469789981842,
+        0.2642171382904053,
+        0.17029696702957153
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        13.685895691609977,
+        13.885895691609978
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -9.603135904775058,
+      "rms_dbfs_pre_bed_850ms": -9.255723936663637,
+      "sfx_minus_bed_db": -0.3474119681114214,
+      "centroid_hz_200ms": 715.3164141664936,
+      "e_frac_lt250": 0.11466182896900526,
+      "e_frac_800_6k": 0.1103799117160805,
+      "e_frac_gt3k": 0.03817426223556245,
+      "e_frac_gt8k": 0.003672301630337781,
+      "env_dur_20pct_s": 0.1279591836734694,
+      "vis_locked_rms_dbfs_200ms": -9.823264445784622,
+      "vis_locked_centroid_hz": 559.7465055987496,
+      "asr": {
+        "mid_word": "直接",
+        "mid_word_interval": [
+          13.5,
+          13.76
+        ],
+        "nearby": [
+          {
+            "word": "法",
+            "start": 13.36,
+            "end": 13.5
+          },
+          {
+            "word": "直接",
+            "start": 13.5,
+            "end": 13.76
+          },
+          {
+            "word": "抢",
+            "start": 13.76,
+            "end": 13.98
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "下",
+        "mid_word_interval": [
+          13.98,
+          14.14
+        ],
+        "nearby": [
+          {
+            "word": "抢",
+            "start": 13.76,
+            "end": 13.98
+          },
+          {
+            "word": "下",
+            "start": 13.98,
+            "end": 14.14
+          },
+          {
+            "word": "球，",
+            "start": 14.14,
+            "end": 14.36
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.91323431837901,
+      "local_peak_flux_hi_percentile": 99.97958454550094,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_circle_14.1_peak13.726_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_circle_14.1_visual14.100_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.38307055830955505
+        },
+        {
+          "label": "background music",
+          "score": 0.21259251236915588
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.16419100761413574
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.11495109647512436
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.11311177909374237
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.006544545292854309
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0023566216696053743
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.002148458966985345
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0009921373566612601
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 4.1266499465564266e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_21",
+      "probe_s": 21.0,
+      "note": "视觉锚：约21s切换",
+      "local_peak": {
+        "t_s": 21.26657596371882,
+        "flux": 1.529231309890747,
+        "flux_hi": 0.805342435836792,
+        "flux_mid": 0.8466695547103882,
+        "flux_lo": 0.038663845509290695,
+        "offset_from_probe_s": 0.26657596371882164
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.334339439868927,
+        0.12201642245054245,
+        0.12668456137180328,
+        0.09907272458076477
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        21.226575963718822,
+        21.426575963718822
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.123604184894313,
+      "rms_dbfs_pre_bed_850ms": -10.606163093332114,
+      "sfx_minus_bed_db": 2.4825589084378006,
+      "centroid_hz_200ms": 369.906184710488,
+      "e_frac_lt250": 0.8487883953144639,
+      "e_frac_800_6k": 0.04596564407484523,
+      "e_frac_gt3k": 0.026743050942595513,
+      "e_frac_gt8k": 0.007933979800993368,
+      "env_dur_20pct_s": 0.002857142857142857,
+      "vis_locked_rms_dbfs_200ms": -11.460924095151473,
+      "vis_locked_centroid_hz": 673.0270139620736,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "作",
+            "start": 21.32,
+            "end": 21.44
+          },
+          {
+            "word": "为",
+            "start": 21.44,
+            "end": 21.56
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "权，",
+            "start": 20.68,
+            "end": 20.92
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.98979227275048,
+      "local_peak_flux_hi_percentile": 99.65293727351605,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_21_peak21.267_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_21_visual21.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.7069911956787109
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.17238757014274597
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.06984656304121017
+        },
+        {
+          "label": "background music",
+          "score": 0.03433067724108696
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.007147309836000204
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.006621389649808407
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.001466480316594243
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.000787540222518146
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0004008018004242331
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.049182148766704e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_21.6",
+      "probe_s": 21.6,
+      "note": "模式切换：约21.6s入板",
+      "local_peak": {
+        "t_s": 21.26657596371882,
+        "flux": 1.529231309890747,
+        "flux_hi": 0.805342435836792,
+        "flux_mid": 0.8466695547103882,
+        "flux_lo": 0.038663845509290695,
+        "offset_from_probe_s": -0.3334240362811798
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.5762730836868286,
+        0.176658496260643,
+        0.3578508496284485,
+        0.1333966702222824
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        21.226575963718822,
+        21.426575963718822
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.123604184894313,
+      "rms_dbfs_pre_bed_850ms": -10.606163093332114,
+      "sfx_minus_bed_db": 2.4825589084378006,
+      "centroid_hz_200ms": 369.906184710488,
+      "e_frac_lt250": 0.8487883953144639,
+      "e_frac_800_6k": 0.04596564407484523,
+      "e_frac_gt3k": 0.026743050942595513,
+      "e_frac_gt8k": 0.007933979800993368,
+      "env_dur_20pct_s": 0.002857142857142857,
+      "vis_locked_rms_dbfs_200ms": -9.466356725171394,
+      "vis_locked_centroid_hz": 1073.9612312946467,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "作",
+            "start": 21.32,
+            "end": 21.44
+          },
+          {
+            "word": "为",
+            "start": 21.44,
+            "end": 21.56
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": "后",
+        "mid_word_interval": [
+          21.56,
+          21.76
+        ],
+        "nearby": [
+          {
+            "word": "为",
+            "start": 21.44,
+            "end": 21.56
+          },
+          {
+            "word": "后",
+            "start": 21.56,
+            "end": 21.76
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.98979227275048,
+      "local_peak_flux_hi_percentile": 99.65293727351605,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_21.6_peak21.267_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_21.6_visual21.600_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.7069911956787109
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.17238757014274597
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.06984656304121017
+        },
+        {
+          "label": "background music",
+          "score": 0.03433067724108696
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.007147309836000204
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.006621389649808407
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.001466480316594243
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.000787540222518146
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0004008018004242331
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.049182148766704e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_redzone_25",
+      "probe_s": 25.0,
+      "note": "视觉锚：约25s红防守区域",
+      "local_peak": {
+        "t_s": 25.289433106575963,
+        "flux": 0.9804202318191528,
+        "flux_hi": 0.04976721480488777,
+        "flux_mid": 0.2989051640033722,
+        "flux_lo": 0.24104535579681396,
+        "offset_from_probe_s": 0.289433106575963
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.4199012219905853,
+        0.2882581949234009,
+        0.16922083497047424,
+        0.04411071538925171
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        25.249433106575964,
+        25.449433106575963
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -9.2439497754015,
+      "rms_dbfs_pre_bed_850ms": -10.63884445274921,
+      "sfx_minus_bed_db": 1.3948946773477093,
+      "centroid_hz_200ms": 816.6973266782845,
+      "e_frac_lt250": 0.07139926677302194,
+      "e_frac_800_6k": 0.5486921663707043,
+      "e_frac_gt3k": 0.002582428225475355,
+      "e_frac_gt8k": 0.0009353513606354768,
+      "env_dur_20pct_s": 0.004671201814058957,
+      "vis_locked_rms_dbfs_200ms": -12.346853011346164,
+      "vis_locked_centroid_hz": 380.70069647677457,
+      "asr": {
+        "mid_word": "法",
+        "mid_word_interval": [
+          25.2,
+          25.38
+        ],
+        "nearby": [
+          {
+            "word": "法",
+            "start": 25.2,
+            "end": 25.38
+          },
+          {
+            "word": "国",
+            "start": 25.38,
+            "end": 25.54
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "点，",
+            "start": 24.78,
+            "end": 24.96
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.29056295615781,
+      "local_peak_flux_hi_percentile": 26.616648803143978,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_redzone_25_peak25.289_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_redzone_25_visual25.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.4080595374107361
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.2840791344642639
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.18692824244499207
+        },
+        {
+          "label": "background music",
+          "score": 0.07295222580432892
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.033160366117954254
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.009308683685958385
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.003299336414784193
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0011950804619118571
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0010049614356830716
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 1.2463449820643291e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_passline_27",
+      "probe_s": 27.0,
+      "note": "视觉锚：约27s传球线画出",
+      "local_peak": {
+        "t_s": 26.862585034013605,
+        "flux": 1.2914564609527588,
+        "flux_hi": 1.0351464748382568,
+        "flux_mid": 0.8024201393127441,
+        "flux_lo": 0.05882375314831734,
+        "offset_from_probe_s": -0.13741496598639458
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.8384353518486023,
+        0.6502978205680847,
+        0.5078063607215881,
+        0.06433936953544617
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        26.822585034013606,
+        27.022585034013606
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.547436829247829,
+      "rms_dbfs_pre_bed_850ms": -10.016156776972057,
+      "sfx_minus_bed_db": 1.468719947724228,
+      "centroid_hz_200ms": 699.8682031249753,
+      "e_frac_lt250": 0.1302263870941574,
+      "e_frac_800_6k": 0.13025749500613928,
+      "e_frac_gt3k": 0.04806112734288081,
+      "e_frac_gt8k": 0.0031876403063977226,
+      "env_dur_20pct_s": 0.0009523809523809524,
+      "vis_locked_rms_dbfs_200ms": -8.410247180418178,
+      "vis_locked_centroid_hz": 905.815005763361,
+      "asr": {
+        "mid_word": "这",
+        "mid_word_interval": [
+          26.68,
+          26.96
+        ],
+        "nearby": [
+          {
+            "word": "这",
+            "start": 26.68,
+            "end": 26.96
+          },
+          {
+            "word": "时",
+            "start": 26.96,
+            "end": 27.06
+          },
+          {
+            "word": "把",
+            "start": 27.06,
+            "end": 27.2
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "时",
+        "mid_word_interval": [
+          26.96,
+          27.06
+        ],
+        "nearby": [
+          {
+            "word": "这",
+            "start": 26.68,
+            "end": 26.96
+          },
+          {
+            "word": "时",
+            "start": 26.96,
+            "end": 27.06
+          },
+          {
+            "word": "把",
+            "start": 27.06,
+            "end": 27.2
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.89792272750472,
+      "local_peak_flux_hi_percentile": 99.93875363650282,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_passline_27_peak26.863_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_passline_27_visual27.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.36341774463653564
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.3538374900817871
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.2675010859966278
+        },
+        {
+          "label": "background music",
+          "score": 0.005392820108681917
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.005019513890147209
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.0025482820346951485
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.001042915042489767
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0008024128619581461
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.00035292853135615587
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 8.485706348437816e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T01",
+      "probe_s": 7.536,
+      "note": "既有通谱通量峰 T01",
+      "local_peak": {
+        "t_s": 7.531972789115646,
+        "flux": 1.4291614294052124,
+        "flux_hi": 0.7973872423171997,
+        "flux_mid": 0.7639965415000916,
+        "flux_lo": 0.01061311736702919,
+        "offset_from_probe_s": -0.004027210884353316
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.4291614294052124,
+        0.7973872423171997,
+        0.7639965415000916,
+        0.21497517824172974
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        7.491972789115646,
+        7.691972789115646
+      ],
+      "peak_dbfs_200ms": -1.9931775843475261,
+      "rms_dbfs_200ms": -11.52084370920836,
+      "rms_dbfs_pre_bed_850ms": -10.622915363796498,
+      "sfx_minus_bed_db": -0.897928345411863,
+      "centroid_hz_200ms": 194.07677555522767,
+      "e_frac_lt250": 0.9656593034864549,
+      "e_frac_800_6k": 0.014041067845127065,
+      "e_frac_gt3k": 0.011978760362468198,
+      "e_frac_gt8k": 0.0031533302355001617,
+      "env_dur_20pct_s": 0.001836734693877551,
+      "vis_locked_rms_dbfs_200ms": -11.477084422938226,
+      "vis_locked_centroid_hz": 179.72976385235523,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "近，",
+            "start": 7.26,
+            "end": 7.5
+          },
+          {
+            "word": "作",
+            "start": 7.7,
+            "end": 7.84
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "近，",
+            "start": 7.26,
+            "end": 7.5
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.97958454550094,
+      "local_peak_flux_hi_percentile": 99.61210636451794,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T01_peak7.532_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T01_visual7.536_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.5862127542495728
+        },
+        {
+          "label": "background music",
+          "score": 0.23968958854675293
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.13512369990348816
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.015345497988164425
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.014301933348178864
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.005820530466735363
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0025896893348544836
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0005182031309232116
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0003565180813893676
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 4.163615085417405e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T02",
+      "probe_s": 17.616,
+      "note": "既有通谱通量峰 T02",
+      "local_peak": {
+        "t_s": 17.615238095238098,
+        "flux": 1.3958556652069092,
+        "flux_hi": 1.0705029964447021,
+        "flux_mid": 0.6474456191062927,
+        "flux_lo": 0.01394620817154646,
+        "offset_from_probe_s": -0.0007619047619016328
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.3958556652069092,
+        1.0705029964447021,
+        0.6474456191062927,
+        0.11023484170436859
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        17.575238095238095,
+        17.775238095238095
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -11.013888097051073,
+      "rms_dbfs_pre_bed_850ms": -8.497815976146798,
+      "sfx_minus_bed_db": -2.5160721209042745,
+      "centroid_hz_200ms": 1692.1302972515,
+      "e_frac_lt250": 0.3476424994229712,
+      "e_frac_800_6k": 0.39967015905472486,
+      "e_frac_gt3k": 0.22119929348260653,
+      "e_frac_gt8k": 0.01246311530645945,
+      "env_dur_20pct_s": 0.0009070294784580499,
+      "vis_locked_rms_dbfs_200ms": -11.008815197661608,
+      "vis_locked_centroid_hz": 1664.4704527532222,
+      "asr": {
+        "mid_word": "机",
+        "mid_word_interval": [
+          17.56,
+          17.72
+        ],
+        "nearby": [
+          {
+            "word": "友",
+            "start": 17.24,
+            "end": 17.4
+          },
+          {
+            "word": "有",
+            "start": 17.4,
+            "end": 17.56
+          },
+          {
+            "word": "机",
+            "start": 17.56,
+            "end": 17.72
+          },
+          {
+            "word": "会",
+            "start": 17.72,
+            "end": 17.86
+          },
+          {
+            "word": "争",
+            "start": 17.86,
+            "end": 18.02
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "机",
+        "mid_word_interval": [
+          17.56,
+          17.72
+        ],
+        "nearby": [
+          {
+            "word": "有",
+            "start": 17.4,
+            "end": 17.56
+          },
+          {
+            "word": "机",
+            "start": 17.56,
+            "end": 17.72
+          },
+          {
+            "word": "会",
+            "start": 17.72,
+            "end": 17.86
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.94896136375236,
+      "local_peak_flux_hi_percentile": 99.96427295462665,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T02_peak17.615_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T02_visual17.616_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.5600526332855225
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.1789887249469757
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.1044381707906723
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.07263593375682831
+        },
+        {
+          "label": "background music",
+          "score": 0.06632370501756668
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.011603690683841705
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.00333024887368083
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0021688679698854685
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.00043628024286590517
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.1766983991255984e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T03",
+      "probe_s": 22.886,
+      "note": "既有通谱通量峰 T03",
+      "local_peak": {
+        "t_s": 22.886167800453514,
+        "flux": 1.1043936014175415,
+        "flux_hi": 0.5774157047271729,
+        "flux_mid": 0.5369451642036438,
+        "flux_lo": 0.02691967971622944,
+        "offset_from_probe_s": 0.00016780045351438844
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.1043936014175415,
+        0.5774157047271729,
+        0.5369451642036438,
+        0.15209099650382996
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        22.846167800453514,
+        23.046167800453514
+      ],
+      "peak_dbfs_200ms": -2.0638208212316216,
+      "rms_dbfs_200ms": -11.712751165067896,
+      "rms_dbfs_pre_bed_850ms": -9.633499461454218,
+      "sfx_minus_bed_db": -2.0792517036136786,
+      "centroid_hz_200ms": 400.05918566443717,
+      "e_frac_lt250": 0.8306951378220924,
+      "e_frac_800_6k": 0.05326635993982135,
+      "e_frac_gt3k": 0.038734805251637125,
+      "e_frac_gt8k": 0.007403275716732968,
+      "env_dur_20pct_s": 0.0018140589569160999,
+      "vis_locked_rms_dbfs_200ms": -11.71541859146041,
+      "vis_locked_centroid_hz": 400.6235911602824,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "员，",
+            "start": 22.5,
+            "end": 22.7
+          },
+          {
+            "word": "你要",
+            "start": 22.98,
+            "end": 23.22
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "你要",
+            "start": 22.98,
+            "end": 23.22
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.66824886439034,
+      "local_peak_flux_hi_percentile": 98.01459704996682,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T03_peak22.886_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T03_visual22.886_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.3714407682418823
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.2700100839138031
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.16714759171009064
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.11826755851507187
+        },
+        {
+          "label": "background music",
+          "score": 0.05260047689080238
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.01534130610525608
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.001939282868988812
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0017123841680586338
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0015195708256214857
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.0972096535842866e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T04",
+      "probe_s": 27.726,
+      "note": "既有通谱通量峰 T04",
+      "local_peak": {
+        "t_s": 27.7275283446712,
+        "flux": 1.0642762184143066,
+        "flux_hi": 0.7563985586166382,
+        "flux_mid": 0.6362045407295227,
+        "flux_lo": 0.021756893023848534,
+        "offset_from_probe_s": 0.0015283446712004434
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.0642762184143066,
+        0.7563985586166382,
+        0.6362045407295227,
+        0.1270555704832077
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        27.6875283446712,
+        27.887528344671203
+      ],
+      "peak_dbfs_200ms": -0.01870773021527392,
+      "rms_dbfs_200ms": -8.487344149773833,
+      "rms_dbfs_pre_bed_850ms": -8.860187056745373,
+      "sfx_minus_bed_db": 0.37284290697154,
+      "centroid_hz_200ms": 414.5475951336648,
+      "e_frac_lt250": 0.0638555919885143,
+      "e_frac_800_6k": 0.05458165165460454,
+      "e_frac_gt3k": 0.015083904645028822,
+      "e_frac_gt8k": 0.001301089372491897,
+      "env_dur_20pct_s": 0.0035374149659863946,
+      "vis_locked_rms_dbfs_200ms": -8.495688520541918,
+      "vis_locked_centroid_hz": 421.7778606953093,
+      "asr": {
+        "mid_word": "中",
+        "mid_word_interval": [
+          27.66,
+          27.86
+        ],
+        "nearby": [
+          {
+            "word": "送",
+            "start": 27.36,
+            "end": 27.54
+          },
+          {
+            "word": "到",
+            "start": 27.54,
+            "end": 27.66
+          },
+          {
+            "word": "中",
+            "start": 27.66,
+            "end": 27.86
+          },
+          {
+            "word": "场，",
+            "start": 27.86,
+            "end": 28.06
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "中",
+        "mid_word_interval": [
+          27.66,
+          27.86
+        ],
+        "nearby": [
+          {
+            "word": "到",
+            "start": 27.54,
+            "end": 27.66
+          },
+          {
+            "word": "中",
+            "start": 27.66,
+            "end": 27.86
+          },
+          {
+            "word": "场，",
+            "start": 27.86,
+            "end": 28.06
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.58148318276936,
+      "local_peak_flux_hi_percentile": 99.44367886490073,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T04_peak27.728_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T04_visual27.726_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.3691754937171936
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.3527218699455261
+        },
+        {
+          "label": "background music",
+          "score": 0.12695395946502686
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.10538889467716217
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.03197493404150009
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.008986338973045349
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0020198957063257694
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0016205154825001955
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0011353027075529099
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.283147296111565e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_30",
+      "probe_s": 30.0,
+      "note": "视觉锚：约30s切换",
+      "local_peak": {
+        "t_s": 30.357188208616783,
+        "flux": 0.9050338268280029,
+        "flux_hi": 0.45134153962135315,
+        "flux_mid": 0.45862478017807007,
+        "flux_lo": 0.03542863577604294,
+        "offset_from_probe_s": 0.35718820861678324
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.7277024984359741,
+        0.5039206743240356,
+        0.3682279586791992,
+        0.14722415804862976
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        30.31718820861678,
+        30.51718820861678
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -10.245586239802606,
+      "rms_dbfs_pre_bed_850ms": -11.061600885717148,
+      "sfx_minus_bed_db": 0.8160146459145423,
+      "centroid_hz_200ms": 1386.6852020101512,
+      "e_frac_lt250": 0.37072284937047245,
+      "e_frac_800_6k": 0.4287141943453643,
+      "e_frac_gt3k": 0.08750071609605624,
+      "e_frac_gt8k": 0.01935249652362424,
+      "env_dur_20pct_s": 0.006462585034013605,
+      "vis_locked_rms_dbfs_200ms": -11.518862269931418,
+      "vis_locked_centroid_hz": 839.4570968680688,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "差，",
+            "start": 29.84,
+            "end": 30.12
+          },
+          {
+            "word": "莫",
+            "start": 30.4,
+            "end": 30.6
+          },
+          {
+            "word": "莉",
+            "start": 30.6,
+            "end": 30.72
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": "差，",
+        "mid_word_interval": [
+          29.84,
+          30.12
+        ],
+        "nearby": [
+          {
+            "word": "差，",
+            "start": 29.84,
+            "end": 30.12
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 98.79038432093094,
+      "local_peak_flux_hi_percentile": 95.71785841882306,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_30_peak30.357_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_30_visual30.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "background music",
+          "score": 0.3186611831188202
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.27372807264328003
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.2342798262834549
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.08171636611223221
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.05816866084933281
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.01761104352772236
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.013778679072856903
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0011875126510858536
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0007374098640866578
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.00013126946578267962
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_31.6",
+      "probe_s": 31.6,
+      "note": "模式切换：约31.6s板→实拍",
+      "local_peak": {
+        "t_s": 31.773605442176873,
+        "flux": 0.9476040005683899,
+        "flux_hi": 0.5189836025238037,
+        "flux_mid": 0.49754801392555237,
+        "flux_lo": 0.01484079658985138,
+        "offset_from_probe_s": 0.17360544217687135
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.6698645353317261,
+        0.3701815903186798,
+        0.22216777503490448,
+        0.1591818779706955
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        31.73360544217687,
+        31.93360544217687
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -8.314261267788648,
+      "rms_dbfs_pre_bed_850ms": -9.48987922942888,
+      "sfx_minus_bed_db": 1.1756179616402314,
+      "centroid_hz_200ms": 319.5372670558276,
+      "e_frac_lt250": 0.773682166996911,
+      "e_frac_800_6k": 0.07401426506504905,
+      "e_frac_gt3k": 0.013906360361769824,
+      "e_frac_gt8k": 0.00212815326032669,
+      "env_dur_20pct_s": 0.008276643990929705,
+      "vis_locked_rms_dbfs_200ms": -8.858129752507761,
+      "vis_locked_centroid_hz": 616.1393265883349,
+      "asr": {
+        "mid_word": "特，",
+        "mid_word_interval": [
+          31.76,
+          31.9
+        ],
+        "nearby": [
+          {
+            "word": "丽",
+            "start": 31.48,
+            "end": 31.6
+          },
+          {
+            "word": "斯",
+            "start": 31.6,
+            "end": 31.76
+          },
+          {
+            "word": "特，",
+            "start": 31.76,
+            "end": 31.9
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "卡",
+            "start": 31.36,
+            "end": 31.48
+          },
+          {
+            "word": "丽",
+            "start": 31.48,
+            "end": 31.6
+          },
+          {
+            "word": "斯",
+            "start": 31.6,
+            "end": 31.76
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.10172000204155,
+      "local_peak_flux_hi_percentile": 97.12652477925789,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_31.6_peak31.774_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_31.6_visual31.600_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "background music",
+          "score": 0.5505219101905823
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.1395663172006607
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.13886278867721558
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.1158745214343071
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.03634949401021004
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.010619986802339554
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0042709060944616795
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0021248022094368935
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0017571873031556606
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 5.209472874412313e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T05",
+      "probe_s": 42.276,
+      "note": "既有通谱通量峰 T05",
+      "local_peak": {
+        "t_s": 42.269024943310654,
+        "flux": 1.1656162738800049,
+        "flux_hi": 0.9778655171394348,
+        "flux_mid": 0.6393194794654846,
+        "flux_lo": 0.012790326029062271,
+        "offset_from_probe_s": -0.006975056689348946
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.1656162738800049,
+        0.9778655171394348,
+        0.6393194794654846,
+        0.23727798461914062
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        42.229024943310655,
+        42.42900226757369
+      ],
+      "peak_dbfs_200ms": -0.19433530347651176,
+      "rms_dbfs_200ms": -8.129330925478447,
+      "rms_dbfs_pre_bed_850ms": -9.790234352884635,
+      "sfx_minus_bed_db": 1.660903427406188,
+      "centroid_hz_200ms": 489.9817351263442,
+      "e_frac_lt250": 0.42952694006645925,
+      "e_frac_800_6k": 0.05589395881865087,
+      "e_frac_gt3k": 0.03169864455048882,
+      "e_frac_gt8k": 0.0017304279395685014,
+      "env_dur_20pct_s": 0.04108843537414966,
+      "vis_locked_rms_dbfs_200ms": -8.4181895868136,
+      "vis_locked_centroid_hz": 449.0254724610361,
+      "asr": {
+        "mid_word": "球",
+        "mid_word_interval": [
+          42.2,
+          42.38
+        ],
+        "nearby": [
+          {
+            "word": " 传",
+            "start": 42.08,
+            "end": 42.2
+          },
+          {
+            "word": "球",
+            "start": 42.2,
+            "end": 42.38
+          },
+          {
+            "word": "之",
+            "start": 42.38,
+            "end": 42.54
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "球",
+        "mid_word_interval": [
+          42.2,
+          42.38
+        ],
+        "nearby": [
+          {
+            "word": " 传",
+            "start": 42.08,
+            "end": 42.2
+          },
+          {
+            "word": "球",
+            "start": 42.2,
+            "end": 42.38
+          },
+          {
+            "word": "之",
+            "start": 42.38,
+            "end": 42.54
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.76522227326086,
+      "local_peak_flux_hi_percentile": 99.90813045475426,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T05_peak42.269_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T05_visual42.276_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.40488189458847046
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.3140280246734619
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.25658050179481506
+        },
+        {
+          "label": "background music",
+          "score": 0.0077341049909591675
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.007005886174738407
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0039504459127783775
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.002784846816211939
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.0020857418421655893
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0008470249595120549
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.00010156552889384329
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_46",
+      "probe_s": 46.0,
+      "note": "视觉锚：约46s切换",
+      "local_peak": {
+        "t_s": 45.81587301587302,
+        "flux": 1.0426002740859985,
+        "flux_hi": 0.9040282964706421,
+        "flux_mid": 0.6028851866722107,
+        "flux_lo": 0.06495215743780136,
+        "offset_from_probe_s": -0.18412698412698347
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.5659206509590149,
+        0.17270609736442566,
+        0.15383568406105042,
+        0.22896511852741241
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        45.77587301587302,
+        45.975850340136056
+      ],
+      "peak_dbfs_200ms": -0.25581414010297154,
+      "rms_dbfs_200ms": -9.621672482598925,
+      "rms_dbfs_pre_bed_850ms": -9.881215640246399,
+      "sfx_minus_bed_db": 0.2595431576474745,
+      "centroid_hz_200ms": 702.1361271798772,
+      "e_frac_lt250": 0.5409602630231999,
+      "e_frac_800_6k": 0.09526790412261463,
+      "e_frac_gt3k": 0.0876373818442302,
+      "e_frac_gt8k": 0.005386039638072963,
+      "env_dur_20pct_s": 0.0025396825396825397,
+      "vis_locked_rms_dbfs_200ms": -9.391013882735532,
+      "vis_locked_centroid_hz": 314.424713934176,
+      "asr": {
+        "mid_word": "进",
+        "mid_word_interval": [
+          45.7,
+          45.92
+        ],
+        "nearby": [
+          {
+            "word": "一次",
+            "start": 45.46,
+            "end": 45.7
+          },
+          {
+            "word": "进",
+            "start": 45.7,
+            "end": 45.92
+          },
+          {
+            "word": "攻",
+            "start": 45.92,
+            "end": 46.08
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "攻",
+        "mid_word_interval": [
+          45.92,
+          46.08
+        ],
+        "nearby": [
+          {
+            "word": "进",
+            "start": 45.7,
+            "end": 45.92
+          },
+          {
+            "word": "攻",
+            "start": 45.92,
+            "end": 46.08
+          },
+          {
+            "word": "的",
+            "start": 46.08,
+            "end": 46.2
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.52023681927218,
+      "local_peak_flux_hi_percentile": 99.83667636400754,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_46_peak45.816_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_46_visual46.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.7795243263244629
+        },
+        {
+          "label": "background music",
+          "score": 0.0835803970694542
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.05416501685976982
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.050352148711681366
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.01859036646783352
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.00788798090070486
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0033673972357064486
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0016688863979652524
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0008525996818207204
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 1.1008889487129636e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_cut_47.3",
+      "probe_s": 47.3,
+      "note": "模式切换：约47.3s入板",
+      "local_peak": {
+        "t_s": 46.99428571428571,
+        "flux": 0.9374094605445862,
+        "flux_hi": 0.2950630187988281,
+        "flux_mid": 0.3069740831851959,
+        "flux_lo": 0.2278832495212555,
+        "offset_from_probe_s": -0.3057142857142878
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.6882413625717163,
+        0.4017799496650696,
+        0.31739962100982666,
+        0.08455689251422882
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        46.95426303854875,
+        47.154263038548756
+      ],
+      "peak_dbfs_200ms": -0.00026507636037961915,
+      "rms_dbfs_200ms": -7.698758975530755,
+      "rms_dbfs_pre_bed_850ms": -10.632395708791284,
+      "sfx_minus_bed_db": 2.9336367332605295,
+      "centroid_hz_200ms": 500.9059197454472,
+      "e_frac_lt250": 0.49616261468501766,
+      "e_frac_800_6k": 0.10180608633051769,
+      "e_frac_gt3k": 0.014672128678851612,
+      "e_frac_gt8k": 0.004681785018136278,
+      "env_dur_20pct_s": 0.018752834467120182,
+      "vis_locked_rms_dbfs_200ms": -10.664858850579018,
+      "vis_locked_centroid_hz": 1449.4339398114353,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "再",
+            "start": 47.02,
+            "end": 47.1
+          },
+          {
+            "word": "把",
+            "start": 47.1,
+            "end": 47.26
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": "自己",
+        "mid_word_interval": [
+          47.26,
+          47.5
+        ],
+        "nearby": [
+          {
+            "word": "把",
+            "start": 47.1,
+            "end": 47.26
+          },
+          {
+            "word": "自己",
+            "start": 47.26,
+            "end": 47.5
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.00474659317103,
+      "local_peak_flux_hi_percentile": 89.7667534323483,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_47.3_peak46.994_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_cut_47.3_visual47.300_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.9058047533035278
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.06290952861309052
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.013472807593643665
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.007500645238906145
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.003432953730225563
+        },
+        {
+          "label": "background music",
+          "score": 0.0032797171734273434
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.0024880070704966784
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0007231635390780866
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0003366332675796002
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 5.187603528611362e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_encircle_51",
+      "probe_s": 51.0,
+      "note": "视觉锚：约51s包围连线",
+      "local_peak": {
+        "t_s": 50.744308390022674,
+        "flux": 1.2579833269119263,
+        "flux_hi": 0.8531186580657959,
+        "flux_mid": 0.6085991859436035,
+        "flux_lo": 0.02391151338815689,
+        "offset_from_probe_s": -0.2556916099773261
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.3574957549571991,
+        0.22987176477909088,
+        0.19161999225616455,
+        0.061826374381780624
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        50.704308390022675,
+        50.90430839002268
+      ],
+      "peak_dbfs_200ms": -0.6873156628925614,
+      "rms_dbfs_200ms": -10.046534232756802,
+      "rms_dbfs_pre_bed_850ms": -10.2797297979854,
+      "sfx_minus_bed_db": 0.2331955652285984,
+      "centroid_hz_200ms": 859.0945726520655,
+      "e_frac_lt250": 0.7152084532439942,
+      "e_frac_800_6k": 0.14016355792199003,
+      "e_frac_gt3k": 0.09165156433830936,
+      "e_frac_gt8k": 0.020169944934624436,
+      "env_dur_20pct_s": 0.008571428571428572,
+      "vis_locked_rms_dbfs_200ms": -8.045281220270248,
+      "vis_locked_centroid_hz": 1312.508784702053,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.8877150002552,
+      "local_peak_flux_hi_percentile": 99.76522227326086,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_encircle_51_peak50.744_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_encircle_51_visual51.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.3729059398174286
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.2579558193683624
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.23772604763507843
+        },
+        {
+          "label": "background music",
+          "score": 0.07419513165950775
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.03220313787460327
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.015982789918780327
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.008138049393892288
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.000378140015527606
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.00033926006290130317
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.00017566588940098882
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T06",
+      "probe_s": 52.786,
+      "note": "既有通谱通量峰 T06",
+      "local_peak": {
+        "t_s": 52.78185941043084,
+        "flux": 1.5102951526641846,
+        "flux_hi": 0.7621501684188843,
+        "flux_mid": 0.8816592693328857,
+        "flux_lo": 0.02625289373099804,
+        "offset_from_probe_s": -0.0041405895691610795
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.5102951526641846,
+        0.7621501684188843,
+        0.8816592693328857,
+        0.15522058308124542
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        52.74185941043084,
+        52.94185941043084
+      ],
+      "peak_dbfs_200ms": -0.2681076216472907,
+      "rms_dbfs_200ms": -9.236071708752256,
+      "rms_dbfs_pre_bed_850ms": -9.251211662987116,
+      "sfx_minus_bed_db": 0.015139954234859587,
+      "centroid_hz_200ms": 729.1006196353453,
+      "e_frac_lt250": 0.6941804213556156,
+      "e_frac_800_6k": 0.08336912563000035,
+      "e_frac_gt3k": 0.0749683276038114,
+      "e_frac_gt8k": 0.017865528699853857,
+      "env_dur_20pct_s": 0.0005442176870748299,
+      "vis_locked_rms_dbfs_200ms": -9.069296799751944,
+      "vis_locked_centroid_hz": 733.2791028860669,
+      "asr": {
+        "mid_word": "你",
+        "mid_word_interval": [
+          52.66,
+          52.98
+        ],
+        "nearby": [
+          {
+            "word": "你",
+            "start": 52.66,
+            "end": 52.98
+          },
+          {
+            "word": "需要",
+            "start": 52.98,
+            "end": 53.16
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "你",
+        "mid_word_interval": [
+          52.66,
+          52.98
+        ],
+        "nearby": [
+          {
+            "word": "你",
+            "start": 52.66,
+            "end": 52.98
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.98468840912571,
+      "local_peak_flux_hi_percentile": 99.47430204664931,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T06_peak52.782_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T06_visual52.786_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.5400470495223999
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.33974388241767883
+        },
+        {
+          "label": "background music",
+          "score": 0.055034976452589035
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.02741379477083683
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.017078638076782227
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.014655055478215218
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.005431939382106066
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0004286962794139981
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0001270767825189978
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 3.894021574524231e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T07",
+      "probe_s": 56.826,
+      "note": "既有通谱通量峰 T07",
+      "local_peak": {
+        "t_s": 56.82213151927438,
+        "flux": 1.410727620124817,
+        "flux_hi": 0.638708770275116,
+        "flux_mid": 0.8420883417129517,
+        "flux_lo": 0.06755071133375168,
+        "offset_from_probe_s": -0.003868480725621737
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.410727620124817,
+        0.638708770275116,
+        0.8420883417129517,
+        0.17371445894241333
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        56.78213151927438,
+        56.982131519274375
+      ],
+      "peak_dbfs_200ms": -0.48288565477551804,
+      "rms_dbfs_200ms": -11.835194214183979,
+      "rms_dbfs_pre_bed_850ms": -10.781133912441812,
+      "sfx_minus_bed_db": -1.054060301742167,
+      "centroid_hz_200ms": 692.5837929929103,
+      "e_frac_lt250": 0.7062459989515524,
+      "e_frac_800_6k": 0.18803305851975974,
+      "e_frac_gt3k": 0.05189150258575216,
+      "e_frac_gt8k": 0.008994826053638836,
+      "env_dur_20pct_s": 0.0017687074829931973,
+      "vis_locked_rms_dbfs_200ms": -11.780693624156385,
+      "vis_locked_centroid_hz": 673.3186806607664,
+      "asr": {
+        "mid_word": "择，",
+        "mid_word_interval": [
+          56.8,
+          56.96
+        ],
+        "nearby": [
+          {
+            "word": "最",
+            "start": 56.56,
+            "end": 56.64
+          },
+          {
+            "word": "好的",
+            "start": 56.64,
+            "end": 56.64
+          },
+          {
+            "word": "选",
+            "start": 56.64,
+            "end": 56.8
+          },
+          {
+            "word": "择，",
+            "start": 56.8,
+            "end": 56.96
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "择，",
+        "mid_word_interval": [
+          56.8,
+          56.96
+        ],
+        "nearby": [
+          {
+            "word": "选",
+            "start": 56.64,
+            "end": 56.8
+          },
+          {
+            "word": "择，",
+            "start": 56.8,
+            "end": 56.96
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.96937681825142,
+      "local_peak_flux_hi_percentile": 98.72403409380901,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T07_peak56.822_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T07_visual56.826_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.7150066494941711
+        },
+        {
+          "label": "background music",
+          "score": 0.10657070577144623
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.09860523045063019
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.02694174274802208
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.020432837307453156
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.017895864322781563
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.013543209061026573
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0007365711499005556
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.00020571824279613793
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 6.144081271486357e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T08",
+      "probe_s": 65.506,
+      "note": "既有通谱通量峰 T08",
+      "local_peak": {
+        "t_s": 65.50639455782313,
+        "flux": 1.765335202217102,
+        "flux_hi": 0.997234046459198,
+        "flux_mid": 1.0672502517700195,
+        "flux_lo": 0.033146291971206665,
+        "offset_from_probe_s": 0.0003945578231281388
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.765335202217102,
+        0.997234046459198,
+        1.0672502517700195,
+        0.18962019681930542
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        65.46637188208616,
+        65.66639455782312
+      ],
+      "peak_dbfs_200ms": -0.14689235796938,
+      "rms_dbfs_200ms": -8.38902602595595,
+      "rms_dbfs_pre_bed_850ms": -9.870523276145239,
+      "sfx_minus_bed_db": 1.481497250189289,
+      "centroid_hz_200ms": 389.7977246146599,
+      "e_frac_lt250": 0.701307518135845,
+      "e_frac_800_6k": 0.10139320165374596,
+      "e_frac_gt3k": 0.018440569621413275,
+      "e_frac_gt8k": 0.0031500290858512948,
+      "env_dur_20pct_s": 0.0031746031746031746,
+      "vis_locked_rms_dbfs_200ms": -8.396810875461028,
+      "vis_locked_centroid_hz": 392.1392666344317,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "员，",
+            "start": 65.14,
+            "end": 65.32
+          },
+          {
+            "word": "你",
+            "start": 65.54,
+            "end": 65.72
+          },
+          {
+            "word": "该",
+            "start": 65.72,
+            "end": 65.88
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "你",
+            "start": 65.54,
+            "end": 65.72
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 100.0,
+      "local_peak_flux_hi_percentile": 99.92344204562855,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T08_peak65.506_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T08_visual65.506_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.5972342491149902
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.3223678171634674
+        },
+        {
+          "label": "background music",
+          "score": 0.03272707015275955
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.02320137433707714
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.010153083130717278
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.008682304993271828
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.005276505835354328
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0002483805001247674
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.00010056815517600626
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 8.590372090111487e-06
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T09",
+      "probe_s": 72.176,
+      "note": "既有通谱通量峰 T09",
+      "local_peak": {
+        "t_s": 72.17632653061224,
+        "flux": 1.2356128692626953,
+        "flux_hi": 0.585396945476532,
+        "flux_mid": 0.528482973575592,
+        "flux_lo": 0.06513717025518417,
+        "offset_from_probe_s": 0.0003265306122415268
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.2356128692626953,
+        0.727504312992096,
+        0.6857317090034485,
+        0.18763384222984314
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        72.13630385487528,
+        72.33632653061224
+      ],
+      "peak_dbfs_200ms": -0.00517044875546507,
+      "rms_dbfs_200ms": -8.008904196400035,
+      "rms_dbfs_pre_bed_850ms": -11.584831495468999,
+      "sfx_minus_bed_db": 3.5759272990689634,
+      "centroid_hz_200ms": 517.4561361321109,
+      "e_frac_lt250": 0.7018418144572015,
+      "e_frac_800_6k": 0.11105781981879058,
+      "e_frac_gt3k": 0.04441851140311217,
+      "e_frac_gt8k": 0.005246927383405651,
+      "env_dur_20pct_s": 0.0005668934240362812,
+      "vis_locked_rms_dbfs_200ms": -8.025318947129362,
+      "vis_locked_centroid_hz": 516.0803252547723,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "特，",
+            "start": 71.92,
+            "end": 72.04
+          },
+          {
+            "word": "这",
+            "start": 72.18,
+            "end": 72.34
+          },
+          {
+            "word": "就是",
+            "start": 72.34,
+            "end": 72.52
+          }
+        ],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "特，",
+            "start": 71.92,
+            "end": 72.04
+          },
+          {
+            "word": "这",
+            "start": 72.18,
+            "end": 72.34
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.84688409125708,
+      "local_peak_flux_hi_percentile": 98.14219364058593,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T09_peak72.176_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T09_visual72.176_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.6499162912368774
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.18303282558918
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.09469085186719894
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.026514489203691483
+        },
+        {
+          "label": "background music",
+          "score": 0.02279149740934372
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.011547688394784927
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.00995744951069355
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.001251630368642509
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0002743861696217209
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.293781471962575e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T10",
+      "probe_s": 76.416,
+      "note": "既有通谱通量峰 T10",
+      "local_peak": {
+        "t_s": 76.41396825396825,
+        "flux": 1.2272614240646362,
+        "flux_hi": 0.941105842590332,
+        "flux_mid": 0.591982364654541,
+        "flux_lo": 0.03868458792567253,
+        "offset_from_probe_s": -0.0020317460317471614
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.2272614240646362,
+        0.941105842590332,
+        0.591982364654541,
+        0.1512443870306015
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        76.37394557823129,
+        76.57394557823129
+      ],
+      "peak_dbfs_200ms": -0.6144626132211222,
+      "rms_dbfs_200ms": -13.716538721247428,
+      "rms_dbfs_pre_bed_850ms": -9.078749011821825,
+      "sfx_minus_bed_db": -4.637789709425602,
+      "centroid_hz_200ms": 682.0278558012151,
+      "e_frac_lt250": 0.19959331743582878,
+      "e_frac_800_6k": 0.13521401998635285,
+      "e_frac_gt3k": 0.03192528751987872,
+      "e_frac_gt8k": 0.002404698693731756,
+      "env_dur_20pct_s": 0.003764172335600907,
+      "vis_locked_rms_dbfs_200ms": -13.709860253598318,
+      "vis_locked_centroid_hz": 667.9962519096163,
+      "asr": {
+        "mid_word": "看到",
+        "mid_word_interval": [
+          75.48,
+          80.82
+        ],
+        "nearby": [
+          {
+            "word": "看到",
+            "start": 75.48,
+            "end": 80.82
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "看到",
+        "mid_word_interval": [
+          75.48,
+          80.82
+        ],
+        "nearby": [
+          {
+            "word": "看到",
+            "start": 75.48,
+            "end": 80.82
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.84178022763231,
+      "local_peak_flux_hi_percentile": 99.8877150002552,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T10_peak76.414_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T10_visual76.416_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.3929678797721863
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.3498303294181824
+        },
+        {
+          "label": "background music",
+          "score": 0.14239948987960815
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.04722468554973602
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.04318905994296074
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.012126573361456394
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.006189024541527033
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.005402089562267065
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.000501754111610353
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.00016913098806980997
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T11",
+      "probe_s": 95.006,
+      "note": "既有通谱通量峰 T11",
+      "local_peak": {
+        "t_s": 95.00154195011338,
+        "flux": 1.0688036680221558,
+        "flux_hi": 0.5520009398460388,
+        "flux_mid": 0.5926523804664612,
+        "flux_lo": 0.05641339719295502,
+        "offset_from_probe_s": -0.004458049886622462
+      },
+      "flux_at_probe_max_pm40ms": [
+        1.0688036680221558,
+        0.5520009398460388,
+        0.5926523804664612,
+        0.11427145451307297
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        94.96151927437641,
+        95.16154195011337
+      ],
+      "peak_dbfs_200ms": -0.3276350089784697,
+      "rms_dbfs_200ms": -10.571615923499973,
+      "rms_dbfs_pre_bed_850ms": -9.396608114030641,
+      "sfx_minus_bed_db": -1.1750078094693315,
+      "centroid_hz_200ms": 715.3812535082673,
+      "e_frac_lt250": 0.610408269307672,
+      "e_frac_800_6k": 0.09690565721978842,
+      "e_frac_gt3k": 0.08476498295313241,
+      "e_frac_gt8k": 0.00857489593727423,
+      "env_dur_20pct_s": 0.006349206349206349,
+      "vis_locked_rms_dbfs_200ms": -10.733837441981136,
+      "vis_locked_centroid_hz": 660.2060185104222,
+      "asr": {
+        "mid_word": "进，",
+        "mid_word_interval": [
+          94.96,
+          95.14
+        ],
+        "nearby": [
+          {
+            "word": "时",
+            "start": 94.58,
+            "end": 94.8
+          },
+          {
+            "word": "推",
+            "start": 94.8,
+            "end": 94.96
+          },
+          {
+            "word": "进，",
+            "start": 94.96,
+            "end": 95.14
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "进，",
+        "mid_word_interval": [
+          94.96,
+          95.14
+        ],
+        "nearby": [
+          {
+            "word": "推",
+            "start": 94.8,
+            "end": 94.96
+          },
+          {
+            "word": "进，",
+            "start": 94.96,
+            "end": 95.14
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.59169091001888,
+      "local_peak_flux_hi_percentile": 97.72878068698004,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T11_peak95.002_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T11_visual95.006_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.5756120681762695
+        },
+        {
+          "label": "background music",
+          "score": 0.24904680252075195
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.08644283562898636
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.04387388005852699
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.015756923705339432
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.01343766413629055
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.01306956261396408
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0018970214296132326
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0007895268499851227
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 7.374922279268503e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "T12",
+      "probe_s": 100.036,
+      "note": "既有通谱通量峰 T12",
+      "local_peak": {
+        "t_s": 100.0344671201814,
+        "flux": 0.9914987683296204,
+        "flux_hi": 0.6062579154968262,
+        "flux_mid": 0.54802006483078,
+        "flux_lo": 0.022135119885206223,
+        "offset_from_probe_s": -0.0015328798185976211
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.9914987683296204,
+        0.6062579154968262,
+        0.54802006483078,
+        0.1423153579235077
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        99.99446712018141,
+        100.1944671201814
+      ],
+      "peak_dbfs_200ms": -0.8972611372710347,
+      "rms_dbfs_200ms": -11.32169798880974,
+      "rms_dbfs_pre_bed_850ms": -9.392734213788902,
+      "sfx_minus_bed_db": -1.9289637750208382,
+      "centroid_hz_200ms": 1387.7173041198275,
+      "e_frac_lt250": 0.4594342980088905,
+      "e_frac_800_6k": 0.36009140508281146,
+      "e_frac_gt3k": 0.1566203127919497,
+      "e_frac_gt8k": 0.010427960769273112,
+      "env_dur_20pct_s": 0.018095238095238095,
+      "vis_locked_rms_dbfs_200ms": -11.326041506689917,
+      "vis_locked_centroid_hz": 1363.4368643489795,
+      "asr": {
+        "mid_word": "传",
+        "mid_word_interval": [
+          100.0,
+          100.18
+        ],
+        "nearby": [
+          {
+            "word": "门",
+            "start": 99.7,
+            "end": 99.88
+          },
+          {
+            "word": "与",
+            "start": 99.88,
+            "end": 100.0
+          },
+          {
+            "word": "传",
+            "start": 100.0,
+            "end": 100.18
+          },
+          {
+            "word": "球",
+            "start": 100.18,
+            "end": 100.36
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "传",
+        "mid_word_interval": [
+          100.0,
+          100.18
+        ],
+        "nearby": [
+          {
+            "word": "与",
+            "start": 99.88,
+            "end": 100.0
+          },
+          {
+            "word": "传",
+            "start": 100.0,
+            "end": 100.18
+          },
+          {
+            "word": "球",
+            "start": 100.18,
+            "end": 100.36
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.34670545603022,
+      "local_peak_flux_hi_percentile": 98.39738682182411,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T12_peak100.034_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/T12_visual100.036_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.49976199865341187
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.18297888338565826
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.13034814596176147
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.12150836735963821
+        },
+        {
+          "label": "background music",
+          "score": 0.039028558880090714
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.017716286703944206
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.007709831465035677
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0006049309158697724
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0002816113119479269
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 6.138166645541787e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_summary_105",
+      "probe_s": 105.0,
+      "note": "视觉锚：总结段连续路线 105s",
+      "local_peak": {
+        "t_s": 105.02675736961451,
+        "flux": 0.7379065752029419,
+        "flux_hi": 0.06973742693662643,
+        "flux_mid": 0.23464758694171906,
+        "flux_lo": 0.09889509528875351,
+        "offset_from_probe_s": 0.026757369614514914
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.7379065752029419,
+        0.12040428072214127,
+        0.2629125118255615,
+        0.11181464046239853
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        104.98675736961451,
+        105.18675736961451
+      ],
+      "peak_dbfs_200ms": -0.5566169604665958,
+      "rms_dbfs_200ms": -9.208538169096837,
+      "rms_dbfs_pre_bed_850ms": -8.644895057264241,
+      "sfx_minus_bed_db": -0.5636431118325955,
+      "centroid_hz_200ms": 547.7502027093227,
+      "e_frac_lt250": 0.18502541486518934,
+      "e_frac_800_6k": 0.12469559106566716,
+      "e_frac_gt3k": 0.006150307758593641,
+      "e_frac_gt8k": 0.0006069697431875877,
+      "env_dur_20pct_s": 0.029569160997732425,
+      "vis_locked_rms_dbfs_200ms": -9.230498978055701,
+      "vis_locked_centroid_hz": 550.4902655697779,
+      "asr": {
+        "mid_word": "队",
+        "mid_word_interval": [
+          104.94,
+          105.14
+        ],
+        "nearby": [
+          {
+            "word": "团",
+            "start": 104.66,
+            "end": 104.94
+          },
+          {
+            "word": "队",
+            "start": 104.94,
+            "end": 105.14
+          },
+          {
+            "word": "反",
+            "start": 105.14,
+            "end": 105.34
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "队",
+        "mid_word_interval": [
+          104.94,
+          105.14
+        ],
+        "nearby": [
+          {
+            "word": "团",
+            "start": 104.66,
+            "end": 104.94
+          },
+          {
+            "word": "队",
+            "start": 104.94,
+            "end": 105.14
+          },
+          {
+            "word": "反",
+            "start": 105.14,
+            "end": 105.34
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 96.34563364466902,
+      "local_peak_flux_hi_percentile": 42.25488694942071,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_105_peak105.027_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_105_visual105.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.6897773742675781
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.187882199883461
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.03686612844467163
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.03154279291629791
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.02174312435090542
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.02171674370765686
+        },
+        {
+          "label": "background music",
+          "score": 0.008933301083743572
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0012665047543123364
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.00013902067439630628
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.00013279786799103022
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_summary_107",
+      "probe_s": 107.0,
+      "note": "视觉锚：总结段 107s",
+      "local_peak": {
+        "t_s": 106.73922902494331,
+        "flux": 0.9379012584686279,
+        "flux_hi": 0.7101118564605713,
+        "flux_mid": 0.43697112798690796,
+        "flux_lo": 0.08095856755971909,
+        "offset_from_probe_s": -0.2607709750566869
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.37974390387535095,
+        0.10150676965713501,
+        0.2713785767555237,
+        0.02210545912384987
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        106.6992290249433,
+        106.89922902494331
+      ],
+      "peak_dbfs_200ms": -0.00026507636037961915,
+      "rms_dbfs_200ms": -9.681227105713168,
+      "rms_dbfs_pre_bed_850ms": -9.592855220885264,
+      "sfx_minus_bed_db": -0.08837188482790381,
+      "centroid_hz_200ms": 3839.0639156853013,
+      "e_frac_lt250": 0.22277442369835748,
+      "e_frac_800_6k": 0.506513081637151,
+      "e_frac_gt3k": 0.6529634125786338,
+      "e_frac_gt8k": 0.08396107077520397,
+      "env_dur_20pct_s": 0.14238095238095239,
+      "vis_locked_rms_dbfs_200ms": -9.713464310123763,
+      "vis_locked_centroid_hz": 739.7598445350386,
+      "asr": {
+        "mid_word": "施",
+        "mid_word_interval": [
+          106.7,
+          106.9
+        ],
+        "nearby": [
+          {
+            "word": "前",
+            "start": 106.3,
+            "end": 106.5
+          },
+          {
+            "word": "锋",
+            "start": 106.5,
+            "end": 106.7
+          },
+          {
+            "word": "施",
+            "start": 106.7,
+            "end": 106.9
+          },
+          {
+            "word": "压",
+            "start": 106.9,
+            "end": 107.06
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "压",
+        "mid_word_interval": [
+          106.9,
+          107.06
+        ],
+        "nearby": [
+          {
+            "word": "施",
+            "start": 106.7,
+            "end": 106.9
+          },
+          {
+            "word": "压",
+            "start": 106.9,
+            "end": 107.06
+          },
+          {
+            "word": "争",
+            "start": 107.06,
+            "end": 107.26
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.02005818404533,
+      "local_peak_flux_hi_percentile": 99.21400500178635,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_107_peak106.739_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_107_visual107.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.4003506898880005
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.3846767842769623
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.09000126272439957
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.0560167133808136
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.03135534003376961
+        },
+        {
+          "label": "background music",
+          "score": 0.03011985309422016
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.005815603770315647
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0009329294553026557
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0006510003586299717
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 7.981895032571629e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_summary_109",
+      "probe_s": 109.0,
+      "note": "视觉锚：总结段 109s",
+      "local_peak": {
+        "t_s": 109.34566893424036,
+        "flux": 0.9922983646392822,
+        "flux_hi": 0.4632665514945984,
+        "flux_mid": 0.4211137890815735,
+        "flux_lo": 0.03686404228210449,
+        "offset_from_probe_s": 0.34566893424036493
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.38959237933158875,
+        0.08153120428323746,
+        0.2115022838115692,
+        0.03898019343614578
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        109.30566893424036,
+        109.50566893424036
+      ],
+      "peak_dbfs_200ms": -0.21278763618052793,
+      "rms_dbfs_200ms": -10.90505138710051,
+      "rms_dbfs_pre_bed_850ms": -8.968388416843734,
+      "sfx_minus_bed_db": -1.9366629702567764,
+      "centroid_hz_200ms": 508.09907617817635,
+      "e_frac_lt250": 0.542927659777681,
+      "e_frac_800_6k": 0.05901276583519666,
+      "e_frac_gt3k": 0.03698383690459454,
+      "e_frac_gt8k": 0.00894291512206141,
+      "env_dur_20pct_s": 0.0017687074829931973,
+      "vis_locked_rms_dbfs_200ms": -10.727296449101207,
+      "vis_locked_centroid_hz": 1881.8425010010394,
+      "asr": {
+        "mid_word": "速",
+        "mid_word_interval": [
+          109.24,
+          109.42
+        ],
+        "nearby": [
+          {
+            "word": "迅",
+            "start": 109.02,
+            "end": 109.24
+          },
+          {
+            "word": "速",
+            "start": 109.24,
+            "end": 109.42
+          },
+          {
+            "word": "前",
+            "start": 109.42,
+            "end": 109.62
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "要",
+        "mid_word_interval": [
+          108.9,
+          109.02
+        ],
+        "nearby": [
+          {
+            "word": "后",
+            "start": 108.72,
+            "end": 108.9
+          },
+          {
+            "word": "要",
+            "start": 108.9,
+            "end": 109.02
+          },
+          {
+            "word": "迅",
+            "start": 109.02,
+            "end": 109.24
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.35691318327974,
+      "local_peak_flux_hi_percentile": 96.0240902363089,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_109_peak109.346_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_109_visual109.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.5482715964317322
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.18335476517677307
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.13491190969944
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.05644974112510681
+        },
+        {
+          "label": "background music",
+          "score": 0.04264277592301369
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.024141395464539528
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.007197593804448843
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.002212958876043558
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0007803463959135115
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 3.683512477437034e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_summary_111",
+      "probe_s": 111.0,
+      "note": "视觉锚：总结段 111s",
+      "local_peak": {
+        "t_s": 110.95945578231293,
+        "flux": 1.2424615621566772,
+        "flux_hi": 0.671440839767456,
+        "flux_mid": 0.6913328766822815,
+        "flux_lo": 0.02101248875260353,
+        "offset_from_probe_s": -0.04054421768707073
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.5126448273658752,
+        0.31703969836235046,
+        0.23550699651241302,
+        0.1252974569797516
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        110.91945578231292,
+        111.11945578231293
+      ],
+      "peak_dbfs_200ms": -0.1262929216109899,
+      "rms_dbfs_200ms": -9.944382848317817,
+      "rms_dbfs_pre_bed_850ms": -10.136585295116484,
+      "sfx_minus_bed_db": 0.19220244679866738,
+      "centroid_hz_200ms": 695.4076754308039,
+      "e_frac_lt250": 0.6328448322583247,
+      "e_frac_800_6k": 0.1892360141774504,
+      "e_frac_gt3k": 0.05642532859329223,
+      "e_frac_gt8k": 0.020942474199524518,
+      "env_dur_20pct_s": 0.03746031746031746,
+      "vis_locked_rms_dbfs_200ms": -9.984205890247292,
+      "vis_locked_centroid_hz": 555.8212270545393,
+      "asr": {
+        "mid_word": "速",
+        "mid_word_interval": [
+          110.8,
+          110.96
+        ],
+        "nearby": [
+          {
+            "word": "时",
+            "start": 110.6,
+            "end": 110.8
+          },
+          {
+            "word": "速",
+            "start": 110.8,
+            "end": 110.96
+          },
+          {
+            "word": "送，",
+            "start": 110.96,
+            "end": 111.14
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "送，",
+        "mid_word_interval": [
+          110.96,
+          111.14
+        ],
+        "nearby": [
+          {
+            "word": "速",
+            "start": 110.8,
+            "end": 110.96
+          },
+          {
+            "word": "送，",
+            "start": 110.96,
+            "end": 111.14
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.86729954575614,
+      "local_peak_flux_hi_percentile": 98.98943500229674,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_111_peak110.959_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_111_visual111.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.5852847099304199
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.19062179327011108
+        },
+        {
+          "label": "background music",
+          "score": 0.1709587424993515
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.02986532635986805
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.01283370703458786
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.007155308034271002
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.001654533320106566
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0012798808747902513
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0002766602556221187
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 6.926235801074654e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "V_summary_113",
+      "probe_s": 113.0,
+      "note": "视觉锚：总结段 113s（近结尾）",
+      "local_peak": {
+        "t_s": 113.2756462585034,
+        "flux": 0.9013264775276184,
+        "flux_hi": 0.15677016973495483,
+        "flux_mid": 0.43060022592544556,
+        "flux_lo": 0.026565583422780037,
+        "offset_from_probe_s": 0.2756462585034001
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.8080341815948486,
+        0.39374491572380066,
+        0.6079665422439575,
+        0.06982381641864777
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        113.23564625850341,
+        113.4356462585034
+      ],
+      "peak_dbfs_200ms": -0.07266787313255675,
+      "rms_dbfs_200ms": -9.73991136162373,
+      "rms_dbfs_pre_bed_850ms": -11.205872342506789,
+      "sfx_minus_bed_db": 1.4659609808830592,
+      "centroid_hz_200ms": 753.4745550325746,
+      "e_frac_lt250": 0.04142120358943259,
+      "e_frac_800_6k": 0.2288131920369013,
+      "e_frac_gt3k": 0.012630003405631864,
+      "e_frac_gt8k": 0.0008969498508135951,
+      "env_dur_20pct_s": 0.020884353741496598,
+      "vis_locked_rms_dbfs_200ms": -10.848643698485018,
+      "vis_locked_centroid_hz": 1697.5952421657184,
+      "asr": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [],
+        "in_speech_span": false
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "抄，",
+            "start": 112.72,
+            "end": 112.92
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 98.74955341193284,
+      "local_peak_flux_hi_percentile": 75.28709232889297,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_113_peak113.276_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/V_summary_113_visual113.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.5078052878379822
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.225161612033844
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.14568687975406647
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.07510185986757278
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.02920212224125862
+        },
+        {
+          "label": "background music",
+          "score": 0.01164185255765915
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.0028204123955219984
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.001548674190416932
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.000728161190636456
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.0003031643573194742
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "M_80.0",
+      "probe_s": 80.0,
+      "note": "模式切换：约80s实拍/板叠化",
+      "local_peak": {
+        "t_s": 79.6995918367347,
+        "flux": 0.9515789747238159,
+        "flux_hi": 0.7334468364715576,
+        "flux_mid": 0.40797656774520874,
+        "flux_lo": 0.06586305052042007,
+        "offset_from_probe_s": -0.3004081632653026
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.5358873605728149,
+        0.0901479423046112,
+        0.295258492231369,
+        0.05885805934667587
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        79.65959183673469,
+        79.8595918367347
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -9.578501858911977,
+      "rms_dbfs_pre_bed_850ms": -8.64176439967955,
+      "sfx_minus_bed_db": -0.9367374592324271,
+      "centroid_hz_200ms": 733.8723028724394,
+      "e_frac_lt250": 0.3674468677493929,
+      "e_frac_800_6k": 0.10700574585888291,
+      "e_frac_gt3k": 0.06510656341255133,
+      "e_frac_gt8k": 0.006713792188302731,
+      "env_dur_20pct_s": 0.07784580498866213,
+      "vis_locked_rms_dbfs_200ms": -8.094155340655911,
+      "vis_locked_centroid_hz": 789.3172959267982,
+      "asr": {
+        "mid_word": "看到",
+        "mid_word_interval": [
+          75.48,
+          80.82
+        ],
+        "nearby": [
+          {
+            "word": "看到",
+            "start": 75.48,
+            "end": 80.82
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "看到",
+        "mid_word_interval": [
+          75.48,
+          80.82
+        ],
+        "nearby": [
+          {
+            "word": "看到",
+            "start": 75.48,
+            "end": 80.82
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.12723932016536,
+      "local_peak_flux_hi_percentile": 99.33139386515593,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_80.0_peak79.700_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_80.0_visual80.000_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.39885464310646057
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.2786557972431183
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.2285653054714203
+        },
+        {
+          "label": "background music",
+          "score": 0.04794183745980263
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.035137102007865906
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.00584454508498311
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0019946012180298567
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0019557871855795383
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.0010230146581307054
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 2.7357480576029047e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "M_87.2",
+      "probe_s": 87.2,
+      "note": "模式切换：约87.2s入板",
+      "local_peak": {
+        "t_s": 86.85714285714286,
+        "flux": 1.1214135885238647,
+        "flux_hi": 0.3801406919956207,
+        "flux_mid": 0.476347953081131,
+        "flux_lo": 0.3984508514404297,
+        "offset_from_probe_s": -0.34285714285714164
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.634724497795105,
+        0.1541370451450348,
+        0.344043105840683,
+        0.16316628456115723
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        86.81714285714285,
+        87.01714285714286
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -7.070618055567202,
+      "rms_dbfs_pre_bed_850ms": -10.78162920137535,
+      "sfx_minus_bed_db": 3.7110111458081487,
+      "centroid_hz_200ms": 388.60974119823976,
+      "e_frac_lt250": 0.7901715988126232,
+      "e_frac_800_6k": 0.02957308068263204,
+      "e_frac_gt3k": 0.028515255936330308,
+      "e_frac_gt8k": 0.007890014073435508,
+      "env_dur_20pct_s": 0.005736961451247165,
+      "vis_locked_rms_dbfs_200ms": -7.620762027370352,
+      "vis_locked_centroid_hz": 535.183091461441,
+      "asr": {
+        "mid_word": "再",
+        "mid_word_interval": [
+          86.82,
+          87.0
+        ],
+        "nearby": [
+          {
+            "word": "再",
+            "start": 86.82,
+            "end": 87.0
+          },
+          {
+            "word": "看",
+            "start": 87.0,
+            "end": 87.12
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "远",
+        "mid_word_interval": [
+          87.12,
+          87.32
+        ],
+        "nearby": [
+          {
+            "word": "看",
+            "start": 87.0,
+            "end": 87.12
+          },
+          {
+            "word": "远",
+            "start": 87.12,
+            "end": 87.32
+          },
+          {
+            "word": "端",
+            "start": 87.32,
+            "end": 87.44
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 99.71928750063799,
+      "local_peak_flux_hi_percentile": 93.54361251467361,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_87.2_peak86.857_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_87.2_visual87.200_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.9214548468589783
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.032334063202142715
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.03012821450829506
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.007832690142095089
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.0050775897689163685
+        },
+        {
+          "label": "background music",
+          "score": 0.0022216530051082373
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.0007046961109153926
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0001747146889101714
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 6.001014480716549e-05
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 1.154343772213906e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "M_98.2",
+      "probe_s": 98.2,
+      "note": "模式切换：约98.2s入实拍",
+      "local_peak": {
+        "t_s": 97.92145124716554,
+        "flux": 0.9380311965942383,
+        "flux_hi": 0.7033945322036743,
+        "flux_mid": 0.5798265337944031,
+        "flux_lo": 0.03480136767029762,
+        "offset_from_probe_s": -0.27854875283446745
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.8705003261566162,
+        0.08264610171318054,
+        0.2974579930305481,
+        0.06718024611473083
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        97.88145124716553,
+        98.08145124716553
+      ],
+      "peak_dbfs_200ms": -0.00026507636037961915,
+      "rms_dbfs_200ms": -9.952092054376935,
+      "rms_dbfs_pre_bed_850ms": -9.258613413326861,
+      "sfx_minus_bed_db": -0.6934786410500742,
+      "centroid_hz_200ms": 620.9890773931919,
+      "e_frac_lt250": 0.32792744871849616,
+      "e_frac_800_6k": 0.10644952727045282,
+      "e_frac_gt3k": 0.038223192377031555,
+      "e_frac_gt8k": 0.0027675054847226275,
+      "env_dur_20pct_s": 0.008435374149659863,
+      "vis_locked_rms_dbfs_200ms": -8.23493421994297,
+      "vis_locked_centroid_hz": 725.3348441226767,
+      "asr": {
+        "mid_word": "球",
+        "mid_word_interval": [
+          97.82,
+          98.04
+        ],
+        "nearby": [
+          {
+            "word": "持",
+            "start": 97.14,
+            "end": 97.82
+          },
+          {
+            "word": "球",
+            "start": 97.82,
+            "end": 98.04
+          },
+          {
+            "word": "者，",
+            "start": 98.04,
+            "end": 98.16
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": null,
+        "mid_word_interval": null,
+        "nearby": [
+          {
+            "word": "者，",
+            "start": 98.04,
+            "end": 98.16
+          },
+          {
+            "word": "还",
+            "start": 98.28,
+            "end": 98.96
+          }
+        ],
+        "in_speech_span": false
+      },
+      "local_peak_flux_percentile": 99.0251620476701,
+      "local_peak_flux_hi_percentile": 99.16807022916348,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_98.2_peak97.921_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_98.2_visual98.200_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.47394898533821106
+        },
+        {
+          "label": "football kick or ball kick",
+          "score": 0.2636153995990753
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.23177005350589752
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.014909431338310242
+        },
+        {
+          "label": "background music",
+          "score": 0.00530141219496727
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0031814982648938894
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.0030143330805003643
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 0.002186032012104988
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.00197432329878211
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 9.851245704339817e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    },
+    {
+      "id": "M_104.7",
+      "probe_s": 104.7,
+      "note": "模式切换：约104.7s入总结板",
+      "local_peak": {
+        "t_s": 104.37659863945578,
+        "flux": 0.8188349604606628,
+        "flux_hi": 0.21060334146022797,
+        "flux_mid": 0.33046478033065796,
+        "flux_lo": 0.36102744936943054,
+        "offset_from_probe_s": -0.3234013605442243
+      },
+      "flux_at_probe_max_pm40ms": [
+        0.6201750636100769,
+        0.20098136365413666,
+        0.40998220443725586,
+        0.18392619490623474
+      ],
+      "flux_percentiles_ref": {
+        "p50": 0.2922263741493225,
+        "p80": 0.4486769437789917,
+        "p90": 0.5671523809432983,
+        "p95": 0.6859439611434937,
+        "p99": 0.936985969543457
+      },
+      "tight_window_s": [
+        104.33659863945579,
+        104.53659863945579
+      ],
+      "peak_dbfs_200ms": 0.0,
+      "rms_dbfs_200ms": -7.087956473207972,
+      "rms_dbfs_pre_bed_850ms": -9.35265532844157,
+      "sfx_minus_bed_db": 2.264698855233598,
+      "centroid_hz_200ms": 314.1823441067678,
+      "e_frac_lt250": 0.9295035208619021,
+      "e_frac_800_6k": 0.03299386855917248,
+      "e_frac_gt3k": 0.02626212912687778,
+      "e_frac_gt8k": 0.010504521285386186,
+      "env_dur_20pct_s": 0.001179138321995465,
+      "vis_locked_rms_dbfs_200ms": -10.39725876006023,
+      "vis_locked_centroid_hz": 1186.5671545774483,
+      "asr": {
+        "mid_word": "所以",
+        "mid_word_interval": [
+          104.14,
+          104.66
+        ],
+        "nearby": [
+          {
+            "word": "期，",
+            "start": 104.0,
+            "end": 104.14
+          },
+          {
+            "word": "所以",
+            "start": 104.14,
+            "end": 104.66
+          }
+        ],
+        "in_speech_span": true
+      },
+      "asr_at_visual": {
+        "mid_word": "团",
+        "mid_word_interval": [
+          104.66,
+          104.94
+        ],
+        "nearby": [
+          {
+            "word": "所以",
+            "start": 104.14,
+            "end": 104.66
+          },
+          {
+            "word": "团",
+            "start": 104.66,
+            "end": 104.94
+          }
+        ],
+        "in_speech_span": true
+      },
+      "local_peak_flux_percentile": 97.7900270504772,
+      "local_peak_flux_hi_percentile": 83.16235390190374,
+      "mixed_study_clip": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_104.7_peak104.377_400ms_mixed_study.wav",
+      "mixed_study_clip_disclaimer": "混音短窗，仅供频谱/模型交叉，不是可发布独立音效",
+      "mixed_study_clip_visual_locked": "/workspace/football-demo/full-phase-new-reference/audio-analysis/clips_mixed_study/M_104.7_visual104.700_400ms_mixed_study.wav",
+      "clap_peak_locked_400ms": [
+        {
+          "label": "football kick or ball kick",
+          "score": 0.6608207821846008
+        },
+        {
+          "label": "electronic kick drum or music beat",
+          "score": 0.15239299833774567
+        },
+        {
+          "label": "spoken narration or human speech",
+          "score": 0.12246878445148468
+        },
+        {
+          "label": "background music",
+          "score": 0.02351360023021698
+        },
+        {
+          "label": "short impact or hit sound effect",
+          "score": 0.014823690988123417
+        },
+        {
+          "label": "spoken consonant or plosive burst",
+          "score": 0.013721873983740807
+        },
+        {
+          "label": "crowd cheering in a stadium",
+          "score": 0.01095842756330967
+        },
+        {
+          "label": "whoosh or swoosh transition sound",
+          "score": 0.0007531901355832815
+        },
+        {
+          "label": "silence or very soft noise floor",
+          "score": 0.00045815049088560045
+        },
+        {
+          "label": "short user-interface click or button click",
+          "score": 8.83981556398794e-05
+        }
+      ],
+      "clap_note": "模型分数不是事实；需与通量/频谱/画面/ASR交叉。高 speech 分不排除同窗混有短音效。"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "generated_at_asia_shanghai": "2026-11-16 04:08 Asia/Shanghai",
+  "label": "参考混音分离版，不是正版母带，也不是 30 秒试听循环。",
+  "verdict": "conditionally_usable_draft_bed_not_clean_master",
+  "usable_as_official_master": false,
+  "usable_as_temp_mix_bed": "Yes, with holes and residual risk. Sit under new VO; raise only at the ending replay (~147s+), do not put music over the voice.",
+  "primary_file": {
+    "path": "/workspace/football-demo/bgm-reference-research/separated_exports/Rookie_空间阅读者_参考混音分离版_no_vocals.wav",
+    "duration_s": 171.062812,
+    "format": "PCM s16le 44.1 kHz stereo",
+    "size_bytes": 30175558,
+    "integrated_lufs": -15.7,
+    "lra_lu": 13.7,
+    "mean_volume_db": -17.5,
+    "max_volume_db": -0.2
+  },
+  "float32_file": "/workspace/football-demo/bgm-reference-research/separated_exports/Rookie_空间阅读者_参考混音分离版_no_vocals_float32.wav",
+  "vocals_inspect_file": "/workspace/football-demo/bgm-reference-research/separated_exports/Rookie_空间阅读者_参考混音分离版_vocals.wav",
+  "demucs_stems_float32": "/workspace/football-demo/bgm-reference-research/separated/htdemucs/Rookie_空间阅读者_source/",
+  "source_untouched": "/workspace/football-demo/bgm-reference-research/tracks/Rookie_空间阅读者_source.m4a",
+  "method": "Official demucs 4.1.0 htdemucs on CPU, segment 7. no_vocals = drums+bass+other.",
+  "why_not_mediakit": "mediakit-cli install is free (npx @volcengine/mediakit-cli install -y), but audio separate-voice is Volcengine Cloud only and needs MEDIAKIT_API_KEY; the cloud API is billed. Key was unset. No purchase or login bypass.",
+  "algorithmic_checks": {
+    "silero_vad_speech_ratio_on_bed": 0.0,
+    "silero_vad_speech_ratio_on_vocals_stem": 0.9623,
+    "official_main_preview_ncc_vs_bed_at_0.314s": 0.747,
+    "official_main_preview_ncc_vs_vocals_at_0.314s": 0.0236,
+    "shazam_on_bed": "Hits 人生志在一博 at 0,8,80,88,120s and passion at 147,158s; NO MATCH at 37s and 50s (energy hole).",
+    "shazam_on_vocals_stem": "NO MATCH at 0,8,120s but 人生志在一博 at 50s and passion at 158s — some music leaked into the vocals stem, so the bed is incomplete there.",
+    "reconstruction_error_vs_source_db": -18.68
+  },
+  "problems": [
+    "Energy holes around 35–45s (no_vocals ~-40 dB) and quiet/leaky 50–60s; a continuous 171s bed will drop out there.",
+    "Match/stadium SFX are not a Demucs class and remain in drums/other (53%/11% of bed energy). Not a clean music-only stem.",
+    "Silero VAD found no speech on the bed, but that is not a listening check and cannot certify zero commentary residual.",
+    "Loudness range is 13.7 LU vs the original mix 1.7 LU; the bed is not pre-levelled like the reference."
+  ],
+  "paid_master_blocker": "Full official files were not obtained without purchase/login. Apple Music and NetEase pages remain the legal source; NetEase main track fee=8. Do not loop the 30s iTunes previews as a master.",
+  "quality_details": "/workspace/football-demo/bgm-reference-research/separated_exports/separation_quality.json"
+}

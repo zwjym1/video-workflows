@@ -1,0 +1,22 @@
+{
+  "incoming_path_min_distance_to_A10_origin_px": 0.0,
+  "path_points_px": [
+    [
+      316.48,
+      96.92000000000002
+    ],
+    [
+      306.61,
+      390.95200000000006
+    ],
+    [
+      277.0,
+      563.5360000000001
+    ]
+  ],
+  "ball_crosses_origin_s": 50.1677,
+  "nearest_encoded_frame_s": 50.16,
+  "A10_run_start_s": 51.52,
+  "player_run_progress_at_crossing": 0.0,
+  "note": "A10 origin is an explicit vertex of continuous incoming route; no pause/touch at vertex; return is separately drawn from9 to next point."
+}

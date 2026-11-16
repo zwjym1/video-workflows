@@ -1,0 +1,203 @@
+{
+  "matches": [
+    {
+      "id": "905551341",
+      "offset": 8.170971679,
+      "timeskew": -0.001064837,
+      "frequencyskew": 0.00018417835
+    }
+  ],
+  "location": {
+    "accuracy": 0.01
+  },
+  "timestamp": 1794772672454,
+  "timezone": "Europe/Paris",
+  "track": {
+    "layout": "5",
+    "type": "MUSIC",
+    "key": "905406860",
+    "title": "人生志在一博",
+    "subtitle": "李富贵",
+    "images": {
+      "background": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+      "coverart": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+      "coverarthq": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+      "joecolor": "b:120d0bp:e4c3c3s:d2a6aat:ba9e9eq:ac878a"
+    },
+    "display": {
+      "actions": [
+        {
+          "name": "display:updateshazam",
+          "type": "webview",
+          "uri": "https://www.shazam.com/inapp/updatenow/905406860"
+        }
+      ]
+    },
+    "share": {
+      "subject": "人生志在一博 - 李富贵",
+      "text": "人生志在一博 by 李富贵",
+      "href": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+      "twitter": "I used @Shazam to discover 人生志在一博 by 李富贵.",
+      "html": "https://www.shazam.com/snippets/email-share/905406860?lang=en-US&country=GB",
+      "snapchat": "https://www.shazam.com/partner/sc/track/905406860"
+    },
+    "hub": {
+      "type": "APPLEMUSIC",
+      "image": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic_{scalefactor}.png",
+      "actions": [
+        {
+          "name": "apple",
+          "type": "applemusicplay",
+          "id": "6822056789"
+        },
+        {
+          "name": "apple",
+          "type": "uri",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/9f/2a/f89f2a87-4b61-1f0b-2a66-1684657a5bc1/mzaf_16120574764692700999.plus.aac.p.m4a"
+        }
+      ],
+      "providers": [
+        {
+          "caption": "Open in Spotify",
+          "images": {
+            "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/spotify-overflow_{scalefactor}.png",
+            "default": "https://images.shazam.com/static/icons/hub/ios/v5/spotify_{scalefactor}.png"
+          },
+          "actions": [
+            {
+              "name": "hub:spotify:searchdeeplink",
+              "type": "uri",
+              "uri": "spotify:search:%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A%20%E6%9D%8E%E5%AF%8C%E8%B4%B5"
+            }
+          ],
+          "type": "SPOTIFY"
+        },
+        {
+          "caption": "Open in Deezer",
+          "images": {
+            "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/deezer-overflow_{scalefactor}.png",
+            "default": "https://images.shazam.com/static/icons/hub/ios/v5/deezer_{scalefactor}.png"
+          },
+          "actions": [
+            {
+              "name": "hub:deezer:searchdeeplink",
+              "type": "uri",
+              "uri": "deezer-query://www.deezer.com/play?query=%7Btrack%3A%27%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A%27%20artist%3A%27%E6%9D%8E%E5%AF%8C%E8%B4%B5%27%7D"
+            }
+          ],
+          "type": "DEEZER"
+        }
+      ],
+      "explicit": false,
+      "displayname": "APPLE MUSIC",
+      "options": [
+        {
+          "caption": "OPEN IN",
+          "actions": [
+            {
+              "name": "hub:applemusic:deeplink",
+              "type": "applemusicopen",
+              "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+            },
+            {
+              "name": "hub:applemusic:deeplink",
+              "type": "uri",
+              "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+            }
+          ],
+          "beacondata": {
+            "type": "open",
+            "providername": "applemusic"
+          },
+          "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+          "type": "open",
+          "listcaption": "Open in Apple Music",
+          "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+          "colouroverflowimage": false,
+          "providername": "applemusic"
+        },
+        {
+          "caption": "BUY",
+          "actions": [
+            {
+              "type": "uri",
+              "uri": "https://itunes.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+            }
+          ],
+          "beacondata": {
+            "type": "buy",
+            "providername": "itunes"
+          },
+          "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+          "type": "buy",
+          "listcaption": "Buy on iTunes",
+          "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+          "colouroverflowimage": false,
+          "providername": "itunes"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "type": "SONG",
+        "metapages": [
+          {
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+            "caption": "人生志在一博"
+          }
+        ],
+        "tabname": "Song",
+        "metadata": [
+          {
+            "title": "Album",
+            "text": "超速进行曲 - EP"
+          },
+          {
+            "title": "Label",
+            "text": "李富贵"
+          },
+          {
+            "title": "Released",
+            "text": "2026"
+          }
+        ]
+      },
+      {
+        "type": "RELATED",
+        "url": "https://cdn.shazam.com/shazam/v3/en-US/GB/iphone/-/tracks/track-similarities-id-905406860?startFrom=0&pageSize=20&connected=",
+        "tabname": "Related"
+      }
+    ],
+    "url": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+    "artists": [
+      {
+        "id": "42",
+        "adamid": "6802341256"
+      }
+    ],
+    "genres": {
+      "primary": "Pop"
+    },
+    "urlparams": {
+      "{tracktitle}": "%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+      "{trackartist}": "%E6%9D%8E%E5%AF%8C%E8%B4%B5"
+    },
+    "myshazam": {
+      "apple": {
+        "actions": [
+          {
+            "name": "myshazam:apple",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ]
+      }
+    },
+    "highlightsurls": {},
+    "relatedtracksurl": "https://cdn.shazam.com/shazam/v3/en-US/GB/iphone/-/tracks/track-similarities-id-905406860?startFrom=0&pageSize=20&connected=",
+    "albumadamid": "6822056782",
+    "isrc": "QZNMZ2630446"
+  },
+  "tagid": "6AB4E917-D606-4D0B-BBD4-CAC1E9FFD3A8"
+}
