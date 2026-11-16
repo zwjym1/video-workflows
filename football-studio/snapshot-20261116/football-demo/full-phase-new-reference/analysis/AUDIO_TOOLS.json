@@ -1,0 +1,10 @@
+{
+  "available_speech_model": "faster-whisper-small local int8 in /workspace/.venv-dy, full ASR completed; not an SFX classifier",
+  "available_measurement": "ffmpeg + numpy/scipy/librosa, objective transients/frequency/energy",
+  "semantic_audio_model_or_connector": "none exposed/verified this run; GetDynamicTools no matches; SearchPlugins not exposed",
+  "existing_demucs_env": "/workspace/football-demo/bgm-reference-research/.venv-demucs",
+  "demucs_status": "import torch failed: ModuleNotFoundError typing_extensions. Stopped this optional branch; no install/retry or fake separated stems.",
+  "separation_performed": false,
+  "human_listening_performed": false,
+  "sfx_semantics_verified": false
+}

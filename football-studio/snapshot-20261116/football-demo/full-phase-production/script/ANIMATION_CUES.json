@@ -1,0 +1,274 @@
+[
+  {
+    "board": "B1",
+    "scene": "S01",
+    "word": "莱诺",
+    "output_s": 6.16,
+    "event": "context_A19",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B1",
+    "scene": "S01",
+    "word": "霍尔丁",
+    "output_s": 6.76,
+    "event": "show_A16_pass_19_16",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B1",
+    "scene": "S01",
+    "word": "扎卡",
+    "output_s": 8.76,
+    "event": "show_A34_pass_16_34",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B1",
+    "scene": "S01",
+    "word": "蓝衣",
+    "output_s": 9.36,
+    "event": "show_F1_unidentified_pressure",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B2",
+    "scene": "S02",
+    "word": "扎卡",
+    "output_s": 13.6,
+    "event": "state_before_A34_L14",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B2",
+    "scene": "S02",
+    "word": "内侧",
+    "output_s": 14.8,
+    "event": "run_A34_inward",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B2",
+    "scene": "S02",
+    "word": "身后追赶",
+    "output_s": 17.84,
+    "event": "L14_after_relative_position",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B2",
+    "scene": "S02",
+    "word": "托雷拉",
+    "output_s": 19.12,
+    "event": "show_A11_outlet",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B2",
+    "scene": "S03",
+    "word": "麦迪逊",
+    "output_s": 22.16,
+    "event": "show_L10_new_pressure",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B3",
+    "scene": "S04",
+    "word": "中圈",
+    "output_s": 28.36,
+    "event": "show_A11_A10",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B3",
+    "scene": "S04",
+    "word": "贡多齐",
+    "output_s": 30.12,
+    "event": "pass_A10_A29",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B3",
+    "scene": "S04",
+    "word": "贡多齐再",
+    "output_s": 30.92,
+    "event": "board_entry_and_relay",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B3",
+    "scene": "S04",
+    "word": "右路",
+    "output_s": 31.72,
+    "event": "pass_A29_A2_once",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B4",
+    "scene": "S05",
+    "word": "贝莱林",
+    "output_s": 36.96,
+    "event": "show_outside_carrier_A2",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B4",
+    "scene": "S05",
+    "word": "伊沃比",
+    "output_s": 38.24,
+    "event": "show_inside_A17",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B4",
+    "scene": "S05",
+    "word": "厄齐尔",
+    "output_s": 38.88,
+    "event": "show_inside_A10",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B4",
+    "scene": "S05",
+    "word": "奇尔韦尔",
+    "output_s": 40.28,
+    "event": "show_L3_near_A17",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B4",
+    "scene": "S05",
+    "word": "恩迪迪",
+    "output_s": 41.08,
+    "event": "show_L25_near_A10",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B5",
+    "scene": "S06",
+    "word": "十号",
+    "output_s": 46.08,
+    "event": "show_A10_before",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B5",
+    "scene": "S06",
+    "word": "马奎尔",
+    "output_s": 46.88,
+    "event": "show_L15_in_front",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B5",
+    "scene": "S06",
+    "word": "拉卡泽特",
+    "output_s": 48.24,
+    "event": "show_A9_other_side",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B5",
+    "scene": "S07",
+    "word": "继续给九号",
+    "output_s": 49.44,
+    "event": "incoming_ball_crosses_A10_old_point",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B5",
+    "scene": "S07",
+    "word": "进入禁区",
+    "output_s": 51.52,
+    "event": "A10_run_after_ball_passed",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B5",
+    "scene": "S07",
+    "word": "回做",
+    "output_s": 53.52,
+    "event": "A9_return_to_A10_new_point",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B5",
+    "scene": "S08",
+    "word": "身后追赶",
+    "output_s": 57.64,
+    "event": "compare_same_L15_after",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B6",
+    "scene": "S09",
+    "word": "奥巴梅扬",
+    "output_s": 64.2,
+    "event": "show_A14_already_other_side",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B6",
+    "scene": "S09",
+    "word": "佩雷拉",
+    "output_s": 65.48,
+    "event": "show_L14_trailing_not_A14",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B6",
+    "scene": "S09",
+    "word": "门将",
+    "output_s": 66.68,
+    "event": "show_L1_moves_toward_ball_side",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "B6",
+    "scene": "S09",
+    "word": "横传",
+    "output_s": 68.44,
+    "event": "pass_A10_A14",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "SUMMARY",
+    "scene": "S10",
+    "word": "后场",
+    "output_s": 70.56,
+    "event": "highlight_first_outlets",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "SUMMARY",
+    "scene": "S10",
+    "word": "内切",
+    "output_s": 71.6,
+    "event": "highlight_A34_A11",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "SUMMARY",
+    "scene": "S10",
+    "word": "中转",
+    "output_s": 73.44,
+    "event": "highlight_A10_A29",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "SUMMARY",
+    "scene": "S10",
+    "word": "外侧",
+    "output_s": 73.92,
+    "event": "highlight_A2",
+    "status": "execution_anchor_not_claim_already_rendered"
+  },
+  {
+    "board": "SUMMARY",
+    "scene": "S10",
+    "word": "回做",
+    "output_s": 76.08,
+    "event": "highlight_A9_A10",
+    "status": "execution_anchor_not_claim_already_rendered"
+  }
+]

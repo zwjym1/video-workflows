@@ -1,0 +1,47 @@
+{
+  "R1": {
+    "frame": "R1_019.00.jpg",
+    "method": "bright white/yellow connected-component glyph candidate bbox in bottom 9%, x20–85%; sampled subtitle ink height, NOT font setting",
+    "native_dimensions": [
+      1920,
+      1080
+    ],
+    "candidate_glyph_count": 24,
+    "visible_ink_y_range_px": [
+      993,
+      1047
+    ],
+    "median_component_height_px": 35.0,
+    "max_glyph_height_px": 44
+  },
+  "R2": {
+    "frame": "R2_051.80.jpg",
+    "method": "bright white/yellow connected-component glyph candidate bbox in bottom 9%, x20–85%; sampled subtitle ink height, NOT font setting",
+    "native_dimensions": [
+      1280,
+      960
+    ],
+    "candidate_glyph_count": 23,
+    "visible_ink_y_range_px": [
+      911,
+      945
+    ],
+    "median_component_height_px": 31.0,
+    "max_glyph_height_px": 34
+  },
+  "CURRENT": {
+    "frame": "CURRENT_040.00.jpg",
+    "method": "bright white/yellow connected-component glyph candidate bbox in bottom 9%, x20–85%; sampled subtitle ink height, NOT font setting",
+    "native_dimensions": [
+      1280,
+      720
+    ],
+    "candidate_glyph_count": 28,
+    "visible_ink_y_range_px": [
+      656,
+      687
+    ],
+    "median_component_height_px": 27.0,
+    "max_glyph_height_px": 31
+  }
+}

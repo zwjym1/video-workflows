@@ -1,0 +1,17 @@
+{
+  "voice_id": "906524668b6d4afe84736962e005cd09",
+  "model": "s2.1-pro-free",
+  "temperature": 0.7,
+  "top_p": 0.7,
+  "latency": "normal",
+  "chunk_length": 300,
+  "speed": 1.0,
+  "lines": [
+    {"id": "open", "text": "这个射门空间，是怎么出现的？"},
+    {"id": "first", "text": "先看这一回。"},
+    {"id": "s1", "text": "左边路拿住球。十一号已经插到禁区前沿。"},
+    {"id": "s2", "text": "他带着球往前走，再把低球送进禁区左侧。"},
+    {"id": "s3", "text": "十一号赶到身前空当，右脚第一下直接出脚，打远角。"},
+    {"id": "recap", "text": "空间就出在这一传、一插之间。"}
+  ]
+}

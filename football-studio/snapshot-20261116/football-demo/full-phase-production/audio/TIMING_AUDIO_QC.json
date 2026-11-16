@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/workspace/football-demo/full-phase-production/audio/VOICE_ONLY_TIMED.wav",
+    "duration_s": 99.36,
+    "peak_dbfs": -1.514767715696921,
+    "nonzero_samples": 7334732,
+    "channels": 2,
+    "sample_rate": 48000
+  },
+  {
+    "path": "/workspace/football-demo/full-phase-production/audio/SFX_ONLY_TIMED.wav",
+    "duration_s": 99.36,
+    "peak_dbfs": -14.47658904529209,
+    "nonzero_samples": 74969,
+    "channels": 2,
+    "sample_rate": 48000
+  },
+  {
+    "path": "/workspace/football-demo/full-phase-production/audio/VO_SFX_TIMING_PREVIEW.wav",
+    "duration_s": 99.36,
+    "peak_dbfs": -1.514767715696921,
+    "nonzero_samples": 7336871,
+    "channels": 2,
+    "sample_rate": 48000
+  }
+]

@@ -1,0 +1,212 @@
+{
+  "sources": [
+    "https://www.arsenal.com/news/arsenal-3-1-leicester-how-it-happened-a2WhY2x57PnL",
+    "https://www.skysports.com/football/arsenal-vs-leicester-city/teams/390837",
+    "https://www.independent.co.uk/sport/football/premier-league/arsenal-news-mesut-ozil-goal-assist-vs-leicester-watch-video-highlights-unai-emery-tactics-a8596881.html"
+  ],
+  "phase_clock": "约65:01–65:21，不能拿首发名单直接代替当时场上人员",
+  "important_substitution_check": [
+    "A14/A29已于61分钟上场，A12利希施泰纳与A7姆希塔良不应出现在本阶段核心板",
+    "莱斯特8号伊希纳乔61分钟已被11号奥尔布赖顿换下，不把模糊第一线蓝衣随手叫8号"
+  ],
+  "named_players": [
+    {
+      "id": "A19",
+      "number": 19,
+      "identity": "莱诺",
+      "role": "门将起点",
+      "source_s": "83.2–84.6",
+      "evidence": "官方赛报/阵容+连续出球",
+      "confidence": "A"
+    },
+    {
+      "id": "A16",
+      "number": 16,
+      "identity": "霍尔丁",
+      "role": "门将之后的后场接点",
+      "source_s": "84.2–85.8",
+      "evidence": "Independent直接描述传递次序；连续实帧",
+      "confidence": "A"
+    },
+    {
+      "id": "A34",
+      "number": 34,
+      "identity": "扎卡",
+      "role": "左侧接球后带进内侧",
+      "source_s": "86.2–89.6",
+      "evidence": "86.6背号34、88.6带球连续；61分钟后移左后卫",
+      "confidence": "A"
+    },
+    {
+      "id": "A11",
+      "number": 11,
+      "identity": "托雷拉",
+      "role": "前内侧接应并向中圈输送",
+      "source_s": "88.6–91.0",
+      "evidence": "90.2背号11+报道传递次序",
+      "confidence": "A"
+    },
+    {
+      "id": "A10",
+      "number": 10,
+      "identity": "厄齐尔",
+      "role": "中场中转及后段前插",
+      "source_s": "91.6–92.2 / 97.6–101.8",
+      "evidence": "连续实帧+报道；98.4背号10清楚",
+      "confidence": "A"
+    },
+    {
+      "id": "A29",
+      "number": 29,
+      "identity": "贡多齐",
+      "role": "另一侧中转向右路出球",
+      "source_s": "92.2–95.0",
+      "evidence": "独立报道明确接球者；阵容61分钟替补入场",
+      "confidence": "A"
+    },
+    {
+      "id": "A2",
+      "number": 2,
+      "identity": "贝莱林",
+      "role": "右侧推进与回传",
+      "source_s": "94.8–98.8",
+      "evidence": "连续镜头+官方及独立报道",
+      "confidence": "A"
+    },
+    {
+      "id": "A17",
+      "number": 17,
+      "identity": "伊沃比",
+      "role": "中路/内侧向前接应语境",
+      "source_s": "91.6–98.4",
+      "evidence": "中场17号连续镜头；附近3号可见",
+      "confidence": "A"
+    },
+    {
+      "id": "A9",
+      "number": 9,
+      "identity": "拉卡泽特",
+      "role": "接来球并回做给前插者",
+      "source_s": "98.4–101.2",
+      "evidence": "背号9+官方战报明确dummy/return sequence",
+      "confidence": "A"
+    },
+    {
+      "id": "A14",
+      "number": 14,
+      "identity": "奥巴梅扬",
+      "role": "门前另一侧已到位的终结接应",
+      "source_s": "100.04–103.6",
+      "evidence": "终结背号14、官方报道",
+      "confidence": "A"
+    },
+    {
+      "id": "A20",
+      "number": 20,
+      "identity": "穆斯塔菲",
+      "role": "未参与本稿核心传递的后场语境",
+      "source_s": "83.2–89.6",
+      "evidence": "阵容确定在场；不凭模糊远端单帧给精确跟踪",
+      "confidence": "B_仅人员清单，不上核心板"
+    },
+    {
+      "id": "L14",
+      "number": 14,
+      "identity": "里卡多·佩雷拉",
+      "role": "从边线逼近34，之后回追；最后在A14身后",
+      "source_s": "86.6–90.2 / 100.8–102.2",
+      "evidence": "88.6背号14清楚，与末端14连续回追及在场名单对应",
+      "confidence": "A"
+    },
+    {
+      "id": "L10",
+      "number": 10,
+      "identity": "麦迪逊",
+      "role": "托雷拉拿球时的前方接近者",
+      "source_s": "89.4–91.0",
+      "evidence": "90.2近身蓝衣背号10+阵容；脚本不扩展其意图",
+      "confidence": "A-"
+    },
+    {
+      "id": "L24",
+      "number": 24,
+      "identity": "门迪",
+      "role": "贡多齐附近、右侧回追语境",
+      "source_s": "93.0–98.4",
+      "evidence": "93.6背号24及连续位置；不误作奇尔韦尔盯贝莱林",
+      "confidence": "A"
+    },
+    {
+      "id": "L25",
+      "number": 25,
+      "identity": "恩迪迪",
+      "role": "厄齐尔附近的中路回追",
+      "source_s": "90.2–100.8",
+      "evidence": "90.2/97.6背号25清楚",
+      "confidence": "A"
+    },
+    {
+      "id": "L3",
+      "number": 3,
+      "identity": "奇尔韦尔",
+      "role": "伊沃比附近回撤",
+      "source_s": "93.4–100.8",
+      "evidence": "97.6背号3清楚",
+      "confidence": "A"
+    },
+    {
+      "id": "L6",
+      "number": 6,
+      "identity": "埃文斯",
+      "role": "较深蓝衣、伊沃比前侧语境",
+      "source_s": "93.6–101.0",
+      "evidence": "97.6背号6，阵容对应；不说被9号吸走",
+      "confidence": "A"
+    },
+    {
+      "id": "L15",
+      "number": 15,
+      "identity": "马奎尔",
+      "role": "10号身前到身后相对关系",
+      "source_s": "97.6–101.2",
+      "evidence": "98.4背号15；99.2–100.8连续同一人",
+      "confidence": "A"
+    },
+    {
+      "id": "L18",
+      "number": 18,
+      "identity": "阿马泰",
+      "role": "9号/球门前的另一名蓝衣语境",
+      "source_s": "97.6–102.2",
+      "evidence": "97.6及100.8背号18",
+      "confidence": "A"
+    },
+    {
+      "id": "L1",
+      "number": 1,
+      "identity": "舒梅切尔",
+      "role": "门前向持球一侧出击",
+      "source_s": "100.04–102.2",
+      "evidence": "对方门将+名单；不是读心/被吸引",
+      "confidence": "A"
+    },
+    {
+      "id": "F1",
+      "number": null,
+      "identity": "最近的第一线蓝衣",
+      "role": "后场第一线靠向球侧",
+      "source_s": "83.2–86.6",
+      "evidence": "号码模糊：可能对应11号，但未确认，不用于旁白定名",
+      "confidence": "UNCONFIRMED"
+    },
+    {
+      "id": "F2",
+      "number": null,
+      "identity": "另一名较前蓝衣",
+      "role": "门将与持球侧之间的前压语境",
+      "source_s": "83.2–86.6",
+      "evidence": "报道提瓦尔迪施压，但不把该文一句强映射某一模糊帧",
+      "confidence": "UNCONFIRMED"
+    }
+  ]
+}

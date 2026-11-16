@@ -1,0 +1,11 @@
+
+
+
+{
+ "resultCount":1,
+ "results": [
+{"wrapperType":"track", "kind":"song", "artistId":6802341256, "collectionId":6822056782, "trackId":6822056789, "artistName":"李富贵", "collectionName":"超速进行曲 - EP", "trackName":"人生志在一博", "collectionCensoredName":"超速进行曲 - EP", "trackCensoredName":"人生志在一博", "artistViewUrl":"https://music.apple.com/us/artist/%E6%9D%8E%E5%AF%8C%E8%B4%B5/6802341256?uo=4", "collectionViewUrl":"https://music.apple.com/us/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&uo=4", "trackViewUrl":"https://music.apple.com/us/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&uo=4", 
+"previewUrl":"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/9f/2a/f89f2a87-4b61-1f0b-2a66-1684657a5bc1/mzaf_16120574764692700999.plus.aac.p.m4a", "artworkUrl30":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/30x30bb.jpg", "artworkUrl60":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/60x60bb.jpg", "artworkUrl100":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/100x100bb.jpg", "collectionPrice":4.95, "trackPrice":0.99, "releaseDate":"2026-10-15T12:00:00Z", "collectionExplicitness":"notExplicit", "trackExplicitness":"notExplicit", "discCount":1, "discNumber":1, "trackCount":5, "trackNumber":5, "trackTimeMillis":112953, "country":"USA", "currency":"USD", "primaryGenreName":"Pop", "isStreamable":true}]
+}
+
+

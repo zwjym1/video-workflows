@@ -1,0 +1,56 @@
+{
+  "status": "actually_mixed_in_timing_preview_not_final_video",
+  "events": [
+    {
+      "scene": "S02",
+      "token": "原来",
+      "file": "cut_hit_low_muted.wav",
+      "kind": "sparse_board_cut",
+      "relative_rms_below_voice_db": 10,
+      "output_s": 15.28,
+      "provenance": "父交独立原创近似SFX，不是参考混音截取",
+      "bind_rule": "必须在该时点真实出现对应硬切/描线；后续若镜头切点调整，本事件同步移或删除，不跟BGM找拍。",
+      "preview_gain_linear": 1.2010475397109985,
+      "preview_placed_rms_dbfs": -27.393325805664062
+    },
+    {
+      "scene": "S04",
+      "token": "贡多齐再",
+      "file": "cut_hit_low_muted.wav",
+      "kind": "sparse_board_cut",
+      "relative_rms_below_voice_db": 10,
+      "output_s": 30.92,
+      "provenance": "父交独立原创近似SFX，不是参考混音截取",
+      "bind_rule": "必须在该时点真实出现对应硬切/描线；后续若镜头切点调整，本事件同步移或删除，不跟BGM找拍。",
+      "preview_gain_linear": 1.2010475397109985,
+      "preview_placed_rms_dbfs": -27.393325805664062
+    },
+    {
+      "scene": "S06",
+      "token": "十号",
+      "file": "cut_hit_low_muted.wav",
+      "kind": "sparse_board_cut",
+      "relative_rms_below_voice_db": 10,
+      "output_s": 46.08,
+      "provenance": "父交独立原创近似SFX，不是参考混音截取",
+      "bind_rule": "必须在该时点真实出现对应硬切/描线；后续若镜头切点调整，本事件同步移或删除，不跟BGM找拍。",
+      "preview_gain_linear": 1.2010475397109985,
+      "preview_placed_rms_dbfs": -27.393325805664062
+    },
+    {
+      "scene": "S04",
+      "token": "右路",
+      "file": "whoosh_line_short.wav",
+      "kind": "single_key_route_optional_original_approx",
+      "relative_rms_below_voice_db": 15,
+      "output_s": 31.72,
+      "provenance": "父交独立原创近似SFX，不是参考混音截取",
+      "bind_rule": "必须在该时点真实出现对应硬切/描线；后续若镜头切点调整，本事件同步移或删除，不跟BGM找拍。",
+      "preview_gain_linear": 1.6256784200668335,
+      "preview_placed_rms_dbfs": -32.39332580566406
+    }
+  ],
+  "preview_master_scale": 0.7967618926988435,
+  "no_bgm_yet": true,
+  "no_reference_narration_used": true
+}

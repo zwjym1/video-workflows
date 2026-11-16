@@ -1,0 +1,122 @@
+{
+  "R1": {
+    "native_dimensions": [
+      1920,
+      1080
+    ],
+    "duration_s": 171.038005,
+    "fps": "30/1",
+    "audio_codec": "aac",
+    "measurement": "actual AAC decoded to stereo float32 48kHz; stereo RMS=mean of both channel energies; mono=0.5L+0.5R; not LUFS, not true-peak, not listening judgement",
+    "windows": [
+      {
+        "start_s": 0,
+        "end_s": 10,
+        "rms_dbfs": -10.613809585571289,
+        "sample_peak_dbfs": 0.5903841257095337,
+        "mono_mean_rms_dbfs": -10.614004135131836
+      },
+      {
+        "start_s": 30,
+        "end_s": 40,
+        "rms_dbfs": -10.784806251525879,
+        "sample_peak_dbfs": 0.21688100695610046,
+        "mono_mean_rms_dbfs": -10.784806251525879
+      },
+      {
+        "start_s": 100,
+        "end_s": 110,
+        "rms_dbfs": -10.828008651733398,
+        "sample_peak_dbfs": 0.9548122882843018,
+        "mono_mean_rms_dbfs": -10.828022956848145
+      },
+      {
+        "start_s": 149,
+        "end_s": 166,
+        "rms_dbfs": -11.785506248474121,
+        "sample_peak_dbfs": 0.048445358872413635,
+        "mono_mean_rms_dbfs": -12.108150482177734
+      }
+    ]
+  },
+  "R2": {
+    "native_dimensions": [
+      1280,
+      960
+    ],
+    "duration_s": 113.753991,
+    "fps": "30/1",
+    "audio_codec": "aac",
+    "measurement": "actual AAC decoded to stereo float32 48kHz; stereo RMS=mean of both channel energies; mono=0.5L+0.5R; not LUFS, not true-peak, not listening judgement",
+    "windows": [
+      {
+        "start_s": 0,
+        "end_s": 10,
+        "rms_dbfs": -9.39564323425293,
+        "sample_peak_dbfs": 2.2600467205047607,
+        "mono_mean_rms_dbfs": -9.436149597167969
+      },
+      {
+        "start_s": 20,
+        "end_s": 30,
+        "rms_dbfs": -9.446882247924805,
+        "sample_peak_dbfs": 1.1338460445404053,
+        "mono_mean_rms_dbfs": -9.484282493591309
+      },
+      {
+        "start_s": 45,
+        "end_s": 55,
+        "rms_dbfs": -9.482942581176758,
+        "sample_peak_dbfs": 1.2304925918579102,
+        "mono_mean_rms_dbfs": -9.537731170654297
+      },
+      {
+        "start_s": 100,
+        "end_s": 110,
+        "rms_dbfs": -9.292012214660645,
+        "sample_peak_dbfs": 1.096011757850647,
+        "mono_mean_rms_dbfs": -9.331310272216797
+      }
+    ]
+  },
+  "CURRENT": {
+    "native_dimensions": [
+      1280,
+      720
+    ],
+    "duration_s": 99.36,
+    "fps": "25/1",
+    "audio_codec": "aac",
+    "measurement": "actual AAC decoded to stereo float32 48kHz; stereo RMS=mean of both channel energies; mono=0.5L+0.5R; not LUFS, not true-peak, not listening judgement",
+    "windows": [
+      {
+        "start_s": 0,
+        "end_s": 10,
+        "rms_dbfs": -21.223392486572266,
+        "sample_peak_dbfs": -1.6508705615997314,
+        "mono_mean_rms_dbfs": -21.223421096801758
+      },
+      {
+        "start_s": 30,
+        "end_s": 40,
+        "rms_dbfs": -20.394975662231445,
+        "sample_peak_dbfs": -1.4374511241912842,
+        "mono_mean_rms_dbfs": -20.395126342773438
+      },
+      {
+        "start_s": 45,
+        "end_s": 55,
+        "rms_dbfs": -20.606361389160156,
+        "sample_peak_dbfs": -1.560057282447815,
+        "mono_mean_rms_dbfs": -20.606372833251953
+      },
+      {
+        "start_s": 82,
+        "end_s": 98,
+        "rms_dbfs": -22.28689193725586,
+        "sample_peak_dbfs": -10.206443786621094,
+        "mono_mean_rms_dbfs": -22.551467895507812
+      }
+    ]
+  }
+}

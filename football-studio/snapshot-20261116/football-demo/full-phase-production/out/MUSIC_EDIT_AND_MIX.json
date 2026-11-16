@@ -1,0 +1,56 @@
+{
+  "duration_s": 99.36,
+  "music_switch_s": 78.96,
+  "reference_separation_not_master": true,
+  "main_music": "李富贵《人生志在一博》参考分离可用段；非新世界杯参考同款声明",
+  "tail_music": "passion，分离轨原速",
+  "source_cuts": [
+    {
+      "source": [
+        0,
+        25
+      ],
+      "output": [
+        0,
+        25
+      ]
+    },
+    {
+      "source": [
+        94,
+        145
+      ],
+      "output": [
+        24.2,
+        75.2
+      ]
+    },
+    {
+      "source": [
+        110,
+        114.56
+      ],
+      "output": [
+        74.4,
+        78.96
+      ],
+      "short_reprise": true
+    },
+    {
+      "source": [
+        149,
+        169.4
+      ],
+      "output": [
+        78.96,
+        99.36
+      ]
+    }
+  ],
+  "crossfades_s": 0.8,
+  "music_source": "/workspace/football-demo/bgm-reference-research/separated_exports/Rookie_空间阅读者_参考混音分离版_no_vocals.wav",
+  "master_scale": 1.0,
+  "peak_dbfs": -1.2459611587378236,
+  "human_listening": false,
+  "limitations": "分离配乐可能残余解说/空频段与原混音音效；已避开已知严重空洞段，未声称正版母带或彻底干净。"
+}

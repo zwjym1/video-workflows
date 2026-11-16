@@ -1,0 +1,41 @@
+{
+  "full_decode_passed": [
+    "/workspace/football-demo/full-phase-production/audio/S00.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S01.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S02.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S03.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S04.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S05.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S06.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S07.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S08.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S09.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S10.mp3",
+    "/workspace/football-demo/full-phase-production/audio/S11.mp3",
+    "/workspace/football-demo/full-phase-production/audio/VOICE_ONLY_TIMED.wav",
+    "/workspace/football-demo/full-phase-production/audio/SFX_ONLY_TIMED.wav",
+    "/workspace/football-demo/full-phase-production/audio/VO_SFX_TIMING_PREVIEW.wav"
+  ],
+  "sfx_event_signal": [
+    {
+      "t": 15.28,
+      "rms": 0.02776580060548502,
+      "peak": 0.188873291015625
+    },
+    {
+      "t": 30.92,
+      "rms": 0.02776580060548502,
+      "peak": 0.188873291015625
+    },
+    {
+      "t": 46.08,
+      "rms": 0.02776580060548502,
+      "peak": 0.188873291015625
+    },
+    {
+      "t": 31.72,
+      "rms": 0.018470263817231547,
+      "peak": 0.12255859375
+    }
+  ]
+}

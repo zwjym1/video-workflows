@@ -1,0 +1,474 @@
+[
+  {
+    "id": "K02",
+    "concept_zh": "穿过、绕过或越过压迫",
+    "opponent_problem": "中路被封住，为何不一定要继续短传？",
+    "preconditions": "先识别压迫线和后续接应；有长传落点与第二点视野再分析越顶。",
+    "minimum_evidence": "至少涵盖一条压迫线和接球点；论越顶需落点后2–3秒。",
+    "counterexample": "越顶无人争第二点、边线成陷阱，或接球立即被迫回传时不算自动破压。",
+    "reasoned_interpretation": "该选择可能把压迫者留在球后；须看接球者能否继续，不以球越线即称成功。",
+    "source_refs": [
+      {
+        "id": "F01",
+        "section": "Key coaching points1–5",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/progressing-through-the-thirds.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "U03",
+        "section": "go direct",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a4-2069725694b8-2fc655f1fce9-1000--champions-league-performance-insights-paris-saint-germain-fi/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K03",
+    "concept_zh": "回撤接应的时机",
+    "opponent_problem": "中场往回跑，怎样避免把自己的盯防也带回球边？",
+    "preconditions": "传球通道能打开；回撤者与持球者不挤同一线；身后有下一接点。",
+    "minimum_evidence": "回撤前后连续宽景，至少含接应者及最近跟防/补位者。",
+    "counterexample": "对手不跟但封住下一脚，或接应者背身被夹住，回撤可能降低推进效率。",
+    "reasoned_interpretation": "回撤提供短接点；若对手跟出且身后被利用，可说为下一人打开空间。",
+    "source_refs": [
+      {
+        "id": "F01",
+        "section": "Methodology/scale",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/progressing-through-the-thirds.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F11",
+        "section": "Focused build-up solutions",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/position-specific-training/game-situations-developing-central-midfielders.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K04",
+    "concept_zh": "回传后的向前出口",
+    "opponent_problem": "回传是在退缩，还是换一个人向前？",
+    "preconditions": "原持球者受压；后接点仍有时间处理；新线路未被同一压迫封住。",
+    "minimum_evidence": "保留回传前压力及回传后下一脚；不能只按传球方向定价值。",
+    "counterexample": "回传后全队更被动、门将被迫解围或接点同样被堵，可能只是止损。",
+    "reasoned_interpretation": "回传可把球交给处理角度/时间更好的队友，使接下来的向前选择更可行。",
+    "source_refs": [
+      {
+        "id": "F02",
+        "section": "Player1/Player2",
+        "url": "https://www.fifatrainingcentre.com/en/game/game-analysis/transition-to-attacking/passing-the-press.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F03",
+        "section": "Key coaching point1",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/playing-forward-to-avoid-the-pressure.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K05",
+    "concept_zh": "有目的带球与出球时机",
+    "opponent_problem": "什么时候该带一步，什么时候该传？",
+    "preconditions": "持球者有向前空间；队友提供至少一个可达出口；对手反应在画内。",
+    "minimum_evidence": "带球开始前到对手反应及出球完成，含相关补位者。",
+    "counterexample": "对手保持距离封线，或带球撞进多人夹区，带一步未必制造优势。",
+    "reasoned_interpretation": "带向防守者可能迫使其选择上抢或退守；出现跟出和空位利用后可解释牵制机制。",
+    "source_refs": [
+      {
+        "id": "F11",
+        "section": "Key coaching points/Parts1–2",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/position-specific-training/game-situations-developing-central-midfielders.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F09",
+        "section": "Parts1–2",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K06",
+    "concept_zh": "接应角度与错层",
+    "opponent_problem": "三个人都在附近，为何球还是传不进去？",
+    "preconditions": "距离在可达范围；不同高度形成真实通道，而非被同一防守者遮住。",
+    "minimum_evidence": "持球者、接应者与封线者同屏；需动作前后而非只画三角。",
+    "counterexample": "三角过扁、距离太大或接球人背压很近，同样可能无效。",
+    "reasoned_interpretation": "错层可以提供不同线路；三角是否有用看传球能否到达和下一脚能否展开。",
+    "source_refs": [
+      {
+        "id": "F03",
+        "section": "Methodology",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/playing-forward-to-avoid-the-pressure.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "C01",
+        "section": "How do teams use third-man runs?",
+        "url": "https://learning.coachesvoice.com/cv/third-man-runs-football-tactics-explained-gasperini-guardiola/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K08",
+    "concept_zh": "转移进攻方向",
+    "opponent_problem": "把球横着传到另一边，到底改变了什么？",
+    "preconditions": "对手偏向一侧或中路承压；另一侧接点可用；转移速度和后续支援能跟上。",
+    "minimum_evidence": "转移前后双方相关区域均需可见；镜头切到另一边后不能补造先前站位。",
+    "counterexample": "慢转移让对手整齐落位，或边路接球即被夹，不能只用横跨距离夸价值。",
+    "reasoned_interpretation": "转移可能换到较有利的推进区；若对手来不及横移，接球者有更长处理窗口。",
+    "source_refs": [
+      {
+        "id": "F03",
+        "section": "Key coaching point2",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/playing-forward-to-avoid-the-pressure.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F09",
+        "section": "Key coaching points",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "U03",
+        "section": "go direct",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a4-2069725694b8-2fc655f1fce9-1000--champions-league-performance-insights-paris-saint-germain-fi/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K09",
+    "concept_zh": "出球后继续接应与撞墙",
+    "opponent_problem": "传完就站住，与传完再跑有何不同？",
+    "preconditions": "回做者能处理；跑动有可达通道；防守者位置变化可核对。",
+    "minimum_evidence": "至少包含出球前、跑动、回做后三阶段；别只看漂亮一脚。",
+    "counterexample": "回做回原地、跑动越位或路径被后卫守住，完成两脚不等于打穿。",
+    "reasoned_interpretation": "两人撞墙可让原持球者在新位置接回；功能在于改变接球地点，不是传球次数。",
+    "source_refs": [
+      {
+        "id": "F09",
+        "section": "Part2 coaching points",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F02",
+        "section": "Player3",
+        "url": "https://www.fifatrainingcentre.com/en/game/game-analysis/transition-to-attacking/passing-the-press.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K10",
+    "concept_zh": "第三人跑动与间接连接",
+    "opponent_problem": "原本难直传的人，怎么借另一个人接上？",
+    "preconditions": "有A/B/C三个不同角色；直达受限或中间点改变传球角度；C跑动与时机可见。",
+    "minimum_evidence": "至少三进攻者和封直线者从开始到C接球同屏/连续可追溯。",
+    "counterexample": "A→B→A是撞墙；A→B→C但C只是原地安全横传，不一定是第三人跑动。",
+    "reasoned_interpretation": "中间人可改变到C的传球角度；如果防守跟A/B移动且C进入空间，可解释第三人受益。",
+    "source_refs": [
+      {
+        "id": "C01",
+        "section": "What/How",
+        "url": "https://learning.coachesvoice.com/cv/third-man-runs-football-tactics-explained-gasperini-guardiola/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F02",
+        "section": "Player3",
+        "url": "https://www.fifatrainingcentre.com/en/game/game-analysis/transition-to-attacking/passing-the-press.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K11",
+    "concept_zh": "宽度、纵深与半空间",
+    "opponent_problem": "为什么有人贴边，有人站里面？",
+    "preconditions": "能确定攻向和球场参照；看得到内外接点及相关防守者。",
+    "minimum_evidence": "中远景保留两条不同通道；局部无法确认全宽时只分析本侧。",
+    "counterexample": "宽得与队友脱节、只有宽度没纵深，或中路无人接应，都可能无效。",
+    "reasoned_interpretation": "不同通道提供不同应对；若所有人同路，对方可集中封堵；不能据此臆定无人接管。",
+    "source_refs": [
+      {
+        "id": "F09",
+        "section": "Key coaching points/Part4",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "C02",
+        "section": "Tactical terms",
+        "url": "https://learning.coachesvoice.com/cv/glossary-football-tactics-coaching/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K12",
+    "concept_zh": "套边、内套与平行跟进",
+    "opponent_problem": "边路身后的跑者，是接球还是帮持球人多出选择？",
+    "preconditions": "有同侧同伴作参照；跑者是否越过/穿过其内外侧可连续看到。",
+    "minimum_evidence": "从同伴身后到超越/停留的连续画面；不能用终点一帧命名。",
+    "counterexample": "跑者未超越、只平行保持内侧接点，叫跟进更合适；人多也可能堵路。",
+    "reasoned_interpretation": "套边可提供外侧接应，内套可威胁内线；若对手跟跑而持球者受益，才解释牵制。",
+    "source_refs": [
+      {
+        "id": "C02",
+        "section": "Tactical terms",
+        "url": "https://learning.coachesvoice.com/cv/glossary-football-tactics-coaching/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F09",
+        "section": "Part3",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K13",
+    "concept_zh": "牵制与换位的证据链",
+    "opponent_problem": "一个没碰球的跑动，凭什么说它帮了队友？",
+    "preconditions": "同一防守者可追溯；其跟随前后和队友利用空间在同一阶段。",
+    "minimum_evidence": "需跑者、跟防者、受益者连续关系；只见跑者或只见进球不能建立牵制因果。",
+    "counterexample": "D没有跟、只是随球横移，或空位被另一防守者补上，不能说已清出通道。",
+    "reasoned_interpretation": "三步都出现时，可解释“A移动带走D，为B提供线路”；是功能性推断，不必降成播报。",
+    "source_refs": [
+      {
+        "id": "U02",
+        "section": "Barcelona rotations",
+        "url": "https://www.uefa.com/uefachampionsleague/news/0295-1cf23f131450-a7fbf2264d6a-1000--champions-league-performance-insights-man-marking-and-ho/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F09",
+        "section": "Part4",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K14",
+    "concept_zh": "局部人数与位置优势",
+    "opponent_problem": "两个人对一个人，就一定占便宜吗？",
+    "preconditions": "只数能及时影响该次动作的人；能判断传球线路与参与时限。",
+    "minimum_evidence": "含潜在补位者的稍宽镜头；不按裁切后的画面人数喊2v1。",
+    "counterexample": "补位及时成2v2、接应越位、传球难度太大或多余人被同一人封住。",
+    "reasoned_interpretation": "2v1可能提供二选一压力；若多一人被遮住或无法及时接球，数量并未兑现成优势。",
+    "source_refs": [
+      {
+        "id": "F11",
+        "section": "Parts1–2",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/position-specific-training/game-situations-developing-central-midfielders.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F09",
+        "section": "Part2",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "C01",
+        "section": "How",
+        "url": "https://learning.coachesvoice.com/cv/third-man-runs-football-tactics-explained-gasperini-guardiola/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K16",
+    "concept_zh": "传中、横传与倒三角选择",
+    "opponent_problem": "同样从边上给球，为何有时传门前、有时往后找？",
+    "preconditions": "起脚区域、门将与至少一个接应者可见；可核对球落点相对门线方向。",
+    "minimum_evidence": "传前1–2秒到接球/争顶之后；缺门将不能断言已绕开门将。",
+    "counterexample": "低平球不全是倒三角；接应已跑过或后点被守住时，早传/晚传都可能失效。",
+    "reasoned_interpretation": "横传可把终结交到另一侧；倒三角找退后空间/后插上；价值由具体相对位置支持。",
+    "source_refs": [
+      {
+        "id": "C03",
+        "section": "Key principles/Cutback/Driven/Pushed",
+        "url": "https://learning.coachesvoice.com/cv/in-focus-attacking-in-the-final-third-crossing-and-finishing/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F09",
+        "section": "Part3",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K17",
+    "concept_zh": "禁区接应与到达时机",
+    "opponent_problem": "门前站很多人，为什么仍可能没人接到？",
+    "preconditions": "传球即将发生；能见近点、另一层或后点的实际接应与跟防。",
+    "minimum_evidence": "传前至触球后完整窗口，不能只数门前静帧人数。",
+    "counterexample": "所有人挤同一点、过早越过球线或传晚被整体保护，人数多也没用。",
+    "reasoned_interpretation": "分层跑动可覆盖不同落点；过早站定更易被贴住，但需看本次防守关系。",
+    "source_refs": [
+      {
+        "id": "C03",
+        "section": "Key principles/Positional requirements",
+        "url": "https://learning.coachesvoice.com/cv/in-focus-attacking-in-the-final-third-crossing-and-finishing/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F09",
+        "section": "Part4",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/in-possession/boothroyd-breaking-down-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K19",
+    "concept_zh": "压迫角度与遮挡传球线",
+    "opponent_problem": "为什么防守者不走最短直线冲球？",
+    "preconditions": "可见持球者、压迫者及被遮的潜在接应点；需考虑传球可绕的方向。",
+    "minimum_evidence": "三者同时可见，最好含下一脚；缺接应者时不能凭一条阴影扇形宣布封死。",
+    "counterexample": "穿裆、挑传、第三人绕出或支援距离不够，都可能使阴影无效。",
+    "reasoned_interpretation": "有角度的逼近可同时施压与遮一条地面线；是否有效以对手可选动作和后续为证。",
+    "source_refs": [
+      {
+        "id": "U01",
+        "section": "Food for thought/session points",
+        "url": "https://www.uefa.com/uefachampionsleague/news/028a-1a1bf5c2d303-4a5106d81f09-1000--champions-league-performance-insights-setting-the-press/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K20",
+    "concept_zh": "压迫、保护与协防平衡",
+    "opponent_problem": "一个人扑出去，队友该跟着扑还是补他身后？",
+    "preconditions": "压迫者与至少一名保护者同屏；能看到防线/中场间的间距。",
+    "minimum_evidence": "含上抢前、过程中及球移到另一侧后的单位移动。",
+    "counterexample": "保护太远来不及、太平一起被穿，或全员退让持球者无人压，都有风险。",
+    "reasoned_interpretation": "斜后支援可减少单人被过后的直通风险；全线同扑会扩大身后，但本次效果需看通道。",
+    "source_refs": [
+      {
+        "id": "F05",
+        "section": "Warm-up/Part2",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/out-of-possession/collective-ball-recovery-in-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "U01",
+        "section": "session points",
+        "url": "https://www.uefa.com/uefachampionsleague/news/028a-1a1bf5c2d303-4a5106d81f09-1000--champions-league-performance-insights-setting-the-press/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K24",
+    "concept_zh": "禁区传中防守与远侧保护",
+    "opponent_problem": "大家都盯着传球的人，另一侧谁来管？",
+    "preconditions": "持球区与禁区内接应/后卫/门将同屏；最好能看到远侧。",
+    "minimum_evidence": "传前到解围或射门后至少1秒；裁切掉后点不能断言漏人。",
+    "counterexample": "内收过头可能放远侧第二波，扑边过早可能开中路；需按实际职责与其他人位置评估。",
+    "reasoned_interpretation": "保护中路与远点可减少横传被直接终结；防守者需兼顾球和跑者，不等于每人盯固定对象。",
+    "source_refs": [
+      {
+        "id": "F05",
+        "section": "Part3",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/out-of-possession/collective-ball-recovery-in-a-low-block.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "C03",
+        "section": "Key principles/Positional requirements",
+        "url": "https://learning.coachesvoice.com/cv/in-focus-attacking-in-the-final-third-crossing-and-finishing/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K34",
+    "concept_zh": "阵型是阶段职责，不是电话号码答案",
+    "opponent_problem": "首发写433，为何画面里会变成另一种形状？",
+    "preconditions": "知道当时在场名单/换人/人数与球权阶段；有足够宽镜头。",
+    "minimum_evidence": "多个稳定阶段与宽景，不能从一个瞬间或只看进球图强定全场阵型。",
+    "counterexample": "定格偶然跑成325不等于整场325；三中卫也不必比四后卫更保守。",
+    "reasoned_interpretation": "阵型给职责起点；同队攻防结构可不同，宽度与中路保护取舍由角色实现。",
+    "source_refs": [
+      {
+        "id": "C04",
+        "section": "Introduction/all formations",
+        "url": "https://learning.coachesvoice.com/cv/formations-football-tactics-explained-best-most-used/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F12",
+        "section": "Parts2–3",
+        "url": "https://www.fifatrainingcentre.com/en/practice/elite-sessions/youth-national-teams/u15-boys-tournament/matchday-2-uae-u15-preparing-to-play-against-mexicos-diamond-shape.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K35",
+    "concept_zh": "观察顺序与PMDS",
+    "opponent_problem": "球、人、对手、空间、时间，先看什么才不会漏？",
+    "preconditions": "有连续动作和可靠攻向/时钟；明确画面覆盖范围。",
+    "minimum_evidence": "完整回合加前后几秒；机位不足先写未知，不把空白画满。",
+    "counterexample": "只盯球漏无球接管，只盯跑者漏球是否能传到；脱离比分可能错判风险取舍。",
+    "reasoned_interpretation": "用PMDS组织比较可解释为什么同一跑位早/晚半拍效果不同；不能把像素位移直接当真实速度。",
+    "source_refs": [
+      {
+        "id": "F11",
+        "section": "PMDS/key coaching points",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/position-specific-training/game-situations-developing-central-midfielders.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "U03",
+        "section": "Coaching reflection",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a4-2069725694b8-2fc655f1fce9-1000--champions-league-performance-insights-paris-saint-germain-fi/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  },
+  {
+    "id": "K36",
+    "concept_zh": "过程、结果与可证伪解释",
+    "opponent_problem": "好球没进、普通球进了，哪一个值得讲？",
+    "preconditions": "能还原当时可用选择和防守反应；至少一条可能推翻解释的反例。",
+    "minimum_evidence": "完整进攻/守成/丢球回合；需要起因/反应/结果三段，可不以射门结尾。",
+    "counterexample": "美丽远射但前因无镜头可能低分析值；成功压到边线迫回传即使没抢球也可高分析值。",
+    "reasoned_interpretation": "若对手反应与预期机制一致可给条件性解释；反例不符就降级/改写，不只说球传给谁。",
+    "source_refs": [
+      {
+        "id": "F01",
+        "section": "Key coaching points4–5",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/progressing-through-the-thirds.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "F10",
+        "section": "success and failed delivery",
+        "url": "https://www.fifatrainingcentre.com/en/game/game-analysis/set-plays/corners/attacking-corners-cameroon.php",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      },
+      {
+        "id": "U03",
+        "section": "Coaching reflection",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a4-2069725694b8-2fc655f1fce9-1000--champions-league-performance-insights-paris-saint-germain-fi/",
+        "supporting_scope": "支持本卡专业原理；中文证据门槛、反例与对白为本库编辑归纳，不是原文逐字规则。"
+      }
+    ]
+  }
+]

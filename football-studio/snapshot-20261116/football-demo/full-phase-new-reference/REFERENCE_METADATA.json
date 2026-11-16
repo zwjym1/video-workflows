@@ -1,0 +1,24 @@
+{
+  "share_url": "https://v.douyin.com/QiYR97eW8jI/",
+  "canonical_url": "https://www.douyin.com/video/7697948895069900068",
+  "actual_video_id": "7697948895069900068",
+  "title_from_user_share": "战术板解析系列 | 2022世界杯决赛：阿根廷高效反击",
+  "video_topic_verified": "实际帧及本地ASR均为阿根廷对法国的同一次反击，多位置跑位讲解",
+  "author": {
+    "in_video_brand_verified": "Foot Studio | 战术板深度解析",
+    "douyin_account_name_status": "not_verified",
+    "reason": "公开分享页未返回作者/item_list；不能把片内品牌直接等同账号昵称，需父GUI读取作品页确认"
+  },
+  "duration_s": 113.753991,
+  "width": 1920,
+  "height": 1440,
+  "fps": "30/1",
+  "file_bytes": 9209941,
+  "download": "现有media.src_dlpanda公开表单获得公开媒体地址；分享页200无作品数据；媒体单次HTTP200，不用浏览器账号cookie、不自动浏览器、不用私有接口或验证码绕过",
+  "subtitle_status": {
+    "platform_captions": "missing_not_confirmed_absent",
+    "local_asr": "available_needs_review",
+    "quality_warning": "姓名错字、52–75秒重复/错断句明显，不把机器文本冒称逐字原字幕"
+  },
+  "main_style_status": "本次更新的主参考；不再默认旧空间阅读者或旧强制正俯视约束"
+}

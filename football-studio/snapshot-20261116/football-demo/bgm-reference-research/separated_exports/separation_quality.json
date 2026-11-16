@@ -1,0 +1,730 @@
+{
+  "method": "Official demucs 4.1.0, model htdemucs, CPU, segment 7, float32 stems. no_vocals = drums+bass+other. Labeled 参考混音分离版, not an official master.",
+  "duration_s": 171.0628117913832,
+  "sample_rate": 44100,
+  "channels": 2,
+  "global": [
+    {
+      "name": "source",
+      "rms_db": -10.71,
+      "peak": 1.0,
+      "peak_db": 0.0,
+      "clip": {
+        "samples_at_or_above_0999": 529,
+        "fraction": 3.5061579799227715e-05
+      },
+      "band_energy": {
+        "speech_300_3400": 16015.93306454895,
+        "low_20_200": 441432.00964459317,
+        "presence_4k_8k": 958.5463682305764,
+        "air_8k_16k": 114.39616716475268
+      }
+    },
+    {
+      "name": "vocals",
+      "rms_db": -13.21,
+      "peak": 0.9901,
+      "peak_db": -0.09,
+      "clip": {
+        "samples_at_or_above_0999": 0,
+        "fraction": 0.0
+      },
+      "band_energy": {
+        "speech_300_3400": 10102.116026387474,
+        "low_20_200": 215837.05753991674,
+        "presence_4k_8k": 628.1592899930528,
+        "air_8k_16k": 64.21634797945059
+      },
+      "band_ratio_vs_source": {
+        "speech_300_3400": 0.6307541362512541,
+        "low_20_200": 0.4889474547024626,
+        "presence_4k_8k": 0.6553248865285465,
+        "air_8k_16k": 0.5613505204852413
+      }
+    },
+    {
+      "name": "no_vocals",
+      "rms_db": -17.5,
+      "peak": 0.9799,
+      "peak_db": -0.18,
+      "clip": {
+        "samples_at_or_above_0999": 0,
+        "fraction": 0.0
+      },
+      "band_energy": {
+        "speech_300_3400": 1451.970522572761,
+        "low_20_200": 144877.68831723867,
+        "presence_4k_8k": 73.90977066133918,
+        "air_8k_16k": 20.142261159588216
+      },
+      "band_ratio_vs_source": {
+        "speech_300_3400": 0.09065787904587826,
+        "low_20_200": 0.3281993266276339,
+        "presence_4k_8k": 0.07710609847468572,
+        "air_8k_16k": 0.17607461559948465
+      }
+    },
+    {
+      "name": "drums",
+      "rms_db": -20.29,
+      "peak": 0.9681,
+      "peak_db": -0.28,
+      "clip": {
+        "samples_at_or_above_0999": 0,
+        "fraction": 0.0
+      },
+      "band_energy": {
+        "speech_300_3400": 287.3669425511266,
+        "low_20_200": 84251.08146827326,
+        "presence_4k_8k": 48.86025967716413,
+        "air_8k_16k": 18.32229498932991
+      },
+      "band_ratio_vs_source": {
+        "speech_300_3400": 0.017942566405151218,
+        "low_20_200": 0.19085856853948063,
+        "presence_4k_8k": 0.05097328757017511,
+        "air_8k_16k": 0.16016528738189498
+      }
+    },
+    {
+      "name": "bass",
+      "rms_db": -22.46,
+      "peak": 0.9063,
+      "peak_db": -0.85,
+      "clip": {
+        "samples_at_or_above_0999": 0,
+        "fraction": 0.0
+      },
+      "band_energy": {
+        "speech_300_3400": 83.942271379734,
+        "low_20_200": 58311.02368425645,
+        "presence_4k_8k": 0.013130542207463361,
+        "air_8k_16k": 0.0020446016049830338
+      },
+      "band_ratio_vs_source": {
+        "speech_300_3400": 0.005241172714784821,
+        "low_20_200": 0.13209514129073685,
+        "presence_4k_8k": 1.3698390231973458e-05,
+        "air_8k_16k": 1.7872990465129924e-05
+      }
+    },
+    {
+      "name": "other",
+      "rms_db": -27.1,
+      "peak": 0.5504,
+      "peak_db": -5.19,
+      "clip": {
+        "samples_at_or_above_0999": 0,
+        "fraction": 0.0
+      },
+      "band_energy": {
+        "speech_300_3400": 898.5070412789589,
+        "low_20_200": 456.6032173985118,
+        "presence_4k_8k": 15.289137442550535,
+        "air_8k_16k": 0.6980534098478117
+      },
+      "band_ratio_vs_source": {
+        "speech_300_3400": 0.0561008239518553,
+        "low_20_200": 0.0010343681641169005,
+        "presence_4k_8k": 0.015950336832190434,
+        "air_8k_16k": 0.006102069913255742
+      }
+    }
+  ],
+  "reconstruction": {
+    "src_rms_db": -10.71,
+    "recon_rms_db": -11.63,
+    "error_rms_db": -29.39,
+    "error_vs_src_db": -18.68
+  },
+  "no_vocals_energy_share": {
+    "other": 0.1098,
+    "drums": 0.5268,
+    "bass": 0.3193
+  },
+  "silero_vad": {
+    "source_mix": {
+      "label": "source_mix",
+      "speech_seconds": 163.688,
+      "duration_s": 171.063,
+      "speech_ratio": 0.9569,
+      "n_segments": 6,
+      "segments": [
+        {
+          "start_s": 0.034,
+          "end_s": 152.51
+        },
+        {
+          "start_s": 154.882,
+          "end_s": 157.694
+        },
+        {
+          "start_s": 158.562,
+          "end_s": 160.286
+        },
+        {
+          "start_s": 163.106,
+          "end_s": 164.094
+        },
+        {
+          "start_s": 164.29,
+          "end_s": 167.902
+        },
+        {
+          "start_s": 168.642,
+          "end_s": 170.718
+        }
+      ]
+    },
+    "vocals_stem": {
+      "label": "vocals_stem",
+      "speech_seconds": 164.609,
+      "duration_s": 171.063,
+      "speech_ratio": 0.9623,
+      "n_segments": 6,
+      "segments": [
+        {
+          "start_s": 0.066,
+          "end_s": 153.31
+        },
+        {
+          "start_s": 154.37,
+          "end_s": 157.15
+        },
+        {
+          "start_s": 158.146,
+          "end_s": 160.99
+        },
+        {
+          "start_s": 163.074,
+          "end_s": 163.998
+        },
+        {
+          "start_s": 164.29,
+          "end_s": 166.686
+        },
+        {
+          "start_s": 168.642,
+          "end_s": 171.063
+        }
+      ]
+    },
+    "no_vocals_bed": {
+      "label": "no_vocals_bed",
+      "speech_seconds": 0,
+      "duration_s": 171.063,
+      "speech_ratio": 0.0,
+      "n_segments": 0
+    },
+    "no_vocals_speech_segments": []
+  },
+  "preview_ncc": {
+    "main_preview_vs_source_at_0.314s": 0.3421,
+    "main_preview_vs_no_vocals_at_0.314s": 0.747,
+    "main_preview_vs_vocals_at_0.314s": 0.0236,
+    "main_preview_vs_source_at_112.147s": 0.3947,
+    "main_preview_vs_no_vocals_at_112.147s": 0.667,
+    "main_preview_vs_vocals_at_112.147s": 0.0337,
+    "passion_preview_vs_source_at_147.0s": null,
+    "passion_preview_vs_no_vocals_at_147.0s": null
+  },
+  "windows_5s": [
+    {
+      "t0": 0.0,
+      "t1": 5.0,
+      "src_rms_db": -10.71,
+      "voc_rms_db": -13.03,
+      "nov_rms_db": -18.09,
+      "drums_rms_db": -20.12,
+      "bass_rms_db": -23.14,
+      "other_rms_db": -32.84,
+      "voc_minus_nov_db": 5.06,
+      "ncc_voc_nov": 0.0457,
+      "ncc_src_nov": 0.4717,
+      "ncc_src_voc": 0.902
+    },
+    {
+      "t0": 5.0,
+      "t1": 10.0,
+      "src_rms_db": -10.49,
+      "voc_rms_db": -12.85,
+      "nov_rms_db": -17.96,
+      "drums_rms_db": -20.06,
+      "bass_rms_db": -24.16,
+      "other_rms_db": -26.41,
+      "voc_minus_nov_db": 5.11,
+      "ncc_voc_nov": 0.0607,
+      "ncc_src_nov": 0.4805,
+      "ncc_src_voc": 0.9041
+    },
+    {
+      "t0": 10.0,
+      "t1": 15.0,
+      "src_rms_db": -10.99,
+      "voc_rms_db": -13.4,
+      "nov_rms_db": -18.02,
+      "drums_rms_db": -19.78,
+      "bass_rms_db": -24.28,
+      "other_rms_db": -30.68,
+      "voc_minus_nov_db": 4.62,
+      "ncc_voc_nov": 0.053,
+      "ncc_src_nov": 0.4936,
+      "ncc_src_voc": 0.8943
+    },
+    {
+      "t0": 15.0,
+      "t1": 20.0,
+      "src_rms_db": -10.18,
+      "voc_rms_db": -12.48,
+      "nov_rms_db": -18.0,
+      "drums_rms_db": -20.18,
+      "bass_rms_db": -23.39,
+      "other_rms_db": -28.9,
+      "voc_minus_nov_db": 5.52,
+      "ncc_voc_nov": 0.0739,
+      "ncc_src_nov": 0.4741,
+      "ncc_src_voc": 0.9128
+    },
+    {
+      "t0": 20.0,
+      "t1": 25.0,
+      "src_rms_db": -10.71,
+      "voc_rms_db": -13.29,
+      "nov_rms_db": -17.63,
+      "drums_rms_db": -20.28,
+      "bass_rms_db": -22.11,
+      "other_rms_db": -28.5,
+      "voc_minus_nov_db": 4.34,
+      "ncc_voc_nov": 0.0793,
+      "ncc_src_nov": 0.5231,
+      "ncc_src_voc": 0.8906
+    },
+    {
+      "t0": 25.0,
+      "t1": 30.0,
+      "src_rms_db": -10.38,
+      "voc_rms_db": -12.54,
+      "nov_rms_db": -18.28,
+      "drums_rms_db": -20.54,
+      "bass_rms_db": -24.42,
+      "other_rms_db": -26.96,
+      "voc_minus_nov_db": 5.75,
+      "ncc_voc_nov": 0.0415,
+      "ncc_src_nov": 0.4414,
+      "ncc_src_voc": 0.9145
+    },
+    {
+      "t0": 30.0,
+      "t1": 35.0,
+      "src_rms_db": -10.67,
+      "voc_rms_db": -12.67,
+      "nov_rms_db": -19.93,
+      "drums_rms_db": -22.79,
+      "bass_rms_db": -24.64,
+      "other_rms_db": -29.15,
+      "voc_minus_nov_db": 7.27,
+      "ncc_voc_nov": 0.064,
+      "ncc_src_nov": 0.4062,
+      "ncc_src_voc": 0.9376
+    },
+    {
+      "t0": 35.0,
+      "t1": 40.0,
+      "src_rms_db": -10.9,
+      "voc_rms_db": -12.14,
+      "nov_rms_db": -40.67,
+      "drums_rms_db": -43.83,
+      "bass_rms_db": -55.92,
+      "other_rms_db": -46.7,
+      "voc_minus_nov_db": 28.54,
+      "ncc_voc_nov": 0.0928,
+      "ncc_src_nov": 0.1253,
+      "ncc_src_voc": 0.9993
+    },
+    {
+      "t0": 40.0,
+      "t1": 45.0,
+      "src_rms_db": -11.08,
+      "voc_rms_db": -12.32,
+      "nov_rms_db": -39.09,
+      "drums_rms_db": -41.74,
+      "bass_rms_db": -56.12,
+      "other_rms_db": -45.62,
+      "voc_minus_nov_db": 26.77,
+      "ncc_voc_nov": 0.0733,
+      "ncc_src_nov": 0.1145,
+      "ncc_src_voc": 0.999
+    },
+    {
+      "t0": 45.0,
+      "t1": 50.0,
+      "src_rms_db": -10.79,
+      "voc_rms_db": -12.16,
+      "nov_rms_db": -25.77,
+      "drums_rms_db": -51.94,
+      "bass_rms_db": -25.82,
+      "other_rms_db": -45.05,
+      "voc_minus_nov_db": 13.61,
+      "ncc_voc_nov": 0.0277,
+      "ncc_src_nov": 0.206,
+      "ncc_src_voc": 0.9837
+    },
+    {
+      "t0": 50.0,
+      "t1": 55.0,
+      "src_rms_db": -11.06,
+      "voc_rms_db": -12.55,
+      "nov_rms_db": -24.43,
+      "drums_rms_db": -50.87,
+      "bass_rms_db": -24.46,
+      "other_rms_db": -44.88,
+      "voc_minus_nov_db": 11.88,
+      "ncc_voc_nov": 0.0525,
+      "ncc_src_nov": 0.266,
+      "ncc_src_voc": 0.9764
+    },
+    {
+      "t0": 55.0,
+      "t1": 60.0,
+      "src_rms_db": -11.02,
+      "voc_rms_db": -12.61,
+      "nov_rms_db": -23.34,
+      "drums_rms_db": -44.87,
+      "bass_rms_db": -23.56,
+      "other_rms_db": -37.69,
+      "voc_minus_nov_db": 10.73,
+      "ncc_voc_nov": 0.0581,
+      "ncc_src_nov": 0.2993,
+      "ncc_src_voc": 0.9697
+    },
+    {
+      "t0": 60.0,
+      "t1": 65.0,
+      "src_rms_db": -10.94,
+      "voc_rms_db": -12.53,
+      "nov_rms_db": -24.39,
+      "drums_rms_db": -50.78,
+      "bass_rms_db": -24.85,
+      "other_rms_db": -34.78,
+      "voc_minus_nov_db": 11.85,
+      "ncc_voc_nov": 0.0928,
+      "ncc_src_nov": 0.3041,
+      "ncc_src_voc": 0.9765
+    },
+    {
+      "t0": 65.0,
+      "t1": 70.0,
+      "src_rms_db": -10.8,
+      "voc_rms_db": -12.42,
+      "nov_rms_db": -23.29,
+      "drums_rms_db": -51.92,
+      "bass_rms_db": -24.72,
+      "other_rms_db": -29.11,
+      "voc_minus_nov_db": 10.87,
+      "ncc_voc_nov": 0.0863,
+      "ncc_src_nov": 0.3224,
+      "ncc_src_voc": 0.9707
+    },
+    {
+      "t0": 70.0,
+      "t1": 75.0,
+      "src_rms_db": -10.61,
+      "voc_rms_db": -12.47,
+      "nov_rms_db": -20.74,
+      "drums_rms_db": -44.28,
+      "bass_rms_db": -23.7,
+      "other_rms_db": -24.11,
+      "voc_minus_nov_db": 8.26,
+      "ncc_voc_nov": 0.0682,
+      "ncc_src_nov": 0.3803,
+      "ncc_src_voc": 0.9484
+    },
+    {
+      "t0": 75.0,
+      "t1": 80.0,
+      "src_rms_db": -10.48,
+      "voc_rms_db": -11.93,
+      "nov_rms_db": -26.42,
+      "drums_rms_db": -38.18,
+      "bass_rms_db": -32.64,
+      "other_rms_db": -28.26,
+      "voc_minus_nov_db": 14.49,
+      "ncc_voc_nov": 0.0844,
+      "ncc_src_nov": 0.2466,
+      "ncc_src_voc": 0.9863
+    },
+    {
+      "t0": 80.0,
+      "t1": 85.0,
+      "src_rms_db": -10.36,
+      "voc_rms_db": -11.66,
+      "nov_rms_db": -30.15,
+      "drums_rms_db": -53.8,
+      "bass_rms_db": -56.46,
+      "other_rms_db": -30.28,
+      "voc_minus_nov_db": 18.49,
+      "ncc_voc_nov": 0.0623,
+      "ncc_src_nov": 0.1662,
+      "ncc_src_voc": 0.9944
+    },
+    {
+      "t0": 85.0,
+      "t1": 90.0,
+      "src_rms_db": -10.98,
+      "voc_rms_db": -12.3,
+      "nov_rms_db": -29.56,
+      "drums_rms_db": -44.65,
+      "bass_rms_db": -56.75,
+      "other_rms_db": -29.78,
+      "voc_minus_nov_db": 17.26,
+      "ncc_voc_nov": 0.0549,
+      "ncc_src_nov": 0.1746,
+      "ncc_src_voc": 0.9926
+    },
+    {
+      "t0": 90.0,
+      "t1": 95.0,
+      "src_rms_db": -10.64,
+      "voc_rms_db": -13.1,
+      "nov_rms_db": -17.62,
+      "drums_rms_db": -20.16,
+      "bass_rms_db": -22.99,
+      "other_rms_db": -26.85,
+      "voc_minus_nov_db": 4.52,
+      "ncc_voc_nov": 0.0561,
+      "ncc_src_nov": 0.499,
+      "ncc_src_voc": 0.8928
+    },
+    {
+      "t0": 95.0,
+      "t1": 100.0,
+      "src_rms_db": -10.32,
+      "voc_rms_db": -13.05,
+      "nov_rms_db": -16.51,
+      "drums_rms_db": -18.68,
+      "bass_rms_db": -22.84,
+      "other_rms_db": -26.04,
+      "voc_minus_nov_db": 3.46,
+      "ncc_voc_nov": 0.0621,
+      "ncc_src_nov": 0.5458,
+      "ncc_src_voc": 0.8698
+    },
+    {
+      "t0": 100.0,
+      "t1": 105.0,
+      "src_rms_db": -10.8,
+      "voc_rms_db": -13.77,
+      "nov_rms_db": -16.88,
+      "drums_rms_db": -18.63,
+      "bass_rms_db": -24.11,
+      "other_rms_db": -26.44,
+      "voc_minus_nov_db": 3.1,
+      "ncc_voc_nov": 0.088,
+      "ncc_src_nov": 0.5739,
+      "ncc_src_voc": 0.8657
+    },
+    {
+      "t0": 105.0,
+      "t1": 110.0,
+      "src_rms_db": -10.86,
+      "voc_rms_db": -14.09,
+      "nov_rms_db": -16.18,
+      "drums_rms_db": -19.22,
+      "bass_rms_db": -21.29,
+      "other_rms_db": -23.73,
+      "voc_minus_nov_db": 2.09,
+      "ncc_voc_nov": 0.0752,
+      "ncc_src_nov": 0.6071,
+      "ncc_src_voc": 0.8375
+    },
+    {
+      "t0": 110.0,
+      "t1": 115.0,
+      "src_rms_db": -10.36,
+      "voc_rms_db": -13.38,
+      "nov_rms_db": -15.96,
+      "drums_rms_db": -18.46,
+      "bass_rms_db": -20.9,
+      "other_rms_db": -27.85,
+      "voc_minus_nov_db": 2.58,
+      "ncc_voc_nov": 0.0624,
+      "ncc_src_nov": 0.5817,
+      "ncc_src_voc": 0.8476
+    },
+    {
+      "t0": 115.0,
+      "t1": 120.0,
+      "src_rms_db": -9.44,
+      "voc_rms_db": -13.47,
+      "nov_rms_db": -13.41,
+      "drums_rms_db": -16.21,
+      "bass_rms_db": -18.51,
+      "other_rms_db": -28.41,
+      "voc_minus_nov_db": -0.05,
+      "ncc_voc_nov": 0.0641,
+      "ncc_src_nov": 0.688,
+      "ncc_src_voc": 0.7678
+    },
+    {
+      "t0": 120.0,
+      "t1": 125.0,
+      "src_rms_db": -9.33,
+      "voc_rms_db": -12.98,
+      "nov_rms_db": -13.59,
+      "drums_rms_db": -14.72,
+      "bass_rms_db": -21.24,
+      "other_rms_db": -30.61,
+      "voc_minus_nov_db": 0.61,
+      "ncc_voc_nov": 0.0528,
+      "ncc_src_nov": 0.6561,
+      "ncc_src_voc": 0.7879
+    },
+    {
+      "t0": 125.0,
+      "t1": 130.0,
+      "src_rms_db": -10.41,
+      "voc_rms_db": -13.64,
+      "nov_rms_db": -15.66,
+      "drums_rms_db": -18.41,
+      "bass_rms_db": -20.41,
+      "other_rms_db": -27.29,
+      "voc_minus_nov_db": 2.02,
+      "ncc_voc_nov": 0.0683,
+      "ncc_src_nov": 0.6079,
+      "ncc_src_voc": 0.8331
+    },
+    {
+      "t0": 130.0,
+      "t1": 135.0,
+      "src_rms_db": -10.06,
+      "voc_rms_db": -12.52,
+      "nov_rms_db": -16.89,
+      "drums_rms_db": -19.2,
+      "bass_rms_db": -21.99,
+      "other_rms_db": -28.57,
+      "voc_minus_nov_db": 4.37,
+      "ncc_voc_nov": 0.0489,
+      "ncc_src_nov": 0.5015,
+      "ncc_src_voc": 0.8883
+    },
+    {
+      "t0": 135.0,
+      "t1": 140.0,
+      "src_rms_db": -10.2,
+      "voc_rms_db": -12.94,
+      "nov_rms_db": -16.37,
+      "drums_rms_db": -18.82,
+      "bass_rms_db": -21.39,
+      "other_rms_db": -26.97,
+      "voc_minus_nov_db": 3.43,
+      "ncc_voc_nov": 0.0628,
+      "ncc_src_nov": 0.5467,
+      "ncc_src_voc": 0.8696
+    },
+    {
+      "t0": 140.0,
+      "t1": 145.0,
+      "src_rms_db": -10.02,
+      "voc_rms_db": -12.6,
+      "nov_rms_db": -17.0,
+      "drums_rms_db": -19.12,
+      "bass_rms_db": -22.92,
+      "other_rms_db": -26.76,
+      "voc_minus_nov_db": 4.4,
+      "ncc_voc_nov": 0.0804,
+      "ncc_src_nov": 0.5213,
+      "ncc_src_voc": 0.8921
+    },
+    {
+      "t0": 145.0,
+      "t1": 150.0,
+      "src_rms_db": -11.72,
+      "voc_rms_db": -13.56,
+      "nov_rms_db": -22.56,
+      "drums_rms_db": -26.94,
+      "bass_rms_db": -28.52,
+      "other_rms_db": -27.52,
+      "voc_minus_nov_db": 9.0,
+      "ncc_voc_nov": 0.0831,
+      "ncc_src_nov": 0.3632,
+      "ncc_src_voc": 0.9583
+    },
+    {
+      "t0": 150.0,
+      "t1": 155.0,
+      "src_rms_db": -11.56,
+      "voc_rms_db": -20.07,
+      "nov_rms_db": -12.82,
+      "drums_rms_db": -16.13,
+      "bass_rms_db": -17.05,
+      "other_rms_db": -22.19,
+      "voc_minus_nov_db": -7.25,
+      "ncc_voc_nov": 0.0721,
+      "ncc_src_nov": 0.9068,
+      "ncc_src_voc": 0.4852
+    },
+    {
+      "t0": 155.0,
+      "t1": 160.0,
+      "src_rms_db": -11.52,
+      "voc_rms_db": -17.87,
+      "nov_rms_db": -13.71,
+      "drums_rms_db": -16.93,
+      "bass_rms_db": -17.79,
+      "other_rms_db": -23.92,
+      "voc_minus_nov_db": -4.15,
+      "ncc_voc_nov": 0.0843,
+      "ncc_src_nov": 0.8347,
+      "ncc_src_voc": 0.6186
+    },
+    {
+      "t0": 160.0,
+      "t1": 165.0,
+      "src_rms_db": -12.08,
+      "voc_rms_db": -19.6,
+      "nov_rms_db": -13.72,
+      "drums_rms_db": -17.21,
+      "bass_rms_db": -18.15,
+      "other_rms_db": -22.09,
+      "voc_minus_nov_db": -5.88,
+      "ncc_voc_nov": 0.0795,
+      "ncc_src_nov": 0.8739,
+      "ncc_src_voc": 0.5534
+    },
+    {
+      "t0": 165.0,
+      "t1": 170.0,
+      "src_rms_db": -12.45,
+      "voc_rms_db": -18.95,
+      "nov_rms_db": -14.31,
+      "drums_rms_db": -17.47,
+      "bass_rms_db": -20.24,
+      "other_rms_db": -21.31,
+      "voc_minus_nov_db": -4.64,
+      "ncc_voc_nov": 0.0422,
+      "ncc_src_nov": 0.8297,
+      "ncc_src_voc": 0.5922
+    },
+    {
+      "t0": 170.0,
+      "t1": 171.063,
+      "src_rms_db": -23.02,
+      "voc_rms_db": -30.01,
+      "nov_rms_db": -24.78,
+      "drums_rms_db": -27.08,
+      "bass_rms_db": -31.13,
+      "other_rms_db": -33.32,
+      "voc_minus_nov_db": -5.22,
+      "ncc_voc_nov": 0.0587,
+      "ncc_src_nov": 0.8519,
+      "ncc_src_voc": 0.5721
+    }
+  ],
+  "limitations": [
+    "No listening was performed; metrics are algorithmic only and can both miss residual speech and false-flag singing or crowd as speech.",
+    "Demucs is a music stem separator: narration and sung vocals are both mapped to the vocals stem, so the no_vocals bed may be closer to an instrumental than to the reference BGM with its own singing.",
+    "Stadium/match effects are not a Demucs class; they typically leak into other/drums and therefore remain in no_vocals.",
+    "mediakit-cli Narrate 3-stem (voice/music/sfx) was not run: it is a billed Volcengine cloud API requiring MEDIAKIT_API_KEY, which was unset; no purchase or login bypass was used.",
+    "Non-zero RMS alone is not evidence the bed is clean."
+  ]
+}

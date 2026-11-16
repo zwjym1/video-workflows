@@ -1,0 +1,11 @@
+{
+  "roi": "x80:350,y450:600; same original frame n78; no overlaid drawing in ROI",
+  "input_jpeg_vs_light": {
+    "rgb_mae": 1.0100658436213992,
+    "rgb_psnr_db": 45.70884653886629
+  },
+  "master_vs_light": {
+    "rgb_mae": 0.3673744855967078,
+    "rgb_psnr_db": 50.64076086504028
+  }
+}

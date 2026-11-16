@@ -1,0 +1,1896 @@
+{
+  "title": "football-tactics-source-snapshot 逐文件清单",
+  "created_at": "2026-11-16 19:16:22 Asia/Shanghai",
+  "intended_github_repo": "https://github.com/zwjym1/video-workflows",
+  "git_branch_status": "本快照不是已存在的 Git 分支，也尚未 push。",
+  "render_status": "旧 99.36s 成片已渲染并归档在 Drive；新方案未配音、未渲染。",
+  "zip": {
+    "path": "/workspace/football-demo/branch-snapshot-20261116/football-tactics-source-snapshot.zip",
+    "bytes": null,
+    "sha256": null
+  },
+  "drive_folder_id": "1ESUqsHNUNQJTGpkROGVv_QLL-ub4FKbz",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1ESUqsHNUNQJTGpkROGVv_QLL-ub4FKbz",
+  "file_count": 245,
+  "files": [
+    {
+      "archive_path": "football-demo/audit-20261116/AUDIT.md",
+      "original_path": "/workspace/football-demo/audit-20261116/AUDIT.md",
+      "bytes": 19815,
+      "sha256": "db6a1cb65ab81acf3d9f5ba7f09fb47201feb7de51098ec8ce5960a1366793f7",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/asr_intro.py",
+      "original_path": "/workspace/football-demo/audit-20261116/asr_intro.py",
+      "bytes": 959,
+      "sha256": "1240c948dca92dfab65638d52306e44d67dd1f9704e3cb908db4760ee7a836c2",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/asr_reference.py",
+      "original_path": "/workspace/football-demo/audit-20261116/asr_reference.py",
+      "bytes": 1093,
+      "sha256": "2a608264e0756cdb5f4c6284309b0a56f091e16ebd5743759494f7b3f7fb3a5d",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/audio_audit.py",
+      "original_path": "/workspace/football-demo/audit-20261116/audio_audit.py",
+      "bytes": 2281,
+      "sha256": "272c232c7aa4c9724aa571d56e5f82d8ec9a613c2ab5aed4a221510e70efba7f",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/audit_stats.json",
+      "original_path": "/workspace/football-demo/audit-20261116/audit_stats.json",
+      "bytes": 1172,
+      "sha256": "2b66d7c281a3f44d7d2d60f06f0da59ab54b502882384494538350cbb7b99f90",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/build_audit.py",
+      "original_path": "/workspace/football-demo/audit-20261116/build_audit.py",
+      "bytes": 4860,
+      "sha256": "b31ddd7e69807497be78ba86d2837ad21dec7a24e6208f72e32b2030f73be4a7",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/evidence_frames.py",
+      "original_path": "/workspace/football-demo/audit-20261116/evidence_frames.py",
+      "bytes": 2463,
+      "sha256": "b5376196ee8699b44e93b9cbb0b85a4617650749935b6d2a58447fe5e681b977",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/input_manifest.json",
+      "original_path": "/workspace/football-demo/audit-20261116/input_manifest.json",
+      "bytes": 626,
+      "sha256": "307bc24df4b1029dc9291010317fc531878e4b3ca8e409c549e2633d57bdab9d",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/official_source_probe.json",
+      "original_path": "/workspace/football-demo/audit-20261116/official_source_probe.json",
+      "bytes": 4670,
+      "sha256": "1e7346e4fb4b5a437ea12ca14e1d80f8f7ad808a0d64ab0a00cb11e08fc5a774",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/project_readonly_snapshot/mix.py",
+      "original_path": "/workspace/football-demo/audit-20261116/project_readonly_snapshot/mix.py",
+      "bytes": 5260,
+      "sha256": "034ee516fa368c4cb095a27699e310baf00f3f2527e9c96faee9fef2311691f5",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/project_readonly_snapshot/render.py",
+      "original_path": "/workspace/football-demo/audit-20261116/project_readonly_snapshot/render.py",
+      "bytes": 24090,
+      "sha256": "a029c4e9463aa5e18f05b72656f6ec07c44075425a1e63e265195b8882710e4e",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/project_readonly_snapshot/timeline.json",
+      "original_path": "/workspace/football-demo/audit-20261116/project_readonly_snapshot/timeline.json",
+      "bytes": 3842,
+      "sha256": "b7d9f44ca1872447dfc3dc87dc16ac65da669b3c34f7ecd545cc2989f68c5cd2",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/project_readonly_snapshot/voice_lines.json",
+      "original_path": "/workspace/football-demo/audit-20261116/project_readonly_snapshot/voice_lines.json",
+      "bytes": 674,
+      "sha256": "2610c01f26225c71130d95bc49cac3a3cb66129dca45db3773bb52aa2f0f1a3f",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/quality_roi_metrics.json",
+      "original_path": "/workspace/football-demo/audit-20261116/quality_roi_metrics.json",
+      "bytes": 288,
+      "sha256": "8e4326f8d729e8945c7fe29e3f7ed070cace3aeae0d6018ca642fff287f488c1",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_allframe_metrics.csv",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_allframe_metrics.csv",
+      "bytes": 599199,
+      "sha256": "521fd7725e1334cd022543b68e8e394ad985218cbbd7725478d387e7965b2481",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_asr.json",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_asr.json",
+      "bytes": 108472,
+      "sha256": "8de7c9488278b7c548144a77f3b40502a4e9a1308782deb0b041a42ae7b958c6",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_asr.txt",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_asr.txt",
+      "bytes": 3273,
+      "sha256": "da498786d0e438c9b564629fe930ab415ff8187c46872a6c7235fb2f2f907f08",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_candidate_classification.csv",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_candidate_classification.csv",
+      "bytes": 7346,
+      "sha256": "82ba236c97814c85888bb2530b46c8a3ee86f61f0ac693a32664aa72efd21641",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_first45_events.csv",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_first45_events.csv",
+      "bytes": 2106,
+      "sha256": "3c18a4e395b4b579fcd3a1ec707d2f4dbb1b4a0628364f3fabb65cfc0e164df2",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_intro_asr_recheck.json",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_intro_asr_recheck.json",
+      "bytes": 197,
+      "sha256": "2c33ccb705879216ffcf402db5b1d76695db01711725bc06e3fcad7a22bef680",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_precise_manifest.json",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_precise_manifest.json",
+      "bytes": 13177,
+      "sha256": "417e125b9f65aefee566ab757118723b2dd4305a3e6335ce030fd5d259928513",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_probe.json",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_probe.json",
+      "bytes": 3759,
+      "sha256": "930e79edf22557212611f05ef86bf584c8d5bd6e677183fee2b1a6c5fdca4beb",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_scan_summary.json",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_scan_summary.json",
+      "bytes": 11958,
+      "sha256": "577f66ac4358858ed8f630c2eb0d6fddca27642558a0f7c9f34d23a9f9c1b4b3",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_shots.csv",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_shots.csv",
+      "bytes": 7576,
+      "sha256": "fa4d2b74b982d61bb2ccd80f5ad38e0157ed35f1b8ae2ea6e2bbb790a8e89e78",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_subtitle_observed_quotes.csv",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_subtitle_observed_quotes.csv",
+      "bytes": 834,
+      "sha256": "5e40c97e9b768bdb1e04644d1ccac3750b32fe110f6f42f843193d1ae73db38b",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/reference_vad.json",
+      "original_path": "/workspace/football-demo/audit-20261116/reference_vad.json",
+      "bytes": 299,
+      "sha256": "2d33926be805008e27975b9683f243155b0c1d5715e66998c85c366f3a70b698",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/scan.py",
+      "original_path": "/workspace/football-demo/audit-20261116/scan.py",
+      "bytes": 3394,
+      "sha256": "99b2cbb9bdb8ff8166b7d54d8f0c3aa0939bf44d66d5f34a8aa9bf3c5353c541",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/audit-20261116/tables.py",
+      "original_path": "/workspace/football-demo/audit-20261116/tables.py",
+      "bytes": 12071,
+      "sha256": "3118b013046d73a29229cf31a67d3899144673c392656e9242abc53d62ef70b9",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/CONCLUSION.md",
+      "original_path": "/workspace/football-demo/bgm-reference-research/CONCLUSION.md",
+      "bytes": 2180,
+      "sha256": "b6bc7f7a2f9a41dfc92148c63a1bfeda04fe819a0a3578ad87f4b48dbff0d4a4",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/alignment.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/alignment.json",
+      "bytes": 4387,
+      "sha256": "2c2f284f168b6a2ac9c3aeea5a0b0aae9881d28762b92325c28ff6496c25c567",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/deezer_main.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/deezer_main.json",
+      "bytes": 21,
+      "sha256": "93fd5b4feec7a9fd7bd879aabf27c59c8638cfeb001d4a78c2fc033d5b813868",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/deezer_passion.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/deezer_passion.json",
+      "bytes": 21,
+      "sha256": "93fd5b4feec7a9fd7bd879aabf27c59c8638cfeb001d4a78c2fc033d5b813868",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_isrc_main.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_isrc_main.json",
+      "bytes": 42,
+      "sha256": "7f5ce663b726607eae2fde2a6dc438052ac0d1681e636de7cc3377c0bb77e047",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_isrc_passion.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_isrc_passion.json",
+      "bytes": 42,
+      "sha256": "7f5ce663b726607eae2fde2a6dc438052ac0d1681e636de7cc3377c0bb77e047",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_album_main.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_album_main.json",
+      "bytes": 9357,
+      "sha256": "11152cadbe7ebea0f2da71d591306bd4f45ce6fa682396d9b611bd73758f9371",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_album_passion.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_album_passion.json",
+      "bytes": 5455,
+      "sha256": "61bfdbc78e65e0d09d07f0d9302511951e5e877c34890ca33d3f92fde76775e0",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_track_main.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_track_main.json",
+      "bytes": 1658,
+      "sha256": "321b3ce4c99e4f80e13e881b0ae7210cb9312a83cbc82f6fffd2e82610411519",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_track_passion.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_lookup_track_passion.json",
+      "bytes": 1519,
+      "sha256": "34fe8bece57874c5738cd0f6ba42e70d5b0aa6935a5cda2e4b617da1d4c9b647",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_main_cn.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_main_cn.json",
+      "bytes": 42,
+      "sha256": "7f5ce663b726607eae2fde2a6dc438052ac0d1681e636de7cc3377c0bb77e047",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_main_us.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_main_us.json",
+      "bytes": 1658,
+      "sha256": "321b3ce4c99e4f80e13e881b0ae7210cb9312a83cbc82f6fffd2e82610411519",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/itunes_passion_us.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/itunes_passion_us.json",
+      "bytes": 7539,
+      "sha256": "883fafb4fe93224404c2ead4d08ace9a97a0fe62f1bcd063062608282689180f",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/mb_search_main.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/mb_search_main.json",
+      "bytes": 107989,
+      "sha256": "04ba09ced626a64cca3a916ec00f601996474b64682c2e9247c4641c6dd4ca78",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/netease_search_main.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/netease_search_main.json",
+      "bytes": 16585,
+      "sha256": "1e90d349d2f6ea6d02a297cdf9aa5aed10ec0974027b85db00cc34d6edb884d9",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/catalog_lookups/netease_search_passion.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/catalog_lookups/netease_search_passion.json",
+      "bytes": 8944,
+      "sha256": "784acb63acf4e809ac70776c2f68fade19721a63023b1db4f1bec278bd8b8bd0",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/evidence.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/evidence.json",
+      "bytes": 20283,
+      "sha256": "d139f0c2725cdd6e9a19e11f70b8247f31b4dbf15a715bbb811cbc032798287b",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/evidence_raw/end_158s.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/evidence_raw/end_158s.json",
+      "bytes": 7996,
+      "sha256": "016fdcfecce3abbafdcfbe0a36c91e0ac0f374496075ca63a266c91cc029c1b7",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/evidence_raw/end_165s.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/evidence_raw/end_165s.json",
+      "bytes": 7994,
+      "sha256": "85f61443aaef90e4db4de3afa351a2835309a622ce3cab93b6c2327dcc88014f",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/evidence_raw/main_120s.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/evidence_raw/main_120s.json",
+      "bytes": 8028,
+      "sha256": "66add999ae21757156682402cfee06763cd1a81cf1b478b1d8ce81425abb6d5e",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/evidence_raw/main_50s.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/evidence_raw/main_50s.json",
+      "bytes": 8030,
+      "sha256": "a4b3a2647e230a2aeae7df638e0f0695ca3e1eb81ce2edcabc5195bede3ec159",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/evidence_raw/main_8s.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/evidence_raw/main_8s.json",
+      "bytes": 8031,
+      "sha256": "d9c1f45c8398156ab4ca19e4601efa1fd1c0999f5793e9495c542da8ef0d91ac",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/evidence_raw/summary_meta.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/evidence_raw/summary_meta.json",
+      "bytes": 23355,
+      "sha256": "d86fcfc3d598229475c653a3b9124d04516d56be91a05b7e7916594ad0ea8d97",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/separated_exports/separation_judgment.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/separated_exports/separation_judgment.json",
+      "bytes": 3119,
+      "sha256": "d610599c3be7771af73589ee845c45c632ab32557a479585760b17c30a55a590",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/separated_exports/separation_quality.json",
+      "original_path": "/workspace/football-demo/bgm-reference-research/separated_exports/separation_quality.json",
+      "bytes": 18672,
+      "sha256": "0bc0a8630ea3318c40bd828b9944bc173a53688ce35a186e01f27fb2f3dee945",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/bgm-reference-research/tracks/windowed_volume.txt",
+      "original_path": "/workspace/football-demo/bgm-reference-research/tracks/windowed_volume.txt",
+      "bytes": 680,
+      "sha256": "6ff5cb98f892e5262101f06660909d112acbc2020c134ced9e11f100260b7f93",
+      "group": "bgm-identification-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/HANDOFF.md",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/HANDOFF.md",
+      "bytes": 4714,
+      "sha256": "107e551a344bcafce63b6c1264b228ea7deed26cb093eebc4625d66906b1b056",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/REFERENCE_METADATA.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/REFERENCE_METADATA.json",
+      "bytes": 1339,
+      "sha256": "1f669c534af0deba20e2428d712fcdf9e55264ccec029c62760af42868a74225",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/AUDIO_TOOLS.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/AUDIO_TOOLS.json",
+      "bytes": 706,
+      "sha256": "277a97324882947489d7983b7e660b24b59975d4f1f8a9017017666d3a040a7e",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/EVENT_TIMELINE.csv",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/EVENT_TIMELINE.csv",
+      "bytes": 1604,
+      "sha256": "3f4d461b772fc51cca93f008f249563fe675e28f153d0a17a177dce5d47bd8ff",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/MEDIA_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/MEDIA_QC.json",
+      "bytes": 1594,
+      "sha256": "a05e5965d7e8ae1cc25d4a6a6c6328d34a5d9d792ad32fedda283e1376143283",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/SHOT_TYPE_RUNS.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/SHOT_TYPE_RUNS.json",
+      "bytes": 1630,
+      "sha256": "6b1278af3352fec61d716cad641af3b08890d637afc3c68a3b42dcad0c928192",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/TRANSIENT_CANDIDATES.csv",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/TRANSIENT_CANDIDATES.csv",
+      "bytes": 3445,
+      "sha256": "9ddd3dad86a73c9cf807a1795b86ba09c992514b891a115a67e302bac1f3b519",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/TRANSIENT_CANDIDATES.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/TRANSIENT_CANDIDATES.json",
+      "bytes": 7019,
+      "sha256": "d5aba85d7e6ff83f7e3d3b4ee4cf43407aa4d07ff5b9b969da966154f3b02e17",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/VISUAL_AUDIO_CONTEXTS.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/VISUAL_AUDIO_CONTEXTS.json",
+      "bytes": 1450,
+      "sha256": "bfc104529b32f5b04bce58233999d6f3cab5fce74f79ec62688317998818ad84",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/WATCH_COPY_PROBE.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/WATCH_COPY_PROBE.json",
+      "bytes": 3820,
+      "sha256": "028a7f44f1fa428a700a1487fa12556eec10bd3ce97e89c2502320f4ad550fd7",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/asr.py",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/asr.py",
+      "bytes": 1300,
+      "sha256": "bff019a9fbfde3231e9039435e0c7d5be7d0f3689512d7ee74d47676c56c6a89",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/local_asr.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/local_asr.json",
+      "bytes": 81885,
+      "sha256": "5cbc22e0efb46ae00757e73b8887b25530f945dc2a7ddf56225d47d98b1a4567",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/local_asr.txt",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/local_asr.txt",
+      "bytes": 2527,
+      "sha256": "4aa9d4e578f50e773724f6545f7810cd676fdbf9579ca4d76d7ec642bd624adf",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/analysis/measure.py",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/analysis/measure.py",
+      "bytes": 3314,
+      "sha256": "bc37401333ed637fa65e45f26b2abe9bfc427be47e627f80c449211bf8a6a6af",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/PROBE_MEASUREMENTS.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/PROBE_MEASUREMENTS.json",
+      "bytes": 158068,
+      "sha256": "a8190f012fedc3a190d36a2e0fee2a949f7ab4daec4a6600eabf82ad73c36480",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/SFX_CUES.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/SFX_CUES.json",
+      "bytes": 13840,
+      "sha256": "8d2be2723f73d4b104af99da8cc7ca0b2ac236b7b874ddc3357a67fd8dee5ee2",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/SFX_CUES.md",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/SFX_CUES.md",
+      "bytes": 7256,
+      "sha256": "f54020f84c405c1c30ec1afdcfc6396c2eb091d027c76ab8d1e0b4eaa28a5c83",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/VISUAL_CHANGE_PEAKS.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/VISUAL_CHANGE_PEAKS.json",
+      "bytes": 12095,
+      "sha256": "6c9129a061b20808413018a5bed2656e05e568fbd0e9c87bcb1274c12da9f9de",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/VISUAL_OVERLAY_AND_FLUX.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/VISUAL_OVERLAY_AND_FLUX.json",
+      "bytes": 73628,
+      "sha256": "43aacd0492c8b607d4983a5a3bec7581f9c326c9ab776dc5c1a13cf69a6ad4bb",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/analyze_sfx.py",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/analyze_sfx.py",
+      "bytes": 15369,
+      "sha256": "76a04a22db7f8a8d54617b7a050cda2c17ae2c3af58edcd4cac8f31d0e8672dc",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/make_original_sfx.py",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/make_original_sfx.py",
+      "bytes": 5323,
+      "sha256": "0b3b133317df5e7344aad3e63a59dc31f8420d3e9e105a550ed47f8014acd1ee",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/MANIFEST.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "234b850968c908eef5e7cdada403848aaed95c116c1810fe78b22659605a58e4",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/circle_lock_soft.wav",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/circle_lock_soft.wav",
+      "bytes": 35324,
+      "sha256": "3a9a443f128258d7dba8846cd9e18dcfb10d925df043c337dd248d751b667a10",
+      "group": "new-reference-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/cut_hit_low_muted.wav",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/cut_hit_low_muted.wav",
+      "bytes": 35324,
+      "sha256": "db6bb7987b02ecec6e00e5a5d544aa5e2df15101a9568a478a19d934497e8f39",
+      "group": "new-reference-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/ui_tick_soft.wav",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/ui_tick_soft.wav",
+      "bytes": 28268,
+      "sha256": "ebf9e8afef71af8e2fb356b0599dd6a7bbbabfc099f08d94d5cda9f054392e1d",
+      "group": "new-reference-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/whoosh_line_short.wav",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/whoosh_line_short.wav",
+      "bytes": 49436,
+      "sha256": "baf483273a7a257cfb4dcaf92ef9d39fa645d5be63f338f89c75f726557d25bd",
+      "group": "new-reference-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/reference/download-log.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/reference/download-log.json",
+      "bytes": 305,
+      "sha256": "9fb578b7c8ff1eeba79e29e7796ac1d62e611ccd86f8aea73add5ba214410195",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/reference/ffprobe.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/reference/ffprobe.json",
+      "bytes": 4574,
+      "sha256": "dcf19ffb03f82f81e639ee2a57ee7444aab7ae4327fa56a2cf4a17e2c64c6028",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/reference/public-router-data.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/reference/public-router-data.json",
+      "bytes": 1721,
+      "sha256": "eaed0c9ac98a15f0f9dc306f647b6f775b64a0f1bc989a1859169574110e51da",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-new-reference/reference/share-resolution.json",
+      "original_path": "/workspace/football-demo/full-phase-new-reference/reference/share-resolution.json",
+      "bytes": 882,
+      "sha256": "4bf12786aeb175c07044899cac141764d9aa34d44c0b05de89665160ba52be1d",
+      "group": "new-reference-text"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/STAGE_HANDOFF.md",
+      "original_path": "/workspace/football-demo/full-phase-production/STAGE_HANDOFF.md",
+      "bytes": 4624,
+      "sha256": "ed907d9bc5c766587af82a30cae24e711da84dd220d9187d03958ac90b52dc80",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assemble_timing.py",
+      "original_path": "/workspace/football-demo/full-phase-production/assemble_timing.py",
+      "bytes": 7495,
+      "sha256": "053fa85e5278805c0d82ea7975a5ed3060eb1f08b881e106ed3ba2e6dbcd1363",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assets/B1_STAGED.svg",
+      "original_path": "/workspace/football-demo/full-phase-production/assets/B1_STAGED.svg",
+      "bytes": 5216,
+      "sha256": "33446fe3842e382476ec9b76a22855f2972af585a2726b74627f34f8347d89a1",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assets/B2_STAGED.svg",
+      "original_path": "/workspace/football-demo/full-phase-production/assets/B2_STAGED.svg",
+      "bytes": 4567,
+      "sha256": "07267b20cfcb6cf0b23484327f47a48c787a328a82ae8ebbba48bc8e704bc6cf",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assets/B3_STAGED.svg",
+      "original_path": "/workspace/football-demo/full-phase-production/assets/B3_STAGED.svg",
+      "bytes": 6267,
+      "sha256": "6e46e7912561ebd6c1e354bee889c27073f772ed1c588d5482e1e6cd1b94b18a",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assets/B4_STAGED.svg",
+      "original_path": "/workspace/football-demo/full-phase-production/assets/B4_STAGED.svg",
+      "bytes": 6076,
+      "sha256": "7be4ed4df67dfe9ad79d124c093cfa929960daa48778320e0e314f60b95ad535",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assets/B5_STAGED.svg",
+      "original_path": "/workspace/football-demo/full-phase-production/assets/B5_STAGED.svg",
+      "bytes": 5381,
+      "sha256": "f5f870f6e819171fb759e9502c069dc2349b30668f65cd978410b6a975bc9a1c",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assets/B6_STAGED.svg",
+      "original_path": "/workspace/football-demo/full-phase-production/assets/B6_STAGED.svg",
+      "bytes": 5219,
+      "sha256": "dc5c5b88bd5bf818387d1b9f0e97938058fc1b584ba0675c8343e794b605fcac",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/assets/BOARD_RELATIONS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/assets/BOARD_RELATIONS.json",
+      "bytes": 11030,
+      "sha256": "a9e58d84a06dbe501ca38418b399db85e4b3ff60281d171402f3202f34781a7f",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/FULL_DECODE_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/FULL_DECODE_QC.json",
+      "bytes": 1507,
+      "sha256": "a70365ccf2af1cb7aff18d9232074ee714e485268292c0e1c7ccd73359604bbf",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S00.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S00.mp3.json",
+      "bytes": 2017,
+      "sha256": "f813fc3efb782ebc4dd00bcf3cbb87f232406c2b9b6ca3c0522741a8e1b31c9b",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S01.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S01.mp3.json",
+      "bytes": 2585,
+      "sha256": "d2b174734f68632a8d2d47ca0d8adb8d2c66bfcfa74c7f16b99e2f74a0fe6e11",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S02.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S02.mp3.json",
+      "bytes": 2873,
+      "sha256": "a9f648803205eaa59abd292614e23fad02a76cb5db77a1566a8535c91c0d6381",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S03.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S03.mp3.json",
+      "bytes": 2462,
+      "sha256": "e2f34689fe8037b2b24e99e5b1e3bce19499d6ec6d2693bf26261bd766f2dd03",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S04.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S04.mp3.json",
+      "bytes": 2517,
+      "sha256": "630870bf2715b829b6f0284989ba43c52fa900449c9c6a79a4bffef3df5eecbc",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S05.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S05.mp3.json",
+      "bytes": 2792,
+      "sha256": "4b9f2f14d0839b481175192172330fc41aafe268eec3f54795752a01b1912f4a",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S06.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S06.mp3.json",
+      "bytes": 2189,
+      "sha256": "0453c8e213e566910f1d5796fb182f9747e33d80d2521dd3b524f45d777a9320",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S07.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S07.mp3.json",
+      "bytes": 2203,
+      "sha256": "78e4e4c910c70bdc756231ef2d1dc63021aecaf0f64334c2930ac28c4cb6a666",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S08.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S08.mp3.json",
+      "bytes": 2678,
+      "sha256": "3951a616bb49e8caed170b6fc3ea1574319fa496deadbd179868fd3758de977f",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S09.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S09.mp3.json",
+      "bytes": 2874,
+      "sha256": "d56c3c2811e4ef9132a6f7d3ea2dad71a9c4f9065c2d49a62577143dec4842fa",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S10.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S10.mp3.json",
+      "bytes": 2975,
+      "sha256": "6a27444dc475749a47d955f1c566394009177c16f695a3ba154c8b5f212fe70d",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/S11.mp3.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/S11.mp3.json",
+      "bytes": 499,
+      "sha256": "f8fe211a0e61a7f6bce43f6dcfec7d70c48b1b0914a99e474a3e8741c9198006",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/TIMING_AUDIO_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/TIMING_AUDIO_QC.json",
+      "bytes": 711,
+      "sha256": "349e4bc7b34de6833a93d0c737196e99013fd867fe0ebb335184ccf6e8e3078a",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/sfx_original/MANIFEST.json",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/sfx_original/MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "234b850968c908eef5e7cdada403848aaed95c116c1810fe78b22659605a58e4",
+      "group": "production-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/sfx_original/circle_lock_soft.wav",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/sfx_original/circle_lock_soft.wav",
+      "bytes": 35324,
+      "sha256": "3a9a443f128258d7dba8846cd9e18dcfb10d925df043c337dd248d751b667a10",
+      "group": "production-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/sfx_original/cut_hit_low_muted.wav",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/sfx_original/cut_hit_low_muted.wav",
+      "bytes": 35324,
+      "sha256": "db6bb7987b02ecec6e00e5a5d544aa5e2df15101a9568a478a19d934497e8f39",
+      "group": "production-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/sfx_original/ui_tick_soft.wav",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/sfx_original/ui_tick_soft.wav",
+      "bytes": 28268,
+      "sha256": "ebf9e8afef71af8e2fb356b0599dd6a7bbbabfc099f08d94d5cda9f054392e1d",
+      "group": "production-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/audio/sfx_original/whoosh_line_short.wav",
+      "original_path": "/workspace/football-demo/full-phase-production/audio/sfx_original/whoosh_line_short.wav",
+      "bytes": 49436,
+      "sha256": "baf483273a7a257cfb4dcaf92ef9d39fa645d5be63f338f89c75f726557d25bd",
+      "group": "production-original-sfx"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/build_assets.py",
+      "original_path": "/workspace/football-demo/full-phase-production/build_assets.py",
+      "bytes": 16379,
+      "sha256": "e9105478b7f30a6ae3e1f18b049f4ffb4288aa5219e7e6c7f4607ccad07a3eb7",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/build_script.py",
+      "original_path": "/workspace/football-demo/full-phase-production/build_script.py",
+      "bytes": 5562,
+      "sha256": "66255c00a6c6e8300a253e595da6fb5382e0fdbcee1ff90e322c61fb47987e37",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/gen_voice.py",
+      "original_path": "/workspace/football-demo/full-phase-production/gen_voice.py",
+      "bytes": 803,
+      "sha256": "4d09f5a927a8faeb96a9a0fcbca1d86374163a28e4fea8453eb59f5ace529d7c",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/ANIMATION_CUES_EXECUTED.json",
+      "original_path": "/workspace/football-demo/full-phase-production/out/ANIMATION_CUES_EXECUTED.json",
+      "bytes": 14205,
+      "sha256": "772341e754a7b6b8575da00173506ffb6aafddf49e4ff499b7e34027ae605b2e",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/DELIVERY.md",
+      "original_path": "/workspace/football-demo/full-phase-production/out/DELIVERY.md",
+      "bytes": 3950,
+      "sha256": "047c25df886747fd5170ce94aeb53bc33a5ad828f0c0146d2c3132b5fade88ba",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/DELIVERY_SUMMARY.json",
+      "original_path": "/workspace/football-demo/full-phase-production/out/DELIVERY_SUMMARY.json",
+      "bytes": 2034,
+      "sha256": "437ae36245adf1c7adad536d03a8da668f148b31356d205851c462357b51baa1",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/FINAL_CAPTIONS.srt",
+      "original_path": "/workspace/football-demo/full-phase-production/out/FINAL_CAPTIONS.srt",
+      "bytes": 3246,
+      "sha256": "76bb897a1655fa187f3facb14d36c8cb3101b27278ea3e53e77859b6b6553b78",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/FINAL_SCRIPT.txt",
+      "original_path": "/workspace/football-demo/full-phase-production/out/FINAL_SCRIPT.txt",
+      "bytes": 1519,
+      "sha256": "925c1db683f1b69110d8ec5e82a08e5b48baba5cf03899188635d0a3ea222b9e",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/FINAL_SOURCES.json",
+      "original_path": "/workspace/football-demo/full-phase-production/out/FINAL_SOURCES.json",
+      "bytes": 1220,
+      "sha256": "e8478cb41e18665d2c87ebae40a411b6b89a9b5a21c6c0d7587e1e2671587e0f",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/FINAL_TIMELINE.json",
+      "original_path": "/workspace/football-demo/full-phase-production/out/FINAL_TIMELINE.json",
+      "bytes": 14514,
+      "sha256": "c77a84310aa070bc5b47319fe658fdc8d557f90ad44f3eb64ea05c842806fccd",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/FRAME_SOURCE_STATE_MAP.csv",
+      "original_path": "/workspace/football-demo/full-phase-production/out/FRAME_SOURCE_STATE_MAP.csv",
+      "bytes": 173723,
+      "sha256": "25be372c2a22b6a3770fd81e21b54b503e54ed953586fba52e38b2bb476f68ce",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/FRAME_SOURCE_STATE_MAP.jsonl",
+      "original_path": "/workspace/football-demo/full-phase-production/out/FRAME_SOURCE_STATE_MAP.jsonl",
+      "bytes": 409427,
+      "sha256": "41271582efe68457a167fa0fd299158f0da0d0a81a2b5ab585d30b27ebcdd849",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/MP3_AUDIO_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/out/MP3_AUDIO_QC.json",
+      "bytes": 1963,
+      "sha256": "bf68bfc5a2c52a915bf80f2b2ba82abdaa2aae3ecbe95f2993af79840dfd82c1",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/MUSIC_EDIT_AND_MIX.json",
+      "original_path": "/workspace/football-demo/full-phase-production/out/MUSIC_EDIT_AND_MIX.json",
+      "bytes": 1183,
+      "sha256": "83c1a11de6097c2f1ee821b95844aefeb9969595bfde0939bf0960d4e11d068b",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/PLAYER_MAP.csv",
+      "original_path": "/workspace/football-demo/full-phase-production/out/PLAYER_MAP.csv",
+      "bytes": 2666,
+      "sha256": "1784644e0d717d460311345661875a7ce690d2102f859013882e5bfd058d91fe",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/SENTENCE_SOURCE_MAP.csv",
+      "original_path": "/workspace/football-demo/full-phase-production/out/SENTENCE_SOURCE_MAP.csv",
+      "bytes": 12726,
+      "sha256": "d772634f21a9b2605b92e17ba0ae1f5811ff98ad8c3b2cfb1bad15fa215d500e",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/out/SFX_EVENTS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/out/SFX_EVENTS.json",
+      "bytes": 2527,
+      "sha256": "abe9cfb539ab1be08678f98e5dce6367452f60c51ea4a21996f5fc9d30b14dc4",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/ACTUAL_ENCODED_AUDIO_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/ACTUAL_ENCODED_AUDIO_QC.json",
+      "bytes": 25766,
+      "sha256": "054c3b84c54020338a57e2e0beef15a1832b588676e2790e72f6905cee1bc661",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/ALL_FRAME_VISUAL_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/ALL_FRAME_VISUAL_QC.json",
+      "bytes": 1569,
+      "sha256": "92735b314d75abbf5b7e93b8705aaeb90e46713be1142832cb95c56bd43778b2",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/B5_INTERSECTION_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/B5_INTERSECTION_QC.json",
+      "bytes": 527,
+      "sha256": "a7188e1240e2e72df18d6e846387160e5acfcfd9d1a7a8087d66398bf60f9237",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/BOOT_MASK_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/BOOT_MASK_QC.json",
+      "bytes": 713,
+      "sha256": "6b67da7ccdd66b136ac7352d9e0b54e9883f79fcb604b98e0eb4c104578101e3",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/RENDER_MOTION_METRICS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/RENDER_MOTION_METRICS.json",
+      "bytes": 163144,
+      "sha256": "eb4de0e8ecf17e1c31a3a2236fe9e93cbbaa74b94e5580de096dab7b51903bef",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/SFX_VOICE_ACTUAL_RATIOS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/SFX_VOICE_ACTUAL_RATIOS.json",
+      "bytes": 652,
+      "sha256": "335ab0e3a75e665b64cd60dcee56df3496316b2d8a6d12b6d64449be5f5b42ff",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/arsenal_full_phase_light_ffprobe.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/arsenal_full_phase_light_ffprobe.json",
+      "bytes": 3863,
+      "sha256": "6495b8d31ee42c6da1e8d0a0867a940d10bef1c070d5e5c0f72aed39c855865c",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r0/arsenal_full_phase_main_ffprobe.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r0/arsenal_full_phase_main_ffprobe.json",
+      "bytes": 3865,
+      "sha256": "df491c0d59e61cf710cdc82d5c1b7c8bb3b49acf203449940b78297c7f71f954",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/ACTUAL_ENCODED_AUDIO_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/ACTUAL_ENCODED_AUDIO_QC.json",
+      "bytes": 25766,
+      "sha256": "054c3b84c54020338a57e2e0beef15a1832b588676e2790e72f6905cee1bc661",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/ALL_FRAME_VISUAL_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/ALL_FRAME_VISUAL_QC.json",
+      "bytes": 1569,
+      "sha256": "92735b314d75abbf5b7e93b8705aaeb90e46713be1142832cb95c56bd43778b2",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/B5_INTERSECTION_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/B5_INTERSECTION_QC.json",
+      "bytes": 527,
+      "sha256": "a7188e1240e2e72df18d6e846387160e5acfcfd9d1a7a8087d66398bf60f9237",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/BOOT_MASK_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/BOOT_MASK_QC.json",
+      "bytes": 713,
+      "sha256": "6b67da7ccdd66b136ac7352d9e0b54e9883f79fcb604b98e0eb4c104578101e3",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/RENDER_MOTION_METRICS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/RENDER_MOTION_METRICS.json",
+      "bytes": 163119,
+      "sha256": "fa2c284b70acabe1c8736c949f99cd0627fb9cf41feceb276f4f69fff6a91dc4",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/SFX_VOICE_ACTUAL_RATIOS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/SFX_VOICE_ACTUAL_RATIOS.json",
+      "bytes": 652,
+      "sha256": "335ab0e3a75e665b64cd60dcee56df3496316b2d8a6d12b6d64449be5f5b42ff",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/arsenal_full_phase_light_ffprobe.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/arsenal_full_phase_light_ffprobe.json",
+      "bytes": 3863,
+      "sha256": "9362bea49d9aae80cc5bff5f98fcd0d26779e2cce7ec767d134cbf595a3562da",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc-r1/arsenal_full_phase_main_ffprobe.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc-r1/arsenal_full_phase_main_ffprobe.json",
+      "bytes": 3865,
+      "sha256": "319598d305c469a77c9151e291eb196be815e93de5105b10780f7ea3ca326651",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/ACTUAL_ENCODED_AUDIO_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/ACTUAL_ENCODED_AUDIO_QC.json",
+      "bytes": 25766,
+      "sha256": "054c3b84c54020338a57e2e0beef15a1832b588676e2790e72f6905cee1bc661",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/ALL_FRAME_VISUAL_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/ALL_FRAME_VISUAL_QC.json",
+      "bytes": 1569,
+      "sha256": "92735b314d75abbf5b7e93b8705aaeb90e46713be1142832cb95c56bd43778b2",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/B5_INTERSECTION_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/B5_INTERSECTION_QC.json",
+      "bytes": 527,
+      "sha256": "a7188e1240e2e72df18d6e846387160e5acfcfd9d1a7a8087d66398bf60f9237",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/BOOT_MASK_QC.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/BOOT_MASK_QC.json",
+      "bytes": 713,
+      "sha256": "93533c653aa6746c6a084c1da782e4a293711c0e491f097a780153473c285e77",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/FASTSTART_AND_CHECKSUMS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/FASTSTART_AND_CHECKSUMS.json",
+      "bytes": 1081,
+      "sha256": "6641035fcc3b453a097a2cfe26264fd7f756b8238701f9f15cf3470cafe97484",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/FULL_REPLAY_510_FRAME_CHECK.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/FULL_REPLAY_510_FRAME_CHECK.json",
+      "bytes": 510,
+      "sha256": "80b920751c5f5edca82971768fa1cc3fcc27c2b7427ec310206a256923de6aa6",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/RENDER_MOTION_METRICS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/RENDER_MOTION_METRICS.json",
+      "bytes": 163104,
+      "sha256": "e1311f7382d2c5c07eec4841e7011760ee9f13f76ccc88d2815bfe7fc3c2c6a9",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/SFX_VOICE_ACTUAL_RATIOS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/SFX_VOICE_ACTUAL_RATIOS.json",
+      "bytes": 652,
+      "sha256": "335ab0e3a75e665b64cd60dcee56df3496316b2d8a6d12b6d64449be5f5b42ff",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/arsenal_full_phase_light_ffprobe.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/arsenal_full_phase_light_ffprobe.json",
+      "bytes": 3863,
+      "sha256": "1c40e14bbbe8e6114bb6784a84c0975732eab478fcce5c1795badea2205735b7",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/qc/arsenal_full_phase_main_ffprobe.json",
+      "original_path": "/workspace/football-demo/full-phase-production/qc/arsenal_full_phase_main_ffprobe.json",
+      "bytes": 3865,
+      "sha256": "7e5fce920b2d47e6b70dae70b4ca2094a71c1401f69fbdf699d0b51bd3fa8d50",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/render/finalize_delivery.py",
+      "original_path": "/workspace/football-demo/full-phase-production/render/finalize_delivery.py",
+      "bytes": 9828,
+      "sha256": "e8e98939c7c5c8701367eeb276a5094c894334474f4e98e7890b41a1da14d0b7",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/render/mix_final.py",
+      "original_path": "/workspace/football-demo/full-phase-production/render/mix_final.py",
+      "bytes": 3254,
+      "sha256": "0848d5f4df9f933ba2552bd4b4d8c70e034215a298efb24ea25a11abe1cd7641",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/render/quality_check.py",
+      "original_path": "/workspace/football-demo/full-phase-production/render/quality_check.py",
+      "bytes": 10435,
+      "sha256": "aab06c38db856381e7bfcfe01b175ae8509f4e9f17476c97612918b4375fd58e",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/render/render_film.py",
+      "original_path": "/workspace/football-demo/full-phase-production/render/render_film.py",
+      "bytes": 18939,
+      "sha256": "3b74f5c73aab0f4867aa3ba1571f844008476cd9103b525ecb49a96ef5d0797f",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/ACTUAL_TIMELINE.json",
+      "original_path": "/workspace/football-demo/full-phase-production/script/ACTUAL_TIMELINE.json",
+      "bytes": 14537,
+      "sha256": "6529b4ded567615790cc34d34bc13ee6a55e214bf475cf50c355f91c7dbdeba2",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/ANIMATION_CUES.json",
+      "original_path": "/workspace/football-demo/full-phase-production/script/ANIMATION_CUES.json",
+      "bytes": 6539,
+      "sha256": "fb405a037ef7b456f55998c06948cb9a1194b5b605026bb746329a26d105f3b0",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/IDENTITY_EVIDENCE.json",
+      "original_path": "/workspace/football-demo/full-phase-production/script/IDENTITY_EVIDENCE.json",
+      "bytes": 6528,
+      "sha256": "76372dca3f32ad55f32b8ea7d67573da4950a4c6399a9e47bbb0b7c78dbbbd8c",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/ORIGINAL_SCRIPT.json",
+      "original_path": "/workspace/football-demo/full-phase-production/script/ORIGINAL_SCRIPT.json",
+      "bytes": 6601,
+      "sha256": "6a4a7cbd0445ea15c339a0b6b0b15f175dd0e58309dd6d31c7b40872eb6abfa3",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/PLAYER_MAP.csv",
+      "original_path": "/workspace/football-demo/full-phase-production/script/PLAYER_MAP.csv",
+      "bytes": 2666,
+      "sha256": "1784644e0d717d460311345661875a7ce690d2102f859013882e5bfd058d91fe",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/SENTENCE_SOURCE_MAP.csv",
+      "original_path": "/workspace/football-demo/full-phase-production/script/SENTENCE_SOURCE_MAP.csv",
+      "bytes": 12726,
+      "sha256": "d772634f21a9b2605b92e17ba0ae1f5811ff98ad8c3b2cfb1bad15fa215d500e",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/SFX_EVENTS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/script/SFX_EVENTS.json",
+      "bytes": 2349,
+      "sha256": "885140922ec70cb620252d48f2586da4358524df67f148eec893969e6e645dd8",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/SHOT_SCRIPT.csv",
+      "original_path": "/workspace/football-demo/full-phase-production/script/SHOT_SCRIPT.csv",
+      "bytes": 3524,
+      "sha256": "3f965c05669e00a762661d67fb06dfa92414b1ce35b1d0eb88168cdb30be4614",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/VISUAL_SPEC.md",
+      "original_path": "/workspace/football-demo/full-phase-production/script/VISUAL_SPEC.md",
+      "bytes": 2112,
+      "sha256": "ee0213a180db48497c05e8a8184a1b57c456e82ad804579b2bfdeb2b874c39d5",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/VOICEOVER.txt",
+      "original_path": "/workspace/football-demo/full-phase-production/script/VOICEOVER.txt",
+      "bytes": 1519,
+      "sha256": "925c1db683f1b69110d8ec5e82a08e5b48baba5cf03899188635d0a3ea222b9e",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/full-phase-production/script/VOICE_TIMESTAMPS.json",
+      "original_path": "/workspace/football-demo/full-phase-production/script/VOICE_TIMESTAMPS.json",
+      "bytes": 48953,
+      "sha256": "1e4c3b989c8f474120dbe57a5c168875373915ee36f01b0053d51d8ccb08cbd7",
+      "group": "production-source"
+    },
+    {
+      "archive_path": "football-demo/reference-content-map/BOARDS.csv",
+      "original_path": "/workspace/football-demo/reference-content-map/BOARDS.csv",
+      "bytes": 5540,
+      "sha256": "ccb8e844c7532e583384f8be9c601d86d95991ed93dba9ca717299ffda4f057f",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/reference-content-map/CONTENT_MAP.md",
+      "original_path": "/workspace/football-demo/reference-content-map/CONTENT_MAP.md",
+      "bytes": 5469,
+      "sha256": "cfe73aecc5296575af24cc51f31643b48bceb9cef4a584dc60a563f005359890",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/reference-content-map/evidence/frame_manifest.json",
+      "original_path": "/workspace/football-demo/reference-content-map/evidence/frame_manifest.json",
+      "bytes": 3558,
+      "sha256": "d67259e3a69db8d2cf75f3b3b571b39becc27c39b5f077609651ac2601d2b66f",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/reference-content-map/write_findings.py",
+      "original_path": "/workspace/football-demo/reference-content-map/write_findings.py",
+      "bytes": 11784,
+      "sha256": "654482cc18e7267583cd3ae615649358eba1da9b39f08e6233d409ebb8934edc",
+      "group": "old-reference-shot-text"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/AUDIENCE_HYPOTHESES_AND_TEST.md",
+      "original_path": "/workspace/football-demo/two-reference-refinement/AUDIENCE_HYPOTHESES_AND_TEST.md",
+      "bytes": 4626,
+      "sha256": "77eaf33f96a771b3ebe830d69ac2db1f3b7088e043e03113b17ea0a534166afc",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/BOARD_RELATION_EXECUTION_MAP.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/BOARD_RELATION_EXECUTION_MAP.json",
+      "bytes": 3480,
+      "sha256": "1747078a0ab6a4d4f4ed005e342893ca9f84e0c8a26cf5546928649ef5d0663e",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/DRIVE_UPLOAD_RESULT.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/DRIVE_UPLOAD_RESULT.json",
+      "bytes": 6159,
+      "sha256": "385abc5f3f9c1598d961b07c1593cb492bff2ed3cbc137a16b80f322ab82d7d6",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/GAP_PRIORITIES_AND_ACCEPTANCE.md",
+      "original_path": "/workspace/football-demo/two-reference-refinement/GAP_PRIORITIES_AND_ACCEPTANCE.md",
+      "bytes": 3951,
+      "sha256": "532cbd8bf09884738340c0e2ca631931fab2071b8b482846cfd434a6ca695217",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/KB_APPLICATION_AND_REWRITES.md",
+      "original_path": "/workspace/football-demo/two-reference-refinement/KB_APPLICATION_AND_REWRITES.md",
+      "bytes": 5889,
+      "sha256": "e4bfb0e9af618e601b0d54c8c72d6960bd48ecafc56c7da45c7d05c9f857c121",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/KB_RETRIEVAL_FULL.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/KB_RETRIEVAL_FULL.json",
+      "bytes": 53951,
+      "sha256": "073d5e151d13af6ad55ba453535b0dd5b7ba619cb3f5afb56d0644f38c8c06fc",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/KB_RETRIEVAL_REVIEW.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/KB_RETRIEVAL_REVIEW.json",
+      "bytes": 28481,
+      "sha256": "8f8e0a573db2e66b3ed9d5c2ea3b5a44ebd23f2a5350eb752f8779cc2a580924",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/NEW_STORYBOARD_BUDGET.md",
+      "original_path": "/workspace/football-demo/two-reference-refinement/NEW_STORYBOARD_BUDGET.md",
+      "bytes": 9135,
+      "sha256": "8bcfcff27d59d09d5365b0cc263b9401ca89fc764c036ed34779d0c07c9a7095",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/NEW_TIMELINE_BUDGET.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/NEW_TIMELINE_BUDGET.json",
+      "bytes": 11055,
+      "sha256": "00a803d34a9763cc4e884ccaa1120d0fcd86d4a9bea7f9e102c4d0943c5cebf1",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/NEW_VOICEOVER.txt",
+      "original_path": "/workspace/football-demo/two-reference-refinement/NEW_VOICEOVER.txt",
+      "bytes": 1419,
+      "sha256": "7f220739b61ff7cc945a34cfe0af1acb439dd18ae69ad7e7e66516080918a81c",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/PACKAGE_MANIFEST.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/PACKAGE_MANIFEST.json",
+      "bytes": 10265,
+      "sha256": "86c4effc2036e34f3f043ab32a47c4c5d41a32f84e5caba91a2815725555c1c6",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/README.md",
+      "original_path": "/workspace/football-demo/two-reference-refinement/README.md",
+      "bytes": 4011,
+      "sha256": "cc02815f68f2af83df4631c0708d8245e99c31322de21623347b9978dee216aa",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/REFERENCE_DISTILLATION.md",
+      "original_path": "/workspace/football-demo/two-reference-refinement/REFERENCE_DISTILLATION.md",
+      "bytes": 8410,
+      "sha256": "397f15d0fe09d36e260bacfc4bc93aec5441adc446213b11421d82a3ef733ba3",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/SFX_PLAN_NOT_RENDERED.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/SFX_PLAN_NOT_RENDERED.json",
+      "bytes": 2085,
+      "sha256": "061eda16feaeb840861fd7ef8d587a88035a1d5620d4b79e4961557d2e131f87",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/SOUND_AND_VISUAL_SPEC.md",
+      "original_path": "/workspace/football-demo/two-reference-refinement/SOUND_AND_VISUAL_SPEC.md",
+      "bytes": 5819,
+      "sha256": "d199f8518884f9d398c2db3a5028252fe53b7ac5f3cb251ddfa5460df5ba3412",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/VALIDATION.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/VALIDATION.json",
+      "bytes": 542,
+      "sha256": "c3c9c096eac688d123a9fe059c33a358a4d088b16f1d2be9e63ce3579c6d98ae",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/COMPARATIVE_SIGNAL_MEASUREMENTS.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/COMPARATIVE_SIGNAL_MEASUREMENTS.json",
+      "bytes": 3424,
+      "sha256": "b5b2c868debc991d3674461d19ec899a202c28bbf132fc856f0bd0892e08949f",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/CURRENT_probe.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_probe.json",
+      "bytes": 3552,
+      "sha256": "b8ba506f89cb31acbc385e26f6176083fa0dcabcb66dc7fa3b946a53e8e20b95",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/FRAME_MANIFEST.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/FRAME_MANIFEST.json",
+      "bytes": 7264,
+      "sha256": "b4065a953d61ff4a8ea4b6752fcc2f700e0c523bdeb59289a011efe182b6a69a",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/LOUDNESS_MEASUREMENTS.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/LOUDNESS_MEASUREMENTS.json",
+      "bytes": 708,
+      "sha256": "51deabe3323a13af21a835b0099f30fc51e71e17282928231dd76a5c6ff6974e",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/MODE_RATIOS_AND_RUNS.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/MODE_RATIOS_AND_RUNS.json",
+      "bytes": 3061,
+      "sha256": "5ca36c1710713c12671d9276715bb9bfefdabb8256c36b11469762a556f1db45",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/R1_probe.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/R1_probe.json",
+      "bytes": 3759,
+      "sha256": "930e79edf22557212611f05ef86bf584c8d5bd6e677183fee2b1a6c5fdca4beb",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/R2_probe.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/R2_probe.json",
+      "bytes": 3820,
+      "sha256": "028a7f44f1fa428a700a1487fa12556eec10bd3ce97e89c2502320f4ad550fd7",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-demo/two-reference-refinement/evidence/SUBTITLE_SAMPLE_MEASUREMENTS.json",
+      "original_path": "/workspace/football-demo/two-reference-refinement/evidence/SUBTITLE_SAMPLE_MEASUREMENTS.json",
+      "bytes": 1253,
+      "sha256": "d9faee055782324e1b6c59ffc4e5d22da9a570cbcb4c740d9c19e9ac2e1219ec",
+      "group": "two-reference-refinement"
+    },
+    {
+      "archive_path": "football-knowledge-base/BUILD_STATUS.json",
+      "original_path": "/workspace/football-knowledge-base/BUILD_STATUS.json",
+      "bytes": 349,
+      "sha256": "0fe5a30efb72e2064a555dd7fdacf33863f711d406a39aa6d263725bdddb161d",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/CHANGELOG.md",
+      "original_path": "/workspace/football-knowledge-base/CHANGELOG.md",
+      "bytes": 662,
+      "sha256": "8af18486f56f8b0206765e1bade2f77d3cb1299b0661e5d49282f3faa6083f6b",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/PAGE_LINK.md",
+      "original_path": "/workspace/football-knowledge-base/PAGE_LINK.md",
+      "bytes": 523,
+      "sha256": "7b8273e455a9b6299db9e28250261c00154c74b371f3ce5cec57b42c5e1f667e",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/PARENT_RULES_TO_SAVE.md",
+      "original_path": "/workspace/football-knowledge-base/PARENT_RULES_TO_SAVE.md",
+      "bytes": 844,
+      "sha256": "22b40401763ebca06ade8450c477adb6814f5e8755873ee3febd89ce8239dc6f",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/README.md",
+      "original_path": "/workspace/football-knowledge-base/README.md",
+      "bytes": 2077,
+      "sha256": "91d13fd52c70ade19978da909eeb5c8926b195e584e23f4136422db5f13b64ae",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/VALIDATION.json",
+      "original_path": "/workspace/football-knowledge-base/VALIDATION.json",
+      "bytes": 683,
+      "sha256": "e0d11c54f727983d882fce7b64149df1c8872fbfa4c03132f6173293c92059ec",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/analysis_checklist.md",
+      "original_path": "/workspace/football-knowledge-base/analysis_checklist.md",
+      "bytes": 3019,
+      "sha256": "b8afca33ef98c32e9820d72d42bd0d03e7d622c4e74104fdcbd59ee8b65e4338",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/audience_translation.md",
+      "original_path": "/workspace/football-knowledge-base/audience_translation.md",
+      "bytes": 2026,
+      "sha256": "2669d4c363459ed4952835b181526eccbd305fc022bd98db01032c45decf02be",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/build_kb_v1.py",
+      "original_path": "/workspace/football-knowledge-base/build_kb_v1.py",
+      "bytes": 59067,
+      "sha256": "6b9ea114eba1be0d119c20242908b182ec11c3a2a158bcda6e379c7caf0c555f",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/clip_selection.md",
+      "original_path": "/workspace/football-knowledge-base/clip_selection.md",
+      "bytes": 1998,
+      "sha256": "d4fc6858973192614ab25739c07eb1cdefc7b166a63f610a807bb3778ab03a85",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/concepts.jsonl",
+      "original_path": "/workspace/football-knowledge-base/concepts.jsonl",
+      "bytes": 84354,
+      "sha256": "37d0dcf7c23b25f25ee25af83d623d7664e469c57eadb143ac04040df890157d",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/finish_local_kb.py",
+      "original_path": "/workspace/football-knowledge-base/finish_local_kb.py",
+      "bytes": 17994,
+      "sha256": "1c5ffea4f6a330f710f65846a93f1c96432902abc8762f7e19ecaa5b621ebb91",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/resources/GITHUB_RESOURCES.md",
+      "original_path": "/workspace/football-knowledge-base/resources/GITHUB_RESOURCES.md",
+      "bytes": 18845,
+      "sha256": "e27db4e949b77d160f5e349b8c95c94e4ceef00752e52540fd301150f3e0cd86",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/resources/IMPORT_VS_TOOLS.md",
+      "original_path": "/workspace/football-knowledge-base/resources/IMPORT_VS_TOOLS.md",
+      "bytes": 5815,
+      "sha256": "7ad71ac4493ec638d79e9e8698018e4b3f358b068f40f024f0f7608f7b2ea20d",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/resources/INTEGRATION_POLICY.md",
+      "original_path": "/workspace/football-knowledge-base/resources/INTEGRATION_POLICY.md",
+      "bytes": 1273,
+      "sha256": "e5088363ba1997340478a05f8d23f1279ca1bb7a7f38219e91f6fb9cd9f45fdd",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/resources/github_resources.json",
+      "original_path": "/workspace/football-knowledge-base/resources/github_resources.json",
+      "bytes": 30640,
+      "sha256": "c95cb12b8046d24cc23ac3aed69b7577dae71394105a97ca39a1f4b1725b10f4",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/README.md",
+      "original_path": "/workspace/football-knowledge-base/sources/README.md",
+      "bytes": 1068,
+      "sha256": "ff49690a750c9941ae98aacc8695a31a6bb74e9d2bf83a4840adc3121decb815",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/card_source_crosswalk.csv",
+      "original_path": "/workspace/football-knowledge-base/sources/card_source_crosswalk.csv",
+      "bytes": 13161,
+      "sha256": "b3fa0109162794459f7b5fb394e528322772aa32f93ceba423c3a196d39cc1b3",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/C01.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/C01.md",
+      "bytes": 1024,
+      "sha256": "51948c45abc1e20bd298e501b86188ebe3a5eeb71517a0b49abae6fabf0712c0",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/C02.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/C02.md",
+      "bytes": 923,
+      "sha256": "131d258dd69f0cd2f3570e419cf52f183f83fa5d8b5c067361797870ef923948",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/C03.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/C03.md",
+      "bytes": 1083,
+      "sha256": "cea6b95da7f7ba968223114f72ef81b3b051f101ce3a0fe7d1211049e327a89f",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/C04.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/C04.md",
+      "bytes": 965,
+      "sha256": "57e22b29f1f8a194378b14233245c8ef60ed1d1022866a32360f3868198c4f30",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F01.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F01.md",
+      "bytes": 1048,
+      "sha256": "84eee311c2bd04c39b385b7098847b56a09c18827d69276bcac316139630da41",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F02.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F02.md",
+      "bytes": 1097,
+      "sha256": "a405b75c856f13474f0aa53179b1cd7369faabeb8220dfb0399ca6ba658386cf",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F03.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F03.md",
+      "bytes": 1004,
+      "sha256": "5929187cc55ff8fa3836787f7aa928bf0d07dd475932beec8ca05e0b6d178ce6",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F04.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F04.md",
+      "bytes": 977,
+      "sha256": "77056368d10b69781a0bb5839eaf0dbc9ffeaeeba9bd14ed2c298af70d58d15e",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F05.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F05.md",
+      "bytes": 1137,
+      "sha256": "62eed5284286e83fdb24a2edfe84ac44065f46673bd09ee98be833bec17d7062",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F06.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F06.md",
+      "bytes": 1011,
+      "sha256": "edb631e0a0430a068123602522877e41d28ce17a50e627ef4b92cd59f3aa0f93",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F07.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F07.md",
+      "bytes": 1007,
+      "sha256": "6ca04d9e96b72b70d4cf17679a0d79c935c0f8a5b1359a3fe559057452ce80e0",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F08.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F08.md",
+      "bytes": 1074,
+      "sha256": "fcdab8d1d9edf1bc28582794ada8c921eb7c857d9466c57c990286558f526f7c",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F09.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F09.md",
+      "bytes": 1062,
+      "sha256": "124d4118b4c154dd564f8fad331ab3b0e172da658f3df9c6f82c50e777c9cb7b",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F10.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F10.md",
+      "bytes": 1000,
+      "sha256": "f8acf059440f4c717085d0a6475867de61c246e59f7e2d1f3727e983152b12d1",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F11.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F11.md",
+      "bytes": 1063,
+      "sha256": "2c2b8371f1de707de9dc48935d2bda8e63c5a079752daa49312d8d72f1703779",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F12.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F12.md",
+      "bytes": 1246,
+      "sha256": "7487dbbc732b87c225de2fce44031c7336ccf597790518de56c260cd8123db97",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/F13.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/F13.md",
+      "bytes": 1035,
+      "sha256": "03260277a6b23b5da82cacc6a432056f01fc5f3837b8f003bda58c73b8c177a3",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/U01.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/U01.md",
+      "bytes": 1088,
+      "sha256": "90b722b6de54cf6a4bb69d5faa096fa85a9ab3ddb17a4ff3809ea2bd2f5da7ac",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/U02.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/U02.md",
+      "bytes": 1096,
+      "sha256": "5f28262bb7ce5f09e774e22d35334d4b32546ab830b023acd8aeeea7c37b4800",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/notes/U03.md",
+      "original_path": "/workspace/football-knowledge-base/sources/notes/U03.md",
+      "bytes": 1149,
+      "sha256": "4200a4e38c0dd6c16fb7b8509d10283b9580881a41a4bce6b42766bd33e5b27e",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/sources/source_registry.jsonl",
+      "original_path": "/workspace/football-knowledge-base/sources/source_registry.jsonl",
+      "bytes": 23425,
+      "sha256": "06c4ad0042acdb86cc4181ab8df06a3e37aa42ff2ba681b1667ef349363ea6c3",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/taxonomy.json",
+      "original_path": "/workspace/football-knowledge-base/taxonomy.json",
+      "bytes": 1955,
+      "sha256": "7c8f050200c0f99101e641c154eb6af1c09281f23d0a2bc777bc96884968aaab",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/worked_examples/README.md",
+      "original_path": "/workspace/football-knowledge-base/worked_examples/README.md",
+      "bytes": 4350,
+      "sha256": "5760cfbce72a4f07b8634b61a287ef7d9de665db974d3f856fe4ffaca5bf57c2",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "football-knowledge-base/worked_examples/arsenal_application.json",
+      "original_path": "/workspace/football-knowledge-base/worked_examples/arsenal_application.json",
+      "bytes": 7137,
+      "sha256": "1dafd4ffde48ec9a740892220aeb17c9c1af5cd159c34e8aa8626635301d3994",
+      "group": "knowledge-base"
+    },
+    {
+      "archive_path": "README.md",
+      "original_path": "/workspace/football-demo/branch-snapshot-20261116/_stage/README.md",
+      "bytes": 3502,
+      "sha256": "110c687c1931ae95d5614bfcb148069106838002e6ae13e77312f937669a1773",
+      "group": "snapshot-docs"
+    },
+    {
+      "archive_path": "MEDIA_ON_DRIVE.md",
+      "original_path": "/workspace/football-demo/branch-snapshot-20261116/_stage/MEDIA_ON_DRIVE.md",
+      "bytes": 2229,
+      "sha256": "c18efda849ec61358b81c7ccfdc596fd476d73468de31a039edb642680308198",
+      "group": "snapshot-docs"
+    },
+    {
+      "archive_path": "DEPENDENCIES_AND_LICENSE.md",
+      "original_path": "/workspace/football-demo/branch-snapshot-20261116/_stage/DEPENDENCIES_AND_LICENSE.md",
+      "bytes": 1837,
+      "sha256": "b3d1f62d8a4cee06972451e8f4f697a04910aa255b02e99575e510194d55ef39",
+      "group": "snapshot-docs"
+    },
+    {
+      "archive_path": "CURRENT_BRANCH_INDEX.md",
+      "original_path": "/workspace/football-demo/branch-snapshot-20261116/_stage/CURRENT_BRANCH_INDEX.md",
+      "bytes": 2013,
+      "sha256": "16dfa29c9c7e402795f5923758b85b6a5a63c6f95c644b3b3ce4811387a6eeb7",
+      "group": "snapshot-docs"
+    }
+  ],
+  "exclusions_summary": [
+    {
+      "reason": "外部/生成视频音频或大图/成片，保留已归档 Drive，不进 Git 快照",
+      "file_count": 170,
+      "bytes": 334666307,
+      "bytes_human": "319.16 MiB",
+      "examples": [
+        "/workspace/football-demo/full-phase-production/assets/B3_preview.png",
+        "/workspace/football-demo/full-phase-production/assets/B1_preview.png",
+        "/workspace/football-demo/full-phase-production/assets/B4_preview.png"
+      ]
+    },
+    {
+      "reason": "venv/cache/__pycache__/encoded 等构建或临时目录",
+      "file_count": 62480,
+      "bytes": 2821878181,
+      "bytes_human": "2691.15 MiB",
+      "examples": [
+        "/workspace/football-demo/full-phase-production/qc-r0/encoded/53.80.png",
+        "/workspace/football-demo/full-phase-production/qc-r0/encoded/51.28.png",
+        "/workspace/football-demo/full-phase-production/qc-r0/encoded/8.08.png"
+      ]
+    },
+    {
+      "reason": "渲染输入大图帧，已在网盘工程分卷中，不进 Git 快照",
+      "file_count": 510,
+      "bytes": 51175834,
+      "bytes_human": "48.81 MiB",
+      "examples": [
+        "/workspace/football-demo/full-phase-production/render/source/0307.jpg",
+        "/workspace/football-demo/full-phase-production/render/source/0287.jpg",
+        "/workspace/football-demo/full-phase-production/render/source/0509.jpg"
+      ]
+    },
+    {
+      "reason": "精修证据帧已在网盘 05_双对标精修_完整方案与证据.zip，大图不进 Git 快照",
+      "file_count": 41,
+      "bytes": 4794688,
+      "bytes_human": "4.57 MiB",
+      "examples": [
+        "/workspace/football-demo/two-reference-refinement/evidence/source_100.80.jpg",
+        "/workspace/football-demo/two-reference-refinement/evidence/source_93.60.jpg",
+        "/workspace/football-demo/two-reference-refinement/evidence/CURRENT_058.00.jpg"
+      ]
+    },
+    {
+      "reason": "参考分析大图/研究切片/上下文音，已在网盘 04 分卷",
+      "file_count": 388,
+      "bytes": 52988022,
+      "bytes_human": "50.53 MiB",
+      "examples": [
+        "/workspace/football-demo/full-phase-new-reference/sfx-candidates/C04_68-73_mixed_context.wav",
+        "/workspace/football-demo/full-phase-new-reference/sfx-candidates/T10_76.42s_context.wav",
+        "/workspace/football-demo/full-phase-new-reference/sfx-candidates/C05_86-91_mixed_context.wav"
+      ]
+    },
+    {
+      "reason": "对标原片/网页缓存，已在网盘 04 分卷",
+      "file_count": 5,
+      "bytes": 47512480,
+      "bytes_human": "45.31 MiB",
+      "examples": [
+        "/workspace/football-demo/full-phase-new-reference/reference/video.mp4",
+        "/workspace/football-demo/full-phase-new-reference/reference/watch_reference_h264.mp4",
+        "/workspace/football-demo/full-phase-new-reference/reference/candidate_arsenal_clean_full_phase.mp4"
+      ]
+    },
+    {
+      "reason": "参考原音或外部音频，已在网盘 04 分卷",
+      "file_count": 1,
+      "bytes": 20066676,
+      "bytes_human": "19.14 MiB",
+      "examples": [
+        "/workspace/football-demo/full-phase-new-reference/audio/reference_original.wav"
+      ]
+    },
+    {
+      "reason": "参考截帧/大图，已在网盘 04 分卷",
+      "file_count": 27,
+      "bytes": 4368027,
+      "bytes_human": "4.17 MiB",
+      "examples": [
+        "/workspace/football-demo/full-phase-new-reference/evidence/frame_095.png",
+        "/workspace/football-demo/full-phase-new-reference/evidence/frame_035.png",
+        "/workspace/football-demo/full-phase-new-reference/evidence/frame_005.png"
+      ]
+    },
+    {
+      "reason": "逐镜工作流截图/大图，已在网盘 04 分卷",
+      "file_count": 510,
+      "bytes": 43976118,
+      "bytes_human": "41.94 MiB",
+      "examples": [
+        "/workspace/football-demo/audit-20261116/sample_018.00_1280.jpg",
+        "/workspace/football-demo/audit-20261116/sample_021.50_1280.jpg",
+        "/workspace/football-demo/audit-20261116/reference_040.00_1280.jpg"
+      ]
+    },
+    {
+      "reason": "曼联样片对照材料，不属于两份对标原片的逐镜文字，避免打入其他主题",
+      "file_count": 13,
+      "bytes": 192942,
+      "bytes_human": "0.18 MiB",
+      "examples": [
+        "/workspace/football-demo/audit-20261116/sample_scan_summary.json",
+        "/workspace/football-demo/audit-20261116/sample_voice_detail.json",
+        "/workspace/football-demo/audit-20261116/sample_no_cn_vo_gaps.csv"
+      ]
+    },
+    {
+      "reason": "内容地图证据图，已在网盘 04 分卷",
+      "file_count": 96,
+      "bytes": 7541448,
+      "bytes_human": "7.19 MiB",
+      "examples": [
+        "/workspace/football-demo/reference-content-map/evidence/ref_012.jpg",
+        "/workspace/football-demo/reference-content-map/evidence/ref_029.jpg",
+        "/workspace/football-demo/reference-content-map/evidence/ref_016.jpg"
+      ]
+    },
+    {
+      "reason": "非识别/局限文字，排除",
+      "file_count": 5,
+      "bytes": 6469,
+      "bytes_human": "0.01 MiB",
+      "examples": [
+        "/workspace/football-demo/bgm-reference-research/scan_preview_main.log",
+        "/workspace/football-demo/bgm-reference-research/scan_pass1_default.log",
+        "/workspace/football-demo/bgm-reference-research/scan_preview_passion.log"
+      ]
+    },
+    {
+      "reason": "分离音频已在网盘 04 分卷，仅保留文字质量说明",
+      "file_count": 3,
+      "bytes": 2861,
+      "bytes_human": "0.00 MiB",
+      "examples": [
+        "/workspace/football-demo/bgm-reference-research/separated_exports/scan_vocals.log",
+        "/workspace/football-demo/bgm-reference-research/separated_exports/scan_no_vocals.log",
+        "/workspace/football-demo/bgm-reference-research/separated_exports/README.txt"
+      ]
+    },
+    {
+      "reason": "BGM 音频/频谱图已在网盘 04 分卷",
+      "file_count": 12,
+      "bytes": 276581374,
+      "bytes_human": "263.77 MiB",
+      "examples": [
+        "/workspace/football-demo/bgm-reference-research/separated_exports/Rookie_空间阅读者_参考混音分离版_no_vocals_float32.wav",
+        "/workspace/football-demo/bgm-reference-research/separated_exports/stem_other_s16.wav",
+        "/workspace/football-demo/bgm-reference-research/separated_exports/stem_drums_s16.wav"
+      ]
+    },
+    {
+      "reason": "BGM 工具环境或 Demucs 原始分轨，不进 Git",
+      "file_count": 411,
+      "bytes": 265149214,
+      "bytes_human": "252.87 MiB",
+      "examples": [
+        "/workspace/football-demo/bgm-reference-research/tool/scan_bgm.py",
+        "/workspace/football-demo/bgm-reference-research/tool/shazamio_libs/typing_extensions.py",
+        "/workspace/football-demo/bgm-reference-research/tool/shazamio_libs/attrs/validators.py"
+      ]
+    }
+  ],
+  "security": {
+    "scanned": true,
+    "named_credential_files_found": 0,
+    "content_pattern_exclusions": [],
+    "note": "未在报告中转述任何密钥值。TTS 辅助模块与账号凭据未纳入。"
+  }
+}

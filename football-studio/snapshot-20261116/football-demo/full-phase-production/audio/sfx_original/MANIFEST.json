@@ -1,0 +1,53 @@
+{
+  "disclaimer": "四条均为原创合成近似音效，不是从参考成片抽段，也不是官方授权库素材。",
+  "assets": [
+    {
+      "id": "cut_hit_low_muted",
+      "type": "硬切低频顿点",
+      "design": "80–140Hz 阻尼正弦 + 短促低频噪声，约80ms有效体，峰值-14 dBFS",
+      "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/cut_hit_low_muted.wav",
+      "sr": 44100,
+      "channels": 2,
+      "duration_s": 0.2,
+      "peak_dbfs": -14.092976189413282,
+      "rms_dbfs": -28.984351825678406,
+      "source": "原创近似音效（合成，非参考片抽段）"
+    },
+    {
+      "id": "ui_tick_soft",
+      "type": "轻UI提示音",
+      "design": "2–3kHz 短点击，约40–60ms，峰值-16 dBFS，避免长余响",
+      "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/ui_tick_soft.wav",
+      "sr": 44100,
+      "channels": 2,
+      "duration_s": 0.16,
+      "peak_dbfs": -18.461857237305143,
+      "rms_dbfs": -44.25208296318794,
+      "source": "原创近似音效（合成，非参考片抽段）"
+    },
+    {
+      "id": "whoosh_line_short",
+      "type": "短促路线/画线气流",
+      "design": "带通噪声扫频约180–220ms，峰值-18 dBFS，比切点和旁白更弱",
+      "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/whoosh_line_short.wav",
+      "sr": 44100,
+      "channels": 2,
+      "duration_s": 0.28,
+      "peak_dbfs": -20.48294149916775,
+      "rms_dbfs": -36.57104407207855,
+      "source": "原创近似音效（合成，非参考片抽段）"
+    },
+    {
+      "id": "circle_lock_soft",
+      "type": "轻圈注/锁定提示",
+      "design": "中频短促＋极短空气点击，约90ms，峰值-17 dBFS",
+      "path": "/workspace/football-demo/full-phase-new-reference/audio-analysis/sfx_original_approx/circle_lock_soft.wav",
+      "sr": 44100,
+      "channels": 2,
+      "duration_s": 0.2,
+      "peak_dbfs": -21.576351854511127,
+      "rms_dbfs": -39.67780345812054,
+      "source": "原创近似音效（合成，非参考片抽段）"
+    }
+  ]
+}

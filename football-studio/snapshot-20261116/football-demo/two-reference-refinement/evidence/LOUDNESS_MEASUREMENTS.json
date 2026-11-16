@@ -1,0 +1,23 @@
+{
+  "R1": {
+    "input_i": "-8.52",
+    "input_tp": "1.53",
+    "input_lra": "1.80",
+    "input_thresh": "-18.56",
+    "method": "ffmpeg loudnorm measurement only; null output; input_i LUFS, input_tp dBTP; no audio file modified"
+  },
+  "R2": {
+    "input_i": "-6.86",
+    "input_tp": "2.27",
+    "input_lra": "0.80",
+    "input_thresh": "-16.86",
+    "method": "ffmpeg loudnorm measurement only; null output; input_i LUFS, input_tp dBTP; no audio file modified"
+  },
+  "CURRENT": {
+    "input_i": "-18.20",
+    "input_tp": "-1.31",
+    "input_lra": "4.70",
+    "input_thresh": "-28.28",
+    "method": "ffmpeg loudnorm measurement only; null output; input_i LUFS, input_tp dBTP; no audio file modified"
+  }
+}

@@ -1,0 +1,634 @@
+[
+  {
+    "clip": "main_8s",
+    "start_s": 8,
+    "dur_s": 10,
+    "gain_db": 8,
+    "ffmpeg_ok": true,
+    "title": "人生志在一博",
+    "subtitle": "李富贵",
+    "url": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+    "key": "905406860",
+    "isrc": "QZNMZ2630446",
+    "genres": {
+      "primary": "Pop"
+    },
+    "apple_actions": [
+      {
+        "name": "apple",
+        "type": "applemusicplay",
+        "id": "6822056789"
+      },
+      {
+        "name": "apple",
+        "type": "uri",
+        "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/9f/2a/f89f2a87-4b61-1f0b-2a66-1684657a5bc1/mzaf_16120574764692700999.plus.aac.p.m4a"
+      }
+    ],
+    "apple_options": [
+      {
+        "caption": "OPEN IN",
+        "actions": [
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "applemusicopen",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          },
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "open",
+          "providername": "applemusic"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+        "type": "open",
+        "listcaption": "Open in Apple Music",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "applemusic"
+      },
+      {
+        "caption": "BUY",
+        "actions": [
+          {
+            "type": "uri",
+            "uri": "https://itunes.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "buy",
+          "providername": "itunes"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "type": "buy",
+        "listcaption": "Buy on iTunes",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "itunes"
+      }
+    ],
+    "sections_meta": [
+      {
+        "type": "SONG",
+        "tabname": "Song",
+        "metadata": [
+          {
+            "title": "Album",
+            "text": "超速进行曲 - EP"
+          },
+          {
+            "title": "Label",
+            "text": "李富贵"
+          },
+          {
+            "title": "Released",
+            "text": "2026"
+          }
+        ]
+      },
+      {
+        "type": "RELATED",
+        "tabname": "Related"
+      }
+    ],
+    "myshazam": {
+      "apple": {
+        "actions": [
+          {
+            "name": "myshazam:apple",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ]
+      }
+    },
+    "share": {
+      "subject": "人生志在一博 - 李富贵",
+      "text": "人生志在一博 by 李富贵",
+      "href": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+      "twitter": "I used @Shazam to discover 人生志在一博 by 李富贵.",
+      "html": "https://www.shazam.com/snippets/email-share/905406860?lang=en-US&country=GB",
+      "snapchat": "https://www.shazam.com/partner/sc/track/905406860"
+    },
+    "has_track": true,
+    "raw_keys": [
+      "matches",
+      "location",
+      "timestamp",
+      "timezone",
+      "track",
+      "tagid"
+    ]
+  },
+  {
+    "clip": "main_50s",
+    "start_s": 50,
+    "dur_s": 10,
+    "gain_db": 8,
+    "ffmpeg_ok": true,
+    "title": "人生志在一博",
+    "subtitle": "李富贵",
+    "url": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+    "key": "905406860",
+    "isrc": "QZNMZ2630446",
+    "genres": {
+      "primary": "Pop"
+    },
+    "apple_actions": [
+      {
+        "name": "apple",
+        "type": "applemusicplay",
+        "id": "6822056789"
+      },
+      {
+        "name": "apple",
+        "type": "uri",
+        "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/9f/2a/f89f2a87-4b61-1f0b-2a66-1684657a5bc1/mzaf_16120574764692700999.plus.aac.p.m4a"
+      }
+    ],
+    "apple_options": [
+      {
+        "caption": "OPEN IN",
+        "actions": [
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "applemusicopen",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          },
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "open",
+          "providername": "applemusic"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+        "type": "open",
+        "listcaption": "Open in Apple Music",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "applemusic"
+      },
+      {
+        "caption": "BUY",
+        "actions": [
+          {
+            "type": "uri",
+            "uri": "https://itunes.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "buy",
+          "providername": "itunes"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "type": "buy",
+        "listcaption": "Buy on iTunes",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "itunes"
+      }
+    ],
+    "sections_meta": [
+      {
+        "type": "SONG",
+        "tabname": "Song",
+        "metadata": [
+          {
+            "title": "Album",
+            "text": "超速进行曲 - EP"
+          },
+          {
+            "title": "Label",
+            "text": "李富贵"
+          },
+          {
+            "title": "Released",
+            "text": "2026"
+          }
+        ]
+      },
+      {
+        "type": "RELATED",
+        "tabname": "Related"
+      }
+    ],
+    "myshazam": {
+      "apple": {
+        "actions": [
+          {
+            "name": "myshazam:apple",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ]
+      }
+    },
+    "share": {
+      "subject": "人生志在一博 - 李富贵",
+      "text": "人生志在一博 by 李富贵",
+      "href": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+      "twitter": "I used @Shazam to discover 人生志在一博 by 李富贵.",
+      "html": "https://www.shazam.com/snippets/email-share/905406860?lang=en-US&country=GB",
+      "snapchat": "https://www.shazam.com/partner/sc/track/905406860"
+    },
+    "has_track": true,
+    "raw_keys": [
+      "matches",
+      "location",
+      "timestamp",
+      "timezone",
+      "track",
+      "tagid"
+    ]
+  },
+  {
+    "clip": "main_120s",
+    "start_s": 120,
+    "dur_s": 10,
+    "gain_db": 8,
+    "ffmpeg_ok": true,
+    "title": "人生志在一博",
+    "subtitle": "李富贵",
+    "url": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+    "key": "905406860",
+    "isrc": "QZNMZ2630446",
+    "genres": {
+      "primary": "Pop"
+    },
+    "apple_actions": [
+      {
+        "name": "apple",
+        "type": "applemusicplay",
+        "id": "6822056789"
+      },
+      {
+        "name": "apple",
+        "type": "uri",
+        "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/9f/2a/f89f2a87-4b61-1f0b-2a66-1684657a5bc1/mzaf_16120574764692700999.plus.aac.p.m4a"
+      }
+    ],
+    "apple_options": [
+      {
+        "caption": "OPEN IN",
+        "actions": [
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "applemusicopen",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          },
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "open",
+          "providername": "applemusic"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+        "type": "open",
+        "listcaption": "Open in Apple Music",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "applemusic"
+      },
+      {
+        "caption": "BUY",
+        "actions": [
+          {
+            "type": "uri",
+            "uri": "https://itunes.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "buy",
+          "providername": "itunes"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "type": "buy",
+        "listcaption": "Buy on iTunes",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "itunes"
+      }
+    ],
+    "sections_meta": [
+      {
+        "type": "SONG",
+        "tabname": "Song",
+        "metadata": [
+          {
+            "title": "Album",
+            "text": "超速进行曲 - EP"
+          },
+          {
+            "title": "Label",
+            "text": "李富贵"
+          },
+          {
+            "title": "Released",
+            "text": "2026"
+          }
+        ]
+      },
+      {
+        "type": "RELATED",
+        "tabname": "Related"
+      }
+    ],
+    "myshazam": {
+      "apple": {
+        "actions": [
+          {
+            "name": "myshazam:apple",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A/6822056782?i=6822056789&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ]
+      }
+    },
+    "share": {
+      "subject": "人生志在一博 - 李富贵",
+      "text": "人生志在一博 by 李富贵",
+      "href": "https://www.shazam.com/track/905406860/%E4%BA%BA%E7%94%9F%E5%BF%97%E5%9C%A8%E4%B8%80%E5%8D%9A",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/a1/8c/c8a18c88-d460-fd37-60e8-7d809cbc1bcc/888193951541.png/400x400cc.jpg",
+      "twitter": "I used @Shazam to discover 人生志在一博 by 李富贵.",
+      "html": "https://www.shazam.com/snippets/email-share/905406860?lang=en-US&country=GB",
+      "snapchat": "https://www.shazam.com/partner/sc/track/905406860"
+    },
+    "has_track": true,
+    "raw_keys": [
+      "matches",
+      "location",
+      "timestamp",
+      "timezone",
+      "track",
+      "tagid"
+    ]
+  },
+  {
+    "clip": "end_158s",
+    "start_s": 158,
+    "dur_s": 7,
+    "gain_db": 8,
+    "ffmpeg_ok": true,
+    "title": "passion",
+    "subtitle": "silent anthem & heart embrace",
+    "url": "https://www.shazam.com/track/717257751/passion",
+    "key": "717257751",
+    "isrc": "DGA0P2461646",
+    "genres": {
+      "primary": "Dance"
+    },
+    "apple_actions": [
+      {
+        "name": "apple",
+        "type": "applemusicplay",
+        "id": "1773323114"
+      },
+      {
+        "name": "apple",
+        "type": "uri",
+        "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/73/6f/80736f62-838b-0349-110a-141ba01724f0/mzaf_301204446372056991.plus.aac.p.m4a"
+      }
+    ],
+    "apple_options": [
+      {
+        "caption": "OPEN IN",
+        "actions": [
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "applemusicopen",
+            "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          },
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "open",
+          "providername": "applemusic"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+        "type": "open",
+        "listcaption": "Open in Apple Music",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "applemusic"
+      },
+      {
+        "caption": "BUY",
+        "actions": [
+          {
+            "type": "uri",
+            "uri": "https://itunes.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "buy",
+          "providername": "itunes"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "type": "buy",
+        "listcaption": "Buy on iTunes",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "itunes"
+      }
+    ],
+    "sections_meta": [
+      {
+        "type": "SONG",
+        "tabname": "Song",
+        "metadata": [
+          {
+            "title": "Album",
+            "text": "passion - Single"
+          },
+          {
+            "title": "Label",
+            "text": "Goost Music"
+          },
+          {
+            "title": "Released",
+            "text": "2024"
+          }
+        ]
+      },
+      {
+        "type": "RELATED",
+        "tabname": "Related"
+      }
+    ],
+    "myshazam": {
+      "apple": {
+        "actions": [
+          {
+            "name": "myshazam:apple",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ]
+      }
+    },
+    "share": {
+      "subject": "passion - silent anthem & heart embrace",
+      "text": "passion by silent anthem & heart embrace",
+      "href": "https://www.shazam.com/track/717257751/passion",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/400x400cc.jpg",
+      "twitter": "I used @Shazam to discover passion by silent anthem & heart embrace.",
+      "html": "https://www.shazam.com/snippets/email-share/717257751?lang=en-US&country=GB",
+      "avatar": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/36/23/a1/3623a1bd-896d-5b9c-17fd-911b640362ce/file_cropped.png/800x800cc.jpg",
+      "snapchat": "https://www.shazam.com/partner/sc/track/717257751"
+    },
+    "has_track": true,
+    "raw_keys": [
+      "matches",
+      "location",
+      "timestamp",
+      "timezone",
+      "track",
+      "tagid"
+    ]
+  },
+  {
+    "clip": "end_165s",
+    "start_s": 165,
+    "dur_s": 6,
+    "gain_db": 8,
+    "ffmpeg_ok": true,
+    "title": "passion",
+    "subtitle": "silent anthem & heart embrace",
+    "url": "https://www.shazam.com/track/717257751/passion",
+    "key": "717257751",
+    "isrc": "DGA0P2461646",
+    "genres": {
+      "primary": "Dance"
+    },
+    "apple_actions": [
+      {
+        "name": "apple",
+        "type": "applemusicplay",
+        "id": "1773323114"
+      },
+      {
+        "name": "apple",
+        "type": "uri",
+        "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/73/6f/80736f62-838b-0349-110a-141ba01724f0/mzaf_301204446372056991.plus.aac.p.m4a"
+      }
+    ],
+    "apple_options": [
+      {
+        "caption": "OPEN IN",
+        "actions": [
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "applemusicopen",
+            "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          },
+          {
+            "name": "hub:applemusic:deeplink",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "open",
+          "providername": "applemusic"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+        "type": "open",
+        "listcaption": "Open in Apple Music",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "applemusic"
+      },
+      {
+        "caption": "BUY",
+        "actions": [
+          {
+            "type": "uri",
+            "uri": "https://itunes.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+          }
+        ],
+        "beacondata": {
+          "type": "buy",
+          "providername": "itunes"
+        },
+        "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "type": "buy",
+        "listcaption": "Buy on iTunes",
+        "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+        "colouroverflowimage": false,
+        "providername": "itunes"
+      }
+    ],
+    "sections_meta": [
+      {
+        "type": "SONG",
+        "tabname": "Song",
+        "metadata": [
+          {
+            "title": "Album",
+            "text": "passion - Single"
+          },
+          {
+            "title": "Label",
+            "text": "Goost Music"
+          },
+          {
+            "title": "Released",
+            "text": "2024"
+          }
+        ]
+      },
+      {
+        "type": "RELATED",
+        "tabname": "Related"
+      }
+    ],
+    "myshazam": {
+      "apple": {
+        "actions": [
+          {
+            "name": "myshazam:apple",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ]
+      }
+    },
+    "share": {
+      "subject": "passion - silent anthem & heart embrace",
+      "text": "passion by silent anthem & heart embrace",
+      "href": "https://www.shazam.com/track/717257751/passion",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/400x400cc.jpg",
+      "twitter": "I used @Shazam to discover passion by silent anthem & heart embrace.",
+      "html": "https://www.shazam.com/snippets/email-share/717257751?lang=en-US&country=GB",
+      "avatar": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/36/23/a1/3623a1bd-896d-5b9c-17fd-911b640362ce/file_cropped.png/800x800cc.jpg",
+      "snapchat": "https://www.shazam.com/partner/sc/track/717257751"
+    },
+    "has_track": true,
+    "raw_keys": [
+      "matches",
+      "location",
+      "timestamp",
+      "timezone",
+      "track",
+      "tagid"
+    ]
+  }
+]

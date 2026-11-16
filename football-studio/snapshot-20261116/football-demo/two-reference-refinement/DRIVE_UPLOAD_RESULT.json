@@ -1,0 +1,121 @@
+{
+  "verified_at": "2026-11-16T17:59:04+08:00",
+  "folder_id": "1ESUqsHNUNQJTGpkROGVv_QLL-ub4FKbz",
+  "folder_url": "https://drive.google.com/drive/folders/1ESUqsHNUNQJTGpkROGVv_QLL-ub4FKbz",
+  "new_uploaded_items": 9,
+  "total_folder_items_after_append": 25,
+  "items": [
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/README.md",
+      "drive_name": "05_双对标精修_阅读入口",
+      "file_id": "1M8TGRC7JjRLkDN5xiD-eVoBIhEIox-xMQI3U6coHxwE",
+      "url": "https://docs.google.com/document/d/1M8TGRC7JjRLkDN5xiD-eVoBIhEIox-xMQI3U6coHxwE/edit?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 5013,
+      "local_bytes": 4011,
+      "converted_to_native_Doc": true,
+      "byte_size_match": null,
+      "local_sha256": "cc02815f68f2af83df4631c0708d8245e99c31322de21623347b9978dee216aa"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement_20261116.zip",
+      "drive_name": "05_双对标精修_完整方案与证据.zip",
+      "file_id": "1iZHVkT2tMg2Q1MubCRw4T0RNJANgVsTR",
+      "url": "https://drive.google.com/file/d/1iZHVkT2tMg2Q1MubCRw4T0RNJANgVsTR/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 4712038,
+      "local_bytes": 4712038,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "ec5d82cb0a6fc4d0cd0bbf6fb622e8ebaec6daccfe9684bae5ecbeb567a13cd7"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/NEW_VOICEOVER.txt",
+      "drive_name": "05_双对标精修_新版旁白.txt",
+      "file_id": "1WBYB80a5uOg3QeLaJ1bALAfu8psXgws0",
+      "url": "https://drive.google.com/file/d/1WBYB80a5uOg3QeLaJ1bALAfu8psXgws0/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 1419,
+      "local_bytes": 1419,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "7f220739b61ff7cc945a34cfe0af1acb439dd18ae69ad7e7e66516080918a81c"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/NEW_STORYBOARD_BUDGET.md",
+      "drive_name": "05_双对标精修_声画分镜预算.md",
+      "file_id": "1Vsy8yWdXoVT4vSniOJrEdG0E-UN5OS_l",
+      "url": "https://drive.google.com/file/d/1Vsy8yWdXoVT4vSniOJrEdG0E-UN5OS_l/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 9135,
+      "local_bytes": 9135,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "8bcfcff27d59d09d5365b0cc263b9401ca89fc764c036ed34779d0c07c9a7095"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/REFERENCE_DISTILLATION.md",
+      "drive_name": "05_双对标精修_参考逐镜证据.md",
+      "file_id": "1l-uzVpvXHrp0gvY0_toVe2OE1jRnn3Yk",
+      "url": "https://drive.google.com/file/d/1l-uzVpvXHrp0gvY0_toVe2OE1jRnn3Yk/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 8410,
+      "local_bytes": 8410,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "397f15d0fe09d36e260bacfc4bc93aec5441adc446213b11421d82a3ef733ba3"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/GAP_PRIORITIES_AND_ACCEPTANCE.md",
+      "drive_name": "05_双对标精修_差距与验收.md",
+      "file_id": "14I8FirkUOtT0Sib92j0Mxoxadn1OM3BZ",
+      "url": "https://drive.google.com/file/d/14I8FirkUOtT0Sib92j0Mxoxadn1OM3BZ/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 3951,
+      "local_bytes": 3951,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "532cbd8bf09884738340c0e2ca631931fab2071b8b482846cfd434a6ca695217"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/KB_APPLICATION_AND_REWRITES.md",
+      "drive_name": "05_双对标精修_KB应用与四组改写.md",
+      "file_id": "1yMTBBPna2TOwIgiRldBX58pnIx9A6moz",
+      "url": "https://drive.google.com/file/d/1yMTBBPna2TOwIgiRldBX58pnIx9A6moz/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 5889,
+      "local_bytes": 5889,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "e4bfb0e9af618e601b0d54c8c72d6960bd48ecafc56c7da45c7d05c9f857c121"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/SOUND_AND_VISUAL_SPEC.md",
+      "drive_name": "05_双对标精修_声画执行规范.md",
+      "file_id": "1c16_QTzNcHU4FeJWP7mmGaojZQ6kZBI4",
+      "url": "https://drive.google.com/file/d/1c16_QTzNcHU4FeJWP7mmGaojZQ6kZBI4/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 5819,
+      "local_bytes": 5819,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "d199f8518884f9d398c2db3a5028252fe53b7ac5f3cb251ddfa5460df5ba3412"
+    },
+    {
+      "local_path": "/workspace/football-demo/two-reference-refinement/AUDIENCE_HYPOTHESES_AND_TEST.md",
+      "drive_name": "05_双对标精修_受众假设与AB.md",
+      "file_id": "1EA_S10GAG8KbPxhvb4zdY81VJat9ZjBZ",
+      "url": "https://drive.google.com/file/d/1EA_S10GAG8KbPxhvb4zdY81VJat9ZjBZ/view?usp=drivesdk",
+      "listed_in_correct_folder": true,
+      "listed_remote_size": 4626,
+      "local_bytes": 4626,
+      "converted_to_native_Doc": false,
+      "byte_size_match": true,
+      "local_sha256": "77eaf33f96a771b3ebe830d69ac2db1f3b7088e043e03113b17ea0a534166afc"
+    }
+  ],
+  "verification": "Live folder listing confirmed all 9; ZIP and native entry metadata parents confirmed correct and shared=false; all 8 unconverted byte sizes match. Native entry read back complete; all 7 imported relative links repaired with real Drive URLs and read back verified. Local ZIP test passed; local sha256 recorded, remote sha256 not independently downloaded.",
+  "old_film_hash_still_matches_archived_original": "8c7a245b35b70e2f3369516fa42280e79cc3b306f322967e1092c64781bab287",
+  "no_new_TTS_or_full_render": true,
+  "no_sharing_expansion": true
+}

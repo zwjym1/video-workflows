@@ -1,0 +1,208 @@
+{
+  "matches": [
+    {
+      "id": "717257751",
+      "offset": 25.338978514999997,
+      "timeskew": -0.023808956,
+      "frequencyskew": -0.025681317
+    }
+  ],
+  "location": {
+    "accuracy": 0.01
+  },
+  "timestamp": 1794772672964,
+  "timezone": "Europe/Paris",
+  "track": {
+    "layout": "5",
+    "type": "MUSIC",
+    "key": "717257751",
+    "title": "passion",
+    "subtitle": "silent anthem & heart embrace",
+    "images": {
+      "background": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/36/23/a1/3623a1bd-896d-5b9c-17fd-911b640362ce/file_cropped.png/800x800cc.jpg",
+      "coverart": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/400x400cc.jpg",
+      "coverarthq": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/400x400cc.jpg",
+      "joecolor": "b:131c31p:57b0f2s:4597e4t:4993ccq:3b7fc0"
+    },
+    "display": {
+      "actions": [
+        {
+          "name": "display:updateshazam",
+          "type": "webview",
+          "uri": "https://www.shazam.com/inapp/updatenow/717257751"
+        }
+      ]
+    },
+    "share": {
+      "subject": "passion - silent anthem & heart embrace",
+      "text": "passion by silent anthem & heart embrace",
+      "href": "https://www.shazam.com/track/717257751/passion",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/400x400cc.jpg",
+      "twitter": "I used @Shazam to discover passion by silent anthem & heart embrace.",
+      "html": "https://www.shazam.com/snippets/email-share/717257751?lang=en-US&country=GB",
+      "avatar": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/36/23/a1/3623a1bd-896d-5b9c-17fd-911b640362ce/file_cropped.png/800x800cc.jpg",
+      "snapchat": "https://www.shazam.com/partner/sc/track/717257751"
+    },
+    "hub": {
+      "type": "APPLEMUSIC",
+      "image": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic_{scalefactor}.png",
+      "actions": [
+        {
+          "name": "apple",
+          "type": "applemusicplay",
+          "id": "1773323114"
+        },
+        {
+          "name": "apple",
+          "type": "uri",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/73/6f/80736f62-838b-0349-110a-141ba01724f0/mzaf_301204446372056991.plus.aac.p.m4a"
+        }
+      ],
+      "providers": [
+        {
+          "caption": "Open in Spotify",
+          "images": {
+            "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/spotify-overflow_{scalefactor}.png",
+            "default": "https://images.shazam.com/static/icons/hub/ios/v5/spotify_{scalefactor}.png"
+          },
+          "actions": [
+            {
+              "name": "hub:spotify:searchdeeplink",
+              "type": "uri",
+              "uri": "spotify:search:passion%20silent%20anthem"
+            }
+          ],
+          "type": "SPOTIFY"
+        },
+        {
+          "caption": "Open in Deezer",
+          "images": {
+            "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/deezer-overflow_{scalefactor}.png",
+            "default": "https://images.shazam.com/static/icons/hub/ios/v5/deezer_{scalefactor}.png"
+          },
+          "actions": [
+            {
+              "name": "hub:deezer:searchdeeplink",
+              "type": "uri",
+              "uri": "deezer-query://www.deezer.com/play?query=%7Btrack%3A%27passion%27%20artist%3A%27silent+anthem++heart+embrace%27%7D"
+            }
+          ],
+          "type": "DEEZER"
+        }
+      ],
+      "explicit": false,
+      "displayname": "APPLE MUSIC",
+      "options": [
+        {
+          "caption": "OPEN IN",
+          "actions": [
+            {
+              "name": "hub:applemusic:deeplink",
+              "type": "applemusicopen",
+              "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+            },
+            {
+              "name": "hub:applemusic:deeplink",
+              "type": "uri",
+              "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+            }
+          ],
+          "beacondata": {
+            "type": "open",
+            "providername": "applemusic"
+          },
+          "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+          "type": "open",
+          "listcaption": "Open in Apple Music",
+          "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+          "colouroverflowimage": false,
+          "providername": "applemusic"
+        },
+        {
+          "caption": "BUY",
+          "actions": [
+            {
+              "type": "uri",
+              "uri": "https://itunes.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+            }
+          ],
+          "beacondata": {
+            "type": "buy",
+            "providername": "itunes"
+          },
+          "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+          "type": "buy",
+          "listcaption": "Buy on iTunes",
+          "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+          "colouroverflowimage": false,
+          "providername": "itunes"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "type": "SONG",
+        "metapages": [
+          {
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/36/23/a1/3623a1bd-896d-5b9c-17fd-911b640362ce/file_cropped.png/800x800cc.jpg",
+            "caption": "silent anthem"
+          },
+          {
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/29/59/a3295953-c9e5-dc3f-e653-d4b596eb49fd/cover.jpg/400x400cc.jpg",
+            "caption": "passion"
+          }
+        ],
+        "tabname": "Song",
+        "metadata": [
+          {
+            "title": "Album",
+            "text": "passion - Single"
+          },
+          {
+            "title": "Label",
+            "text": "Goost Music"
+          },
+          {
+            "title": "Released",
+            "text": "2024"
+          }
+        ]
+      },
+      {
+        "type": "RELATED",
+        "url": "https://cdn.shazam.com/shazam/v3/en-US/GB/iphone/-/tracks/track-similarities-id-717257751?startFrom=0&pageSize=20&connected=",
+        "tabname": "Related"
+      }
+    ],
+    "url": "https://www.shazam.com/track/717257751/passion",
+    "artists": [
+      {
+        "id": "42",
+        "adamid": "1699616447"
+      }
+    ],
+    "genres": {
+      "primary": "Dance"
+    },
+    "urlparams": {
+      "{tracktitle}": "passion",
+      "{trackartist}": "silent+anthem+%26+heart+embrace"
+    },
+    "myshazam": {
+      "apple": {
+        "actions": [
+          {
+            "name": "myshazam:apple",
+            "type": "uri",
+            "uri": "https://music.apple.com/gb/album/passion/1773323113?i=1773323114&mttnagencyid=s2n&mttnsiteid=125115&mttn3pid=Apple-Shazam&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+          }
+        ]
+      }
+    },
+    "highlightsurls": {},
+    "relatedtracksurl": "https://cdn.shazam.com/shazam/v3/en-US/GB/iphone/-/tracks/track-similarities-id-717257751?startFrom=0&pageSize=20&connected=",
+    "albumadamid": "1773323113",
+    "isrc": "DGA0P2461646"
+  },
+  "tagid": "894286C5-0026-44A8-8FE0-EA1929249B85"
+}

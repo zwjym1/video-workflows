@@ -1,0 +1,58 @@
+{
+  "main": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_main.mp4",
+  "light": "/workspace/football-demo/full-phase-production/out/arsenal_full_phase_light.mp4",
+  "duration_s": 99.36,
+  "audio": {
+    "full_AV_decode": "passed",
+    "codec": "aac",
+    "profile": "LC",
+    "sample_rate": "48000",
+    "channels": 2,
+    "channel_layout": "stereo",
+    "default": 1,
+    "start_time": "0.000000",
+    "duration": "99.360000",
+    "video_codec": "h264",
+    "pix_fmt": "yuv420p",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "peak_dbfs": -1.3129630088806152,
+    "first_10s_rms_dbfs": -21.223392486572266,
+    "tail_music_82_99_rms_dbfs": -22.307388305664062,
+    "mono_to_stereo_rms_db": -0.035310763865709305
+  },
+  "sizes": {
+    "arsenal_full_phase_main.mp4": 42237031,
+    "arsenal_full_phase_light.mp4": 12032449
+  },
+  "near_static_max_s": 1.44,
+  "no_voice_near_static_max_s": 0,
+  "replay": {
+    "source_s": [
+      83.2,
+      103.6
+    ],
+    "output_s": [
+      78.96,
+      99.36
+    ],
+    "native_25fps_frame_count": 510,
+    "first_source_frame_s": 83.2,
+    "last_source_frame_s": 103.56,
+    "speed": 1,
+    "all_510_frames_source_order_verified": true,
+    "all_frames_mean_abs_luma_excluding_subtitle_margin": 0.38672497319240196,
+    "all_frames_max_mean_abs_luma_excluding_subtitle_margin": 0.4586181640625,
+    "analysis_graphics": "none; first invitation caption only, then clean source; no source commentary mixed"
+  },
+  "music_limitation": "reference separated stem, not clean master; no human audition claim",
+  "primary_evidence": [
+    "/workspace/football-demo/full-phase-production/qc/ACTUAL_RENDER_CONTACT.jpg",
+    "/workspace/football-demo/full-phase-production/qc/SIX_BOARDS_VS_SOURCE.jpg",
+    "/workspace/football-demo/full-phase-production/qc/ALL_SIX_BOARDS_PROGRESS.jpg",
+    "/workspace/football-demo/full-phase-production/qc/BOOT_MASK_ACTUAL_COUNTERFACTUAL.jpg",
+    "/workspace/football-demo/full-phase-production/qc/B5_CROSSING_AND_RUN_SEQUENCE.jpg"
+  ]
+}
