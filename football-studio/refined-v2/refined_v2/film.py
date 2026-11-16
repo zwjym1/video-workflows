@@ -26,8 +26,56 @@ def subtitle_margin(height):
     return int(60 * height / 1080) + 1
 
 
+def _with_punctuation(scene):
+    text = scene.get("text") or ""
+    cursor = 0
+    timed = []
+    for word in scene["words"]:
+        token = word["text"]
+        found = text.find(token, cursor)
+        if found < 0:
+            timed.append(word)
+            continue
+        if found > cursor:
+            timed.append({"text": text[cursor:found], "offset": word["offset"], "duration": 0.04})
+        timed.append(word)
+        cursor = found + len(token)
+    return timed
+
+
+def captions_from_words(scenes, starts):
+    """把已有字级时间收成能读完的字幕。不改词，不新配音。"""
+    cues = []
+    for scene in scenes:
+        origin = float(starts[scene["id"]])
+        bucket = []
+        phrases = []
+        for word in _with_punctuation(scene):
+            bucket.append(word)
+            if word["text"] in "。！？，；":
+                phrases.append(bucket)
+                bucket = []
+        if bucket:
+            phrases.append(bucket)
+        for phrase in phrases:
+            text = "".join(word["text"] for word in phrase)
+            start = origin + float(phrase[0]["offset"])
+            end = origin + float(phrase[-1]["offset"]) + float(phrase[-1]["duration"])
+            cues.append({"start_s": round(start, 3), "end_s": round(end, 3), "text": text, "scene": scene["id"]})
+    fixed = []
+    for index, cue in enumerate(cues):
+        nxt = cues[index + 1]["start_s"] if index + 1 < len(cues) and cues[index + 1]["scene"] == cue["scene"] else cue["end_s"] + 1.2
+        end = max(cue["end_s"], cue["start_s"] + 0.9)
+        end = min(end, nxt - 0.04)
+        if end <= cue["start_s"] + 0.2:
+            end = cue["start_s"] + 0.8
+        fixed.append({**cue, "start_s": round(cue["start_s"], 3), "end_s": round(end, 3)})
+    return fixed
+
+
 def load_edl(path):
     data = json.loads(Path(path).read_text(encoding="utf-8"))
+    data["_dir"] = str(Path(path).resolve().parent)
     if data.get("version") != 1:
         raise EpisodeRejected("timeline", "EDL version 只能是 1。")
     if not data.get("shots"):
@@ -46,15 +94,17 @@ def assemble(episode, edl, source, out_path, audience=True):
         raise EpisodeRejected("evidence", "成片尺寸不能大于源片。不把较小的画面放大当母带。")
     out_w = edl.get("output", {}).get("width", width)
     out_h = edl.get("output", {}).get("height", height)
-    if (out_w, out_h) != (1280, 720):
-        raise EpisodeRejected("evidence", "观众装配按 1280×720 输出。不把关系板放大到 1920×1080 当成广播母带。")
+    if (out_w, out_h) not in ((1280, 720), (1920, 1080)):
+        raise EpisodeRejected("evidence", "观众装配只接受 1280×720，或在源片本身达到 1920×1080 时直接出 1080p。")
     if width < out_w or height < out_h:
-        raise EpisodeRejected("evidence", "源片比成片小。拒绝放大。")
+        raise EpisodeRejected("evidence", "源片比成片小。拒绝把 720p 代理放大成 1080p。")
     fps = int(edl.get("output", {}).get("fps", 25))
     boards = {board["id"]: board for board in episode["boards"]}
     shots = []
     for index, shot in enumerate(edl["shots"]):
         kind = shot.get("kind")
+        if kind == "board_hold":
+            raise EpisodeRejected("timeline", "拒绝用末帧冻住。把层次铺进整段旁白，不要在动画结束后停住。")
         dissolve = int(shot.get("dissolve_frames") or 0)
         if dissolve and dissolve not in DISSOLVE_FRAMES:
             raise EpisodeRejected("timeline", "回实拍只接受 4、5 或 6 帧交叠，不把转场做成一段效果。")
@@ -64,7 +114,7 @@ def assemble(episode, edl, source, out_path, audience=True):
             board = boards.get(shot.get("board"))
             if board is None:
                 raise EpisodeRejected("geometry", f"EDL 指向不存在的板 {shot.get('board')}。")
-            frames = _board_frames(episode, board, float(shot.get("t0", 0)), float(shot.get("t1", board["duration_s"])), fps, audience)
+            frames = _board_frames(episode, board, float(shot.get("t0", 0)), float(shot.get("t1", board["duration_s"])), fps, audience, (out_w, out_h))
         else:
             raise EpisodeRejected("timeline", f"第 {index} 个镜头类型 {kind} 不能装配。")
         if dissolve and len(frames) <= dissolve:
@@ -73,7 +123,11 @@ def assemble(episode, edl, source, out_path, audience=True):
     sequence = _join(shots)
     margin = subtitle_margin(out_h)
     _burn_captions(sequence, edl.get("captions") or [], fps, margin, out_w, out_h)
-    _write_mp4(sequence, out_path, fps, out_w, out_h, audio=None)
+    silent = Path(str(out_path) + ".video.mp4")
+    _write_mp4(sequence, silent if edl.get("audio") else out_path, fps, out_w, out_h)
+    if edl.get("audio"):
+        _mux_audio(silent, edl, Path(edl.get("_dir", ".")), out_path, source)
+        silent.unlink(missing_ok=True)
     states = []
     for index, (image, state) in enumerate(sequence):
         state = dict(state)
@@ -91,7 +145,7 @@ def assemble(episode, edl, source, out_path, audience=True):
         "duration_s": round(len(sequence) / fps, 3),
         "audience": audience,
         "master": False,
-        "audio": None,
+        "audio": "existing_voice_and_lowered_source" if edl.get("audio") else None,
         "upscaled": False,
         "source_size": [width, height],
         "subtitle_margin_px": margin,
@@ -133,14 +187,14 @@ def _live_frames(source, start, end, fps, out_w, out_h, duration):
     return frames[:count]
 
 
-def _board_frames(episode, board, t0, t1, fps, audience):
+def _board_frames(episode, board, t0, t1, fps, audience, present):
     if t1 <= t0 or t0 < -1e-6 or t1 > board["duration_s"] + 1e-6:
         raise EpisodeRejected("timeline", f"{board['id']} 的板上时间 {t0}–{t1} 无效。")
     count = max(1, int(round((t1 - t0) * fps)))
     frames = []
     for index in range(count):
         moment = min(board["duration_s"], t0 + index / fps)
-        image, state = render_board(episode, board, moment, show_stamp=not audience)
+        image, state = render_board(episode, board, moment, show_stamp=not audience, present=present)
         state = dict(state)
         state["kind"] = "board"
         if audience:
@@ -228,7 +282,40 @@ def main(argv=None):
     return 0
 
 
-def _write_mp4(sequence, out_path, fps, width, height, audio):
+def _mux_audio(video, edl, base, out_path, source_media):
+    audio = edl["audio"]
+    source = Path(audio.get("source") or source_media)
+    if not source.is_absolute():
+        source = base / source
+    inputs = ["-i", str(video), "-i", str(source)]
+    parts = [f"[1:a]volume={audio.get('source_gain_db', -18)}dB,aresample=48000[bed]"]
+    labels = ["[bed]"]
+    index = 2
+    for item in audio.get("voice") or []:
+        path = Path(item["file"])
+        if not path.is_absolute():
+            path = base / path
+        inputs += ["-i", str(path)]
+        delay = int(round(float(item["start"]) * 1000))
+        parts.append(f"[{index}:a]adelay={delay}|{delay},aresample=48000[v{index}]")
+        labels.append(f"[v{index}]")
+        index += 1
+    for item in audio.get("sfx") or []:
+        path = Path(item["file"])
+        if not path.is_absolute():
+            path = base / path
+        inputs += ["-i", str(path)]
+        delay = int(round(float(item["start"]) * 1000))
+        parts.append(f"[{index}:a]adelay={delay}|{delay},volume={item.get('gain_db', -16)}dB,aresample=48000[s{index}]")
+        labels.append(f"[s{index}]")
+        index += 1
+    mix = "".join(labels) + f"amix=inputs={len(labels)}:duration=first:dropout_transition=0:normalize=0[a]"
+    command = ["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(parts + [mix]), "-map", "0:v:0", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest", str(out_path)]
+    if subprocess.call(command) != 0:
+        raise EpisodeRejected("timeline", "混音失败。没有改用新的配音。")
+
+
+def _write_mp4(sequence, out_path, fps, width, height):
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     command = [

@@ -30,7 +30,7 @@ def project(projection, uv):
     )
 
 
-def render_board(episode, board, t, show_stamp=True):
+def render_board(episode, board, t, show_stamp=True, present=(1280, 720)):
     if t < -1e-6 or t > board["duration_s"] + 1e-6:
         raise EpisodeRejected("timeline", f"{board['id']} 的时间 {t} 超出 0–{board['duration_s']}。")
     font_info = D.resolve_font()
@@ -86,7 +86,9 @@ def render_board(episode, board, t, show_stamp=True):
         if t < _appear(board, label["id"]):
             continue
         _pill(pen, board, positions, label, t, font_info["path"])
-    rgb = image.convert("RGB").resize((D.W, D.H), Image.Resampling.LANCZOS)
+    if present not in ((1280, 720), (1920, 1080)):
+        raise EpisodeRejected("evidence", "成片只接受 1280×720 或从超采样缓冲缩到 1920×1080。不接受把 720 编码再拉大。")
+    rgb = image.convert("RGB").resize(present, Image.Resampling.LANCZOS)
     state = {
         "episode_id": episode["episode_id"],
         "claim": episode["claim"],
@@ -94,7 +96,8 @@ def render_board(episode, board, t, show_stamp=True):
         "board": board["id"],
         "t": D.qtime(t),
         "question": board["question"],
-        "native_size": [D.W, D.H],
+        "native_size": list(present),
+        "present_from_supersample": present == (1920, 1080),
         "fps": D.FPS,
         "supersample": D.SS,
         "upscaled": False,

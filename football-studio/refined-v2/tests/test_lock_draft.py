@@ -16,6 +16,13 @@ EP = ROOT / "episodes" / "bayern-20200814-mueller-open-lock-draft" / "episode.js
 
 
 class LockDraftTest(unittest.TestCase):
+    def test_layers_span_the_voice_window(self):
+        for board in build()["boards"]:
+            gaps = [b["t"] - a["t"] for a, b in zip(board["layers"], board["layers"][1:])]
+            self.assertLessEqual(max(gaps), 3.4)
+            self.assertGreater(board["layers"][-1]["t"], board["duration_s"] - 1.2)
+            self.assertLess(board["layers"][0]["t"], 1.0)
+
     def test_file_matches_builder(self):
         self.assertEqual(json.loads(EP.read_text(encoding="utf-8")), build())
 
