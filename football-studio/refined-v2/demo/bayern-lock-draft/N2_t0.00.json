@@ -3,7 +3,7 @@
   "claim": "lock_draft",
   "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
   "board": "N2",
-  "t": 0.4,
+  "t": 0.0,
   "question": "禁区这一脚，球是怎么出去的？",
   "native_size": [
     1280,
@@ -48,9 +48,14 @@
     "Kkeep": null,
     "Cjump": null
   },
-  "labels": [],
+  "labels": [
+    "回做点",
+    "接应点"
+  ],
+  "legend": "",
   "visible_ids": [
-    "Kshot"
+    "Kshot",
+    "Ktall"
   ],
   "motion_progress": {},
   "route_progress": {

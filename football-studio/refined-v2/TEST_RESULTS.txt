@@ -1,9 +1,5 @@
 python3 -m unittest discover -s tests -v
-Ran 44 tests in 13.253s
-OK
-
-干净解压 refined-v2-box.zip 后再跑：
-Ran 44 tests in 12.730s
+Ran 46 tests in 12.736s
 OK
 
 合成 1080 全程（不是真实候选）：

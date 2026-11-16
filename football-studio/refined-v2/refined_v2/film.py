@@ -24,7 +24,7 @@ from .errors import EpisodeRejected
 
 DISSOLVE_FRAMES = {4, 5, 6}
 TAIL_LIMIT = 6
-FORBIDDEN_CAPTION = ("无号码", "25号", "已对照", "非测绘", "geometry")
+FORBIDDEN_CAPTION = ("无号码", "没有号码", "25号", "已对照", "非测绘", "geometry")
 
 
 def subtitle_margin(height):

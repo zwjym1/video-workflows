@@ -529,6 +529,13 @@ def _annotation(item, board_id, basis, clock, scene_name, output_start, duration
         if item.get("kind") in ("run", "def"):
             raise EpisodeRejected("arrow", f"{board_id} 的空间强调不能标成跑动或防守位移。")
         return {"type": kind, "ids": list(ids), "t0": t0, "t1": t1, "link": link}
+    if kind == "zone":
+        ids = item.get("ids")
+        if not isinstance(ids, list) or len(ids) != 2 or any(identifier not in catalog for identifier in ids):
+            raise EpisodeRejected("geometry", f"{board_id} 的空当色块要落在板上已有的两个点之间。")
+        if item.get("kind") in ("run", "def"):
+            raise EpisodeRejected("arrow", f"{board_id} 的空当色块不能标成跑动或防守位移。")
+        return {"type": kind, "ids": list(ids), "t0": t0, "t1": t1, "width": float(item.get("width") or 16)}
     raise EpisodeRejected("geometry", f"{board_id} 有不认识的注释类型 {kind}。")
 
 

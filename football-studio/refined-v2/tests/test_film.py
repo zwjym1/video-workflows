@@ -187,6 +187,28 @@ class FilmTest(unittest.TestCase):
                 "shots": [{"kind": "live", "src_in": 6.4, "src_out": 7.2}],
             })
 
+    def test_v4_captions_drop_the_short_fragments(self):
+        edl = load_edl(EP / "v4_audience.edl.json")
+        texts = [item["text"] for item in edl["captions"]]
+        self.assertNotIn("回放里，", texts)
+        self.assertNotIn("3:02，", texts)
+        self.assertNotIn("出球人这一帧没有号码。", texts)
+        self.assertTrue(any(text.startswith("回放里，14号") and item["end_s"] - item["start_s"] >= 2 for item, text in zip(edl["captions"], texts)))
+        self.assertTrue(any(text.startswith("3:02，球到") and item["end_s"] - item["start_s"] >= 2 for item, text in zip(edl["captions"], texts)))
+        self.assertTrue(any("看不清出球的人" in text and "25" not in text and "没有号码" not in text for text in texts))
+        episode = load_episode(EP)
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "proxy.mp4"
+            _color_clip(source, 1.0)
+            bad = {
+                "version": 1,
+                "output": {"width": 1280, "height": 720, "fps": 25},
+                "shots": [{"kind": "live", "src_in": 0.0, "src_out": 0.4}],
+                "captions": [{"start_s": 0.0, "end_s": 0.4, "text": "出球人这一帧没有号码。"}],
+            }
+            with self.assertRaises(EpisodeRejected):
+                assemble(episode, bad, source, Path(directory) / "no.mp4")
+
     def test_v4_timeline_is_the_full_length_and_skips_the_centre_circle(self):
         episode = load_episode(EP)
         edl = load_edl(EP / "v4_audience.edl.json")

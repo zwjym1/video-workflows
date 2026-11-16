@@ -49,8 +49,11 @@
     "Cjump": null
   },
   "labels": [
+    "回做点",
+    "接应点",
     "5号在禁区左侧"
   ],
+  "legend": "",
   "visible_ids": [
     "Kshot",
     "Ktall",

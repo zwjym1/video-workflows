@@ -48,11 +48,16 @@
     "Kkeep": null,
     "Cjump": null
   },
-  "labels": [],
+  "labels": [
+    "回做点",
+    "接应点"
+  ],
+  "legend": "",
   "visible_ids": [
     "Kshot",
     "Ktall",
     "C20",
+    "C5",
     "Kkeep",
     "Cjump"
   ],

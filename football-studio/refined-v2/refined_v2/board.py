@@ -65,10 +65,11 @@ def render_board(episode, board, t, show_stamp=True, present=(1280, 720)):
         points = [project(board["projection"], catalog[identifier]) for identifier in route["ids"]]
         end = D.trace(pen, points, D.col(D.BALL, 245), 2.8, progress)
         balls.append((route["t0"], end))
-    if board["legend_s"] and t < board["legend_s"]:
+    legend = _legend_text(board, t)
+    if legend:
         fade_from = board["legend_fade_s"] or max(0.0, board["legend_s"] - 0.45)
         alpha = round(255 * (1 - D.pr(t, fade_from, board["legend_s"])))
-        D.text(pen, (48, 593), "实线：球路    虚线：跑动", 18, D.MUT, a=alpha, font_path=font_info["path"])
+        D.text(pen, (48, 593), legend, 18, D.MUT, a=alpha, font_path=font_info["path"])
     if balls:
         end = max(balls, key=lambda item: item[0])[1]
         if end:
@@ -109,6 +110,7 @@ def render_board(episode, board, t, show_stamp=True, present=(1280, 720)):
         "ids": [node["id"] for node in board["nodes"]],
         "numbers": {node["id"]: node["number"] for node in board["nodes"]},
         "labels": [label["text"] for label in active],
+        "legend": legend,
         "visible_ids": visible,
         "motion_progress": motion_progress,
         "route_progress": route_progress,
@@ -200,6 +202,22 @@ def _annotations(pen, board, t, positions):
             )
         elif note["type"] == "emphasis":
             _emphasis(pen, board, positions, note, t)
+        elif note["type"] == "zone":
+            _zone(pen, board, positions, note, t)
+
+
+def _legend_text(board, t):
+    """图例只写这块板此刻真的有的线。没有球路、没有跑动，就不写。"""
+    if not board.get("legend_s") or t >= board["legend_s"]:
+        return ""
+    parts = []
+    if any(t + 1e-9 >= route["t0"] for route in board["routes"]):
+        parts.append("实线：球路")
+    if any(motion["kind"] == "run" and t + 1e-9 >= motion["t0"] for motion in board["motions"]):
+        parts.append("虚线：跑动")
+    if any(motion["kind"] == "def" and t + 1e-9 >= motion["t0"] for motion in board["motions"]):
+        parts.append("虚线：防守")
+    return "    ".join(parts)
 
 
 def _reveal(t, start, open_visible):
@@ -207,7 +225,7 @@ def _reveal(t, start, open_visible):
         return 0.0
     fade = D.pr(t, start, start + 0.22)
     if open_visible:
-        fade = max(fade, 0.45)
+        fade = max(fade, 0.88)
     return fade
 
 
@@ -230,6 +248,33 @@ def _emphasis(pen, board, positions, note, t):
         )
     if note.get("link") and len(points) >= 2:
         D.trace(pen, points, D.col(D.MUT, 170 * fade), 1.8, fade, None, False)
+
+
+def _zone(pen, board, positions, note, t):
+    """同一帧上两点之间的空当色块。实心、无箭头、不是跑动虚线。"""
+    if t < note["t0"] - 1e-9 or t > note["t1"] + 1e-9:
+        return
+    fade = 1.0 if t >= note["t0"] + 0.5 else max(0.4, D.pr(t, note["t0"], note["t0"] + 0.5))
+    points = []
+    for identifier in note["ids"]:
+        uv = positions.get(identifier) or board["extras"].get(identifier)
+        if uv is None:
+            return
+        points.append(project(board["projection"], uv))
+    if len(points) < 2:
+        return
+    start, end = points[0], points[1]
+    dx, dy = end[0] - start[0], end[1] - start[1]
+    length = math.hypot(dx, dy) or 1.0
+    half = float(note.get("width") or 16)
+    nx, ny = -dy / length * half, dx / length * half
+    quad = [
+        (start[0] + nx, start[1] + ny),
+        (start[0] - nx, start[1] - ny),
+        (end[0] - nx, end[1] - ny),
+        (end[0] + nx, end[1] + ny),
+    ]
+    pen.polygon([D.xy(point) for point in quad], fill=D.col(D.ATT, int(46 * fade)))
 
 
 def _player(pen, projection, node, uv, t, fade, font_path, open_visible=False):
@@ -276,8 +321,8 @@ def _appear(board, identifier):
 
 def _pill(pen, board, positions, label, t, font_path):
     fade = D.pr(t, label["t0"], label["t0"] + 0.24)
-    if board.get("open_visible"):
-        fade = max(fade, 0.55)
+    if board.get("open_visible") and t + 1e-9 >= label["t0"]:
+        fade = max(fade, 0.8)
     anchor = project(board["projection"], positions[label["id"]])
     dest = (anchor[0] + label["offset"][0], anchor[1] + label["offset"][1])
     size = int(board.get("label_px") or 23)

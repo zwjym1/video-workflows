@@ -3,7 +3,7 @@
   "claim": "lock_draft",
   "stamp": "已对照证据帧 · 俯视示意 · 非测绘",
   "board": "R3",
-  "t": 1.52,
+  "t": 1.12,
   "question": "门后回放里，哪几个号码清楚？",
   "native_size": [
     1280,
@@ -43,10 +43,13 @@
     "Kair": null
   },
   "labels": [
-    "回放确认9号"
+    "回放确认9号",
+    "回放确认21号"
   ],
+  "legend": "",
   "visible_ids": [
     "K9",
+    "C21",
     "Kkeep"
   ],
   "motion_progress": {},

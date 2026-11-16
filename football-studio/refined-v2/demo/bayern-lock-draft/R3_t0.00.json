@@ -43,7 +43,9 @@
     "Kair": null
   },
   "labels": [],
+  "legend": "",
   "visible_ids": [
+    "K9",
     "Kkeep"
   ],
   "motion_progress": {},
