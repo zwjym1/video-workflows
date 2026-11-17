@@ -16,5 +16,26 @@
   "what_to_change": null,
   "fact_corrections": null,
   "user_notes": null,
-  "status": "empty_waiting_user_real_data"
+  "status": "empty_waiting_user_real_data",
+  "workflow_notes": {
+    "same_topic_status_at_lock": null,
+    "duration_estimate_mismatch_disclosed": null,
+    "content_visual_pass": null,
+    "tech_qc_was_not_used_as_content_pass": null
+  },
+  "retention_24h": {
+    "bounce_2s": null,
+    "hold_5s": null,
+    "avg_watch_s": null,
+    "completion": null,
+    "recorded_at": null
+  },
+  "retention_72h": {
+    "bounce_2s": null,
+    "hold_5s": null,
+    "avg_watch_s": null,
+    "completion": null,
+    "recorded_at": null
+  },
+  "retention_note": "仅在用户提供真实后台数据后填写。用于内容质量复盘，不反哺固定权重或打分。"
 }

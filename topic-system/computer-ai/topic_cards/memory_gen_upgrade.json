@@ -1,0 +1,93 @@
+{
+  "id": "memory_gen_upgrade",
+  "title_question": "换一代内存，或再插一条，电脑就一定会明显变快吗？",
+  "direction": "computer",
+  "today_role": "not_recommended_this_round",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "70-110",
+  "cost": {
+    "level": "中",
+    "reason": "有高互动原作可学，但原作近 6 分半是代际百科，要收成判断题；定题后须先看片。频率/时序数字不能编。",
+    "ranking": "不参与选题排名"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "硬核软解",
+      "title": "科普每一代电脑内存",
+      "url": "https://www.douyin.com/video/7700534903053634851",
+      "published": "2026-10-25 17:28 UTC+8",
+      "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+      "likes": 24113,
+      "comments": 681,
+      "collects": 6293,
+      "shares": 2374,
+      "plays": null,
+      "duration_s": 388.8,
+      "note": "今晚官方详情 available。点赞不是播放。作者 unique_id YingheRuanjie 此前已核。本轮未看片。"
+    }
+  ],
+  "watch_status": "本轮仍未看片、无转写。仅详情与评论抽样。",
+  "audience_question": "内存从 DDR4 换成 DDR5，或者再插一条，电脑就一定会明显变快吗？",
+  "value": "把升级收成「加容量」和「加速度」两件不同的事，而不是再做一代代内存名录。",
+  "timeliness": "2026-10-25 发布，今晚仍为高互动；官方抖音热榜 17:11 前 50 无此词，不是今日热搜。",
+  "fact_sources": [
+    "原作公开互动（今晚刷新）",
+    "定题后频率/代际对照需另开可核对的厂商或标准说明，本轮尚未打开该类事实页。"
+  ],
+  "same_topic_refs": [
+    {
+      "url": "https://www.douyin.com/video/7700534903053634851",
+      "author": "硬核软解",
+      "note": "仅详情。原作标题是代际科普，我们建议收成判断题，不是已看后的复述。"
+    }
+  ],
+  "same_topic_refs_note": "原作是代际名录，与「换一代会更快吗」「内存越大越快吗」不是同一问句。后者关键词 so/360 均为空，供给未知，不能写成蓝海。",
+  "original_angle": "一根条、一个插槽、同一个具体任务；分开「箱子不够」和「传送带没更快」。",
+  "visual_method": "先认真实内存条和插槽，再用容量箱子对照速度传送带，结果停在任务有没有明显变快。",
+  "reusable_assets": "不复用 CPU 核数样段或芯片分档旧资产当本题内容。",
+  "obstacles": "未看片不能写死原作论点；不要做成 6 分半编年史；不要堆频率时序术语。",
+  "evidence_observed": [
+    "search/sug：换DDR5主要联想换主板/配件；内存越大越快吗有联想。",
+    "评论 120/682：重复的是价格、混条、兼容，而不是换代会更快。"
+  ],
+  "judgment_subjective": [
+    "上一轮因认可作者+高赞排第一，需求与同题供给都未对齐，本轮淘汰出短名单，不保留名额。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "未看片。评论已抽样。同题（会更快吗/越大越快吗）供给未核到。"
+  },
+  "heat_sources": [
+    {
+      "channel": "douyin official detail",
+      "kind": "work_engagement",
+      "rank": null,
+      "heat": 24113,
+      "captured_at": "2026-11-17 17:14:42 Asia/Shanghai",
+      "url": "https://www.douyin.com/video/7700534903053634851",
+      "note": "作品互动，不是热搜。likes 不是播放。"
+    }
+  ],
+  "vo_asr_limitation": "未观看则无口播原文。",
+  "quality_shortlist_note": "2026-11-17 18:29 质量短名单已按 v2026.11.17.5 补证（需求原话、看后搜、0-5s 画面与烧录字幕）。现行 SYSTEM.md 未被覆盖。详见 （详细研究记录未收入本公共包）"
+}

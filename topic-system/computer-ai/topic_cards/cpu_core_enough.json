@@ -2,7 +2,7 @@
   "id": "cpu_core_enough",
   "title_question": "CPU 核心越买越多，怎样判断还够不够用？",
   "direction": "computer",
-  "today_role": "backup",
+  "today_role": "paused",
   "evidence_status": "已验证高互动",
   "heat_tag": "近热",
   "suggested_length_s": "80-120",
@@ -58,15 +58,15 @@
     "status": "empty_waiting_user_data"
   },
   "same_topic_field": {
-    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "scope": "CPU核心数与性能/是否越多越快、游戏或生产力如何选核数。CPU泛科普、显卡分档、AI题不能顶替。",
     "floor": 8,
     "target": 10,
-    "watched_count": 1,
+    "watched_count": 4,
     "hook_0_5s_complete_count": 0,
     "comments_collected": true,
     "related_search_collected": true,
     "status": "未满",
-    "note": "仅1条已核高互动成片（硬核软解）。11-15看过开头画面和接触纸，今日未重新连续观看或实听，故 hook_0_5s_complete_count=0。评论与相关搜索今日有样本。未满8条。不能把芯片分档旧题算进同题。"
+    "note": "已看片/转写4条（含1条同作者同质）。另1条同题高互动尚未看片。合计可讨论约5条，未满8。0–5秒口播均未复核，故 hook_0_5s_complete_count=0。Drive未同步。"
   },
   "heat_sources": [
     {
@@ -88,5 +88,19 @@
       "note": "赞226986/评6174/藏52789/转22540；播放未公开为null。不是今日热榜新词。"
     }
   ],
-  "vo_asr_limitation": "2026-11-15有需复核的本地转写；今日未重新连续观看或实听。旧转写不能当成已核对的口播原文。"
+  "vo_asr_limitation": "2026-11-15有需复核的本地转写；今日未重新连续观看或实听。旧转写不能当成已核对的口播原文。",
+  "selected": false,
+  "paused_at": "2026-11-17 17:16 Asia/Shanghai",
+  "paused_reason": "用户 t757 要求放下 CPU 核心数旧稿并重新选题；本轮不再修改该稿。题卡保留，不删除。",
+  "selected_morning": {
+    "status": "selected",
+    "selected_at": "2026-11-17 15:20 Asia/Shanghai",
+    "user_title": "CPU核心越多，电脑就一定越快吗？",
+    "source_message": "t745 / pt745u",
+    "drive_synced": false,
+    "research_dir": "（详细研究记录未收入本公共包）",
+    "next": "Gemini4 出多版完整口播+画面脚本，用户选后再做静态关键帧与逐镜脚本送审"
+  },
+  "quality_shortlist_note": "2026-11-17 18:29 质量短名单已按 v2026.11.17.5 补证（需求原话、看后搜、0-5s 画面与烧录字幕）。现行 SYSTEM.md 未被覆盖。详见 （详细研究记录未收入本公共包）",
+  "title_question_note": "单卡与暂停记录此前写作「CPU核心越多，电脑就一定越快吗？」。本快照与题库总表、早市 TODAY_20261117.md 的正式问句对齐，不改变暂停状态或研究结论。"
 }

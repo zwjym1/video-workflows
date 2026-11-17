@@ -2,7 +2,7 @@
   "id": "long_chat_kv_compute",
   "title_question": "为什么聊天越聊越长，越容易被限、也更吃额度？",
   "direction": "ai,new_tech",
-  "today_role": "reserve",
+  "today_role": "morning_reserve_not_on_evening_shortlist",
   "evidence_status": "新技术有关注证据",
   "heat_tag": "近热",
   "suggested_length_s": "70-110",
@@ -124,5 +124,7 @@
       "note": "2026-11-16媒体报道。这是关注证据，不是热榜，也不是短视频爆款。"
     }
   ],
-  "vo_asr_limitation": "本轮未观看同题成片，没有可引用的口播原文，也没有可用的转写。"
+  "vo_asr_limitation": "本轮未观看同题成片，没有可引用的口播原文，也没有可用的转写。",
+  "morning_today_role": "reserve",
+  "evening_note": "2026-11-17 晚间重新选题，本卡留在题库，不进入今晚正式短名单。"
 }

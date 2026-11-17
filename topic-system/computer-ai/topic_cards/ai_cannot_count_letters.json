@@ -1,0 +1,181 @@
+{
+  "id": "ai_cannot_count_letters",
+  "title_question": "AI 能写文章，为什么却数不清单词里几个字母？",
+  "direction": "ai",
+  "today_role": "this_round_pending_same_topic",
+  "evidence_status": "待验证",
+  "heat_tag": "近热",
+  "suggested_length_s": "60-120",
+  "cost": {
+    "level": "未评估",
+    "reason": "",
+    "use": "scheduling_only",
+    "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "通俗解释",
+      "title": "大模型token究竟是啥？",
+      "url": "https://www.douyin.com/video/7476671846419565839",
+      "published": "2025-03-01 11:07 Asia/Shanghai",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 97095,
+      "comments": 1732,
+      "collects": 41279,
+      "shares": null,
+      "plays": null,
+      "duration_s": 282.3,
+      "current_applicability": "这是「token 是什么」的定义课，不是「数不清字母」的直接同题。2025-03 的高收藏作品今晚仍能作为定义供给，但不能用来证明「数不清字母」这一问的现状竞争，也不能把当时模型表现直接写成现在普遍如此。",
+      "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。"
+    },
+    {
+      "role": "original_work",
+      "author": "神经元出逃计划",
+      "title": "大模型为什么数不清 strawberry 里的 r？",
+      "url": "https://www.douyin.com/video/7702464487491702059",
+      "published": "2026-10-30",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 555,
+      "comments": 15,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": 539.6,
+      "current_applicability": "更接近「数不清字母」同切口，且为 2026-10-30 的近期作品；但本轮只核验了官方详情，未看图深拆，故不能当作已核实的现状讲解。",
+      "note": "只核验官方详情，不算已拆结构和画面。"
+    },
+    {
+      "role": "original_work",
+      "author": "吃大米饭的大肥鱼",
+      "title": "大肥鱼之token大揭秘",
+      "url": "https://www.douyin.com/video/7704233529214994299",
+      "published": "2026-11-04",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 18177,
+      "comments": 900,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": 40.1,
+      "current_applicability": "2026-11-04 的近期收费向短片，与「数不清字母 / token 是什么」不是同一问。",
+      "note": "相邻需求，不当同题供给。"
+    }
+  ],
+  "watch_status": "仅关键帧与转写",
+  "audience_question": "为什么模型常会把 strawberry 里有几个 r、一个词里有几个字母数错？",
+  "value": "「token 是什么」已有完整定义课，再做同构讲解增量有限。质量空间在「为什么不是一个字母一个字母地看，所以会数错」；须先补看同切口作品，且不能把某些模型过去的错误说成现在普遍如此。",
+  "timeliness": "不是今日官方热搜。定义课是 2025-03 旧片；收费短片是 11 月 4 日新互动；数不清字母的搜索联想是当晚采集，对应成片互动一般。",
+  "fact_sources": [
+    "通俗解释 2025-03-01（定义课，已拆）",
+    "神经元出逃计划 2026-10-30（同切口，仅详情）",
+    "搜索联想 2026-11-17 18:39"
+  ],
+  "same_topic_refs": [
+    {
+      "author": "神经元出逃计划",
+      "url": "https://www.douyin.com/video/7702464487491702059",
+      "published": "2026-10-30",
+      "current_applicability": "近期同切口，但未看图，不能证明现状讲法。",
+      "watched": "details_only"
+    }
+  ],
+  "same_topic_refs_note": "定义题已看 1 条高质量成片 + 1 条收费相邻片；数不清字母的同切口长课未看图，未满 8。定义课与收费短片不是本问的同题供给。",
+  "original_angle": "对准为什么会数错，而不是再讲一遍 token 是积木。",
+  "visual_method": "待补看同切口后再决定能否做出增量。",
+  "reusable_assets": "",
+  "obstacles": "直接同题尚未画面深拆；不能把定义课代替同题竞争调查。",
+  "evidence_observed": [
+    "搜索联想有「大模型为什么数不清字母」等。",
+    "通俗解释已把 token 定义讲得较完整。",
+    "更同切口的神经元作品只核验了详情。"
+  ],
+  "judgment_subjective": [
+    "对「token 是什么」偏已有强供给；对「数不清字母」可写混合，但不能因为长课赞数一般或官方搜索空就叫蓝海。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是「为什么数不清单词里的字母」；token 定义课和收费短片不能顶替。",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "同切口长课未看图，watched_count 按本问计为 0。定义课的观看记在 form/adjacent，不计入本问已看条数。"
+  },
+  "heat_sources": [
+    {
+      "channel": "官方抖音热搜",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+      "url": null,
+      "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+    }
+  ],
+  "vo_asr_limitation": "定义课本地 ASR 需复核。同切口长课未看图，无可用口播原文。",
+  "form_only_refs": [
+    {
+      "author": "通俗解释",
+      "url": "https://www.douyin.com/video/7476671846419565839",
+      "published": "2025-03-01 11:07 Asia/Shanghai",
+      "note": "token 定义课，可作表达参考，不得作为「数不清字母」的同题内容依据。"
+    }
+  ],
+  "candidate_packaging": "初筛仅metadata",
+  "candidate_packaging_note": "扩大选题简报把本条列入 5 条候选，并写明已拆 token 定义课；但「数不清字母」同切口只核验了详情，未做画面深拆。按现行规则，直接同题供给只能标初筛，不能包装成已拆结构与画面的最终推荐。",
+  "recommendation_evidence": {
+    "demand": {
+      "audience_situations": [
+        "看到模型把单词字母数错，或刚听过 token 这个词的普通用户。"
+      ],
+      "repeated_questions_in_search_or_comments": [
+        "大模型为什么数不清字母",
+        "大模型为什么不会数数",
+        "token是啥意思"
+      ],
+      "evidence_freshness_and_scope": "搜索联想采集于 2026-11-17 18:39；定义课评论抽样 150/1732。"
+    },
+    "supply_competition": {
+      "same_topic_multi_author_samples": [
+        "神经元出逃计划 2026-10-30 仅详情，未看图。"
+      ],
+      "distribution_and_timing": "直接同题互动一般；定义课是 2025-03 旧片。",
+      "head_and_homogenization_visible_evidence": "定义课已经讲得比较完整，但不能把它写成直接同题竞争调查。"
+    },
+    "unmet_opportunity_and_quality_upside": {
+      "unmet_need": "为什么不是一个字母一个字母地看所以会数错，以及相关计费/切词疑问。",
+      "expected_quality_improvement": "若补看后仍有增量，再对准数错机制；否则不应重做定义课。"
+    },
+    "heat_and_sustained_spread": {
+      "heat_evidence": "不是今日官方热搜。",
+      "sustained_spread_evidence": "定义课仍高收藏；收费短片是 11 月 4 日新互动，但不是同题。"
+    }
+  },
+  "red_blue_ocean": {
+    "judgment": "混合",
+    "basis": "对定义题偏已有强供给；对「数不清字母」需求和一条未深拆长课都有证据，可写混合。不能因为赞数一般或官方搜索空就叫蓝海。"
+  },
+  "view_records": [
+    {
+      "material": "https://www.douyin.com/video/7476671846419565839",
+      "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+      "model": "Gemini 3.8 Flash medium",
+      "scope": "keyframes",
+      "note": "已看定义课 0–5 秒和均匀帧；这不是「数不清字母」同题。"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "two_ais_invent_language",
+  "title_question": "两个 AI 互聊，真的会发明人类听不懂的语言吗？",
+  "direction": "ai",
+  "today_role": "this_round_candidate",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "60-120",
+  "cost": {
+    "level": "未评估",
+    "reason": "",
+    "use": "scheduling_only",
+    "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "在公司楼下捡钱",
+      "title": "我让两个AI互相问了1000个问题，它们进化出了自己的语言",
+      "url": "https://www.douyin.com/video/7695224041367522560",
+      "published": "2026-10-11 09:59 Asia/Shanghai",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 527700,
+      "comments": 7387,
+      "collects": 76369,
+      "shares": 163256,
+      "plays": null,
+      "duration_s": 245.9,
+      "current_applicability": "可作为近期高传播的同题现象片，但不能把标题实验直接当成已证实的科学事实。须另核演示原出处和当前机制，不能只靠本片结论证明现状。",
+      "note": "已看 0–5 秒和均匀帧。本地 ASR 整段作废，不当任何原话。点赞不等于播放。"
+    }
+  ],
+  "watch_status": "仅关键帧与转写",
+  "audience_question": "两个 AI 互相提问很多轮，真的会发明一门人类听不懂的新语言吗？还是上下文快满时的压缩和省略？",
+  "value": "增量应对准「这是真的吗」：互聊为什么会越说越短、符号从哪来、这和「发明新语言」差在哪里。",
+  "timeliness": "不是今日官方热搜。证据是 2026-10-11 极高互动作品，以及当晚置顶评论仍在被看见。",
+  "fact_sources": [
+    "在公司楼下捡钱 2026-10-11 成片（抽帧；ASR 作废）",
+    "置顶评论追问真假"
+  ],
+  "same_topic_refs": [
+    {
+      "author": "在公司楼下捡钱",
+      "url": "https://www.douyin.com/video/7695224041367522560",
+      "published": "2026-10-11 09:59 Asia/Shanghai",
+      "current_applicability": "可作现象与传播参考；不能当已核实的科学结论。",
+      "watched": "keyframes"
+    }
+  ],
+  "same_topic_refs_note": "深拆 1 条主标（另登记一条不能当事实依据的相关作品），未满 8。",
+  "original_angle": "先回答真假和机制，而不是再拍一个更感人的互聊故事。",
+  "visual_method": "待用户若改选本题后再锁定。",
+  "reusable_assets": "",
+  "obstacles": "本地 ASR 整段作废；评论疑问不等于原片说法为假，必须另核演示原出处。同题未满。",
+  "evidence_observed": [
+    "主标当晚详情约 52.77 万赞。",
+    "置顶附近有强烈的真假追问。",
+    "本地 ASR 幻觉为「用简体中文和标点。」，整份转写作废。"
+  ],
+  "judgment_subjective": [
+    "需求和供给都非常强，但钩子与可核事实之间有裂口，仍有质量空间；不是蓝海。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是「两个 AI 互聊是否会发明新语言」这一问。",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 1,
+    "hook_0_5s_complete_count": 1,
+    "comments_collected": true,
+    "related_search_collected": false,
+    "status": "未满",
+    "note": "深拆 1 条主标，未满 8。口播除烧录字幕外未核。"
+  },
+  "heat_sources": [
+    {
+      "channel": "官方抖音热搜",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+      "url": null,
+      "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+    }
+  ],
+  "vo_asr_limitation": "平台无自带字幕。本地 ASR 整段幻觉，整份转写作废，不当任何原话。开头口播只采用看图抄到的烧录字幕。",
+  "form_only_refs": [],
+  "candidate_packaging": "最终推荐已拆结构与画面",
+  "candidate_packaging_note": "已拆 0–5 秒和均匀帧；本片本地 ASR 失败，口播除烧录字幕外未核。",
+  "recommendation_evidence": {
+    "demand": {
+      "audience_situations": [
+        "看过或听说两个 AI 互聊「发明新语言」的人，想判断真假。"
+      ],
+      "repeated_questions_in_search_or_comments": [
+        "真的还是假的"
+      ],
+      "evidence_freshness_and_scope": "主标评论总量 7387，本轮抽样远小于总数；置顶真假追问本身很强，但不能外推为全部评论。"
+    },
+    "supply_competition": {
+      "same_topic_multi_author_samples": [
+        "在公司楼下捡钱 2026-10-11，已拆结构和画面。"
+      ],
+      "distribution_and_timing": "10 月中旬一条极高互动作品。",
+      "head_and_homogenization_visible_evidence": "供给的钩子与可核事实之间有裂口。"
+    },
+    "unmet_opportunity_and_quality_upside": {
+      "unmet_need": "评论仍在追问真假。",
+      "expected_quality_improvement": "讲清压缩、省略和「发明新语言」的差别，并核演示出处。"
+    },
+    "heat_and_sustained_spread": {
+      "heat_evidence": "不是今日官方热搜。",
+      "sustained_spread_evidence": "10 月 11 日成片当晚仍有极高互动和可见的置顶追问。互动数字不单独等于已经被讲清楚。"
+    }
+  },
+  "red_blue_ocean": {
+    "judgment": "混合",
+    "basis": "需求和供给都非常强，但钩子与可核事实有裂口。不是蓝海，也不是已经没有质量空间的单纯重复。"
+  },
+  "view_records": [
+    {
+      "material": "https://www.douyin.com/video/7695224041367522560",
+      "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+      "model": "Gemini 3.8 Flash medium",
+      "scope": "keyframes",
+      "note": "抽样看 hook 0–5 秒和均匀帧；ASR 作废。"
+    }
+  ]
+}
