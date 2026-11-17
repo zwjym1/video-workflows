@@ -1,0 +1,213 @@
+{
+  "id": "disk_tb_shows_931gb",
+  "title_question": "买了 1TB 的硬盘，为什么电脑里只显示大约 931GB？",
+  "direction": "computer",
+  "today_role": "previous_round_contrast_no_reserved_slot",
+  "evidence_status": "待验证",
+  "heat_tag": "历史",
+  "suggested_length_s": "50-80",
+  "cost": {
+    "level": "低",
+    "reason": "厂商说明已打开，物件清楚，验证成本低。同题成片互动一般，不能靠爆款成片撑场。",
+    "ranking": "不参与选题排名，仅执行安排时参考"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "小西设计所",
+      "title": "1TB硬盘到手只有931GB？看完这个你就明白了！",
+      "url": "https://www.douyin.com/video/7371396345288019236",
+      "published": "2024-05-21 20:20 UTC+8",
+      "collected_at": "2026-11-17 17:40 Asia/Shanghai",
+      "likes": 2899,
+      "comments": 94,
+      "collects": 322,
+      "shares": 98,
+      "plays": null,
+      "duration_s": 157.7,
+      "note": "样本里互动最高。点赞不是播放。已读转写需复核。"
+    },
+    {
+      "role": "original_work",
+      "author": "M原理局",
+      "title": "为什么1TB的硬盘，实际只有931G？",
+      "url": "https://www.douyin.com/video/7698318558442360127",
+      "published": "2026-10-19 18:07 UTC+8",
+      "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+      "likes": 918,
+      "comments": 70,
+      "collects": 136,
+      "shares": 153,
+      "plays": null,
+      "duration_s": 85.6,
+      "note": "今晚详情 available。互动一般，不能写成高互动爆款。未看片。点赞不是播放。"
+    },
+    {
+      "role": "original_work",
+      "author": "游机队-小游（DIY电脑）",
+      "title": "1t只有931g？固态容量是缩水还是另外有隐情？",
+      "url": "https://www.douyin.com/video/7310150141598502195",
+      "published": "2023-12-10 17:30 UTC+8",
+      "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+      "likes": 1277,
+      "comments": 135,
+      "collects": 80,
+      "shares": 52,
+      "plays": null,
+      "duration_s": 51.0,
+      "note": "2023 年旧片，更不能写成今天爆。未看片。"
+    },
+    {
+      "role": "official",
+      "author": "Seagate 中国支持",
+      "title": "为什么我的硬盘报告的容量少于标签上表明容量？",
+      "url": "https://www.seagate.com/cn/zh/support/kb/lacie/why-does-my-hard-drive-report-less-capacity-than-indicated-on-the-drives-label-172191en/",
+      "published": null,
+      "collected_at": "2026-11-17 17:13 Asia/Shanghai",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "本轮全文打开。标称 1TB 在 Windows 二进制下约 931GB。"
+    },
+    {
+      "role": "official",
+      "author": "Apple 支持",
+      "title": "储存空间容量的测量方式（支持文档 102119）",
+      "url": "https://support.apple.com/zh-cn/102119",
+      "published": null,
+      "collected_at": "2026-11-17 17:16 Asia/Shanghai",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "本轮打开。包装常用十进制，系统或 App 报告容量可能不同。"
+    }
+  ],
+  "watch_status": "本轮 Gemini 3.8 Flash medium 抽样看了小西、M原理局 hook 0–5s 与接触纸；开头烧录字幕已抄录（小西前 0.5 秒无字幕）。未连续听审。ASR 需复核，不当已核全文。",
+  "audience_question": "包装上写 1TB，电脑属性里为什么只剩大约 931GB？是被偷了吗？我到底能用多少？",
+  "value": "让刚插上盘的人分清：931 是同一堆字节的另一种数法，系统和预留占用是另外一笔，不要收成「公摊/缺斤少两」。",
+  "timeliness": "常青需求（搜索联想 17:36 仍有「正常吗/为什么只显示931」），不是今晚官方热搜。样本里既有 2026-10 新成片，也有 2024–2023 旧解释。",
+  "fact_sources": [
+    "希捷中国支持页（本轮打开）：1TB 标签在 Windows 下约 931GB",
+    "苹果支持 102119（本轮打开）：十进制标称与系统报告可能不同"
+  ],
+  "same_topic_refs": [
+    {
+      "url": "https://www.douyin.com/video/7371396345288019236",
+      "author": "小西设计所",
+      "note": "样本里互动最高（今晚赞 2899）。已读转写需复核：算出 931 后把约 7% 预留和少掉的容量放在一起。评论高赞省流为公摊。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7698318558442360127",
+      "author": "M原理局",
+      "note": "2026-10 近作，赞 918。已读转写需复核：强调同一容量换单位，并分开系统占用。评论仍问能用多少。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7310150141598502195",
+      "author": "游机队-小游（DIY电脑）",
+      "note": "2023 年，赞 1277。未看片。评论高赞「缺斤少两」，且无 2025–2026 一级评论。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7083709501035056391",
+      "author": "电脑装机馆",
+      "note": "2022 年，赞 296。未看片。"
+    }
+  ],
+  "same_topic_refs_note": "已见表至少 4 作者，已看转写 2 条，底线 8 未满。官方 so 检索空，360 补充后再核详情。检索空不等于供给少。",
+  "original_angle": "包装 1TB、窗口 931、系统另占的一小笔；两把尺子量同一根棍子。不把结论收成公摊。",
+  "visual_method": "建议用标签和属性窗口做认物。本轮未用模型看已有拼图，不把原作画面写成已确认缺陷。",
+  "reusable_assets": "不复用分档或 CPU 旧资产。",
+  "obstacles": "常青题、讲法易重复；最高赞样本把预留空间和 931 混在一起，更要避免再混。转写需复核。",
+  "evidence_observed": [
+    "search/sug 2026-11-17 17:36：1tb只有931gb正常吗、为什么装了1tb的固态只显示931 等。",
+    "M原理局评论（一级 20/70 收全，2026-10）：「所以能用的容量到底是多少？」赞 22（2026-10-20）。",
+    "小西评论（一级 73/94）：「省流:内存有公摊面积」赞 47（2024-05-21）；7/73 含公摊。2026-06-21：「那就别宣传说是1tb」。",
+    "今晚详情：小西赞 2899，游机队 1277，M原理局 918。"
+  ],
+  "judgment_subjective": [
+    "排第一是因为需求具体、已有供给把结论留在公摊/能用多少上，而不是因为好做或时长短。",
+    "已见表最高赞不高，机会是讲清楚，不是追爆款规模。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 2,
+    "hook_0_5s_complete_count": 2,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "已拆 2，仅详情 2，未满 8。不得用近题凑数。"
+  },
+  "heat_sources": [
+    {
+      "channel": "douyin official detail",
+      "kind": "work_engagement",
+      "rank": null,
+      "heat": 918,
+      "captured_at": "2026-11-17 17:14:42 Asia/Shanghai",
+      "url": "https://www.douyin.com/video/7698318558442360127",
+      "note": "中等互动，不是热搜，不是播放。"
+    },
+    {
+      "channel": "official Seagate KB",
+      "kind": "official_release",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 17:13 Asia/Shanghai",
+      "url": "https://www.seagate.com/cn/zh/support/kb/lacie/why-does-my-hard-drive-report-less-capacity-than-indicated-on-the-drives-label-172191en/",
+      "note": "官方说明，不是大众热搜。"
+    }
+  ],
+  "vo_asr_limitation": "开头口播以本轮看见的烧录字幕为准；无字幕处未核。本地 ASR 需复核，不当已核原文。",
+  "evidence_status_note": "不是「没证据」。有多作者成片和官方说明，也有搜索联想与评论抽样；但已见表最高赞约 2899，不宜改写成已验证高互动爆款。",
+  "demand_sources": [
+    {
+      "kind": "search_sug",
+      "source": "www.douyin.com search/sug",
+      "captured_at": "2026-11-17 17:36 Asia/Shanghai",
+      "note": "搜索框联想，不是热搜，不是结果页大家还在搜。"
+    },
+    {
+      "kind": "comments",
+      "url": "https://www.douyin.com/video/7698318558442360127",
+      "sampled_unique": 20,
+      "platform_total": 70,
+      "captured_at": "2026-11-17 17:38 Asia/Shanghai"
+    },
+    {
+      "kind": "comments",
+      "url": "https://www.douyin.com/video/7371396345288019236",
+      "sampled_unique": 73,
+      "platform_total": 94,
+      "captured_at": "2026-11-17 17:49 Asia/Shanghai"
+    }
+  ],
+  "candidate_packaging": "最终推荐已拆结构与画面",
+  "watch_model_log": [
+    {
+      "date": "2026-11-17 18:22-18:27 Asia/Shanghai",
+      "model": "gemini-3.8-flash-medium",
+      "effort": "medium",
+      "scope": "hook 0-5s + contact sheet",
+      "continuous_playback": false
+    }
+  ],
+  "quality_shortlist_note": "2026-11-17 18:29 质量短名单已按 v2026.11.17.5 补证（需求原话、看后搜、0-5s 画面与烧录字幕）。现行 SYSTEM.md 未被覆盖。详见 （详细研究记录未收入本公共包）"
+}

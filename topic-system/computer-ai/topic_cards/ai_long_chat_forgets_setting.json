@@ -1,0 +1,173 @@
+{
+  "id": "ai_long_chat_forgets_setting",
+  "title_question": "为什么 AI 聊久了，会忘记之前的设定？",
+  "direction": "ai",
+  "today_role": "selected",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "60-120",
+  "cost": {
+    "level": "未评估",
+    "reason": "",
+    "use": "scheduling_only",
+    "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "华大狗学长",
+      "title": "大肥鱼的记忆有救了？！告别上下文失忆！",
+      "url": "https://www.douyin.com/video/7700667387095692891",
+      "published": "2026-10-26 07:00 Asia/Shanghai",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 31579,
+      "comments": 1456,
+      "collects": 17743,
+      "shares": 5239,
+      "plays": null,
+      "duration_s": 106.6,
+      "current_applicability": "部分适用：遗忘钩子仍贴近当前用户问题；后半转向记忆插件/项目，不能单独当作当前记忆机制的完整说明。须用当前一手资料再核上下文、摘要交接与长期记忆的现状。",
+      "note": "点赞不等于播放。已看 0–5 秒画面和全片均匀帧；平台无自带字幕；本地转写需复核，不当原话。"
+    },
+    {
+      "role": "official",
+      "author": "Qwen",
+      "title": "Qwen4-Max 1M 上下文发布",
+      "url": null,
+      "published": "2026-11-16",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "current_applicability": "可作为「窗口变长是不是就不会忘」的当前产品背景，但本轮未核到专门讲该发布的成片，也未在本快照中补做一手界面核实。",
+      "note": "官方发稿只证明有产品发布，不自动等于大众热搜。"
+    }
+  ],
+  "watch_status": "仅关键帧与转写",
+  "audience_question": "普通用户和 AI 聊久了，为什么会忘掉之前说过的设定或交代过的事？",
+  "value": "已有高互动成片把需求接到装插件；可做的增量是把有限上下文、丢掉或压缩、摘要交接，以及窗口变长和长期记忆的区别讲清楚。",
+  "timeliness": "不是今日官方热搜。证据是 2026-10-26 仍维持高互动的垂直作品，以及当晚仍在更新的评论。",
+  "fact_sources": [
+    "华大狗学长 2026-10-26 成片（抽帧与评论抽样）",
+    "搜索框联想 2026-11-17 18:39",
+    "Qwen4-Max 1M 窗口 2026-11-16 发布（未核专门成片）"
+  ],
+  "same_topic_refs": [
+    {
+      "author": "华大狗学长",
+      "url": "https://www.douyin.com/video/7700667387095692891",
+      "published": "2026-10-26 07:00 Asia/Shanghai",
+      "current_applicability": "钩子适用；插件解决方案不能代替「为什么会忘」的机制说明。",
+      "watched": "keyframes"
+    }
+  ],
+  "same_topic_refs_note": "已看 1 条主标并登记相关插件向推荐；未满 8。定题后须再补同机制、不同作者，并优先近期作品、用当前一手资料核实机制。",
+  "original_angle": "对准「为什么会忘」，而不是再做记忆插件安装教程。",
+  "visual_method": "待定题后深拆和写稿时锁定；本快照不臆造已定的贯穿物件或分镜。",
+  "reusable_assets": "",
+  "obstacles": "同题 8/10 未满；口播除看图抄录的烧录字幕外，本地转写需复核。选择之后的深拆结果未写入本快照。",
+  "evidence_observed": [
+    "搜索联想有「为什么ai聊久了会忘记之前的设定」「为什么ai老是会忘记长对话的内容」等。",
+    "主标评论抽样 150/1456，仍在问断片还是被换掉、记忆是否按字收费、插件和本地记文件的差别。",
+    "主标 0–5 秒把「上下文一炸、直接失忆」立住后，很快转到 dsh-honcho / 记忆库。"
+  ],
+  "judgment_subjective": [
+    "需求和供给都有证据，但打得响的切口与「为什么会忘」错位，仍有内容质量空间。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题「为什么聊久了会忘记设定/交代过的事」；记忆插件教程或「窗口一百万就不会忘吗」不能顶替。",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 1,
+    "hook_0_5s_complete_count": 1,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "已看 1 条主标。用户已选定本题，但定题后的深拆尚未作为研究结果写入。不得把未完成的深拆写成已充分。"
+  },
+  "heat_sources": [
+    {
+      "channel": "官方抖音热搜",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+      "url": null,
+      "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+    }
+  ],
+  "vo_asr_limitation": "平台无自带字幕。开头口播以看图抄录的烧录字幕为准。本地转写需复核，不能当成已核对的口播原文。",
+  "form_only_refs": [],
+  "candidate_packaging": "最终推荐已拆结构与画面",
+  "candidate_packaging_note": "已拆主标 0–5 秒画面和全片均匀帧。这不是连续播放，也不是完整听审。",
+  "recommendation_evidence": {
+    "demand": {
+      "audience_situations": [
+        "日常聊天、养角色或办公长对话的普通用户，聊着聊着就不记得刚才交代的设定。"
+      ],
+      "repeated_questions_in_search_or_comments": [
+        "为什么ai聊久了会忘记之前的设定",
+        "忘记是断片还是被换掉",
+        "记忆要不要按字付费",
+        "插件和把内容记在文件里有何差别"
+      ],
+      "evidence_freshness_and_scope": "搜索联想采集于 2026-11-17 18:39；评论为当晚对主标 150/1456 的抽样。",
+      "note": "点赞不能替代需求。"
+    },
+    "supply_competition": {
+      "same_topic_multi_author_samples": [
+        "华大狗学长 2026-10-26，已拆结构和画面；切口随即转向记忆插件。"
+      ],
+      "distribution_and_timing": "目前深拆样本 1 条，发布于 2026-10-26，不是今日新片。",
+      "head_and_homogenization_visible_evidence": "已见表里打得响的作品把遗忘当钩子，很快转到记忆插件/项目。"
+    },
+    "unmet_opportunity_and_quality_upside": {
+      "unmet_need": "评论仍在问忘了是断片还是被换掉，以及窗口/插件/本地记录的差别。",
+      "expected_quality_improvement": "把遗忘机制本身讲清楚，并回答窗口很大是不是就不会忘。"
+    },
+    "heat_and_sustained_spread": {
+      "heat_evidence": "不是今日官方热搜。",
+      "sustained_spread_evidence": "2026-10-26 成片当晚仍维持高互动，评论仍在更新。"
+    }
+  },
+  "red_blue_ocean": {
+    "judgment": "混合",
+    "basis": "问法清楚，也有高互动成片，但打得响的切口是记忆插件/项目，与「为什么会忘」错位。不能因为官方搜索空就叫蓝海。",
+    "note": "仅在需求与供给都有证据时的有限判断。不自行造评分。"
+  },
+  "demand_evidence_ops": {
+    "audience_really_asks": "聊久了为什么会忘掉之前的设定或长对话内容，以及忘了之后人还在不在、该怎么补。",
+    "comment_quote_count": 5,
+    "comment_floor": 12,
+    "search_min_each": 3,
+    "note": "评论原话见 TODAY_20261117_expanded.md。看后搜页面级词不足，不凑。"
+  },
+  "collision_and_gap": {
+    "same_cut_already_has_hit": true,
+    "hit_did_not_cover_but_comments_ask": "已有成片很快转到插件；评论仍在问断片还是被换掉、是否按字收费、本地记录是否够用。",
+    "our_differentiation": "讲清为什么会忘，而不是再做插件教程。"
+  },
+  "view_records": [
+    {
+      "material": "https://www.douyin.com/video/7700667387095692891",
+      "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+      "model": "Gemini 3.8 Flash medium",
+      "scope": "keyframes",
+      "note": "抽样看 hook 0–5 秒拼图和全片均匀帧，不是连续播放或完整听审。"
+    }
+  ]
+}

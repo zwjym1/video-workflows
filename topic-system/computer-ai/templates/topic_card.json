@@ -1,0 +1,146 @@
+{
+  "id": "",
+  "title_question": "",
+  "direction": "computer|ai|new_tech",
+  "today_role": "first_pick|backup|reserve|library|not_recommended|excluded",
+  "evidence_status": "已验证高互动|新技术有关注证据|待验证",
+  "heat_tag": "近热|历史",
+  "suggested_length_s": "60-120",
+  "cost": {
+    "level": "高|中|低|未评估",
+    "reason": "",
+    "use": "scheduling_only",
+    "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+  },
+  "sources": [
+    {
+      "role": "original_work|official|media|paper",
+      "author": null,
+      "title": null,
+      "url": null,
+      "published": null,
+      "collected_at": null,
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "点赞不等于播放；缺失为 null",
+      "current_applicability": null,
+      "current_applicability_note": "记录该参考对现状是否仍适用。旧片可作历史或表达参考，不能证明现状，不为凑数使用。不设硬性日期门槛。"
+    }
+  ],
+  "watch_status": "未观看|仅关键帧与转写|连续观看",
+  "audience_question": "",
+  "value": "",
+  "timeliness": "",
+  "fact_sources": [],
+  "same_topic_refs": [],
+  "same_topic_refs_note": "必须是同一具体问题；跨题不列入。记录已看条数相对底线8/目标10的状态。热门技术题可以暂时为0，但须如实注明，不能写成已充分。优先近期作品，并记录发布时间和现状适用性；旧片不能用来证明现状，也不得仅为凑数使用。",
+  "original_angle": "",
+  "visual_method": "",
+  "reusable_assets": "",
+  "obstacles": "",
+  "evidence_observed": [],
+  "judgment_subjective": [],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": false,
+    "status": "未开始|未满|已满",
+    "note": "未满须实报，不得硬凑或把未观看当成完整；不得擅自永久豁免。",
+    "hook_0_5s_requires": "实际看片后的0-5s画面记录 + 口播原文或听不清标记；接触纸或空总结不算"
+  },
+  "heat_sources": [
+    {
+      "channel": "",
+      "kind": "official_board|third_party_board|official_release|media|work_engagement",
+      "rank": null,
+      "heat": null,
+      "captured_at": null,
+      "url": null,
+      "note": "官方榜与第三方榜分开写；缺项为 null。"
+    }
+  ],
+  "vo_asr_limitation": "未观看则无口播原文。旧自动转写未复核时不能当成已核对的口播原文。",
+  "form_only_refs": [],
+  "form_only_refs_note": "跨题视觉或表达参考，不得作为本题内容或机制依据。必须与 same_topic_refs 分开。",
+  "throughline_task_or_object": "",
+  "throughline_explicitly_none": false,
+  "necessary_mechanism": "",
+  "concept_list": [],
+  "concept_list_note": "列出本片将出现的概念，并标明是否为回答 audience_question 所必需。不是禁止技术精度，也不是每片必须塞生活例子。",
+  "view_records": [
+    {
+      "material": null,
+      "viewed_at": null,
+      "model": null,
+      "scope": "contact_sheet|segment_sheets|keyframes|continuous_watch|listened",
+      "note": "历史记录保持原模型标签，不把 Qoder 已看改写成 Gemini 3.8 已看。"
+    }
+  ],
+  "candidate_packaging": "初筛仅metadata|最终推荐已拆结构与画面",
+  "candidate_packaging_note": "只有标题或互动数字、尚未实际拆结构和画面的，只能标初筛，不能包装成最终推荐或首推。",
+  "recommendation_evidence": {
+    "demand": {
+      "audience_situations": [],
+      "repeated_questions_in_search_or_comments": [],
+      "evidence_freshness_and_scope": "",
+      "note": "写具体受众场景、搜索与评论中的重复问题，以及证据时效和范围。点赞不能替代需求。缺项写未知，不编造。"
+    },
+    "supply_competition": {
+      "same_topic_multi_author_samples": [],
+      "distribution_and_timing": "",
+      "head_and_homogenization_visible_evidence": "",
+      "note": "必须是严格同题多作者样本。分布、时效、头部与讲法同质化须有可见证据；未拆结构与画面不得写成已看清竞争。"
+    },
+    "unmet_opportunity_and_quality_upside": {
+      "unmet_need": "",
+      "expected_quality_improvement": "",
+      "note": "以内容质量最优为目标。制作成本不能替代价值。"
+    },
+    "heat_and_sustained_spread": {
+      "heat_evidence": "",
+      "sustained_spread_evidence": "",
+      "note": "官方榜、第三方榜、单条互动分开写；点赞不等于播放，也不等于需求。"
+    }
+  },
+  "red_blue_ocean": {
+    "judgment": "红海|蓝海|混合|未知",
+    "basis": "",
+    "note": "仅在需求与供给都有证据时作有限判断。无搜到、接口失败或条数少不等于蓝海。无数据标未知。不自行造评分或权重。"
+  },
+  "value_note": "价值依据未满足机会与预期内容质量提升来写；不能用制作或核验成本代替。",
+  "demand_evidence_ops": {
+    "audience_really_asks": "",
+    "comment_quotes_or_merged": [],
+    "comment_quote_count": 0,
+    "comment_floor": 12,
+    "search_suggest": [],
+    "search_after_watch": [],
+    "search_min_each": 3,
+    "note": "沿用旧实地包做法：评论原话或合并问法（目标≥12）、搜索页联想 + 视频页看后搜（各≥3），并写观众真问什么。缺项写未知。点赞不能替代需求。旧正文曾写评论≥5，以 2026-10-20 加厚标准 ≥12 为准。"
+  },
+  "collision_and_gap": {
+    "same_cut_already_has_hit": null,
+    "hit_did_not_cover_but_comments_ask": "",
+    "our_differentiation": "",
+    "note": "沿用旧 field ④撞车与切口：供给观察 + 未满足机会。不打分、不降权。"
+  }
+}

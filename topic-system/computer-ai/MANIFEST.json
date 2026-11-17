@@ -1,0 +1,213 @@
+{
+  "name": "computer-ai-topic-system",
+  "version": "v2026.11.17.7",
+  "frozen_at": "2026-11-17 19:41 Asia/Shanghai",
+  "timezone": "Asia/Shanghai",
+  "scope": "选题系统完整公共快照；不含制作工作流、凭据、私人路径、第三方媒体截图或运行日志。",
+  "today_selected": "ai_long_chat_forgets_setting",
+  "today_selected_paused": "cpu_core_enough",
+  "topic_count": 18,
+  "counts": {
+    "total": 18,
+    "已验证高互动": 9,
+    "新技术有关注证据": 4,
+    "待验证": 5
+  },
+  "private_included": false,
+  "third_party_media_included": false,
+  "credentials_included": false,
+  "files": [
+    {
+      "path": "CHANGES.md",
+      "version": "v2026.11.17.7",
+      "bytes": 1769,
+      "sha256": "8e047743a0a5ce67e2ae3cb0f2b7d6b3047ddde1cb92208f024a97e29ddef512"
+    },
+    {
+      "path": "INDEX.md",
+      "version": "v2026.11.17.7",
+      "bytes": 2685,
+      "sha256": "a8bd07e10e8a6594a9b305cd5edc36d414c4407862754198f5e84bb0fd7de1e4"
+    },
+    {
+      "path": "OLD_SYSTEM_COMPARISON.md",
+      "version": "v2026.11.17.7",
+      "bytes": 11053,
+      "sha256": "e87e036d7c0df84b03ade1ee14b1f4451262f563a7a6699cd7c562f4cf6950b0"
+    },
+    {
+      "path": "README.md",
+      "version": "v2026.11.17.7",
+      "bytes": 430,
+      "sha256": "30b5eb74583cf0a983a7853915934892cd02c692b5d181c5f3de02ad752eb886"
+    },
+    {
+      "path": "SYSTEM.md",
+      "version": "v2026.11.17.7",
+      "bytes": 17497,
+      "sha256": "ce99903de449322f86ac4591fa35c02a85280094ddbced430cb6a02d068647e5"
+    },
+    {
+      "path": "TODAY_20261117.md",
+      "version": "v2026.11.17.7",
+      "bytes": 8497,
+      "sha256": "914364fc3805fee78eb0cc20ea329d2bba697733b642d65b7c70c379bce8c590"
+    },
+    {
+      "path": "TODAY_20261117_demand_competition.md",
+      "version": "v2026.11.17.7",
+      "bytes": 8080,
+      "sha256": "46411feeb4d223354e35fbe2bbb0747b34e5b51f8d8911a9de22a5450d189393"
+    },
+    {
+      "path": "TODAY_20261117_evening.md",
+      "version": "v2026.11.17.7",
+      "bytes": 11234,
+      "sha256": "b7145fb0635c77588d120f38636b8a381440c157a8ca16f8e0b1bbd15f2d893b"
+    },
+    {
+      "path": "TODAY_20261117_expanded.md",
+      "version": "v2026.11.17.7",
+      "bytes": 31766,
+      "sha256": "8104700415b2976c46eca7bec214e3d3de74990b2f69b15758d80071865bdc6e"
+    },
+    {
+      "path": "USER_FLOW.md",
+      "version": "v2026.11.17.7",
+      "bytes": 2722,
+      "sha256": "1446b618cedd095c6fa07963c523a60251d440078468ae3ee942b3f03be07d87"
+    },
+    {
+      "path": "templates/CANDIDATE_BRIEF.template.md",
+      "version": "v2026.11.17.7",
+      "bytes": 1299,
+      "sha256": "697e6727d7c96bd901100a0d5e17d834d241d6934f0571205846ca0ddeb26bea"
+    },
+    {
+      "path": "templates/postmortem.json",
+      "version": "v2026.11.17.7",
+      "bytes": 1061,
+      "sha256": "bf0f211b4dde9e0496cd57587de4618be54346fd26242251d62792ef8e668769"
+    },
+    {
+      "path": "templates/topic_card.json",
+      "version": "v2026.11.17.7",
+      "bytes": 6311,
+      "sha256": "5ad7e13519cc31d970739984e20e987791e2f898981f5d8222c1a7d0c8da3156"
+    },
+    {
+      "path": "topic_cards/ai_cannot_count_letters.json",
+      "version": "v2026.11.17.7",
+      "bytes": 8501,
+      "sha256": "ee6a8fd8354c3fea63b88ef4ce7e1cff833c93b1037df181e737762ffbbe996e"
+    },
+    {
+      "path": "topic_cards/ai_long_chat_forgets_setting.json",
+      "version": "v2026.11.17.7",
+      "bytes": 8648,
+      "sha256": "b3990278dbe5113333356b409268d3e4a7a02fe40bd6fa0b1fbd12ed90cdd472"
+    },
+    {
+      "path": "topic_cards/ai_membership_vs_api.json",
+      "version": "v2026.11.17.7",
+      "bytes": 6403,
+      "sha256": "e7dccfbc61994572f4cf79d6537c4ed6afd4bfe9d0f886e2d0a92cf00e521ac7"
+    },
+    {
+      "path": "topic_cards/amdahl_serial_limit.json",
+      "version": "v2026.11.17.7",
+      "bytes": 3897,
+      "sha256": "cd82678cc22b665d21e6535b42b9acbe9f6ea651bedb071cc4e9989f991209be"
+    },
+    {
+      "path": "topic_cards/attention_pronoun.json",
+      "version": "v2026.11.17.7",
+      "bytes": 4233,
+      "sha256": "848c8a740e12d53099d33578a320cda744ef4b24387d970e82631fc9e5795aeb"
+    },
+    {
+      "path": "topic_cards/c_drive_fills_itself.json",
+      "version": "v2026.11.17.7",
+      "bytes": 6490,
+      "sha256": "ac1df62e41e0f050bc412ae1e8657634566401a38c0ad6aa52116b0ca4bbb396"
+    },
+    {
+      "path": "topic_cards/context_window_forget.json",
+      "version": "v2026.11.17.7",
+      "bytes": 3515,
+      "sha256": "301fb8b123dff51123ef4b0434d5f36a177b7299cb7981c486b77c07bdf2dd45"
+    },
+    {
+      "path": "topic_cards/cpu_core_enough.json",
+      "version": "v2026.11.17.7",
+      "bytes": 5731,
+      "sha256": "15fa823b402f7c2db9b773455018b4c0f6e1b8481c46a5472ded10faf7c5d4ab"
+    },
+    {
+      "path": "topic_cards/disk_tb_shows_931gb.json",
+      "version": "v2026.11.17.7",
+      "bytes": 9544,
+      "sha256": "5d930dde66117c8541cbe805916616d68f07b27dd78c1db7ebaf21e4f22f2e46"
+    },
+    {
+      "path": "topic_cards/gpu_number_vs_strength.json",
+      "version": "v2026.11.17.7",
+      "bytes": 5342,
+      "sha256": "3781b568b3ad900ba40bae5ea84d998ff342c7f3f8becc0f2d271b75989d9e5e"
+    },
+    {
+      "path": "topic_cards/llm_is_program_or_file.json",
+      "version": "v2026.11.17.7",
+      "bytes": 7252,
+      "sha256": "ee7cbb78575fd4f515e9e1131e3f85ef2b0ed1c76840398d9a3f22c16fb9c4bd"
+    },
+    {
+      "path": "topic_cards/llm_leaderboard_vs_useful.json",
+      "version": "v2026.11.17.7",
+      "bytes": 4715,
+      "sha256": "307aee1e4601620b1c41e4ea967552d4b2c49cc06ff40e7eb59b42c11ce74dff"
+    },
+    {
+      "path": "topic_cards/long_chat_kv_compute.json",
+      "version": "v2026.11.17.7",
+      "bytes": 6831,
+      "sha256": "cbd4bb1ffce84e961d1d8da304d0e9663ca85a2ada3956420d4eac87788aa595"
+    },
+    {
+      "path": "topic_cards/memory_gen_upgrade.json",
+      "version": "v2026.11.17.7",
+      "bytes": 4332,
+      "sha256": "fd6c33a610627a6ab7a1f680bd7acc61cceaab27a8d05cd848b03e7bb7ca48a4"
+    },
+    {
+      "path": "topic_cards/moe_sparse_activation.json",
+      "version": "v2026.11.17.7",
+      "bytes": 6566,
+      "sha256": "06421034adeba9962f5204b19663d1770217daf5fcfd548e44d4ae5294dfd744"
+    },
+    {
+      "path": "topic_cards/prefix_cache_cheaper.json",
+      "version": "v2026.11.17.7",
+      "bytes": 3883,
+      "sha256": "dd60109a1d7da244e6dd316a943637abdc86911a5d7c15896812f5b56c24770c"
+    },
+    {
+      "path": "topic_cards/two_ais_invent_language.json",
+      "version": "v2026.11.17.7",
+      "bytes": 6228,
+      "sha256": "c5b9d01408417311a3e9cab58c7e73d2ae92a3c7b4f0bdc240f0d622da44071f"
+    },
+    {
+      "path": "topic_cards/vllm_same_gpu.json",
+      "version": "v2026.11.17.7",
+      "bytes": 4732,
+      "sha256": "8291235f349b7666d8d9b6b2af1b192711e9a0ebb420bef203e4b309c7b1263b"
+    },
+    {
+      "path": "topics.json",
+      "version": "v2026.11.17.7",
+      "bytes": 115902,
+      "sha256": "b89e466e0a8f38bfb27c19fd51c426d9b52cceaad4d9a2b3d8f5a296dd83617a"
+    }
+  ]
+}

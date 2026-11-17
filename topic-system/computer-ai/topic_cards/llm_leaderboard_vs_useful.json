@@ -1,0 +1,106 @@
+{
+  "id": "llm_leaderboard_vs_useful",
+  "title_question": "榜上第一的大模型，就一定更好用吗？",
+  "direction": "new_tech",
+  "today_role": "insufficient_pending",
+  "evidence_status": "新技术有关注证据",
+  "heat_tag": "近热",
+  "suggested_length_s": "60-90",
+  "cost": {
+    "level": "中",
+    "reason": "今晚仅有第三方微博热词，无官方抖音热搜，无同题成片；验证成本和误述风险偏高。",
+    "ranking": "不参与选题排名"
+  },
+  "sources": [
+    {
+      "role": "media",
+      "author": "钛媒体",
+      "title": "“跑高分”不等于“能交付”：AI排行榜正在经历一场信用重估",
+      "url": "https://www.tmtpost.com/8183550.html",
+      "published": "2026-10-27 18:42",
+      "collected_at": "2026-11-17 17:16 Asia/Shanghai",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "本轮打开。是 10 月底稿，不是今天新稿。文中具体榜分数值未独立复核。"
+    }
+  ],
+  "watch_status": "未观看",
+  "audience_question": "排行榜上分数更高、排在第一的大模型，就一定更好用吗？",
+  "value": "分开「榜上的分」和「手头这件事有没有做好」，不堆基准名和参数量。",
+  "timeliness": "第三方微博聚合今晚 17:10 有词；官方抖音 17:11 前 50 无此词；官方微博未打开；对上的媒体稿是 10 月 27 日。",
+  "fact_sources": [
+    "钛媒体 2026-10-27 稿（打开，分数未复核）",
+    "尚无已核同题短视频"
+  ],
+  "same_topic_refs": [],
+  "same_topic_refs_note": "同题成片 0。检索「AI大模型刷榜」官方 so 为空，360 两条跑题。热门技术题允许暂时为 0，但不能写成已充分。底线 8 未满。",
+  "original_angle": "一块分数牌对一件真实小事（写清楚一段工作消息，或核对一个能查到的事实）。",
+  "visual_method": "分数牌切到同一任务的成败，不点名未核分数，不堆模型参数。",
+  "reusable_assets": "无。",
+  "obstacles": "官方热搜缺失；话题原帖/官方微博页未打开；无成片对标；禁止转述未复核跑分。不建议未补证据就开拍。",
+  "evidence_observed": [
+    "soso.re 微博聚合页面更新 2026/11/17 17:10，抓取 2026-11-17 17:11:22 Asia/Shanghai：第 8「AI大模型刷榜还有意义吗」，显示热度 527229。不得冒充官方榜。",
+    "官方抖音热榜 2026-11-17 17:11:22 Asia/Shanghai 前 50 无该词。",
+    "钛媒体稿打开，时间为 2026.10.27 18:42。"
+  ],
+  "judgment_subjective": [
+    "有第三方微博词和搜索联想，但无同题成片、未观看，不推荐开做，标待查。不能把检索空写成蓝海。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "同题成片 0、已看 0。新技术允许暂时为 0，必须如实标明未满。"
+  },
+  "heat_sources": [
+    {
+      "channel": "soso.re 微博热搜聚合",
+      "kind": "third_party_board",
+      "rank": 8,
+      "heat": 527229,
+      "captured_at": "2026-11-17 17:11:22 Asia/Shanghai",
+      "url": "https://soso.re/weibo",
+      "note": "第三方聚合，页面更新 2026/11/17 17:10。不得冒充官方微博或官方抖音。官方微博榜未打开。"
+    },
+    {
+      "channel": "iesdouyin official hot word billboard",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 17:11:22 Asia/Shanghai",
+      "url": "https://www.iesdouyin.com/web/api/v2/hotsearch/billboard/word/",
+      "note": "官方抖音前 50 无此词。"
+    },
+    {
+      "channel": "钛媒体",
+      "kind": "media",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 17:16 Asia/Shanghai",
+      "url": "https://www.tmtpost.com/8183550.html",
+      "note": "2026-10-27 18:42 发布，不是今日新稿。"
+    }
+  ],
+  "vo_asr_limitation": "无成片，无口播原文。",
+  "quality_shortlist_note": "2026-11-17 18:29 质量短名单已按 v2026.11.17.5 补证（需求原话、看后搜、0-5s 画面与烧录字幕）。现行 SYSTEM.md 未被覆盖。详见 （详细研究记录未收入本公共包）"
+}

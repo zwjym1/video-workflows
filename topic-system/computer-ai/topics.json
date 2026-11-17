@@ -1,0 +1,2358 @@
+{
+  "system": "computer-ai-topic-system",
+  "version": "v2026.11.17.7",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-11-17 19:41 Asia/Shanghai",
+  "scope": "电脑与AI为主方向，题型不固定；可覆盖已火科普、近期热门技术、新产品机制、真实争议和可实测现象。",
+  "exclusions_this_cycle": [
+    "工业盐/食用盐（今日已报过的生活科普，不默认当新题）",
+    "鱼吃辣椒（同上）",
+    "芯片分档 / 5070 Ti 残次品（刚做完，不重复）",
+    "全民进入低电量过日子时代（未核原义，不推荐）"
+  ],
+  "today_first_pick": "ai_long_chat_forgets_setting",
+  "today_picks": [
+    {
+      "id": "ai_long_chat_forgets_setting",
+      "role": "selected"
+    },
+    {
+      "id": "c_drive_fills_itself",
+      "role": "this_round_candidate"
+    },
+    {
+      "id": "two_ais_invent_language",
+      "role": "this_round_candidate"
+    },
+    {
+      "id": "llm_is_program_or_file",
+      "role": "this_round_backup"
+    },
+    {
+      "id": "ai_cannot_count_letters",
+      "role": "this_round_pending_same_topic"
+    }
+  ],
+  "counts": {
+    "total": 18,
+    "已验证高互动": 9,
+    "新技术有关注证据": 4,
+    "待验证": 5
+  },
+  "topics": [
+    {
+      "id": "moe_sparse_activation",
+      "title_question": "参数写成两万亿，是不是每次都要把它们算完？",
+      "direction": "ai,new_tech",
+      "today_role": "morning_reserve_not_on_evening_shortlist",
+      "evidence_status": "新技术有关注证据",
+      "heat_tag": "近热",
+      "suggested_length_s": "70-110",
+      "cost": {
+        "level": "中",
+        "reason": "机制可用同一专家库连续演示，不必做新品评测；要防止把两家官方数字画成统一架构，也要避免和刚做完的芯片题搅在一起。"
+      },
+      "sources": [
+        {
+          "role": "official",
+          "author": "Alibaba Cloud",
+          "title": "Alibaba Unveils Qwen4-Max",
+          "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+          "published": "2026-11-16",
+          "collected_at": "2026-11-17 约14:26–14:40 Asia/Shanghai",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "本轮已打开新闻稿正文：总参数 2.4 trillion，每 token 激活 71 billion，稀疏 MoE，上下文 1 million token。不是抖音互动数据。"
+        },
+        {
+          "role": "official",
+          "author": "腾讯",
+          "title": "腾讯混元 Hy4 flash 正式发布：赋能日常高效办公",
+          "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+          "published": "2026-11-16",
+          "collected_at": "2026-11-17 约14:26–14:40 Asia/Shanghai",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "本轮已打开官方页：总参数 224B（其中 64B Engram），激活 12B，1M 上下文；另称 KV cache 较前代缩小。Engram 细节本轮未单独核证，不做展开。"
+        },
+        {
+          "role": "paper",
+          "author": "Fedus et al.",
+          "title": "Switch Transformers",
+          "url": "https://arxiv.org/abs/2101.03961",
+          "published": "2021-01",
+          "collected_at": "2026-11-17 未重新打开全文",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "稀疏 MoE 的经典公开论文，选中后补读后再写具体层数/路由公式。"
+        }
+      ],
+      "watch_status": "无同题成片被列为已观看；未取得开头0–5秒画面或口播原文。今日抖音搜索接口对部分词返回空结果，未找到可核的中文同题短视频。",
+      "audience_question": "参数写成两万亿，是不是每次回答都要把全部参数算一遍？会不会又贵又慢？",
+      "value": "把「总参数」和「每次激活参数」分开，看完能判断宣传数字和实际推理成本不是一回事。",
+      "timeliness": "阿里、腾讯均在 2026-11-16 发布带激活参数的官方说明，是昨天的产品机制，不是把更早的日历新闻当成今天新。",
+      "fact_sources": [
+        "阿里云新闻稿（已打开）",
+        "腾讯官方发布页（已打开）",
+        "Switch Transformer 论文（待补读全文）"
+      ],
+      "same_topic_refs": [],
+      "same_topic_refs_note": "同题看片0，底线8、目标10，未开始。不能拿泛大模型测评或芯片分档来凑同题。",
+      "original_angle": "不做成两款模型的发布综述。用同一座专家库：每次只点亮少数专家，总库还在，但账单按点亮的部分走。用官方数字当例子，不暗示所有模型结构相同，也不解释未核证的 Engram。",
+      "visual_method": "真实产品/官网数字卡片认物后，进入少元素专家柜：一次请求只打开几扇门，其余专家留在原位变暗但不消失。对比「密模型每次全开」。",
+      "reusable_assets": "可复用「同一对象持续在场、未启用单元留原位」的语法和已确认配音流程（先试听）。不复用 5070 Ti / 分档晶圆内容。",
+      "obstacles": "不要把 MoE 画成芯片砍核；不要把 2.4T/71B 和 224B/12B 融成同一架构；路由如何选专家只能示意，不能冒充实测热图；官网商标需处理。",
+      "evidence_observed": [
+        "2026-11-16 阿里云新闻稿写明 Qwen4-Max 为 2.4T 总参数、每 token 激活 71B 的稀疏 MoE。",
+        "2026-11-16 腾讯官方页写明 Hy4 flash 总参数 224B（含 64B Engram）、激活 12B。"
+      ],
+      "judgment_subjective": [
+        "有官方机制数字、可画，但今日没有已核的大众热度或同题成片，故只作储备。",
+        "不能因为贴近面试就放成首推。同题尚未看片，不能当成已充分调研。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": false,
+        "status": "未开始",
+        "note": "同题看片0，未开始深调研。官方新闻稿不是同题成片，不能计入已看条数。未满8条。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        },
+        {
+          "channel": "阿里云新闻稿",
+          "kind": "official_release",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 约14:26–14:40 Asia/Shanghai",
+          "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+          "note": "官方发布，不是热榜，也不是短视频互动数据。"
+        },
+        {
+          "channel": "腾讯官方页",
+          "kind": "official_release",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 约14:26–14:40 Asia/Shanghai",
+          "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+          "note": "官方发布，不是热榜，也不是短视频互动数据。"
+        }
+      ],
+      "vo_asr_limitation": "本轮未观看同题成片，没有可引用的口播原文，也没有可用的转写。"
+    },
+    {
+      "id": "long_chat_kv_compute",
+      "title_question": "为什么聊天越聊越长，越容易被限、也更吃额度？",
+      "direction": "ai,new_tech",
+      "today_role": "morning_reserve_not_on_evening_shortlist",
+      "evidence_status": "新技术有关注证据",
+      "heat_tag": "近热",
+      "suggested_length_s": "70-110",
+      "cost": {
+        "level": "中",
+        "reason": "KV 缓存随上下文变长比较好比画；难处是不能把未经官方确认的额度数字当成 DeepSeek 规则，也不能把限流原因单一归因。"
+      },
+      "sources": [
+        {
+          "role": "media",
+          "author": "第一财经",
+          "title": "调用量冲上全球第一，DeepSeek开始对免费用户“限额”了",
+          "url": "https://www.yicai.com/news/103441951.html",
+          "published": "2026-11-16 15:19",
+          "collected_at": "2026-11-17 检索与摘要核验",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "报道写明官方尚未发布统一限额规则；用户反馈含长对话、每日额度和单次输入长度。本轮以报道本身为关注证据，不把文中用户数字写成官方规则。"
+        },
+        {
+          "role": "media",
+          "author": "21世纪经济报道/澎湃转述",
+          "title": "DeepSeek“限额”？多名网友反馈收到提示：使用额度已达上限",
+          "url": "https://www.21jingji.com/article/20261116/herald/5ed417f1a6e7c462ee6aac8152622420.html",
+          "published": "2026-11-16 20:31",
+          "collected_at": "2026-11-17 检索与摘要核验",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "文称该话题登上微博热搜，此条热搜排名本轮未从微博官方榜单独立打开核实。"
+        },
+        {
+          "role": "official",
+          "author": "腾讯",
+          "title": "Hy4 flash 发布页中的 KV cache 说明",
+          "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+          "published": "2026-11-16",
+          "collected_at": "2026-11-17 已打开",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "官方称该模型 KV cache 大小为 Hy3 的 1/24、Hy4 的 1/6，可作「长上下文缓存会占资源」的旁证，不是 DeepSeek 限额原因的官方解释。"
+        }
+      ],
+      "watch_status": "未观看以该问题为同题的成片。未取得开头0–5秒画面或口播原文。",
+      "audience_question": "聊着聊着为什么会被提示额度或让新开对话？是不是故意卡免费用户？",
+      "value": "讲清上下文变长时，模型要反复用到历史信息，缓存和计算通常跟着涨；限流是产品在算力有限时的调度，不等于某一家已经公布完整规则。",
+      "timeliness": "2026-11-16 起有多家媒体报道免费端限额反馈，属于昨天到今天的关注，不是旧闻改日期。",
+      "fact_sources": [
+        "第一财经 2026-11-16",
+        "21世纪经济报道 2026-11-16",
+        "腾讯 Hy4 flash 官方页关于 KV cache 的表述",
+        "Transformer 推理中 KV cache 随序列变长的通用机制（选中后补一篇可定位技术说明）"
+      ],
+      "same_topic_refs": [],
+      "same_topic_refs_note": "同题看片0，底线8、目标10，未开始。不能用泛「聊天就忘了」或vLLM教程顶替本问题。",
+      "original_angle": "不盘点 DeepSeek 额度表。用同一段对话纸条越堆越高，旁边的工作缓存格子跟着变长；新开对话则清空格子。把「算力不够所以限长对话」说成一种可能的调度，同时标明官方规则未公布。",
+      "visual_method": "真实聊天截图式样（自制示意，不复制某 App 界面细节）+ 一条越来越长的缓存带。停用的旧对话格子留在原位但不再占用当前工作位。",
+      "reusable_assets": "缓存带和对话纸条可延伸到上下文窗口或前缀缓存题，但题目不能混成一期。不复用芯片旧题。",
+      "obstacles": "官方未公布统一规则，用户反馈的 7 天、4 万字、两小时等数字不能写成官方标准；不能说所有变慢都是 KV cache；勿引导去绕过限额。",
+      "evidence_observed": [
+        "2026-11-16 第一财经等报道用户在 App/网页遇到限额提示，并写明官方尚未发布统一规则。",
+        "同日腾讯官方页把缩小 KV cache 作为降低成本的卖点，说明该机制被厂商公开讨论。"
+      ],
+      "judgment_subjective": [
+        "更贴近可能被卡住的普通用户，但官方规则未公布，且不是今日已核热榜，故只作储备，不作首推。",
+        "同题尚未看片，不能当成已充分调研。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": false,
+        "status": "未开始",
+        "note": "同题看片0，未开始深调研。媒体报道不是同题成片，不能计入已看条数。未满8条。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        },
+        {
+          "channel": "微博第三方聚合/报道转述",
+          "kind": "media",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 检索与摘要核验",
+          "url": "https://www.21jingji.com/article/20261116/herald/5ed417f1a6e7c462ee6aac8152622420.html",
+          "note": "21世纪经济报道称该话题登上微博热搜；本轮未从微博官方榜单打开核实，榜位和热度值为缺失。今日已核的soso.re 14:53前50也未见对应热词。"
+        },
+        {
+          "channel": "第一财经",
+          "kind": "media",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 检索与摘要核验",
+          "url": "https://www.yicai.com/news/103441951.html",
+          "note": "2026-11-16媒体报道。这是关注证据，不是热榜，也不是短视频爆款。"
+        }
+      ],
+      "vo_asr_limitation": "本轮未观看同题成片，没有可引用的口播原文，也没有可用的转写。"
+    },
+    {
+      "id": "ai_membership_vs_api",
+      "title_question": "交了 AI 会员费，到底买到了什么？为什么还有另一份 API 账单？",
+      "direction": "ai",
+      "today_role": "not_recommended_this_round",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "90-120",
+      "cost": {
+        "level": "中",
+        "reason": "账单分层好画，但条款会变，不能复刻原片未核的产业链数字。比 13 分钟推理引擎课更容易收在两分钟内。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "Yona呀",
+          "title": "跟着一笔20美元的AI会员费，走完整个产业链",
+          "url": "https://www.douyin.com/video/7698318890425683251",
+          "published": "2026-10-19 18:09 Asia/Shanghai",
+          "collected_at": "2026-11-17 14:33:06 Asia/Shanghai",
+          "likes": 60572,
+          "comments": 450,
+          "collects": 23262,
+          "shares": 14461,
+          "plays": null,
+          "duration_s": 366.6,
+          "note": "免登录详情 available。点赞不是播放。11-15 20:37 对照为赞 60392 / 评 449 / 藏 23129 / 转 14405。"
+        },
+        {
+          "role": "official",
+          "author": "OpenAI Help Center",
+          "title": "Managing billing for ChatGPT and the API platform",
+          "url": "https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform",
+          "published": null,
+          "collected_at": "2026-11-15 研究中已打开；2026-11-17 未再重取全文",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "ChatGPT 与 API 分开计费；部分订阅可能带 API 赠金，故不能说所有会员都不含 API 额度。"
+        }
+      ],
+      "watch_status": "2026-11-17 看了开头3秒拼图和全片接触纸；口播依据2026-11-15本地转写，需复核。本轮未连续播放、未实听。不能把这次观看写成已完整分析文案和画面。",
+      "audience_question": "每个月扣的会员费，到底买到了使用权、算力，还是另一套按量账单？",
+      "value": "分清前台会员权益和后台计量，避免「交了包月就买下无限 GPU」的误解。",
+      "timeliness": "作品发布于 10 月 19 日，今日互动仍高，属近一个月已验证高互动，不是今天新发布。",
+      "fact_sources": [
+        "Yona呀原作公开互动（今日刷新）",
+        "OpenAI 帮助中心计费说明（此前已打开）"
+      ],
+      "same_topic_refs": [
+        {
+          "url": "https://www.douyin.com/video/7698318890425683251",
+          "author": "Yona呀",
+          "note": "同题原作。学「从我的扣款进入」的结构，不抄全文和未核数字。"
+        }
+      ],
+      "same_topic_refs_note": "同题已看1条，底线8、目标10，未满。本轮未再补其他已观看的同题成片。不得用产业链或硬件题凑数。",
+      "original_angle": "不顺着 20 美元游遍全球公司。让同一任务同时出示会员权益票和 API 计量票；任务变长时只有计量尺变化。",
+      "visual_method": "自制扣款/票据示意（不复制原片界面和肖像）+ 双层账单并排。",
+      "reusable_assets": "双层账单和计量尺可延伸到前缀缓存题。不复用芯片旧题，不搬原片图标原声。",
+      "obstacles": "原片宏观营收/合同数字未独立核对，不采用；条款时效；商标；不能把计费说成真实边际成本或诱导开通。",
+      "evidence_observed": [
+        "今日14:33:06详情：赞60572、评450、藏23262、转14461，时长366.6秒。发布于2026-10-19 18:09。",
+        "今日15:00:15官方抖音热榜前50未见对应热词。",
+        "开头画面为扣款卡片叠加月费后再问钱去哪（接触纸/开头拼图，非完整听审）。"
+      ],
+      "judgment_subjective": [
+        "作为今日首推，是因为普通观众会关心自己交的会员费买到了什么，且有近一个月仍可核验的高互动成片；不是因为贴近面试，也不是今日热榜新词。",
+        "同题只有1条且口播未复核，调研未充分，是否定题及是否先补看，交给用户决定。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 1,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": true,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "仅1条同题作品（Yona呀原作）。看了开头约3秒拼图和全片接触纸，但未连续播完、未实听，故 hook_0_5s_complete_count=0（没有已核对的0–5秒口播原文）。评论与相关搜索有样本，评论只抽到50条、平台总评450，样本不完整。未满8条，不能算充分。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        },
+        {
+          "channel": "抖音作品详情（免登录）",
+          "kind": "work_engagement",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 14:33:06 Asia/Shanghai",
+          "url": "https://www.douyin.com/video/7698318890425683251",
+          "note": "赞60572/评450/藏23262/转14461；播放未公开为null。属近一个月高互动，不是今日热榜。"
+        }
+      ],
+      "vo_asr_limitation": "口播依据2026-11-15本地自动转写，未复核，不能当成已核对的口播原文引用。本轮未连续播放、未实听。开头画面来自接触纸/开头拼图，不是逐秒完整听审。"
+    },
+    {
+      "id": "cpu_core_enough",
+      "title_question": "CPU 核心越买越多，怎样判断还够不够用？",
+      "direction": "computer",
+      "today_role": "paused",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "80-120",
+      "cost": {
+        "level": "中偏高",
+        "reason": "原作近 12 分钟百科，要收成单点判断题才符合当前产能；刚做完芯片分档，硬件题容易看起来像续集。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "硬核软解",
+          "title": "科普不同CPU核心数量的区别",
+          "url": "https://www.douyin.com/video/7695823374752189732",
+          "published": "2026-10-13 05:22 Asia/Shanghai",
+          "collected_at": "2026-11-17 14:33:13 Asia/Shanghai",
+          "likes": 226986,
+          "comments": 6174,
+          "collects": 52789,
+          "shares": 22540,
+          "plays": null,
+          "duration_s": 706.9,
+          "note": "免登录详情 available。点赞不是播放。11-15 20:38 对照为赞 225323 / 评 6126 / 藏 52335 / 转 22362。"
+        }
+      ],
+      "watch_status": "2026-11-15有关键帧与需复核转写，本轮未重新连续观看或实听。今日只刷新详情和50条评论样本。不能把未连续观片写成已完整分析文案和画面。",
+      "audience_question": "核心数翻倍，我的游戏或工作会不会就明显变快？这一档还值不值得加钱？",
+      "value": "把「核心更多」收成「我的任务里哪一段能并行、哪一段不能」，而不是再做一版型号目录。",
+      "timeliness": "10 月 13 日发布，今日仍为高互动，属近一个月已验证作品，不是今日新热。",
+      "fact_sources": [
+        "原作公开互动（今日刷新）",
+        "若收成 Amdahl/可扩展性，需引用已核的官方说明，不能照搬片中未独立测试的帧数。"
+      ],
+      "same_topic_refs": [
+        {
+          "url": "https://www.douyin.com/video/7695823374752189732",
+          "author": "硬核软解",
+          "note": "原作是分档选购百科，近题但比我们建议的「够不够用/哪一段没变快」更宽。学推进方式，不照抄 12 分钟结构和跑分数。"
+        }
+      ],
+      "same_topic_refs_note": "同题已核1条，底线8、目标10，未满。不能把芯片分档旧题当同题对照。",
+      "original_angle": "只保留同一任务轨道上，能并行的珠子分道、必须排队的珠子不动。不重做单核到 64 核名录。",
+      "visual_method": "真实 CPU 认物后进入任务轨道示意，结果停留在「这一段没变快」。",
+      "reusable_assets": "任务珠/分道可新建。不复用 5070 Ti 分档旧片资产当本题内容。",
+      "obstacles": "与刚完成芯片题相邻；片中性能测试未独立测；不要暗示所有变慢都来自串行。",
+      "evidence_observed": [
+        "今日 14:33:13：赞 226986、评 6174、藏 52789、转 22540，时长 706.9 秒。"
+      ],
+      "judgment_subjective": [
+        "互动数据很硬，但刚做完芯片分档，硬件题容易看起来像续集，故作备选而不是首推。",
+        "同题只有1条且口播未复核，调研未充分。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 1,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": true,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "仅1条已核高互动成片（硬核软解）。11-15看过开头画面和接触纸，今日未重新连续观看或实听，故 hook_0_5s_complete_count=0。评论与相关搜索今日有样本。未满8条。不能把芯片分档旧题算进同题。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        },
+        {
+          "channel": "抖音作品详情（免登录）",
+          "kind": "work_engagement",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 14:33:13 Asia/Shanghai",
+          "url": "https://www.douyin.com/video/7695823374752189732",
+          "note": "赞226986/评6174/藏52789/转22540；播放未公开为null。不是今日热榜新词。"
+        }
+      ],
+      "vo_asr_limitation": "2026-11-15有需复核的本地转写；今日未重新连续观看或实听。旧转写不能当成已核对的口播原文。"
+    },
+    {
+      "id": "vllm_same_gpu",
+      "title_question": "同一张 GPU，为什么有的系统能多接下几倍请求？",
+      "direction": "ai,computer",
+      "today_role": "library",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "90-120",
+      "cost": {
+        "level": "高",
+        "reason": "原作约 13 分钟，含 KV cache、PagedAttention、连续批处理等一层以上机制；无 GPU 实测时很容易画成假性能。面试相关，但学习与核证负担重。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "小白debug",
+          "title": "大模型推理引擎vLLM 是什么？为什么同一张 GPU 能多扛几倍请求？",
+          "url": "https://www.douyin.com/video/7698986937880743211",
+          "published": "2026-10-21 14:26 Asia/Shanghai",
+          "collected_at": "2026-11-17 14:50:59 Asia/Shanghai",
+          "likes": 35502,
+          "comments": 557,
+          "collects": 21557,
+          "shares": 5532,
+          "plays": null,
+          "duration_s": 787.7,
+          "note": "免登录详情 available。收藏相对点赞不低，只作观察。点赞不是播放。相关搜索为「vllm部署本地模型教程」，说明部分观众在找部署教程，不是本机制题已经等同教程需求。"
+        }
+      ],
+      "watch_status": "本轮未观看原片；仅今日刷新详情与部分评论。11-15 曾有关键帧记录，但不把那次未连续观片说成已经掌握全课。",
+      "audience_question": "硬件没变，为什么请求量能明显变多？是单个请求变快了，还是把显存碎片和批处理用好了？",
+      "value": "若做，只讲清「缓存怎么占显存、为什么分页/共享能多塞请求」，并明确吞吐上升不等于每个请求都更快。",
+      "timeliness": "10 月 21 日发布，今日仍有稳定互动，属近一个月已验证作品。",
+      "fact_sources": [
+        "原作公开互动（今日刷新）",
+        "选中后需打开 vLLM 官方设计文档，上次曾遇 429，不能假装已经核完。"
+      ],
+      "same_topic_refs": [
+        {
+          "url": "https://www.douyin.com/video/7698986937880743211",
+          "author": "小白debug",
+          "note": "同题原作，未在本轮观看。相关搜索偏部署教程，对标时仍只盯「同一张 GPU 为何能多扛请求」。"
+        }
+      ],
+      "same_topic_refs_note": "不能用泛 AI 基础设施新闻顶替。",
+      "original_angle": "不做 13 分钟引擎大全。只演示同一块显存板：碎片空洞 vs 整齐分页后再进来更多请求。",
+      "visual_method": "一块真实 GPU 认物 + 显存槽示意。禁止用假跑分数字。",
+      "reusable_assets": "与长对话 KV 题可共享「缓存占位」语法，但必须是不同问题，不能两期复用同一套结论。",
+      "obstacles": "机制范围易膨胀；无 GPU 实测；观众可能期待安装教程；原作视觉包装不要复刻。",
+      "evidence_observed": [
+        "今日 14:50:59：赞 35502、评 557、藏 21557、转 5532，时长 787.7 秒。",
+        "抽到的评论里有人拿它对照操作系统调度，也有人在问本地部署和面试简历，不完全是同一问题。"
+      ],
+      "judgment_subjective": [
+        "关注真实，但成本和核证偏高，先入库不进今日三题。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": true,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "今日只刷新详情与部分评论，没有完整看片，故watched_count记0（不把未连续观片算作已看同题）。未满8条。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        }
+      ],
+      "vo_asr_limitation": "本轮没有已核对的完整口播原文。若仅有旧转写或未连续观看，不能当成口播原文引用。"
+    },
+    {
+      "id": "prefix_cache_cheaper",
+      "title_question": "为什么同样的开头被再问一次，账单会明显变便宜？",
+      "direction": "ai,new_tech",
+      "today_role": "library",
+      "evidence_status": "新技术有关注证据",
+      "heat_tag": "近热",
+      "suggested_length_s": "60-90",
+      "cost": {
+        "level": "中偏低",
+        "reason": "官方已给出缓存命中价差，演示「同一段前缀被复用」即可；要避免和会员费、长对话两题并成一期。"
+      },
+      "sources": [
+        {
+          "role": "official",
+          "author": "腾讯",
+          "title": "Hy4 flash 发布页定价",
+          "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+          "published": "2026-11-16",
+          "collected_at": "2026-11-17 已打开",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "官方写每百万 token 输入 0.5 元、输出 2 元，命中缓存时仅需 0.02 元。价格会变，引用需标注日期。"
+        },
+        {
+          "role": "official",
+          "author": "Alibaba Cloud",
+          "title": "Qwen4-Max 新闻稿中的 Implicit Cache Hit 价格",
+          "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+          "published": "2026-11-16",
+          "collected_at": "2026-11-17 已打开",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "新闻稿写 Input (Implicit Cache Hit) is priced at $0.075 per 1M tokens。具体档位以当时帮助中心为准。"
+        }
+      ],
+      "watch_status": "无同题成片被列为已观看。",
+      "audience_question": "我几乎没改提示词，为什么有时会显示缓存命中、价格低很多？",
+      "value": "看完能把「重复前缀被复用」和「模型变聪明了」分开。",
+      "timeliness": "与 11 月 16 日两家定价说明同步，是昨天的产品机制。",
+      "fact_sources": [
+        "腾讯官方发布页",
+        "阿里云新闻稿"
+      ],
+      "same_topic_refs": [],
+      "same_topic_refs_note": "本轮没有已观看的同题短视频，如实标注。",
+      "original_angle": "同一段系统提示反复出现，只有第一次完整计费，后续命中的部分走短轨。不讲某家内部实现。",
+      "visual_method": "一张已写好的前缀纸被第二次直接取用，计量尺明显缩短。",
+      "reusable_assets": "可接在会员费题之后，但需用户另选，不默认系列排期。",
+      "obstacles": "价格时效；「缓存命中」在不同产品里名称不同；不能保证观众自己的请求一定命中。",
+      "evidence_observed": [
+        "两家 2026-11-16 官方页面都公开了缓存命中更便宜的价格。"
+      ],
+      "judgment_subjective": [
+        "机制清楚、成本较低，但观众切身痛感可能弱于「被限流」和「会员费买到什么」，故作库内题。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": false,
+        "status": "未开始",
+        "note": "无同题成片被列为已观看。未满8条。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        }
+      ],
+      "vo_asr_limitation": "未核对完整口播前，不得引用口播原文。"
+    },
+    {
+      "id": "context_window_forget",
+      "title_question": "越聊越傻，是不是把这一轮能看的材料挤掉了？",
+      "direction": "ai",
+      "today_role": "library",
+      "evidence_status": "待验证",
+      "heat_tag": "历史",
+      "suggested_length_s": "70-110",
+      "cost": {
+        "level": "中",
+        "reason": "舞台清楚，但要同时挡住「只有这一种原因」；与长对话限流题相邻，必须分清是遗忘/截断还是算力调度。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "智能体阿朱",
+          "title": "一条视频搞懂15个主流AI热词（含上下文窗口等）",
+          "url": "https://www.douyin.com/video/7677789451007649658",
+          "published": null,
+          "collected_at": "2026-11-02/03 旧选题系统快照，不是今日数据",
+          "likes": 95833,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "旧快照点赞。该片是 22 分钟热词合集，不是专门的上下文窗口同题片，不能当作本题已验证爆款。"
+        }
+      ],
+      "watch_status": "本轮未观看上述合集片。",
+      "audience_question": "明明刚才交代过，为什么聊着聊着就不认了？",
+      "value": "区分「这一轮送进去的材料」「容量限制」和「长期记忆是另一套机制」。",
+      "timeliness": "常青问题。当前没有今日刷新的同题高互动成片，故标历史/待验证，不能当成今天新热。",
+      "fact_sources": [
+        "需在选中后补当前产品官方的上下文窗口说明；容量大不等于每条信息都被用好。"
+      ],
+      "same_topic_refs": [],
+      "same_topic_refs_note": "旧库里的热词合集只是领域相邻，不是同一具体问题，不列入同题对标。",
+      "original_angle": "同一张约束便签从工作台掉到「本轮未送入」。不做旧角色剧。",
+      "visual_method": "真实对话材料变成有限工位上的纸张，满了之后旧纸移到旁边抽屉，仍可见但不再被读取。",
+      "reusable_assets": "与长对话 KV 题相邻但问题不同：这里是「没带上/被挤掉」，那里是「带上了所以更贵或被限」。",
+      "obstacles": "旧像素角色方案已废止；不能断言所有降质都是窗口塞满；今日互动证据不足。",
+      "evidence_observed": [
+        "仅有 2026-11-02/03 对含「上下文窗口」字样合集片的旧点赞快照，不是本题今日数据。"
+      ],
+      "judgment_subjective": [
+        "问题仍值得做，但按本系统规则今天不能升为已验证高互动。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": false,
+        "status": "未开始",
+        "note": "本轮未观看所列合集片。未满8条。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        }
+      ],
+      "vo_asr_limitation": "本轮没有已核对的完整口播原文。若仅有旧转写或未连续观看，不能当成口播原文引用。"
+    },
+    {
+      "id": "attention_pronoun",
+      "title_question": "AI 为什么能分清这句话里的「他」是谁？",
+      "direction": "ai",
+      "today_role": "library",
+      "evidence_status": "待验证",
+      "heat_tag": "历史",
+      "suggested_length_s": "80-120",
+      "cost": {
+        "level": "中偏高",
+        "reason": "概念过渡要求高，原作是长课，短视频容易讲浅或假装成注意力热图实测。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "3Blue1Brown / Grant Sanderson",
+          "title": "Attention in transformers, step-by-step",
+          "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+          "published": "2024-04-07（作者图文页确认，此前研究记录）",
+          "collected_at": "2026-11-15 打开过作者图文与第三方播放展示，非今日平台实时数",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "第三方 SocialCounts 曾展示过播放/点赞，采集刷新时刻不明，本轮不把该数字当作今日爆款证据。作者图文：https://www.3blue1brown.com/lessons/attention"
+        },
+        {
+          "role": "paper",
+          "author": "Vaswani et al.",
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762",
+          "published": "2017-06",
+          "collected_at": "2026-11-15 曾打开论文 §3.2 要点",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "attention 按 query/key 相容性对 value 加权。"
+        }
+      ],
+      "watch_status": "此前取得过原作公开文本，尚未在本轮下载媒体、连续观看或实听。",
+      "audience_question": "只改一个「没」字，为什么人对「他」的理解会转向，模型内部是不是也在做类似的关系加权？",
+      "value": "只讲一个点：词的表示可以接收上下文，而不是每个词都是孤立词条。",
+      "timeliness": "机制长青。今日没有中文短视频的新互动核验，故标待验证。",
+      "fact_sources": [
+        "Attention Is All You Need §3.2（此前已读要点）",
+        "3Blue1Brown 图文原版（此前已打开）"
+      ],
+      "same_topic_refs": [
+        {
+          "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+          "author": "3Blue1Brown",
+          "note": "同机制长课，未在本轮观看动态。只学「先给多义动机再进入计算」，不搬镜头与例子。"
+        }
+      ],
+      "same_topic_refs_note": "没有今日已观看的中文同题短视频。",
+      "original_angle": "用两句只差一个「没」的中文示意句，不搬 mole/苹果翻译镜头，不伪造模型热图。",
+      "visual_method": "同一追逐舞台上，指代标记的连接强度变化。权重只标示意。",
+      "reusable_assets": "文字/指代表记可复用。不复用芯片资产。",
+      "obstacles": "中文分词不等于一词一 token；不能说注意力等于人类理解；海外长课播放不能直接当国内短视频热度。",
+      "evidence_observed": [
+        "机制有可定位论文和作者图文；今日无新的中文互动核验。"
+      ],
+      "judgment_subjective": [
+        "面试相关度高，但今日缺少短视频关注证据，先入库。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": false,
+        "status": "未开始",
+        "note": "此前取得过原作公开文本，尚未下载媒体、连续观看或实听，不计入已看同题。未满8条。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        }
+      ],
+      "vo_asr_limitation": "未核对完整口播前，不得引用口播原文。"
+    },
+    {
+      "id": "amdahl_serial_limit",
+      "title_question": "核心数翻倍，为什么有一段任务几乎一点没快？",
+      "direction": "computer",
+      "today_role": "library",
+      "evidence_status": "待验证",
+      "heat_tag": "历史",
+      "suggested_length_s": "60-90",
+      "cost": {
+        "level": "中",
+        "reason": "演示装置清楚；要和「核心数选购百科」以及芯片分档明确分开，并讲清假设。"
+      },
+      "sources": [
+        {
+          "role": "official",
+          "author": "Intel",
+          "title": "官方对 Amdahl 定律/可扩展性的说明（此前研究已打开）",
+          "url": null,
+          "published": null,
+          "collected_at": "2026-11-15 研究记录",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "此前打开过 Intel 关于串行部分限制加速比的说明。本轮未重开原页，选中后须补回可点击的原链接。"
+        },
+        {
+          "role": "original_work",
+          "author": "硬核软解",
+          "title": "科普不同CPU核心数量的区别（近题，不是本问的完整同题）",
+          "url": "https://www.douyin.com/video/7695823374752189732",
+          "published": "2026-10-13 05:22 Asia/Shanghai",
+          "collected_at": "2026-11-17 14:33:13 Asia/Shanghai",
+          "likes": 226986,
+          "comments": 6174,
+          "collects": 52789,
+          "shares": 22540,
+          "plays": null,
+          "duration_s": 706.9,
+          "note": "这是「各档核心还够不够用」的百科，不是专门讲 Amdahl。只作近题线索，不把其高互动直接算到本问头上。"
+        }
+      ],
+      "watch_status": "硬核软解片见 cpu_core_enough 的观看边界。本题机制片未在本轮另采。",
+      "audience_question": "我已经加了核心，为什么还是在同一处等待？",
+      "value": "看见「不能并行的依赖段会封顶加速」，而不是记住定律名字。",
+      "timeliness": "常青机制。没有单独的今日同题高互动核验，故待验证。",
+      "fact_sources": [
+        "Intel 可扩展性说明需在选中后重开原页核对。"
+      ],
+      "same_topic_refs": [],
+      "same_topic_refs_note": "硬核软解是近题不是本问的完整同题，不列入同题对标。",
+      "original_angle": "同一串任务珠，独立珠分道、依赖珠仍排队。不拿示意秒数冒充跑分。",
+      "visual_method": "一条轨道变多条再合拢，合拢点时间几乎不动。",
+      "reusable_assets": "与 cpu_core_enough 可能共享轨道语法，但若已做选购判断题，本题应暂缓避免重复。",
+      "obstacles": "和库内 CPU 选购题、已完成芯片题都可能撞车；示意时间不能写成实测。",
+      "evidence_observed": [
+        "通用机制此前有官方说明记录；今日没有单独同题成片数据。"
+      ],
+      "judgment_subjective": [
+        "适合作为 CPU 题的更窄切法，不与 cpu_core_enough 同时推进。"
+      ],
+      "post_publish": {
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": false,
+        "status": "未开始",
+        "note": "与CPU核数题相邻但不是同一问题；不能把硬核软解那条算进本题同题。本题机制片未在本轮另采。未满8条。"
+      },
+      "heat_sources": [
+        {
+          "channel": "抖音公开热榜接口",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+          "url": null,
+          "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+        }
+      ],
+      "vo_asr_limitation": "未核对完整口播前，不得引用口播原文。"
+    },
+    {
+      "id": "memory_gen_upgrade",
+      "title_question": "换一代内存，或再插一条，电脑就一定会明显变快吗？",
+      "direction": "computer",
+      "today_role": "not_recommended_this_round",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "70-110",
+      "cost": {
+        "level": "中",
+        "reason": "有高互动原作可学，但原作近 6 分半是代际百科，要收成判断题；定题后须先看片。频率/时序数字不能编。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "硬核软解",
+          "title": "科普每一代电脑内存",
+          "url": "https://www.douyin.com/video/7700534903053634851",
+          "published": "2026-10-25 17:28 UTC+8",
+          "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+          "likes": 24113,
+          "comments": 681,
+          "collects": 6293,
+          "shares": 2374,
+          "plays": null,
+          "duration_s": 388.8,
+          "note": "今晚官方详情 available。点赞不是播放。作者 unique_id YingheRuanjie 此前已核。本轮未看片。"
+        }
+      ],
+      "watch_status": "本轮仍未看片、无转写。仅详情与评论抽样。",
+      "audience_question": "内存从 DDR4 换成 DDR5，或者再插一条，电脑就一定会明显变快吗？",
+      "value": "把升级收成「加容量」和「加速度」两件不同的事，而不是再做一代代内存名录。",
+      "timeliness": "2026-10-25 发布，今晚仍为高互动；官方抖音热榜 17:11 前 50 无此词，不是今日热搜。",
+      "fact_sources": [
+        "原作公开互动（今晚刷新）",
+        "定题后频率/代际对照需另开可核对的厂商或标准说明，本轮尚未打开该类事实页。"
+      ],
+      "same_topic_refs": [
+        {
+          "url": "https://www.douyin.com/video/7700534903053634851",
+          "author": "硬核软解",
+          "note": "仅详情。原作标题是代际科普，我们建议收成判断题，不是已看后的复述。"
+        }
+      ],
+      "same_topic_refs_note": "原作是代际名录，与「换一代会更快吗」「内存越大越快吗」不是同一问句。后者关键词 so/360 均为空，供给未知，不能写成蓝海。",
+      "original_angle": "一根条、一个插槽、同一个具体任务；分开「箱子不够」和「传送带没更快」。",
+      "visual_method": "先认真实内存条和插槽，再用容量箱子对照速度传送带，结果停在任务有没有明显变快。",
+      "reusable_assets": "不复用 CPU 核数样段或芯片分档旧资产当本题内容。",
+      "obstacles": "未看片不能写死原作论点；不要做成 6 分半编年史；不要堆频率时序术语。",
+      "evidence_observed": [
+        "search/sug：换DDR5主要联想换主板/配件；内存越大越快吗有联想。",
+        "评论 120/682：重复的是价格、混条、兼容，而不是换代会更快。"
+      ],
+      "judgment_subjective": [
+        "上一轮因认可作者+高赞排第一，需求与同题供给都未对齐，本轮淘汰出短名单，不保留名额。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "候选阶段仅核 1 条元数据，已看 0。定题后再补，未满实报。"
+      },
+      "heat_sources": [
+        {
+          "channel": "douyin official detail",
+          "kind": "work_engagement",
+          "rank": null,
+          "heat": 24113,
+          "captured_at": "2026-11-17 17:14:42 Asia/Shanghai",
+          "url": "https://www.douyin.com/video/7700534903053634851",
+          "note": "作品互动，不是热搜。likes 不是播放。"
+        }
+      ],
+      "vo_asr_limitation": "未观看则无口播原文。"
+    },
+    {
+      "id": "disk_tb_shows_931gb",
+      "title_question": "买了 1TB 的硬盘，为什么电脑里只显示大约 931GB？",
+      "direction": "computer",
+      "today_role": "previous_round_contrast_no_reserved_slot",
+      "evidence_status": "待验证",
+      "heat_tag": "历史",
+      "suggested_length_s": "50-80",
+      "cost": {
+        "level": "低",
+        "reason": "厂商说明已打开，物件清楚，验证成本低。同题成片互动一般，不能靠爆款成片撑场。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "M原理局",
+          "title": "为什么1TB的硬盘，实际只有931G？",
+          "url": "https://www.douyin.com/video/7698318558442360127",
+          "published": "2026-10-19 18:07 UTC+8",
+          "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+          "likes": 918,
+          "comments": 70,
+          "collects": 136,
+          "shares": 153,
+          "plays": null,
+          "duration_s": 85.6,
+          "note": "今晚详情 available。互动一般，不能写成高互动爆款。未看片。点赞不是播放。"
+        },
+        {
+          "role": "original_work",
+          "author": "游机队-小游（DIY电脑）",
+          "title": "1t只有931g？固态容量是缩水还是另外有隐情？",
+          "url": "https://www.douyin.com/video/7310150141598502195",
+          "published": "2023-12-10 17:30 UTC+8",
+          "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+          "likes": 1277,
+          "comments": 135,
+          "collects": 80,
+          "shares": 52,
+          "plays": null,
+          "duration_s": 51.0,
+          "note": "2023 年旧片，更不能写成今天爆。未看片。"
+        },
+        {
+          "role": "official",
+          "author": "Seagate 中国支持",
+          "title": "为什么我的硬盘报告的容量少于标签上表明容量？",
+          "url": "https://www.seagate.com/cn/zh/support/kb/lacie/why-does-my-hard-drive-report-less-capacity-than-indicated-on-the-drives-label-172191en/",
+          "published": null,
+          "collected_at": "2026-11-17 17:13 Asia/Shanghai",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "本轮全文打开。标称 1TB 在 Windows 二进制下约 931GB。"
+        },
+        {
+          "role": "official",
+          "author": "Apple 支持",
+          "title": "储存空间容量的测量方式（支持文档 102119）",
+          "url": "https://support.apple.com/zh-cn/102119",
+          "published": null,
+          "collected_at": "2026-11-17 17:16 Asia/Shanghai",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "本轮打开。包装常用十进制，系统或 App 报告容量可能不同。"
+        }
+      ],
+      "watch_status": "本轮读了小西设计所、M原理局两条本地转写（需复核）并抽帧；未连续听审，未用模型看图。游机队等未看片。",
+      "audience_question": "包装上写 1TB，电脑属性里为什么只剩大约 931GB？是不是被偷了？",
+      "value": "用两把尺子量同一根棍子，解释标签和系统窗口为什么对不上，而不是先讲二进制前缀术语。",
+      "timeliness": "机制是长期存在的计量差，不是今晚热搜。成片一新一旧，互动一般。",
+      "fact_sources": [
+        "希捷中国支持页（本轮打开）：1TB 标签在 Windows 下约 931GB",
+        "苹果支持 102119（本轮打开）：十进制标称与系统报告可能不同"
+      ],
+      "same_topic_refs": [
+        {
+          "url": "https://www.douyin.com/video/7698318558442360127",
+          "author": "M原理局",
+          "note": "仅详情，赞 918，未看片。"
+        },
+        {
+          "url": "https://www.douyin.com/video/7310150141598502195",
+          "author": "游机队-小游（DIY电脑）",
+          "note": "仅详情，2023 年旧片，赞 1277，未看片。"
+        }
+      ],
+      "same_topic_refs_note": "已见表至少 4 作者，已看转写 2 条，底线 8 未满。官方 so 检索空，360 补充后再核详情。检索空不等于供给少。",
+      "original_angle": "手持 1TB 标签对属性窗口 931GB，只讲进制差；系统预留分区若提及必须单独分开。",
+      "visual_method": "真实硬盘/固态标签 + 属性窗口 + 两把尺子（1000 与 1024）。",
+      "reusable_assets": "不复用分档或 CPU 旧资产。",
+      "obstacles": "未看片；不要把分区预留和进制差混成「被偷」；不要暗示所有容量差都是骗局。",
+      "evidence_observed": [
+        "search/sug 2026-11-17 17:36：1tb只有931gb正常吗、为什么装了1tb的固态只显示931 等。",
+        "M原理局评论（一级 20/70 收全，2026-10）：「所以能用的容量到底是多少？」赞 22（2026-10-20）。",
+        "小西评论（一级 73/94）：「省流:内存有公摊面积」赞 47（2024-05-21）；7/73 含公摊。2026-06-21：「那就别宣传说是1tb」。",
+        "今晚详情：小西赞 2899，游机队 1277，M原理局 918。"
+      ],
+      "judgment_subjective": [
+        "排第一是因为需求具体、已有供给把结论留在公摊/能用多少上，而不是因为好做或时长短。",
+        "已见表最高赞不高，机会是讲清楚，不是追爆款规模。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "候选阶段核到 2 作者元数据，已看 0。官方事实已开。未满。"
+      },
+      "heat_sources": [
+        {
+          "channel": "douyin official detail",
+          "kind": "work_engagement",
+          "rank": null,
+          "heat": 918,
+          "captured_at": "2026-11-17 17:14:42 Asia/Shanghai",
+          "url": "https://www.douyin.com/video/7698318558442360127",
+          "note": "中等互动，不是热搜，不是播放。"
+        },
+        {
+          "channel": "official Seagate KB",
+          "kind": "official_release",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 17:13 Asia/Shanghai",
+          "url": "https://www.seagate.com/cn/zh/support/kb/lacie/why-does-my-hard-drive-report-less-capacity-than-indicated-on-the-drives-label-172191en/",
+          "note": "官方说明，不是大众热搜。"
+        }
+      ],
+      "vo_asr_limitation": "未观看则无口播原文。事实以厂商说明为准。"
+    },
+    {
+      "id": "gpu_number_vs_strength",
+      "title_question": "显卡型号上的数字越大，就一定更强吗？",
+      "direction": "computer",
+      "today_role": "previous_round_contrast_no_reserved_slot",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "50-80",
+      "cost": {
+        "level": "中",
+        "reason": "原作短、互动已核，但与刚完成的芯片分档相邻，且未看片；具体型号对比不能编百分比。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "装机不迷糊",
+          "title": "显卡数字越大，性能就越强吗？",
+          "url": "https://www.douyin.com/video/7688555036581842226",
+          "published": "2026-09-23 19:00 UTC+8",
+          "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+          "likes": 16611,
+          "comments": 1029,
+          "collects": 3539,
+          "shares": 2713,
+          "plays": null,
+          "duration_s": 57.4,
+          "note": "今晚官方详情 available。点赞不是播放。未看片。"
+        }
+      ],
+      "watch_status": "本轮读了装机不迷糊本地转写（需复核）并抽帧；约 54.7 秒后转写幻觉已弃用。未连续听审，未用模型看图。第二作者未看片。",
+      "audience_question": "显卡型号里的数字更大，就一定比数字小的更强吗？",
+      "value": "拆开「代数」和「同一代里的档位」，避免按数字大小购物。不是晶圆分档/屏蔽题。",
+      "timeliness": "2026-09-23 发布，今晚仍为高互动；不是今日热搜。",
+      "fact_sources": [
+        "原作公开互动（今晚刷新）",
+        "定题后具体型号对照需另开厂商公开定位，本轮未打开该类产品页。"
+      ],
+      "same_topic_refs": [
+        {
+          "url": "https://www.douyin.com/video/7688555036581842226",
+          "author": "装机不迷糊",
+          "note": "仅详情。不能把标题当成已核实口播论点。"
+        }
+      ],
+      "same_topic_refs_note": "已看转写 1 条。百脑汇 2022「显卡的划分」赞 519 未看片。so 检索空，不能写成蓝海。底线 8 未满。",
+      "original_angle": "两块铭牌并排，说明数字不是一把统一的尺。不做分档/残次品续集。",
+      "visual_method": "真实显卡外盒或型号铭牌，不用编造的跑分表。",
+      "reusable_assets": "不复用 5070 Ti 分档旧片资产。",
+      "obstacles": "与刚完成分档题相邻，不宜首推；未看片；禁止编帧数。",
+      "evidence_observed": [
+        "search/sug 17:36：显卡数字越大就越强吗、显卡后缀数字代表什么 等。",
+        "评论抽样 120/1029（2026-11-17 17:38）：样本中 73 条跨代数字、33 条求推荐。赞 74｜2026-10-10「直接上5060还是4090」；赞 12｜2026-10-19「5060TI还是4080S」。",
+        "今晚详情：赞 16611 / 评 1029 / 藏 3539 / 转 2713。收藏动机未取证。"
+      ],
+      "judgment_subjective": [
+        "排第二是因为需求真实，但同题近作已经把标题判断讲完，机会主要在「应用到购物对」而不是重讲规则。",
+        "已见表头部集中于这一条，不把检索空写成蓝海。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "候选阶段仅核 1 条元数据，已看 0。分档题不得顶替同题。未满。"
+      },
+      "heat_sources": [
+        {
+          "channel": "douyin official detail",
+          "kind": "work_engagement",
+          "rank": null,
+          "heat": 16611,
+          "captured_at": "2026-11-17 17:14:42 Asia/Shanghai",
+          "url": "https://www.douyin.com/video/7688555036581842226",
+          "note": "作品互动，不是热搜。likes 不是播放。"
+        }
+      ],
+      "vo_asr_limitation": "未观看则无口播原文。"
+    },
+    {
+      "id": "llm_leaderboard_vs_useful",
+      "title_question": "榜上第一的大模型，就一定更好用吗？",
+      "direction": "new_tech",
+      "today_role": "insufficient_pending",
+      "evidence_status": "新技术有关注证据",
+      "heat_tag": "近热",
+      "suggested_length_s": "60-90",
+      "cost": {
+        "level": "中",
+        "reason": "今晚仅有第三方微博热词，无官方抖音热搜，无同题成片；验证成本和误述风险偏高。"
+      },
+      "sources": [
+        {
+          "role": "media",
+          "author": "钛媒体",
+          "title": "“跑高分”不等于“能交付”：AI排行榜正在经历一场信用重估",
+          "url": "https://www.tmtpost.com/8183550.html",
+          "published": "2026-10-27 18:42",
+          "collected_at": "2026-11-17 17:16 Asia/Shanghai",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "note": "本轮打开。是 10 月底稿，不是今天新稿。文中具体榜分数值未独立复核。"
+        }
+      ],
+      "watch_status": "未观看",
+      "audience_question": "排行榜上分数更高、排在第一的大模型，就一定更好用吗？",
+      "value": "分开「榜上的分」和「手头这件事有没有做好」，不堆基准名和参数量。",
+      "timeliness": "第三方微博聚合今晚 17:10 有词；官方抖音 17:11 前 50 无此词；官方微博未打开；对上的媒体稿是 10 月 27 日。",
+      "fact_sources": [
+        "钛媒体 2026-10-27 稿（打开，分数未复核）",
+        "尚无已核同题短视频"
+      ],
+      "same_topic_refs": [],
+      "same_topic_refs_note": "同题成片 0。检索「AI大模型刷榜」官方 so 为空，360 两条跑题。热门技术题允许暂时为 0，但不能写成已充分。底线 8 未满。",
+      "original_angle": "一块分数牌对一件真实小事（写清楚一段工作消息，或核对一个能查到的事实）。",
+      "visual_method": "分数牌切到同一任务的成败，不点名未核分数，不堆模型参数。",
+      "reusable_assets": "无。",
+      "obstacles": "官方热搜缺失；话题原帖/官方微博页未打开；无成片对标；禁止转述未复核跑分。不建议未补证据就开拍。",
+      "evidence_observed": [
+        "soso.re 微博聚合页面更新 2026/11/17 17:10，抓取 2026-11-17 17:11:22 Asia/Shanghai：第 8「AI大模型刷榜还有意义吗」，显示热度 527229。不得冒充官方榜。",
+        "官方抖音热榜 2026-11-17 17:11:22 Asia/Shanghai 前 50 无该词。",
+        "钛媒体稿打开，时间为 2026.10.27 18:42。"
+      ],
+      "judgment_subjective": [
+        "有第三方微博词和搜索联想，但无同题成片、未观看，不推荐开做，标待查。不能把检索空写成蓝海。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题；领域相邻不能顶替",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "同题成片 0、已看 0。新技术允许暂时为 0，必须如实标明未满。"
+      },
+      "heat_sources": [
+        {
+          "channel": "soso.re 微博热搜聚合",
+          "kind": "third_party_board",
+          "rank": 8,
+          "heat": 527229,
+          "captured_at": "2026-11-17 17:11:22 Asia/Shanghai",
+          "url": "https://soso.re/weibo",
+          "note": "第三方聚合，页面更新 2026/11/17 17:10。不得冒充官方微博或官方抖音。官方微博榜未打开。"
+        },
+        {
+          "channel": "iesdouyin official hot word billboard",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 17:11:22 Asia/Shanghai",
+          "url": "https://www.iesdouyin.com/web/api/v2/hotsearch/billboard/word/",
+          "note": "官方抖音前 50 无此词。"
+        },
+        {
+          "channel": "钛媒体",
+          "kind": "media",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 17:16 Asia/Shanghai",
+          "url": "https://www.tmtpost.com/8183550.html",
+          "note": "2026-10-27 18:42 发布，不是今日新稿。"
+        }
+      ],
+      "vo_asr_limitation": "无成片，无口播原文。"
+    },
+    {
+      "id": "ai_long_chat_forgets_setting",
+      "title_question": "为什么 AI 聊久了，会忘记之前的设定？",
+      "direction": "ai",
+      "today_role": "selected",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "60-120",
+      "cost": {
+        "level": "未评估",
+        "reason": "",
+        "use": "scheduling_only",
+        "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "华大狗学长",
+          "title": "大肥鱼的记忆有救了？！告别上下文失忆！",
+          "url": "https://www.douyin.com/video/7700667387095692891",
+          "published": "2026-10-26 07:00 Asia/Shanghai",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 31579,
+          "comments": 1456,
+          "collects": 17743,
+          "shares": 5239,
+          "plays": null,
+          "duration_s": 106.6,
+          "current_applicability": "部分适用：遗忘钩子仍贴近当前用户问题；后半转向记忆插件/项目，不能单独当作当前记忆机制的完整说明。须用当前一手资料再核上下文、摘要交接与长期记忆的现状。",
+          "note": "点赞不等于播放。已看 0–5 秒画面和全片均匀帧；平台无自带字幕；本地转写需复核，不当原话。"
+        },
+        {
+          "role": "official",
+          "author": "Qwen",
+          "title": "Qwen4-Max 1M 上下文发布",
+          "url": null,
+          "published": "2026-11-16",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": null,
+          "comments": null,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": null,
+          "current_applicability": "可作为「窗口变长是不是就不会忘」的当前产品背景，但本轮未核到专门讲该发布的成片，也未在本快照中补做一手界面核实。",
+          "note": "官方发稿只证明有产品发布，不自动等于大众热搜。"
+        }
+      ],
+      "watch_status": "仅关键帧与转写",
+      "audience_question": "普通用户和 AI 聊久了，为什么会忘掉之前说过的设定或交代过的事？",
+      "value": "已有高互动成片把需求接到装插件；可做的增量是把有限上下文、丢掉或压缩、摘要交接，以及窗口变长和长期记忆的区别讲清楚。",
+      "timeliness": "不是今日官方热搜。证据是 2026-10-26 仍维持高互动的垂直作品，以及当晚仍在更新的评论。",
+      "fact_sources": [
+        "华大狗学长 2026-10-26 成片（抽帧与评论抽样）",
+        "搜索框联想 2026-11-17 18:39",
+        "Qwen4-Max 1M 窗口 2026-11-16 发布（未核专门成片）"
+      ],
+      "same_topic_refs": [
+        {
+          "author": "华大狗学长",
+          "url": "https://www.douyin.com/video/7700667387095692891",
+          "published": "2026-10-26 07:00 Asia/Shanghai",
+          "current_applicability": "钩子适用；插件解决方案不能代替「为什么会忘」的机制说明。",
+          "watched": "keyframes"
+        }
+      ],
+      "same_topic_refs_note": "已看 1 条主标并登记相关插件向推荐；未满 8。定题后须再补同机制、不同作者，并优先近期作品、用当前一手资料核实机制。",
+      "original_angle": "对准「为什么会忘」，而不是再做记忆插件安装教程。",
+      "visual_method": "待定题后深拆和写稿时锁定；本快照不臆造已定的贯穿物件或分镜。",
+      "reusable_assets": "",
+      "obstacles": "同题 8/10 未满；口播除看图抄录的烧录字幕外，本地转写需复核。选择之后的深拆结果未写入本快照。",
+      "evidence_observed": [
+        "搜索联想有「为什么ai聊久了会忘记之前的设定」「为什么ai老是会忘记长对话的内容」等。",
+        "主标评论抽样 150/1456，仍在问断片还是被换掉、记忆是否按字收费、插件和本地记文件的差别。",
+        "主标 0–5 秒把「上下文一炸、直接失忆」立住后，很快转到 dsh-honcho / 记忆库。"
+      ],
+      "judgment_subjective": [
+        "需求和供给都有证据，但打得响的切口与「为什么会忘」错位，仍有内容质量空间。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是同一具体问题「为什么聊久了会忘记设定/交代过的事」；记忆插件教程或「窗口一百万就不会忘吗」不能顶替。",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 1,
+        "hook_0_5s_complete_count": 1,
+        "comments_collected": true,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "已看 1 条主标。用户已选定本题，但定题后的深拆尚未作为研究结果写入。不得把未完成的深拆写成已充分。"
+      },
+      "heat_sources": [
+        {
+          "channel": "官方抖音热搜",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+          "url": null,
+          "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+        }
+      ],
+      "vo_asr_limitation": "平台无自带字幕。开头口播以看图抄录的烧录字幕为准。本地转写需复核，不能当成已核对的口播原文。",
+      "candidate_packaging": "最终推荐已拆结构与画面",
+      "recommendation_evidence": {
+        "demand": {
+          "audience_situations": [
+            "日常聊天、养角色或办公长对话的普通用户，聊着聊着就不记得刚才交代的设定。"
+          ],
+          "repeated_questions_in_search_or_comments": [
+            "为什么ai聊久了会忘记之前的设定",
+            "忘记是断片还是被换掉",
+            "记忆要不要按字付费",
+            "插件和把内容记在文件里有何差别"
+          ],
+          "evidence_freshness_and_scope": "搜索联想采集于 2026-11-17 18:39；评论为当晚对主标 150/1456 的抽样。",
+          "note": "点赞不能替代需求。"
+        },
+        "supply_competition": {
+          "same_topic_multi_author_samples": [
+            "华大狗学长 2026-10-26，已拆结构和画面；切口随即转向记忆插件。"
+          ],
+          "distribution_and_timing": "目前深拆样本 1 条，发布于 2026-10-26，不是今日新片。",
+          "head_and_homogenization_visible_evidence": "已见表里打得响的作品把遗忘当钩子，很快转到记忆插件/项目。"
+        },
+        "unmet_opportunity_and_quality_upside": {
+          "unmet_need": "评论仍在问忘了是断片还是被换掉，以及窗口/插件/本地记录的差别。",
+          "expected_quality_improvement": "把遗忘机制本身讲清楚，并回答窗口很大是不是就不会忘。"
+        },
+        "heat_and_sustained_spread": {
+          "heat_evidence": "不是今日官方热搜。",
+          "sustained_spread_evidence": "2026-10-26 成片当晚仍维持高互动，评论仍在更新。"
+        }
+      },
+      "red_blue_ocean": {
+        "judgment": "混合",
+        "basis": "问法清楚，也有高互动成片，但打得响的切口是记忆插件/项目，与「为什么会忘」错位。不能因为官方搜索空就叫蓝海。",
+        "note": "仅在需求与供给都有证据时的有限判断。不自行造评分。"
+      },
+      "form_only_refs": [],
+      "view_records": [
+        {
+          "material": "https://www.douyin.com/video/7700667387095692891",
+          "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+          "model": "Gemini 3.8 Flash medium",
+          "scope": "keyframes",
+          "note": "抽样看 hook 0–5 秒拼图和全片均匀帧，不是连续播放或完整听审。"
+        }
+      ]
+    },
+    {
+      "id": "c_drive_fills_itself",
+      "title_question": "明明没装东西，C 盘为什么会自己变满？",
+      "direction": "computer",
+      "today_role": "this_round_candidate",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "历史",
+      "suggested_length_s": "60-120",
+      "cost": {
+        "level": "未评估",
+        "reason": "",
+        "use": "scheduling_only",
+        "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "锤老师电脑",
+          "title": "你的C盘为什么会满",
+          "url": "https://www.douyin.com/video/6929818038090910980",
+          "published": "2021-02-16 19:13 Asia/Shanghai",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 17981,
+          "comments": 348,
+          "collects": 3497,
+          "shares": null,
+          "plays": null,
+          "duration_s": 48.5,
+          "current_applicability": "不能证明现状。这是 2021 年旧片，讲解偏关闭休眠等清理技巧，评论时间也多在 2021。可作历史供给和「旧讲法与今天问法错位」的对照，不能当今天仍适用的操作依据，也不能用来凑同题条数以证明已经看清当前竞争。",
+          "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。点赞不等于播放，也不能写成今天还在爆。"
+        }
+      ],
+      "watch_status": "仅关键帧与转写",
+      "audience_question": "Windows 电脑的 C 盘为什么会莫名其妙变满，有时删了又回来？",
+      "value": "可做的不是再列一遍清理按钮，而是把空间增长的来源演清楚，并区分哪些能清、哪些不该乱动。",
+      "timeliness": "不是今日官方热搜。今晚搜索联想仍在问「莫名其妙满」；主标是 2021 年旧片，持续传播弱，不能虚构它今天还在爆。",
+      "fact_sources": [
+        "锤老师电脑 2021-02-16 成片（抽帧）",
+        "搜索联想 2026-11-17 18:39",
+        "该片评论抽样 150/348，时间多在 2021"
+      ],
+      "same_topic_refs": [
+        {
+          "author": "锤老师电脑",
+          "url": "https://www.douyin.com/video/6929818038090910980",
+          "published": "2021-02-16 19:13 Asia/Shanghai",
+          "current_applicability": "仅历史对照，不能证明 2026 年的磁盘占用机制或安全操作。",
+          "watched": "keyframes"
+        }
+      ],
+      "same_topic_refs_note": "深拆 1 条主标（旧片），另外 4 条只核验了详情，未满 8。旧片不计入可证明现状的供给。",
+      "original_angle": "讲清空间增长来源和安全边界，而不是再教一次关闭休眠。",
+      "visual_method": "待用户若改选本题后再锁定。",
+      "reusable_assets": "",
+      "obstacles": "高互动供给过时；清理教程并不少。同题未满。",
+      "evidence_observed": [
+        "搜索联想有「c盘老是莫名其妙满了」「c盘为什么突然变少又会突然变回来」等。",
+        "主标开头已宣布这是操作教学，关闭休眠清隐藏文件。"
+      ],
+      "judgment_subjective": [
+        "需求和若干供给都有证据，但高互动供给是过时的清理技巧，和今天的问法错位；不是蓝海。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是 C 盘自己变满/删了又回来这一问；清空回收站短提示不能顶替。",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 1,
+        "hook_0_5s_complete_count": 1,
+        "comments_collected": true,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "深拆 1 条旧片主标，另 4 条只核验详情。未满 8。"
+      },
+      "heat_sources": [
+        {
+          "channel": "官方抖音热搜",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+          "url": null,
+          "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+        }
+      ],
+      "vo_asr_limitation": "平台无自带字幕。本地 ASR 需复核，不能当成已核对的口播原文。",
+      "candidate_packaging": "最终推荐已拆结构与画面",
+      "recommendation_evidence": {
+        "demand": {
+          "audience_situations": [
+            "Windows 用户发现 C 盘自己变满，或空间突然变少又回来。"
+          ],
+          "repeated_questions_in_search_or_comments": [
+            "c盘老是莫名其妙满了",
+            "c盘为什么会越来越满",
+            "c盘为什么突然变少又会突然变回来"
+          ],
+          "evidence_freshness_and_scope": "搜索联想采集于 2026-11-17 18:39；主标评论多在 2021，只能说明旧片遗留问题，不代表 2026 年新片评论。"
+        },
+        "supply_competition": {
+          "same_topic_multi_author_samples": [
+            "锤老师电脑 2021-02-16，已拆；另 4 条仅详情。"
+          ],
+          "distribution_and_timing": "高互动样本过旧；清理教程并不少。",
+          "head_and_homogenization_visible_evidence": "已拆主标是关闭休眠类操作教学，和「为什么会自己变满」的问法错位。"
+        },
+        "unmet_opportunity_and_quality_upside": {
+          "unmet_need": "观众仍在问空间从哪来、哪些能清、会不会影响使用。",
+          "expected_quality_improvement": "把增长来源和安全判断讲清楚，而不是再列清理按钮。"
+        },
+        "heat_and_sustained_spread": {
+          "heat_evidence": "不是今日官方热搜。",
+          "sustained_spread_evidence": "今晚搜索联想仍在；2021 主标不能写成今天还在爆。"
+        }
+      },
+      "red_blue_ocean": {
+        "judgment": "混合",
+        "basis": "需求和若干供给都有证据，但高互动供给过时，清理教程并不少，所以不是蓝海。",
+        "note": "旧片不能用来证明当前供给已经很少。"
+      },
+      "form_only_refs": [],
+      "view_records": [
+        {
+          "material": "https://www.douyin.com/video/6929818038090910980",
+          "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+          "model": "Gemini 3.8 Flash medium",
+          "scope": "keyframes",
+          "note": "抽样看 hook 0–5 秒和均匀帧。主标为 2021 年旧片。"
+        }
+      ]
+    },
+    {
+      "id": "two_ais_invent_language",
+      "title_question": "两个 AI 互聊，真的会发明人类听不懂的语言吗？",
+      "direction": "ai",
+      "today_role": "this_round_candidate",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "60-120",
+      "cost": {
+        "level": "未评估",
+        "reason": "",
+        "use": "scheduling_only",
+        "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "在公司楼下捡钱",
+          "title": "我让两个AI互相问了1000个问题，它们进化出了自己的语言",
+          "url": "https://www.douyin.com/video/7695224041367522560",
+          "published": "2026-10-11 09:59 Asia/Shanghai",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 527700,
+          "comments": 7387,
+          "collects": 76369,
+          "shares": 163256,
+          "plays": null,
+          "duration_s": 245.9,
+          "current_applicability": "可作为近期高传播的同题现象片，但不能把标题实验直接当成已证实的科学事实。须另核演示原出处和当前机制，不能只靠本片结论证明现状。",
+          "note": "已看 0–5 秒和均匀帧。本地 ASR 整段作废，不当任何原话。点赞不等于播放。"
+        }
+      ],
+      "watch_status": "仅关键帧与转写",
+      "audience_question": "两个 AI 互相提问很多轮，真的会发明一门人类听不懂的新语言吗？还是上下文快满时的压缩和省略？",
+      "value": "增量应对准「这是真的吗」：互聊为什么会越说越短、符号从哪来、这和「发明新语言」差在哪里。",
+      "timeliness": "不是今日官方热搜。证据是 2026-10-11 极高互动作品，以及当晚置顶评论仍在被看见。",
+      "fact_sources": [
+        "在公司楼下捡钱 2026-10-11 成片（抽帧；ASR 作废）",
+        "置顶评论追问真假"
+      ],
+      "same_topic_refs": [
+        {
+          "author": "在公司楼下捡钱",
+          "url": "https://www.douyin.com/video/7695224041367522560",
+          "published": "2026-10-11 09:59 Asia/Shanghai",
+          "current_applicability": "可作现象与传播参考；不能当已核实的科学结论。",
+          "watched": "keyframes"
+        }
+      ],
+      "same_topic_refs_note": "深拆 1 条主标（另登记一条不能当事实依据的相关作品），未满 8。",
+      "original_angle": "先回答真假和机制，而不是再拍一个更感人的互聊故事。",
+      "visual_method": "待用户若改选本题后再锁定。",
+      "reusable_assets": "",
+      "obstacles": "本地 ASR 整段作废；评论疑问不等于原片说法为假，必须另核演示原出处。同题未满。",
+      "evidence_observed": [
+        "主标当晚详情约 52.77 万赞。",
+        "置顶附近有强烈的真假追问。",
+        "本地 ASR 幻觉为「用简体中文和标点。」，整份转写作废。"
+      ],
+      "judgment_subjective": [
+        "需求和供给都非常强，但钩子与可核事实之间有裂口，仍有质量空间；不是蓝海。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是「两个 AI 互聊是否会发明新语言」这一问。",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 1,
+        "hook_0_5s_complete_count": 1,
+        "comments_collected": true,
+        "related_search_collected": false,
+        "status": "未满",
+        "note": "深拆 1 条主标，未满 8。口播除烧录字幕外未核。"
+      },
+      "heat_sources": [
+        {
+          "channel": "官方抖音热搜",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+          "url": null,
+          "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+        }
+      ],
+      "vo_asr_limitation": "平台无自带字幕。本地 ASR 整段幻觉，整份转写作废，不当任何原话。开头口播只采用看图抄到的烧录字幕。",
+      "candidate_packaging": "最终推荐已拆结构与画面",
+      "recommendation_evidence": {
+        "demand": {
+          "audience_situations": [
+            "看过或听说两个 AI 互聊「发明新语言」的人，想判断真假。"
+          ],
+          "repeated_questions_in_search_or_comments": [
+            "真的还是假的"
+          ],
+          "evidence_freshness_and_scope": "主标评论总量 7387，本轮抽样远小于总数；置顶真假追问本身很强，但不能外推为全部评论。"
+        },
+        "supply_competition": {
+          "same_topic_multi_author_samples": [
+            "在公司楼下捡钱 2026-10-11，已拆结构和画面。"
+          ],
+          "distribution_and_timing": "10 月中旬一条极高互动作品。",
+          "head_and_homogenization_visible_evidence": "供给的钩子与可核事实之间有裂口。"
+        },
+        "unmet_opportunity_and_quality_upside": {
+          "unmet_need": "评论仍在追问真假。",
+          "expected_quality_improvement": "讲清压缩、省略和「发明新语言」的差别，并核演示出处。"
+        },
+        "heat_and_sustained_spread": {
+          "heat_evidence": "不是今日官方热搜。",
+          "sustained_spread_evidence": "10 月 11 日成片当晚仍有极高互动和可见的置顶追问。互动数字不单独等于已经被讲清楚。"
+        }
+      },
+      "red_blue_ocean": {
+        "judgment": "混合",
+        "basis": "需求和供给都非常强，但钩子与可核事实有裂口。不是蓝海，也不是已经没有质量空间的单纯重复。"
+      },
+      "form_only_refs": [],
+      "view_records": [
+        {
+          "material": "https://www.douyin.com/video/7695224041367522560",
+          "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+          "model": "Gemini 3.8 Flash medium",
+          "scope": "keyframes",
+          "note": "抽样看 hook 0–5 秒和均匀帧；ASR 作废。"
+        }
+      ]
+    },
+    {
+      "id": "llm_is_program_or_file",
+      "title_question": "大模型到底是程序，还是一个装着数字的文件？",
+      "direction": "ai",
+      "today_role": "this_round_backup",
+      "evidence_status": "已验证高互动",
+      "heat_tag": "近热",
+      "suggested_length_s": "60-120",
+      "cost": {
+        "level": "未评估",
+        "reason": "",
+        "use": "scheduling_only",
+        "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "写代码的中年人",
+          "title": "大模型是程序，还是文件？拆开一个 7B 模型看看",
+          "url": "https://www.douyin.com/video/7700599360148491563",
+          "published": "2026-10-25 21:38 Asia/Shanghai",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 13781,
+          "comments": 724,
+          "collects": 11613,
+          "shares": null,
+          "plays": null,
+          "duration_s": 335.6,
+          "current_applicability": "近期同题讲解，程序与参数文件的关系已讲得较清楚；具体模型版本和界面细节若引用，仍须按当时对象核对，不能直接推广为所有当前模型。",
+          "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。"
+        },
+        {
+          "role": "original_work",
+          "author": "周果",
+          "title": "训练后的大模型如何运行的？本质就是一个文件！",
+          "url": "https://www.douyin.com/video/7703163852426464552",
+          "published": "2026-11-01 19:30 Asia/Shanghai",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 2876,
+          "comments": 177,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": 317.1,
+          "current_applicability": "2026-11-01 的近期同题作品，对现状有参考价值；评论残留问题说明「它到底知不知道」仍未被接住。",
+          "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。"
+        }
+      ],
+      "watch_status": "仅关键帧与转写",
+      "audience_question": "天天在用的大模型，究竟是一段写满规则的程序，还是一个文件？里面到底装着什么？",
+      "value": "只有进一步回答下载模型到底下载了什么、为什么换个文件能力就变了，或接住「会做不等于知道为什么」，才可能有增量；不宜原样复讲。",
+      "timeliness": "不是今日官方热搜。证据是 10 月底、11 月初两条仍有收藏和讨论的垂直讲解。",
+      "fact_sources": [
+        "写代码的中年人 2026-10-25",
+        "周果 2026-11-01"
+      ],
+      "same_topic_refs": [
+        {
+          "author": "写代码的中年人",
+          "url": "https://www.douyin.com/video/7700599360148491563",
+          "published": "2026-10-25 21:38 Asia/Shanghai",
+          "current_applicability": "近期同题，机制讲解较完整。",
+          "watched": "keyframes"
+        },
+        {
+          "author": "周果",
+          "url": "https://www.douyin.com/video/7703163852426464552",
+          "published": "2026-11-01 19:30 Asia/Shanghai",
+          "current_applicability": "近期同题。",
+          "watched": "keyframes"
+        }
+      ],
+      "same_topic_refs_note": "已看 2 条较完整同题，另登记 1 条弱作，未满 8。",
+      "original_angle": "对准「它到底是什么 / 它知不知道」，避免再做一条结构几乎相同的拆文件演示。",
+      "visual_method": "待用户若改选本题后再锁定。",
+      "reusable_assets": "",
+      "obstacles": "同切口已有打得响且较完整的作品；若做不出增量应放弃。两条都超过 5 分钟，均匀帧不等于完整听审。",
+      "evidence_observed": [
+        "两条原作都已把程序与参数文件关系讲得较清楚。",
+        "评论仍问「为什么这样就行」「预测下一个字怎么就理解了整句」「token 是什么」。"
+      ],
+      "judgment_subjective": [
+        "混合，偏已有强供给。不是蓝海。列入名单是因为残留问题仍具体；若做不出增量应放弃而不是重拍。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是「大模型是程序还是文件 / 里面装着什么」；训练算力分析不能顶替。",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 2,
+        "hook_0_5s_complete_count": 2,
+        "comments_collected": true,
+        "related_search_collected": false,
+        "status": "未满",
+        "note": "已看 2 条，看后搜可明确归属的不足 3 个不同词，不凑。"
+      },
+      "heat_sources": [
+        {
+          "channel": "官方抖音热搜",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+          "url": null,
+          "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+        }
+      ],
+      "vo_asr_limitation": "本地 ASR 需复核，不能当成已核对的口播原文。",
+      "candidate_packaging": "最终推荐已拆结构与画面",
+      "recommendation_evidence": {
+        "demand": {
+          "audience_situations": [
+            "对模型到底是什么东西好奇的普通用户，不一定会写代码。"
+          ],
+          "repeated_questions_in_search_or_comments": [
+            "为什么这样就行，是不是其实还不知道原理",
+            "预测下一个字怎么就理解了整句",
+            "token 是什么"
+          ],
+          "evidence_freshness_and_scope": "两条作品分别发布于 2026-10-25 和 2026-11-01；周果评论 64/177 未采满平台总数。"
+        },
+        "supply_competition": {
+          "same_topic_multi_author_samples": [
+            "写代码的中年人、周果，均已拆 0–5 秒与均匀帧。"
+          ],
+          "distribution_and_timing": "近两周到三周的垂直讲解。",
+          "head_and_homogenization_visible_evidence": "同切口已有讲得比较完整的作品。"
+        },
+        "unmet_opportunity_and_quality_upside": {
+          "unmet_need": "评论仍把「会做 ≠ 知道为什么」当成没被接住的点。",
+          "expected_quality_improvement": "更短、更对准它到底是什么、换个文件为什么能力会变。"
+        },
+        "heat_and_sustained_spread": {
+          "heat_evidence": "不是今日官方热搜。",
+          "sustained_spread_evidence": "10 月底、11 月初两条仍有收藏和讨论。"
+        }
+      },
+      "red_blue_ocean": {
+        "judgment": "混合",
+        "basis": "需求和供给都有证据，同切口已有打得响且较完整的作品。不是蓝海。"
+      },
+      "form_only_refs": [],
+      "view_records": [
+        {
+          "material": "https://www.douyin.com/video/7700599360148491563",
+          "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+          "model": "Gemini 3.8 Flash medium",
+          "scope": "keyframes",
+          "note": "已看 0–5 秒和均匀帧。"
+        },
+        {
+          "material": "https://www.douyin.com/video/7703163852426464552",
+          "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+          "model": "Gemini 3.8 Flash medium",
+          "scope": "keyframes",
+          "note": "已看 0–5 秒和均匀帧。"
+        }
+      ]
+    },
+    {
+      "id": "ai_cannot_count_letters",
+      "title_question": "AI 能写文章，为什么却数不清单词里几个字母？",
+      "direction": "ai",
+      "today_role": "this_round_pending_same_topic",
+      "evidence_status": "待验证",
+      "heat_tag": "近热",
+      "suggested_length_s": "60-120",
+      "cost": {
+        "level": "未评估",
+        "reason": "",
+        "use": "scheduling_only",
+        "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+      },
+      "sources": [
+        {
+          "role": "original_work",
+          "author": "通俗解释",
+          "title": "大模型token究竟是啥？",
+          "url": "https://www.douyin.com/video/7476671846419565839",
+          "published": "2025-03-01 11:07 Asia/Shanghai",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 97095,
+          "comments": 1732,
+          "collects": 41279,
+          "shares": null,
+          "plays": null,
+          "duration_s": 282.3,
+          "current_applicability": "这是「token 是什么」的定义课，不是「数不清字母」的直接同题。2025-03 的高收藏作品今晚仍能作为定义供给，但不能用来证明「数不清字母」这一问的现状竞争，也不能把当时模型表现直接写成现在普遍如此。",
+          "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。"
+        },
+        {
+          "role": "original_work",
+          "author": "神经元出逃计划",
+          "title": "大模型为什么数不清 strawberry 里的 r？",
+          "url": "https://www.douyin.com/video/7702464487491702059",
+          "published": "2026-10-30",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 555,
+          "comments": 15,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": 539.6,
+          "current_applicability": "更接近「数不清字母」同切口，且为 2026-10-30 的近期作品；但本轮只核验了官方详情，未看图深拆，故不能当作已核实的现状讲解。",
+          "note": "只核验官方详情，不算已拆结构和画面。"
+        },
+        {
+          "role": "original_work",
+          "author": "吃大米饭的大肥鱼",
+          "title": "大肥鱼之token大揭秘",
+          "url": "https://www.douyin.com/video/7704233529214994299",
+          "published": "2026-11-04",
+          "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+          "likes": 18177,
+          "comments": 900,
+          "collects": null,
+          "shares": null,
+          "plays": null,
+          "duration_s": 40.1,
+          "current_applicability": "2026-11-04 的近期收费向短片，与「数不清字母 / token 是什么」不是同一问。",
+          "note": "相邻需求，不当同题供给。"
+        }
+      ],
+      "watch_status": "仅关键帧与转写",
+      "audience_question": "为什么模型常会把 strawberry 里有几个 r、一个词里有几个字母数错？",
+      "value": "「token 是什么」已有完整定义课，再做同构讲解增量有限。质量空间在「为什么不是一个字母一个字母地看，所以会数错」；须先补看同切口作品，且不能把某些模型过去的错误说成现在普遍如此。",
+      "timeliness": "不是今日官方热搜。定义课是 2025-03 旧片；收费短片是 11 月 4 日新互动；数不清字母的搜索联想是当晚采集，对应成片互动一般。",
+      "fact_sources": [
+        "通俗解释 2025-03-01（定义课，已拆）",
+        "神经元出逃计划 2026-10-30（同切口，仅详情）",
+        "搜索联想 2026-11-17 18:39"
+      ],
+      "same_topic_refs": [
+        {
+          "author": "神经元出逃计划",
+          "url": "https://www.douyin.com/video/7702464487491702059",
+          "published": "2026-10-30",
+          "current_applicability": "近期同切口，但未看图，不能证明现状讲法。",
+          "watched": "details_only"
+        }
+      ],
+      "same_topic_refs_note": "定义题已看 1 条高质量成片 + 1 条收费相邻片；数不清字母的同切口长课未看图，未满 8。定义课与收费短片不是本问的同题供给。",
+      "original_angle": "对准为什么会数错，而不是再讲一遍 token 是积木。",
+      "visual_method": "待补看同切口后再决定能否做出增量。",
+      "reusable_assets": "",
+      "obstacles": "直接同题尚未画面深拆；不能把定义课代替同题竞争调查。",
+      "evidence_observed": [
+        "搜索联想有「大模型为什么数不清字母」等。",
+        "通俗解释已把 token 定义讲得较完整。",
+        "更同切口的神经元作品只核验了详情。"
+      ],
+      "judgment_subjective": [
+        "对「token 是什么」偏已有强供给；对「数不清字母」可写混合，但不能因为长课赞数一般或官方搜索空就叫蓝海。"
+      ],
+      "post_publish": {
+        "platform": null,
+        "published_at": null,
+        "plays": null,
+        "likes": null,
+        "comments": null,
+        "collects": null,
+        "shares": null,
+        "user_notes": null,
+        "status": "empty_waiting_user_data"
+      },
+      "same_topic_field": {
+        "scope": "必须是「为什么数不清单词里的字母」；token 定义课和收费短片不能顶替。",
+        "floor": 8,
+        "target": 10,
+        "watched_count": 0,
+        "hook_0_5s_complete_count": 0,
+        "comments_collected": false,
+        "related_search_collected": true,
+        "status": "未满",
+        "note": "同切口长课未看图，watched_count 按本问计为 0。定义课的观看记在 form/adjacent，不计入本问已看条数。"
+      },
+      "heat_sources": [
+        {
+          "channel": "官方抖音热搜",
+          "kind": "official_board",
+          "rank": null,
+          "heat": null,
+          "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+          "url": null,
+          "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+        }
+      ],
+      "vo_asr_limitation": "定义课本地 ASR 需复核。同切口长课未看图，无可用口播原文。",
+      "candidate_packaging": "初筛仅metadata",
+      "recommendation_evidence": {
+        "demand": {
+          "audience_situations": [
+            "看到模型把单词字母数错，或刚听过 token 这个词的普通用户。"
+          ],
+          "repeated_questions_in_search_or_comments": [
+            "大模型为什么数不清字母",
+            "大模型为什么不会数数",
+            "token是啥意思"
+          ],
+          "evidence_freshness_and_scope": "搜索联想采集于 2026-11-17 18:39；定义课评论抽样 150/1732。"
+        },
+        "supply_competition": {
+          "same_topic_multi_author_samples": [
+            "神经元出逃计划 2026-10-30 仅详情，未看图。"
+          ],
+          "distribution_and_timing": "直接同题互动一般；定义课是 2025-03 旧片。",
+          "head_and_homogenization_visible_evidence": "定义课已经讲得比较完整，但不能把它写成直接同题竞争调查。"
+        },
+        "unmet_opportunity_and_quality_upside": {
+          "unmet_need": "为什么不是一个字母一个字母地看所以会数错，以及相关计费/切词疑问。",
+          "expected_quality_improvement": "若补看后仍有增量，再对准数错机制；否则不应重做定义课。"
+        },
+        "heat_and_sustained_spread": {
+          "heat_evidence": "不是今日官方热搜。",
+          "sustained_spread_evidence": "定义课仍高收藏；收费短片是 11 月 4 日新互动，但不是同题。"
+        }
+      },
+      "red_blue_ocean": {
+        "judgment": "混合",
+        "basis": "对定义题偏已有强供给；对「数不清字母」需求和一条未深拆长课都有证据，可写混合。不能因为赞数一般或官方搜索空就叫蓝海。"
+      },
+      "form_only_refs": [
+        {
+          "author": "通俗解释",
+          "url": "https://www.douyin.com/video/7476671846419565839",
+          "published": "2025-03-01 11:07 Asia/Shanghai",
+          "note": "token 定义课，可作表达参考，不得作为「数不清字母」的同题内容依据。"
+        }
+      ],
+      "view_records": [
+        {
+          "material": "https://www.douyin.com/video/7476671846419565839",
+          "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+          "model": "Gemini 3.8 Flash medium",
+          "scope": "keyframes",
+          "note": "已看定义课 0–5 秒和均匀帧；这不是「数不清字母」同题。"
+        }
+      ]
+    }
+  ],
+  "today_not_recommended": [
+    {
+      "phrase": "全民进入低电量过日子时代",
+      "reason": "只在第三方微博聚合soso.re出现（2026/11/17 14:53，第35，显示热度196858），未核原话题原义，也未在15:00官方抖音热榜前50见到。可能是情绪或生活状态比喻，不能把手机电池技术切口写成榜单原义，故不列入正式候选。",
+      "sources": [
+        {
+          "channel": "soso.re微博热搜聚合",
+          "kind": "third_party_board",
+          "rank": 35,
+          "heat": 196858,
+          "captured_at": "页面标注2026/11/17 14:53，本机约15:00 Asia/Shanghai打开",
+          "official_verified": false
+        }
+      ]
+    },
+    {
+      "phrase": "华为星芒O1Pro上手体验",
+      "reason": "仅出现在第三方微博聚合 soso.re（2026/11/17 17:10，第22，显示热度268115）。本轮未打开官方产品页或上手视频，不编机制候选。",
+      "sources": [
+        {
+          "channel": "soso.re微博热搜聚合",
+          "kind": "third_party_board",
+          "rank": 22,
+          "heat": 268115,
+          "captured_at": "2026-11-17 17:11:22 Asia/Shanghai"
+        }
+      ]
+    }
+  ],
+  "hot_research": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "official_douyin_hot": {
+      "captured_at": "2026-11-17 17:11:22 Asia/Shanghai",
+      "http": 200,
+      "items": 50,
+      "top50_relevant_tech_terms": [],
+      "note": "前50几乎都是APEC、时政、体育和娱乐；电脑/AI关键词扫描 0 命中。15:00:15 早市缓存已过时，不得当作今晚热度。理想汽车辟谣已不在 17:11 前50。",
+      "path": "（详细研究记录未收入本公共包）"
+    },
+    "tophub_douyin_third_party": {
+      "captured_at": "2026-11-17 17:11:22 Asia/Shanghai",
+      "url": "https://tophub.today/n/DpQvNABoNE",
+      "note": "第三方视频榜，不得冒充官方。页面更新时间未清晰抽出。"
+    },
+    "weibo_soso_re": {
+      "page_updated": "2026/11/17 17:10",
+      "captured_at": "2026-11-17 17:11:22 Asia/Shanghai",
+      "url": "https://soso.re/weibo",
+      "official_weibo_board_opened": false,
+      "relevant": [
+        {
+          "rank": 8,
+          "title": "AI大模型刷榜还有意义吗",
+          "heat": 527229
+        },
+        {
+          "rank": 22,
+          "title": "华为星芒O1Pro上手体验",
+          "heat": 268115,
+          "note": "未打开官方产品页，不列入候选"
+        }
+      ],
+      "note": "第三方聚合，不得冒充官方微博热搜。"
+    }
+  },
+  "same_topic_rule": {
+    "floor": 8,
+    "target": 10,
+    "unit": "同一道题的优质视频条数，不是每轮不同题的条数",
+    "if_unfilled": "如实报告已看条数和缺项，交由用户决定是否继续、换切口或换题；不得硬凑，不得把未观看当成完整，不得擅自永久豁免。"
+  },
+  "today_selected": "ai_long_chat_forgets_setting",
+  "evening_restart": {
+    "at": "2026-11-17 17:16 Asia/Shanghai",
+    "reason": "用户 t757 重新选题，放下 CPU 旧稿；不自选。",
+    "heat_refresh": "2026-11-17 17:11:22 Asia/Shanghai",
+    "official_douyin_tech_hits": 0,
+    "work_dir": "（详细研究记录未收入本公共包）",
+    "brief": "TODAY_20261117_evening.md"
+  },
+  "morning_20261117": {
+    "generated_at": "2026-11-17 15:15 Asia/Shanghai",
+    "today_first_pick": "cpu_core_enough",
+    "today_picks": [
+      {
+        "id": "ai_membership_vs_api",
+        "role": "first_pick"
+      },
+      {
+        "id": "cpu_core_enough",
+        "role": "backup"
+      },
+      {
+        "id": "long_chat_kv_compute",
+        "role": "reserve"
+      },
+      {
+        "id": "moe_sparse_activation",
+        "role": "reserve"
+      }
+    ],
+    "today_selected": {
+      "id": "cpu_core_enough",
+      "title": "CPU核心越多，电脑就一定越快吗？",
+      "at": "2026-11-17 15:20 Asia/Shanghai"
+    },
+    "hot_research": {
+      "date": "2026-11-17",
+      "timezone": "Asia/Shanghai",
+      "official_douyin_hot": {
+        "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+        "top50_relevant_tech_terms": [],
+        "note": "前50几乎都是APEC、时政、体育和娱乐；未见电脑、AI会员、长对话、新模型对应热词。接口返回了榜词、热度、上榜时间和相关视频数。官方页URL本次未单独保存，记为缺失。"
+      },
+      "third_party_douyin_aggregators": {
+        "note": "与官方榜分开记录。13:20左右曾见「深圳国产人形机器人轮番展示才艺」约第10、显示932.5万；15:00官方榜已无此条。"
+      },
+      "weibo": {
+        "official_board": "本轮未打开微博官方热搜页，视为缺失。",
+        "third_party": "soso.re，页面标注更新2026/11/17 14:53。不得把第三方榜冒充官方榜。"
+      },
+      "local_old_douyin_hot_csv": "库存只到2026-11-05，不能当今天的榜。",
+      "bilibili_public_view_api": "2026-11-17仍返回412，不用旧播放数冒充当前热度。"
+    }
+  },
+  "today_selected_paused": {
+    "id": "cpu_core_enough",
+    "title": "CPU 核心越买越多，怎样判断还够不够用？",
+    "selected_at": "2026-11-17 15:20 Asia/Shanghai",
+    "paused_at": "2026-11-17 17:16 Asia/Shanghai",
+    "reason": "用户要求放下旧稿并重新选题；题卡暂停不删除。",
+    "title_note": "单卡与暂停记录此前写作「CPU核心越多，电脑就一定越快吗？」。本快照与题库总表、早市 TODAY_20261117.md 的正式问句对齐，不改变暂停状态或研究结论。"
+  },
+  "demand_competition_20261117": {
+    "at": "2026-11-17 17:51 Asia/Shanghai",
+    "rule": "制作和核验成本不参与选题排名；不以好做代替值得做。",
+    "formal_candidates": 2,
+    "eliminated_from_shortlist": [
+      "memory_gen_upgrade",
+      "ai_membership_vs_api"
+    ],
+    "insufficient_pending": [
+      "llm_leaderboard_vs_useful"
+    ],
+    "cpu": "paused",
+    "work_dir": "（详细研究记录未收入本公共包）",
+    "note": "不催用户从旧名单补选。检索空不等于蓝海。未自动定题。"
+  },
+  "quality_shortlist_20261117": {
+    "at": "2026-11-17 18:29 Asia/Shanghai",
+    "brief": "（详细研究记录未收入本公共包）",
+    "standard": "followed merge_ready v2026.11.17.5 for this research; did not overwrite live SYSTEM.md",
+    "formal": [
+      "disk_tb_shows_931gb",
+      "gpu_number_vs_strength",
+      "vllm_same_gpu"
+    ],
+    "cpu": "paused"
+  },
+  "quality_shortlist_picks": [
+    {
+      "id": "disk_tb_shows_931gb",
+      "role": "quality_shortlist_recommended_1",
+      "packaging": "最终推荐"
+    },
+    {
+      "id": "gpu_number_vs_strength",
+      "role": "quality_shortlist_recommended_2",
+      "packaging": "最终推荐"
+    },
+    {
+      "id": "vllm_same_gpu",
+      "role": "quality_shortlist_recommended_3",
+      "packaging": "最终推荐"
+    }
+  ],
+  "expanded_shortlist_20261117": {
+    "at": "2026-11-17 19:09 Asia/Shanghai",
+    "brief": "TODAY_20261117_expanded.md",
+    "formal": [
+      "ai_long_chat_forgets_setting",
+      "c_drive_fills_itself",
+      "two_ais_invent_language",
+      "llm_is_program_or_file",
+      "ai_cannot_count_letters"
+    ],
+    "cpu": "paused",
+    "user_selected": "ai_long_chat_forgets_setting",
+    "selected_by": "user t764 replied 1",
+    "selected_note": "用户在看到扩大选题 5 条候选后明确回复「1」，选定候选 A。题库原目录在选择前尚未写入本题；本快照按这次明确选择做最小状态修正，不臆造定题之后的同题深拆或机制核实结果。",
+    "recent_reference_rule": "t765: prefer newer references; record published time and current applicability; no hard date cutoff."
+  }
+}

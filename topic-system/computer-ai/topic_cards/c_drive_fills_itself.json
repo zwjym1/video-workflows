@@ -1,0 +1,142 @@
+{
+  "id": "c_drive_fills_itself",
+  "title_question": "明明没装东西，C 盘为什么会自己变满？",
+  "direction": "computer",
+  "today_role": "this_round_candidate",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "历史",
+  "suggested_length_s": "60-120",
+  "cost": {
+    "level": "未评估",
+    "reason": "",
+    "use": "scheduling_only",
+    "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "锤老师电脑",
+      "title": "你的C盘为什么会满",
+      "url": "https://www.douyin.com/video/6929818038090910980",
+      "published": "2021-02-16 19:13 Asia/Shanghai",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 17981,
+      "comments": 348,
+      "collects": 3497,
+      "shares": null,
+      "plays": null,
+      "duration_s": 48.5,
+      "current_applicability": "不能证明现状。这是 2021 年旧片，讲解偏关闭休眠等清理技巧，评论时间也多在 2021。可作历史供给和「旧讲法与今天问法错位」的对照，不能当今天仍适用的操作依据，也不能用来凑同题条数以证明已经看清当前竞争。",
+      "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。点赞不等于播放，也不能写成今天还在爆。"
+    }
+  ],
+  "watch_status": "仅关键帧与转写",
+  "audience_question": "Windows 电脑的 C 盘为什么会莫名其妙变满，有时删了又回来？",
+  "value": "可做的不是再列一遍清理按钮，而是把空间增长的来源演清楚，并区分哪些能清、哪些不该乱动。",
+  "timeliness": "不是今日官方热搜。今晚搜索联想仍在问「莫名其妙满」；主标是 2021 年旧片，持续传播弱，不能虚构它今天还在爆。",
+  "fact_sources": [
+    "锤老师电脑 2021-02-16 成片（抽帧）",
+    "搜索联想 2026-11-17 18:39",
+    "该片评论抽样 150/348，时间多在 2021"
+  ],
+  "same_topic_refs": [
+    {
+      "author": "锤老师电脑",
+      "url": "https://www.douyin.com/video/6929818038090910980",
+      "published": "2021-02-16 19:13 Asia/Shanghai",
+      "current_applicability": "仅历史对照，不能证明 2026 年的磁盘占用机制或安全操作。",
+      "watched": "keyframes"
+    }
+  ],
+  "same_topic_refs_note": "深拆 1 条主标（旧片），另外 4 条只核验了详情，未满 8。旧片不计入可证明现状的供给。",
+  "original_angle": "讲清空间增长来源和安全边界，而不是再教一次关闭休眠。",
+  "visual_method": "待用户若改选本题后再锁定。",
+  "reusable_assets": "",
+  "obstacles": "高互动供给过时；清理教程并不少。同题未满。",
+  "evidence_observed": [
+    "搜索联想有「c盘老是莫名其妙满了」「c盘为什么突然变少又会突然变回来」等。",
+    "主标开头已宣布这是操作教学，关闭休眠清隐藏文件。"
+  ],
+  "judgment_subjective": [
+    "需求和若干供给都有证据，但高互动供给是过时的清理技巧，和今天的问法错位；不是蓝海。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是 C 盘自己变满/删了又回来这一问；清空回收站短提示不能顶替。",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 1,
+    "hook_0_5s_complete_count": 1,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "深拆 1 条旧片主标，另 4 条只核验详情。未满 8。"
+  },
+  "heat_sources": [
+    {
+      "channel": "官方抖音热搜",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+      "url": null,
+      "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+    }
+  ],
+  "vo_asr_limitation": "平台无自带字幕。本地 ASR 需复核，不能当成已核对的口播原文。",
+  "form_only_refs": [],
+  "candidate_packaging": "最终推荐已拆结构与画面",
+  "candidate_packaging_note": "已拆 2021 年主标的结构和画面，并明确它不能证明现状。",
+  "recommendation_evidence": {
+    "demand": {
+      "audience_situations": [
+        "Windows 用户发现 C 盘自己变满，或空间突然变少又回来。"
+      ],
+      "repeated_questions_in_search_or_comments": [
+        "c盘老是莫名其妙满了",
+        "c盘为什么会越来越满",
+        "c盘为什么突然变少又会突然变回来"
+      ],
+      "evidence_freshness_and_scope": "搜索联想采集于 2026-11-17 18:39；主标评论多在 2021，只能说明旧片遗留问题，不代表 2026 年新片评论。"
+    },
+    "supply_competition": {
+      "same_topic_multi_author_samples": [
+        "锤老师电脑 2021-02-16，已拆；另 4 条仅详情。"
+      ],
+      "distribution_and_timing": "高互动样本过旧；清理教程并不少。",
+      "head_and_homogenization_visible_evidence": "已拆主标是关闭休眠类操作教学，和「为什么会自己变满」的问法错位。"
+    },
+    "unmet_opportunity_and_quality_upside": {
+      "unmet_need": "观众仍在问空间从哪来、哪些能清、会不会影响使用。",
+      "expected_quality_improvement": "把增长来源和安全判断讲清楚，而不是再列清理按钮。"
+    },
+    "heat_and_sustained_spread": {
+      "heat_evidence": "不是今日官方热搜。",
+      "sustained_spread_evidence": "今晚搜索联想仍在；2021 主标不能写成今天还在爆。"
+    }
+  },
+  "red_blue_ocean": {
+    "judgment": "混合",
+    "basis": "需求和若干供给都有证据，但高互动供给过时，清理教程并不少，所以不是蓝海。",
+    "note": "旧片不能用来证明当前供给已经很少。"
+  },
+  "view_records": [
+    {
+      "material": "https://www.douyin.com/video/6929818038090910980",
+      "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+      "model": "Gemini 3.8 Flash medium",
+      "scope": "keyframes",
+      "note": "抽样看 hook 0–5 秒和均匀帧。主标为 2021 年旧片。"
+    }
+  ]
+}

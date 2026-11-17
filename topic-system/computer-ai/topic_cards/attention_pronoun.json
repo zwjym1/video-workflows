@@ -1,0 +1,97 @@
+{
+  "id": "attention_pronoun",
+  "title_question": "AI 为什么能分清这句话里的「他」是谁？",
+  "direction": "ai",
+  "today_role": "library",
+  "evidence_status": "待验证",
+  "heat_tag": "历史",
+  "suggested_length_s": "80-120",
+  "cost": {
+    "level": "中偏高",
+    "reason": "概念过渡要求高，原作是长课，短视频容易讲浅或假装成注意力热图实测。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "3Blue1Brown / Grant Sanderson",
+      "title": "Attention in transformers, step-by-step",
+      "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+      "published": "2024-04-07（作者图文页确认，此前研究记录）",
+      "collected_at": "2026-11-15 打开过作者图文与第三方播放展示，非今日平台实时数",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "第三方 SocialCounts 曾展示过播放/点赞，采集刷新时刻不明，本轮不把该数字当作今日爆款证据。作者图文：https://www.3blue1brown.com/lessons/attention"
+    },
+    {
+      "role": "paper",
+      "author": "Vaswani et al.",
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "published": "2017-06",
+      "collected_at": "2026-11-15 曾打开论文 §3.2 要点",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "attention 按 query/key 相容性对 value 加权。"
+    }
+  ],
+  "watch_status": "此前取得过原作公开文本，尚未在本轮下载媒体、连续观看或实听。",
+  "audience_question": "只改一个「没」字，为什么人对「他」的理解会转向，模型内部是不是也在做类似的关系加权？",
+  "value": "只讲一个点：词的表示可以接收上下文，而不是每个词都是孤立词条。",
+  "timeliness": "机制长青。今日没有中文短视频的新互动核验，故标待验证。",
+  "fact_sources": [
+    "Attention Is All You Need §3.2（此前已读要点）",
+    "3Blue1Brown 图文原版（此前已打开）"
+  ],
+  "same_topic_refs": [
+    {
+      "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+      "author": "3Blue1Brown",
+      "note": "同机制长课，未在本轮观看动态。只学「先给多义动机再进入计算」，不搬镜头与例子。"
+    }
+  ],
+  "same_topic_refs_note": "没有今日已观看的中文同题短视频。",
+  "original_angle": "用两句只差一个「没」的中文示意句，不搬 mole/苹果翻译镜头，不伪造模型热图。",
+  "visual_method": "同一追逐舞台上，指代标记的连接强度变化。权重只标示意。",
+  "reusable_assets": "文字/指代表记可复用。不复用芯片资产。",
+  "obstacles": "中文分词不等于一词一 token；不能说注意力等于人类理解；海外长课播放不能直接当国内短视频热度。",
+  "evidence_observed": [
+    "机制有可定位论文和作者图文；今日无新的中文互动核验。"
+  ],
+  "judgment_subjective": [
+    "面试相关度高，但今日缺少短视频关注证据，先入库。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": false,
+    "status": "未开始",
+    "note": "此前取得过原作公开文本，尚未下载媒体、连续观看或实听，不计入已看同题。未满8条。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    }
+  ],
+  "vo_asr_limitation": "未核对完整口播前，不得引用口播原文。"
+}

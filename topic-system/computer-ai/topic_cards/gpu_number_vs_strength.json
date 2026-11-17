@@ -1,0 +1,121 @@
+{
+  "id": "gpu_number_vs_strength",
+  "title_question": "显卡型号上的数字越大，就一定更强吗？",
+  "direction": "computer",
+  "today_role": "previous_round_contrast_no_reserved_slot",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "50-80",
+  "cost": {
+    "level": "中",
+    "reason": "原作短、互动已核，但与刚完成的芯片分档相邻，且未看片；具体型号对比不能编百分比。",
+    "ranking": "不参与选题排名，仅执行安排时参考"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "装机不迷糊",
+      "title": "显卡数字越大，性能就越强吗？",
+      "url": "https://www.douyin.com/video/7688555036581842226",
+      "published": "2026-09-23 19:00 UTC+8",
+      "collected_at": "2026-11-17 17:14:42 Asia/Shanghai",
+      "likes": 16611,
+      "comments": 1029,
+      "collects": 3539,
+      "shares": 2713,
+      "plays": null,
+      "duration_s": 57.4,
+      "note": "今晚官方详情 available。点赞不是播放。未看片。"
+    }
+  ],
+  "watch_status": "本轮 Gemini 3.8 Flash medium 抽样看了 hook 0–5s 与接触纸；烧录字幕已抄录。未连续听审。ASR 约 54.7 秒后幻觉已弃用。",
+  "audience_question": "显卡型号里的数字更大，就一定比数字小的更强吗？",
+  "value": "拆开「代数」和「同一代里的档位」，避免按数字大小购物。不是晶圆分档/屏蔽题。",
+  "timeliness": "2026-09-23 发布，今晚仍为高互动；不是今日热搜。",
+  "fact_sources": [
+    "原作公开互动（今晚刷新）",
+    "定题后具体型号对照需另开厂商公开定位，本轮未打开该类产品页。"
+  ],
+  "same_topic_refs": [
+    {
+      "url": "https://www.douyin.com/video/7688555036581842226",
+      "author": "装机不迷糊",
+      "note": "仅详情。不能把标题当成已核实口播论点。"
+    }
+  ],
+  "same_topic_refs_note": "已看转写 1 条。百脑汇 2022「显卡的划分」赞 519 未看片。so 检索空，不能写成蓝海。底线 8 未满。",
+  "original_angle": "用观众仍在问的 5060/4090、5060 Ti/4080 Super，把系列和档位收在两张型号牌上，不要停在「还要具体分析」。",
+  "visual_method": "建议两张真实型号牌对照。本轮未看图，不评价原作画面。",
+  "reusable_assets": "不复用 5070 Ti 分档旧片资产。",
+  "obstacles": "核心规则在已有近作里已经讲过；若只重复规则、不解决应用，机会不大。与芯片分档相邻，但问句是型号数字而非晶圆分档。",
+  "evidence_observed": [
+    "search/sug 17:36：显卡数字越大就越强吗、显卡后缀数字代表什么 等。",
+    "评论抽样 120/1029（2026-11-17 17:38）：样本中 73 条跨代数字、33 条求推荐。赞 74｜2026-10-10「直接上5060还是4090」；赞 12｜2026-10-19「5060TI还是4080S」。",
+    "今晚详情：赞 16611 / 评 1029 / 藏 3539 / 转 2713。收藏动机未取证。"
+  ],
+  "judgment_subjective": [
+    "排第二是因为需求真实，但同题近作已经把标题判断讲完，机会主要在「应用到购物对」而不是重讲规则。",
+    "已见表头部集中于这一条，不把检索空写成蓝海。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 1,
+    "hook_0_5s_complete_count": 1,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "已拆 1，未满 8。"
+  },
+  "heat_sources": [
+    {
+      "channel": "douyin official detail",
+      "kind": "work_engagement",
+      "rank": null,
+      "heat": 16611,
+      "captured_at": "2026-11-17 17:14:42 Asia/Shanghai",
+      "url": "https://www.douyin.com/video/7688555036581842226",
+      "note": "作品互动，不是热搜。likes 不是播放。"
+    }
+  ],
+  "vo_asr_limitation": "开头口播以本轮看见的烧录字幕为准；无字幕处未核。本地 ASR 需复核，不当已核原文。",
+  "demand_sources": [
+    {
+      "kind": "search_sug",
+      "source": "www.douyin.com search/sug",
+      "captured_at": "2026-11-17 17:36 Asia/Shanghai"
+    },
+    {
+      "kind": "comments",
+      "url": "https://www.douyin.com/video/7688555036581842226",
+      "sampled_unique": 120,
+      "platform_total": 1029,
+      "captured_at": "2026-11-17 17:38 Asia/Shanghai",
+      "note": "partial，limit_reached"
+    }
+  ],
+  "candidate_packaging": "最终推荐已拆结构与画面",
+  "watch_model_log": [
+    {
+      "date": "2026-11-17 18:22-18:27 Asia/Shanghai",
+      "model": "gemini-3.8-flash-medium",
+      "effort": "medium",
+      "scope": "hook 0-5s + contact sheet",
+      "continuous_playback": false
+    }
+  ],
+  "quality_shortlist_note": "2026-11-17 18:29 质量短名单已按 v2026.11.17.5 补证（需求原话、看后搜、0-5s 画面与烧录字幕）。现行 SYSTEM.md 未被覆盖。详见 （详细研究记录未收入本公共包）",
+  "evidence_status_note": ""
+}

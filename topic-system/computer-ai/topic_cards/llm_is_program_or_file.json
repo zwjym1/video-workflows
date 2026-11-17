@@ -1,0 +1,169 @@
+{
+  "id": "llm_is_program_or_file",
+  "title_question": "大模型到底是程序，还是一个装着数字的文件？",
+  "direction": "ai",
+  "today_role": "this_round_backup",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "60-120",
+  "cost": {
+    "level": "未评估",
+    "reason": "",
+    "use": "scheduling_only",
+    "note": "制作成本与核验成本仅供执行排期记录；不参与推荐排序，不得以好做、省时作为推荐理由，也不能替代价值。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "写代码的中年人",
+      "title": "大模型是程序，还是文件？拆开一个 7B 模型看看",
+      "url": "https://www.douyin.com/video/7700599360148491563",
+      "published": "2026-10-25 21:38 Asia/Shanghai",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 13781,
+      "comments": 724,
+      "collects": 11613,
+      "shares": null,
+      "plays": null,
+      "duration_s": 335.6,
+      "current_applicability": "近期同题讲解，程序与参数文件的关系已讲得较清楚；具体模型版本和界面细节若引用，仍须按当时对象核对，不能直接推广为所有当前模型。",
+      "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。"
+    },
+    {
+      "role": "original_work",
+      "author": "周果",
+      "title": "训练后的大模型如何运行的？本质就是一个文件！",
+      "url": "https://www.douyin.com/video/7703163852426464552",
+      "published": "2026-11-01 19:30 Asia/Shanghai",
+      "collected_at": "2026-11-17 晚上 Asia/Shanghai",
+      "likes": 2876,
+      "comments": 177,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": 317.1,
+      "current_applicability": "2026-11-01 的近期同题作品，对现状有参考价值；评论残留问题说明「它到底知不知道」仍未被接住。",
+      "note": "已看 0–5 秒和均匀帧。本地 ASR 需复核。"
+    }
+  ],
+  "watch_status": "仅关键帧与转写",
+  "audience_question": "天天在用的大模型，究竟是一段写满规则的程序，还是一个文件？里面到底装着什么？",
+  "value": "只有进一步回答下载模型到底下载了什么、为什么换个文件能力就变了，或接住「会做不等于知道为什么」，才可能有增量；不宜原样复讲。",
+  "timeliness": "不是今日官方热搜。证据是 10 月底、11 月初两条仍有收藏和讨论的垂直讲解。",
+  "fact_sources": [
+    "写代码的中年人 2026-10-25",
+    "周果 2026-11-01"
+  ],
+  "same_topic_refs": [
+    {
+      "author": "写代码的中年人",
+      "url": "https://www.douyin.com/video/7700599360148491563",
+      "published": "2026-10-25 21:38 Asia/Shanghai",
+      "current_applicability": "近期同题，机制讲解较完整。",
+      "watched": "keyframes"
+    },
+    {
+      "author": "周果",
+      "url": "https://www.douyin.com/video/7703163852426464552",
+      "published": "2026-11-01 19:30 Asia/Shanghai",
+      "current_applicability": "近期同题。",
+      "watched": "keyframes"
+    }
+  ],
+  "same_topic_refs_note": "已看 2 条较完整同题，另登记 1 条弱作，未满 8。",
+  "original_angle": "对准「它到底是什么 / 它知不知道」，避免再做一条结构几乎相同的拆文件演示。",
+  "visual_method": "待用户若改选本题后再锁定。",
+  "reusable_assets": "",
+  "obstacles": "同切口已有打得响且较完整的作品；若做不出增量应放弃。两条都超过 5 分钟，均匀帧不等于完整听审。",
+  "evidence_observed": [
+    "两条原作都已把程序与参数文件关系讲得较清楚。",
+    "评论仍问「为什么这样就行」「预测下一个字怎么就理解了整句」「token 是什么」。"
+  ],
+  "judgment_subjective": [
+    "混合，偏已有强供给。不是蓝海。列入名单是因为残留问题仍具体；若做不出增量应放弃而不是重拍。"
+  ],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是「大模型是程序还是文件 / 里面装着什么」；训练算力分析不能顶替。",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 2,
+    "hook_0_5s_complete_count": 2,
+    "comments_collected": true,
+    "related_search_collected": false,
+    "status": "未满",
+    "note": "已看 2 条，看后搜可明确归属的不足 3 个不同词，不凑。"
+  },
+  "heat_sources": [
+    {
+      "channel": "官方抖音热搜",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 18:14 Asia/Shanghai",
+      "url": null,
+      "note": "前 50 词无电脑/AI 项；只说明该榜当时没有这些词，不等于垂直领域没有热点。"
+    }
+  ],
+  "vo_asr_limitation": "本地 ASR 需复核，不能当成已核对的口播原文。",
+  "form_only_refs": [],
+  "candidate_packaging": "最终推荐已拆结构与画面",
+  "recommendation_evidence": {
+    "demand": {
+      "audience_situations": [
+        "对模型到底是什么东西好奇的普通用户，不一定会写代码。"
+      ],
+      "repeated_questions_in_search_or_comments": [
+        "为什么这样就行，是不是其实还不知道原理",
+        "预测下一个字怎么就理解了整句",
+        "token 是什么"
+      ],
+      "evidence_freshness_and_scope": "两条作品分别发布于 2026-10-25 和 2026-11-01；周果评论 64/177 未采满平台总数。"
+    },
+    "supply_competition": {
+      "same_topic_multi_author_samples": [
+        "写代码的中年人、周果，均已拆 0–5 秒与均匀帧。"
+      ],
+      "distribution_and_timing": "近两周到三周的垂直讲解。",
+      "head_and_homogenization_visible_evidence": "同切口已有讲得比较完整的作品。"
+    },
+    "unmet_opportunity_and_quality_upside": {
+      "unmet_need": "评论仍把「会做 ≠ 知道为什么」当成没被接住的点。",
+      "expected_quality_improvement": "更短、更对准它到底是什么、换个文件为什么能力会变。"
+    },
+    "heat_and_sustained_spread": {
+      "heat_evidence": "不是今日官方热搜。",
+      "sustained_spread_evidence": "10 月底、11 月初两条仍有收藏和讨论。"
+    }
+  },
+  "red_blue_ocean": {
+    "judgment": "混合",
+    "basis": "需求和供给都有证据，同切口已有打得响且较完整的作品。不是蓝海。"
+  },
+  "view_records": [
+    {
+      "material": "https://www.douyin.com/video/7700599360148491563",
+      "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+      "model": "Gemini 3.8 Flash medium",
+      "scope": "keyframes",
+      "note": "已看 0–5 秒和均匀帧。"
+    },
+    {
+      "material": "https://www.douyin.com/video/7703163852426464552",
+      "viewed_at": "2026-11-17 19:01-19:07 Asia/Shanghai",
+      "model": "Gemini 3.8 Flash medium",
+      "scope": "keyframes",
+      "note": "已看 0–5 秒和均匀帧。"
+    }
+  ]
+}

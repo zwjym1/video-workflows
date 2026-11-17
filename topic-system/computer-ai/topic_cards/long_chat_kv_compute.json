@@ -1,0 +1,130 @@
+{
+  "id": "long_chat_kv_compute",
+  "title_question": "为什么聊天越聊越长，越容易被限、也更吃额度？",
+  "direction": "ai,new_tech",
+  "today_role": "morning_reserve_not_on_evening_shortlist",
+  "evidence_status": "新技术有关注证据",
+  "heat_tag": "近热",
+  "suggested_length_s": "70-110",
+  "cost": {
+    "level": "中",
+    "reason": "KV 缓存随上下文变长比较好比画；难处是不能把未经官方确认的额度数字当成 DeepSeek 规则，也不能把限流原因单一归因。"
+  },
+  "sources": [
+    {
+      "role": "media",
+      "author": "第一财经",
+      "title": "调用量冲上全球第一，DeepSeek开始对免费用户“限额”了",
+      "url": "https://www.yicai.com/news/103441951.html",
+      "published": "2026-11-16 15:19",
+      "collected_at": "2026-11-17 检索与摘要核验",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "报道写明官方尚未发布统一限额规则；用户反馈含长对话、每日额度和单次输入长度。本轮以报道本身为关注证据，不把文中用户数字写成官方规则。"
+    },
+    {
+      "role": "media",
+      "author": "21世纪经济报道/澎湃转述",
+      "title": "DeepSeek“限额”？多名网友反馈收到提示：使用额度已达上限",
+      "url": "https://www.21jingji.com/article/20261116/herald/5ed417f1a6e7c462ee6aac8152622420.html",
+      "published": "2026-11-16 20:31",
+      "collected_at": "2026-11-17 检索与摘要核验",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "文称该话题登上微博热搜，此条热搜排名本轮未从微博官方榜单独立打开核实。"
+    },
+    {
+      "role": "official",
+      "author": "腾讯",
+      "title": "Hy4 flash 发布页中的 KV cache 说明",
+      "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+      "published": "2026-11-16",
+      "collected_at": "2026-11-17 已打开",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "官方称该模型 KV cache 大小为 Hy3 的 1/24、Hy4 的 1/6，可作「长上下文缓存会占资源」的旁证，不是 DeepSeek 限额原因的官方解释。"
+    }
+  ],
+  "watch_status": "未观看以该问题为同题的成片。未取得开头0–5秒画面或口播原文。",
+  "audience_question": "聊着聊着为什么会被提示额度或让新开对话？是不是故意卡免费用户？",
+  "value": "讲清上下文变长时，模型要反复用到历史信息，缓存和计算通常跟着涨；限流是产品在算力有限时的调度，不等于某一家已经公布完整规则。",
+  "timeliness": "2026-11-16起有多家媒体报道免费端限额反馈，属于昨天到今天的关注，不是今日已核热榜，也不是旧闻改日期。",
+  "fact_sources": [
+    "第一财经 2026-11-16",
+    "21世纪经济报道 2026-11-16",
+    "腾讯 Hy4 flash 官方页关于 KV cache 的表述",
+    "Transformer 推理中 KV cache 随序列变长的通用机制（选中后补一篇可定位技术说明）"
+  ],
+  "same_topic_refs": [],
+  "same_topic_refs_note": "同题看片0，底线8、目标10，未开始。不能用泛「聊天就忘了」或vLLM教程顶替本问题。",
+  "original_angle": "不盘点 DeepSeek 额度表。用同一段对话纸条越堆越高，旁边的工作缓存格子跟着变长；新开对话则清空格子。把「算力不够所以限长对话」说成一种可能的调度，同时标明官方规则未公布。",
+  "visual_method": "真实聊天截图式样（自制示意，不复制某 App 界面细节）+ 一条越来越长的缓存带。停用的旧对话格子留在原位但不再占用当前工作位。",
+  "reusable_assets": "缓存带和对话纸条可延伸到上下文窗口或前缀缓存题，但题目不能混成一期。不复用芯片旧题。",
+  "obstacles": "官方未公布统一规则，用户反馈的 7 天、4 万字、两小时等数字不能写成官方标准；不能说所有变慢都是 KV cache；勿引导去绕过限额。",
+  "evidence_observed": [
+    "2026-11-16 第一财经等报道用户在 App/网页遇到限额提示，并写明官方尚未发布统一规则。",
+    "同日腾讯官方页把缩小 KV cache 作为降低成本的卖点，说明该机制被厂商公开讨论。"
+  ],
+  "judgment_subjective": [
+    "更贴近可能被卡住的普通用户，但官方规则未公布，且不是今日已核热榜，故只作储备，不作首推。",
+    "同题尚未看片，不能当成已充分调研。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": false,
+    "status": "未开始",
+    "note": "同题看片0，未开始深调研。媒体报道不是同题成片，不能计入已看条数。未满8条。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    },
+    {
+      "channel": "微博第三方聚合/报道转述",
+      "kind": "media",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 检索与摘要核验",
+      "url": "https://www.21jingji.com/article/20261116/herald/5ed417f1a6e7c462ee6aac8152622420.html",
+      "note": "21世纪经济报道称该话题登上微博热搜；本轮未从微博官方榜单打开核实，榜位和热度值为缺失。今日已核的soso.re 14:53前50也未见对应热词。"
+    },
+    {
+      "channel": "第一财经",
+      "kind": "media",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 检索与摘要核验",
+      "url": "https://www.yicai.com/news/103441951.html",
+      "note": "2026-11-16媒体报道。这是关注证据，不是热榜，也不是短视频爆款。"
+    }
+  ],
+  "vo_asr_limitation": "本轮未观看同题成片，没有可引用的口播原文，也没有可用的转写。",
+  "morning_today_role": "reserve",
+  "evening_note": "2026-11-17 晚间重新选题，本卡留在题库，不进入今晚正式短名单。"
+}

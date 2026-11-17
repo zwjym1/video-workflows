@@ -1,0 +1,91 @@
+{
+  "id": "prefix_cache_cheaper",
+  "title_question": "为什么同样的开头被再问一次，账单会明显变便宜？",
+  "direction": "ai,new_tech",
+  "today_role": "library",
+  "evidence_status": "新技术有关注证据",
+  "heat_tag": "近热",
+  "suggested_length_s": "60-90",
+  "cost": {
+    "level": "中偏低",
+    "reason": "官方已给出缓存命中价差，演示「同一段前缀被复用」即可；要避免和会员费、长对话两题并成一期。"
+  },
+  "sources": [
+    {
+      "role": "official",
+      "author": "腾讯",
+      "title": "Hy4 flash 发布页定价",
+      "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+      "published": "2026-11-16",
+      "collected_at": "2026-11-17 已打开",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "官方写每百万 token 输入 0.5 元、输出 2 元，命中缓存时仅需 0.02 元。价格会变，引用需标注日期。"
+    },
+    {
+      "role": "official",
+      "author": "Alibaba Cloud",
+      "title": "Qwen4-Max 新闻稿中的 Implicit Cache Hit 价格",
+      "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+      "published": "2026-11-16",
+      "collected_at": "2026-11-17 已打开",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "新闻稿写 Input (Implicit Cache Hit) is priced at $0.075 per 1M tokens。具体档位以当时帮助中心为准。"
+    }
+  ],
+  "watch_status": "无同题成片被列为已观看。",
+  "audience_question": "我几乎没改提示词，为什么有时会显示缓存命中、价格低很多？",
+  "value": "看完能把「重复前缀被复用」和「模型变聪明了」分开。",
+  "timeliness": "与 11 月 16 日两家定价说明同步，是昨天的产品机制。",
+  "fact_sources": [
+    "腾讯官方发布页",
+    "阿里云新闻稿"
+  ],
+  "same_topic_refs": [],
+  "same_topic_refs_note": "本轮没有已观看的同题短视频，如实标注。",
+  "original_angle": "同一段系统提示反复出现，只有第一次完整计费，后续命中的部分走短轨。不讲某家内部实现。",
+  "visual_method": "一张已写好的前缀纸被第二次直接取用，计量尺明显缩短。",
+  "reusable_assets": "可接在会员费题之后，但需用户另选，不默认系列排期。",
+  "obstacles": "价格时效；「缓存命中」在不同产品里名称不同；不能保证观众自己的请求一定命中。",
+  "evidence_observed": [
+    "两家 2026-11-16 官方页面都公开了缓存命中更便宜的价格。"
+  ],
+  "judgment_subjective": [
+    "机制清楚、成本较低，但观众切身痛感可能弱于「被限流」和「会员费买到什么」，故作库内题。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": false,
+    "status": "未开始",
+    "note": "无同题成片被列为已观看。未满8条。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    }
+  ],
+  "vo_asr_limitation": "未核对完整口播前，不得引用口播原文。"
+}

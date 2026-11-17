@@ -1,0 +1,90 @@
+{
+  "id": "amdahl_serial_limit",
+  "title_question": "核心数翻倍，为什么有一段任务几乎一点没快？",
+  "direction": "computer",
+  "today_role": "library",
+  "evidence_status": "待验证",
+  "heat_tag": "历史",
+  "suggested_length_s": "60-90",
+  "cost": {
+    "level": "中",
+    "reason": "演示装置清楚；要和「核心数选购百科」以及芯片分档明确分开，并讲清假设。"
+  },
+  "sources": [
+    {
+      "role": "official",
+      "author": "Intel",
+      "title": "官方对 Amdahl 定律/可扩展性的说明（此前研究已打开）",
+      "url": null,
+      "published": null,
+      "collected_at": "2026-11-15 研究记录",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "此前打开过 Intel 关于串行部分限制加速比的说明。本轮未重开原页，选中后须补回可点击的原链接。"
+    },
+    {
+      "role": "original_work",
+      "author": "硬核软解",
+      "title": "科普不同CPU核心数量的区别（近题，不是本问的完整同题）",
+      "url": "https://www.douyin.com/video/7695823374752189732",
+      "published": "2026-10-13 05:22 Asia/Shanghai",
+      "collected_at": "2026-11-17 14:33:13 Asia/Shanghai",
+      "likes": 226986,
+      "comments": 6174,
+      "collects": 52789,
+      "shares": 22540,
+      "plays": null,
+      "duration_s": 706.9,
+      "note": "这是「各档核心还够不够用」的百科，不是专门讲 Amdahl。只作近题线索，不把其高互动直接算到本问头上。"
+    }
+  ],
+  "watch_status": "硬核软解片见 cpu_core_enough 的观看边界。本题机制片未在本轮另采。",
+  "audience_question": "我已经加了核心，为什么还是在同一处等待？",
+  "value": "看见「不能并行的依赖段会封顶加速」，而不是记住定律名字。",
+  "timeliness": "常青机制。没有单独的今日同题高互动核验，故待验证。",
+  "fact_sources": [
+    "Intel 可扩展性说明需在选中后重开原页核对。"
+  ],
+  "same_topic_refs": [],
+  "same_topic_refs_note": "硬核软解是近题不是本问的完整同题，不列入同题对标。",
+  "original_angle": "同一串任务珠，独立珠分道、依赖珠仍排队。不拿示意秒数冒充跑分。",
+  "visual_method": "一条轨道变多条再合拢，合拢点时间几乎不动。",
+  "reusable_assets": "与 cpu_core_enough 可能共享轨道语法，但若已做选购判断题，本题应暂缓避免重复。",
+  "obstacles": "和库内 CPU 选购题、已完成芯片题都可能撞车；示意时间不能写成实测。",
+  "evidence_observed": [
+    "通用机制此前有官方说明记录；今日没有单独同题成片数据。"
+  ],
+  "judgment_subjective": [
+    "适合作为 CPU 题的更窄切法，不与 cpu_core_enough 同时推进。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": false,
+    "status": "未开始",
+    "note": "与CPU核数题相邻但不是同一问题；不能把硬核软解那条算进本题同题。本题机制片未在本轮另采。未满8条。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    }
+  ],
+  "vo_asr_limitation": "未核对完整口播前，不得引用口播原文。"
+}

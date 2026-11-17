@@ -1,0 +1,113 @@
+{
+  "id": "ai_membership_vs_api",
+  "title_question": "交了 AI 会员费，到底买到了什么？为什么还有另一份 API 账单？",
+  "direction": "ai",
+  "today_role": "not_recommended_this_round",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "90-120",
+  "cost": {
+    "level": "中",
+    "reason": "账单分层好画，但条款会变，不能复刻原片未核的产业链数字。比 13 分钟推理引擎课更容易收在两分钟内。",
+    "ranking": "不参与选题排名"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "Yona呀",
+      "title": "跟着一笔20美元的AI会员费，走完整个产业链",
+      "url": "https://www.douyin.com/video/7698318890425683251",
+      "published": "2026-10-19 18:09 Asia/Shanghai",
+      "collected_at": "2026-11-17 14:33:06 Asia/Shanghai",
+      "likes": 60572,
+      "comments": 450,
+      "collects": 23262,
+      "shares": 14461,
+      "plays": null,
+      "duration_s": 366.6,
+      "note": "免登录详情 available。点赞不是播放。11-15 20:37 对照为赞 60392 / 评 449 / 藏 23129 / 转 14405。"
+    },
+    {
+      "role": "official",
+      "author": "OpenAI Help Center",
+      "title": "Managing billing for ChatGPT and the API platform",
+      "url": "https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform",
+      "published": null,
+      "collected_at": "2026-11-15 研究中已打开；2026-11-17 未再重取全文",
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "ChatGPT 与 API 分开计费；部分订阅可能带 API 赠金，故不能说所有会员都不含 API 额度。"
+    }
+  ],
+  "watch_status": "2026-11-17 看了开头3秒拼图和全片接触纸；口播依据2026-11-15本地转写，需复核。本轮未连续播放、未实听。不能把这次观看写成已完整分析文案和画面。",
+  "audience_question": "每个月扣的会员费，到底买到了使用权、算力，还是另一套按量账单？",
+  "value": "分清前台会员权益和后台计量，避免「交了包月就买下无限 GPU」的误解。",
+  "timeliness": "作品发布于 10 月 19 日，今日互动仍高，属近一个月已验证高互动，不是今天新发布。",
+  "fact_sources": [
+    "Yona呀原作公开互动（今日刷新）",
+    "OpenAI 帮助中心计费说明（此前已打开）"
+  ],
+  "same_topic_refs": [
+    {
+      "url": "https://www.douyin.com/video/7698318890425683251",
+      "author": "Yona呀",
+      "note": "同题原作。学「从我的扣款进入」的结构，不抄全文和未核数字。"
+    }
+  ],
+  "same_topic_refs_note": "同题已看1条，底线8、目标10，未满。本轮未再补其他已观看的同题成片。不得用产业链或硬件题凑数。",
+  "original_angle": "不顺着 20 美元游遍全球公司。让同一任务同时出示会员权益票和 API 计量票；任务变长时只有计量尺变化。",
+  "visual_method": "自制扣款/票据示意（不复制原片界面和肖像）+ 双层账单并排。",
+  "reusable_assets": "双层账单和计量尺可延伸到前缀缓存题。不复用芯片旧题，不搬原片图标原声。",
+  "obstacles": "原片宏观营收/合同数字未独立核对，不采用；条款时效；商标；不能把计费说成真实边际成本或诱导开通。",
+  "evidence_observed": [
+    "今日14:33:06详情：赞60572、评450、藏23262、转14461，时长366.6秒。发布于2026-10-19 18:09。",
+    "今日15:00:15官方抖音热榜前50未见对应热词。",
+    "开头画面为扣款卡片叠加月费后再问钱去哪（接触纸/开头拼图，非完整听审）。"
+  ],
+  "judgment_subjective": [
+    "作为今日首推，是因为普通观众会关心自己交的会员费买到了什么，且有近一个月仍可核验的高互动成片；不是因为贴近面试，也不是今日热榜新词。",
+    "同题只有1条且口播未复核，调研未充分，是否定题及是否先补看，交给用户决定。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 1,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "仅1条同题作品（Yona呀原作）。看了开头约3秒拼图和全片接触纸，但未连续播完、未实听，故 hook_0_5s_complete_count=0（没有已核对的0–5秒口播原文）。评论与相关搜索有样本，评论只抽到50条、平台总评450，样本不完整。未满8条，不能算充分。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    },
+    {
+      "channel": "抖音作品详情（免登录）",
+      "kind": "work_engagement",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 14:33:06 Asia/Shanghai",
+      "url": "https://www.douyin.com/video/7698318890425683251",
+      "note": "赞60572/评450/藏23262/转14461；播放未公开为null。属近一个月高互动，不是今日热榜。"
+    }
+  ],
+  "vo_asr_limitation": "口播依据2026-11-15本地自动转写，未复核，不能当成已核对的口播原文引用。本轮未连续播放、未实听。开头画面来自接触纸/开头拼图，不是逐秒完整听审。",
+  "morning_today_role": "first_pick",
+  "evening_note": "需求联想有「会员费交给谁了」，与 Yona 成片切口重合；该成片质量与互动都高，同切口不重复做。「开哪个/和没有会员的区别」有联想，但本轮供给检索为空，不等于蓝海，不进正式短名单。",
+  "quality_shortlist_note": "2026-11-17 18:29 质量短名单已按 v2026.11.17.5 补证（需求原话、看后搜、0-5s 画面与烧录字幕）。现行 SYSTEM.md 未被覆盖。详见 （详细研究记录未收入本公共包）"
+}
