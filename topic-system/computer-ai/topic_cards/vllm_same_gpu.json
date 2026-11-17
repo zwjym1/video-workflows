@@ -1,0 +1,83 @@
+{
+  "id": "vllm_same_gpu",
+  "title_question": "同一张 GPU，为什么有的系统能多接下几倍请求？",
+  "direction": "ai,computer",
+  "today_role": "library",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "90-120",
+  "cost": {
+    "level": "高",
+    "reason": "原作约 13 分钟，含 KV cache、PagedAttention、连续批处理等一层以上机制；无 GPU 实测时很容易画成假性能。面试相关，但学习与核证负担重。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "小白debug",
+      "title": "大模型推理引擎vLLM 是什么？为什么同一张 GPU 能多扛几倍请求？",
+      "url": "https://www.douyin.com/video/7698986937880743211",
+      "published": "2026-10-21 14:26 Asia/Shanghai",
+      "collected_at": "2026-11-17 14:50:59 Asia/Shanghai",
+      "likes": 35502,
+      "comments": 557,
+      "collects": 21557,
+      "shares": 5532,
+      "plays": null,
+      "duration_s": 787.7,
+      "note": "免登录详情 available。收藏相对点赞不低，只作观察。点赞不是播放。相关搜索为「vllm部署本地模型教程」，说明部分观众在找部署教程，不是本机制题已经等同教程需求。"
+    }
+  ],
+  "watch_status": "本轮未观看原片；仅今日刷新详情与部分评论。11-15 曾有关键帧记录，但不把那次未连续观片说成已经掌握全课。",
+  "audience_question": "硬件没变，为什么请求量能明显变多？是单个请求变快了，还是把显存碎片和批处理用好了？",
+  "value": "若做，只讲清「缓存怎么占显存、为什么分页/共享能多塞请求」，并明确吞吐上升不等于每个请求都更快。",
+  "timeliness": "10 月 21 日发布，今日仍有稳定互动，属近一个月已验证作品。",
+  "fact_sources": [
+    "原作公开互动（今日刷新）",
+    "选中后需打开 vLLM 官方设计文档，上次曾遇 429，不能假装已经核完。"
+  ],
+  "same_topic_refs": [
+    {
+      "url": "https://www.douyin.com/video/7698986937880743211",
+      "author": "小白debug",
+      "note": "同题原作，未在本轮观看。相关搜索偏部署教程，对标时仍只盯「同一张 GPU 为何能多扛请求」。"
+    }
+  ],
+  "same_topic_refs_note": "不能用泛 AI 基础设施新闻顶替。",
+  "original_angle": "不做 13 分钟引擎大全。只演示同一块显存板：碎片空洞 vs 整齐分页后再进来更多请求。",
+  "visual_method": "一块真实 GPU 认物 + 显存槽示意。禁止用假跑分数字。",
+  "reusable_assets": "与长对话 KV 题可共享「缓存占位」语法，但必须是不同问题，不能两期复用同一套结论。",
+  "obstacles": "机制范围易膨胀；无 GPU 实测；观众可能期待安装教程；原作视觉包装不要复刻。",
+  "evidence_observed": [
+    "今日 14:50:59：赞 35502、评 557、藏 21557、转 5532，时长 787.7 秒。",
+    "抽到的评论里有人拿它对照操作系统调度，也有人在问本地部署和面试简历，不完全是同一问题。"
+  ],
+  "judgment_subjective": [
+    "关注真实，但成本和核证偏高，先入库不进今日三题。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "今日只刷新详情与部分评论，没有完整看片，故watched_count记0（不把未连续观片算作已看同题）。未满8条。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    }
+  ],
+  "vo_asr_limitation": "本轮没有已核对的完整口播原文。若仅有旧转写或未连续观看，不能当成口播原文引用。"
+}

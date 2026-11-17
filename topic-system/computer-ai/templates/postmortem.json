@@ -1,0 +1,20 @@
+{
+  "episode_id": null,
+  "topic_id": null,
+  "published_at": null,
+  "platform": null,
+  "platform_url": null,
+  "data_recorded_at": null,
+  "plays": null,
+  "likes": null,
+  "comments": null,
+  "collects": null,
+  "shares": null,
+  "likes_are_not_plays": true,
+  "what_question_was_answered": null,
+  "what_worked": null,
+  "what_to_change": null,
+  "fact_corrections": null,
+  "user_notes": null,
+  "status": "empty_waiting_user_real_data"
+}

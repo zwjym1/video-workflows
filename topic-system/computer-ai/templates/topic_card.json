@@ -1,0 +1,77 @@
+{
+  "id": "",
+  "title_question": "",
+  "direction": "computer|ai|new_tech",
+  "today_role": "first_pick|backup|reserve|library|not_recommended|excluded",
+  "evidence_status": "已验证高互动|新技术有关注证据|待验证",
+  "heat_tag": "近热|历史",
+  "suggested_length_s": "60-120",
+  "cost": {
+    "level": "高|中|低",
+    "reason": ""
+  },
+  "sources": [
+    {
+      "role": "original_work|official|media|paper",
+      "author": null,
+      "title": null,
+      "url": null,
+      "published": null,
+      "collected_at": null,
+      "likes": null,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "点赞不等于播放；缺失为 null"
+    }
+  ],
+  "watch_status": "未观看|仅关键帧与转写|连续观看",
+  "audience_question": "",
+  "value": "",
+  "timeliness": "",
+  "fact_sources": [],
+  "same_topic_refs": [],
+  "same_topic_refs_note": "必须是同一具体问题；跨题不列入。记录已看条数相对底线8/目标10的状态。热门技术题可以暂时为0，但须如实注明，不能写成已充分。",
+  "original_angle": "",
+  "visual_method": "",
+  "reusable_assets": "",
+  "obstacles": "",
+  "evidence_observed": [],
+  "judgment_subjective": [],
+  "post_publish": {
+    "platform": null,
+    "published_at": null,
+    "plays": null,
+    "likes": null,
+    "comments": null,
+    "collects": null,
+    "shares": null,
+    "user_notes": null,
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": false,
+    "status": "未开始|未满|已满",
+    "note": "未满须实报，不得硬凑或把未观看当成完整；不得擅自永久豁免。"
+  },
+  "heat_sources": [
+    {
+      "channel": "",
+      "kind": "official_board|third_party_board|official_release|media|work_engagement",
+      "rank": null,
+      "heat": null,
+      "captured_at": null,
+      "url": null,
+      "note": "官方榜与第三方榜分开写；缺项为 null。"
+    }
+  ],
+  "vo_asr_limitation": "未观看则无口播原文。旧自动转写未复核时不能当成已核对的口播原文。"
+}

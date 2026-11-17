@@ -1,0 +1,75 @@
+{
+  "id": "context_window_forget",
+  "title_question": "越聊越傻，是不是把这一轮能看的材料挤掉了？",
+  "direction": "ai",
+  "today_role": "library",
+  "evidence_status": "待验证",
+  "heat_tag": "历史",
+  "suggested_length_s": "70-110",
+  "cost": {
+    "level": "中",
+    "reason": "舞台清楚，但要同时挡住「只有这一种原因」；与长对话限流题相邻，必须分清是遗忘/截断还是算力调度。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "智能体阿朱",
+      "title": "一条视频搞懂15个主流AI热词（含上下文窗口等）",
+      "url": "https://www.douyin.com/video/7677789451007649658",
+      "published": null,
+      "collected_at": "2026-11-02/03 旧选题系统快照，不是今日数据",
+      "likes": 95833,
+      "comments": null,
+      "collects": null,
+      "shares": null,
+      "plays": null,
+      "duration_s": null,
+      "note": "旧快照点赞。该片是 22 分钟热词合集，不是专门的上下文窗口同题片，不能当作本题已验证爆款。"
+    }
+  ],
+  "watch_status": "本轮未观看上述合集片。",
+  "audience_question": "明明刚才交代过，为什么聊着聊着就不认了？",
+  "value": "区分「这一轮送进去的材料」「容量限制」和「长期记忆是另一套机制」。",
+  "timeliness": "常青问题。当前没有今日刷新的同题高互动成片，故标历史/待验证，不能当成今天新热。",
+  "fact_sources": [
+    "需在选中后补当前产品官方的上下文窗口说明；容量大不等于每条信息都被用好。"
+  ],
+  "same_topic_refs": [],
+  "same_topic_refs_note": "旧库里的热词合集只是领域相邻，不是同一具体问题，不列入同题对标。",
+  "original_angle": "同一张约束便签从工作台掉到「本轮未送入」。不做旧角色剧。",
+  "visual_method": "真实对话材料变成有限工位上的纸张，满了之后旧纸移到旁边抽屉，仍可见但不再被读取。",
+  "reusable_assets": "与长对话 KV 题相邻但问题不同：这里是「没带上/被挤掉」，那里是「带上了所以更贵或被限」。",
+  "obstacles": "旧像素角色方案已废止；不能断言所有降质都是窗口塞满；今日互动证据不足。",
+  "evidence_observed": [
+    "仅有 2026-11-02/03 对含「上下文窗口」字样合集片的旧点赞快照，不是本题今日数据。"
+  ],
+  "judgment_subjective": [
+    "问题仍值得做，但按本系统规则今天不能升为已验证高互动。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 0,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": false,
+    "related_search_collected": false,
+    "status": "未开始",
+    "note": "本轮未观看所列合集片。未满8条。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    }
+  ],
+  "vo_asr_limitation": "本轮没有已核对的完整口播原文。若仅有旧转写或未连续观看，不能当成口播原文引用。"
+}

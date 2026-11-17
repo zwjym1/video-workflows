@@ -35,6 +35,8 @@ flowchart LR
 | `templates/audio/`、`templates/vo/` | 混音（film_mix）、配音拼接（stitch_v2）、ASR 抽查脚本 | 来源 `/workspace/optogenetics/audio`、`/workspace/optogenetics/vo` |
 | `skills/`、`workflows/`、`projects/`、`docs/` | 2026-10-18/19 的旧版 skill、Roadster 和 iPhone 模板、示例工程、运营文档（保留，未改） | — |
 
+- [电脑与 AI 选题系统](topic-system/computer-ai/)：轻量文档 / JSON 题库，题型不固定；选定后仍走制作三门。
+
 模板里写死了光遗传学那期的 composition 名、zip 名和混音文件名。新一期复制后照 `science-studio/config/production_config.md` 的「PC 渲染步骤」改。
 
 ## 启动口令（对 Bot 说）

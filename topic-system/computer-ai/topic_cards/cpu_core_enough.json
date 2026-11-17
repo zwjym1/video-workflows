@@ -1,0 +1,92 @@
+{
+  "id": "cpu_core_enough",
+  "title_question": "CPU 核心越买越多，怎样判断还够不够用？",
+  "direction": "computer",
+  "today_role": "backup",
+  "evidence_status": "已验证高互动",
+  "heat_tag": "近热",
+  "suggested_length_s": "80-120",
+  "cost": {
+    "level": "中偏高",
+    "reason": "原作近 12 分钟百科，要收成单点判断题才符合当前产能；刚做完芯片分档，硬件题容易看起来像续集。"
+  },
+  "sources": [
+    {
+      "role": "original_work",
+      "author": "硬核软解",
+      "title": "科普不同CPU核心数量的区别",
+      "url": "https://www.douyin.com/video/7695823374752189732",
+      "published": "2026-10-13 05:22 Asia/Shanghai",
+      "collected_at": "2026-11-17 14:33:13 Asia/Shanghai",
+      "likes": 226986,
+      "comments": 6174,
+      "collects": 52789,
+      "shares": 22540,
+      "plays": null,
+      "duration_s": 706.9,
+      "note": "免登录详情 available。点赞不是播放。11-15 20:38 对照为赞 225323 / 评 6126 / 藏 52335 / 转 22362。"
+    }
+  ],
+  "watch_status": "2026-11-15有关键帧与需复核转写，本轮未重新连续观看或实听。今日只刷新详情和50条评论样本。不能把未连续观片写成已完整分析文案和画面。",
+  "audience_question": "核心数翻倍，我的游戏或工作会不会就明显变快？这一档还值不值得加钱？",
+  "value": "把「核心更多」收成「我的任务里哪一段能并行、哪一段不能」，而不是再做一版型号目录。",
+  "timeliness": "10 月 13 日发布，今日仍为高互动，属近一个月已验证作品，不是今日新热。",
+  "fact_sources": [
+    "原作公开互动（今日刷新）",
+    "若收成 Amdahl/可扩展性，需引用已核的官方说明，不能照搬片中未独立测试的帧数。"
+  ],
+  "same_topic_refs": [
+    {
+      "url": "https://www.douyin.com/video/7695823374752189732",
+      "author": "硬核软解",
+      "note": "原作是分档选购百科，近题但比我们建议的「够不够用/哪一段没变快」更宽。学推进方式，不照抄 12 分钟结构和跑分数。"
+    }
+  ],
+  "same_topic_refs_note": "同题已核1条，底线8、目标10，未满。不能把芯片分档旧题当同题对照。",
+  "original_angle": "只保留同一任务轨道上，能并行的珠子分道、必须排队的珠子不动。不重做单核到 64 核名录。",
+  "visual_method": "真实 CPU 认物后进入任务轨道示意，结果停留在「这一段没变快」。",
+  "reusable_assets": "任务珠/分道可新建。不复用 5070 Ti 分档旧片资产当本题内容。",
+  "obstacles": "与刚完成芯片题相邻；片中性能测试未独立测；不要暗示所有变慢都来自串行。",
+  "evidence_observed": [
+    "今日 14:33:13：赞 226986、评 6174、藏 52789、转 22540，时长 706.9 秒。"
+  ],
+  "judgment_subjective": [
+    "互动数据很硬，但刚做完芯片分档，硬件题容易看起来像续集，故作备选而不是首推。",
+    "同题只有1条且口播未复核，调研未充分。"
+  ],
+  "post_publish": {
+    "status": "empty_waiting_user_data"
+  },
+  "same_topic_field": {
+    "scope": "必须是同一具体问题；领域相邻或只是同属 AI/硬件不能顶替",
+    "floor": 8,
+    "target": 10,
+    "watched_count": 1,
+    "hook_0_5s_complete_count": 0,
+    "comments_collected": true,
+    "related_search_collected": true,
+    "status": "未满",
+    "note": "仅1条已核高互动成片（硬核软解）。11-15看过开头画面和接触纸，今日未重新连续观看或实听，故 hook_0_5s_complete_count=0。评论与相关搜索今日有样本。未满8条。不能把芯片分档旧题算进同题。"
+  },
+  "heat_sources": [
+    {
+      "channel": "抖音公开热榜接口",
+      "kind": "official_board",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 15:00:15 Asia/Shanghai",
+      "url": null,
+      "note": "前50未见与本题对应的热词。链接字段本次未单独保存官方页URL，记为缺失。"
+    },
+    {
+      "channel": "抖音作品详情（免登录）",
+      "kind": "work_engagement",
+      "rank": null,
+      "heat": null,
+      "captured_at": "2026-11-17 14:33:13 Asia/Shanghai",
+      "url": "https://www.douyin.com/video/7695823374752189732",
+      "note": "赞226986/评6174/藏52789/转22540；播放未公开为null。不是今日热榜新词。"
+    }
+  ],
+  "vo_asr_limitation": "2026-11-15有需复核的本地转写；今日未重新连续观看或实听。旧转写不能当成已核对的口播原文。"
+}
